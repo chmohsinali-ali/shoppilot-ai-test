@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5173:80"
+    environment:
+      - VITE_SUPABASE_URL=${VITE_SUPABASE_URL}
+      - VITE_SUPABASE_ANON_KEY=${VITE_SUPABASE_ANON_KEY}
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+# Query: Ahmed ko 5 kilo cheeni 270 rupay kilo de do, 2000 rupay diye
+# ContextLines: 1
+
+3 results - 3 files
+
+docs\api.md:
+  119  ```json
+  120: { "text": "Ahmed ko 5 kilo cheeni 270 rupay kilo ke hisab se di hai, Ahmed ke khaty mein add kar do" }
+  121  ```
+
+src\pages\AssistantPage.tsx:
+  77  const SUGGESTIONS = [
+  78:   'Ahmed ko 5 kilo cheeni 270 rupay kilo de do, 2000 rupay diye',
+  79    'Ali ka balance kitna hai?',
+
+supabase\functions\ai-assistant\index.ts:
+  74  Examples:
+  75: "Ahmed ko 5 kilo cheeni 270 rupay kilo de do, 2000 rupay diye" -> SALE with customer Ahmed, 1 product sugar 5kg @ 270, payment 2000 cash.
+  76  "Ali ka balance kitna hai?" -> CUSTOMER_SEARCH for Ali.
