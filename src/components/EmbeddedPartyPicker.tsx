@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Search, Phone, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Search, Phone, ChevronLeft, ChevronRight, UserPlus } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { Spinner, EmptyState } from '@/components/ui/EmptyState';
 import { formatMoney } from '@/lib/format';
@@ -16,13 +16,17 @@ const PAGE_SIZE = 10;
  * number of duplicates (2, 10, 50, 100+) via server-side paging.
  */
 export function EmbeddedPartyPicker({
-  kind, shopId, currency, initialSearch, onSelect,
+  kind, shopId, currency, initialSearch, onSelect, onAddNew,
 }: {
   kind: 'customer' | 'supplier';
   shopId: string;
   currency?: string;
   initialSearch?: string;
   onSelect: (party: PickedParty) => void;
+  /** Shown as a persistent footer option — none of the listed duplicates
+   *  is the right person, so create a brand-new record with the spoken
+   *  name instead. Omit to hide the option. */
+  onAddNew?: (spokenName: string) => void;
 }) {
   const [search, setSearch] = useState(initialSearch ?? '');
   const [rows, setRows] = useState<any[]>([]);
@@ -118,6 +122,18 @@ export function EmbeddedPartyPicker({
             Next <ChevronRight className="h-3.5 w-3.5" />
           </button>
         </div>
+      )}
+
+      {onAddNew && (
+        <button
+          type="button"
+          dir="rtl"
+          onClick={() => onAddNew(initialSearch ?? search)}
+          className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-slate-300 py-2 text-xs font-medium text-slate-600 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-blue-950/20"
+        >
+          <UserPlus className="h-3.5 w-3.5" />
+          {kind === 'customer' ? `نیا کسٹمر "${initialSearch ?? search}" شامل کریں` : `نیا سپلائر "${initialSearch ?? search}" شامل کریں`}
+        </button>
       )}
     </div>
   );

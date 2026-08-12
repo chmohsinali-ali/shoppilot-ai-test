@@ -138,6 +138,7 @@ export function OnboardingPage() {
                   <option value="PKR">PKR — Pakistani Rupee</option>
                   <option value="INR">INR — Indian Rupee</option>
                   <option value="USD">USD — US Dollar</option>
+                  <option value="EUR">EUR — Euro</option>
                   <option value="AED">AED — UAE Dirham</option>
                   <option value="SAR">SAR — Saudi Riyal</option>
                 </Select>

@@ -91,7 +91,11 @@ Detect the currency the shopkeeper is speaking in from context clues:
 - "rupay", "rupees", "rs", "pkr", or plain Urdu/Roman Urdu with no currency word -> PKR
 - "dollar", "dollars", "usd", "$" -> USD
 - "indian rupee", "inr" -> INR
+- "euro", "euros", "eur", "€" -> EUR
 - Any other explicitly named currency -> use its common code (e.g. "AED", "SAR")
+Never guess a currency from a bare number alone — only apply a currency code when the
+shopkeeper actually said a currency word/symbol, or the amount has none, in which case use
+the shop's own default currency (PKR unless told otherwise).
 Put the detected currency on each product's "currency" field (and on "payment.currency" if a
 payment amount is mentioned). Do NOT attempt to convert between currencies yourself — you have
 no reliable live exchange rate. If a currency other than the shop's default (PKR) is detected,
