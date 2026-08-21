@@ -18,7 +18,9 @@ type ParsedCommand = {
     customer?: { name?: string; id?: string };
     supplier?: { name?: string };
     products?: Array<{
-      name: string;
+      name_en: string; // canonical English product name, e.g. "Onion"
+      name_ur: string; // canonical Urdu product name, e.g. "پیاز" — omit only if the product is a proper-noun brand name with no natural Urdu translation
+      name_confidence: number; // 0.0-1.0 — how sure you are of this product's identity/translation, separate from the overall transaction confidence
       quantity: number;
       unit?: string;
       price: number;
@@ -55,19 +57,44 @@ Understand quantities, units (kilo/kg/gram/liter/piece/carton/box/dozen/pack), a
 "rupay", "rupees", "rs", "pkr" all mean PKR.
 "cheeni" = sugar, "aata" = flour, "chai" = tea, "biscuit" = biscuit, "doodh" = milk.
 
---- NAMES MUST ALWAYS BE LATIN/ROMAN SCRIPT (STRICT) ---
+--- CUSTOMER/SUPPLIER NAMES MUST ALWAYS BE LATIN/ROMAN SCRIPT (STRICT) ---
 
-Customer names, supplier names, and product names are PROPER NOUNS. No matter what
-language or script the rest of the message is in (Urdu script, Devanagari/Hindi script,
-Punjabi, etc.), always write these names back in the JSON using Latin/Roman script
-spelling exactly as the name is commonly written in English, never in Urdu or Devanagari
-script. This is critical because a name can be spelled multiple different ways in Urdu or
-Hindi script, which causes mismatches against the shop's existing customer/supplier
-records (which are always stored in Latin script).
+Customer names and supplier names are PROPER NOUNS. No matter what language or script the
+rest of the message is in (Urdu script, Devanagari/Hindi script, Punjabi, etc.), always write
+these names back in the JSON using Latin/Roman script spelling exactly as the name is commonly
+written in English, never in Urdu or Devanagari script. This is critical because a name can be
+spelled multiple different ways in Urdu or Hindi script, which causes mismatches against the
+shop's existing customer/supplier records (which are always stored in Latin script).
 Example: if the message is in Urdu script and mentions "حمزہ", return customer.name as
 "Hamza", NOT "حمزہ". If the message is in Hindi/Devanagari and mentions "अहमद", return
 customer.name as "Ahmed", NOT "अहमद". If the shopkeeper already typed the name in Roman
 Urdu or English, just keep it as typed.
+
+This Latin-only rule applies ONLY to customer.name and supplier.name — it does NOT apply to
+product names. Product names have their own bilingual rule below.
+
+--- PRODUCT NAMES MUST ALWAYS BE RETURNED IN BOTH ENGLISH AND URDU (STRICT) ---
+
+Every product line needs BOTH "name_en" (the standard English name) and "name_ur" (the
+standard Urdu-script name) — regardless of which language/script the shopkeeper actually
+spoke the product name in, and regardless of local pronunciation. Translate/normalize to the
+standard form in both scripts; do not just transliterate the sound of what was said.
+- "پیاز", "pyaz", "piyaz", "pyaaz" (any script/spelling) -> name_en="Onion", name_ur="پیاز"
+- "ٹماٹر", "tamatar", "tamater" -> name_en="Tomato", name_ur="ٹماٹر"
+- "چینی", "cheeni" -> name_en="Sugar", name_ur="چینی"
+- "آلو", "aloo", "alu" -> name_en="Potato", name_ur="آلو"
+- "تیل", "tel" -> name_en="Oil", name_ur="تیل"
+Set "name_confidence" (0.0-1.0) honestly for how sure you are of this specific product's
+identity/translation — this is separate from the overall transaction "confidence" field, and
+is what the app uses to decide whether to ask the shopkeeper to confirm a brand-new product
+before saving it. Use a LOW name_confidence (0.5 or below) when: the spoken word is unclear,
+could plausibly be more than one product, is a brand/local name you are not confident how to
+translate, or you are simply guessing at the Urdu/English equivalent. Use a HIGH
+name_confidence (0.8+) only for common, unambiguous grocery items you translated with real
+certainty (onion, tomato, sugar, oil, rice, flour, milk, tea, soap, etc.).
+If a product is a proper-noun brand name with no natural Urdu translation (e.g. a specific
+imported brand), it is acceptable to set name_ur to the same text as name_en — never leave
+name_ur empty/omitted.
 
 --- UNIT DETECTION (STRICT — this is a common mistake, be careful) ---
 
@@ -79,6 +106,14 @@ specific unit word was actually spoken.
 - "dozen" -> unit = "dozen"
 - "packet", "pack" -> unit = "packet"
 - "box", "carton", "ctn" -> unit = "box" / "carton" (use whichever word was said)
+- "bag", "bori", "boriyan", "boriyaan", "thaila", "thailay" -> unit = "bag"
+- "bundle", "bundles" -> unit = "bundle"
+- "crate", "crates" -> unit = "crate"
+- "bottle", "bottles" -> unit = "bottle"
+- These bulk/packaging units (box, carton, bag, bundle, crate, bottle) are just as valid a
+  "unit" as kilo/piece — common for SUPPLIER purchases in bulk quantities (e.g. "20 boxes",
+  "10 bags", "30 boriyan"), but can also appear in customer sales. Never default a bulk
+  packaging word down to "piece".
 - Only use "piece" when the shopkeeper actually said "piece(s)", "pcs", "adad", or gave a bare
   count for a naturally discrete item (e.g. "5 biscuit" with no other unit word implies pieces).
 Example of what NOT to do: "10 kilo cheeni" must become quantity=10, unit="kg" — NEVER
@@ -192,7 +227,7 @@ Return ONLY valid JSON matching this schema:
   "entities": {
     "customer": { "name": "string or omit" },
     "supplier": { "name": "string or omit" },
-    "products": [{ "name": "string", "quantity": number, "unit": "string", "price": number, "currency": "PKR|USD|EUR|CAD|..." }],
+    "products": [{ "name_en": "string", "name_ur": "string", "name_confidence": 0.0 to 1.0, "quantity": number, "unit": "string", "price": number, "currency": "PKR|USD|EUR|CAD|..." }],
     "payment": { "amount": number, "method": "cash|bank|cheque|mobile", "currency": "PKR|USD|EUR|CAD|...", "percent_of_total": number or omit },
     "discount": { "amount": number, "percent": number },
     "report_type": "daily_sales|monthly_sales|expenses|profit|customer_balances|inventory"
@@ -204,20 +239,24 @@ Return ONLY valid JSON matching this schema:
 }
 
 Examples:
-"Ahmed ko 5 kilo cheeni 270 rupay kilo de do, 2000 rupay diye" -> SALE with customer Ahmed, 1 product sugar quantity=5 unit="kg" price=270, payment amount=2000 currency=PKR.
+"Ahmed ko 5 kilo cheeni 270 rupay kilo de do, 2000 rupay diye" -> SALE with customer Ahmed, 1 product name_en="Sugar" name_ur="چینی" name_confidence=0.95 quantity=5 unit="kg" price=270, payment amount=2000 currency=PKR.
 "Ali ka balance kitna hai?" -> CUSTOMER_SEARCH for Ali.
 "Aaj ki sale dikhao" -> REPORT daily_sales.
 "Ahmed ne 5000 diye" -> PAYMENT from Ahmed 5000 PKR.
-"Mohsin ne 10 kilo cheeni li, 170 dollar per kilo ke hisaab se" -> SALE, product sugar quantity=10 unit="kg" price=170 currency="USD", warnings: ["Price given in USD, not PKR — confirm before saving"].
-"Ahmed ne 10 kilo cheeni li, 200 rupay kilo, 5 kilo ghee liya, 200 rupay kilo, aur usne 10% payment ki hai" -> SALE, products: sugar qty=10 unit="kg" price=200 (=2000), ghee qty=5 unit="kg" price=200 (=1000); subtotal=3000; payment.percent_of_total=10, payment.amount=300 (10% of 3000), payment.currency="PKR".
+"Mohsin ne 10 kilo cheeni li, 170 dollar per kilo ke hisaab se" -> SALE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="kg" price=170 currency="USD", warnings: ["Price given in USD, not PKR — confirm before saving"].
+"Ahmed ne 10 kilo cheeni li, 200 rupay kilo, 5 kilo ghee liya, 200 rupay kilo, aur usne 10% payment ki hai" -> SALE, products: name_en="Sugar" name_ur="چینی" qty=10 unit="kg" price=200 (=2000), name_en="Ghee" name_ur="گھی" qty=5 unit="kg" price=200 (=1000); subtotal=3000; payment.percent_of_total=10, payment.amount=300 (10% of 3000), payment.currency="PKR".
 "10 kilo cheeni de do" -> quantity=10, unit="kg" — NOT unit="piece".
-"2 dozen ande de do" -> quantity=2, unit="dozen".
-"हमज़ा को 10 किलो चीनी दे दो" (Hindi script) -> customer.name="Hamza" (Latin script), NOT "हमज़ा".
-"حمزہ کو 10 کلو چینی دے دو" (Urdu script) -> customer.name="Hamza" (Latin script), NOT "حمزہ".
-"Ahmed ko 2 biscuit 80 rupay ke de do" -> SALE, product biscuit quantity=2 unit="piece" price=40 (80 ÷ 2, TOTAL-price phrasing, not a per-biscuit rate).
-"2 biscuit, 40 rupay ka 1 biscuit" -> SALE, product biscuit quantity=2 unit="piece" price=40 (RATE phrasing, given directly).
-"10 bags cheeni 500 rupay per bag" (supplier) -> PURCHASE, product cheeni quantity=10 unit="bag" price=500 (RATE phrasing).
-"10 bags cheeni 5000 rupay ke" (supplier) -> PURCHASE, product cheeni quantity=10 unit="bag" price=500 (5000 ÷ 10, TOTAL-price phrasing).
+"2 dozen ande de do" -> quantity=2, unit="dozen", name_en="Egg" name_ur="انڈے".
+"हमज़ा को 10 किलो चीनी दे दो" (Hindi script) -> customer.name="Hamza" (Latin script), NOT "हमज़ा"; product name_en="Sugar" name_ur="چینی".
+"حمزہ کو 10 کلو چینی دے دو" (Urdu script) -> customer.name="Hamza" (Latin script), NOT "حمزہ"; product name_en="Sugar" name_ur="چینی".
+"Ahmed ko 2 biscuit 80 rupay ke de do" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price=40 (80 ÷ 2, TOTAL-price phrasing, not a per-biscuit rate).
+"2 biscuit, 40 rupay ka 1 biscuit" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price=40 (RATE phrasing, given directly).
+"10 bags cheeni 500 rupay per bag" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price=500 (RATE phrasing).
+"10 bags cheeni 5000 rupay ke" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price=500 (5000 ÷ 10, TOTAL-price phrasing).
+"20 boxes ghee 500 rupay per box" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price=500 (RATE phrasing, total=10000).
+"20 boxes ghee 10000 rupay ke" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price=500 (10000 ÷ 20, TOTAL-price phrasing).
+"Ahmed ko 5 kilo pyaz 280 rupay per kilo de do" -> SALE, product name_en="Onion" name_ur="پیاز" name_confidence=0.95 quantity=5 unit="kg" price=280.
+"5 kilo cheeni 1400 rupay ki" -> SALE, product name_en="Sugar" name_ur="چینی" quantity=5 unit="kg" price=280 (1400 ÷ 5, TOTAL-price phrasing — "X rupay ki/ke" for the whole stated quantity, not per-unit).
 
 --- PURCHASE commands with FMCG invoice fields ---
 

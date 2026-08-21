@@ -17,6 +17,8 @@ import { isNearMatch, levenshteinDistance, compareToContextName } from '@/lib/na
 import { formatMoney } from '@/lib/format';
 import { VoiceRecorder, blobToBase64 } from '@/lib/voiceRecorder';
 import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
+import { resolveProductLines, createProduct, registerProductAliases, type RawProductLine, type ResolvedProductLine } from '@/lib/productDictionary';
+import { ProductConfirmCard } from '@/components/ProductConfirmCard';
 
 type ParsedCommand = {
   intent: string;
@@ -24,7 +26,7 @@ type ParsedCommand = {
     customer?: { name?: string };
     supplier?: { name?: string };
     products?: Array<{
-      name: string; quantity: number; unit?: string; price: number; currency?: string;
+      name_en: string; name_ur: string; name_confidence: number; quantity: number; unit?: string; price: number; currency?: string;
       hs_code?: string; supplier_product_code?: string; ctn_size?: string;
       retail_price?: number; trade_offer_amount?: number; trade_activity?: string;
       sales_tax_rate?: number; further_tax?: number; advance_tax?: number; tax_type?: string;
@@ -87,6 +89,29 @@ type PartyPickerState = {
   candidates: ConfirmCandidate[];
   parsed: ParsedCommand;
   lang: ReplyLang;
+  // Product lines already resolved (see ProductPickerState below) before
+  // this party gate was reached — carried through so resuming the party
+  // pick doesn't have to re-resolve products from scratch. Unused/omitted
+  // for PAYMENT, which has no product lines.
+  resolvedProducts?: ResolvedProductLine[];
+};
+
+// A product-identification confirmation attached to an assistant message
+// — the SAME engine/gate is used for both SALE (customer) and PURCHASE
+// (supplier) turns, per the requirement that customer/supplier behavior
+// be identical; only txnKind differs. See resolveProductLines in
+// productDictionary.ts for the matching/creation logic this pauses on.
+type ProductPickerState = {
+  txnKind: 'sale' | 'purchase';
+  parsed: ParsedCommand;
+  forcedParty?: { id: string; name: string };
+  sourceText: string;
+  rawProducts: RawProductLine[];
+  resolvedSoFar: ResolvedProductLine[];
+  pending: RawProductLine;
+  confirmMode: 'confirm-new' | 'near-match';
+  nearMatch?: { id: string; nameEn: string; nameUr: string | null };
+  lang: ReplyLang;
 };
 
 type Message = {
@@ -100,6 +125,7 @@ type Message = {
   savedAccountLink?: string;
   savedAccountLabel?: string;
   needsPicker?: PartyPickerState;
+  needsProductPicker?: ProductPickerState;
 };
 
 // Very lightweight language detection so the assistant knows what language
@@ -145,7 +171,7 @@ type SalePreview = {
   customerPhone: string;
   isNewCustomer: boolean;
   previousBalance: number;
-  lines: Array<{ name: string; qty: number; unit: string; price: number; total: number; currency: string }>;
+  lines: Array<{ name: string; nameUr: string; productId: string | null; qty: number; unit: string; price: number; total: number; currency: string }>;
   subtotal: number;
   discount: number;
   grandTotal: number;
@@ -161,7 +187,7 @@ type PurchasePreview = {
   supplierName: string;
   supplierId: string | null;
   lines: Array<{
-    name: string; qty: number; unit: string; price: number; total: number;
+    name: string; nameUr: string; productId: string | null; qty: number; unit: string; price: number; total: number;
     hs_code?: string; supplier_product_code?: string; ctn_size?: string;
     retail_price?: number; trade_offer_amount?: number; trade_activity?: string;
     sales_tax_rate?: number; further_tax?: number; advance_tax?: number; tax_type?: string;
@@ -240,6 +266,12 @@ export function AssistantPage() {
   // synchronously during preview-building and read immediately after in
   // the same turn — no re-render needed for it specifically.
   const pickerNeededRef = useRef<PartyPickerState | null>(null);
+
+  // Same pattern as pickerNeededRef, but for product identification —
+  // set by resolveTurnProducts (called before customer/supplier
+  // resolution) whenever a spoken product can't be silently matched or
+  // auto-created. One shared gate for both SALE and PURCHASE turns.
+  const productPickerNeededRef = useRef<ProductPickerState | null>(null);
 
   // Tracks the phone number typed into a new-customer's invoice preview
   // (keyed by message id), since a new customer's first invoice requires
@@ -409,11 +441,12 @@ export function AssistantPage() {
     });
   };
 
-  const buildSalePreview = async (parsed: ParsedCommand, forcedParty?: { id: string; name: string }, sourceText: string = ''): Promise<SalePreview | null> => {
+  const buildSalePreview = async (parsed: ParsedCommand, forcedParty: { id: string; name: string } | undefined, sourceText: string, resolvedProducts: ResolvedProductLine[]): Promise<SalePreview | null> => {
     if (parsed.intent !== 'SALE' || !parsed.entities.products?.length) return null;
     const shopCurrency = shop?.currency ?? 'PKR';
-    const lines = parsed.entities.products.map((p) => ({
-      name: p.name, qty: p.quantity, unit: p.unit ?? 'piece', price: p.price, total: p.quantity * p.price,
+    const lang = detectReplyLang(sourceText || parsed.entities.customer?.name || '');
+    const lines = resolvedProducts.map((p) => ({
+      name: p.nameEn, nameUr: p.nameUr, productId: p.productId, qty: p.quantity, unit: p.unit ?? 'piece', price: p.price, total: p.quantity * p.price,
       currency: p.currency ?? shopCurrency,
     }));
     const subtotal = lines.reduce((s, l) => s + l.total, 0);
@@ -433,7 +466,6 @@ export function AssistantPage() {
     const currencyWarning = nonShopCurrencyLine
       ? `${nonShopCurrencyLine.name} price is in ${nonShopCurrencyLine.currency}, not ${shopCurrency} — please confirm before saving.`
       : (parsed.warnings?.length ? parsed.warnings.join(' ') : null);
-    const lang = detectReplyLang(sourceText || parsed.entities.customer?.name || '');
     let customerId: string | null = null;
     let customerName = parsed.entities.customer?.name ?? 'Walk-in';
     if (forcedParty) {
@@ -456,7 +488,7 @@ export function AssistantPage() {
         pickerNeededRef.current = {
           kind: 'customer', mode: 'context-typo', spokenName,
           candidates: [{ id: activeContext!.id, name: activeContext!.name }],
-          parsed, lang,
+          parsed, lang, resolvedProducts,
         };
         return null;
       } else if (guard === 'different') {
@@ -469,21 +501,21 @@ export function AssistantPage() {
             en: `There are ${resolved.count} customers named "${spokenName}". Please look at the list below and select the correct customer.`,
             ur: `"${spokenName}" نامی ${resolved.count} کسٹمر موجود ہیں۔ براہ کرم نیچے دی گئی فہرست میں سے درست کسٹمر منتخب کریں۔`,
           });
-          pickerNeededRef.current = { kind: 'customer', mode: 'multiple', spokenName, candidates: [], parsed, lang };
+          pickerNeededRef.current = { kind: 'customer', mode: 'multiple', spokenName, candidates: [], parsed, lang, resolvedProducts };
           return null;
         } else if (resolved.kind === 'exact-one') {
           parsed.clarification = tpl(lang, {
             en: `Found an existing customer named "${spokenName}". Please confirm below.`,
             ur: `"${spokenName}" نامی کسٹمر پہلے سے موجود ہے۔ براہ کرم نیچے تصدیق کریں۔`,
           });
-          pickerNeededRef.current = { kind: 'customer', mode: 'confirm-one', spokenName, candidates: [resolved.party], parsed, lang };
+          pickerNeededRef.current = { kind: 'customer', mode: 'confirm-one', spokenName, candidates: [resolved.party], parsed, lang, resolvedProducts };
           return null;
         } else if (resolved.kind === 'fuzzy') {
           parsed.clarification = tpl(lang, {
             en: `"${spokenName}" is close to an existing name. Please confirm below who you mean.`,
             ur: `"${spokenName}" سے ملتا جلتا نام پہلے سے موجود ہے۔ براہ کرم نیچے تصدیق کریں کہ آپ کس کی بات کر رہے ہیں۔`,
           });
-          pickerNeededRef.current = { kind: 'customer', mode: 'fuzzy', spokenName, candidates: resolved.candidates, parsed, lang };
+          pickerNeededRef.current = { kind: 'customer', mode: 'fuzzy', spokenName, candidates: resolved.candidates, parsed, lang, resolvedProducts };
           return null;
         } else {
           // No exact or near match at all — this is a genuinely new
@@ -512,19 +544,20 @@ export function AssistantPage() {
     return { kind: 'sale', customerName, customerId, customerPhone, isNewCustomer, previousBalance, lines, subtotal, discount, grandTotal, amountPaid, paymentPercent, balance, currencyWarning, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD };
   };
 
-  const buildPurchasePreview = async (parsed: ParsedCommand, forcedParty?: { id: string; name: string }, sourceText: string = ''): Promise<PurchasePreview | null> => {
+  const buildPurchasePreview = async (parsed: ParsedCommand, forcedParty: { id: string; name: string } | undefined, sourceText: string, resolvedProducts: ResolvedProductLine[]): Promise<PurchasePreview | null> => {
     if (parsed.intent !== 'PURCHASE' || !parsed.entities.products?.length) return null;
-    const lines = parsed.entities.products.map((p) => {
+    const lang = detectReplyLang(sourceText || parsed.entities.supplier?.name || '');
+    const lines = resolvedProducts.map((p) => {
       const gross = p.quantity * p.price;
-      const tradeOffer = p.trade_offer_amount ?? 0;
-      const furtherTax = p.further_tax ?? 0;
-      const advanceTax = p.advance_tax ?? 0;
+      const tradeOffer = (p.trade_offer_amount as number | undefined) ?? 0;
+      const furtherTax = (p.further_tax as number | undefined) ?? 0;
+      const advanceTax = (p.advance_tax as number | undefined) ?? 0;
       const net = gross - tradeOffer + furtherTax + advanceTax;
       return {
-        name: p.name, qty: p.quantity, unit: p.unit ?? 'piece', price: p.price, total: gross,
-        hs_code: p.hs_code, supplier_product_code: p.supplier_product_code, ctn_size: p.ctn_size,
-        retail_price: p.retail_price, trade_offer_amount: p.trade_offer_amount, trade_activity: p.trade_activity,
-        sales_tax_rate: p.sales_tax_rate, further_tax: p.further_tax, advance_tax: p.advance_tax, tax_type: p.tax_type,
+        name: p.nameEn, nameUr: p.nameUr, productId: p.productId, qty: p.quantity, unit: p.unit ?? 'piece', price: p.price, total: gross,
+        hs_code: p.hs_code as string | undefined, supplier_product_code: p.supplier_product_code as string | undefined, ctn_size: p.ctn_size as string | undefined,
+        retail_price: p.retail_price as number | undefined, trade_offer_amount: p.trade_offer_amount as number | undefined, trade_activity: p.trade_activity as string | undefined,
+        sales_tax_rate: p.sales_tax_rate as number | undefined, further_tax: p.further_tax as number | undefined, advance_tax: p.advance_tax as number | undefined, tax_type: p.tax_type as string | undefined,
         netAmount: net,
       };
     });
@@ -535,7 +568,6 @@ export function AssistantPage() {
     const grandTotal = subtotal - totalTradeOffer + totalFurtherTax + totalAdvanceTax;
     const amountPaid = parsed.entities.payment?.amount ?? 0;
     const balance = Math.max(0, grandTotal - amountPaid);
-    const lang = detectReplyLang(sourceText || parsed.entities.supplier?.name || '');
     let supplierId: string | null = null;
     let supplierName = parsed.entities.supplier?.name ?? 'Unknown Supplier';
     if (forcedParty) {
@@ -556,7 +588,7 @@ export function AssistantPage() {
         pickerNeededRef.current = {
           kind: 'supplier', mode: 'context-typo', spokenName,
           candidates: [{ id: activeContext!.id, name: activeContext!.name }],
-          parsed, lang,
+          parsed, lang, resolvedProducts,
         };
         return null;
       } else if (guard === 'different') {
@@ -569,21 +601,21 @@ export function AssistantPage() {
             en: `There are ${resolved.count} suppliers named "${spokenName}". Please look at the list below and select the correct supplier.`,
             ur: `"${spokenName}" نامی ${resolved.count} سپلائر موجود ہیں۔ براہ کرم نیچے دی گئی فہرست میں سے درست سپلائر منتخب کریں۔`,
           });
-          pickerNeededRef.current = { kind: 'supplier', mode: 'multiple', spokenName, candidates: [], parsed, lang };
+          pickerNeededRef.current = { kind: 'supplier', mode: 'multiple', spokenName, candidates: [], parsed, lang, resolvedProducts };
           return null;
         } else if (resolved.kind === 'exact-one') {
           parsed.clarification = tpl(lang, {
             en: `Found an existing supplier named "${spokenName}". Please confirm below.`,
             ur: `"${spokenName}" نامی سپلائر پہلے سے موجود ہے۔ براہ کرم نیچے تصدیق کریں۔`,
           });
-          pickerNeededRef.current = { kind: 'supplier', mode: 'confirm-one', spokenName, candidates: [resolved.party], parsed, lang };
+          pickerNeededRef.current = { kind: 'supplier', mode: 'confirm-one', spokenName, candidates: [resolved.party], parsed, lang, resolvedProducts };
           return null;
         } else if (resolved.kind === 'fuzzy') {
           parsed.clarification = tpl(lang, {
             en: `"${spokenName}" is close to an existing name. Please confirm below who you mean.`,
             ur: `"${spokenName}" سے ملتا جلتا نام پہلے سے موجود ہے۔ براہ کرم نیچے تصدیق کریں کہ آپ کس کی بات کر رہے ہیں۔`,
           });
-          pickerNeededRef.current = { kind: 'supplier', mode: 'fuzzy', spokenName, candidates: resolved.candidates, parsed, lang };
+          pickerNeededRef.current = { kind: 'supplier', mode: 'fuzzy', spokenName, candidates: resolved.candidates, parsed, lang, resolvedProducts };
           return null;
         } else {
           const created = await autoCreateParty('suppliers', 'supplier_name', spokenName);
@@ -666,9 +698,51 @@ export function AssistantPage() {
     return { kind: 'payment', customerName, customerId, amount, currency, percentOfTotal, previousBalance, newBalance, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD };
   };
 
+  // Resolves parsed.entities.products against this shop's bilingual
+  // product dictionary BEFORE any customer/supplier resolution runs — the
+  // exact same engine (resolveProductLines) for both SALE and PURCHASE.
+  // Returns the resolved lines, or null if a product needs the
+  // shopkeeper's confirmation first (productPickerNeededRef is set in
+  // that case, mirroring how party resolution sets pickerNeededRef).
+  const resolveTurnProducts = async (
+    parsed: ParsedCommand, txnKind: 'sale' | 'purchase', forcedParty: { id: string; name: string } | undefined, sourceText: string, lang: ReplyLang
+  ): Promise<ResolvedProductLine[] | null> => {
+    if (!shop || !parsed.entities.products?.length) return [];
+    const rawProducts = parsed.entities.products as unknown as RawProductLine[];
+    const outcome = await resolveProductLines(shop.id, rawProducts);
+    if (outcome.kind === 'needs-confirmation') {
+      parsed.clarification = outcome.confirmMode === 'confirm-new'
+        ? tpl(lang, {
+            en: `I found a possible new product "${outcome.pending.name_en}" (${outcome.pending.name_ur}). Please confirm below before I save it.`,
+            ur: `ایک ممکنہ نیا پروڈکٹ "${outcome.pending.name_en}" (${outcome.pending.name_ur}) ملا ہے۔ محفوظ کرنے سے پہلے نیچے تصدیق کریں۔`,
+          })
+        : tpl(lang, {
+            en: 'Please confirm the product below.',
+            ur: 'براہ کرم نیچے پروڈکٹ کی تصدیق کریں۔',
+          });
+      productPickerNeededRef.current = {
+        txnKind, parsed, forcedParty, sourceText, rawProducts,
+        resolvedSoFar: outcome.resolvedSoFar, pending: outcome.pending,
+        confirmMode: outcome.confirmMode, nearMatch: outcome.nearMatch, lang,
+      };
+      return null;
+    }
+    return outcome.lines;
+  };
+
   const buildPreview = async (parsed: ParsedCommand, sourceText: string = ''): Promise<SalePreview | PurchasePreview | PaymentPreview | null> => {
-    if (parsed.intent === 'SALE') return buildSalePreview(parsed, undefined, sourceText);
-    if (parsed.intent === 'PURCHASE') return buildPurchasePreview(parsed, undefined, sourceText);
+    if (parsed.intent === 'SALE') {
+      const lang = detectReplyLang(sourceText || parsed.entities.customer?.name || '');
+      const resolvedProducts = await resolveTurnProducts(parsed, 'sale', undefined, sourceText, lang);
+      if (resolvedProducts === null) return null;
+      return buildSalePreview(parsed, undefined, sourceText, resolvedProducts);
+    }
+    if (parsed.intent === 'PURCHASE') {
+      const lang = detectReplyLang(sourceText || parsed.entities.supplier?.name || '');
+      const resolvedProducts = await resolveTurnProducts(parsed, 'purchase', undefined, sourceText, lang);
+      if (resolvedProducts === null) return null;
+      return buildPurchasePreview(parsed, undefined, sourceText, resolvedProducts);
+    }
     if (parsed.intent === 'PAYMENT') return buildPaymentPreview(parsed, undefined, sourceText);
     return null;
   };
@@ -737,7 +811,9 @@ export function AssistantPage() {
 
     const needsPicker = pickerNeededRef.current ?? undefined;
     pickerNeededRef.current = null;
-    const assistantMsg: Message = { id: Math.random().toString(36).slice(2), role: 'assistant', text: responseText, lang: renderLangOf(lang), parsed, preview: preview ?? undefined, needsPicker };
+    const needsProductPicker = productPickerNeededRef.current ?? undefined;
+    productPickerNeededRef.current = null;
+    const assistantMsg: Message = { id: Math.random().toString(36).slice(2), role: 'assistant', text: responseText, lang: renderLangOf(lang), parsed, preview: preview ?? undefined, needsPicker, needsProductPicker };
     setMessages((m) => [...m, assistantMsg]);
     speak(responseText, renderLangOf(lang));
   };
@@ -761,14 +837,14 @@ export function AssistantPage() {
         hi: `${chosen.name} चुन लिया। भुगतान पूर्वावलोकन तैयार है, नीचे देख कर पुष्टि करें।`,
       });
     } else if (needsPicker.kind === 'customer') {
-      preview = await buildSalePreview(resumedParsed, chosen);
+      preview = await buildSalePreview(resumedParsed, chosen, '', needsPicker.resolvedProducts ?? []);
       responseText = tpl(lang, {
         en: `Selected ${chosen.name}. I have prepared the invoice. Please review and confirm.`,
         ur: `${chosen.name} منتخب کر لیا گیا۔ انوائس تیار ہے، نیچے دیکھ کر تصدیق کریں۔`,
         hi: `${chosen.name} चुन लिया। इनवॉइस तैयार है, नीचे देख कर पुष्टि करें।`,
       });
     } else {
-      preview = await buildPurchasePreview(resumedParsed, chosen);
+      preview = await buildPurchasePreview(resumedParsed, chosen, '', needsPicker.resolvedProducts ?? []);
       responseText = tpl(lang, {
         en: `Selected ${chosen.name}. I have prepared the purchase invoice. Please review and confirm.`,
         ur: `${chosen.name} منتخب کر لیا گیا۔ خریداری کی انوائس تیار ہے، نیچے دیکھ کر تصدیق کریں۔`,
@@ -805,6 +881,111 @@ export function AssistantPage() {
     const lang = needsPicker.lang;
     const text = dedicatedBlockMessage(activeContext.name, needsPicker.kind, lang);
     setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text, lang: renderLangOf(lang), needsPicker: undefined } : x)));
+  };
+
+  // Continues resolving remaining product lines after the shopkeeper
+  // answers ONE product-confirmation card, then either pauses again on
+  // the next ambiguous product (chained, one at a time) or finishes
+  // building the actual sale/purchase preview — the same resume pattern
+  // handlePickerSelect uses for party resolution. Same function for both
+  // SALE and PURCHASE (picker.txnKind), not duplicated per side.
+  const continueAfterProductResolved = async (msgId: string, picker: ProductPickerState, resolvedLine: ResolvedProductLine) => {
+    if (!shop) return;
+    const resolvedSoFar = [...picker.resolvedSoFar, resolvedLine];
+    const outcome = await resolveProductLines(shop.id, picker.rawProducts, resolvedSoFar);
+
+    if (outcome.kind === 'needs-confirmation') {
+      const nextPicker: ProductPickerState = {
+        ...picker, resolvedSoFar: outcome.resolvedSoFar, pending: outcome.pending,
+        confirmMode: outcome.confirmMode, nearMatch: outcome.nearMatch,
+      };
+      const text = outcome.confirmMode === 'confirm-new'
+        ? tpl(picker.lang, {
+            en: `I found another possible new product "${outcome.pending.name_en}" (${outcome.pending.name_ur}). Please confirm below before I save it.`,
+            ur: `ایک اور ممکنہ نیا پروڈکٹ "${outcome.pending.name_en}" (${outcome.pending.name_ur}) ملا ہے۔ محفوظ کرنے سے پہلے نیچے تصدیق کریں۔`,
+          })
+        : tpl(picker.lang, { en: 'Please confirm the next product below.', ur: 'براہ کرم نیچے اگلے پروڈکٹ کی تصدیق کریں۔' });
+      setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text, lang: renderLangOf(picker.lang), needsProductPicker: nextPicker } : x)));
+      return;
+    }
+
+    // Every product line is resolved — finish building the actual
+    // preview, exactly like a normal (unpaused) turn would.
+    let preview: SalePreview | PurchasePreview | null = null;
+    if (picker.txnKind === 'sale') {
+      preview = await buildSalePreview(picker.parsed, picker.forcedParty, picker.sourceText, outcome.lines);
+    } else {
+      preview = await buildPurchasePreview(picker.parsed, picker.forcedParty, picker.sourceText, outcome.lines);
+    }
+
+    // buildSale/PurchasePreview may itself now need to pause for PARTY
+    // resolution (a separate, pre-existing gate) — handle that exactly
+    // like finishTurn does for a fresh turn.
+    const needsPicker = pickerNeededRef.current ?? undefined;
+    pickerNeededRef.current = null;
+    let responseText: string;
+    if (picker.parsed.clarification) {
+      responseText = picker.parsed.clarification;
+    } else if (preview?.kind === 'sale') {
+      responseText = tpl(picker.lang, {
+        en: `I have prepared a sale preview for ${preview.customerName}. Please review and confirm.`,
+        ur: `${preview.customerName} کی سیل تیار کر لی گئی ہے۔ براہِ کرم نیچے دیکھ کر تصدیق کریں۔`,
+      });
+    } else if (preview?.kind === 'purchase') {
+      responseText = tpl(picker.lang, {
+        en: `I have prepared a purchase preview from ${preview.supplierName}. Please review and confirm.`,
+        ur: `${preview.supplierName} سے خریداری تیار کر لی گئی ہے۔ براہِ کرم نیچے دیکھ کر تصدیق کریں۔`,
+      });
+    } else {
+      responseText = tpl(picker.lang, {
+        en: 'Could not prepare the preview. Please try again.',
+        ur: 'پیش نظر تیار نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔',
+      });
+    }
+
+    setMessages((m) => m.map((x) => (x.id === msgId ? {
+      ...x, text: responseText, lang: renderLangOf(picker.lang), preview: preview ?? undefined, needsProductPicker: undefined, needsPicker,
+    } : x)));
+    speak(responseText, renderLangOf(picker.lang));
+  };
+
+  // "Haan, محفوظ کریں" — save the pending product as a brand-new product
+  // with the AI's proposed English/Urdu names, register its aliases, then
+  // continue resolving the rest of the message.
+  const handleProductConfirmNew = async (msgId: string, picker: ProductPickerState) => {
+    if (!shop) return;
+    const created = await createProduct(shop.id, picker.pending.name_en, picker.pending.name_ur, picker.pending.unit ?? 'piece');
+    if (!created) {
+      toast('error', tpl(picker.lang, {
+        en: 'Could not save the new product. Please try again.',
+        ur: 'نیا پروڈکٹ محفوظ نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔',
+      }));
+      return;
+    }
+    const resolvedLine: ResolvedProductLine = { ...picker.pending, productId: created.id, nameEn: created.nameEn, nameUr: created.nameUr ?? picker.pending.name_ur };
+    await continueAfterProductResolved(msgId, picker, resolvedLine);
+  };
+
+  // The suggested existing product (near-match card) IS what they meant —
+  // register the spoken variant as a new alias so it resolves silently
+  // next time, then continue.
+  const handleProductUseExisting = async (msgId: string, picker: ProductPickerState) => {
+    if (!shop || !picker.nearMatch) return;
+    await registerProductAliases(shop.id, picker.nearMatch.id, [picker.pending.name_en, picker.pending.name_ur]);
+    const resolvedLine: ResolvedProductLine = { ...picker.pending, productId: picker.nearMatch.id, nameEn: picker.nearMatch.nameEn, nameUr: picker.nearMatch.nameUr ?? picker.pending.name_ur };
+    await continueAfterProductResolved(msgId, picker, resolvedLine);
+  };
+
+  // "نہیں، نام درست کر کے دوبارہ لکھیں" on a confirm-new card — discards
+  // the whole paused command (nothing saved) so the shopkeeper can just
+  // retype the corrected product name, exactly like discardPreview does
+  // for a full preview.
+  const handleProductPickerCancel = (msgId: string, picker: ProductPickerState) => {
+    const text = tpl(picker.lang, {
+      en: 'Cancelled. Please retype the message with the correct product name.',
+      ur: 'منسوخ کر دیا گیا۔ براہ کرم درست پروڈکٹ نام کے ساتھ دوبارہ پیغام لکھیں۔',
+    });
+    setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text, lang: renderLangOf(picker.lang), needsProductPicker: undefined } : x)));
   };
 
   const send = async (text: string) => {
@@ -871,7 +1052,7 @@ export function AssistantPage() {
     }
 
     setConfirming(msg);
-    const items = preview.lines.map((l) => ({ product_id: '', product_name: l.name, unit: l.unit, quantity: l.qty, price: l.price, discount: 0, tax_rate: 0 }));
+    const items = preview.lines.map((l) => ({ product_id: l.productId ?? '', product_name: l.name, product_name_ur: l.nameUr, unit: l.unit, quantity: l.qty, price: l.price, discount: 0, tax_rate: 0 }));
     const { data, error } = await supabase.rpc('create_sale', {
       p_shop_id: shop.id, p_customer_id: preview.customerId, p_customer_name: preview.customerName,
       p_sale_date: new Date().toISOString(), p_items: items, p_discount_total: preview.discount,
@@ -902,7 +1083,7 @@ export function AssistantPage() {
     if (!shop || !user) return;
     setConfirming(msg);
     const items = preview.lines.map((l) => ({
-      product_id: '', product_name: l.name, unit: l.unit,
+      product_id: l.productId ?? '', product_name: l.name, product_name_ur: l.nameUr, unit: l.unit,
       ordered_quantity: l.qty, free_units: 0, price_per_unit: l.price,
       regular_discount: 0, special_discount: 0, scheme_discount: 0, additional_discount: 0,
       trade_offer_amount: l.trade_offer_amount ?? 0, tax_amount: 0, tax_rate: 0,
@@ -1195,6 +1376,23 @@ export function AssistantPage() {
                   />
                 )}
 
+                {/* Product-identification confirmation — same engine/gate
+                    for both SALE and PURCHASE turns. Renders inline, no
+                    modal, disappears once answered; may chain to the next
+                    ambiguous product in the same message. */}
+                {m.needsProductPicker && (
+                  <ProductConfirmCard
+                    mode={m.needsProductPicker.confirmMode}
+                    nameEn={m.needsProductPicker.pending.name_en}
+                    nameUr={m.needsProductPicker.pending.name_ur}
+                    nearMatchNameEn={m.needsProductPicker.nearMatch?.nameEn}
+                    nearMatchNameUr={m.needsProductPicker.nearMatch?.nameUr}
+                    onConfirmNew={() => handleProductConfirmNew(m.id, m.needsProductPicker!)}
+                    onUseExisting={m.needsProductPicker.confirmMode === 'near-match' ? () => handleProductUseExisting(m.id, m.needsProductPicker!) : undefined}
+                    onReject={m.needsProductPicker.confirmMode === 'confirm-new' ? () => handleProductPickerCancel(m.id, m.needsProductPicker!) : undefined}
+                  />
+                )}
+
                 {/* Sale preview card */}
                 {m.preview?.kind === 'sale' && (() => {
                   const p = m.preview;
@@ -1238,8 +1436,12 @@ export function AssistantPage() {
 
                       <div className="space-y-1">
                         {p.lines.map((l, i) => (
-                          <div key={i} className="flex justify-between text-xs">
-                            <span>{l.qty} {l.unit} {l.name} @ {formatMoney(l.price, l.currency)}{l.currency !== (shop?.currency ?? 'PKR') ? ` (${l.currency})` : ''}</span>
+                          <div key={i} className="flex items-center justify-between text-xs">
+                            <span className="flex items-baseline gap-1.5">
+                              <span>{l.qty} {l.unit} {l.name}</span>
+                              {l.nameUr && <span dir="rtl" className="text-slate-500 dark:text-slate-400">{l.nameUr}</span>}
+                              <span>@ {formatMoney(l.price, l.currency)}{l.currency !== (shop?.currency ?? 'PKR') ? ` (${l.currency})` : ''}</span>
+                            </span>
                             <span className="font-medium">{formatMoney(l.total, l.currency)}</span>
                           </div>
                         ))}
@@ -1295,8 +1497,12 @@ export function AssistantPage() {
                       <div className="space-y-2">
                         {p.lines.map((l, i) => (
                           <div key={i} className="rounded-lg bg-slate-50 p-2 dark:bg-slate-800/50">
-                            <div className="flex justify-between text-xs">
-                              <span className="font-medium">{l.qty} {l.unit} {l.name} @ {formatMoney(l.price, shop?.currency)}</span>
+                            <div className="flex items-center justify-between text-xs">
+                              <span className="flex items-baseline gap-1.5 font-medium">
+                                <span>{l.qty} {l.unit} {l.name}</span>
+                                {l.nameUr && <span dir="rtl" className="font-normal text-slate-500 dark:text-slate-400">{l.nameUr}</span>}
+                                <span>@ {formatMoney(l.price, shop?.currency)}</span>
+                              </span>
                               <span className="font-medium">{formatMoney(l.total, shop?.currency)}</span>
                             </div>
                             {/* FMCG fields */}

@@ -76,6 +76,7 @@ export type Product = {
   sku: string | null;
   barcode: string | null;
   name: string;
+  urdu_name: string | null;
   description: string | null;
   category: string | null;
   brand: string | null;
@@ -123,6 +124,7 @@ export type SaleItem = {
   shop_id: string;
   product_id: string | null;
   product_name: string;
+  product_name_ur: string | null;
   unit: string;
   quantity: number;
   price: number;
@@ -178,6 +180,7 @@ export type AuditLog = {
 export type SaleItemInput = {
   product_id?: string | null;
   product_name: string;
+  product_name_ur?: string | null;
   unit: string;
   quantity: number;
   price: number;
@@ -289,6 +292,7 @@ export type PurchaseItem = {
   shop_id: string;
   product_id: string | null;
   product_name: string;
+  product_name_ur: string | null;
   unit: string;
   ordered_quantity: number;
   free_units: number;
@@ -325,6 +329,7 @@ export type PurchaseItem = {
 export type PurchaseItemInput = {
   product_id?: string | null;
   product_name: string;
+  product_name_ur?: string | null;
   unit: string;
   ordered_quantity: number;
   free_units?: number;

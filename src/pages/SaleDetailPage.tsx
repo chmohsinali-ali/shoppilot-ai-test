@@ -218,7 +218,10 @@ export function SaleDetailPage() {
                 {items.map((it) => (
                   <tr key={it.id}>
                     <td className="py-2.5">
-                      <p className="font-medium text-slate-900 dark:text-slate-100">{it.product_name}</p>
+                      <div className="flex items-baseline gap-2">
+                        <p className="font-medium text-slate-900 dark:text-slate-100">{it.product_name}</p>
+                        {it.product_name_ur && <p dir="rtl" className="text-sm text-slate-500 dark:text-slate-400">{it.product_name_ur}</p>}
+                      </div>
                       <p className="text-xs text-slate-500">{it.unit}</p>
                     </td>
                     <td className="py-2.5 text-right text-slate-700 dark:text-slate-300">{it.quantity} {it.unit}</td>

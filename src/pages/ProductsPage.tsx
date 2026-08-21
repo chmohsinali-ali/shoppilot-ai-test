@@ -10,6 +10,7 @@ import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, formatNumber } from '@/lib/format';
+import { registerProductAliases } from '@/lib/productDictionary';
 import type { Product } from '@/types/db';
 
 const units = ['piece', 'kilogram', 'gram', 'liter', 'milliliter', 'meter', 'foot', 'pack', 'box', 'carton', 'bag', 'bottle', 'dozen', 'pair', 'roll', 'tray', 'case'];
@@ -99,7 +100,10 @@ export function ProductsPage() {
                             <Box className="h-4 w-4" />
                           </div>
                           <div className="min-w-0">
-                            <p className="truncate font-medium text-slate-900 dark:text-slate-100">{p.name}</p>
+                            <div className="flex items-baseline gap-2">
+                              <p className="truncate font-medium text-slate-900 dark:text-slate-100">{p.name}</p>
+                              {p.urdu_name && <p dir="rtl" className="flex-shrink-0 truncate text-sm text-slate-500 dark:text-slate-400">{p.urdu_name}</p>}
+                            </div>
                             {(p.sku || p.barcode) && (
                               <p className="truncate text-xs text-slate-500 dark:text-slate-400">
                                 {p.sku && <span className="flex items-center gap-1"><Barcode className="h-3 w-3" />{p.sku}</span>}
@@ -150,21 +154,21 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
   const toast = useToast();
   const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({
-    name: '', sku: '', barcode: '', category: '', brand: '', unit: 'piece',
+    name: '', urdu_name: '', sku: '', barcode: '', category: '', brand: '', unit: 'piece',
     purchase_price: 0, sale_price: 0, stock: 0, min_stock_level: 0, description: '',
   });
 
   useEffect(() => {
     if (product) {
       setForm({
-        name: product.name, sku: product.sku ?? '', barcode: product.barcode ?? '',
+        name: product.name, urdu_name: product.urdu_name ?? '', sku: product.sku ?? '', barcode: product.barcode ?? '',
         category: product.category ?? '', brand: product.brand ?? '', unit: product.unit,
         purchase_price: Number(product.purchase_price), sale_price: Number(product.sale_price),
         stock: Number(product.stock), min_stock_level: Number(product.min_stock_level),
         description: product.description ?? '',
       });
     } else {
-      setForm({ name: '', sku: '', barcode: '', category: '', brand: '', unit: 'piece', purchase_price: 0, sale_price: 0, stock: 0, min_stock_level: 0, description: '' });
+      setForm({ name: '', urdu_name: '', sku: '', barcode: '', category: '', brand: '', unit: 'piece', purchase_price: 0, sale_price: 0, stock: 0, min_stock_level: 0, description: '' });
     }
   }, [product, open]);
 
@@ -177,6 +181,7 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
     const payload = {
       shop_id: shop.id,
       name: form.name,
+      urdu_name: form.urdu_name || null,
       sku: form.sku || null,
       barcode: form.barcode || null,
       category: form.category || null,
@@ -189,13 +194,24 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
       description: form.description || null,
     };
     let res;
+    let productId = product?.id;
     if (product) {
       res = await supabase.from('products').update(payload).eq('id', product.id);
     } else {
-      res = await supabase.from('products').insert(payload);
+      const inserted = await supabase.from('products').insert(payload).select('id').maybeSingle();
+      res = inserted;
+      productId = inserted.data?.id;
     }
     setSaving(false);
     if (res.error) { toast('error', res.error.message); return; }
+
+    // Seed voice aliases for the English/Urdu name so the AI Assistant can
+    // find this product later even though it was added manually here —
+    // same product dictionary, not a separate system.
+    if (productId) {
+      await registerProductAliases(shop.id, productId, [form.name, form.urdu_name]);
+    }
+
     toast('success', product ? 'Product updated.' : 'Product added.');
     onClose();
     onSaved();
@@ -204,9 +220,14 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
   return (
     <Modal open={open} onClose={onClose} title={product ? 'Edit Product' : 'Add Product'} size="md">
       <form onSubmit={submit} className="space-y-4">
-        <Field label="Product name">
-          <Input required placeholder="Sugar" value={form.name} onChange={(e) => update('name', e.target.value)} />
-        </Field>
+        <div className="grid grid-cols-2 gap-4">
+          <Field label="Product name (English)">
+            <Input required placeholder="Sugar" value={form.name} onChange={(e) => update('name', e.target.value)} />
+          </Field>
+          <Field label="Product name (Urdu, optional)">
+            <Input dir="rtl" placeholder="چینی" value={form.urdu_name} onChange={(e) => update('urdu_name', e.target.value)} />
+          </Field>
+        </div>
         <div className="grid grid-cols-2 gap-4">
           <Field label="SKU (optional)"><Input placeholder="SUG-001" value={form.sku} onChange={(e) => update('sku', e.target.value)} /></Field>
           <Field label="Barcode (optional)"><Input placeholder="8964000..." value={form.barcode} onChange={(e) => update('barcode', e.target.value)} /></Field>
