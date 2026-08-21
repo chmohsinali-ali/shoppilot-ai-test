@@ -13,6 +13,7 @@ import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, formatDateTime } from '@/lib/format';
+import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 import type { Customer, LedgerEntry } from '@/types/db';
 
 export function CustomerDetailPage() {
@@ -33,7 +34,8 @@ export function CustomerDetailPage() {
     setLoading(true);
     const [cust, ledg, bal] = await Promise.all([
       supabase.from('customers').select('*').eq('id', id).maybeSingle(),
-      supabase.from('customer_ledger').select('*').eq('customer_id', id).order('transaction_date', { ascending: false }),
+      supabase.from('customer_ledger').select('*').eq('customer_id', id)
+        .order('transaction_date', { ascending: true }).order('created_at', { ascending: true }),
       supabase.rpc('get_customer_balance', { p_customer_id: id }),
     ]);
     setCustomer(cust.data as Customer | null);
@@ -193,6 +195,10 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop || !user) return;
+    if (form.primary_phone.trim()) {
+      const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
+      if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+    }
     setSaving(true);
     const { error } = await supabase.from('customers').update({
       full_name: form.full_name, business_name: form.business_name || null,
@@ -200,7 +206,12 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
       customer_type: form.customer_type, address_line1: form.address_line1 || null,
       city: form.city || null, notes: form.notes || null, updated_at: new Date().toISOString(),
     }).eq('id', customer.id);
-    if (error) { setSaving(false); toast('error', error.message); return; }
+    if (error) {
+      setSaving(false);
+      if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+      toast('error', error.message);
+      return;
+    }
     await supabase.from('audit_logs').insert({ shop_id: shop.id, user_id: user.id, action: 'customer.update', entity_type: 'customer', entity_id: customer.id, metadata: { name: form.full_name } });
     setSaving(false); toast('success', 'Customer updated.'); onClose(); onSaved();
   };

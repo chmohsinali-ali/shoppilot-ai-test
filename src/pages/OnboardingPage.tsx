@@ -136,11 +136,9 @@ export function OnboardingPage() {
               <Field label="Currency">
                 <Select value={form.currency} onChange={(e) => update('currency', e.target.value)}>
                   <option value="PKR">PKR — Pakistani Rupee</option>
-                  <option value="INR">INR — Indian Rupee</option>
                   <option value="USD">USD — US Dollar</option>
                   <option value="EUR">EUR — Euro</option>
-                  <option value="AED">AED — UAE Dirham</option>
-                  <option value="SAR">SAR — Saudi Riyal</option>
+                  <option value="CAD">CAD — Canadian Dollar</option>
                 </Select>
               </Field>
             </div>

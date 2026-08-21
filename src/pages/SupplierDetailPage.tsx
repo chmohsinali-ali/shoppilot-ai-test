@@ -13,6 +13,7 @@ import { Modal } from '@/components/ui/Modal';
 import { EmptyState, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, formatDateTime, formatDate } from '@/lib/format';
+import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_SUPPLIER } from '@/lib/partyValidation';
 import type { Supplier, SupplierLedgerEntry, Purchase } from '@/types/db';
 
 export function SupplierDetailPage() {
@@ -34,7 +35,8 @@ export function SupplierDetailPage() {
     setLoading(true);
     const [sup, ledg, pur, bal] = await Promise.all([
       supabase.from('suppliers').select('*').eq('id', id).maybeSingle(),
-      supabase.from('supplier_ledger').select('*').eq('supplier_id', id).order('transaction_date', { ascending: false }),
+      supabase.from('supplier_ledger').select('*').eq('supplier_id', id)
+        .order('transaction_date', { ascending: true }).order('created_at', { ascending: true }),
       supabase.from('purchases').select('*').eq('supplier_id', id).order('purchase_date', { ascending: false }).limit(10),
       supabase.rpc('get_supplier_balance', { p_supplier_id: id }),
     ]);
@@ -162,6 +164,10 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop || !user) return;
+    if (form.primary_phone.trim()) {
+      const used = await phoneAlreadyUsed('suppliers', shop.id, form.primary_phone, supplier.id);
+      if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_SUPPLIER); return; }
+    }
     setSaving(true);
     const { error } = await supabase.from('suppliers').update({
       supplier_name: form.supplier_name, company_name: form.company_name || null,
@@ -170,7 +176,12 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
       channel: form.channel || null, route: form.route || null, city: form.city || null,
       notes: form.notes || null, updated_at: new Date().toISOString(),
     }).eq('id', supplier.id);
-    if (error) { setSaving(false); toast('error', error.message); return; }
+    if (error) {
+      setSaving(false);
+      if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_SUPPLIER); return; }
+      toast('error', error.message);
+      return;
+    }
     await supabase.from('audit_logs').insert({ shop_id: shop.id, user_id: user.id, action: 'supplier.update', entity_type: 'supplier', entity_id: supplier.id, metadata: { name: form.supplier_name } });
     setSaving(false); toast('success', 'Supplier updated.'); onClose(); onSaved();
   };

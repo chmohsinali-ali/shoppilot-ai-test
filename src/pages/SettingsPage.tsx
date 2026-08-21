@@ -85,11 +85,9 @@ export function SettingsPage() {
             <Field label="Currency">
               <Select value={form.currency} onChange={(e) => update('currency', e.target.value)}>
                 <option value="PKR">PKR — Pakistani Rupee</option>
-                <option value="INR">INR — Indian Rupee</option>
                 <option value="USD">USD — US Dollar</option>
                 <option value="EUR">EUR — Euro</option>
-                <option value="AED">AED — UAE Dirham</option>
-                <option value="SAR">SAR — Saudi Riyal</option>
+                <option value="CAD">CAD — Canadian Dollar</option>
               </Select>
             </Field>
           </CardBody>
@@ -145,6 +143,9 @@ export function SettingsPage() {
               </p>
               <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
                 Optional: <code className="rounded bg-slate-100 px-1 py-0.5 dark:bg-slate-800">AI_BASE_URL</code> and <code className="rounded bg-slate-100 px-1 py-0.5 dark:bg-slate-800">AI_MODEL</code> to use a different provider.
+              </p>
+              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+                Voice input (the mic button) uses the same key for speech-to-text transcription — no separate setup needed.
               </p>
               <p className="mt-2 text-xs text-amber-600 dark:text-amber-400">Until the key is added, the assistant works in manual mode and the app stays fully usable.</p>
             </div>

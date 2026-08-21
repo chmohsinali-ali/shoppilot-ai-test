@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo, FormEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Users, Search, Plus, Phone, Wallet, ArrowRight, User, Pencil, Trash2 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
@@ -11,6 +11,8 @@ import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney } from '@/lib/format';
+import { EmbeddedPartyPicker } from '@/components/EmbeddedPartyPicker';
+import { findExactNameMatches, phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 import type { Customer } from '@/types/db';
 
 type CustomerWithBalance = Customer & { balance: number };
@@ -168,8 +170,11 @@ export function CustomersPage() {
 
 function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose: () => void; onCreated: () => void }) {
   const { shop } = useAuth();
+  const navigate = useNavigate();
   const toast = useToast();
   const [saving, setSaving] = useState(false);
+  const [checking, setChecking] = useState(false);
+  const [dupNames, setDupNames] = useState(false);
   const [form, setForm] = useState({
     full_name: '',
     business_name: '',
@@ -185,15 +190,21 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
 
   const update = (k: string, v: string | number) => setForm((f) => ({ ...f, [k]: v }));
 
-  const reset = () => setForm({
-    full_name: '', business_name: '', primary_phone: '', whatsapp_number: '',
-    customer_type: 'retail', address_line1: '', city: '', notes: '',
-    opening_balance: 0, opening_balance_type: 'customer_owes',
-  });
+  const reset = () => {
+    setForm({
+      full_name: '', business_name: '', primary_phone: '', whatsapp_number: '',
+      customer_type: 'retail', address_line1: '', city: '', notes: '',
+      opening_balance: 0, opening_balance_type: 'customer_owes',
+    });
+    setDupNames(false);
+  };
 
-  const submit = async (e: FormEvent) => {
-    e.preventDefault();
+  const doInsert = async () => {
     if (!shop) return;
+    if (form.primary_phone.trim()) {
+      const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone);
+      if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+    }
     setSaving(true);
     const { error } = await supabase.from('customers').insert({
       shop_id: shop.id,
@@ -209,7 +220,11 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
       opening_balance_type: form.opening_balance_type,
     });
     setSaving(false);
-    if (error) { toast('error', error.message); return; }
+    if (error) {
+      if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+      toast('error', error.message);
+      return;
+    }
 
     if (form.opening_balance > 0 && form.opening_balance_type === 'customer_owes') {
       await supabase.from('customer_ledger').insert({
@@ -228,56 +243,87 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
     onCreated();
   };
 
+  const submit = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!shop) return;
+    setChecking(true);
+    const matches = await findExactNameMatches('customers', 'full_name', shop.id, form.full_name);
+    setChecking(false);
+    if (matches > 0) { setDupNames(true); return; }
+    await doInsert();
+  };
+
+  const handleClose = () => { reset(); onClose(); };
+
   return (
-    <Modal open={open} onClose={onClose} title="Add Customer" size="md">
-      <form onSubmit={submit} className="space-y-4">
-        <Field label="Full name">
-          <Input required placeholder="Mohsin Khan" value={form.full_name} onChange={(e) => update('full_name', e.target.value)} />
-        </Field>
-        <Field label="Business name (optional)">
-          <Input placeholder="Khan Trading Co." value={form.business_name} onChange={(e) => update('business_name', e.target.value)} />
-        </Field>
-        <div className="grid grid-cols-2 gap-4">
-          <Field label="Phone">
-            <Input placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
-          </Field>
-          <Field label="WhatsApp">
-            <Input placeholder="0300 1234567" value={form.whatsapp_number} onChange={(e) => update('whatsapp_number', e.target.value)} />
-          </Field>
+    <Modal open={open} onClose={handleClose} title="Add Customer" size="md">
+      {dupNames ? (
+        <div className="space-y-3">
+          <p dir="rtl" className="rounded-lg bg-amber-50 px-3 py-2.5 text-right text-sm font-medium text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
+            "{form.full_name}" نام کے کسٹمر پہلے سے موجود ہیں۔ نیچے نام، نمبر اور بیلنس دیکھ کر تصدیق کریں کہ کون سا کسٹمر ہے۔
+          </p>
+          <EmbeddedPartyPicker
+            kind="customer"
+            shopId={shop!.id}
+            currency={shop?.currency}
+            initialSearch={form.full_name}
+            onSelect={(chosen) => { onClose(); navigate(`/customers/${chosen.id}`); }}
+            onAddNew={() => { setDupNames(false); doInsert(); }}
+          />
+          <div className="flex justify-end pt-1">
+            <Button type="button" variant="outline" onClick={() => setDupNames(false)}>Back</Button>
+          </div>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          <Field label="Customer type">
-            <Select value={form.customer_type} onChange={(e) => update('customer_type', e.target.value)}>
-              <option value="retail">Retail</option>
-              <option value="wholesale">Wholesale</option>
-              <option value="walk_in">Walk-in</option>
-              <option value="regular">Regular</option>
-              <option value="vip">VIP</option>
-            </Select>
+      ) : (
+        <form onSubmit={submit} className="space-y-4">
+          <Field label="Full name">
+            <Input required placeholder="Mohsin Khan" value={form.full_name} onChange={(e) => update('full_name', e.target.value)} />
           </Field>
-          <Field label="Opening balance">
-            <Input type="number" min={0} step="0.01" value={form.opening_balance} onChange={(e) => update('opening_balance', parseFloat(e.target.value) || 0)} />
+          <Field label="Business name (optional)">
+            <Input placeholder="Khan Trading Co." value={form.business_name} onChange={(e) => update('business_name', e.target.value)} />
           </Field>
-        </div>
-        {form.opening_balance > 0 && (
-          <Field label="Opening balance type">
-            <Select value={form.opening_balance_type} onChange={(e) => update('opening_balance_type', e.target.value)}>
-              <option value="customer_owes">Customer owes shop</option>
-              <option value="shop_owes">Shop owes customer</option>
-            </Select>
+          <div className="grid grid-cols-2 gap-4">
+            <Field label="Phone">
+              <Input placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
+            </Field>
+            <Field label="WhatsApp">
+              <Input placeholder="0300 1234567" value={form.whatsapp_number} onChange={(e) => update('whatsapp_number', e.target.value)} />
+            </Field>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <Field label="Customer type">
+              <Select value={form.customer_type} onChange={(e) => update('customer_type', e.target.value)}>
+                <option value="retail">Retail</option>
+                <option value="wholesale">Wholesale</option>
+                <option value="walk_in">Walk-in</option>
+                <option value="regular">Regular</option>
+                <option value="vip">VIP</option>
+              </Select>
+            </Field>
+            <Field label="Opening balance">
+              <Input type="number" min={0} step="0.01" value={form.opening_balance} onChange={(e) => update('opening_balance', parseFloat(e.target.value) || 0)} />
+            </Field>
+          </div>
+          {form.opening_balance > 0 && (
+            <Field label="Opening balance type">
+              <Select value={form.opening_balance_type} onChange={(e) => update('opening_balance_type', e.target.value)}>
+                <option value="customer_owes">Customer owes shop</option>
+                <option value="shop_owes">Shop owes customer</option>
+              </Select>
+            </Field>
+          )}
+          <Field label="Address (optional)">
+            <Input placeholder="House, street, area" value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} />
           </Field>
-        )}
-        <Field label="Address (optional)">
-          <Input placeholder="House, street, area" value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} />
-        </Field>
-        <Field label="City (optional)">
-          <Input placeholder="Karachi" value={form.city} onChange={(e) => update('city', e.target.value)} />
-        </Field>
-        <div className="flex justify-end gap-2 pt-2">
-          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
-          <Button type="submit" loading={saving}>Save Customer</Button>
-        </div>
-      </form>
+          <Field label="City (optional)">
+            <Input placeholder="Karachi" value={form.city} onChange={(e) => update('city', e.target.value)} />
+          </Field>
+          <div className="flex justify-end gap-2 pt-2">
+            <Button type="button" variant="outline" onClick={handleClose}>Cancel</Button>
+            <Button type="submit" loading={saving || checking}>Save Customer</Button>
+          </div>
+        </form>
+      )}
     </Modal>
   );
 }
@@ -302,6 +348,10 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop || !user) return;
+    if (form.primary_phone.trim()) {
+      const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
+      if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+    }
     setSaving(true);
     const { error } = await supabase.from('customers').update({
       full_name: form.full_name,
@@ -314,7 +364,12 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
       notes: form.notes || null,
       updated_at: new Date().toISOString(),
     }).eq('id', customer.id);
-    if (error) { setSaving(false); toast('error', error.message); return; }
+    if (error) {
+      setSaving(false);
+      if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+      toast('error', error.message);
+      return;
+    }
     await supabase.from('audit_logs').insert({
       shop_id: shop.id, user_id: user.id, action: 'customer.update',
       entity_type: 'customer', entity_id: customer.id,

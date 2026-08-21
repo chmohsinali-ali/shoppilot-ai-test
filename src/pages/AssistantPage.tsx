@@ -1,20 +1,22 @@
 import { useEffect, useRef, useState, FormEvent } from 'react';
 import { useNavigate, useSearchParams, Link } from 'react-router-dom';
 import {
-  Sparkles, Mic, Send, MicOff, Check, X, Edit, User, ShoppingBag,
-  Wallet, Package,
+  Sparkles, Mic, Send, Square, Check, X, Edit, User, ShoppingBag,
+  Wallet, Package, Volume2, VolumeX,
 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
 import { PageHeader } from '@/components/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
+import { Textarea } from '@/components/ui/Input';
 import { useToast } from '@/components/ui/Toast';
 import { EmbeddedPartyPicker, PickedParty } from '@/components/EmbeddedPartyPicker';
 import { PartyConfirmCard, ConfirmCandidate } from '@/components/PartyConfirmCard';
 import { isNearMatch, levenshteinDistance, compareToContextName } from '@/lib/nameMatch';
 import { formatMoney } from '@/lib/format';
+import { VoiceRecorder, blobToBase64 } from '@/lib/voiceRecorder';
+import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 
 type ParsedCommand = {
   intent: string;
@@ -46,7 +48,15 @@ type PaymentPreview = {
   percentOfTotal: number | null;
   previousBalance: number | null;
   newBalance: number | null;
+  lowConfidence: boolean;
 };
+
+// Below this, the AI itself was not fully sure of what it extracted (see
+// the edge function's confidence-scoring rules) — the shopkeeper still
+// must press Confirm before anything saves either way, but a low score
+// gets a visible "double check this" banner so a noisy-market
+// mis-transcription doesn't get waved through on autopilot.
+const LOW_CONFIDENCE_THRESHOLD = 0.6;
 
 // The language a message should actually be DISPLAYED/rendered in. Distinct
 // from ReplyLang below, which is the (finer-grained) category detected from
@@ -143,6 +153,7 @@ type SalePreview = {
   paymentPercent: number | null;
   balance: number;
   currencyWarning: string | null;
+  lowConfidence: boolean;
 };
 
 type PurchasePreview = {
@@ -163,6 +174,7 @@ type PurchasePreview = {
   grandTotal: number;
   amountPaid: number;
   balance: number;
+  lowConfidence: boolean;
 };
 
 const SUGGESTIONS = [
@@ -213,8 +225,11 @@ export function AssistantPage() {
   });
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const [listening, setListening] = useState(false);
+  const [recording, setRecording] = useState(false);
+  const [transcribing, setTranscribing] = useState(false);
+  const [micLevel, setMicLevel] = useState(0);
   const [voiceLang, setVoiceLang] = useState<'ur-PK' | 'en-PK' | 'hi-IN'>('en-PK');
+  const [speakReplies, setSpeakReplies] = useState(true);
   const [confirming, setConfirming] = useState<Message | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
 
@@ -231,7 +246,8 @@ export function AssistantPage() {
   // a phone number before it can be confirmed/saved.
   const [phoneDrafts, setPhoneDrafts] = useState<Record<string, string>>({});
   const scrollRef = useRef<HTMLDivElement>(null);
-  const recognitionRef = useRef<any>(null);
+  const recorderRef = useRef<VoiceRecorder | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Persist chat history so navigating away (e.g. tapping "View invoice"
   // or opening a customer page) and coming back does NOT reset the
@@ -277,6 +293,22 @@ export function AssistantPage() {
     const json = await res.json();
     if (!json.success) throw new Error(json.error?.message ?? 'AI error');
     return json.data as ParsedCommand;
+  };
+
+  // Reads an assistant reply aloud using the browser's built-in
+  // speech-synthesis voice for the language it was rendered in — no extra
+  // API/cost needed for this direction (unlike voice INPUT, output doesn't
+  // need noise-robustness, so the free built-in engine is sufficient).
+  const speak = (text: string, lang: RenderLang) => {
+    if (!speakReplies || !text) return;
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    try {
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = lang === 'ur' ? 'ur-PK' : lang === 'hi' ? 'hi-IN' : 'en-US';
+      utter.rate = 0.95;
+      window.speechSynthesis.speak(utter);
+    } catch { /* speech synthesis unavailable/blocked — silent no-op */ }
   };
 
   const fetchBalance = async (table: 'customers' | 'suppliers', id: string): Promise<number | undefined> => {
@@ -477,7 +509,7 @@ export function AssistantPage() {
       const { data: bal } = await supabase.rpc('get_customer_balance', { p_customer_id: customerId });
       previousBalance = typeof bal === 'number' ? bal : 0;
     }
-    return { kind: 'sale', customerName, customerId, customerPhone, isNewCustomer, previousBalance, lines, subtotal, discount, grandTotal, amountPaid, paymentPercent, balance, currencyWarning };
+    return { kind: 'sale', customerName, customerId, customerPhone, isNewCustomer, previousBalance, lines, subtotal, discount, grandTotal, amountPaid, paymentPercent, balance, currencyWarning, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD };
   };
 
   const buildPurchasePreview = async (parsed: ParsedCommand, forcedParty?: { id: string; name: string }, sourceText: string = ''): Promise<PurchasePreview | null> => {
@@ -559,7 +591,7 @@ export function AssistantPage() {
         }
       }
     }
-    return { kind: 'purchase', supplierName, supplierId, lines, subtotal, totalTradeOffer, totalFurtherTax, totalAdvanceTax, grandTotal, amountPaid, balance };
+    return { kind: 'purchase', supplierName, supplierId, lines, subtotal, totalTradeOffer, totalFurtherTax, totalAdvanceTax, grandTotal, amountPaid, balance, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD };
   };
 
   const buildPaymentPreview = async (parsed: ParsedCommand, forcedParty?: { id: string; name: string }, sourceText: string = ''): Promise<PaymentPreview | null> => {
@@ -631,7 +663,7 @@ export function AssistantPage() {
     const currency = parsed.entities.payment.currency ?? shop?.currency ?? 'PKR';
     const percentOfTotal = parsed.entities.payment.percent_of_total ?? null;
     const newBalance = previousBalance != null ? Math.max(0, previousBalance - amount) : null;
-    return { kind: 'payment', customerName, customerId, amount, currency, percentOfTotal, previousBalance, newBalance };
+    return { kind: 'payment', customerName, customerId, amount, currency, percentOfTotal, previousBalance, newBalance, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD };
   };
 
   const buildPreview = async (parsed: ParsedCommand, sourceText: string = ''): Promise<SalePreview | PurchasePreview | PaymentPreview | null> => {
@@ -707,6 +739,7 @@ export function AssistantPage() {
     pickerNeededRef.current = null;
     const assistantMsg: Message = { id: Math.random().toString(36).slice(2), role: 'assistant', text: responseText, lang: renderLangOf(lang), parsed, preview: preview ?? undefined, needsPicker };
     setMessages((m) => [...m, assistantMsg]);
+    speak(responseText, renderLangOf(lang));
   };
 
   // Called when the shopkeeper clicks a customer/supplier inside a picker
@@ -826,8 +859,14 @@ export function AssistantPage() {
         return;
       }
       if (preview.customerId) {
+        const used = await phoneAlreadyUsed('customers', shop.id, phone, preview.customerId);
+        if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
         const { error: phoneErr } = await supabase.from('customers').update({ primary_phone: phone }).eq('id', preview.customerId);
-        if (phoneErr) { toast('error', phoneErr.message); return; }
+        if (phoneErr) {
+          if (isDuplicatePhoneError(phoneErr)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+          toast('error', phoneErr.message);
+          return;
+        }
       }
     }
 
@@ -843,12 +882,19 @@ export function AssistantPage() {
     if (error) { toast('error', error.message); return; }
     toast('success', 'Sale confirmed and saved!');
     setPhoneDrafts((d) => { const next = { ...d }; delete next[msg.id]; return next; });
+    const itemCount = preview.lines.length;
+    const confirmLang = detectReplyLang(msg.text);
+    const confirmText = tpl(confirmLang, {
+      en: `Sale confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Previous balance ${formatMoney(preview.previousBalance, shop?.currency)}, new balance ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}.`,
+      ur: `سیل تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ پچھلا بیلنس ${formatMoney(preview.previousBalance, shop?.currency)}، نیا بیلنس ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}۔`,
+    });
     setMessages((m) => m.map((x) => (x.id === msg.id ? {
-      ...x, preview: undefined, text: 'Sale confirmed and saved to the customer ledger.', lang: 'en',
+      ...x, preview: undefined, text: confirmText, lang: renderLangOf(confirmLang),
       savedLink: `/sales/${data}`,
       savedAccountLink: preview.customerId ? `/customers/${preview.customerId}` : undefined,
       savedAccountLabel: preview.customerId ? `View ${preview.customerName}'s account` : undefined,
     } : x)));
+    speak(confirmText, renderLangOf(confirmLang));
     // Stay on the AI Assistant page — do NOT navigate away.
   };
 
@@ -876,12 +922,19 @@ export function AssistantPage() {
     setConfirming(null);
     if (error) { toast('error', error.message); return; }
     toast('success', 'Purchase confirmed and saved!');
+    const itemCount = preview.lines.length;
+    const confirmLang = detectReplyLang(msg.text);
+    const confirmText = tpl(confirmLang, {
+      en: `Purchase confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Balance payable ${formatMoney(preview.balance, shop?.currency)}.`,
+      ur: `خریداری تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ ادا کرنے والا بیلنس ${formatMoney(preview.balance, shop?.currency)}۔`,
+    });
     setMessages((m) => m.map((x) => (x.id === msg.id ? {
-      ...x, preview: undefined, text: 'Purchase confirmed and saved to the supplier ledger.', lang: 'en',
+      ...x, preview: undefined, text: confirmText, lang: renderLangOf(confirmLang),
       savedLink: `/purchases/${data}`,
       savedAccountLink: preview.supplierId ? `/suppliers/${preview.supplierId}` : undefined,
       savedAccountLabel: preview.supplierId ? `View ${preview.supplierName}'s account` : undefined,
     } : x)));
+    speak(confirmText, renderLangOf(confirmLang));
     // Stay on the AI Assistant page — do NOT navigate away.
   };
 
@@ -896,14 +949,23 @@ export function AssistantPage() {
     if (error) { toast('error', error.message); return; }
     toast('success', 'Payment recorded!');
     const newBal = typeof data === 'number' ? data : preview.newBalance;
+    const confirmLang = detectReplyLang(msg.text);
+    const confirmText = newBal != null
+      ? tpl(confirmLang, {
+          en: `Payment of ${formatMoney(preview.amount, preview.currency)} recorded for ${preview.customerName}. Previous balance ${formatMoney(preview.previousBalance ?? 0, shop?.currency)}, new balance ${formatMoney(newBal, shop?.currency)}.`,
+          ur: `${preview.customerName} کے لیے ${formatMoney(preview.amount, preview.currency)} ادائیگی ریکارڈ ہو گئی۔ پچھلا بیلنس ${formatMoney(preview.previousBalance ?? 0, shop?.currency)}، نیا بیلنس ${formatMoney(newBal, shop?.currency)}۔`,
+        })
+      : tpl(confirmLang, {
+          en: 'Payment recorded and added to the customer ledger.',
+          ur: 'ادائیگی ریکارڈ ہو کر کسٹمر لیجر میں شامل کر دی گئی۔',
+        });
     setMessages((m) => m.map((x) => (x.id === msg.id ? {
-      ...x, preview: undefined, lang: 'en',
-      text: newBal != null
-        ? `Payment recorded. ${preview.customerName}'s new balance is ${formatMoney(newBal, shop?.currency)}.`
-        : 'Payment recorded and added to the customer ledger.',
+      ...x, preview: undefined, lang: renderLangOf(confirmLang),
+      text: confirmText,
       savedAccountLink: preview.customerId ? `/customers/${preview.customerId}` : undefined,
       savedAccountLabel: preview.customerId ? `View ${preview.customerName}'s account` : undefined,
     } : x)));
+    speak(confirmText, renderLangOf(confirmLang));
   };
 
   const confirm = (msg: Message) => {
@@ -943,22 +1005,100 @@ export function AssistantPage() {
     });
   };
 
-  // Voice input. Browser speech-recognition engines require a fixed
-  // language to be set BEFORE listening starts — they cannot detect which
-  // language is being spoken and switch mid-stream. The shopkeeper picks
-  // their speaking language once via the toggle next to the mic button;
-  // it stays selected across messages until changed.
-  const toggleVoice = () => {
-    if (listening) { recognitionRef.current?.stop(); setListening(false); return; }
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR) { toast('error', 'Voice input is not supported in this browser. Try Chrome or Edge.'); return; }
-    const rec = new SR();
-    rec.lang = voiceLang; rec.interimResults = false; rec.continuous = false;
-    rec.onresult = (e: any) => { const transcript = e.results[0][0].transcript; setInput(transcript); setListening(false); };
-    rec.onerror = () => { setListening(false); toast('error', 'Voice recognition failed. Please try again.'); };
-    rec.onend = () => setListening(false);
-    rec.start(); setListening(true); recognitionRef.current = rec;
+  // Voice input. Records raw audio (with browser-level noise suppression /
+  // echo cancellation / auto-gain applied via getUserMedia constraints,
+  // plus our own adaptive-threshold voice-activity detection — see
+  // src/lib/voiceRecorder.ts) and sends it to a server-side Whisper
+  // transcription instead of relying on the browser's built-in
+  // SpeechRecognition, which offers no noise-handling control and doesn't
+  // work at all on iOS Safari. The shopkeeper picks their speaking
+  // language once via the toggle next to the mic button (used as a
+  // transcription hint); it stays selected across messages until changed.
+  const startVoice = async () => {
+    if (!VoiceRecorder.isSupported()) {
+      toast('error', tpl(voiceLang === 'ur-PK' ? 'ur' : 'en', {
+        en: 'Voice input is not supported in this browser. Try Chrome or Edge.',
+        ur: 'اس براؤزر میں وائس ان پٹ سپورٹ نہیں ہے۔ Chrome یا Edge استعمال کریں۔',
+      }));
+      return;
+    }
+    try {
+      const rec = new VoiceRecorder({
+        onLevel: (l) => setMicLevel(l),
+        onAutoStop: () => { stopVoice(); },
+        silenceStopMs: 2500,
+        maxDurationMs: 60000,
+      });
+      await rec.start();
+      recorderRef.current = rec;
+      setRecording(true);
+    } catch {
+      toast('error', tpl(voiceLang === 'ur-PK' ? 'ur' : 'en', {
+        en: 'Could not access the microphone. Please allow microphone permission and try again.',
+        ur: 'مائیک تک رسائی نہیں ہو سکی۔ براہ کرم مائیکروفون کی اجازت دیں اور دوبارہ کوشش کریں۔',
+      }));
+    }
   };
+
+  const stopVoice = async () => {
+    const rec = recorderRef.current;
+    if (!rec) return;
+    recorderRef.current = null;
+    setRecording(false);
+    setMicLevel(0);
+    setTranscribing(true);
+    const uiLang: ReplyLang = voiceLang === 'ur-PK' ? 'ur' : voiceLang === 'hi-IN' ? 'hi' : 'en';
+    try {
+      const { blob, mimeType } = await rec.stop();
+      if (blob.size < 800) { setTranscribing(false); return; } // essentially silent/empty capture
+      const base64 = await blobToBase64(blob);
+      const langCode = voiceLang === 'ur-PK' ? 'ur' : voiceLang === 'hi-IN' ? 'hi' : 'en';
+      const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/voice-transcribe`;
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}` },
+        body: JSON.stringify({ audio: base64, mimeType, language: langCode }),
+      });
+      const json = await res.json();
+      if (!res.ok || !json.success) throw new Error(json.error?.message ?? 'Voice recognition failed.');
+      const { text, confidence } = json.data as { text: string; confidence: number };
+      if (!text) {
+        toast('error', tpl(uiLang, {
+          en: 'Could not hear anything clearly. Please try again, closer to the microphone.',
+          ur: 'کچھ واضح سنائی نہیں دیا۔ براہ کرم مائیک کے قریب ہو کر دوبارہ کوشش کریں۔',
+        }));
+      } else {
+        setInput((prev) => (prev ? `${prev} ${text}` : text));
+        if (confidence < 0.5) {
+          toast('error', tpl(uiLang, {
+            en: 'Background noise may have affected this. Please review the text below before sending.',
+            ur: 'شور کی وجہ سے متن میں غلطی ہو سکتی ہے۔ بھیجنے سے پہلے نیچے دیا گیا متن ضرور چیک کریں۔',
+          }));
+        }
+      }
+    } catch (err) {
+      toast('error', err instanceof Error ? err.message : 'Voice recognition failed.');
+    } finally {
+      setTranscribing(false);
+    }
+  };
+
+  const cancelVoice = () => {
+    recorderRef.current?.cancel();
+    recorderRef.current = null;
+    setRecording(false);
+    setMicLevel(0);
+  };
+
+  // Transcript textarea auto-resizes to fit its content (up to a max
+  // height) so a long voice transcript is never cramped into a fixed
+  // single-line box — no manual pinch/zoom/resize needed on mobile.
+  useEffect(() => {
+    const el = textareaRef.current;
+    if (!el) return;
+    el.style.height = 'auto';
+    el.style.height = `${Math.min(el.scrollHeight, 160)}px`;
+  }, [input]);
 
   const onSubmit = (e: FormEvent) => { e.preventDefault(); send(input); };
 
@@ -1065,6 +1205,12 @@ export function AssistantPage() {
                         <span className="text-sm font-semibold">Sale Preview — {p.customerName}</span>
                       </div>
 
+                      {p.lowConfidence && (
+                        <div dir="rtl" className="mb-2 rounded bg-red-50 px-2.5 py-1.5 text-right text-[11px] font-medium text-red-700 dark:bg-red-950/30 dark:text-red-400">
+                          ⚠ AI کو اس آرڈر کی تفصیل پر پوری یقین نہیں — تصدیق کرنے سے پہلے آئٹمز، مقدار اور ریٹ غور سے چیک کریں۔
+                        </div>
+                      )}
+
                       {/* Customer summary: name, phone, previous balance — always visible */}
                       <div className="mb-2 space-y-1.5 rounded-lg bg-slate-50 p-2.5 text-xs dark:bg-slate-800/50">
                         <div className="flex justify-between"><span className="text-slate-500">Customer Name</span><span className="font-medium">{p.customerName}</span></div>
@@ -1141,6 +1287,11 @@ export function AssistantPage() {
                         <Package className="h-4 w-4 text-amber-600" />
                         <span className="text-sm font-semibold">Purchase Preview — {p.supplierName}</span>
                       </div>
+                      {p.lowConfidence && (
+                        <div dir="rtl" className="mb-2 rounded bg-red-50 px-2.5 py-1.5 text-right text-[11px] font-medium text-red-700 dark:bg-red-950/30 dark:text-red-400">
+                          ⚠ AI کو اس آرڈر کی تفصیل پر پوری یقین نہیں — تصدیق کرنے سے پہلے آئٹمز، مقدار اور ریٹ غور سے چیک کریں۔
+                        </div>
+                      )}
                       <div className="space-y-2">
                         {p.lines.map((l, i) => (
                           <div key={i} className="rounded-lg bg-slate-50 p-2 dark:bg-slate-800/50">
@@ -1203,6 +1354,11 @@ export function AssistantPage() {
                         <Wallet className="h-4 w-4 text-emerald-600" />
                         <span className="text-sm font-semibold">Payment Preview — {p.customerName}</span>
                       </div>
+                      {p.lowConfidence && (
+                        <div dir="rtl" className="mb-2 rounded bg-red-50 px-2.5 py-1.5 text-right text-[11px] font-medium text-red-700 dark:bg-red-950/30 dark:text-red-400">
+                          ⚠ AI کو اس تفصیل پر پوری یقین نہیں — تصدیق کرنے سے پہلے رقم اور نام غور سے چیک کریں۔
+                        </div>
+                      )}
                       <div className="space-y-0.5 text-xs">
                         {p.previousBalance != null && (
                           <div className="flex justify-between"><span>Previous balance</span><span>{formatMoney(p.previousBalance, shop?.currency)}</span></div>
@@ -1283,16 +1439,54 @@ export function AssistantPage() {
               </button>
             </div>
           )}
-          <div className="flex items-center gap-2">
+
+          {/* Live recording indicator — clearly shows the mic is active and
+              actually hearing something (real-time level meter driven by
+              mic energy, not decorative), plus an explicit Stop so the
+              shopkeeper is never unsure whether it's still listening. */}
+          {recording && (
+            <div className="mb-2 flex items-center gap-3 rounded-lg bg-red-50 px-3 py-2 dark:bg-red-950/30">
+              <span className="relative flex h-2.5 w-2.5 flex-shrink-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-red-600" />
+              </span>
+              <div className="flex flex-1 items-end gap-0.5" style={{ height: 20 }}>
+                {[0.7, 1, 0.85, 1, 0.6].map((mult, i) => (
+                  <span
+                    key={i}
+                    className="w-1 flex-shrink-0 rounded-full bg-red-500 transition-all duration-75"
+                    style={{ height: `${Math.max(15, Math.min(100, micLevel * mult * 100))}%` }}
+                  />
+                ))}
+              </div>
+              <span dir="rtl" className="flex-shrink-0 text-xs font-medium text-red-700 dark:text-red-400">سن رہا ہوں...</span>
+              <button type="button" onClick={stopVoice} className="flex-shrink-0 rounded-full bg-red-600 p-1.5 text-white hover:bg-red-700" title="Stop">
+                <Square className="h-3.5 w-3.5" />
+              </button>
+              <button type="button" onClick={cancelVoice} className="flex-shrink-0 text-xs font-medium text-slate-500 hover:text-slate-700 dark:text-slate-400">
+                Cancel
+              </button>
+            </div>
+          )}
+
+          {transcribing && (
+            <div dir="rtl" className="mb-2 flex items-center gap-2 rounded-lg bg-blue-50 px-3 py-2 text-xs font-medium text-blue-700 dark:bg-blue-950/30 dark:text-blue-300">
+              <span className="h-3 w-3 flex-shrink-0 animate-spin rounded-full border-2 border-blue-400 border-t-transparent" />
+              آواز کو متن میں تبدیل کیا جا رہا ہے...
+            </div>
+          )}
+
+          <div className="flex items-end gap-2">
             <button
               type="button"
-              onClick={toggleVoice}
-              className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full transition-colors ${
-                listening ? 'bg-red-100 text-red-600 animate-pulse dark:bg-red-950/50' : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700'
+              onClick={recording ? stopVoice : startVoice}
+              disabled={transcribing}
+              className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full transition-colors disabled:opacity-50 ${
+                recording ? 'bg-red-100 text-red-600 animate-pulse dark:bg-red-950/50' : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700'
               }`}
-              title={listening ? 'Stop' : 'Voice input'}
+              title={recording ? 'Stop' : 'Voice input'}
             >
-              {listening ? <MicOff className="h-5 w-5" /> : <Mic className="h-5 w-5" />}
+              {recording ? <Square className="h-4 w-4" /> : <Mic className="h-5 w-5" />}
             </button>
             <div className="flex flex-shrink-0 overflow-hidden rounded-full border border-slate-200 text-[10px] font-medium dark:border-slate-700" title="Voice input language">
               {(['ur-PK', 'en-PK', 'hi-IN'] as const).map((code) => (
@@ -1306,11 +1500,25 @@ export function AssistantPage() {
                 </button>
               ))}
             </div>
-            <Input
-              placeholder={listening ? 'Listening...' : 'Type a command in Urdu or English...'}
+            <button
+              type="button"
+              onClick={() => { setSpeakReplies((v) => !v); if (speakReplies) window.speechSynthesis?.cancel(); }}
+              className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full transition-colors ${speakReplies ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400' : 'bg-slate-100 text-slate-400 dark:bg-slate-800'}`}
+              title={speakReplies ? 'Voice replies on' : 'Voice replies off'}
+            >
+              {speakReplies ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
+            </button>
+            <Textarea
+              ref={textareaRef}
+              rows={1}
+              placeholder="Type a command in Urdu or English..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
               disabled={loading}
+              className="max-h-40 min-h-[2.5rem] flex-1 resize-none overflow-y-auto py-2 leading-relaxed"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(input); }
+              }}
             />
             <Button type="submit" size="icon" disabled={loading || !input.trim()}>
               <Send className="h-4 w-4" />
