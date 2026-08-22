@@ -1,4 +1,5 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import { correctFullName } from "./nameDictionary.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -339,6 +340,30 @@ FMCG field extraction examples (Urdu/Roman Urdu/English):
 "5 carton juice 5000 rupay, further tax 60, advance tax 30, CTN size 24P"
   -> PURCHASE, product juice 5 carton @ 5000, further_tax 60, advance_tax 30, ctn_size "24P"`;
 
+// Applies the Master Name Dictionary as a deterministic spelling-correction
+// pass over whatever customer/supplier name the AI extracted. Only runs for
+// a name that ISN'T already an exact match against this shop's own known
+// names — an already-known name's existing spelling is authoritative and
+// must never be second-guessed by the generic dictionary. This is separate
+// from (and runs after) the shop-specific "Known existing customer/supplier
+// names" hint already given to the model in the prompt: that hint helps the
+// model itself, this catches whatever it still got wrong, using the same
+// reference data the shopkeeper themselves supplied.
+function applyMasterNameDictionary(
+  parsed: ParsedCommand,
+  knownCustomerNames: string[],
+  knownSupplierNames: string[],
+): void {
+  const customerName = parsed?.entities?.customer?.name;
+  if (customerName && !knownCustomerNames.some((n) => n.toLowerCase() === customerName.toLowerCase())) {
+    parsed.entities.customer!.name = correctFullName(customerName);
+  }
+  const supplierName = parsed?.entities?.supplier?.name;
+  if (supplierName && !knownSupplierNames.some((n) => n.toLowerCase() === supplierName.toLowerCase())) {
+    parsed.entities.supplier!.name = correctFullName(supplierName);
+  }
+}
+
 async function callAI(text: string, knownCustomerNames: string[] = [], knownSupplierNames: string[] = []): Promise<ParsedCommand> {
   if (!AI_API_KEY) {
     return {
@@ -391,13 +416,19 @@ async function callAI(text: string, knownCustomerNames: string[] = [], knownSupp
       const data = await res.json();
       const content = data?.choices?.[0]?.message?.content;
       if (!content) { lastErr = "Empty AI response"; continue; }
+      let parsed: ParsedCommand;
       try {
-        const parsed = JSON.parse(content);
-        return parsed as ParsedCommand;
+        parsed = JSON.parse(content) as ParsedCommand;
       } catch {
         lastErr = "AI returned invalid JSON";
         continue;
       }
+      try {
+        applyMasterNameDictionary(parsed, knownCustomerNames, knownSupplierNames);
+      } catch {
+        // Best-effort spelling correction only — never block a valid parse over this.
+      }
+      return parsed;
     } catch (err) {
       clearTimeout(timeout);
       lastErr = err instanceof Error ? err.message : String(err);
