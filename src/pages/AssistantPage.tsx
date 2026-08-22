@@ -300,8 +300,8 @@ export function AssistantPage() {
   const [phoneDrafts, setPhoneDrafts] = useState<Record<string, string>>({});
   // Lets the shopkeeper correct the customer/supplier name shown in a
   // preview card before confirming — needed because Urdu/Roman-Urdu
-  // speech often has more than one valid Latin spelling (e.g. "Ahmad" vs
-  // "Ahmed"), and the AI has no way to guess which one a shopkeeper
+  // speech often has more than one valid Latin spelling (e.g. "Mohsin" vs
+  // "Muhsin"), and the AI has no way to guess which one a shopkeeper
   // actually wants for a brand-new name. Keyed by message id, like
   // phoneDrafts above.
   const [nameDrafts, setNameDrafts] = useState<Record<string, string>>({});
@@ -1674,8 +1674,8 @@ export function AssistantPage() {
                         <div className="flex items-center justify-between gap-2">
                           <span className="flex-shrink-0 text-slate-500">Customer Name</span>
                           {/* Editable — Urdu/Roman-Urdu speech often has more
-                              than one valid Latin spelling (e.g. "Ahmad" vs
-                              "Ahmed"); the AI's guess can be corrected here
+                              than one valid Latin spelling (e.g. "Mohsin" vs
+                              "Muhsin"); the AI's guess can be corrected here
                               before saving, for both a brand-new customer and
                               an already-matched existing one. */}
                           <input

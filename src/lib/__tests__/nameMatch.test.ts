@@ -9,7 +9,7 @@ describe('levenshteinDistance', () => {
 
   it('counts single-character edits', () => {
     expect(levenshteinDistance('Ali Raza', 'Ali Raja')).toBe(1);
-    expect(levenshteinDistance('Ahmed', 'Ahmad')).toBe(1);
+    expect(levenshteinDistance('Muhsin', 'Mohsin')).toBe(1);
   });
 });
 
@@ -17,7 +17,7 @@ describe('isNearMatch', () => {
   it('treats common speech-recognition variants as near matches', () => {
     expect(isNearMatch('Ali Raza', 'Ali Raja')).toBe(true);
     expect(isNearMatch('Ali Raza', 'Ali Raaza')).toBe(true);
-    expect(isNearMatch('Ahmed', 'Ahmad')).toBe(true);
+    expect(isNearMatch('Muhsin', 'Mohsin')).toBe(true);
   });
 
   it('does not treat genuinely different names as near matches', () => {

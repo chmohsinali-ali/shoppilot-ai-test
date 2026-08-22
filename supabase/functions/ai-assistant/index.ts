@@ -1,5 +1,6 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { correctFullName } from "./nameDictionary.ts";
+import { correctItemName } from "./itemDictionary.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -76,13 +77,13 @@ product names. Product names have their own bilingual rule below.
 --- SOME NAMES HAVE MORE THAN ONE VALID ROMAN SPELLING (IMPORTANT) ---
 
 Many Urdu/Arabic names have multiple equally-correct Latin spellings (e.g. the Urdu script
-"احمد" is correctly romanized as either "Ahmad" OR "Ahmed" — neither is wrong). When a
+"محسن" is correctly romanized as either "Mohsin" OR "Muhsin" — neither is wrong). When a
 "Known existing customer/supplier names in this shop" list is given above the message and it
 already contains this exact person under one spelling, always use THAT spelling — never
 introduce a different one for someone already in the shop's records. When there is no such
 match (a genuinely first-time name with no known record), prefer the spelling most common in
 Pakistan for these frequently-seen names:
-Ahmad (not Ahmed), Mohsin (not Mohsen), Yousuf (not Yusuf), Bilal, Imran, Usman (not Osman),
+Mohsin (not Muhsin, not Mohsen), Yousuf (not Yusuf), Bilal, Imran, Usman (not Osman),
 Zeeshan, Faisal, Kamran, Adeel, Waqas, Junaid, Asif, Tariq, Naveed, Shahid, Rashid, Saleem
 (not Salim), Aslam, Iqbal, Rizwan, Farhan, Hamza, Umer (not Omar/Umar unless clearly Arabic
 context), Abdullah, Ayesha, Fatima, Zainab, Sana, Hina, Sadia, Amna, Sidra, Rabia, Nadia,
@@ -173,7 +174,7 @@ become 160 instead of 80). You must resolve this correctly using the sentence's 
    "<amount> per <unit>", "<unit> ke hisab se", "<unit> ka rate <amount>", "ek <unit> ka
    <amount>", or the amount immediately followed by the SAME unit word used for the quantity
    (e.g. "5 kilo cheeni 280 rupay kilo"). In this case, put that amount directly into "price"
-   as-is. Example: "Ahmed ko 5 kilo cheeni 280 rupay per kilo ke hisab se de do" -> quantity=5,
+   as-is. Example: "Ahmad ko 5 kilo cheeni 280 rupay per kilo ke hisab se de do" -> quantity=5,
    unit="kg", price=280 (the app computes total = 5 × 280 = 1400).
 
 2. TOTAL language — the amount given is the TOTAL price for the whole stated quantity, with no
@@ -257,23 +258,23 @@ Return ONLY valid JSON matching this schema:
 }
 
 Examples:
-"Ahmed ko 5 kilo cheeni 270 rupay kilo de do, 2000 rupay diye" -> SALE with customer Ahmed, 1 product name_en="Sugar" name_ur="چینی" name_confidence=0.95 quantity=5 unit="kg" price=270, payment amount=2000 currency=PKR.
+"Ahmad ko 5 kilo cheeni 270 rupay kilo de do, 2000 rupay diye" -> SALE with customer Ahmad, 1 product name_en="Sugar" name_ur="چینی" name_confidence=0.95 quantity=5 unit="kg" price=270, payment amount=2000 currency=PKR.
 "Ali ka balance kitna hai?" -> CUSTOMER_SEARCH for Ali.
 "Aaj ki sale dikhao" -> REPORT daily_sales.
-"Ahmed ne 5000 diye" -> PAYMENT from Ahmed 5000 PKR.
+"Ahmad ne 5000 diye" -> PAYMENT from Ahmad 5000 PKR.
 "Mohsin ne 10 kilo cheeni li, 170 dollar per kilo ke hisaab se" -> SALE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="kg" price=170 currency="USD", warnings: ["Price given in USD, not PKR — confirm before saving"].
-"Ahmed ne 10 kilo cheeni li, 200 rupay kilo, 5 kilo ghee liya, 200 rupay kilo, aur usne 10% payment ki hai" -> SALE, products: name_en="Sugar" name_ur="چینی" qty=10 unit="kg" price=200 (=2000), name_en="Ghee" name_ur="گھی" qty=5 unit="kg" price=200 (=1000); subtotal=3000; payment.percent_of_total=10, payment.amount=300 (10% of 3000), payment.currency="PKR".
+"Ahmad ne 10 kilo cheeni li, 200 rupay kilo, 5 kilo ghee liya, 200 rupay kilo, aur usne 10% payment ki hai" -> SALE, products: name_en="Sugar" name_ur="چینی" qty=10 unit="kg" price=200 (=2000), name_en="Ghee" name_ur="گھی" qty=5 unit="kg" price=200 (=1000); subtotal=3000; payment.percent_of_total=10, payment.amount=300 (10% of 3000), payment.currency="PKR".
 "10 kilo cheeni de do" -> quantity=10, unit="kg" — NOT unit="piece".
 "2 dozen ande de do" -> quantity=2, unit="dozen", name_en="Egg" name_ur="انڈے".
 "हमज़ा को 10 किलो चीनी दे दो" (Hindi script) -> customer.name="Hamza" (Latin script), NOT "हमज़ा"; product name_en="Sugar" name_ur="چینی".
 "حمزہ کو 10 کلو چینی دے دو" (Urdu script) -> customer.name="Hamza" (Latin script), NOT "حمزہ"; product name_en="Sugar" name_ur="چینی".
-"Ahmed ko 2 biscuit 80 rupay ke de do" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price=40 (80 ÷ 2, TOTAL-price phrasing, not a per-biscuit rate).
+"Ahmad ko 2 biscuit 80 rupay ke de do" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price=40 (80 ÷ 2, TOTAL-price phrasing, not a per-biscuit rate).
 "2 biscuit, 40 rupay ka 1 biscuit" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price=40 (RATE phrasing, given directly).
 "10 bags cheeni 500 rupay per bag" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price=500 (RATE phrasing).
 "10 bags cheeni 5000 rupay ke" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price=500 (5000 ÷ 10, TOTAL-price phrasing).
 "20 boxes ghee 500 rupay per box" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price=500 (RATE phrasing, total=10000).
 "20 boxes ghee 10000 rupay ke" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price=500 (10000 ÷ 20, TOTAL-price phrasing).
-"Ahmed ko 5 kilo pyaz 280 rupay per kilo de do" -> SALE, product name_en="Onion" name_ur="پیاز" name_confidence=0.95 quantity=5 unit="kg" price=280.
+"Ahmad ko 5 kilo pyaz 280 rupay per kilo de do" -> SALE, product name_en="Onion" name_ur="پیاز" name_confidence=0.95 quantity=5 unit="kg" price=280.
 "5 kilo cheeni 1400 rupay ki" -> SALE, product name_en="Sugar" name_ur="چینی" quantity=5 unit="kg" price=280 (1400 ÷ 5, TOTAL-price phrasing — "X rupay ki/ke" for the whole stated quantity, not per-unit).
 
 --- NEVER TRUNCATE A CUSTOMER/SUPPLIER NAME (STRICT) ---
@@ -364,6 +365,30 @@ function applyMasterNameDictionary(
   }
 }
 
+// Applies the Vegetable/Grocery Item Dictionaries as a deterministic
+// spelling/recognition correction pass over every product line the AI
+// extracted (same idea as applyMasterNameDictionary, but for items instead
+// of people — see itemDictionary.ts). Tries the model's own name_en first,
+// then name_ur, against both item sheets; on a confident match it overwrites
+// BOTH fields with the dictionary's canonical spelling and raises
+// name_confidence (a verified catalog match is no longer a guess). A
+// product with no dictionary match is left exactly as the model produced
+// it — these sheets are a reference, not an exhaustive allowlist, so an
+// unrecognized item must never be rejected.
+function applyItemDictionary(parsed: ParsedCommand): void {
+  const products = parsed?.entities?.products;
+  if (!Array.isArray(products)) return;
+  for (const p of products) {
+    if (!p) continue;
+    const match = (p.name_en && correctItemName(p.name_en)) || (p.name_ur && correctItemName(p.name_ur));
+    if (match) {
+      p.name_en = match.name_en;
+      p.name_ur = match.name_ur;
+      p.name_confidence = Math.max(p.name_confidence ?? 0, 0.9);
+    }
+  }
+}
+
 async function callAI(text: string, knownCustomerNames: string[] = [], knownSupplierNames: string[] = []): Promise<ParsedCommand> {
   if (!AI_API_KEY) {
     return {
@@ -427,6 +452,11 @@ async function callAI(text: string, knownCustomerNames: string[] = [], knownSupp
         applyMasterNameDictionary(parsed, knownCustomerNames, knownSupplierNames);
       } catch {
         // Best-effort spelling correction only — never block a valid parse over this.
+      }
+      try {
+        applyItemDictionary(parsed);
+      } catch {
+        // Best-effort item recognition only — never block a valid parse over this.
       }
       return parsed;
     } catch (err) {
