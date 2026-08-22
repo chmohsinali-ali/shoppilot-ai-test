@@ -1534,7 +1534,7 @@ export function AssistantPage() {
   const onSubmit = (e: FormEvent) => { e.preventDefault(); send(input); };
 
   return (
-    <div className="mx-auto flex h-[calc(100vh-3.5rem)] max-w-3xl flex-col px-4 py-4 md:h-[calc(100vh-0px)] md:px-6 md:py-6">
+    <div className="mx-auto flex h-[calc(100vh-3.5rem)] max-w-4xl flex-col px-4 py-4 md:h-[calc(100vh-0px)] md:px-6 md:py-6">
       <PageHeader title="AI Assistant" subtitle="Speak or type in Urdu or English. I will build the transaction for you." />
 
       {activeContext && (
@@ -1980,41 +1980,10 @@ export function AssistantPage() {
             </div>
           )}
 
-          <div className="flex items-end gap-2">
-            <button
-              type="button"
-              onClick={recording ? stopVoice : startVoice}
-              disabled={transcribing}
-              className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full transition-colors disabled:opacity-50 ${
-                recording ? 'bg-red-100 text-red-600 animate-pulse dark:bg-red-950/50' : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700'
-              }`}
-              title={recording ? 'Stop' : 'Voice input'}
-            >
-              {recording ? <Square className="h-4 w-4" /> : <Mic className="h-5 w-5" />}
-            </button>
-            {/* Only Urdu and English are supported — Urdu is first and is
-                the default-selected language so the chat is ready to
-                understand Urdu speech the moment it opens. */}
-            <div className="flex flex-shrink-0 overflow-hidden rounded-full border border-slate-200 text-[10px] font-medium dark:border-slate-700" title="Voice input language">
-              {(['ur-PK', 'en-PK'] as const).map((code) => (
-                <button
-                  key={code}
-                  type="button"
-                  onClick={() => setVoiceLang(code)}
-                  className={`px-2.5 py-1.5 transition-colors ${voiceLang === code ? 'bg-blue-600 text-white' : 'bg-slate-50 text-slate-500 hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-400'}`}
-                >
-                  {code === 'ur-PK' ? 'اردو' : 'EN'}
-                </button>
-              ))}
-            </div>
-            <button
-              type="button"
-              onClick={() => { setSpeakReplies((v) => !v); if (speakReplies) window.speechSynthesis?.cancel(); }}
-              className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full transition-colors ${speakReplies ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400' : 'bg-slate-100 text-slate-400 dark:bg-slate-800'}`}
-              title={speakReplies ? 'Voice replies on' : 'Voice replies off'}
-            >
-              {speakReplies ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
-            </button>
+          {/* Unified ChatGPT-style composer — one rounded card holding the
+              textarea on top and a compact icon toolbar underneath, instead
+              of a single cramped row of buttons + a small input box. */}
+          <div className="flex flex-col gap-1.5 rounded-[1.75rem] border border-slate-200 bg-white px-3 py-2.5 shadow-sm transition-colors focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-500/30 dark:border-slate-700 dark:bg-slate-900">
             <Textarea
               ref={textareaRef}
               rows={1}
@@ -2027,14 +1996,57 @@ export function AssistantPage() {
               // left-to-right. An empty box follows the selected voice
               // language (Urdu by default), so it's never wrong at rest.
               dir={renderLangOf(input ? detectReplyLang(input) : (voiceLang === 'ur-PK' ? 'ur' : 'en')) === 'ur' ? 'rtl' : 'ltr'}
-              className="max-h-40 min-h-[2.5rem] flex-1 resize-none overflow-y-auto py-2 leading-relaxed"
+              className="max-h-48 min-h-[2.75rem] resize-none overflow-y-auto border-0 bg-transparent px-1 py-1.5 text-base leading-relaxed shadow-none focus-visible:ring-0"
               onKeyDown={(e) => {
                 if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(input); }
               }}
             />
-            <Button type="submit" size="icon" disabled={loading || !input.trim()}>
-              <Send className="h-4 w-4" />
-            </Button>
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-1.5">
+                <button
+                  type="button"
+                  onClick={recording ? stopVoice : startVoice}
+                  disabled={transcribing}
+                  className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full transition-colors disabled:opacity-50 ${
+                    recording ? 'bg-red-100 text-red-600 animate-pulse dark:bg-red-950/50' : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700'
+                  }`}
+                  title={recording ? 'Stop' : 'Voice input'}
+                >
+                  {recording ? <Square className="h-4 w-4" /> : <Mic className="h-4 w-4" />}
+                </button>
+                {/* Only Urdu and English are supported — Urdu is first and
+                    is the default-selected language so the chat is ready to
+                    understand Urdu speech the moment it opens. */}
+                <div className="flex flex-shrink-0 overflow-hidden rounded-full border border-slate-200 text-[10px] font-medium dark:border-slate-700" title="Voice input language">
+                  {(['ur-PK', 'en-PK'] as const).map((code) => (
+                    <button
+                      key={code}
+                      type="button"
+                      onClick={() => setVoiceLang(code)}
+                      className={`px-2.5 py-1.5 transition-colors ${voiceLang === code ? 'bg-blue-600 text-white' : 'bg-slate-50 text-slate-500 hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-400'}`}
+                    >
+                      {code === 'ur-PK' ? 'اردو' : 'EN'}
+                    </button>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => { setSpeakReplies((v) => !v); if (speakReplies) window.speechSynthesis?.cancel(); }}
+                  className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full transition-colors ${speakReplies ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400' : 'bg-slate-100 text-slate-400 dark:bg-slate-800'}`}
+                  title={speakReplies ? 'Voice replies on' : 'Voice replies off'}
+                >
+                  {speakReplies ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
+                </button>
+              </div>
+              <Button
+                type="submit"
+                size="icon"
+                disabled={loading || !input.trim()}
+                className="h-9 w-9 flex-shrink-0 rounded-full"
+              >
+                <Send className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </form>
       </Card>
