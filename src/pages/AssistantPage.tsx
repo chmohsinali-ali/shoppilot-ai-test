@@ -405,8 +405,8 @@ export function AssistantPage() {
     if (!shop) return;
     (async () => {
       const [{ data: custs }, { data: sups }] = await Promise.all([
-        supabase.from('customers').select('full_name').eq('shop_id', shop.id).limit(500),
-        supabase.from('suppliers').select('supplier_name').eq('shop_id', shop.id).limit(500),
+        supabase.from('customers').select('full_name').eq('shop_id', shop.id).is('deleted_at', null).limit(500),
+        supabase.from('suppliers').select('supplier_name').eq('shop_id', shop.id).is('deleted_at', null).limit(500),
       ]);
       knownNamesRef.current = {
         customers: (custs ?? []).map((c: any) => c.full_name).filter(Boolean),
@@ -482,9 +482,15 @@ export function AssistantPage() {
     | { kind: 'exact-multiple'; count: number }
     | { kind: 'fuzzy'; candidates: ConfirmCandidate[] }
   > => {
+    // Deactivated ("deleted") customers/suppliers are a soft delete —
+    // `deleted_at` gets set, the row stays in the table (see
+    // DeactivateCustomerModal) — so every lookup here must exclude them
+    // explicitly, exactly like the Customers/Suppliers list pages already
+    // do, or a shopkeeper who "deleted" everyone still sees them resolved
+    // as an existing match in the AI chat.
     const { data: exactMatches, count } = await supabase
       .from(table).select(`id, ${nameColumn}, primary_phone`, { count: 'exact' })
-      .eq('shop_id', shop!.id).ilike(nameColumn, name);
+      .eq('shop_id', shop!.id).is('deleted_at', null).ilike(nameColumn, name);
 
     if (exactMatches && exactMatches.length === 1) {
       const row = exactMatches[0] as any;
@@ -499,7 +505,7 @@ export function AssistantPage() {
     // shop's existing parties before treating this as a brand-new person,
     // so a speech-recognition/spelling slip never silently creates a
     // duplicate record for someone who already exists.
-    const { data: allRows } = await supabase.from(table).select(`id, ${nameColumn}, primary_phone`).eq('shop_id', shop!.id);
+    const { data: allRows } = await supabase.from(table).select(`id, ${nameColumn}, primary_phone`).eq('shop_id', shop!.id).is('deleted_at', null);
     const near = ((allRows ?? []) as any[])
       .filter((row) => isNearMatch(name, row[nameColumn]))
       .map((row) => ({ id: row.id as string, name: row[nameColumn] as string, phone: row.primary_phone ?? undefined, distance: levenshteinDistance(name, row[nameColumn]) }))
@@ -968,7 +974,7 @@ export function AssistantPage() {
       // balance in this same chat too (see the `queryOnly` branch of
       // handlePickerSelect) — never a redirect to another screen.
       const name = parsed.entities.customer?.name ?? '';
-      const { data } = await supabase.from('customers').select('id, full_name, primary_phone').eq('shop_id', shop!.id).ilike('full_name', `%${name}%`).limit(200);
+      const { data } = await supabase.from('customers').select('id, full_name, primary_phone').eq('shop_id', shop!.id).is('deleted_at', null).ilike('full_name', `%${name}%`).limit(200);
       if (!data || data.length === 0) {
         responseText = tpl(lang, {
           en: `No customer found named "${name}".`,
