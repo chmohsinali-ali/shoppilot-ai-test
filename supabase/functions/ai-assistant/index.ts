@@ -17,8 +17,8 @@ const AI_MAX_RETRIES = Number(Deno.env.get("AI_MAX_RETRIES") ?? "2");
 type ParsedCommand = {
   intent: "SALE" | "PAYMENT" | "PURCHASE" | "REPORT" | "CUSTOMER_SEARCH" | "UNKNOWN";
   entities: {
-    customer?: { name?: string; id?: string };
-    supplier?: { name?: string };
+    customer?: { name?: string; id?: string; name_as_heard?: string };
+    supplier?: { name?: string; name_as_heard?: string };
     products?: Array<{
       name_en: string; // canonical English product name, e.g. "Onion"
       name_ur: string; // canonical Urdu product name, e.g. "پیاز" — omit only if the product is a proper-noun brand name with no natural Urdu translation
@@ -73,6 +73,15 @@ keep it as typed — never "correct" or restyle a spelling the shopkeeper themse
 
 This Latin-only rule applies ONLY to customer.name and supplier.name — it does NOT apply to
 product names. Product names have their own bilingual rule below.
+
+ALSO set "name_as_heard" (customer.name_as_heard / supplier.name_as_heard) to the exact
+substring copied character-for-character from the shopkeeper's own message that refers to this
+person — in whatever script/language they actually used it in (e.g. "حمزہ" if that's what the
+message contains). This is used only to highlight the name back to the shopkeeper in their own
+message, in its Latin spelling — it must be an exact quote from the message, not a paraphrase,
+so it can be found and swapped in place. If the shopkeeper already wrote the name in Latin
+script, name_as_heard is identical to name. Omit name_as_heard entirely if you cannot quote an
+exact substring (e.g. the party came from context, not from this message).
 
 --- SOME NAMES HAVE MORE THAN ONE VALID ROMAN SPELLING (IMPORTANT) ---
 
@@ -244,8 +253,8 @@ Return ONLY valid JSON matching this schema:
 {
   "intent": "SALE" | "PAYMENT" | "PURCHASE" | "REPORT" | "CUSTOMER_SEARCH" | "UNKNOWN",
   "entities": {
-    "customer": { "name": "string or omit" },
-    "supplier": { "name": "string or omit" },
+    "customer": { "name": "string or omit", "name_as_heard": "exact substring from the message, or omit" },
+    "supplier": { "name": "string or omit", "name_as_heard": "exact substring from the message, or omit" },
     "products": [{ "name_en": "string", "name_ur": "string", "name_confidence": 0.0 to 1.0, "quantity": number, "unit": "string", "price": number, "currency": "PKR|USD|EUR|CAD|..." }],
     "payment": { "amount": number, "method": "cash|bank|cheque|mobile", "currency": "PKR|USD|EUR|CAD|...", "percent_of_total": number or omit },
     "discount": { "amount": number, "percent": number },
@@ -291,6 +300,13 @@ on its own, or could plausibly match more than one known name — in that case j
 was actually said. If you are not reasonably confident you have the complete name, keep it as
 transcribed (do not invent a different name) and lower "confidence" instead — the app will ask
 the shopkeeper to confirm before saving anything when confidence is low.
+This substitution is ONLY for genuine fragments/mishearings of one specific known name — it is
+NOT a general "pick the closest known name" fallback. A name the shopkeeper said in full and
+clearly (e.g. "Ahmad") must be returned exactly as "Ahmad" even if the known-names list contains
+some other unrelated name (e.g. "Umair") — never swap a complete, clearly-spoken name for a
+different known name just because that other name exists in the shop's records. Only substitute
+when the spoken fragment is genuinely too short/garbled to be a real name by itself and one known
+name is an obvious completion of it (e.g. "Um" -> "Umair", "Abas" -> "Abbas").
 
 --- PURCHASE commands with FMCG invoice fields ---
 

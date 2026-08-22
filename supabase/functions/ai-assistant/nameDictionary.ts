@@ -106,6 +106,13 @@ export function correctNameToken(rawToken: string): NameToken | null {
   let best: NameToken | null = null;
   let bestDist = Infinity;
   for (const t of list) {
+    // Never let a near-match SHRINK the spoken name. The source sheet is
+    // male names only, so a longer name that happens to end the same way
+    // a male token starts (e.g. "Nasira" vs "Nasir") is very likely a
+    // different, unlisted (often female) name, not a misspelling — cutting
+    // it down would silently change who the transaction is for. Growing or
+    // same-length corrections (Muhsin->Mohsin, Salim->Saleem) stay safe.
+    if (t.en.length < cleaned.length) continue;
     if (isNearMatch(t.en, cleaned)) {
       const d = levenshteinDistance(t.en, cleaned);
       if (d < bestDist) {

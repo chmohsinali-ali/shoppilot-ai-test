@@ -41,13 +41,15 @@ export function PartyConfirmCard({
 }) {
   const partyWord = kind === 'customer' ? 'کسٹمر' : 'سپلائر';
 
+  // The spoken/matched name (always Latin script) leads every heading so it
+  // renders at the visual start of the line even in RTL Urdu text.
   let heading: string;
   if (mode === 'confirm-one') {
     heading = `"${spokenName}" نام کا ایک ${partyWord} پہلے سے موجود ہے۔ کیا یہ وہی ${partyWord} ہے؟`;
   } else if (mode === 'context-typo') {
-    heading = `کیا آپ ${candidates[0]?.name} کی بات کر رہے ہیں؟ (آپ نے "${spokenName}" لکھا)`;
+    heading = `"${candidates[0]?.name}" — کیا آپ کی بات اسی کے بارے میں ہے؟ (آپ نے "${spokenName}" لکھا)`;
   } else if (mode === 'confirm-new') {
-    heading = `نام واضح طور پر سنائی نہیں دیا۔ کیا "${spokenName}" نام درست ہے؟ اسی نام سے نیا ${partyWord} شامل کریں؟`;
+    heading = `"${spokenName}" — نام واضح طور پر سنائی نہیں دیا۔ کیا یہ نام درست ہے؟ اسی نام سے نیا ${partyWord} شامل کریں؟`;
   } else {
     heading = `"${spokenName}" سے ملتے جلتے نام موجود ہیں۔ کیا آپ ان میں سے کسی کی بات کر رہے ہیں؟`;
   }

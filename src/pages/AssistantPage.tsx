@@ -23,8 +23,8 @@ import { ProductConfirmCard } from '@/components/ProductConfirmCard';
 type ParsedCommand = {
   intent: string;
   entities: {
-    customer?: { name?: string };
-    supplier?: { name?: string };
+    customer?: { name?: string; name_as_heard?: string };
+    supplier?: { name?: string; name_as_heard?: string };
     products?: Array<{
       name_en: string; name_ur: string; name_confidence: number; quantity: number; unit?: string; price: number; currency?: string;
       hs_code?: string; supplier_product_code?: string; ctn_size?: string;
@@ -1008,9 +1008,9 @@ export function AssistantPage() {
       responseText = reportResponse(parsed.entities.report_type ?? 'daily_sales', lang);
     } else {
       responseText = tpl(lang, {
-        en: 'I did not understand that. Try something like "Ahmed ko 5 kilo cheeni 270 rupay kilo de do".',
-        ur: 'یہ سمجھ نہیں آیا۔ کچھ اس طرح آزمائیں: "احمد کو 5 کلو چینی 270 روپے کلو دے دو"۔',
-        hi: 'यह समझ नहीं आया। कुछ इस तरह आज़माएं: "अहमद को 5 किलो चीनी 270 रुपए किलो दे दो"।',
+        en: 'I did not understand that. Try something like "Mohsin ko 5 kilo cheeni 270 rupay kilo de do".',
+        ur: 'یہ سمجھ نہیں آیا۔ کچھ اس طرح آزمائیں: "Mohsin کو 5 کلو چینی 270 روپے کلو دے دو"۔',
+        hi: 'यह समझ नहीं आया। कुछ इस तरह आज़माएं: "Mohsin को 5 किलो चीनी 270 रुपए किलो दे दो"।',
       });
     }
 
@@ -1209,9 +1209,29 @@ export function AssistantPage() {
     setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text, lang: renderLangOf(picker.lang), needsProductPicker: undefined } : x)));
   };
 
+  // Swaps a customer/supplier name back into the shopkeeper's own message
+  // text in Latin script, wherever it actually occurs — the rest of the
+  // message (whatever script it was said in) is left untouched. Only
+  // touches the name(s) the AI reports having actually read from this
+  // message ("name_as_heard"); if that substring isn't found verbatim
+  // (model paraphrased instead of quoting), the message is left as-is
+  // rather than guessing where to substitute.
+  const withRomanizedNames = (text: string, parsed: ParsedCommand): string => {
+    let result = text;
+    for (const party of [parsed.entities.customer, parsed.entities.supplier]) {
+      const heard = party?.name_as_heard;
+      const latin = party?.name;
+      if (heard && latin && heard !== latin && result.includes(heard)) {
+        result = result.replace(heard, latin);
+      }
+    }
+    return result;
+  };
+
   const send = async (text: string) => {
     if (!text.trim() || loading) return;
     const userLang = renderLangOf(detectReplyLang(text));
+    const msgId = editingId ?? Math.random().toString(36).slice(2);
 
     if (editingId) {
       // The user is correcting a previous message (e.g. adding an item,
@@ -1226,7 +1246,7 @@ export function AssistantPage() {
       });
       setEditingId(null);
     } else {
-      const userMsg: Message = { id: Math.random().toString(36).slice(2), role: 'user', text, lang: userLang };
+      const userMsg: Message = { id: msgId, role: 'user', text, lang: userLang };
       setMessages((m) => [...m, userMsg]);
     }
     setInput('');
@@ -1234,6 +1254,17 @@ export function AssistantPage() {
 
     try {
       const parsed = await callAI(text);
+      // A customer/supplier name is always returned in Latin script, but
+      // the shopkeeper's own message bubble still shows it exactly as they
+      // said it — Urdu script, if that's how it was heard/typed. Swap just
+      // that name back into the bubble in Latin (the AI also tells us the
+      // literal substring it read the name from), so the name stands out
+      // in the shopkeeper's own message the same way it does everywhere
+      // else in the app, without changing anything else they actually said.
+      const displayText = withRomanizedNames(text, parsed);
+      if (displayText !== text) {
+        setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text: displayText } : x)));
+      }
       await finishTurn(parsed, text);
     } catch (err) {
       const assistantMsg: Message = { id: Math.random().toString(36).slice(2), role: 'assistant', text: `Sorry, I could not process that. ${err instanceof Error ? err.message : 'Please try again.'}` };
