@@ -19,9 +19,9 @@ const TTS_BASE_URL = (Deno.env.get("TTS_BASE_URL") ?? "https://api.openai.com/v1
 // short reply-length text.
 const TTS_MODEL = Deno.env.get("TTS_MODEL") ?? "tts-1-hd";
 const TTS_VOICE = Deno.env.get("TTS_VOICE") ?? "alloy";
-// >1.0 = faster playback; shopkeeper asked for a brisker pace than the
-// default narration speed.
-const TTS_SPEED = Number(Deno.env.get("TTS_SPEED") ?? "1.5");
+// >1.0 = faster playback than default narration speed. 1.5 was tried
+// first and reported too fast; 1.1 is a slight brisk-up instead.
+const TTS_SPEED = Number(Deno.env.get("TTS_SPEED") ?? "1.1");
 const TTS_TIMEOUT_MS = Number(Deno.env.get("TTS_TIMEOUT_MS") ?? "20000");
 
 // A Latin-numeral amount ("280") sitting inside an otherwise-Urdu sentence
