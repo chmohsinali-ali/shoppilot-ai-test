@@ -1607,7 +1607,7 @@ export function AssistantPage() {
               <div className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500 dark:bg-slate-800'}`}>
                 {m.role === 'user' ? <User className="h-4 w-4" /> : <Sparkles className="h-4 w-4" />}
               </div>
-              <div className={`min-w-0 max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100'}`}>
+              <div className={`min-w-0 max-w-[92%] sm:max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100'}`}>
                 <p dir={m.lang === 'ur' ? 'rtl' : 'ltr'} className={`whitespace-pre-line break-words ${m.lang === 'ur' ? 'text-right' : ''}`}>{m.text}</p>
 
                 {m.role === 'user' && !loading && (

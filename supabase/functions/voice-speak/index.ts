@@ -13,8 +13,15 @@ const corsHeaders = {
 // /audio/speech endpoint — TTS defaults straight to OpenAI's own API.
 const AI_API_KEY = Deno.env.get("AI_API_KEY") ?? "";
 const TTS_BASE_URL = (Deno.env.get("TTS_BASE_URL") ?? "https://api.openai.com/v1").replace(/\/$/, "");
-const TTS_MODEL = Deno.env.get("TTS_MODEL") ?? "tts-1";
+// tts-1-hd (not tts-1) — clearer pronunciation of numbers/digits in mixed
+// Urdu+figure sentences ("previous balance 280"), which is what shopkeepers
+// actually need to catch by ear. Costs a bit more latency, acceptable for
+// short reply-length text.
+const TTS_MODEL = Deno.env.get("TTS_MODEL") ?? "tts-1-hd";
 const TTS_VOICE = Deno.env.get("TTS_VOICE") ?? "alloy";
+// >1.0 = faster playback; shopkeeper asked for a brisker pace than the
+// default narration speed.
+const TTS_SPEED = Number(Deno.env.get("TTS_SPEED") ?? "1.5");
 const TTS_TIMEOUT_MS = Number(Deno.env.get("TTS_TIMEOUT_MS") ?? "20000");
 
 async function synthesize(text: string): Promise<{ bytes: Uint8Array; contentType: string }> {
@@ -38,6 +45,7 @@ async function synthesize(text: string): Promise<{ bytes: Uint8Array; contentTyp
         voice: TTS_VOICE,
         input: text.slice(0, 4000),
         response_format: "mp3",
+        speed: TTS_SPEED,
       }),
       signal: controller.signal,
     });
