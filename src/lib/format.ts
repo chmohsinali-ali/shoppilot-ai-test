@@ -1,10 +1,16 @@
+// Pakistan-first shop app: the PKR amount is shown as a plain number
+// (no "PKR" prefix) everywhere a shopkeeper reads or hears it, since the
+// shop's own currency is implicit. A non-default currency (USD/EUR/CAD —
+// e.g. an imported product priced in USD) still shows its code, since
+// silently dropping it there would hide a real distinction the shopkeeper
+// needs to notice.
 export function formatMoney(amount: number, currency = 'PKR'): string {
   const n = Number.isFinite(amount) ? amount : 0;
   const formatted = new Intl.NumberFormat('en-PK', {
     minimumFractionDigits: 0,
     maximumFractionDigits: 2,
   }).format(n);
-  return `${currency} ${formatted}`;
+  return currency && currency !== 'PKR' ? `${currency} ${formatted}` : formatted;
 }
 
 export function formatNumber(n: number, digits = 2): string {

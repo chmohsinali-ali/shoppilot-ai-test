@@ -35,6 +35,7 @@ export class VoiceRecorder {
   private chunks: BlobPart[] = [];
   private rafId: number | null = null;
   private noiseFloor = 0;
+  private noiseSamples: number[] = [];
   private calibrated = false;
   private speechDetected = false;
   private lastLoudTime = 0;
@@ -73,6 +74,7 @@ export class VoiceRecorder {
     source.connect(this.analyser);
 
     this.noiseFloor = 0;
+    this.noiseSamples = [];
     this.calibrated = false;
     this.speechDetected = false;
     this.stopped = false;
@@ -95,8 +97,18 @@ export class VoiceRecorder {
     const elapsed = now - this.startTime;
 
     if (!this.calibrated) {
-      this.noiseFloor = Math.max(this.noiseFloor, rms);
-      if (elapsed > 400) { this.calibrated = true; this.lastLoudTime = now; }
+      this.noiseSamples.push(rms);
+      if (elapsed > 400) {
+        // Median, not max/mean — a single loud outlier during calibration
+        // (a nearby vendor shouting for that one instant) shouldn't
+        // permanently raise the "ambient noise" baseline for the rest of
+        // the recording, which would otherwise make the shopkeeper's own
+        // normal speech harder to detect for the whole turn.
+        const sorted = [...this.noiseSamples].sort((a, b) => a - b);
+        this.noiseFloor = sorted[Math.floor(sorted.length / 2)] ?? 0;
+        this.calibrated = true;
+        this.lastLoudTime = now;
+      }
     } else {
       const threshold = Math.max(0.02, this.noiseFloor * 2.2);
       if (rms > threshold) { this.speechDetected = true; this.lastLoudTime = now; }

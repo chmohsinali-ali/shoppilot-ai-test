@@ -258,6 +258,21 @@ Examples:
 "Ahmed ko 5 kilo pyaz 280 rupay per kilo de do" -> SALE, product name_en="Onion" name_ur="پیاز" name_confidence=0.95 quantity=5 unit="kg" price=280.
 "5 kilo cheeni 1400 rupay ki" -> SALE, product name_en="Sugar" name_ur="چینی" quantity=5 unit="kg" price=280 (1400 ÷ 5, TOTAL-price phrasing — "X rupay ki/ke" for the whole stated quantity, not per-unit).
 
+--- NEVER TRUNCATE A CUSTOMER/SUPPLIER NAME (STRICT) ---
+
+Always return the customer/supplier name COMPLETE, exactly as intended — never cut it short.
+A noisy-market voice transcription can arrive already truncated or garbled (e.g. "Ab" or "Abas"
+instead of "Abbas") — do not compound that by guessing or further shortening it yourself.
+If a "Known existing customer/supplier names in this shop" list is provided above the
+shopkeeper's message, and the name in the message is a close variant of exactly one of those
+known names (a dropped syllable, a misheard letter, a truncated ending), return that KNOWN
+FULL name instead of the raw fragment — this is the single most common real-world failure mode
+for this app, so treat it seriously. Do NOT do this if the spoken name is a reasonable full name
+on its own, or could plausibly match more than one known name — in that case just return what
+was actually said. If you are not reasonably confident you have the complete name, keep it as
+transcribed (do not invent a different name) and lower "confidence" instead — the app will ask
+the shopkeeper to confirm before saving anything when confidence is low.
+
 --- PURCHASE commands with FMCG invoice fields ---
 
 When intent = "PURCHASE", the products array can include these OPTIONAL FMCG invoice fields per product:
@@ -307,7 +322,7 @@ FMCG field extraction examples (Urdu/Roman Urdu/English):
 "5 carton juice 5000 rupay, further tax 60, advance tax 30, CTN size 24P"
   -> PURCHASE, product juice 5 carton @ 5000, further_tax 60, advance_tax 30, ctn_size "24P"`;
 
-async function callAI(text: string): Promise<ParsedCommand> {
+async function callAI(text: string, knownCustomerNames: string[] = [], knownSupplierNames: string[] = []): Promise<ParsedCommand> {
   if (!AI_API_KEY) {
     return {
       intent: "UNKNOWN",
@@ -319,11 +334,17 @@ async function callAI(text: string): Promise<ParsedCommand> {
     };
   }
 
+  let userContent = text;
+  const nameHints: string[] = [];
+  if (knownCustomerNames.length) nameHints.push(`Known existing customer names in this shop: ${knownCustomerNames.slice(0, 200).join(", ")}`);
+  if (knownSupplierNames.length) nameHints.push(`Known existing supplier names in this shop: ${knownSupplierNames.slice(0, 200).join(", ")}`);
+  if (nameHints.length) userContent = `${nameHints.join("\n")}\n\nShopkeeper said: ${text}`;
+
   const body = {
     model: AI_MODEL,
     messages: [
       { role: "system", content: SYSTEM_PROMPT },
-      { role: "user", content: text },
+      { role: "user", content: userContent },
     ],
     temperature: 0.2,
     response_format: { type: "json_object" },
@@ -385,7 +406,7 @@ Deno.serve(async (req: Request) => {
   }
 
   try {
-    const { text } = await req.json();
+    const { text, knownCustomerNames, knownSupplierNames } = await req.json();
     if (!text || typeof text !== "string") {
       return new Response(JSON.stringify({ error: "Missing 'text' field" }), {
         status: 400,
@@ -393,7 +414,11 @@ Deno.serve(async (req: Request) => {
       });
     }
 
-    const result = await callAI(text);
+    const result = await callAI(
+      text,
+      Array.isArray(knownCustomerNames) ? knownCustomerNames.filter((n: unknown) => typeof n === "string") : [],
+      Array.isArray(knownSupplierNames) ? knownSupplierNames.filter((n: unknown) => typeof n === "string") : [],
+    );
 
     return new Response(JSON.stringify({ success: true, data: result }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },

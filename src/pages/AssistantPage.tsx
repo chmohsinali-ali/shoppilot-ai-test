@@ -84,7 +84,7 @@ type RenderLang = 'ur' | 'hi' | 'en';
 //    bound party.
 type PartyPickerState = {
   kind: 'customer' | 'supplier';
-  mode: 'multiple' | 'confirm-one' | 'fuzzy' | 'context-typo';
+  mode: 'multiple' | 'confirm-one' | 'fuzzy' | 'context-typo' | 'confirm-new';
   spokenName: string;
   candidates: ConfirmCandidate[];
   parsed: ParsedCommand;
@@ -94,6 +94,10 @@ type PartyPickerState = {
   // pick doesn't have to re-resolve products from scratch. Unused/omitted
   // for PAYMENT, which has no product lines.
   resolvedProducts?: ResolvedProductLine[];
+  // Set for a plain "<name>'s balance?" lookup (CUSTOMER_SEARCH) — picking
+  // a candidate just answers with their balance in this same chat, rather
+  // than resuming a paused sale/purchase/payment preview.
+  queryOnly?: boolean;
 };
 
 // A product-identification confirmation attached to an assistant message
@@ -200,6 +204,7 @@ type PurchasePreview = {
   grandTotal: number;
   amountPaid: number;
   balance: number;
+  previousBalance: number;
   lowConfidence: boolean;
 };
 
@@ -237,9 +242,13 @@ export function AssistantPage() {
   // (this same component) — only the stored conversation is separate,
   // so opening Hamza's chat never shows Global chat history or another
   // customer's chat.
+  // Scoped by shop.id too — otherwise switching shops in the same browser
+  // session (or testing across shops) would show a previous shop's Global
+  // Chat history/messages inside a brand-new shop that has none of those
+  // customers, which looks exactly like stale/leaked data.
   const storageKey = activeContext
-    ? `shoppilot_ai_chat_${activeContext.kind}_${activeContext.id}`
-    : 'shoppilot_ai_chat_global';
+    ? `shoppilot_ai_chat_${shop?.id ?? 'noshop'}_${activeContext.kind}_${activeContext.id}`
+    : `shoppilot_ai_chat_${shop?.id ?? 'noshop'}_global`;
 
   const [messages, setMessages] = useState<Message[]>(() => {
     try {
@@ -254,8 +263,20 @@ export function AssistantPage() {
   const [recording, setRecording] = useState(false);
   const [transcribing, setTranscribing] = useState(false);
   const [micLevel, setMicLevel] = useState(0);
-  const [voiceLang, setVoiceLang] = useState<'ur-PK' | 'en-PK' | 'hi-IN'>('en-PK');
+  // Only Urdu and English are supported — Urdu is the default so the chat
+  // opens ready to understand Urdu speech without the shopkeeper touching
+  // anything first.
+  const [voiceLang, setVoiceLang] = useState<'ur-PK' | 'en-PK'>('ur-PK');
+  // Voice replies default ON so the shopkeeper hears every AI response
+  // without having to turn the speaker on manually each time; a manual
+  // OFF is still respected (see the toggle button below).
   const [speakReplies, setSpeakReplies] = useState(true);
+  // Cached list of this shop's own customer/supplier names — used to (a)
+  // bias the Whisper transcription toward correctly hearing a real name
+  // instead of truncating it, and (b) let the AI-parsing prompt normalize
+  // a misheard/partial name against a real match. Refreshed on shop load
+  // and whenever a brand-new party is created in this session.
+  const knownNamesRef = useRef<{ customers: string[]; suppliers: string[] }>({ customers: [], suppliers: [] });
   const [confirming, setConfirming] = useState<Message | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
 
@@ -290,23 +311,6 @@ export function AssistantPage() {
     try { sessionStorage.setItem(storageKey, JSON.stringify(messages)); } catch { /* ignore quota errors */ }
   }, [messages, storageKey]);
 
-  // If the thread changes WITHOUT a full remount (e.g. navigating from
-  // Hamza's dedicated chat straight to Mohsin's dedicated chat, or from
-  // a Customer chat to the Global chat, via client-side routing), load
-  // that thread's own saved history instead of continuing to show the
-  // previous thread's messages.
-  const loadedKeyRef = useRef(storageKey);
-  useEffect(() => {
-    if (loadedKeyRef.current === storageKey) return;
-    loadedKeyRef.current = storageKey;
-    try {
-      const raw = sessionStorage.getItem(storageKey);
-      setMessages(raw ? (JSON.parse(raw) as Message[]) : []);
-    } catch {
-      setMessages([]);
-    }
-  }, [storageKey]);
-
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
   }, [messages, loading]);
@@ -319,12 +323,45 @@ export function AssistantPage() {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
       },
-      body: JSON.stringify({ text }),
+      // Known customer/supplier names ride along so the AI can correct a
+      // misheard/partially-heard name against a real record in this shop
+      // (e.g. "Ab" -> "Abbas") instead of returning it truncated.
+      body: JSON.stringify({
+        text,
+        knownCustomerNames: knownNamesRef.current.customers,
+        knownSupplierNames: knownNamesRef.current.suppliers,
+      }),
     });
     if (!res.ok) throw new Error(`Request failed (${res.status})`);
     const json = await res.json();
     if (!json.success) throw new Error(json.error?.message ?? 'AI error');
     return json.data as ParsedCommand;
+  };
+
+  // Cache of available browser TTS voices, refreshed once they actually
+  // load (Chrome loads the voice list asynchronously) — used to pick a
+  // natural-sounding voice per language instead of whatever the browser's
+  // first/default voice happens to be, which is often a flat, low-quality,
+  // clearly-robotic one.
+  const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    const load = () => { voicesRef.current = window.speechSynthesis.getVoices(); };
+    load();
+    window.speechSynthesis.addEventListener('voiceschanged', load);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', load);
+  }, []);
+
+  const pickVoice = (langCode: string): SpeechSynthesisVoice | undefined => {
+    const voices = voicesRef.current;
+    const exact = voices.filter((v) => v.lang.toLowerCase() === langCode.toLowerCase());
+    const family = voices.filter((v) => v.lang.toLowerCase().startsWith(langCode.split('-')[0].toLowerCase()));
+    const pool = exact.length ? exact : family;
+    if (!pool.length) return undefined;
+    // Prefer a higher-quality "natural"/network voice (Google/Microsoft
+    // Online/Neural voices) over a generic local robotic one, when the
+    // browser actually offers a choice for this language.
+    return pool.find((v) => /google|natural|online|neural/i.test(v.name)) ?? pool[0];
   };
 
   // Reads an assistant reply aloud using the browser's built-in
@@ -336,9 +373,15 @@ export function AssistantPage() {
     if (typeof window === 'undefined' || !window.speechSynthesis) return;
     try {
       window.speechSynthesis.cancel();
+      const langCode = lang === 'ur' ? 'ur-PK' : lang === 'hi' ? 'hi-IN' : 'en-US';
       const utter = new SpeechSynthesisUtterance(text);
-      utter.lang = lang === 'ur' ? 'ur-PK' : lang === 'hi' ? 'hi-IN' : 'en-US';
-      utter.rate = 0.95;
+      utter.lang = langCode;
+      const voice = pickVoice(langCode);
+      if (voice) utter.voice = voice;
+      // Close to natural conversational pace — the previous fixed 0.95
+      // rate read every reply in the same slow, flat cadence.
+      utter.rate = 1.02;
+      utter.pitch = 1.0;
       window.speechSynthesis.speak(utter);
     } catch { /* speech synthesis unavailable/blocked — silent no-op */ }
   };
@@ -351,6 +394,67 @@ export function AssistantPage() {
     const { data } = await supabase.rpc('get_supplier_balance', { p_supplier_id: id });
     return typeof data === 'number' ? data : undefined;
   };
+
+  // Refresh this shop's known customer/supplier names — sent along with
+  // every voice transcription and AI-parse request so the AI can correct a
+  // misheard/partially-heard name against a real record instead of saving
+  // a truncated one (e.g. "Ab" heard for "Abbas"). Re-fetched whenever the
+  // shop changes, and appended to locally whenever a brand-new party is
+  // created in this session (see autoCreateParty below).
+  useEffect(() => {
+    if (!shop) return;
+    (async () => {
+      const [{ data: custs }, { data: sups }] = await Promise.all([
+        supabase.from('customers').select('full_name').eq('shop_id', shop.id).limit(500),
+        supabase.from('suppliers').select('supplier_name').eq('shop_id', shop.id).limit(500),
+      ]);
+      knownNamesRef.current = {
+        customers: (custs ?? []).map((c: any) => c.full_name).filter(Boolean),
+        suppliers: (sups ?? []).map((s: any) => s.supplier_name).filter(Boolean),
+      };
+    })();
+  }, [shop?.id]);
+
+  // Loads this thread's own saved history whenever the thread changes
+  // (e.g. navigating from Hamza's dedicated chat straight to Mohsin's
+  // dedicated chat, or between a dedicated chat and Global chat, via
+  // client-side routing that doesn't remount the page) — and, when a
+  // dedicated chat's thread is genuinely brand-new (empty), immediately
+  // injects + speaks the "this is X's account, only X's khata can be
+  // added here" scope announcement into it. Both are handled in this one
+  // effect (rather than a separate load effect + separate greeting
+  // effect) so the greeting always evaluates the CURRENT thread's actual
+  // saved messages, never a stale value the previous thread left in
+  // state at the moment this effect runs.
+  const loadedKeyRef = useRef<string | null>(null);
+  useEffect(() => {
+    let loaded: Message[];
+    try {
+      const raw = sessionStorage.getItem(storageKey);
+      loaded = raw ? (JSON.parse(raw) as Message[]) : [];
+    } catch {
+      loaded = [];
+    }
+    // On first mount of this exact thread, the useState initializer above
+    // already loaded the same data into `messages` — nothing further to do.
+    const isFirstMount = loadedKeyRef.current === null;
+    loadedKeyRef.current = storageKey;
+
+    if (activeContext && loaded.length === 0) {
+      const word = activeContext.kind === 'customer' ? 'کسٹمر' : 'سپلائر';
+      const text = tpl('ur', {
+        en: `This is ${activeContext.name}'s account. Only ${activeContext.name}'s khata can be added in this chat.`,
+        ur: `یہ ${activeContext.name} کا کھاتہ ہے۔ اس چیٹ میں صرف ${activeContext.name} (${word}) کا کھاتہ شامل ہو سکتا ہے۔`,
+      });
+      const greeting: Message = { id: Math.random().toString(36).slice(2), role: 'assistant', text, lang: 'ur' };
+      setMessages([greeting]);
+      speak(text, 'ur');
+      return;
+    }
+
+    if (!isFirstMount) setMessages(loaded);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [storageKey]);
 
   // Resolve a spoken name (e.g. "Hamza") against customers/suppliers.
   // Every outcome that involves an existing person now requires an
@@ -411,6 +515,24 @@ export function AssistantPage() {
     return { kind: 'fuzzy', candidates };
   };
 
+  // A brand-new name (no exact/near match at all) is normally auto-created
+  // silently — but if the AI parse itself wasn't confident, or the name
+  // looks suspiciously short/truncated (a classic noisy-market voice
+  // recognition failure, e.g. hearing "Ab" instead of "Abbas"), silently
+  // creating it would save a wrong or incomplete name with no way to
+  // notice. In that case a confirm card is shown instead of auto-creating,
+  // so the shopkeeper explicitly approves the name first.
+  const looksUncertainName = (name: string, parsed: ParsedCommand): boolean => {
+    const trimmed = name.trim();
+    if (parsed.confidence < LOW_CONFIDENCE_THRESHOLD) return true;
+    if (trimmed.length < 3) return true;
+    // A single word under 4 letters ("Ab", "Sa") is a common truncation
+    // pattern; a short multi-word name ("Al Amin") is much less likely to
+    // be a truncation artifact, so it isn't flagged just for being short.
+    if (!trimmed.includes(' ') && trimmed.length < 4) return true;
+    return false;
+  };
+
   // Create a brand-new customer/supplier record — only ever called after
   // either (a) no exact/near match exists at all, or (b) the shopkeeper
   // explicitly confirmed "this is a new person" on a confirm/fuzzy/
@@ -418,6 +540,8 @@ export function AssistantPage() {
   const autoCreateParty = async (table: 'customers' | 'suppliers', nameColumn: 'full_name' | 'supplier_name', name: string): Promise<{ id: string; name: string } | null> => {
     const { data, error } = await supabase.from(table).insert({ shop_id: shop!.id, [nameColumn]: name, status: 'active' } as any).select('id').single();
     if (error || !data) return null;
+    if (table === 'customers') knownNamesRef.current.customers.push(name);
+    else knownNamesRef.current.suppliers.push(name);
     return { id: (data as any).id, name };
   };
 
@@ -433,11 +557,11 @@ export function AssistantPage() {
     return compareToContextName(spokenName, activeContext.name);
   };
 
-  const dedicatedBlockMessage = (ctxName: string, kind: 'customer' | 'supplier', lang: ReplyLang): string => {
+  const dedicatedBlockMessage = (ctxName: string, otherName: string, kind: 'customer' | 'supplier', lang: ReplyLang): string => {
     const word = kind === 'customer' ? 'کسٹمر' : 'سپلائر';
     return tpl(lang, {
-      en: `This chat is only for ${ctxName}'s account. If you want to add a different ${kind}, please go to the AI Assistant and add a new ${kind} there.`,
-      ur: `یہ چیٹ صرف ${ctxName} کے حساب کتاب کے لیے ہے۔ اگر آپ کسی دوسرے نئے ${word} کا کھاتا بنانا چاہتے ہیں تو AI Assistant میں جا کر نیا ${word} ایڈ کریں۔`,
+      en: `This is ${ctxName}'s account. Only ${ctxName}'s khata can be added in this chat. To add ${otherName}'s transaction, please open ${otherName}'s own Dedicated Chat, or use the Global AI Chat.`,
+      ur: `یہ ${ctxName} کا کھاتا ہے۔ اس چیٹ میں صرف ${ctxName} (${word}) کا کھاتا شامل ہو سکتا ہے۔ ${otherName} کا حساب شامل کرنے کے لیے ${otherName} کی اپنی Dedicated Chat کھولیں، یا Global AI Chat استعمال کریں۔`,
     });
   };
 
@@ -492,7 +616,7 @@ export function AssistantPage() {
         };
         return null;
       } else if (guard === 'different') {
-        parsed.clarification = dedicatedBlockMessage(activeContext!.name, 'customer', lang);
+        parsed.clarification = dedicatedBlockMessage(activeContext!.name, spokenName, 'customer', lang);
         return null;
       } else {
         const resolved = await resolvePartyWithConfirmation('customers', 'full_name', spokenName);
@@ -517,10 +641,18 @@ export function AssistantPage() {
           });
           pickerNeededRef.current = { kind: 'customer', mode: 'fuzzy', spokenName, candidates: resolved.candidates, parsed, lang, resolvedProducts };
           return null;
+        } else if (looksUncertainName(spokenName, parsed)) {
+          parsed.clarification = tpl(lang, {
+            en: `I'm not fully sure I heard the name correctly. Please confirm below.`,
+            ur: `نام واضح طور پر سمجھ نہیں آیا۔ براہ کرم نیچے تصدیق کریں۔`,
+          });
+          pickerNeededRef.current = { kind: 'customer', mode: 'confirm-new', spokenName, candidates: [], parsed, lang, resolvedProducts };
+          return null;
         } else {
-          // No exact or near match at all — this is a genuinely new
-          // person. Create them automatically and continue straight to
-          // the invoice preview, no question asked.
+          // No exact or near match at all, and the name itself looks
+          // reliable — this is a genuinely new person. Create them
+          // automatically and continue straight to the invoice preview,
+          // no question asked.
           const created = await autoCreateParty('customers', 'full_name', spokenName);
           if (created) { customerId = created.id; customerName = created.name; }
         }
@@ -592,7 +724,7 @@ export function AssistantPage() {
         };
         return null;
       } else if (guard === 'different') {
-        parsed.clarification = dedicatedBlockMessage(activeContext!.name, 'supplier', lang);
+        parsed.clarification = dedicatedBlockMessage(activeContext!.name, spokenName, 'supplier', lang);
         return null;
       } else {
         const resolved = await resolvePartyWithConfirmation('suppliers', 'supplier_name', spokenName);
@@ -617,13 +749,31 @@ export function AssistantPage() {
           });
           pickerNeededRef.current = { kind: 'supplier', mode: 'fuzzy', spokenName, candidates: resolved.candidates, parsed, lang, resolvedProducts };
           return null;
+        } else if (looksUncertainName(spokenName, parsed)) {
+          parsed.clarification = tpl(lang, {
+            en: `I'm not fully sure I heard the name correctly. Please confirm below.`,
+            ur: `نام واضح طور پر سمجھ نہیں آیا۔ براہ کرم نیچے تصدیق کریں۔`,
+          });
+          pickerNeededRef.current = { kind: 'supplier', mode: 'confirm-new', spokenName, candidates: [], parsed, lang, resolvedProducts };
+          return null;
         } else {
           const created = await autoCreateParty('suppliers', 'supplier_name', spokenName);
           if (created) { supplierId = created.id; supplierName = created.name; }
         }
       }
     }
-    return { kind: 'purchase', supplierName, supplierId, lines, subtotal, totalTradeOffer, totalFurtherTax, totalAdvanceTax, grandTotal, amountPaid, balance, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD };
+    // Same "previous balance / updated balance" treatment as a customer
+    // sale — supplier core behavior mirrors customer behavior end to end,
+    // only the quantity/packaging context differs.
+    let previousBalance = 0;
+    if (supplierId) {
+      const bal = await fetchBalance('suppliers', supplierId);
+      previousBalance = bal ?? 0;
+    }
+    return {
+      kind: 'purchase', supplierName, supplierId, lines, subtotal, totalTradeOffer, totalFurtherTax, totalAdvanceTax,
+      grandTotal, amountPaid, balance, previousBalance, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD,
+    };
   };
 
   const buildPaymentPreview = async (parsed: ParsedCommand, forcedParty?: { id: string; name: string }, sourceText: string = ''): Promise<PaymentPreview | null> => {
@@ -654,7 +804,7 @@ export function AssistantPage() {
         };
         return null;
       } else if (guard === 'different') {
-        parsed.clarification = dedicatedBlockMessage(activeContext!.name, 'customer', lang);
+        parsed.clarification = dedicatedBlockMessage(activeContext!.name, spokenName, 'customer', lang);
         return null;
       } else {
         const resolved = await resolvePartyWithConfirmation('customers', 'full_name', spokenName);
@@ -747,6 +897,45 @@ export function AssistantPage() {
     return null;
   };
 
+  // Spoken/read-aloud AND on-screen summary text for a ready-to-confirm
+  // preview. Deliberately a short, high-level summary (item count, total,
+  // previous balance, updated balance) rather than reading every line
+  // item aloud — the full item-by-item breakdown stays visible on screen
+  // in the preview card for whenever the shopkeeper wants to check it,
+  // but the voice reply itself stays quick and useful. Uses "khata" (the
+  // shop's own account-book terminology), not "invoice", since this is a
+  // normal account transaction confirmation, not a generated document.
+  const saleSummaryText = (lang: ReplyLang, p: SalePreview): string => {
+    const itemCount = p.lines.length;
+    const updatedBalance = p.previousBalance + p.balance;
+    return tpl(lang, {
+      en: `${p.customerName}'s khata is ready. ${itemCount} item(s), total ${formatMoney(p.grandTotal, shop?.currency)}. Previous balance ${formatMoney(p.previousBalance, shop?.currency)}, updated balance ${formatMoney(updatedBalance, shop?.currency)}. Please confirm.`,
+      ur: `${p.customerName} کا کھاتا تیار ہے۔ اس میں ${itemCount} آئٹمز ہیں۔ کل رقم ${formatMoney(p.grandTotal, shop?.currency)} ہے۔ پچھلا بیلنس ${formatMoney(p.previousBalance, shop?.currency)} ہے اور نیا بیلنس ${formatMoney(updatedBalance, shop?.currency)} ہو جائے گا۔ براہ کرم تصدیق کریں۔`,
+    });
+  };
+
+  const purchaseSummaryText = (lang: ReplyLang, p: PurchasePreview): string => {
+    const itemCount = p.lines.length;
+    const updatedBalance = p.previousBalance + p.balance;
+    return tpl(lang, {
+      en: `${p.supplierName}'s khata is ready. ${itemCount} item(s), total ${formatMoney(p.grandTotal, shop?.currency)}. Previous balance ${formatMoney(p.previousBalance, shop?.currency)}, updated balance ${formatMoney(updatedBalance, shop?.currency)}. Please confirm.`,
+      ur: `${p.supplierName} کا کھاتا تیار ہے۔ اس میں ${itemCount} آئٹمز ہیں۔ کل رقم ${formatMoney(p.grandTotal, shop?.currency)} ہے۔ پچھلا بیلنس ${formatMoney(p.previousBalance, shop?.currency)} ہے اور نیا بیلنس ${formatMoney(updatedBalance, shop?.currency)} ہو جائے گا۔ براہ کرم تصدیق کریں۔`,
+    });
+  };
+
+  const paymentSummaryText = (lang: ReplyLang, p: PaymentPreview): string => {
+    return tpl(lang, {
+      en: `${p.customerName}'s payment is ready. Amount ${formatMoney(p.amount, p.currency)}.` +
+        (p.previousBalance != null ? ` Previous balance ${formatMoney(p.previousBalance, shop?.currency)}` : '') +
+        (p.newBalance != null ? `, new balance ${formatMoney(p.newBalance, shop?.currency)}.` : '.') +
+        ' Please confirm.',
+      ur: `${p.customerName} کی ادائیگی تیار ہے۔ رقم ${formatMoney(p.amount, p.currency)} ہے۔` +
+        (p.previousBalance != null ? ` پچھلا بیلنس ${formatMoney(p.previousBalance, shop?.currency)}` : '') +
+        (p.newBalance != null ? `، نیا بیلنس ${formatMoney(p.newBalance, shop?.currency)} ہو جائے گا۔` : '۔') +
+        ' براہ کرم تصدیق کریں۔',
+    });
+  };
+
   // Builds the assistant's reply + preview from an already-parsed command,
   // and appends it to the chat. Shared by the normal AI-parse path and the
   // "yes, create them" resume path (which skips calling the AI again).
@@ -758,17 +947,9 @@ export function AssistantPage() {
     if (parsed.clarification) {
       responseText = parsed.clarification;
     } else if (parsed.intent === 'SALE' && preview?.kind === 'sale') {
-      responseText = tpl(lang, {
-        en: `I have prepared a sale preview for ${preview.customerName}. Please review and confirm.`,
-        ur: `${preview.customerName} کی سیل تیار کر لی گئی ہے۔ براہِ کرم نیچے دیکھ کر تصدیق کریں۔`,
-        hi: `${preview.customerName} के लिए बिक्री तैयार कर दी है। नीचे देख कर पुष्टि करें।`,
-      });
+      responseText = saleSummaryText(lang, preview);
     } else if (parsed.intent === 'PURCHASE' && preview?.kind === 'purchase') {
-      responseText = tpl(lang, {
-        en: `I have prepared a purchase preview from ${preview.supplierName}. Please review and confirm.`,
-        ur: `${preview.supplierName} سے خریداری تیار کر لی گئی ہے۔ براہِ کرم نیچے دیکھ کر تصدیق کریں۔`,
-        hi: `${preview.supplierName} से खरीद तैयार कर दी है। नीचे देख कर पुष्टि करें।`,
-      });
+      responseText = purchaseSummaryText(lang, preview);
     } else if (parsed.intent === 'PAYMENT' && preview?.kind === 'payment') {
       if (!preview.customerId) {
         responseText = tpl(lang, {
@@ -777,27 +958,38 @@ export function AssistantPage() {
           hi: `"${preview.customerName || 'इस नाम के'}" नाम का कोई ग्राहक नहीं मिला। नाम जांच कर दोबारा बताएं।`,
         });
       } else {
-        responseText = tpl(lang, {
-          en: `I have prepared a payment of ${formatMoney(preview.amount, shop?.currency)} for ${preview.customerName}. Please review and confirm.`,
-          ur: `${preview.customerName} کے لیے ${formatMoney(preview.amount, shop?.currency)} ادائیگی تیار کر لی گئی ہے۔ براہِ کرم نیچے دیکھ کر تصدیق کریں۔`,
-          hi: `${preview.customerName} के लिए ${formatMoney(preview.amount, shop?.currency)} भुगतान तैयार कर दिया है। नीचे देख कर पुष्टि करें।`,
-        });
+        responseText = paymentSummaryText(lang, preview);
       }
     } else if (parsed.intent === 'CUSTOMER_SEARCH') {
-      const { data } = await supabase.from('customers').select('id, full_name, primary_phone').eq('shop_id', shop!.id).ilike('full_name', `%${parsed.entities.customer?.name ?? ''}%`).limit(5);
-      if (data && data.length > 0) {
-        const list = data.map((c) => `• ${c.full_name}${c.primary_phone ? ` (${c.primary_phone})` : ''}`).join('\n');
+      // A plain balance lookup — never routes anywhere else. Single exact
+      // match -> answer with the balance right here. Multiple matches ->
+      // an inline picker (name + phone + balance, paginated) so the
+      // shopkeeper can tell them apart; selecting one answers with THEIR
+      // balance in this same chat too (see the `queryOnly` branch of
+      // handlePickerSelect) — never a redirect to another screen.
+      const name = parsed.entities.customer?.name ?? '';
+      const { data } = await supabase.from('customers').select('id, full_name, primary_phone').eq('shop_id', shop!.id).ilike('full_name', `%${name}%`).limit(200);
+      if (!data || data.length === 0) {
         responseText = tpl(lang, {
-          en: `Found ${data.length} customer(s):\n${list}`,
-          ur: `${data.length} کسٹمر ملے:\n${list}`,
-          hi: `${data.length} ग्राहक मिले:\n${list}`,
+          en: `No customer found named "${name}".`,
+          ur: `"${name}" نامی کوئی کسٹمر نہیں ملا۔`,
+          hi: `"${name}" नाम का कोई ग्राहक नहीं मिला।`,
+        });
+      } else if (data.length === 1) {
+        const row = data[0];
+        const balance = (await fetchBalance('customers', row.id)) ?? 0;
+        responseText = tpl(lang, {
+          en: `${row.full_name}'s current balance is ${formatMoney(balance, shop?.currency)}.`,
+          ur: `${row.full_name} کا موجودہ بیلنس ${formatMoney(balance, shop?.currency)} ہے۔`,
+          hi: `${row.full_name} का मौजूदा बैलेंस ${formatMoney(balance, shop?.currency)} है।`,
         });
       } else {
         responseText = tpl(lang, {
-          en: 'No customers found with that name.',
-          ur: 'اس نام کا کوئی کسٹمر نہیں ملا۔',
-          hi: 'इस नाम का कोई ग्राहक नहीं मिला।',
+          en: `There are ${data.length} customers named "${name}". Please check the name and phone number below to select the correct one.`,
+          ur: `"${name}" نامی ${data.length} کسٹمر موجود ہیں۔ براہ کرم نیچے نام اور فون نمبر دیکھ کر درست کسٹمر منتخب کریں۔`,
+          hi: `"${name}" नाम के ${data.length} ग्राहक मौजूद हैं। नीचे नाम और फ़ोन नंबर देख कर सही ग्राहक चुनें।`,
         });
+        pickerNeededRef.current = { kind: 'customer', mode: 'multiple', spokenName: name, candidates: [], parsed, lang, queryOnly: true };
       }
     } else if (parsed.intent === 'REPORT') {
       responseText = reportResponse(parsed.entities.report_type ?? 'daily_sales', lang);
@@ -823,37 +1015,47 @@ export function AssistantPage() {
   // command using the chosen record, updating the SAME message in place —
   // the chat never closes and no screen change happens.
   const handlePickerSelect = async (msgId: string, needsPicker: PartyPickerState, chosen: PickedParty | ConfirmCandidate) => {
-    const resumedParsed: ParsedCommand = { ...needsPicker.parsed, clarification: undefined };
     const lang = needsPicker.lang;
 
+    // A plain balance-lookup picker (from CUSTOMER_SEARCH) — answer with
+    // the chosen party's balance right here, no preview/transaction of
+    // any kind, and no navigating away from this chat.
+    if (needsPicker.queryOnly) {
+      const table = needsPicker.kind === 'customer' ? 'customers' as const : 'suppliers' as const;
+      const balance = (await fetchBalance(table, chosen.id)) ?? 0;
+      const text = tpl(lang, {
+        en: `${chosen.name}'s current balance is ${formatMoney(balance, shop?.currency)}.`,
+        ur: `${chosen.name} کا موجودہ بیلنس ${formatMoney(balance, shop?.currency)} ہے۔`,
+      });
+      setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text, lang: renderLangOf(lang), needsPicker: undefined } : x)));
+      speak(text, renderLangOf(lang));
+      return;
+    }
+
+    const resumedParsed: ParsedCommand = { ...needsPicker.parsed, clarification: undefined };
     let preview: SalePreview | PurchasePreview | PaymentPreview | null = null;
     let responseText = '';
 
     if (resumedParsed.intent === 'PAYMENT') {
       preview = await buildPaymentPreview(resumedParsed, chosen);
-      responseText = tpl(lang, {
-        en: `Selected ${chosen.name}. I have prepared the payment preview. Please review and confirm.`,
-        ur: `${chosen.name} منتخب کر لیا گیا۔ ادائیگی تیار ہے، نیچے دیکھ کر تصدیق کریں۔`,
-        hi: `${chosen.name} चुन लिया। भुगतान पूर्वावलोकन तैयार है, नीचे देख कर पुष्टि करें।`,
-      });
+      responseText = preview?.kind === 'payment'
+        ? paymentSummaryText(lang, preview)
+        : tpl(lang, { en: 'Could not prepare the preview. Please try again.', ur: 'پیش نظر تیار نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔' });
     } else if (needsPicker.kind === 'customer') {
       preview = await buildSalePreview(resumedParsed, chosen, '', needsPicker.resolvedProducts ?? []);
-      responseText = tpl(lang, {
-        en: `Selected ${chosen.name}. I have prepared the invoice. Please review and confirm.`,
-        ur: `${chosen.name} منتخب کر لیا گیا۔ انوائس تیار ہے، نیچے دیکھ کر تصدیق کریں۔`,
-        hi: `${chosen.name} चुन लिया। इनवॉइस तैयार है, नीचे देख कर पुष्टि करें।`,
-      });
+      responseText = preview?.kind === 'sale'
+        ? saleSummaryText(lang, preview)
+        : tpl(lang, { en: 'Could not prepare the preview. Please try again.', ur: 'پیش نظر تیار نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔' });
     } else {
       preview = await buildPurchasePreview(resumedParsed, chosen, '', needsPicker.resolvedProducts ?? []);
-      responseText = tpl(lang, {
-        en: `Selected ${chosen.name}. I have prepared the purchase invoice. Please review and confirm.`,
-        ur: `${chosen.name} منتخب کر لیا گیا۔ خریداری کی انوائس تیار ہے، نیچے دیکھ کر تصدیق کریں۔`,
-        hi: `${chosen.name} चुन लिया। खरीद इनवॉइस तैयार है, नीचे देख कर पुष्टि करें।`,
-      });
+      responseText = preview?.kind === 'purchase'
+        ? purchaseSummaryText(lang, preview)
+        : tpl(lang, { en: 'Could not prepare the preview. Please try again.', ur: 'پیش نظر تیار نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔' });
     }
 
     // Update the SAME message: picker/confirm card disappears, preview appears.
     setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text: responseText, lang: renderLangOf(lang), preview: preview ?? undefined, needsPicker: undefined } : x)));
+    speak(responseText, renderLangOf(lang));
   };
 
   // "None of these — add a new person" from a duplicate picker or a
@@ -879,7 +1081,19 @@ export function AssistantPage() {
   const handlePickerReject = (msgId: string, needsPicker: PartyPickerState) => {
     if (!activeContext) return;
     const lang = needsPicker.lang;
-    const text = dedicatedBlockMessage(activeContext.name, needsPicker.kind, lang);
+    const text = dedicatedBlockMessage(activeContext.name, needsPicker.spokenName, needsPicker.kind, lang);
+    setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text, lang: renderLangOf(lang), needsPicker: undefined } : x)));
+  };
+
+  // "No, retype the name" on a 'confirm-new' card — an uncertain/possibly
+  // truncated name was NOT confirmed, so nothing is created. Discards the
+  // whole paused command, same as cancelling a preview.
+  const handleNewNameReject = (msgId: string, needsPicker: PartyPickerState) => {
+    const lang = needsPicker.lang;
+    const text = tpl(lang, {
+      en: 'Cancelled. Please retype the message with the correct name.',
+      ur: 'منسوخ کر دیا گیا۔ براہ کرم درست نام کے ساتھ دوبارہ پیغام لکھیں۔',
+    });
     setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text, lang: renderLangOf(lang), needsPicker: undefined } : x)));
   };
 
@@ -927,15 +1141,9 @@ export function AssistantPage() {
     if (picker.parsed.clarification) {
       responseText = picker.parsed.clarification;
     } else if (preview?.kind === 'sale') {
-      responseText = tpl(picker.lang, {
-        en: `I have prepared a sale preview for ${preview.customerName}. Please review and confirm.`,
-        ur: `${preview.customerName} کی سیل تیار کر لی گئی ہے۔ براہِ کرم نیچے دیکھ کر تصدیق کریں۔`,
-      });
+      responseText = saleSummaryText(picker.lang, preview);
     } else if (preview?.kind === 'purchase') {
-      responseText = tpl(picker.lang, {
-        en: `I have prepared a purchase preview from ${preview.supplierName}. Please review and confirm.`,
-        ur: `${preview.supplierName} سے خریداری تیار کر لی گئی ہے۔ براہِ کرم نیچے دیکھ کر تصدیق کریں۔`,
-      });
+      responseText = purchaseSummaryText(picker.lang, preview);
     } else {
       responseText = tpl(picker.lang, {
         en: 'Could not prepare the preview. Please try again.',
@@ -1106,8 +1314,8 @@ export function AssistantPage() {
     const itemCount = preview.lines.length;
     const confirmLang = detectReplyLang(msg.text);
     const confirmText = tpl(confirmLang, {
-      en: `Purchase confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Balance payable ${formatMoney(preview.balance, shop?.currency)}.`,
-      ur: `خریداری تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ ادا کرنے والا بیلنس ${formatMoney(preview.balance, shop?.currency)}۔`,
+      en: `Purchase confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Previous balance ${formatMoney(preview.previousBalance, shop?.currency)}, new balance ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}.`,
+      ur: `خریداری تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ پچھلا بیلنس ${formatMoney(preview.previousBalance, shop?.currency)}، نیا بیلنس ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}۔`,
     });
     setMessages((m) => m.map((x) => (x.id === msg.id ? {
       ...x, preview: undefined, text: confirmText, lang: renderLangOf(confirmLang),
@@ -1228,17 +1436,23 @@ export function AssistantPage() {
     setRecording(false);
     setMicLevel(0);
     setTranscribing(true);
-    const uiLang: ReplyLang = voiceLang === 'ur-PK' ? 'ur' : voiceLang === 'hi-IN' ? 'hi' : 'en';
+    const uiLang: ReplyLang = voiceLang === 'ur-PK' ? 'ur' : 'en';
     try {
       const { blob, mimeType } = await rec.stop();
       if (blob.size < 800) { setTranscribing(false); return; } // essentially silent/empty capture
       const base64 = await blobToBase64(blob);
-      const langCode = voiceLang === 'ur-PK' ? 'ur' : voiceLang === 'hi-IN' ? 'hi' : 'en';
+      const langCode = voiceLang === 'ur-PK' ? 'ur' : 'en';
+      // A short list of this shop's own real names, handed to the
+      // transcription model as a vocabulary hint — helps it correctly
+      // hear a proper noun (e.g. "Abbas") instead of truncating/mishearing
+      // it, which is the single biggest source of wrong-name transactions
+      // in a noisy shop.
+      const namePrompt = [...knownNamesRef.current.customers, ...knownNamesRef.current.suppliers].slice(0, 80).join(', ').slice(0, 800);
       const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/voice-transcribe`;
       const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}` },
-        body: JSON.stringify({ audio: base64, mimeType, language: langCode }),
+        body: JSON.stringify({ audio: base64, mimeType, language: langCode, namePrompt }),
       });
       const json = await res.json();
       if (!res.ok || !json.success) throw new Error(json.error?.message ?? 'Voice recognition failed.');
@@ -1291,7 +1505,7 @@ export function AssistantPage() {
         <div className="mb-4 rounded-lg bg-blue-50 px-4 py-2.5 text-sm text-blue-800 dark:bg-blue-950/30 dark:text-blue-300">
           <div className="flex items-center justify-between gap-2">
             <p dir="rtl" className="font-medium">
-              یہ چیٹ صرف <strong>{activeContext.name}</strong> کے حساب کتاب کے لیے ہے۔
+              یہ <strong>{activeContext.name}</strong> کا کھاتا ہے۔ اس چیٹ میں صرف <strong>{activeContext.name}</strong> کا کھاتا شامل ہو سکتا ہے۔
             </p>
             <Link
               to={activeContext.kind === 'customer' ? `/customers/${activeContext.id}` : `/suppliers/${activeContext.id}`}
@@ -1333,8 +1547,8 @@ export function AssistantPage() {
               <div className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500 dark:bg-slate-800'}`}>
                 {m.role === 'user' ? <User className="h-4 w-4" /> : <Sparkles className="h-4 w-4" />}
               </div>
-              <div className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100'}`}>
-                <p dir={m.lang === 'ur' ? 'rtl' : 'ltr'} className={`whitespace-pre-line ${m.lang === 'ur' ? 'text-right' : ''}`}>{m.text}</p>
+              <div className={`min-w-0 max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100'}`}>
+                <p dir={m.lang === 'ur' ? 'rtl' : 'ltr'} className={`whitespace-pre-line break-words ${m.lang === 'ur' ? 'text-right' : ''}`}>{m.text}</p>
 
                 {m.role === 'user' && !loading && (
                   <button
@@ -1356,14 +1570,15 @@ export function AssistantPage() {
                     currency={shop.currency}
                     initialSearch={m.needsPicker.spokenName}
                     onSelect={(chosen) => handlePickerSelect(m.id, m.needsPicker!, chosen)}
-                    onAddNew={() => handlePickerAddNew(m.id, m.needsPicker!)}
+                    onAddNew={m.needsPicker.queryOnly ? undefined : () => handlePickerAddNew(m.id, m.needsPicker!)}
                   />
                 )}
 
-                {/* Single-match / near-match / dedicated-chat-typo
-                    confirmation card — always requires an explicit human
-                    decision before any preview is built. */}
-                {(m.needsPicker?.mode === 'confirm-one' || m.needsPicker?.mode === 'fuzzy' || m.needsPicker?.mode === 'context-typo') && (
+                {/* Single-match / near-match / dedicated-chat-typo /
+                    uncertain-new-name confirmation card — always requires
+                    an explicit human decision before any preview is built
+                    or any record is created. */}
+                {(m.needsPicker?.mode === 'confirm-one' || m.needsPicker?.mode === 'fuzzy' || m.needsPicker?.mode === 'context-typo' || m.needsPicker?.mode === 'confirm-new') && (
                   <PartyConfirmCard
                     kind={m.needsPicker.kind}
                     mode={m.needsPicker.mode}
@@ -1372,7 +1587,11 @@ export function AssistantPage() {
                     currency={shop?.currency}
                     onSelect={(chosen) => handlePickerSelect(m.id, m.needsPicker!, chosen)}
                     onAddNew={m.needsPicker.mode !== 'context-typo' ? () => handlePickerAddNew(m.id, m.needsPicker!) : undefined}
-                    onReject={m.needsPicker.mode === 'context-typo' ? () => handlePickerReject(m.id, m.needsPicker!) : undefined}
+                    onReject={
+                      m.needsPicker.mode === 'context-typo' ? () => handlePickerReject(m.id, m.needsPicker!)
+                      : m.needsPicker.mode === 'confirm-new' ? () => handleNewNameReject(m.id, m.needsPicker!)
+                      : undefined
+                    }
                   />
                 )}
 
@@ -1398,9 +1617,14 @@ export function AssistantPage() {
                   const p = m.preview;
                   return (
                     <div className="mt-3 rounded-xl border border-slate-200 bg-white p-3 text-slate-800 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100">
-                      <div className="mb-2 flex items-center gap-2 border-b border-slate-100 pb-2 dark:border-slate-800">
-                        <ShoppingBag className="h-4 w-4 text-blue-600" />
-                        <span className="text-sm font-semibold">Sale Preview — {p.customerName}</span>
+                      <div className="mb-2 flex items-center justify-between gap-2 border-b border-slate-100 pb-2 dark:border-slate-800">
+                        <span className="flex items-center gap-2">
+                          <ShoppingBag className="h-4 w-4 text-blue-600" />
+                          <span className="text-sm font-semibold">Sale Preview — {p.customerName}</span>
+                        </span>
+                        <span className="flex-shrink-0 rounded-full bg-blue-50 px-2 py-0.5 text-[11px] font-medium text-blue-700 dark:bg-blue-950/40 dark:text-blue-300">
+                          {p.lines.length} {p.lines.length === 1 ? 'Item' : 'Items'}
+                        </span>
                       </div>
 
                       {p.lowConfidence && (
@@ -1485,9 +1709,14 @@ export function AssistantPage() {
                   const p = m.preview;
                   return (
                     <div className="mt-3 rounded-xl border border-slate-200 bg-white p-3 text-slate-800 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100">
-                      <div className="mb-2 flex items-center gap-2 border-b border-slate-100 pb-2 dark:border-slate-800">
-                        <Package className="h-4 w-4 text-amber-600" />
-                        <span className="text-sm font-semibold">Purchase Preview — {p.supplierName}</span>
+                      <div className="mb-2 flex items-center justify-between gap-2 border-b border-slate-100 pb-2 dark:border-slate-800">
+                        <span className="flex items-center gap-2">
+                          <Package className="h-4 w-4 text-amber-600" />
+                          <span className="text-sm font-semibold">Purchase Preview — {p.supplierName}</span>
+                        </span>
+                        <span className="flex-shrink-0 rounded-full bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700 dark:bg-amber-950/40 dark:text-amber-300">
+                          {p.lines.length} {p.lines.length === 1 ? 'Item' : 'Items'}
+                        </span>
                       </div>
                       {p.lowConfidence && (
                         <div dir="rtl" className="mb-2 rounded bg-red-50 px-2.5 py-1.5 text-right text-[11px] font-medium text-red-700 dark:bg-red-950/30 dark:text-red-400">
@@ -1535,6 +1764,11 @@ export function AssistantPage() {
                         <div className="flex justify-between font-semibold"><span>Grand Total</span><span>{formatMoney(p.grandTotal, shop?.currency)}</span></div>
                         {p.amountPaid > 0 && <div className="flex justify-between text-emerald-600"><span>Paid</span><span>{formatMoney(p.amountPaid, shop?.currency)}</span></div>}
                         {p.balance > 0 && <div className="flex justify-between text-amber-600"><span>Balance Payable</span><span>{formatMoney(p.balance, shop?.currency)}</span></div>}
+                        <div className="flex justify-between"><span>Previous Balance</span><span>{formatMoney(p.previousBalance, shop?.currency)}</span></div>
+                        <div className="flex justify-between border-t border-slate-100 pt-1 font-semibold dark:border-slate-800">
+                          <span>Updated Balance</span>
+                          <span>{formatMoney(p.previousBalance + p.balance, shop?.currency)}</span>
+                        </div>
                       </div>
                       <div className="mt-3 flex gap-2">
                         <Button size="sm" onClick={() => confirm(m)} loading={confirming?.id === m.id}>
@@ -1694,15 +1928,18 @@ export function AssistantPage() {
             >
               {recording ? <Square className="h-4 w-4" /> : <Mic className="h-5 w-5" />}
             </button>
+            {/* Only Urdu and English are supported — Urdu is first and is
+                the default-selected language so the chat is ready to
+                understand Urdu speech the moment it opens. */}
             <div className="flex flex-shrink-0 overflow-hidden rounded-full border border-slate-200 text-[10px] font-medium dark:border-slate-700" title="Voice input language">
-              {(['ur-PK', 'en-PK', 'hi-IN'] as const).map((code) => (
+              {(['ur-PK', 'en-PK'] as const).map((code) => (
                 <button
                   key={code}
                   type="button"
                   onClick={() => setVoiceLang(code)}
-                  className={`px-2 py-1.5 transition-colors ${voiceLang === code ? 'bg-blue-600 text-white' : 'bg-slate-50 text-slate-500 hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-400'}`}
+                  className={`px-2.5 py-1.5 transition-colors ${voiceLang === code ? 'bg-blue-600 text-white' : 'bg-slate-50 text-slate-500 hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-400'}`}
                 >
-                  {code === 'ur-PK' ? 'اردو' : code === 'en-PK' ? 'EN' : 'हिं'}
+                  {code === 'ur-PK' ? 'اردو' : 'EN'}
                 </button>
               ))}
             </div>
@@ -1721,6 +1958,11 @@ export function AssistantPage() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               disabled={loading}
+              // Writing direction follows what's actually being typed —
+              // Urdu/Roman Urdu types right-to-left, English types
+              // left-to-right. An empty box follows the selected voice
+              // language (Urdu by default), so it's never wrong at rest.
+              dir={renderLangOf(input ? detectReplyLang(input) : (voiceLang === 'ur-PK' ? 'ur' : 'en')) === 'ur' ? 'rtl' : 'ltr'}
               className="max-h-40 min-h-[2.5rem] flex-1 resize-none overflow-y-auto py-2 leading-relaxed"
               onKeyDown={(e) => {
                 if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(input); }

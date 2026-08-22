@@ -20,12 +20,18 @@ export type ConfirmCandidate = { id: string; name: string; phone?: string; balan
  *  - 'context-typo': inside a dedicated customer/supplier chat, the spoken
  *    name is a near-match (not exact) of the chat's own bound party —
  *    confirms whether they meant that same person before proceeding.
+ *  - 'confirm-new': no existing customer/supplier matches at all (exact or
+ *    near), AND the spoken/transcribed name itself looks uncertain (low AI
+ *    confidence, or suspiciously short — e.g. voice recognition heard "Ab"
+ *    instead of "Abbas"). Rather than silently creating a new person from a
+ *    possibly-truncated name, this asks the shopkeeper to confirm the name
+ *    is correct before anything is saved. Renders with zero candidates.
  */
 export function PartyConfirmCard({
   kind, mode, spokenName, candidates, currency, onSelect, onAddNew, onReject,
 }: {
   kind: 'customer' | 'supplier';
-  mode: 'confirm-one' | 'fuzzy' | 'context-typo';
+  mode: 'confirm-one' | 'fuzzy' | 'context-typo' | 'confirm-new';
   spokenName: string;
   candidates: ConfirmCandidate[];
   currency?: string;
@@ -40,6 +46,8 @@ export function PartyConfirmCard({
     heading = `"${spokenName}" نام کا ایک ${partyWord} پہلے سے موجود ہے۔ کیا یہ وہی ${partyWord} ہے؟`;
   } else if (mode === 'context-typo') {
     heading = `کیا آپ ${candidates[0]?.name} کی بات کر رہے ہیں؟ (آپ نے "${spokenName}" لکھا)`;
+  } else if (mode === 'confirm-new') {
+    heading = `نام واضح طور پر سنائی نہیں دیا۔ کیا "${spokenName}" نام درست ہے؟ اسی نام سے نیا ${partyWord} شامل کریں؟`;
   } else {
     heading = `"${spokenName}" سے ملتے جلتے نام موجود ہیں۔ کیا آپ ان میں سے کسی کی بات کر رہے ہیں؟`;
   }
@@ -68,7 +76,7 @@ export function PartyConfirmCard({
           </button>
         ))}
 
-        {mode === 'context-typo' ? (
+        {mode === 'context-typo' && (
           <button
             onClick={onReject}
             className="flex w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-slate-300 py-2 text-xs font-medium text-slate-600 hover:border-red-400 hover:bg-red-50 hover:text-red-700 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-red-950/20"
@@ -76,16 +84,35 @@ export function PartyConfirmCard({
             <X className="h-3.5 w-3.5" />
             نہیں، یہ ایک مختلف شخص ہے
           </button>
-        ) : (
-          onAddNew && (
+        )}
+
+        {mode === 'confirm-new' && (
+          <>
             <button
               onClick={onAddNew}
-              className="flex w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-slate-300 py-2 text-xs font-medium text-slate-600 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-blue-950/20"
+              className="flex w-full items-center justify-center gap-1.5 rounded-lg border border-emerald-300 bg-emerald-50 py-2 text-xs font-medium text-emerald-700 hover:bg-emerald-100 dark:border-emerald-800 dark:bg-emerald-950/30 dark:text-emerald-400"
             >
-              <UserPlus className="h-3.5 w-3.5" />
-              نہیں، نیا {partyWord} "{spokenName}" شامل کریں
+              <Check className="h-3.5 w-3.5" />
+              ہاں، درست ہے — نیا {partyWord} شامل کریں
             </button>
-          )
+            <button
+              onClick={onReject}
+              className="flex w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-slate-300 py-2 text-xs font-medium text-slate-600 hover:border-red-400 hover:bg-red-50 hover:text-red-700 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-red-950/20"
+            >
+              <X className="h-3.5 w-3.5" />
+              نہیں، نام دوبارہ لکھیں
+            </button>
+          </>
+        )}
+
+        {mode !== 'context-typo' && mode !== 'confirm-new' && onAddNew && (
+          <button
+            onClick={onAddNew}
+            className="flex w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-slate-300 py-2 text-xs font-medium text-slate-600 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-blue-950/20"
+          >
+            <UserPlus className="h-3.5 w-3.5" />
+            نہیں، نیا {partyWord} "{spokenName}" شامل کریں
+          </button>
         )}
       </div>
     </div>

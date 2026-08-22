@@ -29,7 +29,7 @@ function base64ToBytes(b64: string): Uint8Array {
   return bytes;
 }
 
-async function transcribe(audioBase64: string, mimeType: string, languageHint?: string): Promise<TranscribeResult> {
+async function transcribe(audioBase64: string, mimeType: string, languageHint?: string, namePrompt?: string): Promise<TranscribeResult> {
   if (!AI_API_KEY) {
     throw new Error("AI is not configured yet. The shop owner needs to add an AI_API_KEY secret in the Supabase project settings.");
   }
@@ -45,6 +45,13 @@ async function transcribe(audioBase64: string, mimeType: string, languageHint?: 
   form.append("model", STT_MODEL);
   form.append("response_format", "verbose_json");
   if (languageHint) form.append("language", languageHint);
+  // Whisper's "prompt" biases both vocabulary and spelling toward text
+  // that looks like this — used here to carry the shop's own real
+  // customer/supplier names, so a proper noun (e.g. "Abbas") is more
+  // likely to be transcribed correctly/completely instead of truncated,
+  // which is the most common real-world cause of a transaction landing
+  // on the wrong (or an accidentally new) account.
+  if (namePrompt) form.append("prompt", namePrompt.slice(0, 800));
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), STT_TIMEOUT_MS);
@@ -92,7 +99,7 @@ Deno.serve(async (req: Request) => {
   }
 
   try {
-    const { audio, mimeType, language } = await req.json();
+    const { audio, mimeType, language, namePrompt } = await req.json();
     if (!audio || typeof audio !== "string") {
       return new Response(JSON.stringify({ error: "Missing 'audio' field" }), {
         status: 400,
@@ -100,7 +107,12 @@ Deno.serve(async (req: Request) => {
       });
     }
 
-    const result = await transcribe(audio, typeof mimeType === "string" ? mimeType : "audio/webm", typeof language === "string" ? language : undefined);
+    const result = await transcribe(
+      audio,
+      typeof mimeType === "string" ? mimeType : "audio/webm",
+      typeof language === "string" ? language : undefined,
+      typeof namePrompt === "string" ? namePrompt : undefined,
+    );
 
     return new Response(JSON.stringify({ success: true, data: result }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
