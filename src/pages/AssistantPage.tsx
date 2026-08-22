@@ -345,52 +345,45 @@ export function AssistantPage() {
     return json.data as ParsedCommand;
   };
 
-  // Cache of available browser TTS voices, refreshed once they actually
-  // load (Chrome loads the voice list asynchronously) — used to pick a
-  // natural-sounding voice per language instead of whatever the browser's
-  // first/default voice happens to be, which is often a flat, low-quality,
-  // clearly-robotic one.
-  const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
-  useEffect(() => {
-    if (typeof window === 'undefined' || !window.speechSynthesis) return;
-    const load = () => { voicesRef.current = window.speechSynthesis.getVoices(); };
-    load();
-    window.speechSynthesis.addEventListener('voiceschanged', load);
-    return () => window.speechSynthesis.removeEventListener('voiceschanged', load);
-  }, []);
+  // Tracks the reply currently playing (if any) so a new reply — or the
+  // shopkeeper turning voice replies off — can stop it cleanly instead of
+  // overlapping with whatever's already playing.
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
 
-  const pickVoice = (langCode: string): SpeechSynthesisVoice | undefined => {
-    const voices = voicesRef.current;
-    const exact = voices.filter((v) => v.lang.toLowerCase() === langCode.toLowerCase());
-    const family = voices.filter((v) => v.lang.toLowerCase().startsWith(langCode.split('-')[0].toLowerCase()));
-    const pool = exact.length ? exact : family;
-    if (!pool.length) return undefined;
-    // Prefer a higher-quality "natural"/network voice (Google/Microsoft
-    // Online/Neural voices) over a generic local robotic one, when the
-    // browser actually offers a choice for this language.
-    return pool.find((v) => /google|natural|online|neural/i.test(v.name)) ?? pool[0];
+  const stopSpeaking = () => {
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current = null;
+    }
   };
 
-  // Reads an assistant reply aloud using the browser's built-in
-  // speech-synthesis voice for the language it was rendered in — no extra
-  // API/cost needed for this direction (unlike voice INPUT, output doesn't
-  // need noise-robustness, so the free built-in engine is sufficient).
-  const speak = (text: string, lang: RenderLang) => {
-    if (!speakReplies || !text) return;
-    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+  // Reads an assistant reply aloud using the same OpenAI account already
+  // configured for the shop's AI (real text-to-speech, not the browser's
+  // free built-in engine) — the built-in engine's voice quality/available
+  // languages vary wildly by device and were frequently flat, robotic, or
+  // outright unclear for Urdu. One extra network round-trip per reply, but
+  // consistent quality regardless of the shopkeeper's phone.
+  const speak = async (text: string, _lang: RenderLang) => {
+    if (!speakReplies || !text.trim()) return;
+    stopSpeaking();
     try {
-      window.speechSynthesis.cancel();
-      const langCode = lang === 'ur' ? 'ur-PK' : lang === 'hi' ? 'hi-IN' : 'en-US';
-      const utter = new SpeechSynthesisUtterance(text);
-      utter.lang = langCode;
-      const voice = pickVoice(langCode);
-      if (voice) utter.voice = voice;
-      // Close to natural conversational pace — the previous fixed 0.95
-      // rate read every reply in the same slow, flat cadence.
-      utter.rate = 1.02;
-      utter.pitch = 1.0;
-      window.speechSynthesis.speak(utter);
-    } catch { /* speech synthesis unavailable/blocked — silent no-op */ }
+      const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/voice-speak`;
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify({ text }),
+      });
+      if (!res.ok) return;
+      const blob = await res.blob();
+      const audioUrl = URL.createObjectURL(blob);
+      const audio = new Audio(audioUrl);
+      currentAudioRef.current = audio;
+      audio.addEventListener('ended', () => { URL.revokeObjectURL(audioUrl); if (currentAudioRef.current === audio) currentAudioRef.current = null; });
+      await audio.play();
+    } catch { /* TTS unavailable/blocked — silent no-op, the text reply is still shown */ }
   };
 
   const fetchBalance = async (table: 'customers' | 'suppliers', id: string): Promise<number | undefined> => {
@@ -2062,7 +2055,7 @@ export function AssistantPage() {
                 </div>
                 <button
                   type="button"
-                  onClick={() => { setSpeakReplies((v) => !v); if (speakReplies) window.speechSynthesis?.cancel(); }}
+                  onClick={() => { setSpeakReplies((v) => !v); if (speakReplies) stopSpeaking(); }}
                   className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full transition-colors ${speakReplies ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400' : 'bg-slate-100 text-slate-400 dark:bg-slate-800'}`}
                   title={speakReplies ? 'Voice replies on' : 'Voice replies off'}
                 >
