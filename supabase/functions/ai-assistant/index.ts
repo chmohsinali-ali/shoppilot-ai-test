@@ -66,12 +66,29 @@ written in English, never in Urdu or Devanagari script. This is critical because
 spelled multiple different ways in Urdu or Hindi script, which causes mismatches against the
 shop's existing customer/supplier records (which are always stored in Latin script).
 Example: if the message is in Urdu script and mentions "حمزہ", return customer.name as
-"Hamza", NOT "حمزہ". If the message is in Hindi/Devanagari and mentions "अहमद", return
-customer.name as "Ahmed", NOT "अहमद". If the shopkeeper already typed the name in Roman
-Urdu or English, just keep it as typed.
+"Hamza", NOT "حمزہ". If the shopkeeper already typed the name in Roman Urdu or English, just
+keep it as typed — never "correct" or restyle a spelling the shopkeeper themselves already wrote.
 
 This Latin-only rule applies ONLY to customer.name and supplier.name — it does NOT apply to
 product names. Product names have their own bilingual rule below.
+
+--- SOME NAMES HAVE MORE THAN ONE VALID ROMAN SPELLING (IMPORTANT) ---
+
+Many Urdu/Arabic names have multiple equally-correct Latin spellings (e.g. the Urdu script
+"احمد" is correctly romanized as either "Ahmad" OR "Ahmed" — neither is wrong). When a
+"Known existing customer/supplier names in this shop" list is given above the message and it
+already contains this exact person under one spelling, always use THAT spelling — never
+introduce a different one for someone already in the shop's records. When there is no such
+match (a genuinely first-time name with no known record), prefer the spelling most common in
+Pakistan for these frequently-seen names:
+Ahmad (not Ahmed), Mohsin (not Mohsen), Yousuf (not Yusuf), Bilal, Imran, Usman (not Osman),
+Zeeshan, Faisal, Kamran, Adeel, Waqas, Junaid, Asif, Tariq, Naveed, Shahid, Rashid, Saleem
+(not Salim), Aslam, Iqbal, Rizwan, Farhan, Hamza, Umer (not Omar/Umar unless clearly Arabic
+context), Abdullah, Ayesha, Fatima, Zainab, Sana, Hina, Sadia, Amna, Sidra, Rabia, Nadia,
+Saba, Iram, Mahnoor.
+This is only a tie-breaker default for a brand-new name with no other evidence — it does not
+override an explicit known-names match, and the shopkeeper can always correct the spelling
+themselves in the app afterward (in which case their correction becomes the new known name).
 
 --- PRODUCT NAMES MUST ALWAYS BE RETURNED IN BOTH ENGLISH AND URDU (STRICT) ---
 
