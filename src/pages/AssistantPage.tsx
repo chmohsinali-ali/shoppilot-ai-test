@@ -298,6 +298,13 @@ export function AssistantPage() {
   // (keyed by message id), since a new customer's first invoice requires
   // a phone number before it can be confirmed/saved.
   const [phoneDrafts, setPhoneDrafts] = useState<Record<string, string>>({});
+  // Lets the shopkeeper correct the customer/supplier name shown in a
+  // preview card before confirming — needed because Urdu/Roman-Urdu
+  // speech often has more than one valid Latin spelling (e.g. "Ahmad" vs
+  // "Ahmed"), and the AI has no way to guess which one a shopkeeper
+  // actually wants for a brand-new name. Keyed by message id, like
+  // phoneDrafts above.
+  const [nameDrafts, setNameDrafts] = useState<Record<string, string>>({});
   const scrollRef = useRef<HTMLDivElement>(null);
   const recorderRef = useRef<VoiceRecorder | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -1239,6 +1246,16 @@ export function AssistantPage() {
   const confirmSale = async (msg: Message, preview: SalePreview) => {
     if (!shop || !user) return;
 
+    // Apply any spelling correction made in the preview's editable Customer
+    // Name field (e.g. AI romanized Urdu speech as "Ahmed" but the
+    // shopkeeper actually wants "Ahmad") before anything is saved, so the
+    // sale and the customer record both end up with the corrected name.
+    const finalCustomerName = (nameDrafts[msg.id] ?? '').trim() || preview.customerName;
+    if (finalCustomerName !== preview.customerName && preview.customerId) {
+      const { error: renameErr } = await supabase.from('customers').update({ full_name: finalCustomerName }).eq('id', preview.customerId);
+      if (renameErr) { toast('error', renameErr.message); return; }
+    }
+
     // A brand-new customer's FIRST invoice requires a phone number
     // before it can be saved — this is their primary identifier for
     // future duplicate-name situations.
@@ -1268,7 +1285,7 @@ export function AssistantPage() {
     setConfirming(msg);
     const items = preview.lines.map((l) => ({ product_id: l.productId ?? '', product_name: l.name, product_name_ur: l.nameUr, unit: l.unit, quantity: l.qty, price: l.price, discount: 0, tax_rate: 0 }));
     const { data, error } = await supabase.rpc('create_sale', {
-      p_shop_id: shop.id, p_customer_id: preview.customerId, p_customer_name: preview.customerName,
+      p_shop_id: shop.id, p_customer_id: preview.customerId, p_customer_name: finalCustomerName,
       p_sale_date: new Date().toISOString(), p_items: items, p_discount_total: preview.discount,
       p_tax_total: 0, p_amount_paid: preview.amountPaid, p_payment_method: 'cash',
       p_notes: 'Created via AI Assistant', p_user_id: user.id,
@@ -1277,6 +1294,8 @@ export function AssistantPage() {
     if (error) { toast('error', error.message); return; }
     toast('success', 'Sale confirmed and saved!');
     setPhoneDrafts((d) => { const next = { ...d }; delete next[msg.id]; return next; });
+    setNameDrafts((d) => { const next = { ...d }; delete next[msg.id]; return next; });
+    if (finalCustomerName !== preview.customerName) knownNamesRef.current.customers.push(finalCustomerName);
     const itemCount = preview.lines.length;
     const confirmLang = detectReplyLang(msg.text);
     const confirmText = tpl(confirmLang, {
@@ -1287,7 +1306,7 @@ export function AssistantPage() {
       ...x, preview: undefined, text: confirmText, lang: renderLangOf(confirmLang),
       savedLink: `/sales/${data}`,
       savedAccountLink: preview.customerId ? `/customers/${preview.customerId}` : undefined,
-      savedAccountLabel: preview.customerId ? `View ${preview.customerName}'s account` : undefined,
+      savedAccountLabel: preview.customerId ? `View ${finalCustomerName}'s account` : undefined,
     } : x)));
     speak(confirmText, renderLangOf(confirmLang));
     // Stay on the AI Assistant page — do NOT navigate away.
@@ -1295,6 +1314,15 @@ export function AssistantPage() {
 
   const confirmPurchase = async (msg: Message, preview: PurchasePreview) => {
     if (!shop || !user) return;
+
+    // Same spelling-correction handling as confirmSale — supplier name
+    // parity with customer name.
+    const finalSupplierName = (nameDrafts[msg.id] ?? '').trim() || preview.supplierName;
+    if (finalSupplierName !== preview.supplierName && preview.supplierId) {
+      const { error: renameErr } = await supabase.from('suppliers').update({ supplier_name: finalSupplierName }).eq('id', preview.supplierId);
+      if (renameErr) { toast('error', renameErr.message); return; }
+    }
+
     setConfirming(msg);
     const items = preview.lines.map((l) => ({
       product_id: l.productId ?? '', product_name: l.name, product_name_ur: l.nameUr, unit: l.unit,
@@ -1307,7 +1335,7 @@ export function AssistantPage() {
       further_tax: l.further_tax ?? 0, advance_tax: l.advance_tax ?? 0, tax_type: l.tax_type ?? '',
     }));
     const { data, error } = await supabase.rpc('create_purchase', {
-      p_shop_id: shop.id, p_supplier_id: preview.supplierId, p_supplier_name: preview.supplierName,
+      p_shop_id: shop.id, p_supplier_id: preview.supplierId, p_supplier_name: finalSupplierName,
       p_supplier_invoice_number: '', p_purchase_date: new Date().toISOString(),
       p_items: items, p_discount_total: 0, p_tax_total: 0,
       p_delivery_charges: 0, p_freight: 0, p_other_charges: 0,
@@ -1317,6 +1345,8 @@ export function AssistantPage() {
     setConfirming(null);
     if (error) { toast('error', error.message); return; }
     toast('success', 'Purchase confirmed and saved!');
+    setNameDrafts((d) => { const next = { ...d }; delete next[msg.id]; return next; });
+    if (finalSupplierName !== preview.supplierName) knownNamesRef.current.suppliers.push(finalSupplierName);
     const itemCount = preview.lines.length;
     const confirmLang = detectReplyLang(msg.text);
     const confirmText = tpl(confirmLang, {
@@ -1327,7 +1357,7 @@ export function AssistantPage() {
       ...x, preview: undefined, text: confirmText, lang: renderLangOf(confirmLang),
       savedLink: `/purchases/${data}`,
       savedAccountLink: preview.supplierId ? `/suppliers/${preview.supplierId}` : undefined,
-      savedAccountLabel: preview.supplierId ? `View ${preview.supplierName}'s account` : undefined,
+      savedAccountLabel: preview.supplierId ? `View ${finalSupplierName}'s account` : undefined,
     } : x)));
     speak(confirmText, renderLangOf(confirmLang));
     // Stay on the AI Assistant page — do NOT navigate away.
@@ -1641,7 +1671,20 @@ export function AssistantPage() {
 
                       {/* Customer summary: name, phone, previous balance — always visible */}
                       <div className="mb-2 space-y-1.5 rounded-lg bg-slate-50 p-2.5 text-xs dark:bg-slate-800/50">
-                        <div className="flex justify-between"><span className="text-slate-500">Customer Name</span><span className="font-medium">{p.customerName}</span></div>
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="flex-shrink-0 text-slate-500">Customer Name</span>
+                          {/* Editable — Urdu/Roman-Urdu speech often has more
+                              than one valid Latin spelling (e.g. "Ahmad" vs
+                              "Ahmed"); the AI's guess can be corrected here
+                              before saving, for both a brand-new customer and
+                              an already-matched existing one. */}
+                          <input
+                            type="text"
+                            value={nameDrafts[m.id] ?? p.customerName}
+                            onChange={(e) => setNameDrafts((d) => ({ ...d, [m.id]: e.target.value }))}
+                            className="w-36 rounded border border-slate-200 bg-white px-2 py-1 text-right text-xs font-medium focus:border-blue-500 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
+                          />
+                        </div>
                         <div className="flex items-center justify-between gap-2">
                           <span className="flex-shrink-0 text-slate-500">Phone Number</span>
                           {p.isNewCustomer ? (
@@ -1729,6 +1772,21 @@ export function AssistantPage() {
                           ⚠ AI کو اس آرڈر کی تفصیل پر پوری یقین نہیں — تصدیق کرنے سے پہلے آئٹمز، مقدار اور ریٹ غور سے چیک کریں۔
                         </div>
                       )}
+
+                      {/* Editable for the same reason as the customer name
+                          field on a Sale Preview — an Urdu/Roman-Urdu
+                          supplier name can have more than one valid Latin
+                          spelling; correct it here before saving. */}
+                      <div className="mb-2 flex items-center justify-between gap-2 rounded-lg bg-slate-50 p-2.5 text-xs dark:bg-slate-800/50">
+                        <span className="flex-shrink-0 text-slate-500">Supplier Name</span>
+                        <input
+                          type="text"
+                          value={nameDrafts[m.id] ?? p.supplierName}
+                          onChange={(e) => setNameDrafts((d) => ({ ...d, [m.id]: e.target.value }))}
+                          className="w-36 rounded border border-slate-200 bg-white px-2 py-1 text-right text-xs font-medium focus:border-amber-500 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
+                        />
+                      </div>
+
                       <div className="space-y-2">
                         {p.lines.map((l, i) => (
                           <div key={i} className="rounded-lg bg-slate-50 p-2 dark:bg-slate-800/50">
