@@ -2,7 +2,7 @@ import { useEffect, useState, FormEvent } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft, User, Phone, MessageCircle, MapPin, Wallet,
-  Plus, ShoppingBag, ArrowDownLeft, Receipt, Pencil, Trash2, Link as LinkIcon, Sparkles,
+  Plus, ShoppingBag, ArrowDownLeft, Receipt, Pencil, Trash2, Link as LinkIcon, Sparkles, AlertTriangle,
 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
@@ -28,6 +28,7 @@ export function CustomerDetailPage() {
   const [showPay, setShowPay] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
   const [showDeactivate, setShowDeactivate] = useState(false);
+  const [showPermanentDelete, setShowPermanentDelete] = useState(false);
 
   const load = async () => {
     if (!shop || !id) return;
@@ -80,6 +81,7 @@ export function CustomerDetailPage() {
           <div className="flex gap-2">
             <Button variant="outline" onClick={() => setShowEdit(true)}><Pencil className="h-4 w-4" /> Edit</Button>
             <Button variant="outline" onClick={() => setShowDeactivate(true)} className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"><Trash2 className="h-4 w-4" /> Deactivate</Button>
+            <Button variant="outline" onClick={() => setShowPermanentDelete(true)} className="border-red-300 text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"><AlertTriangle className="h-4 w-4" /> Permanently Delete</Button>
             <Button variant="outline" onClick={() => setShowPay(true)}>
               <Wallet className="h-4 w-4" /> Receive Payment
             </Button>
@@ -173,6 +175,7 @@ export function CustomerDetailPage() {
       <PaymentModal open={showPay} onClose={() => setShowPay(false)} customer={customer} onDone={load} />
       {showEdit && <EditCustomerModal customer={customer} onClose={() => setShowEdit(false)} onSaved={load} />}
       {showDeactivate && <DeactivateCustomerModal customer={customer} balance={balance} onClose={() => setShowDeactivate(false)} onDone={() => navigate('/customers')} />}
+      {showPermanentDelete && <PermanentDeleteCustomerModal customer={customer} balance={balance} onClose={() => setShowPermanentDelete(false)} onDone={() => navigate('/customers')} />}
     </div>
   );
 }
@@ -268,6 +271,63 @@ function DeactivateCustomerModal({ customer, balance, onClose, onDone }: { custo
         <div className="flex justify-end gap-2 pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
           <Button type="button" variant="ghost" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={confirm} loading={saving}><Trash2 className="h-4 w-4" /> Deactivate</Button>
+        </div>
+      </div>
+    </Modal>
+  );
+}
+
+function PermanentDeleteCustomerModal({ customer, balance, onClose, onDone }: { customer: Customer; balance: number; onClose: () => void; onDone: () => void }) {
+  const { shop } = useAuth();
+  const toast = useToast();
+  const [saving, setSaving] = useState(false);
+  const [confirmText, setConfirmText] = useState('');
+  const hasBalance = Math.abs(balance) > 0.01;
+  const matches = confirmText.trim().toLowerCase() === customer.full_name.trim().toLowerCase();
+
+  const confirm = async () => {
+    if (!matches) return;
+    setSaving(true);
+    const { error } = await supabase.rpc('permanently_delete_customer', { p_customer_id: customer.id });
+    if (error) { setSaving(false); toast('error', error.message); return; }
+    setSaving(false); toast('success', `${customer.full_name} and all their history have been permanently deleted.`); onClose(); onDone();
+  };
+
+  return (
+    <Modal open={true} onClose={onClose} title="Permanently Delete Customer" size="sm">
+      <div className="space-y-4">
+        <div className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950/30 dark:text-red-300">
+          <p className="font-semibold">This cannot be undone.</p>
+          <p className="mt-1">
+            <span className="font-semibold">{customer.full_name}</span> and every sale, return, warranty, and
+            ledger entry linked to them will be deleted forever — nothing will remain, and the AI Assistant will
+            never be able to bring up their data again, even if a new customer is added later.
+          </p>
+        </div>
+        {hasBalance && (
+          <div className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
+            <p className="font-medium">Outstanding balance: {formatMoney(balance, shop?.currency)}</p>
+            <p className="mt-1">This balance will be deleted along with everything else, not settled.</p>
+          </div>
+        )}
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          If you just want to hide this customer while keeping their history, use <span className="font-medium">Deactivate</span> instead.
+        </p>
+        <Field label={`Type "${customer.full_name}" to confirm`}>
+          <Input value={confirmText} onChange={(e) => setConfirmText(e.target.value)} placeholder={customer.full_name} />
+        </Field>
+        <div className="flex justify-end gap-2 pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+          <Button
+            type="button"
+            variant="ghost"
+            className="text-red-600 hover:bg-red-50 disabled:opacity-40 dark:hover:bg-red-950/30"
+            onClick={confirm}
+            loading={saving}
+            disabled={!matches}
+          >
+            <AlertTriangle className="h-4 w-4" /> Permanently Delete
+          </Button>
         </div>
       </div>
     </Modal>

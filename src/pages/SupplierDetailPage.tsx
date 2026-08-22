@@ -2,7 +2,7 @@ import { useEffect, useState, FormEvent } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
   ArrowLeft, Building2, Phone, MapPin, Wallet, Plus, ShoppingBag,
-  ArrowDownLeft, ArrowUpRight, Receipt, Pencil, Trash2, Sparkles,
+  ArrowDownLeft, ArrowUpRight, Receipt, Pencil, Trash2, Sparkles, AlertTriangle,
 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
@@ -29,6 +29,7 @@ export function SupplierDetailPage() {
   const [showPay, setShowPay] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
   const [showDeactivate, setShowDeactivate] = useState(false);
+  const [showPermanentDelete, setShowPermanentDelete] = useState(false);
 
   const load = async () => {
     if (!shop || !id) return;
@@ -79,6 +80,7 @@ export function SupplierDetailPage() {
           <div className="flex gap-2">
             <Button variant="outline" onClick={() => setShowEdit(true)}><Pencil className="h-4 w-4" /> Edit</Button>
             <Button variant="outline" onClick={() => setShowDeactivate(true)} className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"><Trash2 className="h-4 w-4" /> Deactivate</Button>
+            <Button variant="outline" onClick={() => setShowPermanentDelete(true)} className="border-red-300 text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"><AlertTriangle className="h-4 w-4" /> Permanently Delete</Button>
             <Button variant="outline" onClick={() => setShowPay(true)}><Wallet className="h-4 w-4" /> Pay Supplier</Button>
             <Link to={`/assistant?supplierId=${supplier.id}&supplierName=${encodeURIComponent(supplier.supplier_name)}`}>
               <Button variant="outline"><Sparkles className="h-4 w-4" /> AI Chat</Button>
@@ -140,6 +142,7 @@ export function SupplierDetailPage() {
       <PaymentModal open={showPay} onClose={() => setShowPay(false)} supplier={supplier} onDone={load} />
       {showEdit && <EditSupplierModal supplier={supplier} onClose={() => setShowEdit(false)} onSaved={load} />}
       {showDeactivate && <DeactivateSupplierModal supplier={supplier} balance={balance} onClose={() => setShowDeactivate(false)} onDone={() => navigate('/suppliers')} />}
+      {showPermanentDelete && <PermanentDeleteSupplierModal supplier={supplier} balance={balance} onClose={() => setShowPermanentDelete(false)} onDone={() => navigate('/suppliers')} />}
     </div>
   );
 }
@@ -240,6 +243,63 @@ function DeactivateSupplierModal({ supplier, balance, onClose, onDone }: { suppl
         <div className="flex justify-end gap-2 pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
           <Button type="button" variant="ghost" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={confirm} loading={saving}><Trash2 className="h-4 w-4" /> Deactivate</Button>
+        </div>
+      </div>
+    </Modal>
+  );
+}
+
+function PermanentDeleteSupplierModal({ supplier, balance, onClose, onDone }: { supplier: Supplier; balance: number; onClose: () => void; onDone: () => void }) {
+  const { shop } = useAuth();
+  const toast = useToast();
+  const [saving, setSaving] = useState(false);
+  const [confirmText, setConfirmText] = useState('');
+  const hasBalance = Math.abs(balance) > 0.01;
+  const matches = confirmText.trim().toLowerCase() === supplier.supplier_name.trim().toLowerCase();
+
+  const confirm = async () => {
+    if (!matches) return;
+    setSaving(true);
+    const { error } = await supabase.rpc('permanently_delete_supplier', { p_supplier_id: supplier.id });
+    if (error) { setSaving(false); toast('error', error.message); return; }
+    setSaving(false); toast('success', `${supplier.supplier_name} and all their history have been permanently deleted.`); onClose(); onDone();
+  };
+
+  return (
+    <Modal open={true} onClose={onClose} title="Permanently Delete Supplier" size="sm">
+      <div className="space-y-4">
+        <div className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950/30 dark:text-red-300">
+          <p className="font-semibold">This cannot be undone.</p>
+          <p className="mt-1">
+            <span className="font-semibold">{supplier.supplier_name}</span> and every purchase, return, and
+            ledger entry linked to them will be deleted forever — nothing will remain, and the AI Assistant will
+            never be able to bring up their data again, even if a new supplier is added later.
+          </p>
+        </div>
+        {hasBalance && (
+          <div className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
+            <p className="font-medium">Outstanding payable: {formatMoney(balance, shop?.currency)}</p>
+            <p className="mt-1">This payable will be deleted along with everything else, not settled.</p>
+          </div>
+        )}
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          If you just want to hide this supplier while keeping their history, use <span className="font-medium">Deactivate</span> instead.
+        </p>
+        <Field label={`Type "${supplier.supplier_name}" to confirm`}>
+          <Input value={confirmText} onChange={(e) => setConfirmText(e.target.value)} placeholder={supplier.supplier_name} />
+        </Field>
+        <div className="flex justify-end gap-2 pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+          <Button
+            type="button"
+            variant="ghost"
+            className="text-red-600 hover:bg-red-50 disabled:opacity-40 dark:hover:bg-red-950/30"
+            onClick={confirm}
+            loading={saving}
+            disabled={!matches}
+          >
+            <AlertTriangle className="h-4 w-4" /> Permanently Delete
+          </Button>
         </div>
       </div>
     </Modal>
