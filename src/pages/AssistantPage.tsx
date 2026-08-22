@@ -363,7 +363,7 @@ export function AssistantPage() {
   // languages vary wildly by device and were frequently flat, robotic, or
   // outright unclear for Urdu. One extra network round-trip per reply, but
   // consistent quality regardless of the shopkeeper's phone.
-  const speak = async (text: string, _lang: RenderLang) => {
+  const speak = async (text: string, lang: RenderLang) => {
     if (!speakReplies || !text.trim()) return;
     stopSpeaking();
     try {
@@ -374,7 +374,7 @@ export function AssistantPage() {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         },
-        body: JSON.stringify({ text }),
+        body: JSON.stringify({ text, lang }),
       });
       if (!res.ok) return;
       const blob = await res.blob();
@@ -444,7 +444,7 @@ export function AssistantPage() {
       const word = activeContext.kind === 'customer' ? 'کسٹمر' : 'سپلائر';
       const text = tpl('ur', {
         en: `This is ${activeContext.name}'s account. Only ${activeContext.name}'s khata can be added in this chat.`,
-        ur: `یہ ${activeContext.name} کا کھاتہ ہے۔ اس چیٹ میں صرف ${activeContext.name} (${word}) کا کھاتہ شامل ہو سکتا ہے۔`,
+        ur: `${activeContext.name} کا کھاتہ ہے یہ۔ اس چیٹ میں صرف ${activeContext.name} (${word}) کا کھاتہ شامل ہو سکتا ہے۔`,
       });
       const greeting: Message = { id: Math.random().toString(36).slice(2), role: 'assistant', text, lang: 'ur' };
       setMessages([greeting]);
@@ -484,18 +484,24 @@ export function AssistantPage() {
   > => {
     // Deactivated ("deleted") customers/suppliers are a soft delete —
     // `deleted_at` gets set, the row stays in the table (see
-    // DeactivateCustomerModal) — so every lookup here must exclude them
-    // explicitly, exactly like the Customers/Suppliers list pages already
-    // do, or a shopkeeper who "deleted" everyone still sees them resolved
-    // as an existing match in the AI chat.
+    // DeactivateCustomerModal) — so every lookup here must exclude them.
+    // Querying the customer_directory/supplier_directory VIEW instead of
+    // the raw table does that filtering automatically (see
+    // 20260822020000_exclude_deleted_parties_from_directory.sql) AND
+    // already carries a pre-computed balance column, so this no longer
+    // needs a separate fetchBalance round trip per matched row — on a
+    // mobile connection that second round trip was a real chunk of the
+    // delay between the shopkeeper finishing speaking and the invoice
+    // preview appearing.
+    const view = table === 'customers' ? 'customer_directory' : 'supplier_directory';
+    const balanceCol = table === 'customers' ? 'current_balance' : 'current_payable';
     const { data: exactMatches, count } = await supabase
-      .from(table).select(`id, ${nameColumn}, primary_phone`, { count: 'exact' })
-      .eq('shop_id', shop!.id).is('deleted_at', null).ilike(nameColumn, name);
+      .from(view).select(`id, ${nameColumn}, primary_phone, ${balanceCol}`, { count: 'exact' })
+      .eq('shop_id', shop!.id).ilike(nameColumn, name);
 
     if (exactMatches && exactMatches.length === 1) {
       const row = exactMatches[0] as any;
-      const balance = await fetchBalance(table, row.id);
-      return { kind: 'exact-one', party: { id: row.id, name: row[nameColumn], phone: row.primary_phone ?? undefined, balance } };
+      return { kind: 'exact-one', party: { id: row.id, name: row[nameColumn], phone: row.primary_phone ?? undefined, balance: row[balanceCol] ?? undefined } };
     }
     if (exactMatches && exactMatches.length > 1) {
       return { kind: 'exact-multiple', count: count ?? exactMatches.length };
@@ -505,19 +511,16 @@ export function AssistantPage() {
     // shop's existing parties before treating this as a brand-new person,
     // so a speech-recognition/spelling slip never silently creates a
     // duplicate record for someone who already exists.
-    const { data: allRows } = await supabase.from(table).select(`id, ${nameColumn}, primary_phone`).eq('shop_id', shop!.id).is('deleted_at', null);
+    const { data: allRows } = await supabase.from(view).select(`id, ${nameColumn}, primary_phone, ${balanceCol}`).eq('shop_id', shop!.id);
     const near = ((allRows ?? []) as any[])
       .filter((row) => isNearMatch(name, row[nameColumn]))
-      .map((row) => ({ id: row.id as string, name: row[nameColumn] as string, phone: row.primary_phone ?? undefined, distance: levenshteinDistance(name, row[nameColumn]) }))
+      .map((row) => ({ id: row.id as string, name: row[nameColumn] as string, phone: row.primary_phone ?? undefined, balance: row[balanceCol] as number | undefined, distance: levenshteinDistance(name, row[nameColumn]) }))
       .sort((a, b) => a.distance - b.distance)
       .slice(0, 3);
 
     if (near.length === 0) return { kind: 'none' };
 
-    const candidates: ConfirmCandidate[] = [];
-    for (const n of near) {
-      candidates.push({ id: n.id, name: n.name, phone: n.phone, balance: await fetchBalance(table, n.id) });
-    }
+    const candidates: ConfirmCandidate[] = near.map((n) => ({ id: n.id, name: n.name, phone: n.phone, balance: n.balance }));
     return { kind: 'fuzzy', candidates };
   };
 
@@ -567,7 +570,7 @@ export function AssistantPage() {
     const word = kind === 'customer' ? 'کسٹمر' : 'سپلائر';
     return tpl(lang, {
       en: `This is ${ctxName}'s account. Only ${ctxName}'s khata can be added in this chat. To add ${otherName}'s transaction, please open ${otherName}'s own Dedicated Chat, or use the Global AI Chat.`,
-      ur: `یہ ${ctxName} کا کھاتا ہے۔ اس چیٹ میں صرف ${ctxName} (${word}) کا کھاتا شامل ہو سکتا ہے۔ ${otherName} کا حساب شامل کرنے کے لیے ${otherName} کی اپنی Dedicated Chat کھولیں، یا Global AI Chat استعمال کریں۔`,
+      ur: `${ctxName} کا کھاتا ہے یہ۔ اس چیٹ میں صرف ${ctxName} (${word}) کا کھاتا شامل ہو سکتا ہے۔ ${otherName} کا حساب شامل کرنے کے لیے ${otherName} کی اپنی Dedicated Chat کھولیں، یا Global AI Chat استعمال کریں۔`,
     });
   };
 
@@ -668,15 +671,21 @@ export function AssistantPage() {
     let isNewCustomer = false;
     let previousBalance = 0;
     if (customerId) {
-      const { data: cust } = await supabase.from('customers').select('primary_phone').eq('id', customerId).maybeSingle();
+      // These three lookups are independent of each other — running them
+      // in parallel instead of one-after-another shaves a couple of
+      // network round trips off the time the shopkeeper waits to see the
+      // invoice preview, which matters most on a mobile connection.
+      const [{ data: cust }, { count: priorSales }, { data: bal }] = await Promise.all([
+        supabase.from('customers').select('primary_phone').eq('id', customerId).maybeSingle(),
+        supabase.from('sales').select('id', { count: 'exact', head: true }).eq('customer_id', customerId),
+        supabase.rpc('get_customer_balance', { p_customer_id: customerId }),
+      ]);
       customerPhone = cust?.primary_phone ?? '';
-      const { count: priorSales } = await supabase.from('sales').select('id', { count: 'exact', head: true }).eq('customer_id', customerId);
       // "New customer, first invoice" = no phone on file yet AND this
       // will be their first sale ever — matches the requested rule
       // exactly, and also protects a manually-added customer with no
       // phone who hasn't had a sale yet.
       isNewCustomer = !customerPhone && (priorSales ?? 0) === 0;
-      const { data: bal } = await supabase.rpc('get_customer_balance', { p_customer_id: customerId });
       previousBalance = typeof bal === 'number' ? bal : 0;
     }
     return { kind: 'sale', customerName, customerId, customerPhone, isNewCustomer, previousBalance, lines, subtotal, discount, grandTotal, amountPaid, paymentPercent, balance, currencyWarning, lowConfidence: parsed.confidence < LOW_CONFIDENCE_THRESHOLD };
@@ -1323,8 +1332,8 @@ export function AssistantPage() {
     const itemCount = preview.lines.length;
     const confirmLang = detectReplyLang(msg.text);
     const confirmText = tpl(confirmLang, {
-      en: `Sale confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Previous balance ${formatMoney(preview.previousBalance, shop?.currency)}, new balance ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}.`,
-      ur: `سیل تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ پچھلا بیلنس ${formatMoney(preview.previousBalance, shop?.currency)}، نیا بیلنس ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}۔`,
+      en: `${finalCustomerName}'s sale confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Previous balance ${formatMoney(preview.previousBalance, shop?.currency)}, new balance ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}.`,
+      ur: `${finalCustomerName} کی سیل تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ پچھلا بیلنس ${formatMoney(preview.previousBalance, shop?.currency)}، نیا بیلنس ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}۔`,
     });
     setMessages((m) => m.map((x) => (x.id === msg.id ? {
       ...x, preview: undefined, text: confirmText, lang: renderLangOf(confirmLang),
@@ -1374,8 +1383,8 @@ export function AssistantPage() {
     const itemCount = preview.lines.length;
     const confirmLang = detectReplyLang(msg.text);
     const confirmText = tpl(confirmLang, {
-      en: `Purchase confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Previous balance ${formatMoney(preview.previousBalance, shop?.currency)}, new balance ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}.`,
-      ur: `خریداری تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ پچھلا بیلنس ${formatMoney(preview.previousBalance, shop?.currency)}، نیا بیلنس ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}۔`,
+      en: `${finalSupplierName}'s purchase confirmed — ${itemCount} item(s), total ${formatMoney(preview.grandTotal, shop?.currency)}. Previous balance ${formatMoney(preview.previousBalance, shop?.currency)}, new balance ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}.`,
+      ur: `${finalSupplierName} کی خریداری تصدیق ہو گئی — ${itemCount} آئٹمز، کل رقم ${formatMoney(preview.grandTotal, shop?.currency)}۔ پچھلا بیلنس ${formatMoney(preview.previousBalance, shop?.currency)}، نیا بیلنس ${formatMoney(preview.previousBalance + preview.balance, shop?.currency)}۔`,
     });
     setMessages((m) => m.map((x) => (x.id === msg.id ? {
       ...x, preview: undefined, text: confirmText, lang: renderLangOf(confirmLang),
@@ -1405,8 +1414,8 @@ export function AssistantPage() {
           ur: `${preview.customerName} کے لیے ${formatMoney(preview.amount, preview.currency)} ادائیگی ریکارڈ ہو گئی۔ پچھلا بیلنس ${formatMoney(preview.previousBalance ?? 0, shop?.currency)}، نیا بیلنس ${formatMoney(newBal, shop?.currency)}۔`,
         })
       : tpl(confirmLang, {
-          en: 'Payment recorded and added to the customer ledger.',
-          ur: 'ادائیگی ریکارڈ ہو کر کسٹمر لیجر میں شامل کر دی گئی۔',
+          en: `${preview.customerName}'s payment recorded and added to the customer ledger.`,
+          ur: `${preview.customerName} کی ادائیگی ریکارڈ ہو کر کسٹمر لیجر میں شامل کر دی گئی۔`,
         });
     setMessages((m) => m.map((x) => (x.id === msg.id ? {
       ...x, preview: undefined, lang: renderLangOf(confirmLang),
@@ -1558,8 +1567,8 @@ export function AssistantPage() {
   const onSubmit = (e: FormEvent) => { e.preventDefault(); send(input); };
 
   return (
-    <div className="mx-auto flex h-[calc(100vh-3.5rem)] max-w-4xl flex-col px-4 py-4 md:h-[calc(100vh-0px)] md:px-6 md:py-6">
-      <PageHeader title="AI Assistant" subtitle="Speak or type in Urdu or English. I will build the transaction for you." />
+    <div className="mx-auto flex h-full max-w-4xl flex-col px-3 py-2 md:px-6 md:py-6">
+      <PageHeader compact title="AI Assistant" subtitle="Speak or type in Urdu or English. I will build the transaction for you." />
 
       {activeContext && (
         <div className="mb-4 rounded-lg bg-blue-50 px-4 py-2.5 text-sm text-blue-800 dark:bg-blue-950/30 dark:text-blue-300">
@@ -1582,7 +1591,7 @@ export function AssistantPage() {
 
       <Card className="flex flex-1 flex-col overflow-hidden">
         {/* Messages */}
-        <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto p-4 md:p-5">
+        <div ref={scrollRef} className="flex-1 space-y-4 overflow-x-hidden overflow-y-auto p-4 md:p-5">
           {messages.length === 0 && (
             <div className="flex flex-col items-center justify-center gap-4 py-10 text-center">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-lg">
@@ -1676,11 +1685,11 @@ export function AssistantPage() {
                 {m.preview?.kind === 'sale' && (() => {
                   const p = m.preview;
                   return (
-                    <div className="mt-3 rounded-xl border border-slate-200 bg-white p-3 text-slate-800 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100">
+                    <div className="mt-3 min-w-0 rounded-xl border border-slate-200 bg-white p-3 text-slate-800 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100">
                       <div className="mb-2 flex items-center justify-between gap-2 border-b border-slate-100 pb-2 dark:border-slate-800">
-                        <span className="flex items-center gap-2">
-                          <ShoppingBag className="h-4 w-4 text-blue-600" />
-                          <span className="text-sm font-semibold">Sale Preview — {p.customerName}</span>
+                        <span className="flex min-w-0 items-center gap-2">
+                          <ShoppingBag className="h-4 w-4 flex-shrink-0 text-blue-600" />
+                          <span className="truncate text-sm font-semibold">Sale Preview — {p.customerName}</span>
                         </span>
                         <span className="flex-shrink-0 rounded-full bg-blue-50 px-2 py-0.5 text-[11px] font-medium text-blue-700 dark:bg-blue-950/40 dark:text-blue-300">
                           {p.lines.length} {p.lines.length === 1 ? 'Item' : 'Items'}
@@ -1733,13 +1742,13 @@ export function AssistantPage() {
 
                       <div className="space-y-1">
                         {p.lines.map((l, i) => (
-                          <div key={i} className="flex items-center justify-between text-xs">
-                            <span className="flex items-baseline gap-1.5">
-                              <span>{l.qty} {l.unit} {l.name}</span>
-                              {l.nameUr && <span dir="rtl" className="text-slate-500 dark:text-slate-400">{l.nameUr}</span>}
-                              <span>@ {formatMoney(l.price, l.currency)}{l.currency !== (shop?.currency ?? 'PKR') ? ` (${l.currency})` : ''}</span>
+                          <div key={i} className="flex items-start justify-between gap-2 text-xs">
+                            <span className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+                              <span className="break-words">{l.qty} {l.unit} {l.name}</span>
+                              {l.nameUr && <span dir="rtl" className="break-words text-slate-500 dark:text-slate-400">{l.nameUr}</span>}
+                              <span className="whitespace-nowrap text-slate-400 dark:text-slate-500">@ {formatMoney(l.price, l.currency)}{l.currency !== (shop?.currency ?? 'PKR') ? ` (${l.currency})` : ''}</span>
                             </span>
-                            <span className="font-medium">{formatMoney(l.total, l.currency)}</span>
+                            <span className="flex-shrink-0 whitespace-nowrap font-medium">{formatMoney(l.total, l.currency)}</span>
                           </div>
                         ))}
                       </div>
@@ -1781,11 +1790,11 @@ export function AssistantPage() {
                 {m.preview?.kind === 'purchase' && (() => {
                   const p = m.preview;
                   return (
-                    <div className="mt-3 rounded-xl border border-slate-200 bg-white p-3 text-slate-800 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100">
+                    <div className="mt-3 min-w-0 rounded-xl border border-slate-200 bg-white p-3 text-slate-800 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100">
                       <div className="mb-2 flex items-center justify-between gap-2 border-b border-slate-100 pb-2 dark:border-slate-800">
-                        <span className="flex items-center gap-2">
-                          <Package className="h-4 w-4 text-amber-600" />
-                          <span className="text-sm font-semibold">Purchase Preview — {p.supplierName}</span>
+                        <span className="flex min-w-0 items-center gap-2">
+                          <Package className="h-4 w-4 flex-shrink-0 text-amber-600" />
+                          <span className="truncate text-sm font-semibold">Purchase Preview — {p.supplierName}</span>
                         </span>
                         <span className="flex-shrink-0 rounded-full bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700 dark:bg-amber-950/40 dark:text-amber-300">
                           {p.lines.length} {p.lines.length === 1 ? 'Item' : 'Items'}
@@ -1813,14 +1822,14 @@ export function AssistantPage() {
 
                       <div className="space-y-2">
                         {p.lines.map((l, i) => (
-                          <div key={i} className="rounded-lg bg-slate-50 p-2 dark:bg-slate-800/50">
-                            <div className="flex items-center justify-between text-xs">
-                              <span className="flex items-baseline gap-1.5 font-medium">
-                                <span>{l.qty} {l.unit} {l.name}</span>
-                                {l.nameUr && <span dir="rtl" className="font-normal text-slate-500 dark:text-slate-400">{l.nameUr}</span>}
-                                <span>@ {formatMoney(l.price, shop?.currency)}</span>
+                          <div key={i} className="min-w-0 rounded-lg bg-slate-50 p-2 dark:bg-slate-800/50">
+                            <div className="flex items-start justify-between gap-2 text-xs">
+                              <span className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-1.5 gap-y-0.5 font-medium">
+                                <span className="break-words">{l.qty} {l.unit} {l.name}</span>
+                                {l.nameUr && <span dir="rtl" className="break-words font-normal text-slate-500 dark:text-slate-400">{l.nameUr}</span>}
+                                <span className="whitespace-nowrap font-normal text-slate-400 dark:text-slate-500">@ {formatMoney(l.price, shop?.currency)}</span>
                               </span>
-                              <span className="font-medium">{formatMoney(l.total, shop?.currency)}</span>
+                              <span className="flex-shrink-0 whitespace-nowrap font-medium">{formatMoney(l.total, shop?.currency)}</span>
                             </div>
                             {/* FMCG fields */}
                             {(l.hs_code || l.supplier_product_code || l.ctn_size || l.retail_price || l.trade_offer_amount || l.trade_activity || l.sales_tax_rate || l.further_tax || l.advance_tax || l.tax_type) && (

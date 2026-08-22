@@ -117,24 +117,46 @@ export async function resolveProductLines(
   const acc = [...resolvedSoFar];
   const startIndex = resolvedSoFar.length;
 
+  // Pure matching (no network) for every remaining line up front, so all
+  // the existing-product canonical names can be fetched in ONE batched
+  // query below instead of one round trip per line — on a mobile
+  // connection, a 2-3 item order previously meant 2-3 sequential
+  // request/response round trips just for this step alone.
+  const pendingMatches = rawProducts.slice(startIndex).map((p) => matchProductAlias(p.name_en, p.name_ur, aliases));
+  const neededIds = Array.from(new Set(
+    pendingMatches.filter((m): m is Extract<typeof m, { productId: string }> => m.kind !== 'none').map((m) => m.productId)
+  ));
+  const canonicalMap = new Map<string, CanonicalProduct>();
+  if (neededIds.length) {
+    const { data } = await supabase.from('products').select('id, name, urdu_name').in('id', neededIds);
+    for (const row of (data ?? []) as Array<{ id: string; name: string; urdu_name: string | null }>) {
+      canonicalMap.set(row.id, { id: row.id, nameEn: row.name, nameUr: row.urdu_name });
+    }
+  }
+
   for (let i = startIndex; i < rawProducts.length; i++) {
     const p = rawProducts[i];
-    const match = matchProductAlias(p.name_en, p.name_ur, aliases);
+    const match = pendingMatches[i - startIndex];
 
     if (match.kind === 'exact') {
-      const canonical = await fetchCanonicalProduct(match.productId);
+      const canonical = canonicalMap.get(match.productId);
       acc.push({ ...p, productId: match.productId, nameEn: canonical?.nameEn ?? p.name_en, nameUr: canonical?.nameUr ?? p.name_ur });
       continue;
     }
 
     if (match.kind === 'near') {
       if ((p.name_confidence ?? 0) >= PRODUCT_NAME_CONFIDENCE_THRESHOLD) {
-        const canonical = await fetchCanonicalProduct(match.productId);
-        await registerProductAliases(shopId, match.productId, [p.name_en, p.name_ur]);
+        const canonical = canonicalMap.get(match.productId);
+        // Alias bookkeeping doesn't gate this line's own resolution (the
+        // productId is already decided) and errors are swallowed inside
+        // registerProductAlias, so it runs in the background instead of
+        // adding its own round trip to the response the shopkeeper is
+        // waiting on.
+        void registerProductAliases(shopId, match.productId, [p.name_en, p.name_ur]);
         acc.push({ ...p, productId: match.productId, nameEn: canonical?.nameEn ?? p.name_en, nameUr: canonical?.nameUr ?? p.name_ur });
         continue;
       }
-      const canonical = await fetchCanonicalProduct(match.productId);
+      const canonical = canonicalMap.get(match.productId);
       return { kind: 'needs-confirmation', resolvedSoFar: acc, pending: p, remaining: rawProducts.slice(i + 1), confirmMode: 'near-match', nearMatch: canonical ?? undefined };
     }
 

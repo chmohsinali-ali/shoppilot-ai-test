@@ -87,17 +87,21 @@ function isNearMatch(a: string, b: string): boolean {
   const s = a.trim().toLowerCase();
   const t = b.trim().toLowerCase();
   if (!s || !t || s === t) return false;
-  // Short item words collide easily within 1-2 edit distance despite being
-  // completely unrelated products (e.g. "Rice" vs the "Rite" alias of
-  // "Bisconni Rite" biscuits — 1 substitution, well inside the old
-  // threshold). Fuzzy correction is only safe once both strings are long
-  // enough that a small edit distance still means "same word, minor STT
-  // noise" rather than "two different short words that happen to be close."
-  if (Math.min(s.length, t.length) < 5) return false;
+  // Two different real, unrelated English words can sit surprisingly close
+  // in edit distance — e.g. "bread" vs the "thread" alias in Household
+  // sewing supplies (2 edits, "b" -> "th") slipped through the original
+  // 0.34 ratio threshold and returned "Thread" for a shopkeeper who said
+  // "bread". Unlike a genuine STT/spelling variant of the SAME word (where
+  // one edit in a longer word is normal noise), a collision between two
+  // different dictionary words is exactly the failure mode this dictionary
+  // must never produce, so both the minimum length and the ratio are kept
+  // tight — a missed near-match just leaves the model's own (usually
+  // correct) guess untouched, which is far safer than a wrong swap.
+  if (Math.min(s.length, t.length) < 6) return false;
   const distance = levenshteinDistance(s, t);
   if (distance === 0 || distance > 2) return false;
   const maxLen = Math.max(s.length, t.length);
-  return distance / maxLen <= 0.34;
+  return distance / maxLen <= 0.2;
 }
 
 /**

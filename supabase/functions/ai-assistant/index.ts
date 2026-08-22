@@ -26,6 +26,8 @@ type ParsedCommand = {
       quantity: number;
       unit?: string;
       price: number;
+      price_basis?: "rate" | "total"; // whether "stated_amount" is a per-unit rate or a lump-sum total for the whole quantity
+      stated_amount?: number; // the raw number the shopkeeper said, before any division/multiplication — the app derives the final "price" from this deterministically
       currency?: string; // ISO-ish code, e.g. PKR, USD, INR — defaults to shop currency if not mentioned
       /* FMCG invoice fields (optional, purchase only) */
       hs_code?: string;
@@ -172,56 +174,77 @@ by the shop's settings so the shopkeeper knows to confirm/convert manually.
 --- RATE-PER-UNIT vs TOTAL-PRICE-FOR-QUANTITY (STRICT — read carefully, this is a common and
 costly mistake) ---
 
-The "price" field you return for each product MUST ALWAYS be the price of ONE unit (the
-per-unit rate) — regardless of whether the shopkeeper actually spoke a per-unit rate or a
-lump-sum total for several units. The app always computes the line total itself as
-quantity × price, so if you put a lump-sum total into "price" by mistake, the app will
-multiply it by quantity again and the invoice will be wildly wrong (e.g. 2 biscuits would
-become 160 instead of 80). You must resolve this correctly using the sentence's own wording:
+For every product you MUST classify the amount the shopkeeper stated and return BOTH of these
+fields (in addition to "price" — see below for how "price" is derived):
+  - "price_basis": either "rate" (the amount is the price of ONE unit) or "total" (the amount
+    is the price for the WHOLE stated quantity together).
+  - "stated_amount": the raw number the shopkeeper actually said, copied exactly, with NO
+    division or multiplication applied by you — just the number as spoken.
+
+Do NOT do the division yourself and do not rely on your own arithmetic here — the app divides
+"stated_amount" by "quantity" automatically whenever price_basis="total", using ordinary
+floating-point division, which is always exact. Your only job is the classification (rate vs
+total) and copying the raw number correctly. Getting the classification right is what matters:
 
 1. RATE language — the amount given is explicitly a PER-UNIT rate. Recognize phrases like
    "<amount> per <unit>", "<unit> ke hisab se", "<unit> ka rate <amount>", "ek <unit> ka
    <amount>", or the amount immediately followed by the SAME unit word used for the quantity
-   (e.g. "5 kilo cheeni 280 rupay kilo"). In this case, put that amount directly into "price"
-   as-is. Example: "Ahmad ko 5 kilo cheeni 280 rupay per kilo ke hisab se de do" -> quantity=5,
-   unit="kg", price=280 (the app computes total = 5 × 280 = 1400).
+   (e.g. "5 kilo cheeni 280 rupay kilo"). Example: "Ahmad ko 5 kilo cheeni 280 rupay per kilo
+   ke hisab se de do" -> quantity=5, unit="kg", price_basis="rate", stated_amount=280 (app sets
+   price=280, total = 5 × 280 = 1400).
 
-2. TOTAL language — the amount given is the TOTAL price for the whole stated quantity, with no
-   per-unit rate wording. Recognize phrases like "<qty> <item> <amount> rupay ke/ka/mein",
-   "<amount> rupay mein <qty> <item> de do", or any phrasing where the amount is clearly the
-   price of the whole lot, not of one piece. In this case, DIVIDE the stated amount by the
-   quantity and put that per-unit result into "price" (round sensibly to 2 decimal places).
-   Example: "2 biscuit 80 rupay ke de do" -> quantity=2, price=40 (80 ÷ 2), so the app computes
-   total = 2 × 40 = 80 — matching the 80 rupees the shopkeeper actually said. NEVER put 80
-   itself into "price" here — that would make the app compute a total of 160.
-   Example: "10 bags cheeni 5000 rupay ke" -> quantity=10, unit="bag", price=500 (5000 ÷ 10).
+2. TOTAL language — the amount given is the TOTAL price for the whole stated quantity together,
+   with no per-unit rate wording. Recognize phrases like "<qty> <item> <amount> rupay
+   ke/ka/ki/mein", "<amount> rupay mein <qty> <item> de do", "<qty> <item(s)> li/liya/diya,
+   <amount> rupay", or any phrasing where the amount is clearly the price of the whole lot, not
+   of one piece — including when the grammatical object of "<amount> rupay ki/ke" is the
+   container/unit word (bottles, boxes, bags) rather than the item name itself.
+   Example: "Ahmad ko 2 biscuit 80 rupay ke de do" -> quantity=2, price_basis="total",
+   stated_amount=80 (app sets price=40, total=80 — matching what the shopkeeper actually said).
+   Example: "Mohsin ne 2 shampoo ki bottles li hain, 80 rupay ki" -> quantity=2, unit="bottle",
+   price_basis="total", stated_amount=80 (app sets price=40, total=80). NEVER put 80 into
+   price_basis="rate" here — the shopkeeper never said one bottle costs 80, only that both
+   together cost 80, and the individual bottles' prices are NOT necessarily equal (e.g. they
+   could really be 60 and 20) — only the combined total of 80 is known, so the app must treat
+   it as a total, not invent a confirmed per-bottle rate.
+   Example: "10 bags cheeni 5000 rupay ke" -> quantity=10, unit="bag", price_basis="total",
+   stated_amount=5000 (app sets price=500).
 
 3. If the same amount is instead explicitly stated as a per-unit rate for a multi-unit
-   quantity, use it directly per rule 1. Example: "2 biscuit, 40 rupay ka 1 biscuit" ->
-   quantity=2, price=40 (given directly as the rate for one biscuit) -> app computes total = 80.
-   Example: "10 bags cheeni 500 rupay per bag" -> quantity=10, unit="bag", price=500 -> app
-   computes total = 5000.
+   quantity, classify as rate per rule 1. Example: "2 biscuit, 40 rupay ka 1 biscuit" ->
+   quantity=2, price_basis="rate", stated_amount=40 (given directly as the rate for one
+   biscuit) -> app computes total = 80.
+   Example: "10 bags cheeni 500 rupay per bag" -> quantity=10, unit="bag", price_basis="rate",
+   stated_amount=500 -> app computes total = 5000.
+   Example: "1 box 250 rupay ka, 2 boxes de do" -> the 250 was stated as the rate for ONE box
+   (rule 1), so for the 2 boxes now being sold: quantity=2, price_basis="rate",
+   stated_amount=250 -> app computes total = 500. Do NOT reinterpret 250 as a total for the 2
+   boxes just because the quantity changed later in the sentence.
 
 4. This exact same rule applies identically to SUPPLIER purchases and their packaging units
    (bag, box, bundle, carton, crate, thaila, etc.) — not just customer sales. Example:
-   "supplier se 5 boxes ghee liye, 5000 rupay ke" -> quantity=5, unit="box", price=1000
-   (5000 ÷ 5). Example: "10 cartons liye, 800 rupay per carton" -> quantity=10, unit="carton",
-   price=800 (app computes total = 8000).
+   "supplier se 5 boxes ghee liye, 5000 rupay ke" -> quantity=5, unit="box", price_basis="total",
+   stated_amount=5000 (app sets price=1000). Example: "10 cartons liye, 800 rupay per carton" ->
+   quantity=10, unit="carton", price_basis="rate", stated_amount=800 (app computes total=8000).
 
 5. If you genuinely cannot tell from the sentence whether the amount is a per-unit rate or a
-   lump-sum total (truly ambiguous phrasing), do NOT guess — set a low "confidence" (0.4 or
-   below), leave the product out of a firm calculation, and ask a clarification question such
-   as "Kya 280 rupay 1 kilo ka rate hai ya 5 kilo ka total?" (or the English equivalent if the
-   shopkeeper spoke English). Silently guessing wrong here directly causes a wrong invoice
-   amount, which must never happen.
+   lump-sum total (truly ambiguous phrasing), do NOT guess — omit price_basis/stated_amount,
+   set a low "confidence" (0.4 or below), and ask a clarification question such as "Kya 280
+   rupay 1 kilo ka rate hai ya 5 kilo ka total?" (or the English equivalent if the shopkeeper
+   spoke English). Silently guessing wrong here directly causes a wrong invoice amount, which
+   must never happen.
+
+6. As a fallback ONLY (e.g. if you cannot produce price_basis/stated_amount for some reason),
+   still put your best per-unit price estimate directly into "price" as before — but always
+   prefer setting price_basis + stated_amount when you can, since the app trusts that pairing
+   over "price" and will recompute "price" from it deterministically.
 
 --- CALCULATION SELF-CHECK ---
 
-Before returning your JSON, mentally re-verify: for every product, quantity × price should
-equal the amount the shopkeeper actually intends to charge for that line, exactly as you
-understood their sentence (whether they stated a rate or a total). If your own arithmetic
-doesn't reproduce the amount the shopkeeper said, you have mis-assigned "price" — fix it
-before responding, don't return a "warnings" note as a substitute for getting the number right.
+Before returning your JSON, re-verify for every product: does price_basis correctly reflect
+whether the shopkeeper stated a per-unit rate or a lump-sum total, and does stated_amount match
+the raw number they actually said (with no math applied by you)? That classification is what
+the app relies on — don't return a "warnings" note as a substitute for getting it right.
 
 --- PERCENTAGE PAYMENTS ---
 
@@ -255,7 +278,7 @@ Return ONLY valid JSON matching this schema:
   "entities": {
     "customer": { "name": "string or omit", "name_as_heard": "exact substring from the message, or omit" },
     "supplier": { "name": "string or omit", "name_as_heard": "exact substring from the message, or omit" },
-    "products": [{ "name_en": "string", "name_ur": "string", "name_confidence": 0.0 to 1.0, "quantity": number, "unit": "string", "price": number, "currency": "PKR|USD|EUR|CAD|..." }],
+    "products": [{ "name_en": "string", "name_ur": "string", "name_confidence": 0.0 to 1.0, "quantity": number, "unit": "string", "price": number, "price_basis": "rate|total, omit if unsure", "stated_amount": "raw number as spoken, omit if unsure", "currency": "PKR|USD|EUR|CAD|..." }],
     "payment": { "amount": number, "method": "cash|bank|cheque|mobile", "currency": "PKR|USD|EUR|CAD|...", "percent_of_total": number or omit },
     "discount": { "amount": number, "percent": number },
     "report_type": "daily_sales|monthly_sales|expenses|profit|customer_balances|inventory"
@@ -277,14 +300,16 @@ Examples:
 "2 dozen ande de do" -> quantity=2, unit="dozen", name_en="Egg" name_ur="انڈے".
 "हमज़ा को 10 किलो चीनी दे दो" (Hindi script) -> customer.name="Hamza" (Latin script), NOT "हमज़ा"; product name_en="Sugar" name_ur="چینی".
 "حمزہ کو 10 کلو چینی دے دو" (Urdu script) -> customer.name="Hamza" (Latin script), NOT "حمزہ"; product name_en="Sugar" name_ur="چینی".
-"Ahmad ko 2 biscuit 80 rupay ke de do" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price=40 (80 ÷ 2, TOTAL-price phrasing, not a per-biscuit rate).
-"2 biscuit, 40 rupay ka 1 biscuit" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price=40 (RATE phrasing, given directly).
-"10 bags cheeni 500 rupay per bag" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price=500 (RATE phrasing).
-"10 bags cheeni 5000 rupay ke" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price=500 (5000 ÷ 10, TOTAL-price phrasing).
-"20 boxes ghee 500 rupay per box" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price=500 (RATE phrasing, total=10000).
-"20 boxes ghee 10000 rupay ke" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price=500 (10000 ÷ 20, TOTAL-price phrasing).
-"Ahmad ko 5 kilo pyaz 280 rupay per kilo de do" -> SALE, product name_en="Onion" name_ur="پیاز" name_confidence=0.95 quantity=5 unit="kg" price=280.
-"5 kilo cheeni 1400 rupay ki" -> SALE, product name_en="Sugar" name_ur="چینی" quantity=5 unit="kg" price=280 (1400 ÷ 5, TOTAL-price phrasing — "X rupay ki/ke" for the whole stated quantity, not per-unit).
+"Ahmad ko 2 biscuit 80 rupay ke de do" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price_basis="total" stated_amount=80 (app sets price=40; 80 ÷ 2, TOTAL-price phrasing, not a per-biscuit rate).
+"2 biscuit, 40 rupay ka 1 biscuit" -> SALE, product name_en="Biscuit" name_ur="بسکٹ" quantity=2 unit="piece" price_basis="rate" stated_amount=40 (RATE phrasing, given directly).
+"10 bags cheeni 500 rupay per bag" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price_basis="rate" stated_amount=500 (RATE phrasing).
+"10 bags cheeni 5000 rupay ke" (supplier) -> PURCHASE, product name_en="Sugar" name_ur="چینی" quantity=10 unit="bag" price_basis="total" stated_amount=5000 (app sets price=500; 5000 ÷ 10, TOTAL-price phrasing).
+"20 boxes ghee 500 rupay per box" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price_basis="rate" stated_amount=500 (RATE phrasing, app computes total=10000).
+"20 boxes ghee 10000 rupay ke" (supplier) -> PURCHASE, product name_en="Ghee" name_ur="گھی" quantity=20 unit="box" price_basis="total" stated_amount=10000 (app sets price=500; 10000 ÷ 20, TOTAL-price phrasing).
+"Ahmad ko 5 kilo pyaz 280 rupay per kilo de do" -> SALE, product name_en="Onion" name_ur="پیاز" name_confidence=0.95 quantity=5 unit="kg" price_basis="rate" stated_amount=280.
+"5 kilo cheeni 1400 rupay ki" -> SALE, product name_en="Sugar" name_ur="چینی" quantity=5 unit="kg" price_basis="total" stated_amount=1400 (app sets price=280; 1400 ÷ 5, TOTAL-price phrasing — "X rupay ki/ke" for the whole stated quantity, not per-unit).
+"Mohsin ne 2 shampoo ki bottles li hain, 80 rupay ki" -> SALE, product name_en="Shampoo" name_ur="شیمپو" quantity=2 unit="bottle" price_basis="total" stated_amount=80 (app sets price=40; the 80 is the combined price of both bottles together, NOT a confirmed per-bottle rate — never classify this as "rate").
+"Mohsin ne 1 shampoo bottle li, 80 rupay ki" -> SALE, product name_en="Shampoo" name_ur="شیمپو" quantity=1 unit="bottle" price_basis="total" stated_amount=80 (app sets price=80 — with quantity=1, total and rate happen to be the same number, but still classify by what was actually said).
 
 --- NEVER TRUNCATE A CUSTOMER/SUPPLIER NAME (STRICT) ---
 
@@ -405,6 +430,32 @@ function applyItemDictionary(parsed: ParsedCommand): void {
   }
 }
 
+// Deterministically derives the final per-unit "price" from price_basis +
+// stated_amount instead of trusting the model's own arithmetic. The model
+// only needs to classify the sentence (rate vs total) and copy the raw
+// number — a much simpler, more reliable task than also doing the division
+// correctly in its head every time. This is the actual fix for the
+// "shopkeeper stated a lump-sum total, model forgot to divide by quantity"
+// failure mode: as long as the classification is right, the math here is
+// guaranteed correct (ordinary floating-point division), regardless of
+// what the model's own "price" field said.
+function applyPriceBasis(parsed: ParsedCommand): void {
+  const products = parsed?.entities?.products;
+  if (!Array.isArray(products)) return;
+  for (const p of products) {
+    if (!p) continue;
+    const qty = Number(p.quantity);
+    const amount = Number(p.stated_amount);
+    if (!Number.isFinite(amount) || amount < 0) continue;
+    if (p.price_basis === "total") {
+      if (!Number.isFinite(qty) || qty <= 0) continue;
+      p.price = Math.round((amount / qty) * 100) / 100;
+    } else if (p.price_basis === "rate") {
+      p.price = amount;
+    }
+  }
+}
+
 async function callAI(text: string, knownCustomerNames: string[] = [], knownSupplierNames: string[] = []): Promise<ParsedCommand> {
   if (!AI_API_KEY) {
     return {
@@ -463,6 +514,11 @@ async function callAI(text: string, knownCustomerNames: string[] = [], knownSupp
       } catch {
         lastErr = "AI returned invalid JSON";
         continue;
+      }
+      try {
+        applyPriceBasis(parsed);
+      } catch {
+        // Best-effort — never block a valid parse over this.
       }
       try {
         applyMasterNameDictionary(parsed, knownCustomerNames, knownSupplierNames);
