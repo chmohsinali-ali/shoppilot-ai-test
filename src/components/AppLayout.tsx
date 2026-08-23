@@ -77,15 +77,17 @@ export function AppLayout({ children }: { children: ReactNode }) {
   useEffect(() => { setMoreOpen(false); }, [location.pathname]);
 
   return (
-    // h-screen (not min-h-screen) + overflow-hidden: without a hard-capped
-    // root, a tall page (like a long AI Assistant chat) makes this whole
-    // wrapper grow past the viewport, so `main`'s own overflow-y-auto never
-    // gets a bounded box to scroll within — the BODY ends up scrolling the
-    // entire page (header, chat, composer) as one unit instead, which is
-    // why the message composer could drift out of view. Capping the root
-    // makes `main` the single real scroll region, with the mobile header
-    // and bottom nav genuinely fixed in place around it.
-    <div className="flex h-screen overflow-hidden bg-slate-50 dark:bg-slate-950">
+    // h-app-shell (100dvh, not Tailwind's h-screen/100vh) + overflow-hidden:
+    // without a hard-capped root, a tall page (like a long AI Assistant
+    // chat) makes this whole wrapper grow past the viewport, so `main`'s
+    // own overflow-y-auto never gets a bounded box to scroll within — the
+    // BODY ends up scrolling the entire page (header, chat, composer) as
+    // one unit instead, which is why the message composer could drift out
+    // of view. Plain 100vh (Tailwind's h-screen) measures against the
+    // LARGEST possible mobile viewport rather than what's actually
+    // visible, which is inconsistent across phones/browsers — the fix for
+    // that is h-app-shell (see index.css), not h-screen.
+    <div className="h-app-shell flex overflow-hidden bg-slate-50 dark:bg-slate-950">
       {/* Desktop sidebar */}
       <aside className="hidden w-64 flex-shrink-0 border-r border-slate-200 bg-white md:flex md:flex-col dark:border-slate-800 dark:bg-slate-900">
         <div className="flex h-16 items-center gap-2.5 border-b border-slate-100 px-5 dark:border-slate-800">

@@ -29,6 +29,19 @@
 }
 
 @layer utilities {
+  /* 100vh on mobile is measured against the LARGEST possible viewport
+     (as if the browser's address bar were hidden), not what's actually
+     visible — different browsers/devices resolve this differently, which
+     is exactly why the app shell fit on some phones and had its bottom
+     (the composer) cut off on others. 100dvh tracks the real visible
+     viewport and updates as the address bar shows/hides; the plain
+     100vh line first is a fallback for older browsers that don't
+     understand dvh at all (an unsupported value is ignored, not applied,
+     so it can never override the line below when dvh IS supported). */
+  .h-app-shell {
+    height: 100vh;
+    height: 100dvh;
+  }
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
