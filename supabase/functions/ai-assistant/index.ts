@@ -341,6 +341,15 @@ some other unrelated name (e.g. "Umair") — never swap a complete, clearly-spok
 different known name just because that other name exists in the shop's records. Only substitute
 when the spoken fragment is genuinely too short/garbled to be a real name by itself and one known
 name is an obvious completion of it (e.g. "Um" -> "Umair", "Abas" -> "Abbas").
+This also applies when the spoken name shares SOME words with a known name but is itself already
+a complete, ordinary name — sharing words is NOT the same as being a fragment. A known name with
+an extra middle name (e.g. known="Ali Mustafa Khan") does NOT mean a shopkeeper who clearly says
+a shorter, still-complete name (e.g. "Ali Khan") means that same person — "Ali Khan" is a
+completely normal standalone name and a genuinely different, very plausible person. Return
+"Ali Khan" exactly as said; do NOT expand it to "Ali Mustafa Khan". Only expand a spoken name
+when it is too short/broken to stand on its own as a real name (per the "Um"/"Abas" examples
+above) — a two-or-more-word name that reads as a complete, ordinary name by itself is never a
+"fragment" just because a longer known name happens to contain the same words.
 
 --- PURCHASE commands with FMCG invoice fields ---
 
@@ -412,6 +421,40 @@ function applyMasterNameDictionary(
   const supplierName = parsed?.entities?.supplier?.name;
   if (supplierName && !knownSupplierNames.some((n) => n.toLowerCase() === supplierName.toLowerCase())) {
     parsed.entities.supplier!.name = correctFullName(supplierName);
+  }
+}
+
+// Deterministic guard against the model "completing" a spoken name into a
+// longer known name it merely shares some words with — verified live to
+// happen despite explicit prompt instructions not to (e.g. a shopkeeper
+// clearly says "Ali Khan" and the model returns "Ali Mustafa Khan" just
+// because that longer name is in the shop's known-names list and shares
+// two of its three words). Sharing words is not the same as being a
+// fragment, and prompt wording alone was not reliable enough to stop this
+// for something this consequential (merging two different people's
+// accounts) — so this is enforced in code, not just asked for in the
+// prompt. Only a genuine short fragment (a single word under 4 letters,
+// e.g. "Ab", "Um") is left alone to expand; anything that reads as a
+// complete name is reverted to exactly what was heard, overriding
+// whatever the model decided to expand it to.
+function isGenuineNameFragment(heard: string): boolean {
+  const words = heard.trim().split(/\s+/).filter(Boolean);
+  return words.length === 1 && words[0].length < 4;
+}
+
+function preventNameOverExpansion(parsed: ParsedCommand): void {
+  for (const party of [parsed?.entities?.customer, parsed?.entities?.supplier]) {
+    if (!party?.name || !party?.name_as_heard) continue;
+    const heard = party.name_as_heard.trim();
+    // Only safe to compare directly when what was heard is already Latin
+    // script — the customer/supplier "name" field is always Latin per the
+    // script rule above, so an ASCII "heard" can be compared word-for-word
+    // without needing script conversion first. A non-Latin "heard" (spoken
+    // in Urdu/Hindi script) is left to the prompt rule for now.
+    if (!/^[A-Za-z][A-Za-z\s.'-]*$/.test(heard)) continue;
+    if (party.name.trim().toLowerCase() === heard.toLowerCase()) continue;
+    if (isGenuineNameFragment(heard)) continue; // legitimate expansion, e.g. "Ab" -> "Abbas"
+    party.name = heard;
   }
 }
 
@@ -533,6 +576,11 @@ async function callAI(text: string, knownCustomerNames: string[] = [], knownSupp
         applyMasterNameDictionary(parsed, knownCustomerNames, knownSupplierNames);
       } catch {
         // Best-effort spelling correction only — never block a valid parse over this.
+      }
+      try {
+        preventNameOverExpansion(parsed);
+      } catch {
+        // Best-effort — never block a valid parse over this.
       }
       try {
         applyItemDictionary(parsed);
