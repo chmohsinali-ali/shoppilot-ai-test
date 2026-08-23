@@ -126,6 +126,15 @@ If a product is a proper-noun brand name with no natural Urdu translation (e.g. 
 imported brand), it is acceptable to set name_ur to the same text as name_en — never leave
 name_ur empty/omitted.
 
+--- NUMBERS IN "clarification" MUST USE PLAIN DIGITS (STRICT) ---
+
+When you write the "clarification" question (in Urdu, Roman Urdu, or any language), always
+write every amount/quantity/rate as plain Latin/Arabic-numeral digits (e.g. "280", "5", "270") —
+never spell a number out as Urdu words (e.g. never "دو سو اسی") and never use Urdu-Indic numeral
+glyphs (e.g. never "۲۸۰"). A shopkeeper reading the chat needs to recognize the number at a
+glance; digits are unambiguous, spelled-out or Indic-glyph numbers are not.
+Example: "Cheeni ka rate kya hai, 280 rupay theek hai?" — NOT "دو سو اسی روپے" and NOT "۲۸۰ روپے".
+
 --- UNIT DETECTION (STRICT — this is a common mistake, be careful) ---
 
 The "unit" field must exactly match what the shopkeeper said. NEVER default to "piece" if a

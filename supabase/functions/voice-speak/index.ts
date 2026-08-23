@@ -13,11 +13,12 @@ const corsHeaders = {
 // /audio/speech endpoint — TTS defaults straight to OpenAI's own API.
 const AI_API_KEY = Deno.env.get("AI_API_KEY") ?? "";
 const TTS_BASE_URL = (Deno.env.get("TTS_BASE_URL") ?? "https://api.openai.com/v1").replace(/\/$/, "");
-// tts-1-hd (not tts-1) — clearer pronunciation of numbers/digits in mixed
-// Urdu+figure sentences ("previous balance 280"), which is what shopkeepers
-// actually need to catch by ear. Costs a bit more latency, acceptable for
-// short reply-length text.
-const TTS_MODEL = Deno.env.get("TTS_MODEL") ?? "tts-1-hd";
+// tts-1, not tts-1-hd: number clarity now comes from spelling amounts out
+// as Urdu words below (toUrduWords), not from the model itself — tts-1-hd
+// bought no accuracy over tts-1 for that, only extra latency, and the
+// shopkeeper needs the reply spoken back quickly, not a studio-quality
+// voice.
+const TTS_MODEL = Deno.env.get("TTS_MODEL") ?? "tts-1";
 const TTS_VOICE = Deno.env.get("TTS_VOICE") ?? "alloy";
 // >1.0 = faster playback than default narration speed. 1.5 was tried
 // first and reported too fast; 1.1 is a slight brisk-up instead.

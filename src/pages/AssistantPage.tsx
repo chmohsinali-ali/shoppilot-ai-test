@@ -938,6 +938,24 @@ export function AssistantPage() {
     });
   };
 
+  // Billing-critical guard: a sale/purchase line whose price ended up 0
+  // means the shopkeeper never actually stated a rate/total for it — the
+  // AI is instructed not to guess, but this catches it in code too rather
+  // than trusting the model to always remember, since a saved line with
+  // price=0 is a real billing error. Returns a clarification question to
+  // ask instead of showing a Confirm button, or undefined if every line
+  // has a real price.
+  const zeroPriceClarification = (lang: ReplyLang, preview: SalePreview | PurchasePreview | PaymentPreview | null): string | undefined => {
+    if (preview?.kind !== 'sale' && preview?.kind !== 'purchase') return undefined;
+    const zeroPriceLine = preview.lines.find((l) => !(l.price > 0));
+    if (!zeroPriceLine) return undefined;
+    return tpl(lang, {
+      en: `What is the price for ${zeroPriceLine.name}? I did not catch a rate or total for it — please give a per-unit rate or the total price.`,
+      ur: `${zeroPriceLine.name} کی قیمت کیا ہے؟ اس کا ریٹ یا کل رقم سنائی نہیں دیا — براہ کرم فی یونٹ ریٹ یا کل قیمت بتائیں۔`,
+      hi: `${zeroPriceLine.name} की कीमत क्या है? इसका रेट या कुल राशि समझ नहीं आई — कृपया प्रति यूनिट रेट या कुल कीमत बताएं।`,
+    });
+  };
+
   const paymentSummaryText = (lang: ReplyLang, p: PaymentPreview): string => {
     return tpl(lang, {
       en: `${p.customerName}'s payment is ready. Amount ${formatMoney(p.amount, p.currency)}.` +
@@ -955,9 +973,14 @@ export function AssistantPage() {
   // and appends it to the chat. Shared by the normal AI-parse path and the
   // "yes, create them" resume path (which skips calling the AI again).
   const finishTurn = async (parsed: ParsedCommand, langSourceText: string) => {
-    const preview = await buildPreview(parsed, langSourceText);
+    let preview = await buildPreview(parsed, langSourceText);
     const lang = detectReplyLang(langSourceText);
     let responseText = '';
+
+    if (!parsed.clarification) {
+      const zeroPriceText = zeroPriceClarification(lang, preview);
+      if (zeroPriceText) { parsed.clarification = zeroPriceText; preview = null; }
+    }
 
     if (parsed.clarification) {
       responseText = parsed.clarification;
@@ -1068,6 +1091,9 @@ export function AssistantPage() {
         : tpl(lang, { en: 'Could not prepare the preview. Please try again.', ur: 'پیش نظر تیار نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔' });
     }
 
+    const zeroPriceText = zeroPriceClarification(lang, preview);
+    if (zeroPriceText) { responseText = zeroPriceText; preview = null; }
+
     // Update the SAME message: picker/confirm card disappears, preview appears.
     setMessages((m) => m.map((x) => (x.id === msgId ? { ...x, text: responseText, lang: renderLangOf(lang), preview: preview ?? undefined, needsPicker: undefined } : x)));
     speak(responseText, renderLangOf(lang));
@@ -1153,7 +1179,11 @@ export function AssistantPage() {
     const needsPicker = pickerNeededRef.current ?? undefined;
     pickerNeededRef.current = null;
     let responseText: string;
-    if (picker.parsed.clarification) {
+    const zeroPriceText = zeroPriceClarification(picker.lang, preview);
+    if (zeroPriceText) {
+      responseText = zeroPriceText;
+      preview = null;
+    } else if (picker.parsed.clarification) {
       responseText = picker.parsed.clarification;
     } else if (preview?.kind === 'sale') {
       responseText = saleSummaryText(picker.lang, preview);
@@ -1715,7 +1745,7 @@ export function AssistantPage() {
                             type="text"
                             value={nameDrafts[m.id] ?? p.customerName}
                             onChange={(e) => setNameDrafts((d) => ({ ...d, [m.id]: e.target.value }))}
-                            className="w-36 rounded border border-slate-200 bg-white px-2 py-1 text-right text-xs font-medium focus:border-blue-500 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
+                            className="w-36 min-w-0 max-w-[55%] rounded border border-slate-200 bg-white px-2 py-1 text-right text-xs font-medium focus:border-blue-500 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
                           />
                         </div>
                         <div className="flex items-center justify-between gap-2">
@@ -1726,7 +1756,7 @@ export function AssistantPage() {
                               placeholder="e.g. 0300XXXXXXX"
                               value={phoneDrafts[m.id] ?? ''}
                               onChange={(e) => setPhoneDrafts((d) => ({ ...d, [m.id]: e.target.value }))}
-                              className="w-36 rounded border border-amber-300 bg-white px-2 py-1 text-right text-xs focus:border-amber-500 focus:outline-none dark:border-amber-700 dark:bg-slate-900"
+                              className="w-36 min-w-0 max-w-[55%] rounded border border-amber-300 bg-white px-2 py-1 text-right text-xs focus:border-amber-500 focus:outline-none dark:border-amber-700 dark:bg-slate-900"
                             />
                           ) : (
                             <span className="font-medium">{p.customerPhone || '—'}</span>
@@ -1816,7 +1846,7 @@ export function AssistantPage() {
                           type="text"
                           value={nameDrafts[m.id] ?? p.supplierName}
                           onChange={(e) => setNameDrafts((d) => ({ ...d, [m.id]: e.target.value }))}
-                          className="w-36 rounded border border-slate-200 bg-white px-2 py-1 text-right text-xs font-medium focus:border-amber-500 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
+                          className="w-36 min-w-0 max-w-[55%] rounded border border-slate-200 bg-white px-2 py-1 text-right text-xs font-medium focus:border-amber-500 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
                         />
                       </div>
 

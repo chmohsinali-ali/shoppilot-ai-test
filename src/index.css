@@ -7,6 +7,14 @@
     -webkit-text-size-adjust: 100%;
     font-feature-settings: 'cv11', 'ss01';
   }
+  html, body {
+    /* Belt-and-suspenders: this is a mobile-first chat app that should
+       never need horizontal page scroll. If any inner element (e.g. a
+       preview card row) ever miscalculates its width, this stops the
+       whole page from shifting right and hiding content off-screen,
+       rather than letting one bad element take the layout with it. */
+    overflow-x: hidden;
+  }
   body {
     @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
