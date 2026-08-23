@@ -923,9 +923,15 @@ export function AssistantPage() {
   const saleSummaryText = (lang: ReplyLang, p: SalePreview): string => {
     const itemCount = p.lines.length;
     const updatedBalance = p.previousBalance + p.balance;
+    // A missing phone number is also read out here, not just shown as a
+    // small on-screen note — a shopkeeper who isn't looking at the screen
+    // when this plays would otherwise not know the sale can't be saved yet.
+    const phoneNote = p.isNewCustomer
+      ? tpl(lang, { en: ' A phone number is required before I can save this new customer.', ur: ' نئے کسٹمر کو محفوظ کرنے کے لیے فون نمبر ضروری ہے۔' })
+      : '';
     return tpl(lang, {
-      en: `${p.customerName}'s khata is ready. ${itemCount} item(s), total ${formatMoney(p.grandTotal, shop?.currency)}. Previous balance ${formatMoney(p.previousBalance, shop?.currency)}, updated balance ${formatMoney(updatedBalance, shop?.currency)}. Please confirm.`,
-      ur: `${p.customerName} کا کھاتا تیار ہے۔ اس میں ${itemCount} آئٹمز ہیں۔ کل رقم ${formatMoney(p.grandTotal, shop?.currency)} ہے۔ پچھلا بیلنس ${formatMoney(p.previousBalance, shop?.currency)} ہے اور نیا بیلنس ${formatMoney(updatedBalance, shop?.currency)} ہو جائے گا۔ براہ کرم تصدیق کریں۔`,
+      en: `${p.customerName}'s khata is ready. ${itemCount} item(s), total ${formatMoney(p.grandTotal, shop?.currency)}. Previous balance ${formatMoney(p.previousBalance, shop?.currency)}, updated balance ${formatMoney(updatedBalance, shop?.currency)}.${phoneNote} Please confirm.`,
+      ur: `${p.customerName} کا کھاتا تیار ہے۔ اس میں ${itemCount} آئٹمز ہیں۔ کل رقم ${formatMoney(p.grandTotal, shop?.currency)} ہے۔ پچھلا بیلنس ${formatMoney(p.previousBalance, shop?.currency)} ہے اور نیا بیلنس ${formatMoney(updatedBalance, shop?.currency)} ہو جائے گا۔${phoneNote} براہ کرم تصدیق کریں۔`,
     });
   };
 
@@ -1248,13 +1254,30 @@ export function AssistantPage() {
   // message ("name_as_heard"); if that substring isn't found verbatim
   // (model paraphrased instead of quoting), the message is left as-is
   // rather than guessing where to substitute.
+  // Voice-transcribed Urdu (Whisper) and the AI's own generated Urdu don't
+  // reliably use the same Unicode code points for the same letter — e.g.
+  // Whisper may emit Arabic Yeh (ي) where the AI echoes back Urdu Yeh (ی),
+  // or Arabic Kaf (ك) vs Urdu Keheh (ک) — visually identical, byte-different.
+  // A plain .includes() on the raw strings silently fails whenever this
+  // happens, which is exactly the voice path this feature is for. Compare
+  // on a normalized copy (same length, 1 char -> 1 char, so indices stay
+  // aligned with the original) but splice into the ORIGINAL text so
+  // whatever glyph variant was actually there stays untouched except for
+  // the name itself.
+  const normalizeUrduLetters = (s: string): string =>
+    s.normalize('NFC').replace(/[يى]/g, 'ی').replace(/ك/g, 'ک').replace(/ه/g, 'ہ');
+
   const withRomanizedNames = (text: string, parsed: ParsedCommand): string => {
     let result = text;
     for (const party of [parsed.entities.customer, parsed.entities.supplier]) {
       const heard = party?.name_as_heard;
       const latin = party?.name;
-      if (heard && latin && heard !== latin && result.includes(heard)) {
-        result = result.replace(heard, latin);
+      if (!heard || !latin || heard === latin) continue;
+      const normResult = normalizeUrduLetters(result);
+      const normHeard = normalizeUrduLetters(heard);
+      const idx = normResult.indexOf(normHeard);
+      if (idx !== -1) {
+        result = result.slice(0, idx) + latin + result.slice(idx + normHeard.length);
       }
     }
     return result;
@@ -1732,6 +1755,16 @@ export function AssistantPage() {
                         </div>
                       )}
 
+                      {/* Moved above the name/phone fields (was below, easy
+                          to miss) — a new customer can't be saved without a
+                          phone number, so this needs to be the first thing
+                          seen, not something scrolled past. */}
+                      {p.isNewCustomer && (
+                        <div className="mb-2 rounded bg-amber-50 px-2.5 py-1.5 text-right text-[11px] font-medium text-amber-700 dark:bg-amber-950/30 dark:text-amber-400">
+                          Phone number is required for a new customer.
+                        </div>
+                      )}
+
                       {/* Customer summary: name, phone, previous balance — always visible */}
                       <div className="mb-2 space-y-1.5 rounded-lg bg-slate-50 p-2.5 text-xs dark:bg-slate-800/50">
                         <div className="flex items-center justify-between gap-2">
@@ -1762,11 +1795,6 @@ export function AssistantPage() {
                             <span className="font-medium">{p.customerPhone || '—'}</span>
                           )}
                         </div>
-                        {p.isNewCustomer && (
-                          <p className="text-right text-[10px] text-amber-600 dark:text-amber-400">
-                            Phone number is required for customer identification.
-                          </p>
-                        )}
                         <div className="flex justify-between"><span className="text-slate-500">Previous Balance</span><span className="font-medium">{formatMoney(p.previousBalance, shop?.currency)}</span></div>
                       </div>
 
