@@ -319,7 +319,15 @@ export function AssistantPage() {
   }, [messages, storageKey]);
 
   useEffect(() => {
-    scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
+    // requestAnimationFrame defers this until after the browser has
+    // completed layout for the newly-added message — starting a smooth
+    // scroll in the same tick a wide element is inserted is exactly the
+    // kind of timing that can leave a percentage-based width stale on some
+    // mobile browsers.
+    const raf = requestAnimationFrame(() => {
+      scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
+    });
+    return () => cancelAnimationFrame(raf);
   }, [messages, loading]);
 
   const callAI = async (text: string): Promise<ParsedCommand> => {
@@ -1669,7 +1677,17 @@ export function AssistantPage() {
               <div className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500 dark:bg-slate-800'}`}>
                 {m.role === 'user' ? <User className="h-4 w-4" /> : <Sparkles className="h-4 w-4" />}
               </div>
-              <div className={`min-w-0 max-w-[92%] sm:max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100'}`}>
+              {/* max-width is viewport-relative (calc(100vw - Nrem)), not a
+                  percentage of the message row. A percentage here has to be
+                  resolved against the row's own computed width, and on some
+                  mobile browsers a newly-appended message (while the chat
+                  is auto-scrolling to it) gets laid out against a stale
+                  parent width before that settles — confirmed live: the
+                  first message in a chat rendered fine, a second message
+                  appended right after did not, same device/browser/session.
+                  A vw-based cap is resolved directly against the viewport
+                  and can't be thrown off by that. */}
+              <div className={`min-w-0 max-w-[calc(100vw-5.5rem)] sm:max-w-[80%] rounded-2xl px-4 py-2.5 text-sm ${m.role === 'user' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100'}`}>
                 <p dir={m.lang === 'ur' ? 'rtl' : 'ltr'} className={`whitespace-pre-line break-words ${m.lang === 'ur' ? 'text-right' : ''}`}>{m.text}</p>
 
                 {m.role === 'user' && !loading && (
