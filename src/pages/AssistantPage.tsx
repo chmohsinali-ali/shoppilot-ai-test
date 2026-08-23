@@ -1829,7 +1829,7 @@ export function AssistantPage() {
                           <span>{formatMoney(p.previousBalance + p.balance, shop?.currency)}</span>
                         </div>
                       </div>
-                      <div className="mt-3 flex gap-2">
+                      <div className="mt-3 flex flex-wrap gap-2">
                         <Button size="sm" onClick={() => confirm(m)} loading={confirming?.id === m.id}>
                           <Check className="h-4 w-4" /> Confirm
                         </Button>
@@ -1925,7 +1925,7 @@ export function AssistantPage() {
                           <span>{formatMoney(p.previousBalance + p.balance, shop?.currency)}</span>
                         </div>
                       </div>
-                      <div className="mt-3 flex gap-2">
+                      <div className="mt-3 flex flex-wrap gap-2">
                         <Button size="sm" onClick={() => confirm(m)} loading={confirming?.id === m.id}>
                           <Check className="h-4 w-4" /> Confirm
                         </Button>
@@ -1967,7 +1967,7 @@ export function AssistantPage() {
                         )}
                       </div>
                       {p.customerId ? (
-                        <div className="mt-3 flex gap-2">
+                        <div className="mt-3 flex flex-wrap gap-2">
                           <Button size="sm" onClick={() => confirm(m)} loading={confirming?.id === m.id}>
                             <Check className="h-4 w-4" /> Confirm
                           </Button>
