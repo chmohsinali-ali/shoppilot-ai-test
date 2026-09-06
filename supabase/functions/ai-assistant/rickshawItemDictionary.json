@@ -1,0 +1,182 @@
+[
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Clutch Plate",
+    "ur": "کلچ پلیٹ",
+    "aliases": "clutch plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Pressure Plate",
+    "ur": "پریشر پلیٹ",
+    "aliases": "pressure plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Brake Shoe",
+    "ur": "بریک شو",
+    "aliases": "brake shoe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Brake Drum",
+    "ur": "بریک ڈرم",
+    "aliases": "drum",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Wheel Bearing",
+    "ur": "وہیل بیئرنگ",
+    "aliases": "bearing",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Chain Sprocket",
+    "ur": "چین گراری",
+    "aliases": "chain set",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Piston",
+    "ur": "پسٹن",
+    "aliases": "piston",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Piston Ring",
+    "ur": "پسٹن رنگ",
+    "aliases": "ring",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Cylinder",
+    "ur": "سلنڈر",
+    "aliases": "cylinder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Carburetor",
+    "ur": "کاربوریٹر",
+    "aliases": "carburetor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "CDI Unit",
+    "ur": "سی ڈی آئی",
+    "aliases": "cdi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Ignition Coil",
+    "ur": "کوائل",
+    "aliases": "coil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Shock Absorber",
+    "ur": "شاک",
+    "aliases": "shock",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Axle",
+    "ur": "ایکسل",
+    "aliases": "axle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Headlight",
+    "ur": "ہیڈ لائٹ",
+    "aliases": "headlight",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Indicator",
+    "ur": "انڈیکیٹر",
+    "aliases": "indicator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Starter Motor",
+    "ur": "سیلف موٹر",
+    "aliases": "self motor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Vehicle Parts",
+    "subcategory": "Rickshaw / Loader",
+    "en": "Battery",
+    "ur": "بیٹری",
+    "aliases": "battery",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

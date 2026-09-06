@@ -1,0 +1,542 @@
+[
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 2.25-17",
+    "ur": "ٹائر 2.25-17",
+    "aliases": "tyre, tire 2.25-17",
+    "brand": "Generic",
+    "variant": "2.25-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 2.25-17",
+    "ur": "ٹیوب 2.25-17",
+    "aliases": "tube 2.25-17",
+    "brand": "Generic",
+    "variant": "2.25-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 2.50-17",
+    "ur": "ٹائر 2.50-17",
+    "aliases": "tyre, tire 2.50-17",
+    "brand": "Generic",
+    "variant": "2.50-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 2.50-17",
+    "ur": "ٹیوب 2.50-17",
+    "aliases": "tube 2.50-17",
+    "brand": "Generic",
+    "variant": "2.50-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 2.75-17",
+    "ur": "ٹائر 2.75-17",
+    "aliases": "tyre, tire 2.75-17",
+    "brand": "Generic",
+    "variant": "2.75-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 2.75-17",
+    "ur": "ٹیوب 2.75-17",
+    "aliases": "tube 2.75-17",
+    "brand": "Generic",
+    "variant": "2.75-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 3.00-17",
+    "ur": "ٹائر 3.00-17",
+    "aliases": "tyre, tire 3.00-17",
+    "brand": "Generic",
+    "variant": "3.00-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 3.00-17",
+    "ur": "ٹیوب 3.00-17",
+    "aliases": "tube 3.00-17",
+    "brand": "Generic",
+    "variant": "3.00-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 80/90-17",
+    "ur": "ٹائر 80/90-17",
+    "aliases": "tyre, tire 80/90-17",
+    "brand": "Generic",
+    "variant": "80/90-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 80/90-17",
+    "ur": "ٹیوب 80/90-17",
+    "aliases": "tube 80/90-17",
+    "brand": "Generic",
+    "variant": "80/90-17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 90/90-18",
+    "ur": "ٹائر 90/90-18",
+    "aliases": "tyre, tire 90/90-18",
+    "brand": "Generic",
+    "variant": "90/90-18",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 90/90-18",
+    "ur": "ٹیوب 90/90-18",
+    "aliases": "tube 90/90-18",
+    "brand": "Generic",
+    "variant": "90/90-18",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 100/90-18",
+    "ur": "ٹائر 100/90-18",
+    "aliases": "tyre, tire 100/90-18",
+    "brand": "Generic",
+    "variant": "100/90-18",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 100/90-18",
+    "ur": "ٹیوب 100/90-18",
+    "aliases": "tube 100/90-18",
+    "brand": "Generic",
+    "variant": "100/90-18",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 145/70R12",
+    "ur": "ٹائر 145/70R12",
+    "aliases": "tyre, tire 145/70R12",
+    "brand": "Generic",
+    "variant": "145/70R12",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 145/70R12",
+    "ur": "ٹیوب 145/70R12",
+    "aliases": "tube 145/70R12",
+    "brand": "Generic",
+    "variant": "145/70R12",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 155/70R12",
+    "ur": "ٹائر 155/70R12",
+    "aliases": "tyre, tire 155/70R12",
+    "brand": "Generic",
+    "variant": "155/70R12",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 155/70R12",
+    "ur": "ٹیوب 155/70R12",
+    "aliases": "tube 155/70R12",
+    "brand": "Generic",
+    "variant": "155/70R12",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 165/65R13",
+    "ur": "ٹائر 165/65R13",
+    "aliases": "tyre, tire 165/65R13",
+    "brand": "Generic",
+    "variant": "165/65R13",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 165/65R13",
+    "ur": "ٹیوب 165/65R13",
+    "aliases": "tube 165/65R13",
+    "brand": "Generic",
+    "variant": "165/65R13",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 175/70R13",
+    "ur": "ٹائر 175/70R13",
+    "aliases": "tyre, tire 175/70R13",
+    "brand": "Generic",
+    "variant": "175/70R13",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 175/70R13",
+    "ur": "ٹیوب 175/70R13",
+    "aliases": "tube 175/70R13",
+    "brand": "Generic",
+    "variant": "175/70R13",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 185/65R14",
+    "ur": "ٹائر 185/65R14",
+    "aliases": "tyre, tire 185/65R14",
+    "brand": "Generic",
+    "variant": "185/65R14",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 185/65R14",
+    "ur": "ٹیوب 185/65R14",
+    "aliases": "tube 185/65R14",
+    "brand": "Generic",
+    "variant": "185/65R14",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 195/65R15",
+    "ur": "ٹائر 195/65R15",
+    "aliases": "tyre, tire 195/65R15",
+    "brand": "Generic",
+    "variant": "195/65R15",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 195/65R15",
+    "ur": "ٹیوب 195/65R15",
+    "aliases": "tube 195/65R15",
+    "brand": "Generic",
+    "variant": "195/65R15",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 205/55R16",
+    "ur": "ٹائر 205/55R16",
+    "aliases": "tyre, tire 205/55R16",
+    "brand": "Generic",
+    "variant": "205/55R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 205/55R16",
+    "ur": "ٹیوب 205/55R16",
+    "aliases": "tube 205/55R16",
+    "brand": "Generic",
+    "variant": "205/55R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 215/60R16",
+    "ur": "ٹائر 215/60R16",
+    "aliases": "tyre, tire 215/60R16",
+    "brand": "Generic",
+    "variant": "215/60R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 215/60R16",
+    "ur": "ٹیوب 215/60R16",
+    "aliases": "tube 215/60R16",
+    "brand": "Generic",
+    "variant": "215/60R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 225/65R17",
+    "ur": "ٹائر 225/65R17",
+    "aliases": "tyre, tire 225/65R17",
+    "brand": "Generic",
+    "variant": "225/65R17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 225/65R17",
+    "ur": "ٹیوب 225/65R17",
+    "aliases": "tube 225/65R17",
+    "brand": "Generic",
+    "variant": "225/65R17",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 235/70R16",
+    "ur": "ٹائر 235/70R16",
+    "aliases": "tyre, tire 235/70R16",
+    "brand": "Generic",
+    "variant": "235/70R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 235/70R16",
+    "ur": "ٹیوب 235/70R16",
+    "aliases": "tube 235/70R16",
+    "brand": "Generic",
+    "variant": "235/70R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 7.50R16",
+    "ur": "ٹائر 7.50R16",
+    "aliases": "tyre, tire 7.50R16",
+    "brand": "Generic",
+    "variant": "7.50R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 7.50R16",
+    "ur": "ٹیوب 7.50R16",
+    "aliases": "tube 7.50R16",
+    "brand": "Generic",
+    "variant": "7.50R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 8.25R16",
+    "ur": "ٹائر 8.25R16",
+    "aliases": "tyre, tire 8.25R16",
+    "brand": "Generic",
+    "variant": "8.25R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 8.25R16",
+    "ur": "ٹیوب 8.25R16",
+    "aliases": "tube 8.25R16",
+    "brand": "Generic",
+    "variant": "8.25R16",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 9.00R20",
+    "ur": "ٹائر 9.00R20",
+    "aliases": "tyre, tire 9.00R20",
+    "brand": "Generic",
+    "variant": "9.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 9.00R20",
+    "ur": "ٹیوب 9.00R20",
+    "aliases": "tube 9.00R20",
+    "brand": "Generic",
+    "variant": "9.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 10.00R20",
+    "ur": "ٹائر 10.00R20",
+    "aliases": "tyre, tire 10.00R20",
+    "brand": "Generic",
+    "variant": "10.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 10.00R20",
+    "ur": "ٹیوب 10.00R20",
+    "aliases": "tube 10.00R20",
+    "brand": "Generic",
+    "variant": "10.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 11.00R20",
+    "ur": "ٹائر 11.00R20",
+    "aliases": "tyre, tire 11.00R20",
+    "brand": "Generic",
+    "variant": "11.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 11.00R20",
+    "ur": "ٹیوب 11.00R20",
+    "aliases": "tube 11.00R20",
+    "brand": "Generic",
+    "variant": "11.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 12.00R20",
+    "ur": "ٹائر 12.00R20",
+    "aliases": "tyre, tire 12.00R20",
+    "brand": "Generic",
+    "variant": "12.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 12.00R20",
+    "ur": "ٹیوب 12.00R20",
+    "aliases": "tube 12.00R20",
+    "brand": "Generic",
+    "variant": "12.00R20",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 12.4-28",
+    "ur": "ٹائر 12.4-28",
+    "aliases": "tyre, tire 12.4-28",
+    "brand": "Generic",
+    "variant": "12.4-28",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 12.4-28",
+    "ur": "ٹیوب 12.4-28",
+    "aliases": "tube 12.4-28",
+    "brand": "Generic",
+    "variant": "12.4-28",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 14.9-28",
+    "ur": "ٹائر 14.9-28",
+    "aliases": "tyre, tire 14.9-28",
+    "brand": "Generic",
+    "variant": "14.9-28",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 14.9-28",
+    "ur": "ٹیوب 14.9-28",
+    "aliases": "tube 14.9-28",
+    "brand": "Generic",
+    "variant": "14.9-28",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 16.9-28",
+    "ur": "ٹائر 16.9-28",
+    "aliases": "tyre, tire 16.9-28",
+    "brand": "Generic",
+    "variant": "16.9-28",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 16.9-28",
+    "ur": "ٹیوب 16.9-28",
+    "aliases": "tube 16.9-28",
+    "brand": "Generic",
+    "variant": "16.9-28",
+    "unit": "piece"
+  },
+  {
+    "category": "Tyres",
+    "subcategory": "Tyre",
+    "en": "Tyre 18.4-30",
+    "ur": "ٹائر 18.4-30",
+    "aliases": "tyre, tire 18.4-30",
+    "brand": "Generic",
+    "variant": "18.4-30",
+    "unit": "piece"
+  },
+  {
+    "category": "Tubes",
+    "subcategory": "Tube",
+    "en": "Tube 18.4-30",
+    "ur": "ٹیوب 18.4-30",
+    "aliases": "tube 18.4-30",
+    "brand": "Generic",
+    "variant": "18.4-30",
+    "unit": "piece"
+  }
+]

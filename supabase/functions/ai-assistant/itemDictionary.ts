@@ -51,6 +51,9 @@ import waterFilterRows from "./waterFilterItemDictionary.json" with { type: "jso
 import fireSafetyRows from "./fireSafetyItemDictionary.json" with { type: "json" };
 import locksRows from "./locksItemDictionary.json" with { type: "json" };
 import furnitureRows from "./furnitureItemDictionary.json" with { type: "json" };
+import tyreTubeRows from "./tyreTubeItemDictionary.json" with { type: "json" };
+import autoAccessoriesRows from "./autoAccessoriesItemDictionary.json" with { type: "json" };
+import rickshawRows from "./rickshawItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -97,6 +100,9 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "fire-safety", rows: fireSafetyRows as ItemRow[] },
   { source: "locks", rows: locksRows as ItemRow[] },
   { source: "furniture", rows: furnitureRows as ItemRow[] },
+  { source: "tyre-tube", rows: tyreTubeRows as ItemRow[] },
+  { source: "auto-accessories", rows: autoAccessoriesRows as ItemRow[] },
+  { source: "rickshaw", rows: rickshawRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES

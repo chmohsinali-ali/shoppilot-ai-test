@@ -1,0 +1,162 @@
+[
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Seat Cover",
+    "ur": "سیٹ کور",
+    "aliases": "seat cover",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Floor Mat",
+    "ur": "فلور میٹ",
+    "aliases": "mat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Steering Cover",
+    "ur": "اسٹیئرنگ کور",
+    "aliases": "steering cover",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Car Charger",
+    "ur": "کار چارجر",
+    "aliases": "car charger",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Car Perfume",
+    "ur": "کار پرفیوم",
+    "aliases": "car perfume",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Reverse Camera",
+    "ur": "ریورس کیمرا",
+    "aliases": "back camera",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Dash Camera",
+    "ur": "ڈیش کیمرا",
+    "aliases": "dash cam",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Car Multimedia Player",
+    "ur": "کار ملٹی میڈیا",
+    "aliases": "android panel",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "LED Headlight Bulb",
+    "ur": "ایل ای ڈی ہیڈلائٹ بلب",
+    "aliases": "led bulb",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Horn",
+    "ur": "ہارن",
+    "aliases": "horn",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Wiper Blade",
+    "ur": "وائپر بلیڈ",
+    "aliases": "wiper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Sun Shade",
+    "ur": "سن شیڈ",
+    "aliases": "shade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Car Cover",
+    "ur": "کار کور",
+    "aliases": "car cover",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Phone Holder",
+    "ur": "فون ہولڈر",
+    "aliases": "mobile holder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Wheel Cover",
+    "ur": "وہیل کور",
+    "aliases": "wheel cap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car Accessories",
+    "subcategory": "Accessories",
+    "en": "Mud Flap",
+    "ur": "مڈ فلیپ",
+    "aliases": "mud flap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]
