@@ -1,0 +1,342 @@
+[
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Ball Pen Blue",
+    "ur": "نیلا بال پین",
+    "aliases": "blue pen",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Ball Pen Black",
+    "ur": "کالا بال پین",
+    "aliases": "black pen",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Pencil",
+    "ur": "پنسل",
+    "aliases": "pencil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Eraser",
+    "ur": "ربڑ",
+    "aliases": "rubber",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Sharpener",
+    "ur": "شارپنر",
+    "aliases": "sharpener",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Marker",
+    "ur": "مارکر",
+    "aliases": "marker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Highlighter",
+    "ur": "ہائی لائٹر",
+    "aliases": "highlighter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Notebook",
+    "ur": "کاپی",
+    "aliases": "copy",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Register",
+    "ur": "رجسٹر",
+    "aliases": "register",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "A4 Paper",
+    "ur": "اے فور پیپر",
+    "aliases": "a4",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "File Folder",
+    "ur": "فائل",
+    "aliases": "file",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Envelope",
+    "ur": "لفافہ",
+    "aliases": "lifafa",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Stapler",
+    "ur": "اسٹیپلر",
+    "aliases": "stapler",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Staple Pins",
+    "ur": "اسٹیپل پن",
+    "aliases": "pin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Paper Clip",
+    "ur": "پیپر کلپ",
+    "aliases": "clip",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Punch Machine",
+    "ur": "پنچ مشین",
+    "aliases": "punch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Calculator",
+    "ur": "کیلکولیٹر",
+    "aliases": "calculator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Whiteboard",
+    "ur": "وائٹ بورڈ",
+    "aliases": "board",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Whiteboard Marker",
+    "ur": "وائٹ بورڈ مارکر",
+    "aliases": "board marker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Glue Stick",
+    "ur": "گلو اسٹک",
+    "aliases": "glue",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Tape",
+    "ur": "ٹیپ",
+    "aliases": "tape",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Lamination Pouch",
+    "ur": "لیمینیشن پاؤچ",
+    "aliases": "lamination",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Photo Paper",
+    "ur": "فوٹو پیپر",
+    "aliases": "photo paper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Stationery",
+    "en": "Printer Ink",
+    "ur": "پرنٹر انک",
+    "aliases": "ink",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 70gsm",
+    "ur": "اے فور پیپر 70gsm",
+    "aliases": "a4 paper, a4 paper 70gsm",
+    "brand": "Generic",
+    "variant": "70gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 75gsm",
+    "ur": "اے فور پیپر 75gsm",
+    "aliases": "a4 paper, a4 paper 75gsm",
+    "brand": "Generic",
+    "variant": "75gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 80gsm",
+    "ur": "اے فور پیپر 80gsm",
+    "aliases": "a4 paper, a4 paper 80gsm",
+    "brand": "Generic",
+    "variant": "80gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 100gsm",
+    "ur": "اے فور پیپر 100gsm",
+    "aliases": "a4 paper, a4 paper 100gsm",
+    "brand": "Generic",
+    "variant": "100gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 120gsm",
+    "ur": "اے فور پیپر 120gsm",
+    "aliases": "a4 paper, a4 paper 120gsm",
+    "brand": "Generic",
+    "variant": "120gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 150gsm",
+    "ur": "اے فور پیپر 150gsm",
+    "aliases": "a4 paper, a4 paper 150gsm",
+    "brand": "Generic",
+    "variant": "150gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 180gsm",
+    "ur": "اے فور پیپر 180gsm",
+    "aliases": "a4 paper, a4 paper 180gsm",
+    "brand": "Generic",
+    "variant": "180gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 200gsm",
+    "ur": "اے فور پیپر 200gsm",
+    "aliases": "a4 paper, a4 paper 200gsm",
+    "brand": "Generic",
+    "variant": "200gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 250gsm",
+    "ur": "اے فور پیپر 250gsm",
+    "aliases": "a4 paper, a4 paper 250gsm",
+    "brand": "Generic",
+    "variant": "250gsm",
+    "unit": "ream"
+  },
+  {
+    "category": "Office & School",
+    "subcategory": "Paper",
+    "en": "A4 Paper 300gsm",
+    "ur": "اے فور پیپر 300gsm",
+    "aliases": "a4 paper, a4 paper 300gsm",
+    "brand": "Generic",
+    "variant": "300gsm",
+    "unit": "ream"
+  }
+]

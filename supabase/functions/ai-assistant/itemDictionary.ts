@@ -34,6 +34,11 @@ import autoPartsRows from "./autoPartsItemDictionary.json" with { type: "json" }
 import bicycleRows from "./bicycleItemDictionary.json" with { type: "json" };
 import industrialRows from "./industrialItemDictionary.json" with { type: "json" };
 import agricultureRows from "./agricultureItemDictionary.json" with { type: "json" };
+import kitchenwareRows from "./kitchenwareItemDictionary.json" with { type: "json" };
+import stationeryRows from "./stationeryItemDictionary.json" with { type: "json" };
+import clothingRows from "./clothingItemDictionary.json" with { type: "json" };
+import footwearRows from "./footwearItemDictionary.json" with { type: "json" };
+import cosmeticsRows from "./cosmeticsItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -63,6 +68,11 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "bicycle", rows: bicycleRows as ItemRow[] },
   { source: "industrial", rows: industrialRows as ItemRow[] },
   { source: "agriculture", rows: agricultureRows as ItemRow[] },
+  { source: "kitchenware", rows: kitchenwareRows as ItemRow[] },
+  { source: "stationery", rows: stationeryRows as ItemRow[] },
+  { source: "clothing", rows: clothingRows as ItemRow[] },
+  { source: "footwear", rows: footwearRows as ItemRow[] },
+  { source: "cosmetics", rows: cosmeticsRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES

@@ -1,0 +1,412 @@
+[
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Men Shirt",
+    "ur": "مردانہ شرٹ",
+    "aliases": "shirt",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "T-Shirt",
+    "ur": "ٹی شرٹ",
+    "aliases": "t shirt",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Jeans",
+    "ur": "جینز",
+    "aliases": "jeans",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Trouser",
+    "ur": "ٹراؤزر",
+    "aliases": "trouser",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Shalwar Kameez",
+    "ur": "شلوار قمیض",
+    "aliases": "shalwar kameez",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Kurta",
+    "ur": "کرتا",
+    "aliases": "kurta",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Ladies Suit",
+    "ur": "خواتین سوٹ",
+    "aliases": "ladies suit",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Abaya",
+    "ur": "عبایا",
+    "aliases": "abaya",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Kids Suit",
+    "ur": "بچوں کا سوٹ",
+    "aliases": "kids suit",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Undergarment",
+    "ur": "انڈرگارمنٹ",
+    "aliases": "underwear",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Socks",
+    "ur": "جرابیں",
+    "aliases": "socks",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Cotton Fabric",
+    "ur": "کاٹن کپڑا",
+    "aliases": "cotton",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Lawn Fabric",
+    "ur": "لان کپڑا",
+    "aliases": "lawn",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Khaddar Fabric",
+    "ur": "کھدر کپڑا",
+    "aliases": "khaddar",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Linen Fabric",
+    "ur": "لینن کپڑا",
+    "aliases": "linen",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Wash & Wear Fabric",
+    "ur": "واش اینڈ ویئر کپڑا",
+    "aliases": "wash n wear",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Denim Fabric",
+    "ur": "ڈینم کپڑا",
+    "aliases": "denim",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Zip",
+    "ur": "زپ",
+    "aliases": "zip",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Button",
+    "ur": "بٹن",
+    "aliases": "button",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Elastic",
+    "ur": "الاسٹک",
+    "aliases": "elastic",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Sewing Thread",
+    "ur": "سلائی دھاگہ",
+    "aliases": "dhaga",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Lace",
+    "ur": "لیس",
+    "aliases": "lace",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Clothing & Tailoring",
+    "en": "Needle",
+    "ur": "سوئی",
+    "aliases": "soi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt XS",
+    "ur": "ٹی شرٹ XS",
+    "aliases": "t shirt, t-shirt xs",
+    "brand": "Generic",
+    "variant": "XS",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt XS",
+    "ur": "مردانہ شرٹ XS",
+    "aliases": "shirt, men shirt xs",
+    "brand": "Generic",
+    "variant": "XS",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt S",
+    "ur": "ٹی شرٹ S",
+    "aliases": "t shirt, t-shirt s",
+    "brand": "Generic",
+    "variant": "S",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt S",
+    "ur": "مردانہ شرٹ S",
+    "aliases": "shirt, men shirt s",
+    "brand": "Generic",
+    "variant": "S",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt M",
+    "ur": "ٹی شرٹ M",
+    "aliases": "t shirt, t-shirt m",
+    "brand": "Generic",
+    "variant": "M",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt M",
+    "ur": "مردانہ شرٹ M",
+    "aliases": "shirt, men shirt m",
+    "brand": "Generic",
+    "variant": "M",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt L",
+    "ur": "ٹی شرٹ L",
+    "aliases": "t shirt, t-shirt l",
+    "brand": "Generic",
+    "variant": "L",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt L",
+    "ur": "مردانہ شرٹ L",
+    "aliases": "shirt, men shirt l",
+    "brand": "Generic",
+    "variant": "L",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt XL",
+    "ur": "ٹی شرٹ XL",
+    "aliases": "t shirt, t-shirt xl",
+    "brand": "Generic",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt XL",
+    "ur": "مردانہ شرٹ XL",
+    "aliases": "shirt, men shirt xl",
+    "brand": "Generic",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt 2XL",
+    "ur": "ٹی شرٹ 2XL",
+    "aliases": "t shirt, t-shirt 2xl",
+    "brand": "Generic",
+    "variant": "2XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt 2XL",
+    "ur": "مردانہ شرٹ 2XL",
+    "aliases": "shirt, men shirt 2xl",
+    "brand": "Generic",
+    "variant": "2XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt 3XL",
+    "ur": "ٹی شرٹ 3XL",
+    "aliases": "t shirt, t-shirt 3xl",
+    "brand": "Generic",
+    "variant": "3XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt 3XL",
+    "ur": "مردانہ شرٹ 3XL",
+    "aliases": "shirt, men shirt 3xl",
+    "brand": "Generic",
+    "variant": "3XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt 4XL",
+    "ur": "ٹی شرٹ 4XL",
+    "aliases": "t shirt, t-shirt 4xl",
+    "brand": "Generic",
+    "variant": "4XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt 4XL",
+    "ur": "مردانہ شرٹ 4XL",
+    "aliases": "shirt, men shirt 4xl",
+    "brand": "Generic",
+    "variant": "4XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "T-Shirt 5XL",
+    "ur": "ٹی شرٹ 5XL",
+    "aliases": "t shirt, t-shirt 5xl",
+    "brand": "Generic",
+    "variant": "5XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Garments",
+    "subcategory": "Sizes",
+    "en": "Men Shirt 5XL",
+    "ur": "مردانہ شرٹ 5XL",
+    "aliases": "shirt, men shirt 5xl",
+    "brand": "Generic",
+    "variant": "5XL",
+    "unit": "piece"
+  }
+]

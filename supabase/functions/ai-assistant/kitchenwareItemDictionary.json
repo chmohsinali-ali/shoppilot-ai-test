@@ -1,0 +1,232 @@
+[
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Dinner Plate",
+    "ur": "کھانے کی پلیٹ",
+    "aliases": "plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Bowl",
+    "ur": "پیالہ",
+    "aliases": "bowl",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Cup",
+    "ur": "کپ",
+    "aliases": "cup",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Glass",
+    "ur": "گلاس",
+    "aliases": "glass",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Spoon",
+    "ur": "چمچ",
+    "aliases": "chamach",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Fork",
+    "ur": "کانٹا",
+    "aliases": "fork",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Knife",
+    "ur": "چاقو",
+    "aliases": "chaku",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Cooking Pot",
+    "ur": "دیگچی",
+    "aliases": "degchi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Frying Pan",
+    "ur": "فرائنگ پین",
+    "aliases": "pan",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Pressure Cooker",
+    "ur": "پریشر ککر",
+    "aliases": "cooker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Tawa",
+    "ur": "توا",
+    "aliases": "tawa",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Kettle",
+    "ur": "کیتلی",
+    "aliases": "kettle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Thermos",
+    "ur": "تھرمس",
+    "aliases": "thermos",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Water Bottle",
+    "ur": "پانی بوتل",
+    "aliases": "bottle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Lunch Box",
+    "ur": "لنچ باکس",
+    "aliases": "lunch box",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Food Container",
+    "ur": "فوڈ کنٹینر",
+    "aliases": "dabba",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Bucket",
+    "ur": "بالٹی",
+    "aliases": "balti",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Tub",
+    "ur": "ٹب",
+    "aliases": "tub",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Plastic Mug",
+    "ur": "پلاسٹک مگ",
+    "aliases": "mug",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Dustbin",
+    "ur": "ڈسٹ بن",
+    "aliases": "dustbin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Plastic Basket",
+    "ur": "پلاسٹک ٹوکری",
+    "aliases": "basket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Plastic Stool",
+    "ur": "پلاسٹک اسٹول",
+    "aliases": "stool",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Household",
+    "subcategory": "Kitchen & Plastic",
+    "en": "Plastic Chair",
+    "ur": "پلاسٹک کرسی",
+    "aliases": "chair",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

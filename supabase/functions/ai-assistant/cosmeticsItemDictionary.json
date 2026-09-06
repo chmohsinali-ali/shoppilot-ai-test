@@ -1,0 +1,242 @@
+[
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Face Wash",
+    "ur": "فیس واش",
+    "aliases": "facewash",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Face Cream",
+    "ur": "فیس کریم",
+    "aliases": "cream",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Body Lotion",
+    "ur": "باڈی لوشن",
+    "aliases": "lotion",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Shampoo",
+    "ur": "شیمپو",
+    "aliases": "shampoo",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Conditioner",
+    "ur": "کنڈیشنر",
+    "aliases": "conditioner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Hair Oil",
+    "ur": "بالوں کا تیل",
+    "aliases": "hair oil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Hair Color",
+    "ur": "ہیئر کلر",
+    "aliases": "hair dye",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Hair Gel",
+    "ur": "ہیئر جیل",
+    "aliases": "gel",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Perfume",
+    "ur": "پرفیوم",
+    "aliases": "perfume",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Body Spray",
+    "ur": "باڈی اسپرے",
+    "aliases": "spray",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Lipstick",
+    "ur": "لپ اسٹک",
+    "aliases": "lipstick",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Foundation",
+    "ur": "فاؤنڈیشن",
+    "aliases": "foundation",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Face Powder",
+    "ur": "فیس پاؤڈر",
+    "aliases": "powder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Mascara",
+    "ur": "مسکارا",
+    "aliases": "mascara",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Eyeliner",
+    "ur": "آئی لائنر",
+    "aliases": "liner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Nail Polish",
+    "ur": "نیل پالش",
+    "aliases": "nail paint",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Makeup Brush",
+    "ur": "میک اپ برش",
+    "aliases": "brush",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Hair Brush",
+    "ur": "ہیئر برش",
+    "aliases": "brush",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Comb",
+    "ur": "کنگھی",
+    "aliases": "kanghi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Hair Clipper",
+    "ur": "ہیئر کلپر",
+    "aliases": "machine",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Salon Scissors",
+    "ur": "سیلون قینچی",
+    "aliases": "qainchi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Razor Blade",
+    "ur": "ریزر بلیڈ",
+    "aliases": "blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Wax",
+    "ur": "ویکس",
+    "aliases": "wax",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Beauty",
+    "subcategory": "Beauty & Salon",
+    "en": "Hair Spray",
+    "ur": "ہیئر اسپرے",
+    "aliases": "spray",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

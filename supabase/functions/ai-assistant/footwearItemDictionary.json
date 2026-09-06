@@ -1,0 +1,322 @@
+[
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Men Shoes",
+    "ur": "مردانہ جوتے",
+    "aliases": "shoes",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Ladies Shoes",
+    "ur": "خواتین جوتے",
+    "aliases": "ladies shoes",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Sports Shoes",
+    "ur": "اسپورٹس شوز",
+    "aliases": "joggers",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Sandals",
+    "ur": "سینڈل",
+    "aliases": "sandal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Slippers",
+    "ur": "چپل",
+    "aliases": "chappal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "School Shoes",
+    "ur": "اسکول شوز",
+    "aliases": "school shoes",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Shoe Laces",
+    "ur": "جوتے کے تسمے",
+    "aliases": "laces",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Insole",
+    "ur": "جوتے کا سول",
+    "aliases": "insole",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Footwear",
+    "en": "Shoe Polish",
+    "ur": "شو پالش",
+    "aliases": "polish",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 24",
+    "ur": "جوتے 24",
+    "aliases": "jootay, shoes 24",
+    "brand": "Generic",
+    "variant": "24",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 25",
+    "ur": "جوتے 25",
+    "aliases": "jootay, shoes 25",
+    "brand": "Generic",
+    "variant": "25",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 26",
+    "ur": "جوتے 26",
+    "aliases": "jootay, shoes 26",
+    "brand": "Generic",
+    "variant": "26",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 27",
+    "ur": "جوتے 27",
+    "aliases": "jootay, shoes 27",
+    "brand": "Generic",
+    "variant": "27",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 28",
+    "ur": "جوتے 28",
+    "aliases": "jootay, shoes 28",
+    "brand": "Generic",
+    "variant": "28",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 29",
+    "ur": "جوتے 29",
+    "aliases": "jootay, shoes 29",
+    "brand": "Generic",
+    "variant": "29",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 30",
+    "ur": "جوتے 30",
+    "aliases": "jootay, shoes 30",
+    "brand": "Generic",
+    "variant": "30",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 31",
+    "ur": "جوتے 31",
+    "aliases": "jootay, shoes 31",
+    "brand": "Generic",
+    "variant": "31",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 32",
+    "ur": "جوتے 32",
+    "aliases": "jootay, shoes 32",
+    "brand": "Generic",
+    "variant": "32",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 33",
+    "ur": "جوتے 33",
+    "aliases": "jootay, shoes 33",
+    "brand": "Generic",
+    "variant": "33",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 34",
+    "ur": "جوتے 34",
+    "aliases": "jootay, shoes 34",
+    "brand": "Generic",
+    "variant": "34",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 35",
+    "ur": "جوتے 35",
+    "aliases": "jootay, shoes 35",
+    "brand": "Generic",
+    "variant": "35",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 36",
+    "ur": "جوتے 36",
+    "aliases": "jootay, shoes 36",
+    "brand": "Generic",
+    "variant": "36",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 37",
+    "ur": "جوتے 37",
+    "aliases": "jootay, shoes 37",
+    "brand": "Generic",
+    "variant": "37",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 38",
+    "ur": "جوتے 38",
+    "aliases": "jootay, shoes 38",
+    "brand": "Generic",
+    "variant": "38",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 39",
+    "ur": "جوتے 39",
+    "aliases": "jootay, shoes 39",
+    "brand": "Generic",
+    "variant": "39",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 40",
+    "ur": "جوتے 40",
+    "aliases": "jootay, shoes 40",
+    "brand": "Generic",
+    "variant": "40",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 41",
+    "ur": "جوتے 41",
+    "aliases": "jootay, shoes 41",
+    "brand": "Generic",
+    "variant": "41",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 42",
+    "ur": "جوتے 42",
+    "aliases": "jootay, shoes 42",
+    "brand": "Generic",
+    "variant": "42",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 43",
+    "ur": "جوتے 43",
+    "aliases": "jootay, shoes 43",
+    "brand": "Generic",
+    "variant": "43",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 44",
+    "ur": "جوتے 44",
+    "aliases": "jootay, shoes 44",
+    "brand": "Generic",
+    "variant": "44",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 45",
+    "ur": "جوتے 45",
+    "aliases": "jootay, shoes 45",
+    "brand": "Generic",
+    "variant": "45",
+    "unit": "pair"
+  },
+  {
+    "category": "Shoes",
+    "subcategory": "Sizes",
+    "en": "Shoes 46",
+    "ur": "جوتے 46",
+    "aliases": "jootay, shoes 46",
+    "brand": "Generic",
+    "variant": "46",
+    "unit": "pair"
+  }
+]
