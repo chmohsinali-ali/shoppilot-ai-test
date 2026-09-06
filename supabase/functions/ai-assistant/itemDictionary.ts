@@ -73,6 +73,7 @@ import cleaningSuppliesRows from "./cleaningSuppliesItemDictionary.json" with { 
 import tractorMachineryRows from "./tractorMachineryItemDictionary.json" with { type: "json" };
 import generatorMotorRows from "./generatorMotorItemDictionary.json" with { type: "json" };
 import pumpMachineryRows from "./pumpMachineryItemDictionary.json" with { type: "json" };
+import upsBatteryRows from "./upsBatteryItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -141,6 +142,7 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "tractor-machinery", rows: tractorMachineryRows as ItemRow[] },
   { source: "generator-motor", rows: generatorMotorRows as ItemRow[] },
   { source: "pump-machinery", rows: pumpMachineryRows as ItemRow[] },
+  { source: "ups-battery", rows: upsBatteryRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES
