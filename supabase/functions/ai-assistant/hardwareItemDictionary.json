@@ -1,0 +1,3222 @@
+[
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Hammer",
+    "ur": "ہتھوڑا",
+    "aliases": "hathora",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Screwdriver",
+    "ur": "پیچ کس",
+    "aliases": "pech kas",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Pliers",
+    "ur": "پلاس",
+    "aliases": "plas",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Wrench",
+    "ur": "رینچ",
+    "aliases": "pana",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Hacksaw Blade",
+    "ur": "ہیکسا بلیڈ",
+    "aliases": "blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Utility Cutter",
+    "ur": "کٹر",
+    "aliases": "cutter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Cutter Blade",
+    "ur": "کٹر بلیڈ",
+    "aliases": "blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Drill Bit",
+    "ur": "ڈرل بٹ",
+    "aliases": "bit",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Grinding Disc",
+    "ur": "گرائنڈنگ ڈسک",
+    "aliases": "grinding wheel",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Cutting Disc",
+    "ur": "کٹنگ ڈسک",
+    "aliases": "cutting wheel",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Measuring Tape",
+    "ur": "فیتہ",
+    "aliases": "feeta",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Spirit Level",
+    "ur": "لیول",
+    "aliases": "level",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "Chisel",
+    "ur": "چھینی",
+    "aliases": "chaini",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Tools",
+    "en": "File",
+    "ur": "ریتی",
+    "aliases": "reti",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 0.5 inch",
+    "ur": "لوہے کی کیل 0.5 inch",
+    "aliases": "keel, iron nail 0.5 inch",
+    "brand": "Generic",
+    "variant": "0.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 1 inch",
+    "ur": "لوہے کی کیل 1 inch",
+    "aliases": "keel, iron nail 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 1.5 inch",
+    "ur": "لوہے کی کیل 1.5 inch",
+    "aliases": "keel, iron nail 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 2 inch",
+    "ur": "لوہے کی کیل 2 inch",
+    "aliases": "keel, iron nail 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 2.5 inch",
+    "ur": "لوہے کی کیل 2.5 inch",
+    "aliases": "keel, iron nail 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 3 inch",
+    "ur": "لوہے کی کیل 3 inch",
+    "aliases": "keel, iron nail 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 3.5 inch",
+    "ur": "لوہے کی کیل 3.5 inch",
+    "aliases": "keel, iron nail 3.5 inch",
+    "brand": "Generic",
+    "variant": "3.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 4 inch",
+    "ur": "لوہے کی کیل 4 inch",
+    "aliases": "keel, iron nail 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 4.5 inch",
+    "ur": "لوہے کی کیل 4.5 inch",
+    "aliases": "keel, iron nail 4.5 inch",
+    "brand": "Generic",
+    "variant": "4.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 5 inch",
+    "ur": "لوہے کی کیل 5 inch",
+    "aliases": "keel, iron nail 5 inch",
+    "brand": "Generic",
+    "variant": "5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 5.5 inch",
+    "ur": "لوہے کی کیل 5.5 inch",
+    "aliases": "keel, iron nail 5.5 inch",
+    "brand": "Generic",
+    "variant": "5.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Iron Nail 6 inch",
+    "ur": "لوہے کی کیل 6 inch",
+    "aliases": "keel, iron nail 6 inch",
+    "brand": "Generic",
+    "variant": "6 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 0.5 inch",
+    "ur": "اسٹیل کیل 0.5 inch",
+    "aliases": "keel, steel nail 0.5 inch",
+    "brand": "Generic",
+    "variant": "0.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 1 inch",
+    "ur": "اسٹیل کیل 1 inch",
+    "aliases": "keel, steel nail 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 1.5 inch",
+    "ur": "اسٹیل کیل 1.5 inch",
+    "aliases": "keel, steel nail 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 2 inch",
+    "ur": "اسٹیل کیل 2 inch",
+    "aliases": "keel, steel nail 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 2.5 inch",
+    "ur": "اسٹیل کیل 2.5 inch",
+    "aliases": "keel, steel nail 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 3 inch",
+    "ur": "اسٹیل کیل 3 inch",
+    "aliases": "keel, steel nail 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 3.5 inch",
+    "ur": "اسٹیل کیل 3.5 inch",
+    "aliases": "keel, steel nail 3.5 inch",
+    "brand": "Generic",
+    "variant": "3.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 4 inch",
+    "ur": "اسٹیل کیل 4 inch",
+    "aliases": "keel, steel nail 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 4.5 inch",
+    "ur": "اسٹیل کیل 4.5 inch",
+    "aliases": "keel, steel nail 4.5 inch",
+    "brand": "Generic",
+    "variant": "4.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 5 inch",
+    "ur": "اسٹیل کیل 5 inch",
+    "aliases": "keel, steel nail 5 inch",
+    "brand": "Generic",
+    "variant": "5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 5.5 inch",
+    "ur": "اسٹیل کیل 5.5 inch",
+    "aliases": "keel, steel nail 5.5 inch",
+    "brand": "Generic",
+    "variant": "5.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Steel Nail 6 inch",
+    "ur": "اسٹیل کیل 6 inch",
+    "aliases": "keel, steel nail 6 inch",
+    "brand": "Generic",
+    "variant": "6 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 0.5 inch",
+    "ur": "کنکریٹ کیل 0.5 inch",
+    "aliases": "concrete keel, concrete nail 0.5 inch",
+    "brand": "Generic",
+    "variant": "0.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 1 inch",
+    "ur": "کنکریٹ کیل 1 inch",
+    "aliases": "concrete keel, concrete nail 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 1.5 inch",
+    "ur": "کنکریٹ کیل 1.5 inch",
+    "aliases": "concrete keel, concrete nail 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 2 inch",
+    "ur": "کنکریٹ کیل 2 inch",
+    "aliases": "concrete keel, concrete nail 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 2.5 inch",
+    "ur": "کنکریٹ کیل 2.5 inch",
+    "aliases": "concrete keel, concrete nail 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 3 inch",
+    "ur": "کنکریٹ کیل 3 inch",
+    "aliases": "concrete keel, concrete nail 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 3.5 inch",
+    "ur": "کنکریٹ کیل 3.5 inch",
+    "aliases": "concrete keel, concrete nail 3.5 inch",
+    "brand": "Generic",
+    "variant": "3.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 4 inch",
+    "ur": "کنکریٹ کیل 4 inch",
+    "aliases": "concrete keel, concrete nail 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 4.5 inch",
+    "ur": "کنکریٹ کیل 4.5 inch",
+    "aliases": "concrete keel, concrete nail 4.5 inch",
+    "brand": "Generic",
+    "variant": "4.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 5 inch",
+    "ur": "کنکریٹ کیل 5 inch",
+    "aliases": "concrete keel, concrete nail 5 inch",
+    "brand": "Generic",
+    "variant": "5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 5.5 inch",
+    "ur": "کنکریٹ کیل 5.5 inch",
+    "aliases": "concrete keel, concrete nail 5.5 inch",
+    "brand": "Generic",
+    "variant": "5.5 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nails",
+    "en": "Concrete Nail 6 inch",
+    "ur": "کنکریٹ کیل 6 inch",
+    "aliases": "concrete keel, concrete nail 6 inch",
+    "brand": "Generic",
+    "variant": "6 inch",
+    "unit": "kg"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 1/2 inch",
+    "ur": "لکڑی پیچ #4 x 1/2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 1/2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 3/4 inch",
+    "ur": "لکڑی پیچ #4 x 3/4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 3/4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 1 inch",
+    "ur": "لکڑی پیچ #4 x 1 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 1 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 1.25 inch",
+    "ur": "لکڑی پیچ #4 x 1.25 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 1.25 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 1.5 inch",
+    "ur": "لکڑی پیچ #4 x 1.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 1.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 2 inch",
+    "ur": "لکڑی پیچ #4 x 2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 2.5 inch",
+    "ur": "لکڑی پیچ #4 x 2.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 2.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 3 inch",
+    "ur": "لکڑی پیچ #4 x 3 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 3 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 4 inch",
+    "ur": "لکڑی پیچ #4 x 4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 5 inch",
+    "ur": "لکڑی پیچ #4 x 5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #4 x 6 inch",
+    "ur": "لکڑی پیچ #4 x 6 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#4 x 6 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 1/2 inch",
+    "ur": "لکڑی پیچ #6 x 1/2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 1/2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 3/4 inch",
+    "ur": "لکڑی پیچ #6 x 3/4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 3/4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 1 inch",
+    "ur": "لکڑی پیچ #6 x 1 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 1 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 1.25 inch",
+    "ur": "لکڑی پیچ #6 x 1.25 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 1.25 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 1.5 inch",
+    "ur": "لکڑی پیچ #6 x 1.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 1.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 2 inch",
+    "ur": "لکڑی پیچ #6 x 2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 2.5 inch",
+    "ur": "لکڑی پیچ #6 x 2.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 2.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 3 inch",
+    "ur": "لکڑی پیچ #6 x 3 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 3 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 4 inch",
+    "ur": "لکڑی پیچ #6 x 4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 5 inch",
+    "ur": "لکڑی پیچ #6 x 5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #6 x 6 inch",
+    "ur": "لکڑی پیچ #6 x 6 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#6 x 6 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 1/2 inch",
+    "ur": "لکڑی پیچ #8 x 1/2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 1/2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 3/4 inch",
+    "ur": "لکڑی پیچ #8 x 3/4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 3/4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 1 inch",
+    "ur": "لکڑی پیچ #8 x 1 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 1 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 1.25 inch",
+    "ur": "لکڑی پیچ #8 x 1.25 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 1.25 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 1.5 inch",
+    "ur": "لکڑی پیچ #8 x 1.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 1.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 2 inch",
+    "ur": "لکڑی پیچ #8 x 2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 2.5 inch",
+    "ur": "لکڑی پیچ #8 x 2.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 2.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 3 inch",
+    "ur": "لکڑی پیچ #8 x 3 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 3 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 4 inch",
+    "ur": "لکڑی پیچ #8 x 4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 5 inch",
+    "ur": "لکڑی پیچ #8 x 5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #8 x 6 inch",
+    "ur": "لکڑی پیچ #8 x 6 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#8 x 6 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 1/2 inch",
+    "ur": "لکڑی پیچ #10 x 1/2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 1/2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 3/4 inch",
+    "ur": "لکڑی پیچ #10 x 3/4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 3/4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 1 inch",
+    "ur": "لکڑی پیچ #10 x 1 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 1 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 1.25 inch",
+    "ur": "لکڑی پیچ #10 x 1.25 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 1.25 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 1.5 inch",
+    "ur": "لکڑی پیچ #10 x 1.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 1.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 2 inch",
+    "ur": "لکڑی پیچ #10 x 2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 2.5 inch",
+    "ur": "لکڑی پیچ #10 x 2.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 2.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 3 inch",
+    "ur": "لکڑی پیچ #10 x 3 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 3 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 4 inch",
+    "ur": "لکڑی پیچ #10 x 4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 5 inch",
+    "ur": "لکڑی پیچ #10 x 5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #10 x 6 inch",
+    "ur": "لکڑی پیچ #10 x 6 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#10 x 6 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 1/2 inch",
+    "ur": "لکڑی پیچ #12 x 1/2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 1/2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 3/4 inch",
+    "ur": "لکڑی پیچ #12 x 3/4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 3/4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 1 inch",
+    "ur": "لکڑی پیچ #12 x 1 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 1 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 1.25 inch",
+    "ur": "لکڑی پیچ #12 x 1.25 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 1.25 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 1.5 inch",
+    "ur": "لکڑی پیچ #12 x 1.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 1.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 2 inch",
+    "ur": "لکڑی پیچ #12 x 2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 2.5 inch",
+    "ur": "لکڑی پیچ #12 x 2.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 2.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 3 inch",
+    "ur": "لکڑی پیچ #12 x 3 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 3 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 4 inch",
+    "ur": "لکڑی پیچ #12 x 4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 5 inch",
+    "ur": "لکڑی پیچ #12 x 5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #12 x 6 inch",
+    "ur": "لکڑی پیچ #12 x 6 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#12 x 6 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 1/2 inch",
+    "ur": "لکڑی پیچ #14 x 1/2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 1/2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 3/4 inch",
+    "ur": "لکڑی پیچ #14 x 3/4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 3/4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 1 inch",
+    "ur": "لکڑی پیچ #14 x 1 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 1 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 1.25 inch",
+    "ur": "لکڑی پیچ #14 x 1.25 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 1.25 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 1.5 inch",
+    "ur": "لکڑی پیچ #14 x 1.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 1.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 2 inch",
+    "ur": "لکڑی پیچ #14 x 2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 2.5 inch",
+    "ur": "لکڑی پیچ #14 x 2.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 2.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 3 inch",
+    "ur": "لکڑی پیچ #14 x 3 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 3 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 4 inch",
+    "ur": "لکڑی پیچ #14 x 4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 5 inch",
+    "ur": "لکڑی پیچ #14 x 5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #14 x 6 inch",
+    "ur": "لکڑی پیچ #14 x 6 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#14 x 6 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 1/2 inch",
+    "ur": "لکڑی پیچ #16 x 1/2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 1/2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 3/4 inch",
+    "ur": "لکڑی پیچ #16 x 3/4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 3/4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 1 inch",
+    "ur": "لکڑی پیچ #16 x 1 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 1 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 1.25 inch",
+    "ur": "لکڑی پیچ #16 x 1.25 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 1.25 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 1.5 inch",
+    "ur": "لکڑی پیچ #16 x 1.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 1.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 2 inch",
+    "ur": "لکڑی پیچ #16 x 2 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 2 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 2.5 inch",
+    "ur": "لکڑی پیچ #16 x 2.5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 2.5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 3 inch",
+    "ur": "لکڑی پیچ #16 x 3 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 3 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 4 inch",
+    "ur": "لکڑی پیچ #16 x 4 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 4 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 5 inch",
+    "ur": "لکڑی پیچ #16 x 5 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 5 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Screws",
+    "en": "Wood Screw #16 x 6 inch",
+    "ur": "لکڑی پیچ #16 x 6 inch",
+    "aliases": "lakri screw, pech",
+    "brand": "Wood Screw",
+    "variant": "#16 x 6 inch",
+    "unit": "box"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 10mm",
+    "ur": "ہیکس بولٹ M3 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 15mm",
+    "ur": "ہیکس بولٹ M3 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 20mm",
+    "ur": "ہیکس بولٹ M3 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 25mm",
+    "ur": "ہیکس بولٹ M3 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 30mm",
+    "ur": "ہیکس بولٹ M3 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 40mm",
+    "ur": "ہیکس بولٹ M3 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 50mm",
+    "ur": "ہیکس بولٹ M3 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 60mm",
+    "ur": "ہیکس بولٹ M3 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 75mm",
+    "ur": "ہیکس بولٹ M3 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 100mm",
+    "ur": "ہیکس بولٹ M3 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 125mm",
+    "ur": "ہیکس بولٹ M3 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 150mm",
+    "ur": "ہیکس بولٹ M3 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M3 x 200mm",
+    "ur": "ہیکس بولٹ M3 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M3 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M3",
+    "ur": "ہیکس نٹ M3",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M3",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M3",
+    "ur": "فلیٹ واشر M3",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M3",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 10mm",
+    "ur": "ہیکس بولٹ M4 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 15mm",
+    "ur": "ہیکس بولٹ M4 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 20mm",
+    "ur": "ہیکس بولٹ M4 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 25mm",
+    "ur": "ہیکس بولٹ M4 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 30mm",
+    "ur": "ہیکس بولٹ M4 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 40mm",
+    "ur": "ہیکس بولٹ M4 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 50mm",
+    "ur": "ہیکس بولٹ M4 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 60mm",
+    "ur": "ہیکس بولٹ M4 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 75mm",
+    "ur": "ہیکس بولٹ M4 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 100mm",
+    "ur": "ہیکس بولٹ M4 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 125mm",
+    "ur": "ہیکس بولٹ M4 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 150mm",
+    "ur": "ہیکس بولٹ M4 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M4 x 200mm",
+    "ur": "ہیکس بولٹ M4 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M4 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M4",
+    "ur": "ہیکس نٹ M4",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M4",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M4",
+    "ur": "فلیٹ واشر M4",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M4",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 10mm",
+    "ur": "ہیکس بولٹ M5 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 15mm",
+    "ur": "ہیکس بولٹ M5 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 20mm",
+    "ur": "ہیکس بولٹ M5 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 25mm",
+    "ur": "ہیکس بولٹ M5 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 30mm",
+    "ur": "ہیکس بولٹ M5 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 40mm",
+    "ur": "ہیکس بولٹ M5 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 50mm",
+    "ur": "ہیکس بولٹ M5 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 60mm",
+    "ur": "ہیکس بولٹ M5 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 75mm",
+    "ur": "ہیکس بولٹ M5 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 100mm",
+    "ur": "ہیکس بولٹ M5 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 125mm",
+    "ur": "ہیکس بولٹ M5 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 150mm",
+    "ur": "ہیکس بولٹ M5 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M5 x 200mm",
+    "ur": "ہیکس بولٹ M5 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M5 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M5",
+    "ur": "ہیکس نٹ M5",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M5",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M5",
+    "ur": "فلیٹ واشر M5",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M5",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 10mm",
+    "ur": "ہیکس بولٹ M6 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 15mm",
+    "ur": "ہیکس بولٹ M6 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 20mm",
+    "ur": "ہیکس بولٹ M6 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 25mm",
+    "ur": "ہیکس بولٹ M6 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 30mm",
+    "ur": "ہیکس بولٹ M6 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 40mm",
+    "ur": "ہیکس بولٹ M6 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 50mm",
+    "ur": "ہیکس بولٹ M6 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 60mm",
+    "ur": "ہیکس بولٹ M6 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 75mm",
+    "ur": "ہیکس بولٹ M6 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 100mm",
+    "ur": "ہیکس بولٹ M6 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 125mm",
+    "ur": "ہیکس بولٹ M6 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 150mm",
+    "ur": "ہیکس بولٹ M6 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M6 x 200mm",
+    "ur": "ہیکس بولٹ M6 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M6 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M6",
+    "ur": "ہیکس نٹ M6",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M6",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M6",
+    "ur": "فلیٹ واشر M6",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M6",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 10mm",
+    "ur": "ہیکس بولٹ M8 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 15mm",
+    "ur": "ہیکس بولٹ M8 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 20mm",
+    "ur": "ہیکس بولٹ M8 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 25mm",
+    "ur": "ہیکس بولٹ M8 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 30mm",
+    "ur": "ہیکس بولٹ M8 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 40mm",
+    "ur": "ہیکس بولٹ M8 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 50mm",
+    "ur": "ہیکس بولٹ M8 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 60mm",
+    "ur": "ہیکس بولٹ M8 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 75mm",
+    "ur": "ہیکس بولٹ M8 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 100mm",
+    "ur": "ہیکس بولٹ M8 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 125mm",
+    "ur": "ہیکس بولٹ M8 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 150mm",
+    "ur": "ہیکس بولٹ M8 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M8 x 200mm",
+    "ur": "ہیکس بولٹ M8 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M8 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M8",
+    "ur": "ہیکس نٹ M8",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M8",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M8",
+    "ur": "فلیٹ واشر M8",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M8",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 10mm",
+    "ur": "ہیکس بولٹ M10 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 15mm",
+    "ur": "ہیکس بولٹ M10 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 20mm",
+    "ur": "ہیکس بولٹ M10 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 25mm",
+    "ur": "ہیکس بولٹ M10 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 30mm",
+    "ur": "ہیکس بولٹ M10 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 40mm",
+    "ur": "ہیکس بولٹ M10 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 50mm",
+    "ur": "ہیکس بولٹ M10 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 60mm",
+    "ur": "ہیکس بولٹ M10 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 75mm",
+    "ur": "ہیکس بولٹ M10 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 100mm",
+    "ur": "ہیکس بولٹ M10 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 125mm",
+    "ur": "ہیکس بولٹ M10 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 150mm",
+    "ur": "ہیکس بولٹ M10 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M10 x 200mm",
+    "ur": "ہیکس بولٹ M10 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M10 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M10",
+    "ur": "ہیکس نٹ M10",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M10",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M10",
+    "ur": "فلیٹ واشر M10",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M10",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 10mm",
+    "ur": "ہیکس بولٹ M12 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 15mm",
+    "ur": "ہیکس بولٹ M12 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 20mm",
+    "ur": "ہیکس بولٹ M12 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 25mm",
+    "ur": "ہیکس بولٹ M12 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 30mm",
+    "ur": "ہیکس بولٹ M12 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 40mm",
+    "ur": "ہیکس بولٹ M12 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 50mm",
+    "ur": "ہیکس بولٹ M12 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 60mm",
+    "ur": "ہیکس بولٹ M12 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 75mm",
+    "ur": "ہیکس بولٹ M12 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 100mm",
+    "ur": "ہیکس بولٹ M12 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 125mm",
+    "ur": "ہیکس بولٹ M12 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 150mm",
+    "ur": "ہیکس بولٹ M12 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M12 x 200mm",
+    "ur": "ہیکس بولٹ M12 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M12 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M12",
+    "ur": "ہیکس نٹ M12",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M12",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M12",
+    "ur": "فلیٹ واشر M12",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M12",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 10mm",
+    "ur": "ہیکس بولٹ M14 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 15mm",
+    "ur": "ہیکس بولٹ M14 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 20mm",
+    "ur": "ہیکس بولٹ M14 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 25mm",
+    "ur": "ہیکس بولٹ M14 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 30mm",
+    "ur": "ہیکس بولٹ M14 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 40mm",
+    "ur": "ہیکس بولٹ M14 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 50mm",
+    "ur": "ہیکس بولٹ M14 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 60mm",
+    "ur": "ہیکس بولٹ M14 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 75mm",
+    "ur": "ہیکس بولٹ M14 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 100mm",
+    "ur": "ہیکس بولٹ M14 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 125mm",
+    "ur": "ہیکس بولٹ M14 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 150mm",
+    "ur": "ہیکس بولٹ M14 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M14 x 200mm",
+    "ur": "ہیکس بولٹ M14 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M14 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M14",
+    "ur": "ہیکس نٹ M14",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M14",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M14",
+    "ur": "فلیٹ واشر M14",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M14",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 10mm",
+    "ur": "ہیکس بولٹ M16 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 15mm",
+    "ur": "ہیکس بولٹ M16 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 20mm",
+    "ur": "ہیکس بولٹ M16 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 25mm",
+    "ur": "ہیکس بولٹ M16 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 30mm",
+    "ur": "ہیکس بولٹ M16 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 40mm",
+    "ur": "ہیکس بولٹ M16 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 50mm",
+    "ur": "ہیکس بولٹ M16 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 60mm",
+    "ur": "ہیکس بولٹ M16 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 75mm",
+    "ur": "ہیکس بولٹ M16 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 100mm",
+    "ur": "ہیکس بولٹ M16 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 125mm",
+    "ur": "ہیکس بولٹ M16 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 150mm",
+    "ur": "ہیکس بولٹ M16 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M16 x 200mm",
+    "ur": "ہیکس بولٹ M16 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M16 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M16",
+    "ur": "ہیکس نٹ M16",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M16",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M16",
+    "ur": "فلیٹ واشر M16",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M16",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 10mm",
+    "ur": "ہیکس بولٹ M18 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 15mm",
+    "ur": "ہیکس بولٹ M18 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 20mm",
+    "ur": "ہیکس بولٹ M18 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 25mm",
+    "ur": "ہیکس بولٹ M18 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 30mm",
+    "ur": "ہیکس بولٹ M18 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 40mm",
+    "ur": "ہیکس بولٹ M18 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 50mm",
+    "ur": "ہیکس بولٹ M18 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 60mm",
+    "ur": "ہیکس بولٹ M18 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 75mm",
+    "ur": "ہیکس بولٹ M18 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 100mm",
+    "ur": "ہیکس بولٹ M18 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 125mm",
+    "ur": "ہیکس بولٹ M18 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 150mm",
+    "ur": "ہیکس بولٹ M18 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M18 x 200mm",
+    "ur": "ہیکس بولٹ M18 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M18 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M18",
+    "ur": "ہیکس نٹ M18",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M18",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M18",
+    "ur": "فلیٹ واشر M18",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M18",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 10mm",
+    "ur": "ہیکس بولٹ M20 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 15mm",
+    "ur": "ہیکس بولٹ M20 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 20mm",
+    "ur": "ہیکس بولٹ M20 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 25mm",
+    "ur": "ہیکس بولٹ M20 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 30mm",
+    "ur": "ہیکس بولٹ M20 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 40mm",
+    "ur": "ہیکس بولٹ M20 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 50mm",
+    "ur": "ہیکس بولٹ M20 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 60mm",
+    "ur": "ہیکس بولٹ M20 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 75mm",
+    "ur": "ہیکس بولٹ M20 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 100mm",
+    "ur": "ہیکس بولٹ M20 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 125mm",
+    "ur": "ہیکس بولٹ M20 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 150mm",
+    "ur": "ہیکس بولٹ M20 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M20 x 200mm",
+    "ur": "ہیکس بولٹ M20 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M20 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M20",
+    "ur": "ہیکس نٹ M20",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M20",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M20",
+    "ur": "فلیٹ واشر M20",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M20",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 10mm",
+    "ur": "ہیکس بولٹ M22 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 15mm",
+    "ur": "ہیکس بولٹ M22 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 20mm",
+    "ur": "ہیکس بولٹ M22 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 25mm",
+    "ur": "ہیکس بولٹ M22 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 30mm",
+    "ur": "ہیکس بولٹ M22 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 40mm",
+    "ur": "ہیکس بولٹ M22 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 50mm",
+    "ur": "ہیکس بولٹ M22 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 60mm",
+    "ur": "ہیکس بولٹ M22 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 75mm",
+    "ur": "ہیکس بولٹ M22 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 100mm",
+    "ur": "ہیکس بولٹ M22 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 125mm",
+    "ur": "ہیکس بولٹ M22 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 150mm",
+    "ur": "ہیکس بولٹ M22 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M22 x 200mm",
+    "ur": "ہیکس بولٹ M22 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M22 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M22",
+    "ur": "ہیکس نٹ M22",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M22",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M22",
+    "ur": "فلیٹ واشر M22",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M22",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 10mm",
+    "ur": "ہیکس بولٹ M24 x 10mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 15mm",
+    "ur": "ہیکس بولٹ M24 x 15mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 15mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 20mm",
+    "ur": "ہیکس بولٹ M24 x 20mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 25mm",
+    "ur": "ہیکس بولٹ M24 x 25mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 30mm",
+    "ur": "ہیکس بولٹ M24 x 30mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 40mm",
+    "ur": "ہیکس بولٹ M24 x 40mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 50mm",
+    "ur": "ہیکس بولٹ M24 x 50mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 60mm",
+    "ur": "ہیکس بولٹ M24 x 60mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 75mm",
+    "ur": "ہیکس بولٹ M24 x 75mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 75mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 100mm",
+    "ur": "ہیکس بولٹ M24 x 100mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 125mm",
+    "ur": "ہیکس بولٹ M24 x 125mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 125mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 150mm",
+    "ur": "ہیکس بولٹ M24 x 150mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 150mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Bolts",
+    "en": "Hex Bolt M24 x 200mm",
+    "ur": "ہیکس بولٹ M24 x 200mm",
+    "aliases": "bolt",
+    "brand": "Hex Bolt",
+    "variant": "M24 x 200mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Nuts",
+    "en": "Hex Nut M24",
+    "ur": "ہیکس نٹ M24",
+    "aliases": "nut",
+    "brand": "Hex Nut",
+    "variant": "M24",
+    "unit": "piece"
+  },
+  {
+    "category": "Hardware",
+    "subcategory": "Washers",
+    "en": "Flat Washer M24",
+    "ur": "فلیٹ واشر M24",
+    "aliases": "washer",
+    "brand": "Flat Washer",
+    "variant": "M24",
+    "unit": "piece"
+  }
+]

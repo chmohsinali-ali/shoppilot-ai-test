@@ -1,0 +1,432 @@
+[
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Ceiling Fan",
+    "ur": "چھت کا پنکھا",
+    "aliases": "pankha",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Pedestal Fan",
+    "ur": "پیڈسٹل پنکھا",
+    "aliases": "stand fan",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Exhaust Fan",
+    "ur": "ایگزاسٹ فین",
+    "aliases": "exhaust",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Switch",
+    "ur": "سوئچ",
+    "aliases": "switch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Socket",
+    "ur": "ساکٹ",
+    "aliases": "socket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Plug Top",
+    "ur": "پلگ",
+    "aliases": "plug",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Fan Regulator",
+    "ur": "فین ریگولیٹر",
+    "aliases": "regulator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "LED Bulb",
+    "ur": "ایل ای ڈی بلب",
+    "aliases": "bulb",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Tube Light",
+    "ur": "ٹیوب لائٹ",
+    "aliases": "tube",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Panel Light",
+    "ur": "پینل لائٹ",
+    "aliases": "panel light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "MCB",
+    "ur": "ایم سی بی",
+    "aliases": "breaker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "RCCB",
+    "ur": "آر سی سی بی",
+    "aliases": "earth leakage breaker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Distribution Board",
+    "ur": "ڈسٹری بیوشن بورڈ",
+    "aliases": "db box",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Contactor",
+    "ur": "کانٹیکٹر",
+    "aliases": "contactor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Relay",
+    "ur": "ریلے",
+    "aliases": "relay",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Cable Lug",
+    "ur": "کیبل لگ",
+    "aliases": "lug",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Electrical Goods",
+    "en": "Insulation Tape",
+    "ur": "انسولیشن ٹیپ",
+    "aliases": "electric tape",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 0.5mm",
+    "ur": "کاپر تار 0.5mm",
+    "aliases": "taar, wire, copper wire 0.5mm",
+    "brand": "Generic",
+    "variant": "0.5mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 0.75mm",
+    "ur": "کاپر تار 0.75mm",
+    "aliases": "taar, wire, copper wire 0.75mm",
+    "brand": "Generic",
+    "variant": "0.75mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 1mm",
+    "ur": "کاپر تار 1mm",
+    "aliases": "taar, wire, copper wire 1mm",
+    "brand": "Generic",
+    "variant": "1mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 1.5mm",
+    "ur": "کاپر تار 1.5mm",
+    "aliases": "taar, wire, copper wire 1.5mm",
+    "brand": "Generic",
+    "variant": "1.5mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 2.5mm",
+    "ur": "کاپر تار 2.5mm",
+    "aliases": "taar, wire, copper wire 2.5mm",
+    "brand": "Generic",
+    "variant": "2.5mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 4mm",
+    "ur": "کاپر تار 4mm",
+    "aliases": "taar, wire, copper wire 4mm",
+    "brand": "Generic",
+    "variant": "4mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 6mm",
+    "ur": "کاپر تار 6mm",
+    "aliases": "taar, wire, copper wire 6mm",
+    "brand": "Generic",
+    "variant": "6mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 10mm",
+    "ur": "کاپر تار 10mm",
+    "aliases": "taar, wire, copper wire 10mm",
+    "brand": "Generic",
+    "variant": "10mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 16mm",
+    "ur": "کاپر تار 16mm",
+    "aliases": "taar, wire, copper wire 16mm",
+    "brand": "Generic",
+    "variant": "16mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 25mm",
+    "ur": "کاپر تار 25mm",
+    "aliases": "taar, wire, copper wire 25mm",
+    "brand": "Generic",
+    "variant": "25mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 35mm",
+    "ur": "کاپر تار 35mm",
+    "aliases": "taar, wire, copper wire 35mm",
+    "brand": "Generic",
+    "variant": "35mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 50mm",
+    "ur": "کاپر تار 50mm",
+    "aliases": "taar, wire, copper wire 50mm",
+    "brand": "Generic",
+    "variant": "50mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 70mm",
+    "ur": "کاپر تار 70mm",
+    "aliases": "taar, wire, copper wire 70mm",
+    "brand": "Generic",
+    "variant": "70mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 95mm",
+    "ur": "کاپر تار 95mm",
+    "aliases": "taar, wire, copper wire 95mm",
+    "brand": "Generic",
+    "variant": "95mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Wire & Cable",
+    "en": "Copper Wire 120mm",
+    "ur": "کاپر تار 120mm",
+    "aliases": "taar, wire, copper wire 120mm",
+    "brand": "Generic",
+    "variant": "120mm",
+    "unit": "meter"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 6A",
+    "ur": "ایم سی بی 6A",
+    "aliases": "breaker, mcb 6a",
+    "brand": "Generic",
+    "variant": "6A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 10A",
+    "ur": "ایم سی بی 10A",
+    "aliases": "breaker, mcb 10a",
+    "brand": "Generic",
+    "variant": "10A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 16A",
+    "ur": "ایم سی بی 16A",
+    "aliases": "breaker, mcb 16a",
+    "brand": "Generic",
+    "variant": "16A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 20A",
+    "ur": "ایم سی بی 20A",
+    "aliases": "breaker, mcb 20a",
+    "brand": "Generic",
+    "variant": "20A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 25A",
+    "ur": "ایم سی بی 25A",
+    "aliases": "breaker, mcb 25a",
+    "brand": "Generic",
+    "variant": "25A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 32A",
+    "ur": "ایم سی بی 32A",
+    "aliases": "breaker, mcb 32a",
+    "brand": "Generic",
+    "variant": "32A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 40A",
+    "ur": "ایم سی بی 40A",
+    "aliases": "breaker, mcb 40a",
+    "brand": "Generic",
+    "variant": "40A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 50A",
+    "ur": "ایم سی بی 50A",
+    "aliases": "breaker, mcb 50a",
+    "brand": "Generic",
+    "variant": "50A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 63A",
+    "ur": "ایم سی بی 63A",
+    "aliases": "breaker, mcb 63a",
+    "brand": "Generic",
+    "variant": "63A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 80A",
+    "ur": "ایم سی بی 80A",
+    "aliases": "breaker, mcb 80a",
+    "brand": "Generic",
+    "variant": "80A",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Breakers",
+    "en": "MCB 100A",
+    "ur": "ایم سی بی 100A",
+    "aliases": "breaker, mcb 100a",
+    "brand": "Generic",
+    "variant": "100A",
+    "unit": "piece"
+  }
+]

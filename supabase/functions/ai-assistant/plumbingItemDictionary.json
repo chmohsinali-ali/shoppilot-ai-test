@@ -1,0 +1,1542 @@
+[
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 1/2 inch",
+    "ur": "PVC پائپ 1/2 inch",
+    "aliases": "paip, pipe, pvc pipe 1/2 inch",
+    "brand": "PVC",
+    "variant": "1/2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 3/4 inch",
+    "ur": "PVC پائپ 3/4 inch",
+    "aliases": "paip, pipe, pvc pipe 3/4 inch",
+    "brand": "PVC",
+    "variant": "3/4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 1 inch",
+    "ur": "PVC پائپ 1 inch",
+    "aliases": "paip, pipe, pvc pipe 1 inch",
+    "brand": "PVC",
+    "variant": "1 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 1.25 inch",
+    "ur": "PVC پائپ 1.25 inch",
+    "aliases": "paip, pipe, pvc pipe 1.25 inch",
+    "brand": "PVC",
+    "variant": "1.25 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 1.5 inch",
+    "ur": "PVC پائپ 1.5 inch",
+    "aliases": "paip, pipe, pvc pipe 1.5 inch",
+    "brand": "PVC",
+    "variant": "1.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 2 inch",
+    "ur": "PVC پائپ 2 inch",
+    "aliases": "paip, pipe, pvc pipe 2 inch",
+    "brand": "PVC",
+    "variant": "2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 2.5 inch",
+    "ur": "PVC پائپ 2.5 inch",
+    "aliases": "paip, pipe, pvc pipe 2.5 inch",
+    "brand": "PVC",
+    "variant": "2.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 3 inch",
+    "ur": "PVC پائپ 3 inch",
+    "aliases": "paip, pipe, pvc pipe 3 inch",
+    "brand": "PVC",
+    "variant": "3 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 4 inch",
+    "ur": "PVC پائپ 4 inch",
+    "aliases": "paip, pipe, pvc pipe 4 inch",
+    "brand": "PVC",
+    "variant": "4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 5 inch",
+    "ur": "PVC پائپ 5 inch",
+    "aliases": "paip, pipe, pvc pipe 5 inch",
+    "brand": "PVC",
+    "variant": "5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 6 inch",
+    "ur": "PVC پائپ 6 inch",
+    "aliases": "paip, pipe, pvc pipe 6 inch",
+    "brand": "PVC",
+    "variant": "6 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PVC Pipe 8 inch",
+    "ur": "PVC پائپ 8 inch",
+    "aliases": "paip, pipe, pvc pipe 8 inch",
+    "brand": "PVC",
+    "variant": "8 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 1/2 inch",
+    "ur": "UPVC پائپ 1/2 inch",
+    "aliases": "paip, pipe, upvc pipe 1/2 inch",
+    "brand": "UPVC",
+    "variant": "1/2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 3/4 inch",
+    "ur": "UPVC پائپ 3/4 inch",
+    "aliases": "paip, pipe, upvc pipe 3/4 inch",
+    "brand": "UPVC",
+    "variant": "3/4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 1 inch",
+    "ur": "UPVC پائپ 1 inch",
+    "aliases": "paip, pipe, upvc pipe 1 inch",
+    "brand": "UPVC",
+    "variant": "1 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 1.25 inch",
+    "ur": "UPVC پائپ 1.25 inch",
+    "aliases": "paip, pipe, upvc pipe 1.25 inch",
+    "brand": "UPVC",
+    "variant": "1.25 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 1.5 inch",
+    "ur": "UPVC پائپ 1.5 inch",
+    "aliases": "paip, pipe, upvc pipe 1.5 inch",
+    "brand": "UPVC",
+    "variant": "1.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 2 inch",
+    "ur": "UPVC پائپ 2 inch",
+    "aliases": "paip, pipe, upvc pipe 2 inch",
+    "brand": "UPVC",
+    "variant": "2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 2.5 inch",
+    "ur": "UPVC پائپ 2.5 inch",
+    "aliases": "paip, pipe, upvc pipe 2.5 inch",
+    "brand": "UPVC",
+    "variant": "2.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 3 inch",
+    "ur": "UPVC پائپ 3 inch",
+    "aliases": "paip, pipe, upvc pipe 3 inch",
+    "brand": "UPVC",
+    "variant": "3 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 4 inch",
+    "ur": "UPVC پائپ 4 inch",
+    "aliases": "paip, pipe, upvc pipe 4 inch",
+    "brand": "UPVC",
+    "variant": "4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 5 inch",
+    "ur": "UPVC پائپ 5 inch",
+    "aliases": "paip, pipe, upvc pipe 5 inch",
+    "brand": "UPVC",
+    "variant": "5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 6 inch",
+    "ur": "UPVC پائپ 6 inch",
+    "aliases": "paip, pipe, upvc pipe 6 inch",
+    "brand": "UPVC",
+    "variant": "6 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "UPVC Pipe 8 inch",
+    "ur": "UPVC پائپ 8 inch",
+    "aliases": "paip, pipe, upvc pipe 8 inch",
+    "brand": "UPVC",
+    "variant": "8 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 1/2 inch",
+    "ur": "CPVC پائپ 1/2 inch",
+    "aliases": "paip, pipe, cpvc pipe 1/2 inch",
+    "brand": "CPVC",
+    "variant": "1/2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 3/4 inch",
+    "ur": "CPVC پائپ 3/4 inch",
+    "aliases": "paip, pipe, cpvc pipe 3/4 inch",
+    "brand": "CPVC",
+    "variant": "3/4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 1 inch",
+    "ur": "CPVC پائپ 1 inch",
+    "aliases": "paip, pipe, cpvc pipe 1 inch",
+    "brand": "CPVC",
+    "variant": "1 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 1.25 inch",
+    "ur": "CPVC پائپ 1.25 inch",
+    "aliases": "paip, pipe, cpvc pipe 1.25 inch",
+    "brand": "CPVC",
+    "variant": "1.25 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 1.5 inch",
+    "ur": "CPVC پائپ 1.5 inch",
+    "aliases": "paip, pipe, cpvc pipe 1.5 inch",
+    "brand": "CPVC",
+    "variant": "1.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 2 inch",
+    "ur": "CPVC پائپ 2 inch",
+    "aliases": "paip, pipe, cpvc pipe 2 inch",
+    "brand": "CPVC",
+    "variant": "2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 2.5 inch",
+    "ur": "CPVC پائپ 2.5 inch",
+    "aliases": "paip, pipe, cpvc pipe 2.5 inch",
+    "brand": "CPVC",
+    "variant": "2.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 3 inch",
+    "ur": "CPVC پائپ 3 inch",
+    "aliases": "paip, pipe, cpvc pipe 3 inch",
+    "brand": "CPVC",
+    "variant": "3 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 4 inch",
+    "ur": "CPVC پائپ 4 inch",
+    "aliases": "paip, pipe, cpvc pipe 4 inch",
+    "brand": "CPVC",
+    "variant": "4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 5 inch",
+    "ur": "CPVC پائپ 5 inch",
+    "aliases": "paip, pipe, cpvc pipe 5 inch",
+    "brand": "CPVC",
+    "variant": "5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 6 inch",
+    "ur": "CPVC پائپ 6 inch",
+    "aliases": "paip, pipe, cpvc pipe 6 inch",
+    "brand": "CPVC",
+    "variant": "6 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "CPVC Pipe 8 inch",
+    "ur": "CPVC پائپ 8 inch",
+    "aliases": "paip, pipe, cpvc pipe 8 inch",
+    "brand": "CPVC",
+    "variant": "8 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 1/2 inch",
+    "ur": "PPRC پائپ 1/2 inch",
+    "aliases": "paip, pipe, pprc pipe 1/2 inch",
+    "brand": "PPRC",
+    "variant": "1/2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 3/4 inch",
+    "ur": "PPRC پائپ 3/4 inch",
+    "aliases": "paip, pipe, pprc pipe 3/4 inch",
+    "brand": "PPRC",
+    "variant": "3/4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 1 inch",
+    "ur": "PPRC پائپ 1 inch",
+    "aliases": "paip, pipe, pprc pipe 1 inch",
+    "brand": "PPRC",
+    "variant": "1 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 1.25 inch",
+    "ur": "PPRC پائپ 1.25 inch",
+    "aliases": "paip, pipe, pprc pipe 1.25 inch",
+    "brand": "PPRC",
+    "variant": "1.25 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 1.5 inch",
+    "ur": "PPRC پائپ 1.5 inch",
+    "aliases": "paip, pipe, pprc pipe 1.5 inch",
+    "brand": "PPRC",
+    "variant": "1.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 2 inch",
+    "ur": "PPRC پائپ 2 inch",
+    "aliases": "paip, pipe, pprc pipe 2 inch",
+    "brand": "PPRC",
+    "variant": "2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 2.5 inch",
+    "ur": "PPRC پائپ 2.5 inch",
+    "aliases": "paip, pipe, pprc pipe 2.5 inch",
+    "brand": "PPRC",
+    "variant": "2.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 3 inch",
+    "ur": "PPRC پائپ 3 inch",
+    "aliases": "paip, pipe, pprc pipe 3 inch",
+    "brand": "PPRC",
+    "variant": "3 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 4 inch",
+    "ur": "PPRC پائپ 4 inch",
+    "aliases": "paip, pipe, pprc pipe 4 inch",
+    "brand": "PPRC",
+    "variant": "4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 5 inch",
+    "ur": "PPRC پائپ 5 inch",
+    "aliases": "paip, pipe, pprc pipe 5 inch",
+    "brand": "PPRC",
+    "variant": "5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 6 inch",
+    "ur": "PPRC پائپ 6 inch",
+    "aliases": "paip, pipe, pprc pipe 6 inch",
+    "brand": "PPRC",
+    "variant": "6 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "PPRC Pipe 8 inch",
+    "ur": "PPRC پائپ 8 inch",
+    "aliases": "paip, pipe, pprc pipe 8 inch",
+    "brand": "PPRC",
+    "variant": "8 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 1/2 inch",
+    "ur": "GI پائپ 1/2 inch",
+    "aliases": "paip, pipe, gi pipe 1/2 inch",
+    "brand": "GI",
+    "variant": "1/2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 3/4 inch",
+    "ur": "GI پائپ 3/4 inch",
+    "aliases": "paip, pipe, gi pipe 3/4 inch",
+    "brand": "GI",
+    "variant": "3/4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 1 inch",
+    "ur": "GI پائپ 1 inch",
+    "aliases": "paip, pipe, gi pipe 1 inch",
+    "brand": "GI",
+    "variant": "1 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 1.25 inch",
+    "ur": "GI پائپ 1.25 inch",
+    "aliases": "paip, pipe, gi pipe 1.25 inch",
+    "brand": "GI",
+    "variant": "1.25 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 1.5 inch",
+    "ur": "GI پائپ 1.5 inch",
+    "aliases": "paip, pipe, gi pipe 1.5 inch",
+    "brand": "GI",
+    "variant": "1.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 2 inch",
+    "ur": "GI پائپ 2 inch",
+    "aliases": "paip, pipe, gi pipe 2 inch",
+    "brand": "GI",
+    "variant": "2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 2.5 inch",
+    "ur": "GI پائپ 2.5 inch",
+    "aliases": "paip, pipe, gi pipe 2.5 inch",
+    "brand": "GI",
+    "variant": "2.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 3 inch",
+    "ur": "GI پائپ 3 inch",
+    "aliases": "paip, pipe, gi pipe 3 inch",
+    "brand": "GI",
+    "variant": "3 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 4 inch",
+    "ur": "GI پائپ 4 inch",
+    "aliases": "paip, pipe, gi pipe 4 inch",
+    "brand": "GI",
+    "variant": "4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 5 inch",
+    "ur": "GI پائپ 5 inch",
+    "aliases": "paip, pipe, gi pipe 5 inch",
+    "brand": "GI",
+    "variant": "5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 6 inch",
+    "ur": "GI پائپ 6 inch",
+    "aliases": "paip, pipe, gi pipe 6 inch",
+    "brand": "GI",
+    "variant": "6 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "GI Pipe 8 inch",
+    "ur": "GI پائپ 8 inch",
+    "aliases": "paip, pipe, gi pipe 8 inch",
+    "brand": "GI",
+    "variant": "8 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 1/2 inch",
+    "ur": "HDPE پائپ 1/2 inch",
+    "aliases": "paip, pipe, hdpe pipe 1/2 inch",
+    "brand": "HDPE",
+    "variant": "1/2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 3/4 inch",
+    "ur": "HDPE پائپ 3/4 inch",
+    "aliases": "paip, pipe, hdpe pipe 3/4 inch",
+    "brand": "HDPE",
+    "variant": "3/4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 1 inch",
+    "ur": "HDPE پائپ 1 inch",
+    "aliases": "paip, pipe, hdpe pipe 1 inch",
+    "brand": "HDPE",
+    "variant": "1 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 1.25 inch",
+    "ur": "HDPE پائپ 1.25 inch",
+    "aliases": "paip, pipe, hdpe pipe 1.25 inch",
+    "brand": "HDPE",
+    "variant": "1.25 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 1.5 inch",
+    "ur": "HDPE پائپ 1.5 inch",
+    "aliases": "paip, pipe, hdpe pipe 1.5 inch",
+    "brand": "HDPE",
+    "variant": "1.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 2 inch",
+    "ur": "HDPE پائپ 2 inch",
+    "aliases": "paip, pipe, hdpe pipe 2 inch",
+    "brand": "HDPE",
+    "variant": "2 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 2.5 inch",
+    "ur": "HDPE پائپ 2.5 inch",
+    "aliases": "paip, pipe, hdpe pipe 2.5 inch",
+    "brand": "HDPE",
+    "variant": "2.5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 3 inch",
+    "ur": "HDPE پائپ 3 inch",
+    "aliases": "paip, pipe, hdpe pipe 3 inch",
+    "brand": "HDPE",
+    "variant": "3 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 4 inch",
+    "ur": "HDPE پائپ 4 inch",
+    "aliases": "paip, pipe, hdpe pipe 4 inch",
+    "brand": "HDPE",
+    "variant": "4 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 5 inch",
+    "ur": "HDPE پائپ 5 inch",
+    "aliases": "paip, pipe, hdpe pipe 5 inch",
+    "brand": "HDPE",
+    "variant": "5 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 6 inch",
+    "ur": "HDPE پائپ 6 inch",
+    "aliases": "paip, pipe, hdpe pipe 6 inch",
+    "brand": "HDPE",
+    "variant": "6 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Pipes",
+    "en": "HDPE Pipe 8 inch",
+    "ur": "HDPE پائپ 8 inch",
+    "aliases": "paip, pipe, hdpe pipe 8 inch",
+    "brand": "HDPE",
+    "variant": "8 inch",
+    "unit": "length"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 1/2 inch",
+    "ur": "کہنی 1/2 inch",
+    "aliases": "elbow, elbow 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 3/4 inch",
+    "ur": "کہنی 3/4 inch",
+    "aliases": "elbow, elbow 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 1 inch",
+    "ur": "کہنی 1 inch",
+    "aliases": "elbow, elbow 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 1.25 inch",
+    "ur": "کہنی 1.25 inch",
+    "aliases": "elbow, elbow 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 1.5 inch",
+    "ur": "کہنی 1.5 inch",
+    "aliases": "elbow, elbow 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 2 inch",
+    "ur": "کہنی 2 inch",
+    "aliases": "elbow, elbow 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 2.5 inch",
+    "ur": "کہنی 2.5 inch",
+    "aliases": "elbow, elbow 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 3 inch",
+    "ur": "کہنی 3 inch",
+    "aliases": "elbow, elbow 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Elbow 4 inch",
+    "ur": "کہنی 4 inch",
+    "aliases": "elbow, elbow 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 1/2 inch",
+    "ur": "ٹی 1/2 inch",
+    "aliases": "tee, tee 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 3/4 inch",
+    "ur": "ٹی 3/4 inch",
+    "aliases": "tee, tee 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 1 inch",
+    "ur": "ٹی 1 inch",
+    "aliases": "tee, tee 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 1.25 inch",
+    "ur": "ٹی 1.25 inch",
+    "aliases": "tee, tee 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 1.5 inch",
+    "ur": "ٹی 1.5 inch",
+    "aliases": "tee, tee 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 2 inch",
+    "ur": "ٹی 2 inch",
+    "aliases": "tee, tee 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 2.5 inch",
+    "ur": "ٹی 2.5 inch",
+    "aliases": "tee, tee 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 3 inch",
+    "ur": "ٹی 3 inch",
+    "aliases": "tee, tee 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Tee 4 inch",
+    "ur": "ٹی 4 inch",
+    "aliases": "tee, tee 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 1/2 inch",
+    "ur": "ساکٹ 1/2 inch",
+    "aliases": "socket, socket 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 3/4 inch",
+    "ur": "ساکٹ 3/4 inch",
+    "aliases": "socket, socket 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 1 inch",
+    "ur": "ساکٹ 1 inch",
+    "aliases": "socket, socket 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 1.25 inch",
+    "ur": "ساکٹ 1.25 inch",
+    "aliases": "socket, socket 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 1.5 inch",
+    "ur": "ساکٹ 1.5 inch",
+    "aliases": "socket, socket 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 2 inch",
+    "ur": "ساکٹ 2 inch",
+    "aliases": "socket, socket 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 2.5 inch",
+    "ur": "ساکٹ 2.5 inch",
+    "aliases": "socket, socket 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 3 inch",
+    "ur": "ساکٹ 3 inch",
+    "aliases": "socket, socket 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Socket 4 inch",
+    "ur": "ساکٹ 4 inch",
+    "aliases": "socket, socket 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 1/2 inch",
+    "ur": "یونین 1/2 inch",
+    "aliases": "union, union 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 3/4 inch",
+    "ur": "یونین 3/4 inch",
+    "aliases": "union, union 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 1 inch",
+    "ur": "یونین 1 inch",
+    "aliases": "union, union 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 1.25 inch",
+    "ur": "یونین 1.25 inch",
+    "aliases": "union, union 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 1.5 inch",
+    "ur": "یونین 1.5 inch",
+    "aliases": "union, union 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 2 inch",
+    "ur": "یونین 2 inch",
+    "aliases": "union, union 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 2.5 inch",
+    "ur": "یونین 2.5 inch",
+    "aliases": "union, union 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 3 inch",
+    "ur": "یونین 3 inch",
+    "aliases": "union, union 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Union 4 inch",
+    "ur": "یونین 4 inch",
+    "aliases": "union, union 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 1/2 inch",
+    "ur": "ریڈیوسر 1/2 inch",
+    "aliases": "reducer, reducer 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 3/4 inch",
+    "ur": "ریڈیوسر 3/4 inch",
+    "aliases": "reducer, reducer 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 1 inch",
+    "ur": "ریڈیوسر 1 inch",
+    "aliases": "reducer, reducer 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 1.25 inch",
+    "ur": "ریڈیوسر 1.25 inch",
+    "aliases": "reducer, reducer 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 1.5 inch",
+    "ur": "ریڈیوسر 1.5 inch",
+    "aliases": "reducer, reducer 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 2 inch",
+    "ur": "ریڈیوسر 2 inch",
+    "aliases": "reducer, reducer 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 2.5 inch",
+    "ur": "ریڈیوسر 2.5 inch",
+    "aliases": "reducer, reducer 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 3 inch",
+    "ur": "ریڈیوسر 3 inch",
+    "aliases": "reducer, reducer 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Reducer 4 inch",
+    "ur": "ریڈیوسر 4 inch",
+    "aliases": "reducer, reducer 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 1/2 inch",
+    "ur": "اینڈ کیپ 1/2 inch",
+    "aliases": "cap, end cap 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 3/4 inch",
+    "ur": "اینڈ کیپ 3/4 inch",
+    "aliases": "cap, end cap 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 1 inch",
+    "ur": "اینڈ کیپ 1 inch",
+    "aliases": "cap, end cap 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 1.25 inch",
+    "ur": "اینڈ کیپ 1.25 inch",
+    "aliases": "cap, end cap 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 1.5 inch",
+    "ur": "اینڈ کیپ 1.5 inch",
+    "aliases": "cap, end cap 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 2 inch",
+    "ur": "اینڈ کیپ 2 inch",
+    "aliases": "cap, end cap 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 2.5 inch",
+    "ur": "اینڈ کیپ 2.5 inch",
+    "aliases": "cap, end cap 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 3 inch",
+    "ur": "اینڈ کیپ 3 inch",
+    "aliases": "cap, end cap 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "End Cap 4 inch",
+    "ur": "اینڈ کیپ 4 inch",
+    "aliases": "cap, end cap 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 1/2 inch",
+    "ur": "نپل 1/2 inch",
+    "aliases": "nipple, nipple 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 3/4 inch",
+    "ur": "نپل 3/4 inch",
+    "aliases": "nipple, nipple 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 1 inch",
+    "ur": "نپل 1 inch",
+    "aliases": "nipple, nipple 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 1.25 inch",
+    "ur": "نپل 1.25 inch",
+    "aliases": "nipple, nipple 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 1.5 inch",
+    "ur": "نپل 1.5 inch",
+    "aliases": "nipple, nipple 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 2 inch",
+    "ur": "نپل 2 inch",
+    "aliases": "nipple, nipple 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 2.5 inch",
+    "ur": "نپل 2.5 inch",
+    "aliases": "nipple, nipple 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 3 inch",
+    "ur": "نپل 3 inch",
+    "aliases": "nipple, nipple 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Nipple 4 inch",
+    "ur": "نپل 4 inch",
+    "aliases": "nipple, nipple 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 1/2 inch",
+    "ur": "بش 1/2 inch",
+    "aliases": "bush, bush 1/2 inch",
+    "brand": "Generic",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 3/4 inch",
+    "ur": "بش 3/4 inch",
+    "aliases": "bush, bush 3/4 inch",
+    "brand": "Generic",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 1 inch",
+    "ur": "بش 1 inch",
+    "aliases": "bush, bush 1 inch",
+    "brand": "Generic",
+    "variant": "1 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 1.25 inch",
+    "ur": "بش 1.25 inch",
+    "aliases": "bush, bush 1.25 inch",
+    "brand": "Generic",
+    "variant": "1.25 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 1.5 inch",
+    "ur": "بش 1.5 inch",
+    "aliases": "bush, bush 1.5 inch",
+    "brand": "Generic",
+    "variant": "1.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 2 inch",
+    "ur": "بش 2 inch",
+    "aliases": "bush, bush 2 inch",
+    "brand": "Generic",
+    "variant": "2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 2.5 inch",
+    "ur": "بش 2.5 inch",
+    "aliases": "bush, bush 2.5 inch",
+    "brand": "Generic",
+    "variant": "2.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 3 inch",
+    "ur": "بش 3 inch",
+    "aliases": "bush, bush 3 inch",
+    "brand": "Generic",
+    "variant": "3 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Fittings",
+    "en": "Bush 4 inch",
+    "ur": "بش 4 inch",
+    "aliases": "bush, bush 4 inch",
+    "brand": "Generic",
+    "variant": "4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Ball Valve",
+    "ur": "بال والو",
+    "aliases": "valve",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Gate Valve",
+    "ur": "گیٹ والو",
+    "aliases": "gate valve",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Bib Cock",
+    "ur": "نل",
+    "aliases": "nal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Mixer Tap",
+    "ur": "مکسر نل",
+    "aliases": "mixer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Hand Shower",
+    "ur": "ہینڈ شاور",
+    "aliases": "muslim shower",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Wash Basin",
+    "ur": "واش بیسن",
+    "aliases": "basin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Kitchen Sink",
+    "ur": "کچن سنک",
+    "aliases": "sink",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Toilet Seat",
+    "ur": "کموڈ",
+    "aliases": "commode",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Water Tank",
+    "ur": "پانی کی ٹینکی",
+    "aliases": "tank",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sanitary",
+    "subcategory": "Valves / Fixtures",
+    "en": "Water Pump",
+    "ur": "واٹر پمپ",
+    "aliases": "pani motor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

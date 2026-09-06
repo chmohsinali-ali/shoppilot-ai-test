@@ -26,6 +26,9 @@ import computerRows from "./computerItemDictionary.json" with { type: "json" };
 import electronicsRows from "./electronicsItemDictionary.json" with { type: "json" };
 import solarRows from "./solarItemDictionary.json" with { type: "json" };
 import cctvRows from "./cctvItemDictionary.json" with { type: "json" };
+import electricalRows from "./electricalItemDictionary.json" with { type: "json" };
+import hardwareRows from "./hardwareItemDictionary.json" with { type: "json" };
+import plumbingRows from "./plumbingItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -47,6 +50,9 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "electronics", rows: electronicsRows as ItemRow[] },
   { source: "solar", rows: solarRows as ItemRow[] },
   { source: "cctv", rows: cctvRows as ItemRow[] },
+  { source: "electrical", rows: electricalRows as ItemRow[] },
+  { source: "hardware", rows: hardwareRows as ItemRow[] },
+  { source: "plumbing", rows: plumbingRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES
