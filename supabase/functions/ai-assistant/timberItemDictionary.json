@@ -1,0 +1,3558 @@
+[
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 1/2 inch",
+    "ur": "دیار کی لکڑی 1/2 inch",
+    "aliases": [
+      "deodar lakri",
+      "1/2 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 3/4 inch",
+    "ur": "دیار کی لکڑی 3/4 inch",
+    "aliases": [
+      "deodar lakri",
+      "3/4 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 1 inch",
+    "ur": "دیار کی لکڑی 1 inch",
+    "aliases": [
+      "deodar lakri",
+      "1 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 1.25 inch",
+    "ur": "دیار کی لکڑی 1.25 inch",
+    "aliases": [
+      "deodar lakri",
+      "1.25 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 1.5 inch",
+    "ur": "دیار کی لکڑی 1.5 inch",
+    "aliases": [
+      "deodar lakri",
+      "1.5 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 2 inch",
+    "ur": "دیار کی لکڑی 2 inch",
+    "aliases": [
+      "deodar lakri",
+      "2 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 2.5 inch",
+    "ur": "دیار کی لکڑی 2.5 inch",
+    "aliases": [
+      "deodar lakri",
+      "2.5 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 3 inch",
+    "ur": "دیار کی لکڑی 3 inch",
+    "aliases": [
+      "deodar lakri",
+      "3 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Deodar Wood 4 inch",
+    "ur": "دیار کی لکڑی 4 inch",
+    "aliases": [
+      "deodar lakri",
+      "4 inch"
+    ],
+    "brand": "Deodar Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 1/2 inch",
+    "ur": "شیشم کی لکڑی 1/2 inch",
+    "aliases": [
+      "sheesham lakri",
+      "1/2 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 3/4 inch",
+    "ur": "شیشم کی لکڑی 3/4 inch",
+    "aliases": [
+      "sheesham lakri",
+      "3/4 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 1 inch",
+    "ur": "شیشم کی لکڑی 1 inch",
+    "aliases": [
+      "sheesham lakri",
+      "1 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 1.25 inch",
+    "ur": "شیشم کی لکڑی 1.25 inch",
+    "aliases": [
+      "sheesham lakri",
+      "1.25 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 1.5 inch",
+    "ur": "شیشم کی لکڑی 1.5 inch",
+    "aliases": [
+      "sheesham lakri",
+      "1.5 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 2 inch",
+    "ur": "شیشم کی لکڑی 2 inch",
+    "aliases": [
+      "sheesham lakri",
+      "2 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 2.5 inch",
+    "ur": "شیشم کی لکڑی 2.5 inch",
+    "aliases": [
+      "sheesham lakri",
+      "2.5 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 3 inch",
+    "ur": "شیشم کی لکڑی 3 inch",
+    "aliases": [
+      "sheesham lakri",
+      "3 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Sheesham Wood 4 inch",
+    "ur": "شیشم کی لکڑی 4 inch",
+    "aliases": [
+      "sheesham lakri",
+      "4 inch"
+    ],
+    "brand": "Sheesham Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 1/2 inch",
+    "ur": "کیکر کی لکڑی 1/2 inch",
+    "aliases": [
+      "kikar lakri",
+      "1/2 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 3/4 inch",
+    "ur": "کیکر کی لکڑی 3/4 inch",
+    "aliases": [
+      "kikar lakri",
+      "3/4 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 1 inch",
+    "ur": "کیکر کی لکڑی 1 inch",
+    "aliases": [
+      "kikar lakri",
+      "1 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 1.25 inch",
+    "ur": "کیکر کی لکڑی 1.25 inch",
+    "aliases": [
+      "kikar lakri",
+      "1.25 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 1.5 inch",
+    "ur": "کیکر کی لکڑی 1.5 inch",
+    "aliases": [
+      "kikar lakri",
+      "1.5 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 2 inch",
+    "ur": "کیکر کی لکڑی 2 inch",
+    "aliases": [
+      "kikar lakri",
+      "2 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 2.5 inch",
+    "ur": "کیکر کی لکڑی 2.5 inch",
+    "aliases": [
+      "kikar lakri",
+      "2.5 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 3 inch",
+    "ur": "کیکر کی لکڑی 3 inch",
+    "aliases": [
+      "kikar lakri",
+      "3 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Kikar Wood 4 inch",
+    "ur": "کیکر کی لکڑی 4 inch",
+    "aliases": [
+      "kikar lakri",
+      "4 inch"
+    ],
+    "brand": "Kikar Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 1/2 inch",
+    "ur": "پاپلر کی لکڑی 1/2 inch",
+    "aliases": [
+      "poplar lakri",
+      "1/2 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 3/4 inch",
+    "ur": "پاپلر کی لکڑی 3/4 inch",
+    "aliases": [
+      "poplar lakri",
+      "3/4 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 1 inch",
+    "ur": "پاپلر کی لکڑی 1 inch",
+    "aliases": [
+      "poplar lakri",
+      "1 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 1.25 inch",
+    "ur": "پاپلر کی لکڑی 1.25 inch",
+    "aliases": [
+      "poplar lakri",
+      "1.25 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 1.5 inch",
+    "ur": "پاپلر کی لکڑی 1.5 inch",
+    "aliases": [
+      "poplar lakri",
+      "1.5 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 2 inch",
+    "ur": "پاپلر کی لکڑی 2 inch",
+    "aliases": [
+      "poplar lakri",
+      "2 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 2.5 inch",
+    "ur": "پاپلر کی لکڑی 2.5 inch",
+    "aliases": [
+      "poplar lakri",
+      "2.5 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 3 inch",
+    "ur": "پاپلر کی لکڑی 3 inch",
+    "aliases": [
+      "poplar lakri",
+      "3 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Poplar Wood 4 inch",
+    "ur": "پاپلر کی لکڑی 4 inch",
+    "aliases": [
+      "poplar lakri",
+      "4 inch"
+    ],
+    "brand": "Poplar Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 1/2 inch",
+    "ur": "چیڑ کی لکڑی 1/2 inch",
+    "aliases": [
+      "pine lakri",
+      "1/2 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 3/4 inch",
+    "ur": "چیڑ کی لکڑی 3/4 inch",
+    "aliases": [
+      "pine lakri",
+      "3/4 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 1 inch",
+    "ur": "چیڑ کی لکڑی 1 inch",
+    "aliases": [
+      "pine lakri",
+      "1 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 1.25 inch",
+    "ur": "چیڑ کی لکڑی 1.25 inch",
+    "aliases": [
+      "pine lakri",
+      "1.25 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 1.5 inch",
+    "ur": "چیڑ کی لکڑی 1.5 inch",
+    "aliases": [
+      "pine lakri",
+      "1.5 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 2 inch",
+    "ur": "چیڑ کی لکڑی 2 inch",
+    "aliases": [
+      "pine lakri",
+      "2 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 2.5 inch",
+    "ur": "چیڑ کی لکڑی 2.5 inch",
+    "aliases": [
+      "pine lakri",
+      "2.5 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 3 inch",
+    "ur": "چیڑ کی لکڑی 3 inch",
+    "aliases": [
+      "pine lakri",
+      "3 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Pine Wood 4 inch",
+    "ur": "چیڑ کی لکڑی 4 inch",
+    "aliases": [
+      "pine lakri",
+      "4 inch"
+    ],
+    "brand": "Pine Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 1/2 inch",
+    "ur": "پرتال کی لکڑی 1/2 inch",
+    "aliases": [
+      "partal lakri",
+      "1/2 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 3/4 inch",
+    "ur": "پرتال کی لکڑی 3/4 inch",
+    "aliases": [
+      "partal lakri",
+      "3/4 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 1 inch",
+    "ur": "پرتال کی لکڑی 1 inch",
+    "aliases": [
+      "partal lakri",
+      "1 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 1.25 inch",
+    "ur": "پرتال کی لکڑی 1.25 inch",
+    "aliases": [
+      "partal lakri",
+      "1.25 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 1.5 inch",
+    "ur": "پرتال کی لکڑی 1.5 inch",
+    "aliases": [
+      "partal lakri",
+      "1.5 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 2 inch",
+    "ur": "پرتال کی لکڑی 2 inch",
+    "aliases": [
+      "partal lakri",
+      "2 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 2.5 inch",
+    "ur": "پرتال کی لکڑی 2.5 inch",
+    "aliases": [
+      "partal lakri",
+      "2.5 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 3 inch",
+    "ur": "پرتال کی لکڑی 3 inch",
+    "aliases": [
+      "partal lakri",
+      "3 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Partal Wood 4 inch",
+    "ur": "پرتال کی لکڑی 4 inch",
+    "aliases": [
+      "partal lakri",
+      "4 inch"
+    ],
+    "brand": "Partal Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 1/2 inch",
+    "ur": "سفیدہ لکڑی 1/2 inch",
+    "aliases": [
+      "safeda lakri",
+      "1/2 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 3/4 inch",
+    "ur": "سفیدہ لکڑی 3/4 inch",
+    "aliases": [
+      "safeda lakri",
+      "3/4 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 1 inch",
+    "ur": "سفیدہ لکڑی 1 inch",
+    "aliases": [
+      "safeda lakri",
+      "1 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 1.25 inch",
+    "ur": "سفیدہ لکڑی 1.25 inch",
+    "aliases": [
+      "safeda lakri",
+      "1.25 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 1.5 inch",
+    "ur": "سفیدہ لکڑی 1.5 inch",
+    "aliases": [
+      "safeda lakri",
+      "1.5 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 2 inch",
+    "ur": "سفیدہ لکڑی 2 inch",
+    "aliases": [
+      "safeda lakri",
+      "2 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 2.5 inch",
+    "ur": "سفیدہ لکڑی 2.5 inch",
+    "aliases": [
+      "safeda lakri",
+      "2.5 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 3 inch",
+    "ur": "سفیدہ لکڑی 3 inch",
+    "aliases": [
+      "safeda lakri",
+      "3 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Eucalyptus Wood 4 inch",
+    "ur": "سفیدہ لکڑی 4 inch",
+    "aliases": [
+      "safeda lakri",
+      "4 inch"
+    ],
+    "brand": "Eucalyptus Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 1/2 inch",
+    "ur": "آم کی لکڑی 1/2 inch",
+    "aliases": [
+      "aam lakri",
+      "1/2 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 3/4 inch",
+    "ur": "آم کی لکڑی 3/4 inch",
+    "aliases": [
+      "aam lakri",
+      "3/4 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 1 inch",
+    "ur": "آم کی لکڑی 1 inch",
+    "aliases": [
+      "aam lakri",
+      "1 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 1.25 inch",
+    "ur": "آم کی لکڑی 1.25 inch",
+    "aliases": [
+      "aam lakri",
+      "1.25 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 1.5 inch",
+    "ur": "آم کی لکڑی 1.5 inch",
+    "aliases": [
+      "aam lakri",
+      "1.5 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 2 inch",
+    "ur": "آم کی لکڑی 2 inch",
+    "aliases": [
+      "aam lakri",
+      "2 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 2.5 inch",
+    "ur": "آم کی لکڑی 2.5 inch",
+    "aliases": [
+      "aam lakri",
+      "2.5 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 3 inch",
+    "ur": "آم کی لکڑی 3 inch",
+    "aliases": [
+      "aam lakri",
+      "3 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Mango Wood 4 inch",
+    "ur": "آم کی لکڑی 4 inch",
+    "aliases": [
+      "aam lakri",
+      "4 inch"
+    ],
+    "brand": "Mango Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 1/2 inch",
+    "ur": "اوک لکڑی 1/2 inch",
+    "aliases": [
+      "oak",
+      "1/2 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 3/4 inch",
+    "ur": "اوک لکڑی 3/4 inch",
+    "aliases": [
+      "oak",
+      "3/4 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 1 inch",
+    "ur": "اوک لکڑی 1 inch",
+    "aliases": [
+      "oak",
+      "1 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 1.25 inch",
+    "ur": "اوک لکڑی 1.25 inch",
+    "aliases": [
+      "oak",
+      "1.25 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 1.5 inch",
+    "ur": "اوک لکڑی 1.5 inch",
+    "aliases": [
+      "oak",
+      "1.5 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 2 inch",
+    "ur": "اوک لکڑی 2 inch",
+    "aliases": [
+      "oak",
+      "2 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 2.5 inch",
+    "ur": "اوک لکڑی 2.5 inch",
+    "aliases": [
+      "oak",
+      "2.5 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 3 inch",
+    "ur": "اوک لکڑی 3 inch",
+    "aliases": [
+      "oak",
+      "3 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Oak Wood 4 inch",
+    "ur": "اوک لکڑی 4 inch",
+    "aliases": [
+      "oak",
+      "4 inch"
+    ],
+    "brand": "Oak Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 1/2 inch",
+    "ur": "ساگوان لکڑی 1/2 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "1/2 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "1/2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 3/4 inch",
+    "ur": "ساگوان لکڑی 3/4 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "3/4 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "3/4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 1 inch",
+    "ur": "ساگوان لکڑی 1 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "1 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "1 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 1.25 inch",
+    "ur": "ساگوان لکڑی 1.25 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "1.25 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "1.25 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 1.5 inch",
+    "ur": "ساگوان لکڑی 1.5 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "1.5 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "1.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 2 inch",
+    "ur": "ساگوان لکڑی 2 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "2 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "2 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 2.5 inch",
+    "ur": "ساگوان لکڑی 2.5 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "2.5 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "2.5 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 3 inch",
+    "ur": "ساگوان لکڑی 3 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "3 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "3 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Timber",
+    "subcategory": "Solid Wood",
+    "en": "Teak Wood 4 inch",
+    "ur": "ساگوان لکڑی 4 inch",
+    "aliases": [
+      "teak",
+      "sagwan",
+      "4 inch"
+    ],
+    "brand": "Teak Wood",
+    "variant": "4 inch",
+    "unit": "cubic ft"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 3mm 4x8 ft",
+    "ur": "پلائی ووڈ 3mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 3mm 4x6 ft",
+    "ur": "پلائی ووڈ 3mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 4mm 4x8 ft",
+    "ur": "پلائی ووڈ 4mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 4mm 4x6 ft",
+    "ur": "پلائی ووڈ 4mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 6mm 4x8 ft",
+    "ur": "پلائی ووڈ 6mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 6mm 4x6 ft",
+    "ur": "پلائی ووڈ 6mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 9mm 4x8 ft",
+    "ur": "پلائی ووڈ 9mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 9mm 4x6 ft",
+    "ur": "پلائی ووڈ 9mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 12mm 4x8 ft",
+    "ur": "پلائی ووڈ 12mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 12mm 4x6 ft",
+    "ur": "پلائی ووڈ 12mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 15mm 4x8 ft",
+    "ur": "پلائی ووڈ 15mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 15mm 4x6 ft",
+    "ur": "پلائی ووڈ 15mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 16mm 4x8 ft",
+    "ur": "پلائی ووڈ 16mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 16mm 4x6 ft",
+    "ur": "پلائی ووڈ 16mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 18mm 4x8 ft",
+    "ur": "پلائی ووڈ 18mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 18mm 4x6 ft",
+    "ur": "پلائی ووڈ 18mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 25mm 4x8 ft",
+    "ur": "پلائی ووڈ 25mm 4x8 ft",
+    "aliases": [
+      "plywood",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Plywood 25mm 4x6 ft",
+    "ur": "پلائی ووڈ 25mm 4x6 ft",
+    "aliases": [
+      "plywood",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "Plywood",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 3mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 3mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 3mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 3mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 4mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 4mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 4mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 4mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 6mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 6mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 6mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 6mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 9mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 9mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 9mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 9mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 12mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 12mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 12mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 12mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 15mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 15mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 15mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 15mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 16mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 16mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 16mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 16mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 18mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 18mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 18mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 18mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 25mm 4x8 ft",
+    "ur": "کمرشل پلائی ووڈ 25mm 4x8 ft",
+    "aliases": [
+      "commercial ply",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Commercial Plywood 25mm 4x6 ft",
+    "ur": "کمرشل پلائی ووڈ 25mm 4x6 ft",
+    "aliases": [
+      "commercial ply",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "Commercial Plywood",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 3mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 3mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 3mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 3mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 4mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 4mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 4mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 4mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 6mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 6mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 6mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 6mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 9mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 9mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 9mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 9mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 12mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 12mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 12mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 12mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 15mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 15mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 15mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 15mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 16mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 16mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 16mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 16mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 18mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 18mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 18mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 18mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 25mm 4x8 ft",
+    "ur": "میرین پلائی ووڈ 25mm 4x8 ft",
+    "aliases": [
+      "marine ply",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Marine Plywood 25mm 4x6 ft",
+    "ur": "میرین پلائی ووڈ 25mm 4x6 ft",
+    "aliases": [
+      "marine ply",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "Marine Plywood",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 3mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 3mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 3mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 3mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 4mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 4mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 4mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 4mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 6mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 6mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 6mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 6mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 9mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 9mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 9mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 9mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 12mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 12mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 12mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 12mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 15mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 15mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 15mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 15mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 16mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 16mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 16mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 16mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 18mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 18mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 18mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 18mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 25mm 4x8 ft",
+    "ur": "ایم ڈی ایف بورڈ 25mm 4x8 ft",
+    "aliases": [
+      "mdf",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "MDF Board 25mm 4x6 ft",
+    "ur": "ایم ڈی ایف بورڈ 25mm 4x6 ft",
+    "aliases": [
+      "mdf",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "MDF Board",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 3mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 3mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 3mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 3mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 4mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 4mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 4mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 4mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 6mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 6mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 6mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 6mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 9mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 9mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 9mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 9mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 12mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 12mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 12mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 12mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 15mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 15mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 15mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 15mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 16mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 16mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 16mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 16mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 18mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 18mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 18mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 18mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 25mm 4x8 ft",
+    "ur": "ایچ ڈی ایف بورڈ 25mm 4x8 ft",
+    "aliases": [
+      "hdf",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "HDF Board 25mm 4x6 ft",
+    "ur": "ایچ ڈی ایف بورڈ 25mm 4x6 ft",
+    "aliases": [
+      "hdf",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "HDF Board",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 3mm 4x8 ft",
+    "ur": "چپ بورڈ 3mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 3mm 4x6 ft",
+    "ur": "چپ بورڈ 3mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 4mm 4x8 ft",
+    "ur": "چپ بورڈ 4mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 4mm 4x6 ft",
+    "ur": "چپ بورڈ 4mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 6mm 4x8 ft",
+    "ur": "چپ بورڈ 6mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 6mm 4x6 ft",
+    "ur": "چپ بورڈ 6mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 9mm 4x8 ft",
+    "ur": "چپ بورڈ 9mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 9mm 4x6 ft",
+    "ur": "چپ بورڈ 9mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 12mm 4x8 ft",
+    "ur": "چپ بورڈ 12mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 12mm 4x6 ft",
+    "ur": "چپ بورڈ 12mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 15mm 4x8 ft",
+    "ur": "چپ بورڈ 15mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 15mm 4x6 ft",
+    "ur": "چپ بورڈ 15mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 16mm 4x8 ft",
+    "ur": "چپ بورڈ 16mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 16mm 4x6 ft",
+    "ur": "چپ بورڈ 16mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 18mm 4x8 ft",
+    "ur": "چپ بورڈ 18mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 18mm 4x6 ft",
+    "ur": "چپ بورڈ 18mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 25mm 4x8 ft",
+    "ur": "چپ بورڈ 25mm 4x8 ft",
+    "aliases": [
+      "chip board",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Chipboard 25mm 4x6 ft",
+    "ur": "چپ بورڈ 25mm 4x6 ft",
+    "aliases": [
+      "chip board",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "Chipboard",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 3mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 3mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 3mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 3mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 4mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 4mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 4mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 4mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 6mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 6mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 6mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 6mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 9mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 9mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 9mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 9mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 12mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 12mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 12mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 12mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 15mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 15mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 15mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 15mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 16mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 16mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 16mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 16mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 18mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 18mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 18mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 18mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 25mm 4x8 ft",
+    "ur": "لیمینیٹڈ بورڈ 25mm 4x8 ft",
+    "aliases": [
+      "laminated board",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Laminated Board 25mm 4x6 ft",
+    "ur": "لیمینیٹڈ بورڈ 25mm 4x6 ft",
+    "aliases": [
+      "laminated board",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "Laminated Board",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 3mm 4x8 ft",
+    "ur": "میلامائن بورڈ 3mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 3mm 4x6 ft",
+    "ur": "میلامائن بورڈ 3mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 4mm 4x8 ft",
+    "ur": "میلامائن بورڈ 4mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 4mm 4x6 ft",
+    "ur": "میلامائن بورڈ 4mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 6mm 4x8 ft",
+    "ur": "میلامائن بورڈ 6mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 6mm 4x6 ft",
+    "ur": "میلامائن بورڈ 6mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 9mm 4x8 ft",
+    "ur": "میلامائن بورڈ 9mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 9mm 4x6 ft",
+    "ur": "میلامائن بورڈ 9mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 12mm 4x8 ft",
+    "ur": "میلامائن بورڈ 12mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 12mm 4x6 ft",
+    "ur": "میلامائن بورڈ 12mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 15mm 4x8 ft",
+    "ur": "میلامائن بورڈ 15mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 15mm 4x6 ft",
+    "ur": "میلامائن بورڈ 15mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 16mm 4x8 ft",
+    "ur": "میلامائن بورڈ 16mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 16mm 4x6 ft",
+    "ur": "میلامائن بورڈ 16mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 18mm 4x8 ft",
+    "ur": "میلامائن بورڈ 18mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 18mm 4x6 ft",
+    "ur": "میلامائن بورڈ 18mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 25mm 4x8 ft",
+    "ur": "میلامائن بورڈ 25mm 4x8 ft",
+    "aliases": [
+      "melamine board",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "Melamine Board 25mm 4x6 ft",
+    "ur": "میلامائن بورڈ 25mm 4x6 ft",
+    "aliases": [
+      "melamine board",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "Melamine Board",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 3mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 3mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "3mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "3mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 3mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 3mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "3mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "3mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 4mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 4mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "4mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "4mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 4mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 4mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "4mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "4mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 6mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 6mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "6mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "6mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 6mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 6mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "6mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "6mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 9mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 9mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "9mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "9mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 9mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 9mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "9mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "9mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 12mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 12mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "12mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "12mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 12mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 12mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "12mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "12mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 15mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 15mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "15mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "15mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 15mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 15mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "15mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "15mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 16mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 16mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "16mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "16mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 16mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 16mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "16mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "16mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 18mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 18mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "18mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "18mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 18mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 18mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "18mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "18mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 25mm 4x8 ft",
+    "ur": "او ایس بی بورڈ 25mm 4x8 ft",
+    "aliases": [
+      "osb",
+      "25mm",
+      "4x8 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "25mm 4x8 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Boards",
+    "subcategory": "Sheet Boards",
+    "en": "OSB Board 25mm 4x6 ft",
+    "ur": "او ایس بی بورڈ 25mm 4x6 ft",
+    "aliases": [
+      "osb",
+      "25mm",
+      "4x6 ft"
+    ],
+    "brand": "OSB Board",
+    "variant": "25mm 4x6 ft",
+    "unit": "sheet"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Wood Beading",
+    "ur": "لکڑی بیڈنگ",
+    "aliases": [
+      "lakri beading"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Wood Batten",
+    "ur": "لکڑی پٹی",
+    "aliases": [
+      "lakri patti"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Door Frame Wood",
+    "ur": "دروازہ چوکھٹ لکڑی",
+    "aliases": [
+      "chokhat lakri"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Wooden Moulding",
+    "ur": "لکڑی مولڈنگ",
+    "aliases": [
+      "moulding"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Veneer Sheet",
+    "ur": "وینیر شیٹ",
+    "aliases": [
+      "veneer"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Laminate Sheet",
+    "ur": "لیمینیٹ شیٹ",
+    "aliases": [
+      "sunmica",
+      "laminate"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Edge Band",
+    "ur": "ایج بینڈ",
+    "aliases": [
+      "edge tape"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Wood Glue",
+    "ur": "لکڑی گلو",
+    "aliases": [
+      "wood glue"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Wood Accessories",
+    "subcategory": "Furniture Material",
+    "en": "Wood Filler",
+    "ur": "لکڑی فلر",
+    "aliases": [
+      "wood filler"
+    ],
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]
