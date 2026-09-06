@@ -1,0 +1,202 @@
+[
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "One Piece Toilet",
+    "ur": "ون پیس کموڈ",
+    "aliases": "commode",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Two Piece Toilet",
+    "ur": "ٹو پیس کموڈ",
+    "aliases": "commode",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Squat Pan",
+    "ur": "انڈین سیٹ",
+    "aliases": "indian seat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Wash Basin",
+    "ur": "واش بیسن",
+    "aliases": "basin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Pedestal Basin",
+    "ur": "پیڈسٹل بیسن",
+    "aliases": "basin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Counter Basin",
+    "ur": "کاؤنٹر بیسن",
+    "aliases": "basin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Kitchen Sink Single Bowl",
+    "ur": "سنگل باؤل سنک",
+    "aliases": "sink",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Kitchen Sink Double Bowl",
+    "ur": "ڈبل باؤل سنک",
+    "aliases": "sink",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Basin Mixer",
+    "ur": "بیسن مکسر",
+    "aliases": "mixer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Sink Mixer",
+    "ur": "سنک مکسر",
+    "aliases": "mixer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Shower Mixer",
+    "ur": "شاور مکسر",
+    "aliases": "mixer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Hand Shower",
+    "ur": "ہینڈ شاور",
+    "aliases": "muslim shower",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Rain Shower",
+    "ur": "رین شاور",
+    "aliases": "shower",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Angle Valve",
+    "ur": "اینگل والو",
+    "aliases": "angle valve",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Bottle Trap",
+    "ur": "بوٹل ٹریپ",
+    "aliases": "trap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Floor Drain",
+    "ur": "فلور ڈرین",
+    "aliases": "jali",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Flush Tank",
+    "ur": "فلش ٹینک",
+    "aliases": "cistern",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Toilet Seat Cover",
+    "ur": "کموڈ سیٹ کور",
+    "aliases": "seat cover",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Soap Dish",
+    "ur": "صابن دانی",
+    "aliases": "soap dish",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Plumbing",
+    "subcategory": "Bathroom Fixtures",
+    "en": "Towel Rod",
+    "ur": "تولیہ راڈ",
+    "aliases": "towel rod",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

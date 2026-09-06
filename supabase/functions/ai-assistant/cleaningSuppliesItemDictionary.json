@@ -1,0 +1,192 @@
+[
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Floor Cleaner",
+    "ur": "فرش کلینر",
+    "aliases": "floor cleaner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Toilet Cleaner",
+    "ur": "ٹوائلٹ کلینر",
+    "aliases": "toilet cleaner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Glass Cleaner",
+    "ur": "شیشہ کلینر",
+    "aliases": "glass cleaner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Dishwash Liquid",
+    "ur": "برتن دھونے کا لیکوڈ",
+    "aliases": "dish liquid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Detergent Powder",
+    "ur": "ڈیٹرجنٹ پاؤڈر",
+    "aliases": "washing powder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Laundry Liquid",
+    "ur": "لانڈری لیکوڈ",
+    "aliases": "washing liquid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Bleach",
+    "ur": "بلیچ",
+    "aliases": "bleach",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Disinfectant",
+    "ur": "جراثیم کش",
+    "aliases": "disinfectant",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Phenyl",
+    "ur": "فینائل",
+    "aliases": "phenyl",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Hand Wash",
+    "ur": "ہینڈ واش",
+    "aliases": "hand wash",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Sanitizer",
+    "ur": "سینیٹائزر",
+    "aliases": "sanitizer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Degreaser",
+    "ur": "ڈی گریزر",
+    "aliases": "degreaser",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Drain Cleaner",
+    "ur": "ڈرین کلینر",
+    "aliases": "drain cleaner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Mop",
+    "ur": "پوچا",
+    "aliases": "pocha",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Broom",
+    "ur": "جھاڑو",
+    "aliases": "jharoo",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Wiper",
+    "ur": "وائپر",
+    "aliases": "floor wiper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Cleaning Brush",
+    "ur": "صفائی برش",
+    "aliases": "brush",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Garbage Bag",
+    "ur": "کچرا بیگ",
+    "aliases": "garbage bag",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Cleaning",
+    "subcategory": "Janitorial",
+    "en": "Microfiber Cloth",
+    "ur": "مائیکرو فائبر کپڑا",
+    "aliases": "cleaning cloth",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

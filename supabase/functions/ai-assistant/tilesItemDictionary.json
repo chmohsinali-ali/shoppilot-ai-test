@@ -1,0 +1,232 @@
+[
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Ceramic Floor Tile",
+    "ur": "سیرامک فلور ٹائل",
+    "aliases": "floor tile",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Ceramic Wall Tile",
+    "ur": "سیرامک وال ٹائل",
+    "aliases": "wall tile",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Porcelain Tile",
+    "ur": "پورسلین ٹائل",
+    "aliases": "porcelain",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Granite Tile",
+    "ur": "گرینائٹ ٹائل",
+    "aliases": "granite tile",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Marble Tile",
+    "ur": "ماربل ٹائل",
+    "aliases": "marble tile",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Marble Slab",
+    "ur": "ماربل سلیب",
+    "aliases": "marble slab",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Granite Slab",
+    "ur": "گرینائٹ سلیب",
+    "aliases": "granite slab",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Tile Spacer",
+    "ur": "ٹائل اسپیسر",
+    "aliases": "spacer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Tile Leveling Clip",
+    "ur": "ٹائل لیولنگ کلپ",
+    "aliases": "level clip",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Tile Wedge",
+    "ur": "ٹائل ویج",
+    "aliases": "wedge",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Tile Grout",
+    "ur": "ٹائل گراؤٹ",
+    "aliases": "grout",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Tile Adhesive",
+    "ur": "ٹائل گلو",
+    "aliases": "tile bond",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Marble Polish",
+    "ur": "ماربل پالش",
+    "aliases": "polish",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Stone & Tile",
+    "en": "Cutting Blade for Tile",
+    "ur": "ٹائل کٹنگ بلیڈ",
+    "aliases": "tile blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 8x12 inch",
+    "ur": "فلور ٹائل 8x12 inch",
+    "aliases": "tile 8x12 inch",
+    "brand": "Generic",
+    "variant": "8x12 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 12x12 inch",
+    "ur": "فلور ٹائل 12x12 inch",
+    "aliases": "tile 12x12 inch",
+    "brand": "Generic",
+    "variant": "12x12 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 12x18 inch",
+    "ur": "فلور ٹائل 12x18 inch",
+    "aliases": "tile 12x18 inch",
+    "brand": "Generic",
+    "variant": "12x18 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 12x24 inch",
+    "ur": "فلور ٹائل 12x24 inch",
+    "aliases": "tile 12x24 inch",
+    "brand": "Generic",
+    "variant": "12x24 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 16x16 inch",
+    "ur": "فلور ٹائل 16x16 inch",
+    "aliases": "tile 16x16 inch",
+    "brand": "Generic",
+    "variant": "16x16 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 24x24 inch",
+    "ur": "فلور ٹائل 24x24 inch",
+    "aliases": "tile 24x24 inch",
+    "brand": "Generic",
+    "variant": "24x24 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 24x48 inch",
+    "ur": "فلور ٹائل 24x48 inch",
+    "aliases": "tile 24x48 inch",
+    "brand": "Generic",
+    "variant": "24x48 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 32x32 inch",
+    "ur": "فلور ٹائل 32x32 inch",
+    "aliases": "tile 32x32 inch",
+    "brand": "Generic",
+    "variant": "32x32 inch",
+    "unit": "sq ft"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Tile Sizes",
+    "en": "Floor Tile 48x48 inch",
+    "ur": "فلور ٹائل 48x48 inch",
+    "aliases": "tile 48x48 inch",
+    "brand": "Generic",
+    "variant": "48x48 inch",
+    "unit": "sq ft"
+  }
+]
