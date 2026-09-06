@@ -1,0 +1,162 @@
+[
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Ring",
+    "ur": "انگوٹھی",
+    "aliases": "angoothi, ring",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Bangle",
+    "ur": "چوڑی",
+    "aliases": "choori, bangle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Bracelet",
+    "ur": "بریسلٹ",
+    "aliases": "bracelet",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Earrings",
+    "ur": "بالیاں",
+    "aliases": "baliyan, earrings",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Stud Earrings",
+    "ur": "ٹاپس",
+    "aliases": "tops",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Necklace",
+    "ur": "ہار",
+    "aliases": "haar, necklace",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Chain",
+    "ur": "چین",
+    "aliases": "chain",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Pendant",
+    "ur": "لاکٹ",
+    "aliases": "locket, pendant",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Anklet",
+    "ur": "پازیب",
+    "aliases": "payal, pazeb",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Nose Ring",
+    "ur": "نتھ",
+    "aliases": "nath",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Nose Pin",
+    "ur": "نوز پن",
+    "aliases": "nose pin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Hair Pin",
+    "ur": "ہیئر پن",
+    "aliases": "hair pin",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Hair Clip",
+    "ur": "ہیئر کلپ",
+    "aliases": "clip",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Hair Band",
+    "ur": "ہیئر بینڈ",
+    "aliases": "band",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Brooch",
+    "ur": "بروچ",
+    "aliases": "brooch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Jewellery",
+    "subcategory": "Artificial Jewellery",
+    "en": "Jewellery Box",
+    "ur": "جیولری باکس",
+    "aliases": "jewellery box",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

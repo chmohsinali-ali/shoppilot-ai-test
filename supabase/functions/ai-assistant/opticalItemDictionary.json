@@ -1,0 +1,392 @@
+[
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Optical Frame",
+    "ur": "عینک فریم",
+    "aliases": "ainak frame",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Reading Glasses",
+    "ur": "پڑھنے کی عینک",
+    "aliases": "reading glasses",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Sunglasses",
+    "ur": "دھوپ کی عینک",
+    "aliases": "sun glasses",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Contact Lens",
+    "ur": "کانٹیکٹ لینز",
+    "aliases": "lens",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Lens Solution",
+    "ur": "لینز سلوشن",
+    "aliases": "solution",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Lens Case",
+    "ur": "لینز کیس",
+    "aliases": "case",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Microfiber Cloth",
+    "ur": "عینک کپڑا",
+    "aliases": "glass cloth",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Spectacle Case",
+    "ur": "عینک کیس",
+    "aliases": "ainak case",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Nose Pad",
+    "ur": "نوز پیڈ",
+    "aliases": "nose pad",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Frame Screw",
+    "ur": "فریم پیچ",
+    "aliases": "ainak screw",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Blue Cut Lens",
+    "ur": "بلو کٹ لینز",
+    "aliases": "blue cut",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Photochromic Lens",
+    "ur": "فوٹوکرومک لینز",
+    "aliases": "photochromic",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Single Vision Lens",
+    "ur": "سنگل وژن لینز",
+    "aliases": "single vision",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Bifocal Lens",
+    "ur": "بائی فوکل لینز",
+    "aliases": "bifocal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Eyewear",
+    "en": "Progressive Lens",
+    "ur": "پروگریسو لینز",
+    "aliases": "progressive",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -6.0",
+    "ur": "عینک لینز -6.0",
+    "aliases": "lens number -6.0",
+    "brand": "Generic",
+    "variant": "-6.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -5.5",
+    "ur": "عینک لینز -5.5",
+    "aliases": "lens number -5.5",
+    "brand": "Generic",
+    "variant": "-5.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -5.0",
+    "ur": "عینک لینز -5.0",
+    "aliases": "lens number -5.0",
+    "brand": "Generic",
+    "variant": "-5.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -4.5",
+    "ur": "عینک لینز -4.5",
+    "aliases": "lens number -4.5",
+    "brand": "Generic",
+    "variant": "-4.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -4.0",
+    "ur": "عینک لینز -4.0",
+    "aliases": "lens number -4.0",
+    "brand": "Generic",
+    "variant": "-4.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -3.5",
+    "ur": "عینک لینز -3.5",
+    "aliases": "lens number -3.5",
+    "brand": "Generic",
+    "variant": "-3.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -3.0",
+    "ur": "عینک لینز -3.0",
+    "aliases": "lens number -3.0",
+    "brand": "Generic",
+    "variant": "-3.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -2.5",
+    "ur": "عینک لینز -2.5",
+    "aliases": "lens number -2.5",
+    "brand": "Generic",
+    "variant": "-2.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -2.0",
+    "ur": "عینک لینز -2.0",
+    "aliases": "lens number -2.0",
+    "brand": "Generic",
+    "variant": "-2.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -1.5",
+    "ur": "عینک لینز -1.5",
+    "aliases": "lens number -1.5",
+    "brand": "Generic",
+    "variant": "-1.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -1.0",
+    "ur": "عینک لینز -1.0",
+    "aliases": "lens number -1.0",
+    "brand": "Generic",
+    "variant": "-1.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens -0.5",
+    "ur": "عینک لینز -0.5",
+    "aliases": "lens number -0.5",
+    "brand": "Generic",
+    "variant": "-0.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +0.5",
+    "ur": "عینک لینز +0.5",
+    "aliases": "lens number +0.5",
+    "brand": "Generic",
+    "variant": "+0.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +1.0",
+    "ur": "عینک لینز +1.0",
+    "aliases": "lens number +1.0",
+    "brand": "Generic",
+    "variant": "+1.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +1.5",
+    "ur": "عینک لینز +1.5",
+    "aliases": "lens number +1.5",
+    "brand": "Generic",
+    "variant": "+1.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +2.0",
+    "ur": "عینک لینز +2.0",
+    "aliases": "lens number +2.0",
+    "brand": "Generic",
+    "variant": "+2.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +2.5",
+    "ur": "عینک لینز +2.5",
+    "aliases": "lens number +2.5",
+    "brand": "Generic",
+    "variant": "+2.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +3.0",
+    "ur": "عینک لینز +3.0",
+    "aliases": "lens number +3.0",
+    "brand": "Generic",
+    "variant": "+3.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +3.5",
+    "ur": "عینک لینز +3.5",
+    "aliases": "lens number +3.5",
+    "brand": "Generic",
+    "variant": "+3.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +4.0",
+    "ur": "عینک لینز +4.0",
+    "aliases": "lens number +4.0",
+    "brand": "Generic",
+    "variant": "+4.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +4.5",
+    "ur": "عینک لینز +4.5",
+    "aliases": "lens number +4.5",
+    "brand": "Generic",
+    "variant": "+4.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +5.0",
+    "ur": "عینک لینز +5.0",
+    "aliases": "lens number +5.0",
+    "brand": "Generic",
+    "variant": "+5.0",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +5.5",
+    "ur": "عینک لینز +5.5",
+    "aliases": "lens number +5.5",
+    "brand": "Generic",
+    "variant": "+5.5",
+    "unit": "pair"
+  },
+  {
+    "category": "Optical",
+    "subcategory": "Lens Power",
+    "en": "Spectacle Lens +6.0",
+    "ur": "عینک لینز +6.0",
+    "aliases": "lens number +6.0",
+    "brand": "Generic",
+    "variant": "+6.0",
+    "unit": "pair"
+  }
+]

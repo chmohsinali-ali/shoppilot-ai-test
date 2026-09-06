@@ -1,0 +1,212 @@
+[
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Diaper",
+    "ur": "ڈائپر",
+    "aliases": "diaper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Wipes",
+    "ur": "بیبی وائپس",
+    "aliases": "wipes",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Feeding Bottle",
+    "ur": "فیڈنگ بوتل",
+    "aliases": "bottle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Bottle Nipple",
+    "ur": "بوتل نپل",
+    "aliases": "nipple",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Pacifier",
+    "ur": "چوسنی",
+    "aliases": "chosni",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Bib",
+    "ur": "بیبی بب",
+    "aliases": "bib",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Walker",
+    "ur": "بیبی واکر",
+    "aliases": "walker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Stroller",
+    "ur": "بیبی اسٹرولر",
+    "aliases": "stroller",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Cot",
+    "ur": "بیبی کاٹ",
+    "aliases": "cot",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Blanket",
+    "ur": "بیبی کمبل",
+    "aliases": "blanket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Towel",
+    "ur": "بیبی تولیہ",
+    "aliases": "towel",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Romper",
+    "ur": "بیبی رومپر",
+    "aliases": "romper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Suit",
+    "ur": "بچوں کا سوٹ",
+    "aliases": "baby suit",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Socks",
+    "ur": "بیبی جرابیں",
+    "aliases": "socks",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Cap",
+    "ur": "بیبی ٹوپی",
+    "aliases": "cap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Powder",
+    "ur": "بیبی پاؤڈر",
+    "aliases": "powder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Shampoo",
+    "ur": "بیبی شیمپو",
+    "aliases": "shampoo",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Oil",
+    "ur": "بیبی آئل",
+    "aliases": "oil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Lotion",
+    "ur": "بیبی لوشن",
+    "aliases": "lotion",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Baby Soap",
+    "ur": "بیبی صابن",
+    "aliases": "soap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Baby",
+    "subcategory": "Baby Products",
+    "en": "Teether",
+    "ur": "ٹیتھر",
+    "aliases": "teether",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]
