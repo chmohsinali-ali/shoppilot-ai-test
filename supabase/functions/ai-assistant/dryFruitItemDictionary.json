@@ -1,0 +1,162 @@
+[
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Almonds",
+    "ur": "بادام",
+    "aliases": "badam",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Cashews",
+    "ur": "کاجو",
+    "aliases": "kaju",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Pistachios",
+    "ur": "پستہ",
+    "aliases": "pista",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Walnuts",
+    "ur": "اخروٹ",
+    "aliases": "akhrot",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Raisins",
+    "ur": "کشمش",
+    "aliases": "kishmish",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Dates",
+    "ur": "کھجور",
+    "aliases": "khajoor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Dried Figs",
+    "ur": "خشک انجیر",
+    "aliases": "anjeer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Dried Apricot",
+    "ur": "خشک خوبانی",
+    "aliases": "khubani",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Peanuts",
+    "ur": "مونگ پھلی",
+    "aliases": "moong phali",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Pine Nuts",
+    "ur": "چلغوزہ",
+    "aliases": "chilgoza",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Pumpkin Seeds",
+    "ur": "کدو کے بیج",
+    "aliases": "kaddu beej",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Sunflower Seeds",
+    "ur": "سورج مکھی بیج",
+    "aliases": "sunflower seed",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Flax Seeds",
+    "ur": "السی",
+    "aliases": "alsi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Chia Seeds",
+    "ur": "چیا سیڈ",
+    "aliases": "chia",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Sesame Seeds",
+    "ur": "تل",
+    "aliases": "til",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dry Fruits & Seeds",
+    "en": "Fox Nuts",
+    "ur": "مکھانہ",
+    "aliases": "makhana",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Fresh Milk",
+    "ur": "تازہ دودھ",
+    "aliases": "doodh",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Yogurt",
+    "ur": "دہی",
+    "aliases": "dahi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Lassi",
+    "ur": "لسی",
+    "aliases": "lassi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Butter",
+    "ur": "مکھن",
+    "aliases": "makhan",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Desi Ghee",
+    "ur": "دیسی گھی",
+    "aliases": "desi ghee",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Cream",
+    "ur": "کریم",
+    "aliases": "cream",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Paneer",
+    "ur": "پنیر",
+    "aliases": "paneer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Khoya",
+    "ur": "کھویا",
+    "aliases": "khoya",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Rabri",
+    "ur": "ربڑی",
+    "aliases": "rabri",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Dairy",
+    "en": "Flavored Milk",
+    "ur": "فلیور دودھ",
+    "aliases": "milk",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

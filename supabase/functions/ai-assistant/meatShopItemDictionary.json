@@ -1,0 +1,162 @@
+[
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Beef Boneless",
+    "ur": "بغیر ہڈی گائے کا گوشت",
+    "aliases": "beef boneless",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Beef With Bone",
+    "ur": "ہڈی والا گائے کا گوشت",
+    "aliases": "beef bone",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Beef Mince",
+    "ur": "گائے کا قیمہ",
+    "aliases": "beef qeema",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Beef Liver",
+    "ur": "گائے کی کلیجی",
+    "aliases": "kaleji",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Mutton Boneless",
+    "ur": "بغیر ہڈی بکرے کا گوشت",
+    "aliases": "mutton boneless",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Mutton With Bone",
+    "ur": "ہڈی والا بکرے کا گوشت",
+    "aliases": "mutton",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Mutton Mince",
+    "ur": "بکرے کا قیمہ",
+    "aliases": "mutton qeema",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Mutton Liver",
+    "ur": "بکرے کی کلیجی",
+    "aliases": "kaleji",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Whole Chicken",
+    "ur": "پوری مرغی",
+    "aliases": "murghi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Chicken Breast",
+    "ur": "چکن بریسٹ",
+    "aliases": "breast",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Chicken Leg",
+    "ur": "چکن لیگ",
+    "aliases": "leg",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Chicken Wings",
+    "ur": "چکن ونگز",
+    "aliases": "wings",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Chicken Drumstick",
+    "ur": "چکن ڈرم اسٹک",
+    "aliases": "drumstick",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Chicken Mince",
+    "ur": "چکن قیمہ",
+    "aliases": "chicken qeema",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Chicken Liver",
+    "ur": "چکن کلیجی",
+    "aliases": "chicken kaleji",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Meat Cuts",
+    "en": "Chicken Gizzard",
+    "ur": "چکن پوٹا",
+    "aliases": "pota",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

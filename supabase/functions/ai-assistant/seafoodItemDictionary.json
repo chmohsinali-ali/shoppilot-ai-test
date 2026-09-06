@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Rohu Fish",
+    "ur": "روہو مچھلی",
+    "aliases": "rohu machli",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Thaila Fish",
+    "ur": "تھیلا مچھلی",
+    "aliases": "thaila fish",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Mori Fish",
+    "ur": "موری مچھلی",
+    "aliases": "mori",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Singhara Fish",
+    "ur": "سنگھاڑا مچھلی",
+    "aliases": "singhara",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Pomfret",
+    "ur": "پاپلیٹ",
+    "aliases": "paplet, pomfret",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Surmai",
+    "ur": "سرمئی مچھلی",
+    "aliases": "surmai",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Tuna",
+    "ur": "ٹونا مچھلی",
+    "aliases": "tuna",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Sardine",
+    "ur": "سارڈین",
+    "aliases": "sardine",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Prawns Small",
+    "ur": "چھوٹے جھینگے",
+    "aliases": "jheenga",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Prawns Large",
+    "ur": "بڑے جھینگے",
+    "aliases": "large prawns",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Fish Fillet",
+    "ur": "مچھلی فلے",
+    "aliases": "fillet",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Seafood",
+    "en": "Fish Steak",
+    "ur": "مچھلی اسٹیک",
+    "aliases": "fish steak",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

@@ -57,6 +57,11 @@ import rickshawRows from "./rickshawItemDictionary.json" with { type: "json" };
 import jewelleryRows from "./jewelleryItemDictionary.json" with { type: "json" };
 import opticalRows from "./opticalItemDictionary.json" with { type: "json" };
 import babyShopRows from "./babyShopItemDictionary.json" with { type: "json" };
+import bakeryRows from "./bakeryItemDictionary.json" with { type: "json" };
+import dairyShopRows from "./dairyShopItemDictionary.json" with { type: "json" };
+import meatShopRows from "./meatShopItemDictionary.json" with { type: "json" };
+import seafoodRows from "./seafoodItemDictionary.json" with { type: "json" };
+import dryFruitRows from "./dryFruitItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -109,6 +114,11 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "jewellery", rows: jewelleryRows as ItemRow[] },
   { source: "optical", rows: opticalRows as ItemRow[] },
   { source: "baby-shop", rows: babyShopRows as ItemRow[] },
+  { source: "bakery", rows: bakeryRows as ItemRow[] },
+  { source: "dairy-shop", rows: dairyShopRows as ItemRow[] },
+  { source: "meat-shop", rows: meatShopRows as ItemRow[] },
+  { source: "seafood", rows: seafoodRows as ItemRow[] },
+  { source: "dry-fruit", rows: dryFruitRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES

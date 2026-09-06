@@ -1,0 +1,202 @@
+[
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "White Bread",
+    "ur": "سفید ڈبل روٹی",
+    "aliases": "double roti",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Brown Bread",
+    "ur": "براؤن بریڈ",
+    "aliases": "brown bread",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Milk Bread",
+    "ur": "ملک بریڈ",
+    "aliases": "milk bread",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Rusk",
+    "ur": "رسک",
+    "aliases": "rusk",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Cake Rusk",
+    "ur": "کیک رسک",
+    "aliases": "cake rusk",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Plain Cake",
+    "ur": "سادہ کیک",
+    "aliases": "cake",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Chocolate Cake",
+    "ur": "چاکلیٹ کیک",
+    "aliases": "chocolate cake",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Cupcake",
+    "ur": "کپ کیک",
+    "aliases": "cup cake",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Pastry",
+    "ur": "پیسٹری",
+    "aliases": "pastry",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Cream Roll",
+    "ur": "کریم رول",
+    "aliases": "cream roll",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Nankhatai",
+    "ur": "نان خطائی",
+    "aliases": "nankhatai",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Gulab Jamun",
+    "ur": "گلاب جامن",
+    "aliases": "gulab jamun",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Barfi",
+    "ur": "برفی",
+    "aliases": "barfi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Rasgulla",
+    "ur": "رس گلہ",
+    "aliases": "rasgulla",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Jalebi",
+    "ur": "جلیبی",
+    "aliases": "jalebi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Laddu",
+    "ur": "لڈو",
+    "aliases": "laddu",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Peda",
+    "ur": "پیڑا",
+    "aliases": "pera",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Patisa",
+    "ur": "پتیسا",
+    "aliases": "patisa",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Soan Papdi",
+    "ur": "سون پاپڑی",
+    "aliases": "soan papdi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Bakery & Sweets",
+    "en": "Cham Cham",
+    "ur": "چم چم",
+    "aliases": "cham cham",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]
