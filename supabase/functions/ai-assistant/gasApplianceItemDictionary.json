@@ -1,0 +1,82 @@
+[
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Gas Stove",
+    "ur": "گیس چولہا",
+    "aliases": "chulha",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Gas Burner",
+    "ur": "گیس برنر",
+    "aliases": "burner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Gas Regulator",
+    "ur": "گیس ریگولیٹر",
+    "aliases": "regulator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Gas Pipe",
+    "ur": "گیس پائپ",
+    "aliases": "gas pipe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Gas Valve",
+    "ur": "گیس والو",
+    "aliases": "valve",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Gas Lighter",
+    "ur": "گیس لائٹر",
+    "aliases": "lighter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Stove Knob",
+    "ur": "چولہا نوب",
+    "aliases": "knob",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Gas Appliances",
+    "subcategory": "Gas Parts",
+    "en": "Burner Cap",
+    "ur": "برنر کیپ",
+    "aliases": "burner cap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

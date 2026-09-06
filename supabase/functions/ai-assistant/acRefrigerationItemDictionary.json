@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "AC Compressor",
+    "ur": "اے سی کمپریسر",
+    "aliases": "compressor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "AC Capacitor",
+    "ur": "اے سی کیپیسٹر",
+    "aliases": "capacitor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "Copper Pipe",
+    "ur": "کاپر پائپ",
+    "aliases": "copper pipe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "AC Drain Pipe",
+    "ur": "اے سی ڈرین پائپ",
+    "aliases": "drain pipe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "AC Fan Motor",
+    "ur": "اے سی فین موٹر",
+    "aliases": "fan motor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "AC PCB Board",
+    "ur": "اے سی پی سی بی",
+    "aliases": "board",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "Refrigerator Compressor",
+    "ur": "فریج کمپریسر",
+    "aliases": "fridge compressor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "Fridge Thermostat",
+    "ur": "فریج تھرموسٹیٹ",
+    "aliases": "thermostat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "Fridge Door Rubber",
+    "ur": "فریج ربڑ",
+    "aliases": "gasket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "Condenser Coil",
+    "ur": "کنڈینسر کوائل",
+    "aliases": "coil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Refrigeration",
+    "subcategory": "Parts & Service Supplies",
+    "en": "Evaporator Coil",
+    "ur": "ایواپوریٹر کوائل",
+    "aliases": "coil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

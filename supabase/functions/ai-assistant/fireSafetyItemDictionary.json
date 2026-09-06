@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Fire Extinguisher",
+    "ur": "فائر ایکسٹنگوشر",
+    "aliases": "extinguisher",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Fire Hose",
+    "ur": "فائر ہوز",
+    "aliases": "hose",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Smoke Detector",
+    "ur": "اسموک ڈیٹیکٹر",
+    "aliases": "smoke alarm",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Safety Helmet",
+    "ur": "سیفٹی ہیلمٹ",
+    "aliases": "helmet",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Safety Gloves",
+    "ur": "سیفٹی دستانے",
+    "aliases": "gloves",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Safety Shoes",
+    "ur": "سیفٹی جوتے",
+    "aliases": "safety shoes",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Safety Goggles",
+    "ur": "سیفٹی چشمہ",
+    "aliases": "goggles",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Reflective Vest",
+    "ur": "ریفلیکٹو جیکٹ",
+    "aliases": "safety jacket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Dust Mask",
+    "ur": "ڈسٹ ماسک",
+    "aliases": "mask",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "Ear Protection",
+    "ur": "کان حفاظتی پلگ",
+    "aliases": "ear plug",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Safety",
+    "subcategory": "Safety Equipment",
+    "en": "First Aid Kit",
+    "ur": "فرسٹ ایڈ کٹ",
+    "aliases": "first aid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "RO Membrane",
+    "ur": "آر او ممبرین",
+    "aliases": "membrane",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "Sediment Filter",
+    "ur": "سیڈیمنٹ فلٹر",
+    "aliases": "pp filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "Carbon Filter",
+    "ur": "کاربن فلٹر",
+    "aliases": "carbon",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "Post Carbon Filter",
+    "ur": "پوسٹ کاربن فلٹر",
+    "aliases": "post carbon",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "RO Housing",
+    "ur": "آر او ہاؤسنگ",
+    "aliases": "housing",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "RO Pump",
+    "ur": "آر او پمپ",
+    "aliases": "pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "RO Faucet",
+    "ur": "آر او نل",
+    "aliases": "tap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "RO Tank",
+    "ur": "آر او ٹینک",
+    "aliases": "tank",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "RO Pipe",
+    "ur": "آر او پائپ",
+    "aliases": "pipe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Water Treatment",
+    "subcategory": "RO Parts",
+    "en": "TDS Meter",
+    "ur": "ٹی ڈی ایس میٹر",
+    "aliases": "tds",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

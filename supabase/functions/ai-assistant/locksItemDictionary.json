@@ -1,0 +1,102 @@
+[
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Padlock",
+    "ur": "تالا",
+    "aliases": "tala",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Door Lock",
+    "ur": "دروازہ لاک",
+    "aliases": "lock",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Mortise Lock",
+    "ur": "مورٹائز لاک",
+    "aliases": "mortise",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Lock Cylinder",
+    "ur": "لاک سلنڈر",
+    "aliases": "cylinder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Door Handle",
+    "ur": "دروازہ ہینڈل",
+    "aliases": "handle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Door Hinge",
+    "ur": "دروازہ قبضہ",
+    "aliases": "qabza",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Tower Bolt",
+    "ur": "ٹاور بولٹ",
+    "aliases": "tower bolt",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Key Blank",
+    "ur": "خالی چابی",
+    "aliases": "key blank",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Door Closer",
+    "ur": "ڈور کلوزر",
+    "aliases": "closer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Architectural Hardware",
+    "subcategory": "Locks & Fittings",
+    "en": "Drawer Lock",
+    "ur": "دراز لاک",
+    "aliases": "drawer lock",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

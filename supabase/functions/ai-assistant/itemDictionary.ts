@@ -45,6 +45,12 @@ import medicalRows from "./medicalItemDictionary.json" with { type: "json" };
 import sportsToysRows from "./sportsToysItemDictionary.json" with { type: "json" };
 import petShopRows from "./petShopItemDictionary.json" with { type: "json" };
 import packagingRows from "./packagingItemDictionary.json" with { type: "json" };
+import gasApplianceRows from "./gasApplianceItemDictionary.json" with { type: "json" };
+import acRefrigerationRows from "./acRefrigerationItemDictionary.json" with { type: "json" };
+import waterFilterRows from "./waterFilterItemDictionary.json" with { type: "json" };
+import fireSafetyRows from "./fireSafetyItemDictionary.json" with { type: "json" };
+import locksRows from "./locksItemDictionary.json" with { type: "json" };
+import furnitureRows from "./furnitureItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -85,6 +91,12 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "sports-toys", rows: sportsToysRows as ItemRow[] },
   { source: "pet-shop", rows: petShopRows as ItemRow[] },
   { source: "packaging", rows: packagingRows as ItemRow[] },
+  { source: "gas-appliance", rows: gasApplianceRows as ItemRow[] },
+  { source: "ac-refrigeration", rows: acRefrigerationRows as ItemRow[] },
+  { source: "water-filter", rows: waterFilterRows as ItemRow[] },
+  { source: "fire-safety", rows: fireSafetyRows as ItemRow[] },
+  { source: "locks", rows: locksRows as ItemRow[] },
+  { source: "furniture", rows: furnitureRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES
@@ -180,7 +192,26 @@ function isNearMatch(a: string, b: string): boolean {
   const distance = levenshteinDistance(s, t);
   if (distance === 0 || distance > 2) return false;
   const maxLen = Math.max(s.length, t.length);
-  return distance / maxLen <= 0.2;
+  if (distance / maxLen > 0.2) return false;
+
+  // Same failure mode as bread/thread, but across a shared multi-word
+  // suffix instead of the whole string: "gas regulator" vs "Fan Regulator"
+  // (found live testing) is only 2 edits apart overall — well inside the
+  // ratio above — yet is a completely different product (gas-stove part
+  // vs ceiling-fan part) whose FIRST word was substituted wholesale, not
+  // typo'd. A shared trailing noun ("regulator", "filter", "pump", ...)
+  // with an entirely different leading modifier word is a different item,
+  // not a spelling variant, so when both sides are multi-word, the
+  // leading words must themselves be a close variant of each other (not
+  // just the phrase as a whole).
+  const sWords = s.split(/\s+/);
+  const tWords = t.split(/\s+/);
+  if (sWords.length > 1 && tWords.length > 1 && sWords[0] !== tWords[0]) {
+    const firstWordMaxLen = Math.max(sWords[0].length, tWords[0].length);
+    const firstWordDist = levenshteinDistance(sWords[0], tWords[0]);
+    if (firstWordMaxLen === 0 || firstWordDist / firstWordMaxLen > 0.34) return false;
+  }
+  return true;
 }
 
 /**

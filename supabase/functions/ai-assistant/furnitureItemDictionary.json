@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Drawer Channel",
+    "ur": "دراز چینل",
+    "aliases": "drawer slide",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Cabinet Hinge",
+    "ur": "کابینہ قبضہ",
+    "aliases": "hinge",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Cabinet Handle",
+    "ur": "کابینہ ہینڈل",
+    "aliases": "handle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Furniture Leg",
+    "ur": "فرنیچر ٹانگ",
+    "aliases": "leg",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Furniture Wheel",
+    "ur": "فرنیچر پہیہ",
+    "aliases": "caster",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Plywood Sheet",
+    "ur": "پلائی ووڈ شیٹ",
+    "aliases": "ply",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "MDF Sheet",
+    "ur": "ایم ڈی ایف شیٹ",
+    "aliases": "mdf",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Laminate Sheet",
+    "ur": "لیمینیٹ شیٹ",
+    "aliases": "sunmica",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Edge Band",
+    "ur": "ایج بینڈ",
+    "aliases": "edge tape",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Wood Screw",
+    "ur": "لکڑی پیچ",
+    "aliases": "lakri screw",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Furniture",
+    "subcategory": "Furniture Fittings",
+    "en": "Wood Glue",
+    "ur": "لکڑی گلو",
+    "aliases": "wood glue",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]
