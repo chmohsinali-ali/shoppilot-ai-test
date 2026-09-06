@@ -1,0 +1,132 @@
+[
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Wheat Seed",
+    "ur": "گندم بیج",
+    "aliases": "gandum beej",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Rice Seed",
+    "ur": "چاول بیج",
+    "aliases": "chawal beej",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Maize Seed",
+    "ur": "مکئی بیج",
+    "aliases": "makai beej",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Cotton Seed",
+    "ur": "کپاس بیج",
+    "aliases": "kapas beej",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Vegetable Seed",
+    "ur": "سبزی بیج",
+    "aliases": "sabzi beej",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "packet"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Urea Fertilizer",
+    "ur": "یوریا کھاد",
+    "aliases": "urea khaad",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "bag"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "DAP Fertilizer",
+    "ur": "ڈی اے پی کھاد",
+    "aliases": "dap",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "bag"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Potash Fertilizer",
+    "ur": "پوٹاش کھاد",
+    "aliases": "potash",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "bag"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Spray Pump",
+    "ur": "اسپرے پمپ",
+    "aliases": "spray machine",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Tractor Oil Filter",
+    "ur": "ٹریکٹر آئل فلٹر",
+    "aliases": "tractor filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Tractor Air Filter",
+    "ur": "ٹریکٹر ایئر فلٹر",
+    "aliases": "tractor air filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Tractor Clutch Plate",
+    "ur": "ٹریکٹر کلچ پلیٹ",
+    "aliases": "tractor clutch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Farm Supplies",
+    "en": "Cultivator Blade",
+    "ur": "کلٹیویٹر بلیڈ",
+    "aliases": "blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

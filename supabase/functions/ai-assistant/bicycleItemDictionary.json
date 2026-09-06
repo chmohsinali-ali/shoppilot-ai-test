@@ -1,0 +1,302 @@
+[
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Bicycle Tyre",
+    "ur": "سائیکل ٹائر",
+    "aliases": "cycle tyre",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Bicycle Tube",
+    "ur": "سائیکل ٹیوب",
+    "aliases": "cycle tube",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Rim",
+    "ur": "رم",
+    "aliases": "rim",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Spoke",
+    "ur": "اسپوک",
+    "aliases": "spoke",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Chain",
+    "ur": "چین",
+    "aliases": "chain",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Freewheel",
+    "ur": "فری وہیل",
+    "aliases": "freewheel",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Pedal",
+    "ur": "پیڈل",
+    "aliases": "pedal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Brake Cable",
+    "ur": "بریک تار",
+    "aliases": "brake wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Brake Shoe",
+    "ur": "بریک ربڑ",
+    "aliases": "brake shoe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Saddle",
+    "ur": "سیٹ",
+    "aliases": "seat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Handlebar",
+    "ur": "ہینڈل",
+    "aliases": "handle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Spare Parts",
+    "en": "Air Pump",
+    "ur": "ہوا پمپ",
+    "aliases": "pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 12 inch",
+    "ur": "سائیکل ٹائر 12 inch",
+    "aliases": "cycle tyre, bicycle tyre 12 inch",
+    "brand": "Generic",
+    "variant": "12 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 12 inch",
+    "ur": "سائیکل ٹیوب 12 inch",
+    "aliases": "cycle tube, bicycle tube 12 inch",
+    "brand": "Generic",
+    "variant": "12 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 14 inch",
+    "ur": "سائیکل ٹائر 14 inch",
+    "aliases": "cycle tyre, bicycle tyre 14 inch",
+    "brand": "Generic",
+    "variant": "14 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 14 inch",
+    "ur": "سائیکل ٹیوب 14 inch",
+    "aliases": "cycle tube, bicycle tube 14 inch",
+    "brand": "Generic",
+    "variant": "14 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 16 inch",
+    "ur": "سائیکل ٹائر 16 inch",
+    "aliases": "cycle tyre, bicycle tyre 16 inch",
+    "brand": "Generic",
+    "variant": "16 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 16 inch",
+    "ur": "سائیکل ٹیوب 16 inch",
+    "aliases": "cycle tube, bicycle tube 16 inch",
+    "brand": "Generic",
+    "variant": "16 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 18 inch",
+    "ur": "سائیکل ٹائر 18 inch",
+    "aliases": "cycle tyre, bicycle tyre 18 inch",
+    "brand": "Generic",
+    "variant": "18 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 18 inch",
+    "ur": "سائیکل ٹیوب 18 inch",
+    "aliases": "cycle tube, bicycle tube 18 inch",
+    "brand": "Generic",
+    "variant": "18 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 20 inch",
+    "ur": "سائیکل ٹائر 20 inch",
+    "aliases": "cycle tyre, bicycle tyre 20 inch",
+    "brand": "Generic",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 20 inch",
+    "ur": "سائیکل ٹیوب 20 inch",
+    "aliases": "cycle tube, bicycle tube 20 inch",
+    "brand": "Generic",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 24 inch",
+    "ur": "سائیکل ٹائر 24 inch",
+    "aliases": "cycle tyre, bicycle tyre 24 inch",
+    "brand": "Generic",
+    "variant": "24 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 24 inch",
+    "ur": "سائیکل ٹیوب 24 inch",
+    "aliases": "cycle tube, bicycle tube 24 inch",
+    "brand": "Generic",
+    "variant": "24 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 26 inch",
+    "ur": "سائیکل ٹائر 26 inch",
+    "aliases": "cycle tyre, bicycle tyre 26 inch",
+    "brand": "Generic",
+    "variant": "26 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 26 inch",
+    "ur": "سائیکل ٹیوب 26 inch",
+    "aliases": "cycle tube, bicycle tube 26 inch",
+    "brand": "Generic",
+    "variant": "26 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 27.5 inch",
+    "ur": "سائیکل ٹائر 27.5 inch",
+    "aliases": "cycle tyre, bicycle tyre 27.5 inch",
+    "brand": "Generic",
+    "variant": "27.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 27.5 inch",
+    "ur": "سائیکل ٹیوب 27.5 inch",
+    "aliases": "cycle tube, bicycle tube 27.5 inch",
+    "brand": "Generic",
+    "variant": "27.5 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tyres",
+    "en": "Bicycle Tyre 29 inch",
+    "ur": "سائیکل ٹائر 29 inch",
+    "aliases": "cycle tyre, bicycle tyre 29 inch",
+    "brand": "Generic",
+    "variant": "29 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Bicycle",
+    "subcategory": "Tubes",
+    "en": "Bicycle Tube 29 inch",
+    "ur": "سائیکل ٹیوب 29 inch",
+    "aliases": "cycle tube, bicycle tube 29 inch",
+    "brand": "Generic",
+    "variant": "29 inch",
+    "unit": "piece"
+  }
+]

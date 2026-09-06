@@ -1,0 +1,542 @@
+[
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Ball Bearing",
+    "ur": "بال بیئرنگ",
+    "aliases": "bearing",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Oil Seal",
+    "ur": "آئل سیل",
+    "aliases": "seal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "V Belt",
+    "ur": "وی بیلٹ",
+    "aliases": "belt",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Pulley",
+    "ur": "پلی",
+    "aliases": "pulley",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Roller Chain",
+    "ur": "رولر چین",
+    "aliases": "chain",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Sprocket",
+    "ur": "سپراکٹ",
+    "aliases": "sprocket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Coupling",
+    "ur": "کپلنگ",
+    "aliases": "coupling",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Electric Motor",
+    "ur": "الیکٹرک موٹر",
+    "aliases": "motor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Generator",
+    "ur": "جنریٹر",
+    "aliases": "generator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Welding Machine",
+    "ur": "ویلڈنگ مشین",
+    "aliases": "welder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Air Compressor",
+    "ur": "ایئر کمپریسر",
+    "aliases": "compressor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Water Pump",
+    "ur": "واٹر پمپ",
+    "aliases": "pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Submersible Pump",
+    "ur": "سبمرسیبل پمپ",
+    "aliases": "submersible",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Welding Electrode",
+    "ur": "ویلڈنگ راڈ",
+    "aliases": "welding rod",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Machinery & Parts",
+    "en": "Copper Winding Wire",
+    "ur": "کاپر وائنڈنگ تار",
+    "aliases": "winding wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6000",
+    "ur": "بال بیئرنگ 6000",
+    "aliases": "bearing, ball bearing 6000",
+    "brand": "Generic",
+    "variant": "6000",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6001",
+    "ur": "بال بیئرنگ 6001",
+    "aliases": "bearing, ball bearing 6001",
+    "brand": "Generic",
+    "variant": "6001",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6002",
+    "ur": "بال بیئرنگ 6002",
+    "aliases": "bearing, ball bearing 6002",
+    "brand": "Generic",
+    "variant": "6002",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6003",
+    "ur": "بال بیئرنگ 6003",
+    "aliases": "bearing, ball bearing 6003",
+    "brand": "Generic",
+    "variant": "6003",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6004",
+    "ur": "بال بیئرنگ 6004",
+    "aliases": "bearing, ball bearing 6004",
+    "brand": "Generic",
+    "variant": "6004",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6005",
+    "ur": "بال بیئرنگ 6005",
+    "aliases": "bearing, ball bearing 6005",
+    "brand": "Generic",
+    "variant": "6005",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6006",
+    "ur": "بال بیئرنگ 6006",
+    "aliases": "bearing, ball bearing 6006",
+    "brand": "Generic",
+    "variant": "6006",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6200",
+    "ur": "بال بیئرنگ 6200",
+    "aliases": "bearing, ball bearing 6200",
+    "brand": "Generic",
+    "variant": "6200",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6201",
+    "ur": "بال بیئرنگ 6201",
+    "aliases": "bearing, ball bearing 6201",
+    "brand": "Generic",
+    "variant": "6201",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6202",
+    "ur": "بال بیئرنگ 6202",
+    "aliases": "bearing, ball bearing 6202",
+    "brand": "Generic",
+    "variant": "6202",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6203",
+    "ur": "بال بیئرنگ 6203",
+    "aliases": "bearing, ball bearing 6203",
+    "brand": "Generic",
+    "variant": "6203",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6204",
+    "ur": "بال بیئرنگ 6204",
+    "aliases": "bearing, ball bearing 6204",
+    "brand": "Generic",
+    "variant": "6204",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6205",
+    "ur": "بال بیئرنگ 6205",
+    "aliases": "bearing, ball bearing 6205",
+    "brand": "Generic",
+    "variant": "6205",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6206",
+    "ur": "بال بیئرنگ 6206",
+    "aliases": "bearing, ball bearing 6206",
+    "brand": "Generic",
+    "variant": "6206",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6207",
+    "ur": "بال بیئرنگ 6207",
+    "aliases": "bearing, ball bearing 6207",
+    "brand": "Generic",
+    "variant": "6207",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6208",
+    "ur": "بال بیئرنگ 6208",
+    "aliases": "bearing, ball bearing 6208",
+    "brand": "Generic",
+    "variant": "6208",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6300",
+    "ur": "بال بیئرنگ 6300",
+    "aliases": "bearing, ball bearing 6300",
+    "brand": "Generic",
+    "variant": "6300",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6301",
+    "ur": "بال بیئرنگ 6301",
+    "aliases": "bearing, ball bearing 6301",
+    "brand": "Generic",
+    "variant": "6301",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6302",
+    "ur": "بال بیئرنگ 6302",
+    "aliases": "bearing, ball bearing 6302",
+    "brand": "Generic",
+    "variant": "6302",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6303",
+    "ur": "بال بیئرنگ 6303",
+    "aliases": "bearing, ball bearing 6303",
+    "brand": "Generic",
+    "variant": "6303",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6304",
+    "ur": "بال بیئرنگ 6304",
+    "aliases": "bearing, ball bearing 6304",
+    "brand": "Generic",
+    "variant": "6304",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6305",
+    "ur": "بال بیئرنگ 6305",
+    "aliases": "bearing, ball bearing 6305",
+    "brand": "Generic",
+    "variant": "6305",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6306",
+    "ur": "بال بیئرنگ 6306",
+    "aliases": "bearing, ball bearing 6306",
+    "brand": "Generic",
+    "variant": "6306",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6307",
+    "ur": "بال بیئرنگ 6307",
+    "aliases": "bearing, ball bearing 6307",
+    "brand": "Generic",
+    "variant": "6307",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Bearings",
+    "en": "Ball Bearing 6308",
+    "ur": "بال بیئرنگ 6308",
+    "aliases": "bearing, ball bearing 6308",
+    "brand": "Generic",
+    "variant": "6308",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 0.5HP",
+    "ur": "الیکٹرک موٹر 0.5HP",
+    "aliases": "motor, electric motor 0.5hp",
+    "brand": "Generic",
+    "variant": "0.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 1HP",
+    "ur": "الیکٹرک موٹر 1HP",
+    "aliases": "motor, electric motor 1hp",
+    "brand": "Generic",
+    "variant": "1HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 1.5HP",
+    "ur": "الیکٹرک موٹر 1.5HP",
+    "aliases": "motor, electric motor 1.5hp",
+    "brand": "Generic",
+    "variant": "1.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 2HP",
+    "ur": "الیکٹرک موٹر 2HP",
+    "aliases": "motor, electric motor 2hp",
+    "brand": "Generic",
+    "variant": "2HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 3HP",
+    "ur": "الیکٹرک موٹر 3HP",
+    "aliases": "motor, electric motor 3hp",
+    "brand": "Generic",
+    "variant": "3HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 5HP",
+    "ur": "الیکٹرک موٹر 5HP",
+    "aliases": "motor, electric motor 5hp",
+    "brand": "Generic",
+    "variant": "5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 7.5HP",
+    "ur": "الیکٹرک موٹر 7.5HP",
+    "aliases": "motor, electric motor 7.5hp",
+    "brand": "Generic",
+    "variant": "7.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 10HP",
+    "ur": "الیکٹرک موٹر 10HP",
+    "aliases": "motor, electric motor 10hp",
+    "brand": "Generic",
+    "variant": "10HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 15HP",
+    "ur": "الیکٹرک موٹر 15HP",
+    "aliases": "motor, electric motor 15hp",
+    "brand": "Generic",
+    "variant": "15HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 20HP",
+    "ur": "الیکٹرک موٹر 20HP",
+    "aliases": "motor, electric motor 20hp",
+    "brand": "Generic",
+    "variant": "20HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 25HP",
+    "ur": "الیکٹرک موٹر 25HP",
+    "aliases": "motor, electric motor 25hp",
+    "brand": "Generic",
+    "variant": "25HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 30HP",
+    "ur": "الیکٹرک موٹر 30HP",
+    "aliases": "motor, electric motor 30hp",
+    "brand": "Generic",
+    "variant": "30HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 40HP",
+    "ur": "الیکٹرک موٹر 40HP",
+    "aliases": "motor, electric motor 40hp",
+    "brand": "Generic",
+    "variant": "40HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Industrial",
+    "subcategory": "Motors",
+    "en": "Electric Motor 50HP",
+    "ur": "الیکٹرک موٹر 50HP",
+    "aliases": "motor, electric motor 50hp",
+    "brand": "Generic",
+    "variant": "50HP",
+    "unit": "piece"
+  }
+]

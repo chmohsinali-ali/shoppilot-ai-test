@@ -1,0 +1,782 @@
+[
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Spark Plug",
+    "ur": "سپارک پلگ",
+    "aliases": "plug",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Air Filter",
+    "ur": "ایئر فلٹر",
+    "aliases": "air filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Clutch Plate",
+    "ur": "کلچ پلیٹ",
+    "aliases": "clutch plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Brake Shoe",
+    "ur": "بریک شو",
+    "aliases": "brake shoe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Chain Sprocket Kit",
+    "ur": "چین گراری سیٹ",
+    "aliases": "chain set",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Piston",
+    "ur": "پسٹن",
+    "aliases": "piston",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Piston Ring",
+    "ur": "پسٹن رنگ",
+    "aliases": "ring",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Carburetor",
+    "ur": "کاربوریٹر",
+    "aliases": "carburetor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "CDI Unit",
+    "ur": "سی ڈی آئی",
+    "aliases": "cdi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Ignition Coil",
+    "ur": "کوائل",
+    "aliases": "coil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Headlight",
+    "ur": "ہیڈ لائٹ",
+    "aliases": "headlight",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Indicator",
+    "ur": "انڈیکیٹر",
+    "aliases": "indicator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Shock Absorber",
+    "ur": "شاک",
+    "aliases": "shock",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Tyre",
+    "ur": "ٹائر",
+    "aliases": "tyre",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Tube",
+    "ur": "ٹیوب",
+    "aliases": "tube",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Clutch Cable",
+    "ur": "کلچ تار",
+    "aliases": "clutch cable",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Accelerator Cable",
+    "ur": "ریس تار",
+    "aliases": "race wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Spare Parts",
+    "en": "Battery",
+    "ur": "بیٹری",
+    "aliases": "battery",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Spark Plug 70cc",
+    "ur": "سپارک پلگ 70cc",
+    "aliases": "plug, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Air Filter 70cc",
+    "ur": "ایئر فلٹر 70cc",
+    "aliases": "air filter, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Clutch Plate 70cc",
+    "ur": "کلچ پلیٹ 70cc",
+    "aliases": "clutch plate, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Brake Shoe 70cc",
+    "ur": "بریک شو 70cc",
+    "aliases": "brake shoe, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Chain Sprocket Kit 70cc",
+    "ur": "چین گراری سیٹ 70cc",
+    "aliases": "chain set, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston 70cc",
+    "ur": "پسٹن 70cc",
+    "aliases": "piston, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston Ring 70cc",
+    "ur": "پسٹن رنگ 70cc",
+    "aliases": "ring, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Carburetor 70cc",
+    "ur": "کاربوریٹر 70cc",
+    "aliases": "carburetor, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "CDI Unit 70cc",
+    "ur": "سی ڈی آئی 70cc",
+    "aliases": "cdi, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Ignition Coil 70cc",
+    "ur": "کوائل 70cc",
+    "aliases": "coil, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Headlight 70cc",
+    "ur": "ہیڈ لائٹ 70cc",
+    "aliases": "headlight, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Indicator 70cc",
+    "ur": "انڈیکیٹر 70cc",
+    "aliases": "indicator, 70cc",
+    "brand": "Generic",
+    "variant": "70cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Spark Plug 100cc",
+    "ur": "سپارک پلگ 100cc",
+    "aliases": "plug, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Air Filter 100cc",
+    "ur": "ایئر فلٹر 100cc",
+    "aliases": "air filter, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Clutch Plate 100cc",
+    "ur": "کلچ پلیٹ 100cc",
+    "aliases": "clutch plate, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Brake Shoe 100cc",
+    "ur": "بریک شو 100cc",
+    "aliases": "brake shoe, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Chain Sprocket Kit 100cc",
+    "ur": "چین گراری سیٹ 100cc",
+    "aliases": "chain set, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston 100cc",
+    "ur": "پسٹن 100cc",
+    "aliases": "piston, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston Ring 100cc",
+    "ur": "پسٹن رنگ 100cc",
+    "aliases": "ring, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Carburetor 100cc",
+    "ur": "کاربوریٹر 100cc",
+    "aliases": "carburetor, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "CDI Unit 100cc",
+    "ur": "سی ڈی آئی 100cc",
+    "aliases": "cdi, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Ignition Coil 100cc",
+    "ur": "کوائل 100cc",
+    "aliases": "coil, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Headlight 100cc",
+    "ur": "ہیڈ لائٹ 100cc",
+    "aliases": "headlight, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Indicator 100cc",
+    "ur": "انڈیکیٹر 100cc",
+    "aliases": "indicator, 100cc",
+    "brand": "Generic",
+    "variant": "100cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Spark Plug 125cc",
+    "ur": "سپارک پلگ 125cc",
+    "aliases": "plug, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Air Filter 125cc",
+    "ur": "ایئر فلٹر 125cc",
+    "aliases": "air filter, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Clutch Plate 125cc",
+    "ur": "کلچ پلیٹ 125cc",
+    "aliases": "clutch plate, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Brake Shoe 125cc",
+    "ur": "بریک شو 125cc",
+    "aliases": "brake shoe, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Chain Sprocket Kit 125cc",
+    "ur": "چین گراری سیٹ 125cc",
+    "aliases": "chain set, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston 125cc",
+    "ur": "پسٹن 125cc",
+    "aliases": "piston, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston Ring 125cc",
+    "ur": "پسٹن رنگ 125cc",
+    "aliases": "ring, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Carburetor 125cc",
+    "ur": "کاربوریٹر 125cc",
+    "aliases": "carburetor, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "CDI Unit 125cc",
+    "ur": "سی ڈی آئی 125cc",
+    "aliases": "cdi, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Ignition Coil 125cc",
+    "ur": "کوائل 125cc",
+    "aliases": "coil, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Headlight 125cc",
+    "ur": "ہیڈ لائٹ 125cc",
+    "aliases": "headlight, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Indicator 125cc",
+    "ur": "انڈیکیٹر 125cc",
+    "aliases": "indicator, 125cc",
+    "brand": "Generic",
+    "variant": "125cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Spark Plug 150cc",
+    "ur": "سپارک پلگ 150cc",
+    "aliases": "plug, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Air Filter 150cc",
+    "ur": "ایئر فلٹر 150cc",
+    "aliases": "air filter, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Clutch Plate 150cc",
+    "ur": "کلچ پلیٹ 150cc",
+    "aliases": "clutch plate, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Brake Shoe 150cc",
+    "ur": "بریک شو 150cc",
+    "aliases": "brake shoe, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Chain Sprocket Kit 150cc",
+    "ur": "چین گراری سیٹ 150cc",
+    "aliases": "chain set, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston 150cc",
+    "ur": "پسٹن 150cc",
+    "aliases": "piston, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston Ring 150cc",
+    "ur": "پسٹن رنگ 150cc",
+    "aliases": "ring, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Carburetor 150cc",
+    "ur": "کاربوریٹر 150cc",
+    "aliases": "carburetor, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "CDI Unit 150cc",
+    "ur": "سی ڈی آئی 150cc",
+    "aliases": "cdi, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Ignition Coil 150cc",
+    "ur": "کوائل 150cc",
+    "aliases": "coil, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Headlight 150cc",
+    "ur": "ہیڈ لائٹ 150cc",
+    "aliases": "headlight, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Indicator 150cc",
+    "ur": "انڈیکیٹر 150cc",
+    "aliases": "indicator, 150cc",
+    "brand": "Generic",
+    "variant": "150cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Spark Plug 200cc",
+    "ur": "سپارک پلگ 200cc",
+    "aliases": "plug, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Air Filter 200cc",
+    "ur": "ایئر فلٹر 200cc",
+    "aliases": "air filter, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Clutch Plate 200cc",
+    "ur": "کلچ پلیٹ 200cc",
+    "aliases": "clutch plate, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Brake Shoe 200cc",
+    "ur": "بریک شو 200cc",
+    "aliases": "brake shoe, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Chain Sprocket Kit 200cc",
+    "ur": "چین گراری سیٹ 200cc",
+    "aliases": "chain set, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston 200cc",
+    "ur": "پسٹن 200cc",
+    "aliases": "piston, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Piston Ring 200cc",
+    "ur": "پسٹن رنگ 200cc",
+    "aliases": "ring, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Carburetor 200cc",
+    "ur": "کاربوریٹر 200cc",
+    "aliases": "carburetor, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "CDI Unit 200cc",
+    "ur": "سی ڈی آئی 200cc",
+    "aliases": "cdi, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Ignition Coil 200cc",
+    "ur": "کوائل 200cc",
+    "aliases": "coil, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Headlight 200cc",
+    "ur": "ہیڈ لائٹ 200cc",
+    "aliases": "headlight, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Motorcycle",
+    "subcategory": "Model/CC Variants",
+    "en": "Indicator 200cc",
+    "ur": "انڈیکیٹر 200cc",
+    "aliases": "indicator, 200cc",
+    "brand": "Generic",
+    "variant": "200cc",
+    "unit": "piece"
+  }
+]

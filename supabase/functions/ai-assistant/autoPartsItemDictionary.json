@@ -1,0 +1,2022 @@
+[
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Oil Filter",
+    "ur": "آئل فلٹر",
+    "aliases": "oil filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Air Filter",
+    "ur": "ایئر فلٹر",
+    "aliases": "air filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Fuel Filter",
+    "ur": "فیول فلٹر",
+    "aliases": "fuel filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Spark Plug",
+    "ur": "سپارک پلگ",
+    "aliases": "plug",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Brake Pad",
+    "ur": "بریک پیڈ",
+    "aliases": "brake pad",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Brake Shoe",
+    "ur": "بریک شو",
+    "aliases": "brake shoe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Clutch Plate",
+    "ur": "کلچ پلیٹ",
+    "aliases": "clutch plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Pressure Plate",
+    "ur": "پریشر پلیٹ",
+    "aliases": "pressure plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Wheel Bearing",
+    "ur": "وہیل بیئرنگ",
+    "aliases": "bearing",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Shock Absorber",
+    "ur": "شاک",
+    "aliases": "shock",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Tie Rod End",
+    "ur": "ٹائی راڈ اینڈ",
+    "aliases": "tie rod",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Ball Joint",
+    "ur": "بال جوائنٹ",
+    "aliases": "ball joint",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Radiator",
+    "ur": "ریڈی ایٹر",
+    "aliases": "radiator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Water Pump",
+    "ur": "واٹر پمپ",
+    "aliases": "water pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Fuel Pump",
+    "ur": "فیول پمپ",
+    "aliases": "fuel pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Headlight",
+    "ur": "ہیڈ لائٹ",
+    "aliases": "headlight",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Tail Light",
+    "ur": "ٹیل لائٹ",
+    "aliases": "tail light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Wiper Blade",
+    "ur": "وائپر بلیڈ",
+    "aliases": "wiper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Battery",
+    "ur": "بیٹری",
+    "aliases": "battery",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Engine Oil",
+    "ur": "انجن آئل",
+    "aliases": "engine oil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Gear Oil",
+    "ur": "گیئر آئل",
+    "aliases": "gear oil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Spare Parts",
+    "en": "Coolant",
+    "ur": "کولنٹ",
+    "aliases": "coolant",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 660cc",
+    "ur": "آئل فلٹر 660cc",
+    "aliases": "oil filter, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 660cc",
+    "ur": "ایئر فلٹر 660cc",
+    "aliases": "air filter, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 660cc",
+    "ur": "فیول فلٹر 660cc",
+    "aliases": "fuel filter, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 660cc",
+    "ur": "سپارک پلگ 660cc",
+    "aliases": "plug, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 660cc",
+    "ur": "بریک پیڈ 660cc",
+    "aliases": "brake pad, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 660cc",
+    "ur": "بریک شو 660cc",
+    "aliases": "brake shoe, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 660cc",
+    "ur": "کلچ پلیٹ 660cc",
+    "aliases": "clutch plate, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 660cc",
+    "ur": "پریشر پلیٹ 660cc",
+    "aliases": "pressure plate, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 660cc",
+    "ur": "وہیل بیئرنگ 660cc",
+    "aliases": "bearing, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 660cc",
+    "ur": "شاک 660cc",
+    "aliases": "shock, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 660cc",
+    "ur": "ٹائی راڈ اینڈ 660cc",
+    "aliases": "tie rod, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 660cc",
+    "ur": "بال جوائنٹ 660cc",
+    "aliases": "ball joint, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 660cc",
+    "ur": "ریڈی ایٹر 660cc",
+    "aliases": "radiator, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 660cc",
+    "ur": "واٹر پمپ 660cc",
+    "aliases": "water pump, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 660cc",
+    "ur": "فیول پمپ 660cc",
+    "aliases": "fuel pump, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 660cc",
+    "ur": "ہیڈ لائٹ 660cc",
+    "aliases": "headlight, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 660cc",
+    "ur": "ٹیل لائٹ 660cc",
+    "aliases": "tail light, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 660cc",
+    "ur": "وائپر بلیڈ 660cc",
+    "aliases": "wiper, 660cc",
+    "brand": "Generic",
+    "variant": "660cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 800cc",
+    "ur": "آئل فلٹر 800cc",
+    "aliases": "oil filter, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 800cc",
+    "ur": "ایئر فلٹر 800cc",
+    "aliases": "air filter, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 800cc",
+    "ur": "فیول فلٹر 800cc",
+    "aliases": "fuel filter, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 800cc",
+    "ur": "سپارک پلگ 800cc",
+    "aliases": "plug, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 800cc",
+    "ur": "بریک پیڈ 800cc",
+    "aliases": "brake pad, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 800cc",
+    "ur": "بریک شو 800cc",
+    "aliases": "brake shoe, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 800cc",
+    "ur": "کلچ پلیٹ 800cc",
+    "aliases": "clutch plate, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 800cc",
+    "ur": "پریشر پلیٹ 800cc",
+    "aliases": "pressure plate, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 800cc",
+    "ur": "وہیل بیئرنگ 800cc",
+    "aliases": "bearing, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 800cc",
+    "ur": "شاک 800cc",
+    "aliases": "shock, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 800cc",
+    "ur": "ٹائی راڈ اینڈ 800cc",
+    "aliases": "tie rod, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 800cc",
+    "ur": "بال جوائنٹ 800cc",
+    "aliases": "ball joint, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 800cc",
+    "ur": "ریڈی ایٹر 800cc",
+    "aliases": "radiator, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 800cc",
+    "ur": "واٹر پمپ 800cc",
+    "aliases": "water pump, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 800cc",
+    "ur": "فیول پمپ 800cc",
+    "aliases": "fuel pump, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 800cc",
+    "ur": "ہیڈ لائٹ 800cc",
+    "aliases": "headlight, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 800cc",
+    "ur": "ٹیل لائٹ 800cc",
+    "aliases": "tail light, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 800cc",
+    "ur": "وائپر بلیڈ 800cc",
+    "aliases": "wiper, 800cc",
+    "brand": "Generic",
+    "variant": "800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 1000cc",
+    "ur": "آئل فلٹر 1000cc",
+    "aliases": "oil filter, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 1000cc",
+    "ur": "ایئر فلٹر 1000cc",
+    "aliases": "air filter, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 1000cc",
+    "ur": "فیول فلٹر 1000cc",
+    "aliases": "fuel filter, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 1000cc",
+    "ur": "سپارک پلگ 1000cc",
+    "aliases": "plug, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 1000cc",
+    "ur": "بریک پیڈ 1000cc",
+    "aliases": "brake pad, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 1000cc",
+    "ur": "بریک شو 1000cc",
+    "aliases": "brake shoe, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 1000cc",
+    "ur": "کلچ پلیٹ 1000cc",
+    "aliases": "clutch plate, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 1000cc",
+    "ur": "پریشر پلیٹ 1000cc",
+    "aliases": "pressure plate, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 1000cc",
+    "ur": "وہیل بیئرنگ 1000cc",
+    "aliases": "bearing, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 1000cc",
+    "ur": "شاک 1000cc",
+    "aliases": "shock, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 1000cc",
+    "ur": "ٹائی راڈ اینڈ 1000cc",
+    "aliases": "tie rod, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 1000cc",
+    "ur": "بال جوائنٹ 1000cc",
+    "aliases": "ball joint, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 1000cc",
+    "ur": "ریڈی ایٹر 1000cc",
+    "aliases": "radiator, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 1000cc",
+    "ur": "واٹر پمپ 1000cc",
+    "aliases": "water pump, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 1000cc",
+    "ur": "فیول پمپ 1000cc",
+    "aliases": "fuel pump, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 1000cc",
+    "ur": "ہیڈ لائٹ 1000cc",
+    "aliases": "headlight, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 1000cc",
+    "ur": "ٹیل لائٹ 1000cc",
+    "aliases": "tail light, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 1000cc",
+    "ur": "وائپر بلیڈ 1000cc",
+    "aliases": "wiper, 1000cc",
+    "brand": "Generic",
+    "variant": "1000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 1300cc",
+    "ur": "آئل فلٹر 1300cc",
+    "aliases": "oil filter, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 1300cc",
+    "ur": "ایئر فلٹر 1300cc",
+    "aliases": "air filter, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 1300cc",
+    "ur": "فیول فلٹر 1300cc",
+    "aliases": "fuel filter, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 1300cc",
+    "ur": "سپارک پلگ 1300cc",
+    "aliases": "plug, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 1300cc",
+    "ur": "بریک پیڈ 1300cc",
+    "aliases": "brake pad, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 1300cc",
+    "ur": "بریک شو 1300cc",
+    "aliases": "brake shoe, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 1300cc",
+    "ur": "کلچ پلیٹ 1300cc",
+    "aliases": "clutch plate, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 1300cc",
+    "ur": "پریشر پلیٹ 1300cc",
+    "aliases": "pressure plate, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 1300cc",
+    "ur": "وہیل بیئرنگ 1300cc",
+    "aliases": "bearing, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 1300cc",
+    "ur": "شاک 1300cc",
+    "aliases": "shock, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 1300cc",
+    "ur": "ٹائی راڈ اینڈ 1300cc",
+    "aliases": "tie rod, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 1300cc",
+    "ur": "بال جوائنٹ 1300cc",
+    "aliases": "ball joint, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 1300cc",
+    "ur": "ریڈی ایٹر 1300cc",
+    "aliases": "radiator, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 1300cc",
+    "ur": "واٹر پمپ 1300cc",
+    "aliases": "water pump, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 1300cc",
+    "ur": "فیول پمپ 1300cc",
+    "aliases": "fuel pump, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 1300cc",
+    "ur": "ہیڈ لائٹ 1300cc",
+    "aliases": "headlight, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 1300cc",
+    "ur": "ٹیل لائٹ 1300cc",
+    "aliases": "tail light, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 1300cc",
+    "ur": "وائپر بلیڈ 1300cc",
+    "aliases": "wiper, 1300cc",
+    "brand": "Generic",
+    "variant": "1300cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 1500cc",
+    "ur": "آئل فلٹر 1500cc",
+    "aliases": "oil filter, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 1500cc",
+    "ur": "ایئر فلٹر 1500cc",
+    "aliases": "air filter, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 1500cc",
+    "ur": "فیول فلٹر 1500cc",
+    "aliases": "fuel filter, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 1500cc",
+    "ur": "سپارک پلگ 1500cc",
+    "aliases": "plug, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 1500cc",
+    "ur": "بریک پیڈ 1500cc",
+    "aliases": "brake pad, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 1500cc",
+    "ur": "بریک شو 1500cc",
+    "aliases": "brake shoe, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 1500cc",
+    "ur": "کلچ پلیٹ 1500cc",
+    "aliases": "clutch plate, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 1500cc",
+    "ur": "پریشر پلیٹ 1500cc",
+    "aliases": "pressure plate, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 1500cc",
+    "ur": "وہیل بیئرنگ 1500cc",
+    "aliases": "bearing, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 1500cc",
+    "ur": "شاک 1500cc",
+    "aliases": "shock, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 1500cc",
+    "ur": "ٹائی راڈ اینڈ 1500cc",
+    "aliases": "tie rod, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 1500cc",
+    "ur": "بال جوائنٹ 1500cc",
+    "aliases": "ball joint, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 1500cc",
+    "ur": "ریڈی ایٹر 1500cc",
+    "aliases": "radiator, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 1500cc",
+    "ur": "واٹر پمپ 1500cc",
+    "aliases": "water pump, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 1500cc",
+    "ur": "فیول پمپ 1500cc",
+    "aliases": "fuel pump, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 1500cc",
+    "ur": "ہیڈ لائٹ 1500cc",
+    "aliases": "headlight, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 1500cc",
+    "ur": "ٹیل لائٹ 1500cc",
+    "aliases": "tail light, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 1500cc",
+    "ur": "وائپر بلیڈ 1500cc",
+    "aliases": "wiper, 1500cc",
+    "brand": "Generic",
+    "variant": "1500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 1600cc",
+    "ur": "آئل فلٹر 1600cc",
+    "aliases": "oil filter, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 1600cc",
+    "ur": "ایئر فلٹر 1600cc",
+    "aliases": "air filter, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 1600cc",
+    "ur": "فیول فلٹر 1600cc",
+    "aliases": "fuel filter, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 1600cc",
+    "ur": "سپارک پلگ 1600cc",
+    "aliases": "plug, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 1600cc",
+    "ur": "بریک پیڈ 1600cc",
+    "aliases": "brake pad, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 1600cc",
+    "ur": "بریک شو 1600cc",
+    "aliases": "brake shoe, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 1600cc",
+    "ur": "کلچ پلیٹ 1600cc",
+    "aliases": "clutch plate, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 1600cc",
+    "ur": "پریشر پلیٹ 1600cc",
+    "aliases": "pressure plate, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 1600cc",
+    "ur": "وہیل بیئرنگ 1600cc",
+    "aliases": "bearing, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 1600cc",
+    "ur": "شاک 1600cc",
+    "aliases": "shock, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 1600cc",
+    "ur": "ٹائی راڈ اینڈ 1600cc",
+    "aliases": "tie rod, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 1600cc",
+    "ur": "بال جوائنٹ 1600cc",
+    "aliases": "ball joint, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 1600cc",
+    "ur": "ریڈی ایٹر 1600cc",
+    "aliases": "radiator, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 1600cc",
+    "ur": "واٹر پمپ 1600cc",
+    "aliases": "water pump, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 1600cc",
+    "ur": "فیول پمپ 1600cc",
+    "aliases": "fuel pump, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 1600cc",
+    "ur": "ہیڈ لائٹ 1600cc",
+    "aliases": "headlight, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 1600cc",
+    "ur": "ٹیل لائٹ 1600cc",
+    "aliases": "tail light, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 1600cc",
+    "ur": "وائپر بلیڈ 1600cc",
+    "aliases": "wiper, 1600cc",
+    "brand": "Generic",
+    "variant": "1600cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 1800cc",
+    "ur": "آئل فلٹر 1800cc",
+    "aliases": "oil filter, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 1800cc",
+    "ur": "ایئر فلٹر 1800cc",
+    "aliases": "air filter, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 1800cc",
+    "ur": "فیول فلٹر 1800cc",
+    "aliases": "fuel filter, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 1800cc",
+    "ur": "سپارک پلگ 1800cc",
+    "aliases": "plug, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 1800cc",
+    "ur": "بریک پیڈ 1800cc",
+    "aliases": "brake pad, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 1800cc",
+    "ur": "بریک شو 1800cc",
+    "aliases": "brake shoe, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 1800cc",
+    "ur": "کلچ پلیٹ 1800cc",
+    "aliases": "clutch plate, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 1800cc",
+    "ur": "پریشر پلیٹ 1800cc",
+    "aliases": "pressure plate, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 1800cc",
+    "ur": "وہیل بیئرنگ 1800cc",
+    "aliases": "bearing, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 1800cc",
+    "ur": "شاک 1800cc",
+    "aliases": "shock, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 1800cc",
+    "ur": "ٹائی راڈ اینڈ 1800cc",
+    "aliases": "tie rod, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 1800cc",
+    "ur": "بال جوائنٹ 1800cc",
+    "aliases": "ball joint, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 1800cc",
+    "ur": "ریڈی ایٹر 1800cc",
+    "aliases": "radiator, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 1800cc",
+    "ur": "واٹر پمپ 1800cc",
+    "aliases": "water pump, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 1800cc",
+    "ur": "فیول پمپ 1800cc",
+    "aliases": "fuel pump, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 1800cc",
+    "ur": "ہیڈ لائٹ 1800cc",
+    "aliases": "headlight, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 1800cc",
+    "ur": "ٹیل لائٹ 1800cc",
+    "aliases": "tail light, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 1800cc",
+    "ur": "وائپر بلیڈ 1800cc",
+    "aliases": "wiper, 1800cc",
+    "brand": "Generic",
+    "variant": "1800cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 2000cc",
+    "ur": "آئل فلٹر 2000cc",
+    "aliases": "oil filter, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 2000cc",
+    "ur": "ایئر فلٹر 2000cc",
+    "aliases": "air filter, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 2000cc",
+    "ur": "فیول فلٹر 2000cc",
+    "aliases": "fuel filter, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 2000cc",
+    "ur": "سپارک پلگ 2000cc",
+    "aliases": "plug, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 2000cc",
+    "ur": "بریک پیڈ 2000cc",
+    "aliases": "brake pad, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 2000cc",
+    "ur": "بریک شو 2000cc",
+    "aliases": "brake shoe, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 2000cc",
+    "ur": "کلچ پلیٹ 2000cc",
+    "aliases": "clutch plate, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 2000cc",
+    "ur": "پریشر پلیٹ 2000cc",
+    "aliases": "pressure plate, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 2000cc",
+    "ur": "وہیل بیئرنگ 2000cc",
+    "aliases": "bearing, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 2000cc",
+    "ur": "شاک 2000cc",
+    "aliases": "shock, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 2000cc",
+    "ur": "ٹائی راڈ اینڈ 2000cc",
+    "aliases": "tie rod, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 2000cc",
+    "ur": "بال جوائنٹ 2000cc",
+    "aliases": "ball joint, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 2000cc",
+    "ur": "ریڈی ایٹر 2000cc",
+    "aliases": "radiator, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 2000cc",
+    "ur": "واٹر پمپ 2000cc",
+    "aliases": "water pump, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 2000cc",
+    "ur": "فیول پمپ 2000cc",
+    "aliases": "fuel pump, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 2000cc",
+    "ur": "ہیڈ لائٹ 2000cc",
+    "aliases": "headlight, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 2000cc",
+    "ur": "ٹیل لائٹ 2000cc",
+    "aliases": "tail light, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 2000cc",
+    "ur": "وائپر بلیڈ 2000cc",
+    "aliases": "wiper, 2000cc",
+    "brand": "Generic",
+    "variant": "2000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 2500cc",
+    "ur": "آئل فلٹر 2500cc",
+    "aliases": "oil filter, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 2500cc",
+    "ur": "ایئر فلٹر 2500cc",
+    "aliases": "air filter, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 2500cc",
+    "ur": "فیول فلٹر 2500cc",
+    "aliases": "fuel filter, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 2500cc",
+    "ur": "سپارک پلگ 2500cc",
+    "aliases": "plug, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 2500cc",
+    "ur": "بریک پیڈ 2500cc",
+    "aliases": "brake pad, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 2500cc",
+    "ur": "بریک شو 2500cc",
+    "aliases": "brake shoe, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 2500cc",
+    "ur": "کلچ پلیٹ 2500cc",
+    "aliases": "clutch plate, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 2500cc",
+    "ur": "پریشر پلیٹ 2500cc",
+    "aliases": "pressure plate, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 2500cc",
+    "ur": "وہیل بیئرنگ 2500cc",
+    "aliases": "bearing, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 2500cc",
+    "ur": "شاک 2500cc",
+    "aliases": "shock, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 2500cc",
+    "ur": "ٹائی راڈ اینڈ 2500cc",
+    "aliases": "tie rod, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 2500cc",
+    "ur": "بال جوائنٹ 2500cc",
+    "aliases": "ball joint, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 2500cc",
+    "ur": "ریڈی ایٹر 2500cc",
+    "aliases": "radiator, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 2500cc",
+    "ur": "واٹر پمپ 2500cc",
+    "aliases": "water pump, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 2500cc",
+    "ur": "فیول پمپ 2500cc",
+    "aliases": "fuel pump, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 2500cc",
+    "ur": "ہیڈ لائٹ 2500cc",
+    "aliases": "headlight, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 2500cc",
+    "ur": "ٹیل لائٹ 2500cc",
+    "aliases": "tail light, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 2500cc",
+    "ur": "وائپر بلیڈ 2500cc",
+    "aliases": "wiper, 2500cc",
+    "brand": "Generic",
+    "variant": "2500cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Oil Filter 3000cc",
+    "ur": "آئل فلٹر 3000cc",
+    "aliases": "oil filter, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Air Filter 3000cc",
+    "ur": "ایئر فلٹر 3000cc",
+    "aliases": "air filter, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Filter 3000cc",
+    "ur": "فیول فلٹر 3000cc",
+    "aliases": "fuel filter, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Spark Plug 3000cc",
+    "ur": "سپارک پلگ 3000cc",
+    "aliases": "plug, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Pad 3000cc",
+    "ur": "بریک پیڈ 3000cc",
+    "aliases": "brake pad, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Brake Shoe 3000cc",
+    "ur": "بریک شو 3000cc",
+    "aliases": "brake shoe, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Clutch Plate 3000cc",
+    "ur": "کلچ پلیٹ 3000cc",
+    "aliases": "clutch plate, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Pressure Plate 3000cc",
+    "ur": "پریشر پلیٹ 3000cc",
+    "aliases": "pressure plate, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wheel Bearing 3000cc",
+    "ur": "وہیل بیئرنگ 3000cc",
+    "aliases": "bearing, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Shock Absorber 3000cc",
+    "ur": "شاک 3000cc",
+    "aliases": "shock, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tie Rod End 3000cc",
+    "ur": "ٹائی راڈ اینڈ 3000cc",
+    "aliases": "tie rod, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Ball Joint 3000cc",
+    "ur": "بال جوائنٹ 3000cc",
+    "aliases": "ball joint, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Radiator 3000cc",
+    "ur": "ریڈی ایٹر 3000cc",
+    "aliases": "radiator, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Water Pump 3000cc",
+    "ur": "واٹر پمپ 3000cc",
+    "aliases": "water pump, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Fuel Pump 3000cc",
+    "ur": "فیول پمپ 3000cc",
+    "aliases": "fuel pump, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Headlight 3000cc",
+    "ur": "ہیڈ لائٹ 3000cc",
+    "aliases": "headlight, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Tail Light 3000cc",
+    "ur": "ٹیل لائٹ 3000cc",
+    "aliases": "tail light, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  },
+  {
+    "category": "Car",
+    "subcategory": "Engine Capacity Variants",
+    "en": "Wiper Blade 3000cc",
+    "ur": "وائپر بلیڈ 3000cc",
+    "aliases": "wiper, 3000cc",
+    "brand": "Generic",
+    "variant": "3000cc",
+    "unit": "piece"
+  }
+]
