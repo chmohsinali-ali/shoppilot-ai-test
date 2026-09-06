@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Gypsum Board",
+    "ur": "جپسم بورڈ",
+    "aliases": "gypsum",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Ceiling Tile",
+    "ur": "سیلنگ ٹائل",
+    "aliases": "ceiling tile",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Main Channel",
+    "ur": "مین چینل",
+    "aliases": "channel",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Furring Channel",
+    "ur": "فرنگ چینل",
+    "aliases": "furring",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Wall Angle",
+    "ur": "وال اینگل",
+    "aliases": "angle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Ceiling Wire",
+    "ur": "سیلنگ تار",
+    "aliases": "wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Roofing Sheet",
+    "ur": "روفنگ شیٹ",
+    "aliases": "roof sheet",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "GI Corrugated Sheet",
+    "ur": "جی آئی لہردار شیٹ",
+    "aliases": "corrugated sheet",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Polycarbonate Sheet",
+    "ur": "پولی کاربونیٹ شیٹ",
+    "aliases": "poly sheet",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Insulation Roll",
+    "ur": "انسولیشن رول",
+    "aliases": "insulation",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Roofing Screw",
+    "ur": "روفنگ پیچ",
+    "aliases": "roof screw",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Roofing & Ceiling",
+    "en": "Ceiling Screw",
+    "ur": "سیلنگ پیچ",
+    "aliases": "ceiling screw",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

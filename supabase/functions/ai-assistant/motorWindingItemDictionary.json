@@ -1,0 +1,272 @@
+[
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Copper Winding Wire",
+    "ur": "کاپر وائنڈنگ تار",
+    "aliases": "winding wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Aluminum Winding Wire",
+    "ur": "ایلومینیم وائنڈنگ تار",
+    "aliases": "aluminium winding",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Insulation Paper",
+    "ur": "انسولیشن پیپر",
+    "aliases": "paper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Insulation Sleeve",
+    "ur": "انسولیشن سلیو",
+    "aliases": "sleeve",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Winding Varnish",
+    "ur": "وائنڈنگ وارنش",
+    "aliases": "varnish",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Motor Bearing",
+    "ur": "موٹر بیئرنگ",
+    "aliases": "bearing",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Motor Capacitor",
+    "ur": "موٹر کیپیسٹر",
+    "aliases": "capacitor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Carbon Brush",
+    "ur": "کاربن برش",
+    "aliases": "carbon",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Terminal Block",
+    "ur": "ٹرمینل بلاک",
+    "aliases": "terminal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Motor Fan Blade",
+    "ur": "موٹر فین بلیڈ",
+    "aliases": "fan blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Motor Winding",
+    "en": "Motor Shaft",
+    "ur": "موٹر شافٹ",
+    "aliases": "shaft",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 10 SWG",
+    "ur": "کاپر وائنڈنگ تار 10 SWG",
+    "aliases": "winding wire 10 SWG",
+    "brand": "Copper",
+    "variant": "10 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 12 SWG",
+    "ur": "کاپر وائنڈنگ تار 12 SWG",
+    "aliases": "winding wire 12 SWG",
+    "brand": "Copper",
+    "variant": "12 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 14 SWG",
+    "ur": "کاپر وائنڈنگ تار 14 SWG",
+    "aliases": "winding wire 14 SWG",
+    "brand": "Copper",
+    "variant": "14 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 16 SWG",
+    "ur": "کاپر وائنڈنگ تار 16 SWG",
+    "aliases": "winding wire 16 SWG",
+    "brand": "Copper",
+    "variant": "16 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 18 SWG",
+    "ur": "کاپر وائنڈنگ تار 18 SWG",
+    "aliases": "winding wire 18 SWG",
+    "brand": "Copper",
+    "variant": "18 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 20 SWG",
+    "ur": "کاپر وائنڈنگ تار 20 SWG",
+    "aliases": "winding wire 20 SWG",
+    "brand": "Copper",
+    "variant": "20 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 22 SWG",
+    "ur": "کاپر وائنڈنگ تار 22 SWG",
+    "aliases": "winding wire 22 SWG",
+    "brand": "Copper",
+    "variant": "22 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 24 SWG",
+    "ur": "کاپر وائنڈنگ تار 24 SWG",
+    "aliases": "winding wire 24 SWG",
+    "brand": "Copper",
+    "variant": "24 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 26 SWG",
+    "ur": "کاپر وائنڈنگ تار 26 SWG",
+    "aliases": "winding wire 26 SWG",
+    "brand": "Copper",
+    "variant": "26 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 28 SWG",
+    "ur": "کاپر وائنڈنگ تار 28 SWG",
+    "aliases": "winding wire 28 SWG",
+    "brand": "Copper",
+    "variant": "28 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 30 SWG",
+    "ur": "کاپر وائنڈنگ تار 30 SWG",
+    "aliases": "winding wire 30 SWG",
+    "brand": "Copper",
+    "variant": "30 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 32 SWG",
+    "ur": "کاپر وائنڈنگ تار 32 SWG",
+    "aliases": "winding wire 32 SWG",
+    "brand": "Copper",
+    "variant": "32 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 34 SWG",
+    "ur": "کاپر وائنڈنگ تار 34 SWG",
+    "aliases": "winding wire 34 SWG",
+    "brand": "Copper",
+    "variant": "34 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 36 SWG",
+    "ur": "کاپر وائنڈنگ تار 36 SWG",
+    "aliases": "winding wire 36 SWG",
+    "brand": "Copper",
+    "variant": "36 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 38 SWG",
+    "ur": "کاپر وائنڈنگ تار 38 SWG",
+    "aliases": "winding wire 38 SWG",
+    "brand": "Copper",
+    "variant": "38 SWG",
+    "unit": "kg"
+  },
+  {
+    "category": "Electrical Repair",
+    "subcategory": "Winding Wire",
+    "en": "Copper Winding Wire 40 SWG",
+    "ur": "کاپر وائنڈنگ تار 40 SWG",
+    "aliases": "winding wire 40 SWG",
+    "brand": "Copper",
+    "variant": "40 SWG",
+    "unit": "kg"
+  }
+]

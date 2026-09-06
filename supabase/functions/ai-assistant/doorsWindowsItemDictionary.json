@@ -1,0 +1,142 @@
+[
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "UPVC Profile",
+    "ur": "یو پی وی سی پروفائل",
+    "aliases": "upvc section",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Aluminum Profile",
+    "ur": "ایلومینیم پروفائل",
+    "aliases": "aluminium section",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Window Roller",
+    "ur": "کھڑکی رولر",
+    "aliases": "roller",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Window Handle",
+    "ur": "کھڑکی ہینڈل",
+    "aliases": "handle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Window Lock",
+    "ur": "کھڑکی لاک",
+    "aliases": "lock",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Door Handle",
+    "ur": "دروازہ ہینڈل",
+    "aliases": "handle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Door Lock",
+    "ur": "دروازہ لاک",
+    "aliases": "lock",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Door Hinge",
+    "ur": "دروازہ قبضہ",
+    "aliases": "qabza",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Rubber Gasket",
+    "ur": "ربڑ گاسکٹ",
+    "aliases": "rubber",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Wool Pile",
+    "ur": "وول پائل",
+    "aliases": "wool pile",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Glass Beading",
+    "ur": "شیشہ بیڈنگ",
+    "aliases": "beading",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Door Closer",
+    "ur": "ڈور کلوزر",
+    "aliases": "closer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Sliding Track",
+    "ur": "سلائیڈنگ ٹریک",
+    "aliases": "track",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Construction",
+    "subcategory": "Door / Window Parts",
+    "en": "Sliding Roller",
+    "ur": "سلائیڈنگ رولر",
+    "aliases": "roller",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

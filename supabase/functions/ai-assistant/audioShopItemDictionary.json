@@ -1,0 +1,152 @@
+[
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Speaker",
+    "ur": "اسپیکر",
+    "aliases": "speaker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Woofer",
+    "ur": "ووفر",
+    "aliases": "woofer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Subwoofer",
+    "ur": "سب ووفر",
+    "aliases": "subwoofer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Amplifier",
+    "ur": "ایمپلیفائر",
+    "aliases": "amp",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Microphone",
+    "ur": "مائیکروفون",
+    "aliases": "mic",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Wireless Microphone",
+    "ur": "وائرلیس مائیک",
+    "aliases": "wireless mic",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Mixer",
+    "ur": "آڈیو مکسر",
+    "aliases": "mixer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Audio Cable",
+    "ur": "آڈیو کیبل",
+    "aliases": "audio wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "XLR Cable",
+    "ur": "ایکس ایل آر کیبل",
+    "aliases": "xlr",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "RCA Cable",
+    "ur": "آر سی اے کیبل",
+    "aliases": "rca",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Speaker Wire",
+    "ur": "اسپیکر تار",
+    "aliases": "speaker wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Mic Stand",
+    "ur": "مائیک اسٹینڈ",
+    "aliases": "stand",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Speaker Stand",
+    "ur": "اسپیکر اسٹینڈ",
+    "aliases": "stand",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Horn Speaker",
+    "ur": "ہارن اسپیکر",
+    "aliases": "horn speaker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Audio",
+    "subcategory": "Audio Equipment",
+    "en": "Megaphone",
+    "ur": "میگا فون",
+    "aliases": "megaphone",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

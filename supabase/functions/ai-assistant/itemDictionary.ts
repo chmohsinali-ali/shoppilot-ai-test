@@ -62,6 +62,11 @@ import dairyShopRows from "./dairyShopItemDictionary.json" with { type: "json" }
 import meatShopRows from "./meatShopItemDictionary.json" with { type: "json" };
 import seafoodRows from "./seafoodItemDictionary.json" with { type: "json" };
 import dryFruitRows from "./dryFruitItemDictionary.json" with { type: "json" };
+import audioShopRows from "./audioShopItemDictionary.json" with { type: "json" };
+import lightingRows from "./lightingItemDictionary.json" with { type: "json" };
+import motorWindingRows from "./motorWindingItemDictionary.json" with { type: "json" };
+import roofingRows from "./roofingItemDictionary.json" with { type: "json" };
+import doorsWindowsRows from "./doorsWindowsItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -119,6 +124,11 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "meat-shop", rows: meatShopRows as ItemRow[] },
   { source: "seafood", rows: seafoodRows as ItemRow[] },
   { source: "dry-fruit", rows: dryFruitRows as ItemRow[] },
+  { source: "audio-shop", rows: audioShopRows as ItemRow[] },
+  { source: "lighting", rows: lightingRows as ItemRow[] },
+  { source: "motor-winding", rows: motorWindingRows as ItemRow[] },
+  { source: "roofing", rows: roofingRows as ItemRow[] },
+  { source: "doors-windows", rows: doorsWindowsRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES

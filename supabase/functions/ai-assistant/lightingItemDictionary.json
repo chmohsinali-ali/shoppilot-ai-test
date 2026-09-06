@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Chandelier",
+    "ur": "فانوس",
+    "aliases": "fanoos, chandelier",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Wall Light",
+    "ur": "وال لائٹ",
+    "aliases": "wall light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Pendant Light",
+    "ur": "پینڈنٹ لائٹ",
+    "aliases": "hanging light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Spot Light",
+    "ur": "اسپاٹ لائٹ",
+    "aliases": "spot",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Track Light",
+    "ur": "ٹریک لائٹ",
+    "aliases": "track light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "LED Strip",
+    "ur": "ایل ای ڈی پٹی",
+    "aliases": "led strip",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Rope Light",
+    "ur": "روپ لائٹ",
+    "aliases": "rope light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Fairy Lights",
+    "ur": "جھالر لائٹس",
+    "aliases": "jhalar light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Garden Light",
+    "ur": "گارڈن لائٹ",
+    "aliases": "garden light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Gate Light",
+    "ur": "گیٹ لائٹ",
+    "aliases": "gate light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Decorative Bulb",
+    "ur": "ڈیکوریٹو بلب",
+    "aliases": "fancy bulb",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Lighting",
+    "subcategory": "Decorative Lighting",
+    "en": "Lamp Shade",
+    "ur": "لیمپ شیڈ",
+    "aliases": "shade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]
