@@ -1,0 +1,222 @@
+[
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Plastic Shopping Bag",
+    "ur": "پلاسٹک شاپر",
+    "aliases": "shopper",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Paper Bag",
+    "ur": "کاغذ بیگ",
+    "aliases": "paper bag",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Carton Box",
+    "ur": "کارٹن ڈبہ",
+    "aliases": "carton",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Packing Tape",
+    "ur": "پیکنگ ٹیپ",
+    "aliases": "tape",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Bubble Wrap",
+    "ur": "ببل ریپ",
+    "aliases": "bubble",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Cling Film",
+    "ur": "کلنگ فلم",
+    "aliases": "cling",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Aluminum Foil",
+    "ur": "المونیم فوائل",
+    "aliases": "foil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Disposable Cup",
+    "ur": "ڈسپوزیبل کپ",
+    "aliases": "cup",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Disposable Plate",
+    "ur": "ڈسپوزیبل پلیٹ",
+    "aliases": "plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Food Container",
+    "ur": "فوڈ کنٹینر",
+    "aliases": "takeaway box",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Straw",
+    "ur": "اسٹرا",
+    "aliases": "straw",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Cup Lid",
+    "ur": "کپ ڈھکن",
+    "aliases": "lid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Packaging Supplies",
+    "en": "Zip Lock Bag",
+    "ur": "زپ لاک بیگ",
+    "aliases": "zip bag",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 4oz",
+    "ur": "ڈسپوزیبل کپ 4oz",
+    "aliases": "cup, disposable cup 4oz",
+    "brand": "Generic",
+    "variant": "4oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 6oz",
+    "ur": "ڈسپوزیبل کپ 6oz",
+    "aliases": "cup, disposable cup 6oz",
+    "brand": "Generic",
+    "variant": "6oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 7oz",
+    "ur": "ڈسپوزیبل کپ 7oz",
+    "aliases": "cup, disposable cup 7oz",
+    "brand": "Generic",
+    "variant": "7oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 8oz",
+    "ur": "ڈسپوزیبل کپ 8oz",
+    "aliases": "cup, disposable cup 8oz",
+    "brand": "Generic",
+    "variant": "8oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 10oz",
+    "ur": "ڈسپوزیبل کپ 10oz",
+    "aliases": "cup, disposable cup 10oz",
+    "brand": "Generic",
+    "variant": "10oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 12oz",
+    "ur": "ڈسپوزیبل کپ 12oz",
+    "aliases": "cup, disposable cup 12oz",
+    "brand": "Generic",
+    "variant": "12oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 16oz",
+    "ur": "ڈسپوزیبل کپ 16oz",
+    "aliases": "cup, disposable cup 16oz",
+    "brand": "Generic",
+    "variant": "16oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 20oz",
+    "ur": "ڈسپوزیبل کپ 20oz",
+    "aliases": "cup, disposable cup 20oz",
+    "brand": "Generic",
+    "variant": "20oz",
+    "unit": "pack"
+  },
+  {
+    "category": "Packaging",
+    "subcategory": "Cups",
+    "en": "Disposable Cup 22oz",
+    "ur": "ڈسپوزیبل کپ 22oz",
+    "aliases": "cup, disposable cup 22oz",
+    "brand": "Generic",
+    "variant": "22oz",
+    "unit": "pack"
+  }
+]

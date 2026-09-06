@@ -1,0 +1,322 @@
+[
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Almonds",
+    "ur": "بادام",
+    "aliases": "badam",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Cashews",
+    "ur": "کاجو",
+    "aliases": "kaju",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Pistachios",
+    "ur": "پستہ",
+    "aliases": "pista",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Walnuts",
+    "ur": "اخروٹ",
+    "aliases": "akhrot",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Raisins",
+    "ur": "کشمش",
+    "aliases": "kishmish",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Dates",
+    "ur": "کھجور",
+    "aliases": "khajoor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Peanuts",
+    "ur": "مونگ پھلی",
+    "aliases": "moong phali",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Beef",
+    "ur": "گائے کا گوشت",
+    "aliases": "beef",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Mutton",
+    "ur": "بکرے کا گوشت",
+    "aliases": "mutton",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Chicken Whole",
+    "ur": "پورا چکن",
+    "aliases": "murghi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Chicken Breast",
+    "ur": "چکن بریسٹ",
+    "aliases": "breast",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Chicken Leg",
+    "ur": "چکن لیگ",
+    "aliases": "leg",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Chicken Mince",
+    "ur": "چکن قیمہ",
+    "aliases": "qeema",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Fish",
+    "ur": "مچھلی",
+    "aliases": "machli",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Prawns",
+    "ur": "جھینگے",
+    "aliases": "jheenga",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Milk",
+    "ur": "دودھ",
+    "aliases": "doodh",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "liter"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Yogurt",
+    "ur": "دہی",
+    "aliases": "dahi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Paneer",
+    "ur": "پنیر",
+    "aliases": "paneer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Lassi",
+    "ur": "لسی",
+    "aliases": "lassi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "liter"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Cake",
+    "ur": "کیک",
+    "aliases": "cake",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Pastry",
+    "ur": "پیسٹری",
+    "aliases": "pastry",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Gulab Jamun",
+    "ur": "گلاب جامن",
+    "aliases": "gulab jamun",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Barfi",
+    "ur": "برفی",
+    "aliases": "barfi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Jalebi",
+    "ur": "جلیبی",
+    "aliases": "jalebi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "kg"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Samosa",
+    "ur": "سموسہ",
+    "aliases": "samosa",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Burger",
+    "ur": "برگر",
+    "aliases": "burger",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Pizza",
+    "ur": "پیزا",
+    "aliases": "pizza",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Shawarma",
+    "ur": "شاورما",
+    "aliases": "shawarma",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "French Fries",
+    "ur": "فرائز",
+    "aliases": "fries",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "portion"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Tea",
+    "ur": "چائے",
+    "aliases": "chai",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "cup"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Fresh Juice",
+    "ur": "تازہ جوس",
+    "aliases": "juice",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "glass"
+  },
+  {
+    "category": "Food",
+    "subcategory": "Food & Menu",
+    "en": "Milkshake",
+    "ur": "ملک شیک",
+    "aliases": "shake",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "glass"
+  }
+]

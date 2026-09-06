@@ -1,0 +1,322 @@
+[
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Cricket Bat",
+    "ur": "کرکٹ بیٹ",
+    "aliases": "bat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Cricket Ball",
+    "ur": "کرکٹ بال",
+    "aliases": "ball",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Wicket Set",
+    "ur": "وکٹ سیٹ",
+    "aliases": "wicket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Batting Gloves",
+    "ur": "بیٹنگ گلوز",
+    "aliases": "gloves",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Football",
+    "ur": "فٹ بال",
+    "aliases": "football",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Volleyball",
+    "ur": "والی بال",
+    "aliases": "volleyball",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Badminton Racket",
+    "ur": "بیڈمنٹن ریکٹ",
+    "aliases": "racket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Shuttlecock",
+    "ur": "شٹل کاک",
+    "aliases": "shuttle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Tennis Racket",
+    "ur": "ٹینس ریکٹ",
+    "aliases": "racket",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Gym Dumbbell",
+    "ur": "ڈمبل",
+    "aliases": "dumbbell",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Skipping Rope",
+    "ur": "رسہ کود",
+    "aliases": "skipping",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Yoga Mat",
+    "ur": "یوگا میٹ",
+    "aliases": "mat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Sports Goods",
+    "en": "Sports Bottle",
+    "ur": "اسپورٹس بوتل",
+    "aliases": "bottle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 1kg",
+    "ur": "ڈمبل 1kg",
+    "aliases": "dumbbell, dumbbell 1kg",
+    "brand": "Generic",
+    "variant": "1kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 2kg",
+    "ur": "ڈمبل 2kg",
+    "aliases": "dumbbell, dumbbell 2kg",
+    "brand": "Generic",
+    "variant": "2kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 3kg",
+    "ur": "ڈمبل 3kg",
+    "aliases": "dumbbell, dumbbell 3kg",
+    "brand": "Generic",
+    "variant": "3kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 4kg",
+    "ur": "ڈمبل 4kg",
+    "aliases": "dumbbell, dumbbell 4kg",
+    "brand": "Generic",
+    "variant": "4kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 5kg",
+    "ur": "ڈمبل 5kg",
+    "aliases": "dumbbell, dumbbell 5kg",
+    "brand": "Generic",
+    "variant": "5kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 7.5kg",
+    "ur": "ڈمبل 7.5kg",
+    "aliases": "dumbbell, dumbbell 7.5kg",
+    "brand": "Generic",
+    "variant": "7.5kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 10kg",
+    "ur": "ڈمبل 10kg",
+    "aliases": "dumbbell, dumbbell 10kg",
+    "brand": "Generic",
+    "variant": "10kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 12.5kg",
+    "ur": "ڈمبل 12.5kg",
+    "aliases": "dumbbell, dumbbell 12.5kg",
+    "brand": "Generic",
+    "variant": "12.5kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 15kg",
+    "ur": "ڈمبل 15kg",
+    "aliases": "dumbbell, dumbbell 15kg",
+    "brand": "Generic",
+    "variant": "15kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 20kg",
+    "ur": "ڈمبل 20kg",
+    "aliases": "dumbbell, dumbbell 20kg",
+    "brand": "Generic",
+    "variant": "20kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 25kg",
+    "ur": "ڈمبل 25kg",
+    "aliases": "dumbbell, dumbbell 25kg",
+    "brand": "Generic",
+    "variant": "25kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Sports",
+    "subcategory": "Weights",
+    "en": "Dumbbell 30kg",
+    "ur": "ڈمبل 30kg",
+    "aliases": "dumbbell, dumbbell 30kg",
+    "brand": "Generic",
+    "variant": "30kg",
+    "unit": "piece"
+  },
+  {
+    "category": "Toys",
+    "subcategory": "Toys",
+    "en": "Toy Car",
+    "ur": "کھلونا گاڑی",
+    "aliases": "toy car",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Toys",
+    "subcategory": "Toys",
+    "en": "Doll",
+    "ur": "گڑیا",
+    "aliases": "guria",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Toys",
+    "subcategory": "Toys",
+    "en": "Building Blocks",
+    "ur": "بلاکس",
+    "aliases": "blocks",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Toys",
+    "subcategory": "Toys",
+    "en": "Puzzle",
+    "ur": "پزل",
+    "aliases": "puzzle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Toys",
+    "subcategory": "Toys",
+    "en": "Toy Ball",
+    "ur": "کھلونا بال",
+    "aliases": "ball",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Toys",
+    "subcategory": "Toys",
+    "en": "Battery Toy",
+    "ur": "بیٹری کھلونا",
+    "aliases": "battery toy",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Toys",
+    "subcategory": "Toys",
+    "en": "Remote Control Car",
+    "ur": "ریموٹ گاڑی",
+    "aliases": "rc car",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

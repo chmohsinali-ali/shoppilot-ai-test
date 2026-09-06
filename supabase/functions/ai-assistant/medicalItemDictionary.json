@@ -1,0 +1,222 @@
+[
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Adhesive Bandage",
+    "ur": "چپکنے والی پٹی",
+    "aliases": "band aid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Gauze Roll",
+    "ur": "گاز رول",
+    "aliases": "gauze",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Cotton Roll",
+    "ur": "روئی رول",
+    "aliases": "cotton",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Surgical Tape",
+    "ur": "سرجیکل ٹیپ",
+    "aliases": "medical tape",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Face Mask",
+    "ur": "فیس ماسک",
+    "aliases": "mask",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Disposable Gloves",
+    "ur": "ڈسپوزیبل دستانے",
+    "aliases": "gloves",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Thermometer",
+    "ur": "تھرمامیٹر",
+    "aliases": "thermometer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Digital BP Monitor",
+    "ur": "ڈیجیٹل بی پی مشین",
+    "aliases": "bp machine",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Syringe",
+    "ur": "سرنج",
+    "aliases": "syringe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Nebulizer",
+    "ur": "نیبولائزر",
+    "aliases": "nebulizer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Wheelchair",
+    "ur": "وہیل چیئر",
+    "aliases": "wheel chair",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Walker",
+    "ur": "واکر",
+    "aliases": "walker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Hot Water Bottle",
+    "ur": "گرم پانی بوتل",
+    "aliases": "hot water bag",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "Hand Sanitizer",
+    "ur": "ہینڈ سینیٹائزر",
+    "aliases": "sanitizer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Non-prescription Supplies",
+    "en": "First Aid Box",
+    "ur": "فرسٹ ایڈ باکس",
+    "aliases": "first aid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Syringes",
+    "en": "Disposable Syringe 1ml",
+    "ur": "ڈسپوزیبل سرنج 1ml",
+    "aliases": "syringe, disposable syringe 1ml",
+    "brand": "Generic",
+    "variant": "1ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Syringes",
+    "en": "Disposable Syringe 2ml",
+    "ur": "ڈسپوزیبل سرنج 2ml",
+    "aliases": "syringe, disposable syringe 2ml",
+    "brand": "Generic",
+    "variant": "2ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Syringes",
+    "en": "Disposable Syringe 3ml",
+    "ur": "ڈسپوزیبل سرنج 3ml",
+    "aliases": "syringe, disposable syringe 3ml",
+    "brand": "Generic",
+    "variant": "3ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Syringes",
+    "en": "Disposable Syringe 5ml",
+    "ur": "ڈسپوزیبل سرنج 5ml",
+    "aliases": "syringe, disposable syringe 5ml",
+    "brand": "Generic",
+    "variant": "5ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Syringes",
+    "en": "Disposable Syringe 10ml",
+    "ur": "ڈسپوزیبل سرنج 10ml",
+    "aliases": "syringe, disposable syringe 10ml",
+    "brand": "Generic",
+    "variant": "10ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Syringes",
+    "en": "Disposable Syringe 20ml",
+    "ur": "ڈسپوزیبل سرنج 20ml",
+    "aliases": "syringe, disposable syringe 20ml",
+    "brand": "Generic",
+    "variant": "20ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Medical Supplies",
+    "subcategory": "Syringes",
+    "en": "Disposable Syringe 50ml",
+    "ur": "ڈسپوزیبل سرنج 50ml",
+    "aliases": "syringe, disposable syringe 50ml",
+    "brand": "Generic",
+    "variant": "50ml",
+    "unit": "piece"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Cat Food",
+    "ur": "بلی خوراک",
+    "aliases": "cat food",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Dog Food",
+    "ur": "کتے کی خوراک",
+    "aliases": "dog food",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Bird Feed",
+    "ur": "پرندوں کی خوراک",
+    "aliases": "bird seed",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Cat Litter",
+    "ur": "کیٹ لٹر",
+    "aliases": "litter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Pet Bowl",
+    "ur": "پالتو جانور پیالہ",
+    "aliases": "pet bowl",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Dog Collar",
+    "ur": "کتے کا کالر",
+    "aliases": "collar",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Pet Leash",
+    "ur": "پالتو پٹا",
+    "aliases": "leash",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Bird Cage",
+    "ur": "پرندوں کا پنجرہ",
+    "aliases": "cage",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Pet",
+    "subcategory": "Pet Supplies",
+    "en": "Fish Food",
+    "ur": "مچھلی خوراک",
+    "aliases": "fish food",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

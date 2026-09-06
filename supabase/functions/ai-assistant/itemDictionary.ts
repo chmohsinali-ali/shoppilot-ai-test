@@ -39,6 +39,12 @@ import stationeryRows from "./stationeryItemDictionary.json" with { type: "json"
 import clothingRows from "./clothingItemDictionary.json" with { type: "json" };
 import footwearRows from "./footwearItemDictionary.json" with { type: "json" };
 import cosmeticsRows from "./cosmeticsItemDictionary.json" with { type: "json" };
+import foodSpecialtyRows from "./foodSpecialtyItemDictionary.json" with { type: "json" };
+import pansariRows from "./pansariItemDictionary.json" with { type: "json" };
+import medicalRows from "./medicalItemDictionary.json" with { type: "json" };
+import sportsToysRows from "./sportsToysItemDictionary.json" with { type: "json" };
+import petShopRows from "./petShopItemDictionary.json" with { type: "json" };
+import packagingRows from "./packagingItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -73,6 +79,12 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "clothing", rows: clothingRows as ItemRow[] },
   { source: "footwear", rows: footwearRows as ItemRow[] },
   { source: "cosmetics", rows: cosmeticsRows as ItemRow[] },
+  { source: "food-specialty", rows: foodSpecialtyRows as ItemRow[] },
+  { source: "pansari", rows: pansariRows as ItemRow[] },
+  { source: "medical", rows: medicalRows as ItemRow[] },
+  { source: "sports-toys", rows: sportsToysRows as ItemRow[] },
+  { source: "pet-shop", rows: petShopRows as ItemRow[] },
+  { source: "packaging", rows: packagingRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES
