@@ -70,6 +70,9 @@ import doorsWindowsRows from "./doorsWindowsItemDictionary.json" with { type: "j
 import sanitaryWareRows from "./sanitaryWareItemDictionary.json" with { type: "json" };
 import tilesRows from "./tilesItemDictionary.json" with { type: "json" };
 import cleaningSuppliesRows from "./cleaningSuppliesItemDictionary.json" with { type: "json" };
+import tractorMachineryRows from "./tractorMachineryItemDictionary.json" with { type: "json" };
+import generatorMotorRows from "./generatorMotorItemDictionary.json" with { type: "json" };
+import pumpMachineryRows from "./pumpMachineryItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -135,6 +138,9 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "sanitary-ware", rows: sanitaryWareRows as ItemRow[] },
   { source: "tiles", rows: tilesRows as ItemRow[] },
   { source: "cleaning-supplies", rows: cleaningSuppliesRows as ItemRow[] },
+  { source: "tractor-machinery", rows: tractorMachineryRows as ItemRow[] },
+  { source: "generator-motor", rows: generatorMotorRows as ItemRow[] },
+  { source: "pump-machinery", rows: pumpMachineryRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES

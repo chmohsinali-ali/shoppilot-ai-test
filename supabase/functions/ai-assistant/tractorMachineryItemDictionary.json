@@ -1,0 +1,202 @@
+[
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Tractor Oil Filter",
+    "ur": "ٹریکٹر آئل فلٹر",
+    "aliases": "oil filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Tractor Fuel Filter",
+    "ur": "ٹریکٹر فیول فلٹر",
+    "aliases": "fuel filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Tractor Air Filter",
+    "ur": "ٹریکٹر ایئر فلٹر",
+    "aliases": "air filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Tractor Clutch Plate",
+    "ur": "ٹریکٹر کلچ پلیٹ",
+    "aliases": "clutch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Pressure Plate",
+    "ur": "پریشر پلیٹ",
+    "aliases": "pressure plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Brake Disc",
+    "ur": "بریک ڈسک",
+    "aliases": "brake disc",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Hydraulic Pump",
+    "ur": "ہائیڈرولک پمپ",
+    "aliases": "hydraulic pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Lift Pump",
+    "ur": "لفٹ پمپ",
+    "aliases": "lift pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Steering Pump",
+    "ur": "اسٹیئرنگ پمپ",
+    "aliases": "steering pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Fan Belt",
+    "ur": "فین بیلٹ",
+    "aliases": "belt",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Radiator",
+    "ur": "ریڈی ایٹر",
+    "aliases": "radiator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Water Pump",
+    "ur": "واٹر پمپ",
+    "aliases": "water pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Starter Motor",
+    "ur": "سیلف موٹر",
+    "aliases": "starter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Alternator",
+    "ur": "الٹرنیٹر",
+    "aliases": "generator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Headlight",
+    "ur": "ہیڈ لائٹ",
+    "aliases": "headlight",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Rear Light",
+    "ur": "ریئر لائٹ",
+    "aliases": "back light",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Cultivator Blade",
+    "ur": "کلٹیویٹر بلیڈ",
+    "aliases": "blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Plough Share",
+    "ur": "ہل پھالا",
+    "aliases": "plough blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Rotavator Blade",
+    "ur": "روٹاویٹر بلیڈ",
+    "aliases": "rotavator blade",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Agriculture",
+    "subcategory": "Tractor Parts",
+    "en": "Tractor Seat",
+    "ur": "ٹریکٹر سیٹ",
+    "aliases": "seat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Centrifugal Pump",
+    "ur": "سینٹری فیوگل پمپ",
+    "aliases": "pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Self Priming Pump",
+    "ur": "سیلف پرائمنگ پمپ",
+    "aliases": "self pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Submersible Pump",
+    "ur": "سبمرسیبل پمپ",
+    "aliases": "submersible",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Booster Pump",
+    "ur": "بوسٹر پمپ",
+    "aliases": "booster",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Agricultural Pump",
+    "ur": "زرعی پمپ",
+    "aliases": "agri pump",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Pump Impeller",
+    "ur": "پمپ امپیلر",
+    "aliases": "impeller",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Mechanical Seal",
+    "ur": "مکینیکل سیل",
+    "aliases": "seal",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Pump Bearing",
+    "ur": "پمپ بیئرنگ",
+    "aliases": "bearing",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Pump Shaft",
+    "ur": "پمپ شافٹ",
+    "aliases": "shaft",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Pump Capacitor",
+    "ur": "پمپ کیپیسٹر",
+    "aliases": "capacitor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Pressure Switch",
+    "ur": "پریشر سوئچ",
+    "aliases": "pressure switch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Pressure Gauge",
+    "ur": "پریشر گیج",
+    "aliases": "gauge",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "Foot Valve",
+    "ur": "فٹ والو",
+    "aliases": "foot valve",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pumps & Parts",
+    "en": "NRV Check Valve",
+    "ur": "چیک والو",
+    "aliases": "nrv",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 0.5HP",
+    "ur": "واٹر پمپ 0.5HP",
+    "aliases": "pani motor 0.5HP",
+    "brand": "Generic",
+    "variant": "0.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 1HP",
+    "ur": "واٹر پمپ 1HP",
+    "aliases": "pani motor 1HP",
+    "brand": "Generic",
+    "variant": "1HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 1.5HP",
+    "ur": "واٹر پمپ 1.5HP",
+    "aliases": "pani motor 1.5HP",
+    "brand": "Generic",
+    "variant": "1.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 2HP",
+    "ur": "واٹر پمپ 2HP",
+    "aliases": "pani motor 2HP",
+    "brand": "Generic",
+    "variant": "2HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 3HP",
+    "ur": "واٹر پمپ 3HP",
+    "aliases": "pani motor 3HP",
+    "brand": "Generic",
+    "variant": "3HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 5HP",
+    "ur": "واٹر پمپ 5HP",
+    "aliases": "pani motor 5HP",
+    "brand": "Generic",
+    "variant": "5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 7.5HP",
+    "ur": "واٹر پمپ 7.5HP",
+    "aliases": "pani motor 7.5HP",
+    "brand": "Generic",
+    "variant": "7.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 10HP",
+    "ur": "واٹر پمپ 10HP",
+    "aliases": "pani motor 10HP",
+    "brand": "Generic",
+    "variant": "10HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 15HP",
+    "ur": "واٹر پمپ 15HP",
+    "aliases": "pani motor 15HP",
+    "brand": "Generic",
+    "variant": "15HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 20HP",
+    "ur": "واٹر پمپ 20HP",
+    "aliases": "pani motor 20HP",
+    "brand": "Generic",
+    "variant": "20HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Pump Ratings",
+    "en": "Water Pump 25HP",
+    "ur": "واٹر پمپ 25HP",
+    "aliases": "pani motor 25HP",
+    "brand": "Generic",
+    "variant": "25HP",
+    "unit": "piece"
+  }
+]

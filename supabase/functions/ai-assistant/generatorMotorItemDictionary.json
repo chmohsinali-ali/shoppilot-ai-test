@@ -1,0 +1,292 @@
+[
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Petrol Generator",
+    "ur": "پیٹرول جنریٹر",
+    "aliases": "generator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Diesel Generator",
+    "ur": "ڈیزل جنریٹر",
+    "aliases": "generator",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Electric Motor",
+    "ur": "الیکٹرک موٹر",
+    "aliases": "motor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "AVR",
+    "ur": "اے وی آر",
+    "aliases": "avr",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Generator Carbon Brush",
+    "ur": "جنریٹر کاربن برش",
+    "aliases": "carbon",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Generator Coil",
+    "ur": "جنریٹر کوائل",
+    "aliases": "coil",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Starter Solenoid",
+    "ur": "سٹارٹر سولینائیڈ",
+    "aliases": "solenoid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Recoil Starter",
+    "ur": "ریکوئل اسٹارٹر",
+    "aliases": "rope starter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Fuel Tank",
+    "ur": "فیول ٹینک",
+    "aliases": "tank",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Air Filter",
+    "ur": "ایئر فلٹر",
+    "aliases": "air filter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Spark Plug",
+    "ur": "سپارک پلگ",
+    "aliases": "plug",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Motor Capacitor",
+    "ur": "موٹر کیپیسٹر",
+    "aliases": "capacitor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Motor Bearing",
+    "ur": "موٹر بیئرنگ",
+    "aliases": "bearing",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Motor Shaft",
+    "ur": "موٹر شافٹ",
+    "aliases": "shaft",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Generator / Motor",
+    "en": "Terminal Box",
+    "ur": "ٹرمینل باکس",
+    "aliases": "terminal box",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 0.5HP",
+    "ur": "الیکٹرک موٹر 0.5HP",
+    "aliases": "motor 0.5HP",
+    "brand": "Generic",
+    "variant": "0.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 1HP",
+    "ur": "الیکٹرک موٹر 1HP",
+    "aliases": "motor 1HP",
+    "brand": "Generic",
+    "variant": "1HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 1.5HP",
+    "ur": "الیکٹرک موٹر 1.5HP",
+    "aliases": "motor 1.5HP",
+    "brand": "Generic",
+    "variant": "1.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 2HP",
+    "ur": "الیکٹرک موٹر 2HP",
+    "aliases": "motor 2HP",
+    "brand": "Generic",
+    "variant": "2HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 3HP",
+    "ur": "الیکٹرک موٹر 3HP",
+    "aliases": "motor 3HP",
+    "brand": "Generic",
+    "variant": "3HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 5HP",
+    "ur": "الیکٹرک موٹر 5HP",
+    "aliases": "motor 5HP",
+    "brand": "Generic",
+    "variant": "5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 7.5HP",
+    "ur": "الیکٹرک موٹر 7.5HP",
+    "aliases": "motor 7.5HP",
+    "brand": "Generic",
+    "variant": "7.5HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 10HP",
+    "ur": "الیکٹرک موٹر 10HP",
+    "aliases": "motor 10HP",
+    "brand": "Generic",
+    "variant": "10HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 15HP",
+    "ur": "الیکٹرک موٹر 15HP",
+    "aliases": "motor 15HP",
+    "brand": "Generic",
+    "variant": "15HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 20HP",
+    "ur": "الیکٹرک موٹر 20HP",
+    "aliases": "motor 20HP",
+    "brand": "Generic",
+    "variant": "20HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 25HP",
+    "ur": "الیکٹرک موٹر 25HP",
+    "aliases": "motor 25HP",
+    "brand": "Generic",
+    "variant": "25HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 30HP",
+    "ur": "الیکٹرک موٹر 30HP",
+    "aliases": "motor 30HP",
+    "brand": "Generic",
+    "variant": "30HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 40HP",
+    "ur": "الیکٹرک موٹر 40HP",
+    "aliases": "motor 40HP",
+    "brand": "Generic",
+    "variant": "40HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Machinery",
+    "subcategory": "Motor Ratings",
+    "en": "Electric Motor 50HP",
+    "ur": "الیکٹرک موٹر 50HP",
+    "aliases": "motor 50HP",
+    "brand": "Generic",
+    "variant": "50HP",
+    "unit": "piece"
+  }
+]
