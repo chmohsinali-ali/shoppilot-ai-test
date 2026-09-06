@@ -1,0 +1,412 @@
+[
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Laptop",
+    "ur": "لیپ ٹاپ",
+    "aliases": "laptop",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Desktop Computer",
+    "ur": "ڈیسک ٹاپ کمپیوٹر",
+    "aliases": "computer, pc",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Monitor",
+    "ur": "مانیٹر",
+    "aliases": "screen",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Keyboard",
+    "ur": "کی بورڈ",
+    "aliases": "keyboard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Mouse",
+    "ur": "ماؤس",
+    "aliases": "mouse",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Printer",
+    "ur": "پرنٹر",
+    "aliases": "printer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Scanner",
+    "ur": "اسکینر",
+    "aliases": "scanner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Webcam",
+    "ur": "ویب کیم",
+    "aliases": "webcam",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Router",
+    "ur": "راؤٹر",
+    "aliases": "router",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Wi-Fi Adapter",
+    "ur": "وائی فائی اڈاپٹر",
+    "aliases": "wifi dongle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "HDMI Cable",
+    "ur": "ایچ ڈی ایم آئی کیبل",
+    "aliases": "hdmi",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "VGA Cable",
+    "ur": "وی جی اے کیبل",
+    "aliases": "vga",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "DisplayPort Cable",
+    "ur": "ڈسپلے پورٹ کیبل",
+    "aliases": "dp cable",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Laptop Charger",
+    "ur": "لیپ ٹاپ چارجر",
+    "aliases": "laptop adapter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Laptop Battery",
+    "ur": "لیپ ٹاپ بیٹری",
+    "aliases": "laptop battery",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Cooling Pad",
+    "ur": "کولنگ پیڈ",
+    "aliases": "cooler pad",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Thermal Paste",
+    "ur": "تھرمل پیسٹ",
+    "aliases": "thermal paste",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Toner Cartridge",
+    "ur": "ٹونر کارٹریج",
+    "aliases": "toner",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Hardware / Accessories",
+    "en": "Ink Cartridge",
+    "ur": "انک کارٹریج",
+    "aliases": "ink",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR4 RAM 4GB",
+    "ur": "ڈی ڈی آر 4 ریم 4GB",
+    "aliases": "ram, ddr4 ram 4gb",
+    "brand": "Generic",
+    "variant": "4GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR5 RAM 4GB",
+    "ur": "ڈی ڈی آر 5 ریم 4GB",
+    "aliases": "ram, ddr5 ram 4gb",
+    "brand": "Generic",
+    "variant": "4GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR4 RAM 8GB",
+    "ur": "ڈی ڈی آر 4 ریم 8GB",
+    "aliases": "ram, ddr4 ram 8gb",
+    "brand": "Generic",
+    "variant": "8GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR5 RAM 8GB",
+    "ur": "ڈی ڈی آر 5 ریم 8GB",
+    "aliases": "ram, ddr5 ram 8gb",
+    "brand": "Generic",
+    "variant": "8GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR4 RAM 16GB",
+    "ur": "ڈی ڈی آر 4 ریم 16GB",
+    "aliases": "ram, ddr4 ram 16gb",
+    "brand": "Generic",
+    "variant": "16GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR5 RAM 16GB",
+    "ur": "ڈی ڈی آر 5 ریم 16GB",
+    "aliases": "ram, ddr5 ram 16gb",
+    "brand": "Generic",
+    "variant": "16GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR4 RAM 32GB",
+    "ur": "ڈی ڈی آر 4 ریم 32GB",
+    "aliases": "ram, ddr4 ram 32gb",
+    "brand": "Generic",
+    "variant": "32GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR5 RAM 32GB",
+    "ur": "ڈی ڈی آر 5 ریم 32GB",
+    "aliases": "ram, ddr5 ram 32gb",
+    "brand": "Generic",
+    "variant": "32GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR4 RAM 64GB",
+    "ur": "ڈی ڈی آر 4 ریم 64GB",
+    "aliases": "ram, ddr4 ram 64gb",
+    "brand": "Generic",
+    "variant": "64GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Memory",
+    "en": "DDR5 RAM 64GB",
+    "ur": "ڈی ڈی آر 5 ریم 64GB",
+    "aliases": "ram, ddr5 ram 64gb",
+    "brand": "Generic",
+    "variant": "64GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "SSD 128GB",
+    "ur": "ایس ایس ڈی 128GB",
+    "aliases": "ssd, ssd 128gb",
+    "brand": "Generic",
+    "variant": "128GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "Hard Drive 128GB",
+    "ur": "ہارڈ ڈرائیو 128GB",
+    "aliases": "hdd, hard drive 128gb",
+    "brand": "Generic",
+    "variant": "128GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "SSD 256GB",
+    "ur": "ایس ایس ڈی 256GB",
+    "aliases": "ssd, ssd 256gb",
+    "brand": "Generic",
+    "variant": "256GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "Hard Drive 256GB",
+    "ur": "ہارڈ ڈرائیو 256GB",
+    "aliases": "hdd, hard drive 256gb",
+    "brand": "Generic",
+    "variant": "256GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "SSD 512GB",
+    "ur": "ایس ایس ڈی 512GB",
+    "aliases": "ssd, ssd 512gb",
+    "brand": "Generic",
+    "variant": "512GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "Hard Drive 512GB",
+    "ur": "ہارڈ ڈرائیو 512GB",
+    "aliases": "hdd, hard drive 512gb",
+    "brand": "Generic",
+    "variant": "512GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "SSD 1TB",
+    "ur": "ایس ایس ڈی 1TB",
+    "aliases": "ssd, ssd 1tb",
+    "brand": "Generic",
+    "variant": "1TB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "Hard Drive 1TB",
+    "ur": "ہارڈ ڈرائیو 1TB",
+    "aliases": "hdd, hard drive 1tb",
+    "brand": "Generic",
+    "variant": "1TB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "SSD 2TB",
+    "ur": "ایس ایس ڈی 2TB",
+    "aliases": "ssd, ssd 2tb",
+    "brand": "Generic",
+    "variant": "2TB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "Hard Drive 2TB",
+    "ur": "ہارڈ ڈرائیو 2TB",
+    "aliases": "hdd, hard drive 2tb",
+    "brand": "Generic",
+    "variant": "2TB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "SSD 4TB",
+    "ur": "ایس ایس ڈی 4TB",
+    "aliases": "ssd, ssd 4tb",
+    "brand": "Generic",
+    "variant": "4TB",
+    "unit": "piece"
+  },
+  {
+    "category": "Computer",
+    "subcategory": "Storage",
+    "en": "Hard Drive 4TB",
+    "ur": "ہارڈ ڈرائیو 4TB",
+    "aliases": "hdd, hard drive 4tb",
+    "brand": "Generic",
+    "variant": "4TB",
+    "unit": "piece"
+  }
+]

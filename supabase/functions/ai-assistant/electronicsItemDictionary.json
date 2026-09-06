@@ -1,0 +1,222 @@
+[
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "LED TV",
+    "ur": "ایل ای ڈی ٹی وی",
+    "aliases": "tv",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Refrigerator",
+    "ur": "فریج",
+    "aliases": "fridge",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Freezer",
+    "ur": "فریزر",
+    "aliases": "deep freezer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Air Conditioner",
+    "ur": "ایئر کنڈیشنر",
+    "aliases": "ac",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Washing Machine",
+    "ur": "واشنگ مشین",
+    "aliases": "washer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Dryer",
+    "ur": "ڈرائر",
+    "aliases": "dryer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Microwave Oven",
+    "ur": "مائیکروویو اوون",
+    "aliases": "microwave",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Electric Oven",
+    "ur": "الیکٹرک اوون",
+    "aliases": "oven",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Electric Iron",
+    "ur": "استری",
+    "aliases": "istri, iron",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Blender",
+    "ur": "بلینڈر",
+    "aliases": "blender",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Juicer",
+    "ur": "جوسر",
+    "aliases": "juicer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Grinder",
+    "ur": "گرائنڈر",
+    "aliases": "grinder",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Food Processor",
+    "ur": "فوڈ پروسیسر",
+    "aliases": "food processor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Electric Kettle",
+    "ur": "الیکٹرک کیتلی",
+    "aliases": "kettle",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Water Dispenser",
+    "ur": "واٹر ڈسپنسر",
+    "aliases": "dispenser",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Room Heater",
+    "ur": "روم ہیٹر",
+    "aliases": "heater",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Air Cooler",
+    "ur": "ایئر کولر",
+    "aliases": "cooler",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Vacuum Cleaner",
+    "ur": "ویکیوم کلینر",
+    "aliases": "vacuum",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Remote Control",
+    "ur": "ریموٹ کنٹرول",
+    "aliases": "remote",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "AC Capacitor",
+    "ur": "اے سی کیپیسٹر",
+    "aliases": "ac capacitor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Compressor",
+    "ur": "کمپریسر",
+    "aliases": "compressor",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Appliances",
+    "subcategory": "Home Appliances / Parts",
+    "en": "Thermostat",
+    "ur": "تھرموسٹیٹ",
+    "aliases": "thermostat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

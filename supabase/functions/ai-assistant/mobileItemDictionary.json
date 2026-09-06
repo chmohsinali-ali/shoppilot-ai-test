@@ -1,0 +1,472 @@
+[
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Smartphone",
+    "ur": "سمارٹ فون",
+    "aliases": "mobile, phone",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Feature Phone",
+    "ur": "کی پیڈ موبائل",
+    "aliases": "keypad mobile",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Mobile Charger",
+    "ur": "موبائل چارجر",
+    "aliases": "charger",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Fast Charger",
+    "ur": "فاسٹ چارجر",
+    "aliases": "fast charger",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "USB-C Cable",
+    "ur": "ٹائپ سی کیبل",
+    "aliases": "type c cable",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Lightning Cable",
+    "ur": "لائٹننگ کیبل",
+    "aliases": "iphone cable",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Micro USB Cable",
+    "ur": "مائیکرو یو ایس بی کیبل",
+    "aliases": "v8 cable",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Power Bank",
+    "ur": "پاور بینک",
+    "aliases": "powerbank",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Tempered Glass",
+    "ur": "ٹیمپرڈ گلاس",
+    "aliases": "protector glass",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Mobile Cover",
+    "ur": "موبائل کور",
+    "aliases": "cover, case",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Handsfree",
+    "ur": "ہینڈ فری",
+    "aliases": "earphone",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Bluetooth Earbuds",
+    "ur": "بلوٹوتھ ایئربڈز",
+    "aliases": "buds",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "LCD Screen",
+    "ur": "ایل سی ڈی اسکرین",
+    "aliases": "lcd",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Touch Digitizer",
+    "ur": "ٹچ ڈیجیٹائزر",
+    "aliases": "touch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Charging Jack",
+    "ur": "چارجنگ جیک",
+    "aliases": "charging port",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Mobile Battery",
+    "ur": "موبائل بیٹری",
+    "aliases": "battery",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Camera Module",
+    "ur": "کیمرا ماڈیول",
+    "aliases": "camera",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Microphone",
+    "ur": "مائیک",
+    "aliases": "mic",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Loudspeaker",
+    "ur": "اسپیکر",
+    "aliases": "ringer",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Phones / Accessories",
+    "en": "Mobile Motherboard",
+    "ur": "موبائل مدر بورڈ",
+    "aliases": "board, pcb",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "Memory Card 16GB",
+    "ur": "میموری کارڈ 16GB",
+    "aliases": "memory card, memory card 16gb",
+    "brand": "Generic",
+    "variant": "16GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "USB Flash Drive 16GB",
+    "ur": "یو ایس بی 16GB",
+    "aliases": "usb, usb flash drive 16gb",
+    "brand": "Generic",
+    "variant": "16GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "Memory Card 32GB",
+    "ur": "میموری کارڈ 32GB",
+    "aliases": "memory card, memory card 32gb",
+    "brand": "Generic",
+    "variant": "32GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "USB Flash Drive 32GB",
+    "ur": "یو ایس بی 32GB",
+    "aliases": "usb, usb flash drive 32gb",
+    "brand": "Generic",
+    "variant": "32GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "Memory Card 64GB",
+    "ur": "میموری کارڈ 64GB",
+    "aliases": "memory card, memory card 64gb",
+    "brand": "Generic",
+    "variant": "64GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "USB Flash Drive 64GB",
+    "ur": "یو ایس بی 64GB",
+    "aliases": "usb, usb flash drive 64gb",
+    "brand": "Generic",
+    "variant": "64GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "Memory Card 128GB",
+    "ur": "میموری کارڈ 128GB",
+    "aliases": "memory card, memory card 128gb",
+    "brand": "Generic",
+    "variant": "128GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "USB Flash Drive 128GB",
+    "ur": "یو ایس بی 128GB",
+    "aliases": "usb, usb flash drive 128gb",
+    "brand": "Generic",
+    "variant": "128GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "Memory Card 256GB",
+    "ur": "میموری کارڈ 256GB",
+    "aliases": "memory card, memory card 256gb",
+    "brand": "Generic",
+    "variant": "256GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "USB Flash Drive 256GB",
+    "ur": "یو ایس بی 256GB",
+    "aliases": "usb, usb flash drive 256gb",
+    "brand": "Generic",
+    "variant": "256GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "Memory Card 512GB",
+    "ur": "میموری کارڈ 512GB",
+    "aliases": "memory card, memory card 512gb",
+    "brand": "Generic",
+    "variant": "512GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "USB Flash Drive 512GB",
+    "ur": "یو ایس بی 512GB",
+    "aliases": "usb, usb flash drive 512gb",
+    "brand": "Generic",
+    "variant": "512GB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "Memory Card 1TB",
+    "ur": "میموری کارڈ 1TB",
+    "aliases": "memory card, memory card 1tb",
+    "brand": "Generic",
+    "variant": "1TB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Storage",
+    "en": "USB Flash Drive 1TB",
+    "ur": "یو ایس بی 1TB",
+    "aliases": "usb, usb flash drive 1tb",
+    "brand": "Generic",
+    "variant": "1TB",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 5W",
+    "ur": "چارجر 5W",
+    "aliases": "charger, charger 5w",
+    "brand": "Generic",
+    "variant": "5W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 10W",
+    "ur": "چارجر 10W",
+    "aliases": "charger, charger 10w",
+    "brand": "Generic",
+    "variant": "10W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 12W",
+    "ur": "چارجر 12W",
+    "aliases": "charger, charger 12w",
+    "brand": "Generic",
+    "variant": "12W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 15W",
+    "ur": "چارجر 15W",
+    "aliases": "charger, charger 15w",
+    "brand": "Generic",
+    "variant": "15W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 18W",
+    "ur": "چارجر 18W",
+    "aliases": "charger, charger 18w",
+    "brand": "Generic",
+    "variant": "18W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 20W",
+    "ur": "چارجر 20W",
+    "aliases": "charger, charger 20w",
+    "brand": "Generic",
+    "variant": "20W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 25W",
+    "ur": "چارجر 25W",
+    "aliases": "charger, charger 25w",
+    "brand": "Generic",
+    "variant": "25W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 30W",
+    "ur": "چارجر 30W",
+    "aliases": "charger, charger 30w",
+    "brand": "Generic",
+    "variant": "30W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 33W",
+    "ur": "چارجر 33W",
+    "aliases": "charger, charger 33w",
+    "brand": "Generic",
+    "variant": "33W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 45W",
+    "ur": "چارجر 45W",
+    "aliases": "charger, charger 45w",
+    "brand": "Generic",
+    "variant": "45W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 65W",
+    "ur": "چارجر 65W",
+    "aliases": "charger, charger 65w",
+    "brand": "Generic",
+    "variant": "65W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 67W",
+    "ur": "چارجر 67W",
+    "aliases": "charger, charger 67w",
+    "brand": "Generic",
+    "variant": "67W",
+    "unit": "piece"
+  },
+  {
+    "category": "Mobile",
+    "subcategory": "Chargers",
+    "en": "Charger 100W",
+    "ur": "چارجر 100W",
+    "aliases": "charger, charger 100w",
+    "brand": "Generic",
+    "variant": "100W",
+    "unit": "piece"
+  }
+]

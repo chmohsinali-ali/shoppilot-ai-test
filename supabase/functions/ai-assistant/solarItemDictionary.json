@@ -1,0 +1,382 @@
+[
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Solar Panel",
+    "ur": "سولر پینل",
+    "aliases": "solar plate",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Solar Inverter",
+    "ur": "سولر انورٹر",
+    "aliases": "inverter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Hybrid Inverter",
+    "ur": "ہائبرڈ انورٹر",
+    "aliases": "hybrid",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Charge Controller",
+    "ur": "چارج کنٹرولر",
+    "aliases": "controller",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Solar Battery",
+    "ur": "سولر بیٹری",
+    "aliases": "battery",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Lithium Battery",
+    "ur": "لیتھیم بیٹری",
+    "aliases": "lithium",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "MC4 Connector",
+    "ur": "ایم سی 4 کنیکٹر",
+    "aliases": "mc4",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Solar DC Cable",
+    "ur": "سولر ڈی سی کیبل",
+    "aliases": "dc wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "Solar Structure",
+    "ur": "سولر اسٹرکچر",
+    "aliases": "solar stand",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "DC Breaker",
+    "ur": "ڈی سی بریکر",
+    "aliases": "dc breaker",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "SPD",
+    "ur": "ایس پی ڈی",
+    "aliases": "surge protector",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Solar Equipment",
+    "en": "DC Fuse",
+    "ur": "ڈی سی فیوز",
+    "aliases": "solar fuse",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 100W",
+    "ur": "سولر پینل 100W",
+    "aliases": "solar plate, solar panel 100w",
+    "brand": "Generic",
+    "variant": "100W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 150W",
+    "ur": "سولر پینل 150W",
+    "aliases": "solar plate, solar panel 150w",
+    "brand": "Generic",
+    "variant": "150W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 180W",
+    "ur": "سولر پینل 180W",
+    "aliases": "solar plate, solar panel 180w",
+    "brand": "Generic",
+    "variant": "180W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 200W",
+    "ur": "سولر پینل 200W",
+    "aliases": "solar plate, solar panel 200w",
+    "brand": "Generic",
+    "variant": "200W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 250W",
+    "ur": "سولر پینل 250W",
+    "aliases": "solar plate, solar panel 250w",
+    "brand": "Generic",
+    "variant": "250W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 300W",
+    "ur": "سولر پینل 300W",
+    "aliases": "solar plate, solar panel 300w",
+    "brand": "Generic",
+    "variant": "300W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 330W",
+    "ur": "سولر پینل 330W",
+    "aliases": "solar plate, solar panel 330w",
+    "brand": "Generic",
+    "variant": "330W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 400W",
+    "ur": "سولر پینل 400W",
+    "aliases": "solar plate, solar panel 400w",
+    "brand": "Generic",
+    "variant": "400W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 450W",
+    "ur": "سولر پینل 450W",
+    "aliases": "solar plate, solar panel 450w",
+    "brand": "Generic",
+    "variant": "450W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 500W",
+    "ur": "سولر پینل 500W",
+    "aliases": "solar plate, solar panel 500w",
+    "brand": "Generic",
+    "variant": "500W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 550W",
+    "ur": "سولر پینل 550W",
+    "aliases": "solar plate, solar panel 550w",
+    "brand": "Generic",
+    "variant": "550W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 580W",
+    "ur": "سولر پینل 580W",
+    "aliases": "solar plate, solar panel 580w",
+    "brand": "Generic",
+    "variant": "580W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 600W",
+    "ur": "سولر پینل 600W",
+    "aliases": "solar plate, solar panel 600w",
+    "brand": "Generic",
+    "variant": "600W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 650W",
+    "ur": "سولر پینل 650W",
+    "aliases": "solar plate, solar panel 650w",
+    "brand": "Generic",
+    "variant": "650W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Panels",
+    "en": "Solar Panel 700W",
+    "ur": "سولر پینل 700W",
+    "aliases": "solar plate, solar panel 700w",
+    "brand": "Generic",
+    "variant": "700W",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 1kW",
+    "ur": "سولر انورٹر 1kW",
+    "aliases": "inverter, solar inverter 1kw",
+    "brand": "Generic",
+    "variant": "1kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 1.5kW",
+    "ur": "سولر انورٹر 1.5kW",
+    "aliases": "inverter, solar inverter 1.5kw",
+    "brand": "Generic",
+    "variant": "1.5kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 2kW",
+    "ur": "سولر انورٹر 2kW",
+    "aliases": "inverter, solar inverter 2kw",
+    "brand": "Generic",
+    "variant": "2kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 3kW",
+    "ur": "سولر انورٹر 3kW",
+    "aliases": "inverter, solar inverter 3kw",
+    "brand": "Generic",
+    "variant": "3kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 5kW",
+    "ur": "سولر انورٹر 5kW",
+    "aliases": "inverter, solar inverter 5kw",
+    "brand": "Generic",
+    "variant": "5kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 6kW",
+    "ur": "سولر انورٹر 6kW",
+    "aliases": "inverter, solar inverter 6kw",
+    "brand": "Generic",
+    "variant": "6kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 8kW",
+    "ur": "سولر انورٹر 8kW",
+    "aliases": "inverter, solar inverter 8kw",
+    "brand": "Generic",
+    "variant": "8kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 10kW",
+    "ur": "سولر انورٹر 10kW",
+    "aliases": "inverter, solar inverter 10kw",
+    "brand": "Generic",
+    "variant": "10kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 12kW",
+    "ur": "سولر انورٹر 12kW",
+    "aliases": "inverter, solar inverter 12kw",
+    "brand": "Generic",
+    "variant": "12kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 15kW",
+    "ur": "سولر انورٹر 15kW",
+    "aliases": "inverter, solar inverter 15kw",
+    "brand": "Generic",
+    "variant": "15kW",
+    "unit": "piece"
+  },
+  {
+    "category": "Solar",
+    "subcategory": "Inverters",
+    "en": "Solar Inverter 20kW",
+    "ur": "سولر انورٹر 20kW",
+    "aliases": "inverter, solar inverter 20kw",
+    "brand": "Generic",
+    "variant": "20kW",
+    "unit": "piece"
+  }
+]

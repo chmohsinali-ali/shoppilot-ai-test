@@ -1,22 +1,31 @@
 // Item Master Dictionaries — backend-only spelling/recognition reference for
-// products the AI extracts on a SALE or PURCHASE. Two separate source
-// datasets, kept apart because they come from separate reference sheets and
-// serve different item ranges:
-//   - vegetableItemDictionary.json: fruits & vegetables (from the shopkeeper's
-//     "Fruits & Vegetables" sheet)
-//   - groceryItemDictionary.json: kiryana/grocery inventory, including
-//     branded products and generic pack/form vocabulary (from the
-//     shopkeeper's "Master Inventory" sheet)
-// Both are stored verbatim/unmodified and are NEVER a customer, supplier, or
-// shop-inventory record — they exist only so the AI can recognize an item
-// and normalize its English/Urdu spelling. They are not exhaustive: an item
-// not found here is left exactly as the AI already extracted it, never
-// rejected. This is completely separate from the Master Name Dictionary
+// products the AI extracts on a SALE or PURCHASE. Each industry's items come
+// from its own separate reference sheet and are kept in their own file/
+// dictionary (never merged) — a shopkeeper's shop type doesn't change which
+// dictionaries are checked, but keeping them separate matches how the source
+// data was actually organized and supplied:
+//   - vegetableItemDictionary.json: fruits & vegetables
+//   - groceryItemDictionary.json: kiryana/grocery, incl. branded products
+//   - mobileItemDictionary.json: mobile phones & accessories
+//   - computerItemDictionary.json: computer/IT hardware
+//   - electronicsItemDictionary.json: home electronics/appliances
+//   - solarItemDictionary.json: solar/UPS/battery equipment
+//   - cctvItemDictionary.json: CCTV/networking equipment
+// All are stored verbatim/unmodified and are NEVER a customer, supplier, or
+// shop-inventory record — they exist only so the AI can recognize an item and
+// normalize its English/Urdu spelling. They are not exhaustive: an item not
+// found here is left exactly as the AI already extracted it, never rejected.
+// This is completely separate from the Master Name Dictionary
 // (nameDictionary.ts) — items are matched as whole phrases, never split into
 // tokens the way person names are (a product has no "first/last" concept).
 
 import vegetableRows from "./vegetableItemDictionary.json" with { type: "json" };
 import groceryRows from "./groceryItemDictionary.json" with { type: "json" };
+import mobileRows from "./mobileItemDictionary.json" with { type: "json" };
+import computerRows from "./computerItemDictionary.json" with { type: "json" };
+import electronicsRows from "./electronicsItemDictionary.json" with { type: "json" };
+import solarRows from "./solarItemDictionary.json" with { type: "json" };
+import cctvRows from "./cctvItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -25,13 +34,25 @@ type ItemEntry = {
   ur: string;
   category: string;
   aliases: string[];
-  source: "vegetable" | "grocery";
+  source: string;
 };
 
-let vegEntries: ItemEntry[] | null = null;
-let groEntries: ItemEntry[] | null = null;
+// Checked in this order when looking for a match. Adding another industry
+// later is just one more entry here — nothing else needs to change.
+const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
+  { source: "vegetable", rows: vegetableRows as ItemRow[] },
+  { source: "grocery", rows: groceryRows as ItemRow[] },
+  { source: "mobile", rows: mobileRows as ItemRow[] },
+  { source: "computer", rows: computerRows as ItemRow[] },
+  { source: "electronics", rows: electronicsRows as ItemRow[] },
+  { source: "solar", rows: solarRows as ItemRow[] },
+  { source: "cctv", rows: cctvRows as ItemRow[] },
+];
 
-function buildEntries(rows: ItemRow[], source: "vegetable" | "grocery"): ItemEntry[] {
+let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES
+let cachedAmbiguousTerms: Set<string> | null = null;
+
+function buildEntries(rows: ItemRow[], source: string): ItemEntry[] {
   const list: ItemEntry[] = [];
   for (const r of rows) {
     if (!r.en) continue; // skip stray blank rows
@@ -49,14 +70,34 @@ function buildEntries(rows: ItemRow[], source: "vegetable" | "grocery"): ItemEnt
   return list;
 }
 
-function getVegEntries(): ItemEntry[] {
-  if (!vegEntries) vegEntries = buildEntries(vegetableRows as ItemRow[], "vegetable");
-  return vegEntries;
+function getAllEntries(): ItemEntry[][] {
+  if (!cachedEntries) {
+    cachedEntries = DICTIONARIES.map((d) => buildEntries(d.rows, d.source));
+  }
+  return cachedEntries;
 }
 
-function getGroEntries(): ItemEntry[] {
-  if (!groEntries) groEntries = buildEntries(groceryRows as ItemRow[], "grocery");
-  return groEntries;
+// A term (English name or alias) that names more than one DISTINCT item can
+// never be confidently resolved to just one of them — whether that
+// collision is WITHIN one dictionary (e.g. every "Rice - X Pack" row in the
+// grocery sheet also lists bare "چاول" as an alias) or ACROSS two different
+// industry dictionaries (e.g. "camera" meaning both a mobile spare part and
+// a CCTV camera, "battery" meaning both a phone battery and a solar
+// battery — both real collisions found when the mobile/computer/
+// electronics/solar/cctv dictionaries were added). Computed once across ALL
+// dictionaries combined, not per-dictionary, so a cross-industry collision
+// is caught the same way an in-dictionary one already was.
+function getAmbiguousTerms(): Set<string> {
+  if (cachedAmbiguousTerms) return cachedAmbiguousTerms;
+  const counts = new Map<string, number>();
+  for (const entries of getAllEntries()) {
+    for (const e of entries) {
+      const keys = new Set([e.en.toLowerCase(), ...e.aliases.map((a) => a.toLowerCase())]);
+      for (const k of keys) counts.set(k, (counts.get(k) ?? 0) + 1);
+    }
+  }
+  cachedAmbiguousTerms = new Set([...counts.entries()].filter(([, c]) => c > 1).map(([k]) => k));
+  return cachedAmbiguousTerms;
 }
 
 // Same algorithm as nameDictionary.ts / src/lib/nameMatch.ts (kept as a
@@ -107,49 +148,28 @@ function isNearMatch(a: string, b: string): boolean {
 /**
  * Matches a full item phrase (never split into words — an item has no
  * first/last-name concept) against one dictionary's entries: exact match
- * (English, case-insensitive; Urdu script; or any alias) first, then a
- * close spelling variant within the same tolerance used elsewhere in the
- * app. Returns null when nothing is a confident match.
+ * (English, case-insensitive; Urdu script; or any non-ambiguous alias)
+ * first, then a close spelling variant within the same tolerance used
+ * elsewhere in the app. Returns null when nothing is a confident match.
  */
-// Some source rows (notably the "Voice Vocabulary / Pack & Form Variants"
-// sheet) list the same bare generic word as an alias on every pack-size
-// sibling row (e.g. "چاول" appears as an alias of "Rice - Small Pack",
-// "Rice - Medium Pack", "Rice - Large Pack", ... all twelve of them). If a
-// shopkeeper just says the plain generic word, none of those siblings is
-// the confident match — picking whichever happens to come first in the
-// list would silently invent a pack size nobody said. An alias repeated
-// across more than one entry is therefore excluded from matching entirely.
-function countAliasOccurrences(entries: ItemEntry[]): Map<string, number> {
-  const counts = new Map<string, number>();
-  for (const e of entries) {
-    for (const a of e.aliases) {
-      const key = a.toLowerCase();
-      counts.set(key, (counts.get(key) ?? 0) + 1);
-    }
-  }
-  return counts;
-}
-
-function matchInEntries(raw: string, entries: ItemEntry[]): ItemEntry | null {
+function matchInEntries(raw: string, entries: ItemEntry[], ambiguous: Set<string>): ItemEntry | null {
   const cleaned = raw.trim();
   if (!cleaned) return null;
   const cleanedLower = cleaned.toLowerCase();
   const cleanedNorm = cleaned.normalize("NFC");
-  const aliasCounts = countAliasOccurrences(entries);
-  const isAmbiguousAlias = (a: string) => (aliasCounts.get(a.toLowerCase()) ?? 0) > 1;
 
   for (const e of entries) {
-    if (e.en.toLowerCase() === cleanedLower) return e;
+    if (e.en.toLowerCase() === cleanedLower && !ambiguous.has(cleanedLower)) return e;
     if (e.ur.normalize("NFC") === cleanedNorm) return e;
     for (const a of e.aliases) {
-      if (a.toLowerCase() === cleanedLower && !isAmbiguousAlias(a)) return e;
+      if (a.toLowerCase() === cleanedLower && !ambiguous.has(a.toLowerCase())) return e;
     }
   }
 
   let best: ItemEntry | null = null;
   let bestDist = Infinity;
   for (const e of entries) {
-    const candidates = [e.en, ...e.aliases.filter((a) => !isAmbiguousAlias(a))];
+    const candidates = [e.en, ...e.aliases].filter((c) => !ambiguous.has(c.toLowerCase()));
     for (const c of candidates) {
       if (isNearMatch(c, cleaned)) {
         const d = levenshteinDistance(c, cleaned);
@@ -163,21 +183,23 @@ function matchInEntries(raw: string, entries: ItemEntry[]): ItemEntry | null {
   return best;
 }
 
-export type ItemMatch = { name_en: string; name_ur: string; category: string; source: "vegetable" | "grocery" };
+export type ItemMatch = { name_en: string; name_ur: string; category: string; source: string };
 
 /**
  * Looks up a product name (as already extracted/translated by the AI)
- * against both item dictionaries and returns the canonical English/Urdu
- * spelling if a confident match exists. Checks the vegetable sheet first,
- * then the grocery sheet — the two datasets are never merged into one file,
- * but a single product only needs to belong to one of them. Returns null
- * (leave the AI's own value untouched) when nothing matches in either —
- * these sheets are a reference, not an exhaustive allowlist.
+ * against every item dictionary, in priority order, and returns the
+ * canonical English/Urdu spelling for the first confident match. Returns
+ * null (leave the AI's own value untouched) when nothing matches
+ * confidently anywhere — these sheets are a reference, not an exhaustive
+ * allowlist, and a term that's ambiguous across dictionaries is treated the
+ * same as no match at all rather than guessed.
  */
 export function correctItemName(raw: string): ItemMatch | null {
-  const veg = matchInEntries(raw, getVegEntries());
-  if (veg) return { name_en: veg.en, name_ur: veg.ur, category: veg.category, source: veg.source };
-  const gro = matchInEntries(raw, getGroEntries());
-  if (gro) return { name_en: gro.en, name_ur: gro.ur, category: gro.category, source: gro.source };
+  const ambiguous = getAmbiguousTerms();
+  const allEntries = getAllEntries();
+  for (const entries of allEntries) {
+    const match = matchInEntries(raw, entries, ambiguous);
+    if (match) return { name_en: match.en, name_ur: match.ur, category: match.category, source: match.source };
+  }
   return null;
 }

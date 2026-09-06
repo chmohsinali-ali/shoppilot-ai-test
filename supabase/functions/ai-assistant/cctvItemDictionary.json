@@ -1,0 +1,172 @@
+[
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "CCTV Camera",
+    "ur": "سی سی ٹی وی کیمرا",
+    "aliases": "camera",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Dome Camera",
+    "ur": "ڈوم کیمرا",
+    "aliases": "dome",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Bullet Camera",
+    "ur": "بلٹ کیمرا",
+    "aliases": "bullet",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "IP Camera",
+    "ur": "آئی پی کیمرا",
+    "aliases": "ip camera",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "DVR",
+    "ur": "ڈی وی آر",
+    "aliases": "dvr",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "NVR",
+    "ur": "این وی آر",
+    "aliases": "nvr",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "CCTV Power Supply",
+    "ur": "کیمرا پاور سپلائی",
+    "aliases": "camera adapter",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "BNC Connector",
+    "ur": "بی این سی کنیکٹر",
+    "aliases": "bnc",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "CCTV Cable",
+    "ur": "سی سی ٹی وی کیبل",
+    "aliases": "camera wire",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "RJ45 Connector",
+    "ur": "آر جے 45 کنیکٹر",
+    "aliases": "rj45",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Network Switch",
+    "ur": "نیٹ ورک سوئچ",
+    "aliases": "switch",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "PoE Switch",
+    "ur": "پی او ای سوئچ",
+    "aliases": "poe",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Cat5e Cable",
+    "ur": "کیٹ 5 ای کیبل",
+    "aliases": "lan cable",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Cat6 Cable",
+    "ur": "کیٹ 6 کیبل",
+    "aliases": "lan cable",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Fiber Cable",
+    "ur": "فائبر کیبل",
+    "aliases": "fiber",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Video Doorbell",
+    "ur": "ویڈیو ڈور بیل",
+    "aliases": "doorbell camera",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Security & Network",
+    "subcategory": "CCTV / Networking",
+    "en": "Access Control Reader",
+    "ur": "ایکسس کنٹرول ریڈر",
+    "aliases": "access reader",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]
