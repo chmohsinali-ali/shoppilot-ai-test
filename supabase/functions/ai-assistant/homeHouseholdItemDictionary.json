@@ -1,0 +1,1802 @@
+[
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Broom Small",
+    "ur": "جھاڑو Small",
+    "aliases": "jharoo, small",
+    "brand": "Broom",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Broom Medium",
+    "ur": "جھاڑو Medium",
+    "aliases": "jharoo, medium",
+    "brand": "Broom",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Broom Large",
+    "ur": "جھاڑو Large",
+    "aliases": "jharoo, large",
+    "brand": "Broom",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Broom XL",
+    "ur": "جھاڑو XL",
+    "aliases": "jharoo, xl",
+    "brand": "Broom",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Broom Single",
+    "ur": "جھاڑو Single",
+    "aliases": "jharoo, single",
+    "brand": "Broom",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Broom Double",
+    "ur": "جھاڑو Double",
+    "aliases": "jharoo, double",
+    "brand": "Broom",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Floor Wiper Small",
+    "ur": "فرش وائپر Small",
+    "aliases": "wiper, small",
+    "brand": "Floor Wiper",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Floor Wiper Medium",
+    "ur": "فرش وائپر Medium",
+    "aliases": "wiper, medium",
+    "brand": "Floor Wiper",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Floor Wiper Large",
+    "ur": "فرش وائپر Large",
+    "aliases": "wiper, large",
+    "brand": "Floor Wiper",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Floor Wiper XL",
+    "ur": "فرش وائپر XL",
+    "aliases": "wiper, xl",
+    "brand": "Floor Wiper",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Floor Wiper Single",
+    "ur": "فرش وائپر Single",
+    "aliases": "wiper, single",
+    "brand": "Floor Wiper",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Floor Wiper Double",
+    "ur": "فرش وائپر Double",
+    "aliases": "wiper, double",
+    "brand": "Floor Wiper",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mop Small",
+    "ur": "پوچا Small",
+    "aliases": "pocha, small",
+    "brand": "Mop",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mop Medium",
+    "ur": "پوچا Medium",
+    "aliases": "pocha, medium",
+    "brand": "Mop",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mop Large",
+    "ur": "پوچا Large",
+    "aliases": "pocha, large",
+    "brand": "Mop",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mop XL",
+    "ur": "پوچا XL",
+    "aliases": "pocha, xl",
+    "brand": "Mop",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mop Single",
+    "ur": "پوچا Single",
+    "aliases": "pocha, single",
+    "brand": "Mop",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mop Double",
+    "ur": "پوچا Double",
+    "aliases": "pocha, double",
+    "brand": "Mop",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustpan Small",
+    "ur": "ڈسٹ پین Small",
+    "aliases": "dustpan, small",
+    "brand": "Dustpan",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustpan Medium",
+    "ur": "ڈسٹ پین Medium",
+    "aliases": "dustpan, medium",
+    "brand": "Dustpan",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustpan Large",
+    "ur": "ڈسٹ پین Large",
+    "aliases": "dustpan, large",
+    "brand": "Dustpan",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustpan XL",
+    "ur": "ڈسٹ پین XL",
+    "aliases": "dustpan, xl",
+    "brand": "Dustpan",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustpan Single",
+    "ur": "ڈسٹ پین Single",
+    "aliases": "dustpan, single",
+    "brand": "Dustpan",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustpan Double",
+    "ur": "ڈسٹ پین Double",
+    "aliases": "dustpan, double",
+    "brand": "Dustpan",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Toilet Brush Small",
+    "ur": "ٹوائلٹ برش Small",
+    "aliases": "toilet brush, small",
+    "brand": "Toilet Brush",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Toilet Brush Medium",
+    "ur": "ٹوائلٹ برش Medium",
+    "aliases": "toilet brush, medium",
+    "brand": "Toilet Brush",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Toilet Brush Large",
+    "ur": "ٹوائلٹ برش Large",
+    "aliases": "toilet brush, large",
+    "brand": "Toilet Brush",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Toilet Brush XL",
+    "ur": "ٹوائلٹ برش XL",
+    "aliases": "toilet brush, xl",
+    "brand": "Toilet Brush",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Toilet Brush Single",
+    "ur": "ٹوائلٹ برش Single",
+    "aliases": "toilet brush, single",
+    "brand": "Toilet Brush",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Toilet Brush Double",
+    "ur": "ٹوائلٹ برش Double",
+    "aliases": "toilet brush, double",
+    "brand": "Toilet Brush",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Storage Box Small",
+    "ur": "اسٹوریج باکس Small",
+    "aliases": "storage box, small",
+    "brand": "Storage Box",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Storage Box Medium",
+    "ur": "اسٹوریج باکس Medium",
+    "aliases": "storage box, medium",
+    "brand": "Storage Box",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Storage Box Large",
+    "ur": "اسٹوریج باکس Large",
+    "aliases": "storage box, large",
+    "brand": "Storage Box",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Storage Box XL",
+    "ur": "اسٹوریج باکس XL",
+    "aliases": "storage box, xl",
+    "brand": "Storage Box",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Storage Box Single",
+    "ur": "اسٹوریج باکس Single",
+    "aliases": "storage box, single",
+    "brand": "Storage Box",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Storage Box Double",
+    "ur": "اسٹوریج باکس Double",
+    "aliases": "storage box, double",
+    "brand": "Storage Box",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Laundry Basket Small",
+    "ur": "لانڈری باسکٹ Small",
+    "aliases": "laundry basket, small",
+    "brand": "Laundry Basket",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Laundry Basket Medium",
+    "ur": "لانڈری باسکٹ Medium",
+    "aliases": "laundry basket, medium",
+    "brand": "Laundry Basket",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Laundry Basket Large",
+    "ur": "لانڈری باسکٹ Large",
+    "aliases": "laundry basket, large",
+    "brand": "Laundry Basket",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Laundry Basket XL",
+    "ur": "لانڈری باسکٹ XL",
+    "aliases": "laundry basket, xl",
+    "brand": "Laundry Basket",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Laundry Basket Single",
+    "ur": "لانڈری باسکٹ Single",
+    "aliases": "laundry basket, single",
+    "brand": "Laundry Basket",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Laundry Basket Double",
+    "ur": "لانڈری باسکٹ Double",
+    "aliases": "laundry basket, double",
+    "brand": "Laundry Basket",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Basket Small",
+    "ur": "پلاسٹک ٹوکری Small",
+    "aliases": "tokri, small",
+    "brand": "Plastic Basket",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Basket Medium",
+    "ur": "پلاسٹک ٹوکری Medium",
+    "aliases": "tokri, medium",
+    "brand": "Plastic Basket",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Basket Large",
+    "ur": "پلاسٹک ٹوکری Large",
+    "aliases": "tokri, large",
+    "brand": "Plastic Basket",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Basket XL",
+    "ur": "پلاسٹک ٹوکری XL",
+    "aliases": "tokri, xl",
+    "brand": "Plastic Basket",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Basket Single",
+    "ur": "پلاسٹک ٹوکری Single",
+    "aliases": "tokri, single",
+    "brand": "Plastic Basket",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Basket Double",
+    "ur": "پلاسٹک ٹوکری Double",
+    "aliases": "tokri, double",
+    "brand": "Plastic Basket",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustbin Small",
+    "ur": "کچرا دان Small",
+    "aliases": "dustbin, small",
+    "brand": "Dustbin",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustbin Medium",
+    "ur": "کچرا دان Medium",
+    "aliases": "dustbin, medium",
+    "brand": "Dustbin",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustbin Large",
+    "ur": "کچرا دان Large",
+    "aliases": "dustbin, large",
+    "brand": "Dustbin",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustbin XL",
+    "ur": "کچرا دان XL",
+    "aliases": "dustbin, xl",
+    "brand": "Dustbin",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustbin Single",
+    "ur": "کچرا دان Single",
+    "aliases": "dustbin, single",
+    "brand": "Dustbin",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Dustbin Double",
+    "ur": "کچرا دان Double",
+    "aliases": "dustbin, double",
+    "brand": "Dustbin",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Hanger Small",
+    "ur": "کپڑے ہینگر Small",
+    "aliases": "hanger, small",
+    "brand": "Clothes Hanger",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Hanger Medium",
+    "ur": "کپڑے ہینگر Medium",
+    "aliases": "hanger, medium",
+    "brand": "Clothes Hanger",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Hanger Large",
+    "ur": "کپڑے ہینگر Large",
+    "aliases": "hanger, large",
+    "brand": "Clothes Hanger",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Hanger XL",
+    "ur": "کپڑے ہینگر XL",
+    "aliases": "hanger, xl",
+    "brand": "Clothes Hanger",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Hanger Single",
+    "ur": "کپڑے ہینگر Single",
+    "aliases": "hanger, single",
+    "brand": "Clothes Hanger",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Hanger Double",
+    "ur": "کپڑے ہینگر Double",
+    "aliases": "hanger, double",
+    "brand": "Clothes Hanger",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Peg Small",
+    "ur": "کپڑے کلپ Small",
+    "aliases": "clip, small",
+    "brand": "Clothes Peg",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Peg Medium",
+    "ur": "کپڑے کلپ Medium",
+    "aliases": "clip, medium",
+    "brand": "Clothes Peg",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Peg Large",
+    "ur": "کپڑے کلپ Large",
+    "aliases": "clip, large",
+    "brand": "Clothes Peg",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Peg XL",
+    "ur": "کپڑے کلپ XL",
+    "aliases": "clip, xl",
+    "brand": "Clothes Peg",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Peg Single",
+    "ur": "کپڑے کلپ Single",
+    "aliases": "clip, single",
+    "brand": "Clothes Peg",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Clothes Peg Double",
+    "ur": "کپڑے کلپ Double",
+    "aliases": "clip, double",
+    "brand": "Clothes Peg",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Ironing Board Small",
+    "ur": "استری بورڈ Small",
+    "aliases": "istri board, small",
+    "brand": "Ironing Board",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Ironing Board Medium",
+    "ur": "استری بورڈ Medium",
+    "aliases": "istri board, medium",
+    "brand": "Ironing Board",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Ironing Board Large",
+    "ur": "استری بورڈ Large",
+    "aliases": "istri board, large",
+    "brand": "Ironing Board",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Ironing Board XL",
+    "ur": "استری بورڈ XL",
+    "aliases": "istri board, xl",
+    "brand": "Ironing Board",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Ironing Board Single",
+    "ur": "استری بورڈ Single",
+    "aliases": "istri board, single",
+    "brand": "Ironing Board",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Ironing Board Double",
+    "ur": "استری بورڈ Double",
+    "aliases": "istri board, double",
+    "brand": "Ironing Board",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bucket Small",
+    "ur": "بالٹی Small",
+    "aliases": "balti, small",
+    "brand": "Bucket",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bucket Medium",
+    "ur": "بالٹی Medium",
+    "aliases": "balti, medium",
+    "brand": "Bucket",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bucket Large",
+    "ur": "بالٹی Large",
+    "aliases": "balti, large",
+    "brand": "Bucket",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bucket XL",
+    "ur": "بالٹی XL",
+    "aliases": "balti, xl",
+    "brand": "Bucket",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bucket Single",
+    "ur": "بالٹی Single",
+    "aliases": "balti, single",
+    "brand": "Bucket",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bucket Double",
+    "ur": "بالٹی Double",
+    "aliases": "balti, double",
+    "brand": "Bucket",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Mug Small",
+    "ur": "پلاسٹک مگ Small",
+    "aliases": "mug, small",
+    "brand": "Plastic Mug",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Mug Medium",
+    "ur": "پلاسٹک مگ Medium",
+    "aliases": "mug, medium",
+    "brand": "Plastic Mug",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Mug Large",
+    "ur": "پلاسٹک مگ Large",
+    "aliases": "mug, large",
+    "brand": "Plastic Mug",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Mug XL",
+    "ur": "پلاسٹک مگ XL",
+    "aliases": "mug, xl",
+    "brand": "Plastic Mug",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Mug Single",
+    "ur": "پلاسٹک مگ Single",
+    "aliases": "mug, single",
+    "brand": "Plastic Mug",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Plastic Mug Double",
+    "ur": "پلاسٹک مگ Double",
+    "aliases": "mug, double",
+    "brand": "Plastic Mug",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Soap Dish Small",
+    "ur": "صابن دانی Small",
+    "aliases": "sabun dani, small",
+    "brand": "Soap Dish",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Soap Dish Medium",
+    "ur": "صابن دانی Medium",
+    "aliases": "sabun dani, medium",
+    "brand": "Soap Dish",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Soap Dish Large",
+    "ur": "صابن دانی Large",
+    "aliases": "sabun dani, large",
+    "brand": "Soap Dish",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Soap Dish XL",
+    "ur": "صابن دانی XL",
+    "aliases": "sabun dani, xl",
+    "brand": "Soap Dish",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Soap Dish Single",
+    "ur": "صابن دانی Single",
+    "aliases": "sabun dani, single",
+    "brand": "Soap Dish",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Soap Dish Double",
+    "ur": "صابن دانی Double",
+    "aliases": "sabun dani, double",
+    "brand": "Soap Dish",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Thermos Flask Small",
+    "ur": "تھرمس Small",
+    "aliases": "thermos, small",
+    "brand": "Thermos Flask",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Thermos Flask Medium",
+    "ur": "تھرمس Medium",
+    "aliases": "thermos, medium",
+    "brand": "Thermos Flask",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Thermos Flask Large",
+    "ur": "تھرمس Large",
+    "aliases": "thermos, large",
+    "brand": "Thermos Flask",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Thermos Flask XL",
+    "ur": "تھرمس XL",
+    "aliases": "thermos, xl",
+    "brand": "Thermos Flask",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Thermos Flask Single",
+    "ur": "تھرمس Single",
+    "aliases": "thermos, single",
+    "brand": "Thermos Flask",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Thermos Flask Double",
+    "ur": "تھرمس Double",
+    "aliases": "thermos, double",
+    "brand": "Thermos Flask",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Water Bottle Small",
+    "ur": "پانی بوتل Small",
+    "aliases": "pani bottle, small",
+    "brand": "Water Bottle",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Water Bottle Medium",
+    "ur": "پانی بوتل Medium",
+    "aliases": "pani bottle, medium",
+    "brand": "Water Bottle",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Water Bottle Large",
+    "ur": "پانی بوتل Large",
+    "aliases": "pani bottle, large",
+    "brand": "Water Bottle",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Water Bottle XL",
+    "ur": "پانی بوتل XL",
+    "aliases": "pani bottle, xl",
+    "brand": "Water Bottle",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Water Bottle Single",
+    "ur": "پانی بوتل Single",
+    "aliases": "pani bottle, single",
+    "brand": "Water Bottle",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Water Bottle Double",
+    "ur": "پانی بوتل Double",
+    "aliases": "pani bottle, double",
+    "brand": "Water Bottle",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Lunch Box Small",
+    "ur": "لنچ باکس Small",
+    "aliases": "lunch box, small",
+    "brand": "Lunch Box",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Lunch Box Medium",
+    "ur": "لنچ باکس Medium",
+    "aliases": "lunch box, medium",
+    "brand": "Lunch Box",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Lunch Box Large",
+    "ur": "لنچ باکس Large",
+    "aliases": "lunch box, large",
+    "brand": "Lunch Box",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Lunch Box XL",
+    "ur": "لنچ باکس XL",
+    "aliases": "lunch box, xl",
+    "brand": "Lunch Box",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Lunch Box Single",
+    "ur": "لنچ باکس Single",
+    "aliases": "lunch box, single",
+    "brand": "Lunch Box",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Lunch Box Double",
+    "ur": "لنچ باکس Double",
+    "aliases": "lunch box, double",
+    "brand": "Lunch Box",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Shoe Rack Small",
+    "ur": "جوتا ریک Small",
+    "aliases": "shoe rack, small",
+    "brand": "Shoe Rack",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Shoe Rack Medium",
+    "ur": "جوتا ریک Medium",
+    "aliases": "shoe rack, medium",
+    "brand": "Shoe Rack",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Shoe Rack Large",
+    "ur": "جوتا ریک Large",
+    "aliases": "shoe rack, large",
+    "brand": "Shoe Rack",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Shoe Rack XL",
+    "ur": "جوتا ریک XL",
+    "aliases": "shoe rack, xl",
+    "brand": "Shoe Rack",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Shoe Rack Single",
+    "ur": "جوتا ریک Single",
+    "aliases": "shoe rack, single",
+    "brand": "Shoe Rack",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Shoe Rack Double",
+    "ur": "جوتا ریک Double",
+    "aliases": "shoe rack, double",
+    "brand": "Shoe Rack",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Wall Clock Small",
+    "ur": "دیوار گھڑی Small",
+    "aliases": "wall clock, small",
+    "brand": "Wall Clock",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Wall Clock Medium",
+    "ur": "دیوار گھڑی Medium",
+    "aliases": "wall clock, medium",
+    "brand": "Wall Clock",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Wall Clock Large",
+    "ur": "دیوار گھڑی Large",
+    "aliases": "wall clock, large",
+    "brand": "Wall Clock",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Wall Clock XL",
+    "ur": "دیوار گھڑی XL",
+    "aliases": "wall clock, xl",
+    "brand": "Wall Clock",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Wall Clock Single",
+    "ur": "دیوار گھڑی Single",
+    "aliases": "wall clock, single",
+    "brand": "Wall Clock",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Wall Clock Double",
+    "ur": "دیوار گھڑی Double",
+    "aliases": "wall clock, double",
+    "brand": "Wall Clock",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Doormat Small",
+    "ur": "پائیدان Small",
+    "aliases": "paidan, small",
+    "brand": "Doormat",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Doormat Medium",
+    "ur": "پائیدان Medium",
+    "aliases": "paidan, medium",
+    "brand": "Doormat",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Doormat Large",
+    "ur": "پائیدان Large",
+    "aliases": "paidan, large",
+    "brand": "Doormat",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Doormat XL",
+    "ur": "پائیدان XL",
+    "aliases": "paidan, xl",
+    "brand": "Doormat",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Doormat Single",
+    "ur": "پائیدان Single",
+    "aliases": "paidan, single",
+    "brand": "Doormat",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Doormat Double",
+    "ur": "پائیدان Double",
+    "aliases": "paidan, double",
+    "brand": "Doormat",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mosquito Net Small",
+    "ur": "مچھر دانی Small",
+    "aliases": "machar dani, small",
+    "brand": "Mosquito Net",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mosquito Net Medium",
+    "ur": "مچھر دانی Medium",
+    "aliases": "machar dani, medium",
+    "brand": "Mosquito Net",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mosquito Net Large",
+    "ur": "مچھر دانی Large",
+    "aliases": "machar dani, large",
+    "brand": "Mosquito Net",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mosquito Net XL",
+    "ur": "مچھر دانی XL",
+    "aliases": "machar dani, xl",
+    "brand": "Mosquito Net",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mosquito Net Single",
+    "ur": "مچھر دانی Single",
+    "aliases": "machar dani, single",
+    "brand": "Mosquito Net",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Mosquito Net Double",
+    "ur": "مچھر دانی Double",
+    "aliases": "machar dani, double",
+    "brand": "Mosquito Net",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Umbrella Small",
+    "ur": "چھتری Small",
+    "aliases": "chatri, small",
+    "brand": "Umbrella",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Umbrella Medium",
+    "ur": "چھتری Medium",
+    "aliases": "chatri, medium",
+    "brand": "Umbrella",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Umbrella Large",
+    "ur": "چھتری Large",
+    "aliases": "chatri, large",
+    "brand": "Umbrella",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Umbrella XL",
+    "ur": "چھتری XL",
+    "aliases": "chatri, xl",
+    "brand": "Umbrella",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Umbrella Single",
+    "ur": "چھتری Single",
+    "aliases": "chatri, single",
+    "brand": "Umbrella",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Umbrella Double",
+    "ur": "چھتری Double",
+    "aliases": "chatri, double",
+    "brand": "Umbrella",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Torch Small",
+    "ur": "ٹارچ Small",
+    "aliases": "torch, small",
+    "brand": "Torch",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Torch Medium",
+    "ur": "ٹارچ Medium",
+    "aliases": "torch, medium",
+    "brand": "Torch",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Torch Large",
+    "ur": "ٹارچ Large",
+    "aliases": "torch, large",
+    "brand": "Torch",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Torch XL",
+    "ur": "ٹارچ XL",
+    "aliases": "torch, xl",
+    "brand": "Torch",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Torch Single",
+    "ur": "ٹارچ Single",
+    "aliases": "torch, single",
+    "brand": "Torch",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Torch Double",
+    "ur": "ٹارچ Double",
+    "aliases": "torch, double",
+    "brand": "Torch",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bedsheet Small",
+    "ur": "بیڈ شیٹ Small",
+    "aliases": "bed sheet, small",
+    "brand": "Bedsheet",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bedsheet Medium",
+    "ur": "بیڈ شیٹ Medium",
+    "aliases": "bed sheet, medium",
+    "brand": "Bedsheet",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bedsheet Large",
+    "ur": "بیڈ شیٹ Large",
+    "aliases": "bed sheet, large",
+    "brand": "Bedsheet",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bedsheet XL",
+    "ur": "بیڈ شیٹ XL",
+    "aliases": "bed sheet, xl",
+    "brand": "Bedsheet",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bedsheet Single",
+    "ur": "بیڈ شیٹ Single",
+    "aliases": "bed sheet, single",
+    "brand": "Bedsheet",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Bedsheet Double",
+    "ur": "بیڈ شیٹ Double",
+    "aliases": "bed sheet, double",
+    "brand": "Bedsheet",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Pillow Cover Small",
+    "ur": "تکیہ غلاف Small",
+    "aliases": "takiya cover, small",
+    "brand": "Pillow Cover",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Pillow Cover Medium",
+    "ur": "تکیہ غلاف Medium",
+    "aliases": "takiya cover, medium",
+    "brand": "Pillow Cover",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Pillow Cover Large",
+    "ur": "تکیہ غلاف Large",
+    "aliases": "takiya cover, large",
+    "brand": "Pillow Cover",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Pillow Cover XL",
+    "ur": "تکیہ غلاف XL",
+    "aliases": "takiya cover, xl",
+    "brand": "Pillow Cover",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Pillow Cover Single",
+    "ur": "تکیہ غلاف Single",
+    "aliases": "takiya cover, single",
+    "brand": "Pillow Cover",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Pillow Cover Double",
+    "ur": "تکیہ غلاف Double",
+    "aliases": "takiya cover, double",
+    "brand": "Pillow Cover",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Blanket Small",
+    "ur": "کمبل Small",
+    "aliases": "kambal, small",
+    "brand": "Blanket",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Blanket Medium",
+    "ur": "کمبل Medium",
+    "aliases": "kambal, medium",
+    "brand": "Blanket",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Blanket Large",
+    "ur": "کمبل Large",
+    "aliases": "kambal, large",
+    "brand": "Blanket",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Blanket XL",
+    "ur": "کمبل XL",
+    "aliases": "kambal, xl",
+    "brand": "Blanket",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Blanket Single",
+    "ur": "کمبل Single",
+    "aliases": "kambal, single",
+    "brand": "Blanket",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Blanket Double",
+    "ur": "کمبل Double",
+    "aliases": "kambal, double",
+    "brand": "Blanket",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Towel Small",
+    "ur": "تولیہ Small",
+    "aliases": "toliya, small",
+    "brand": "Towel",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Towel Medium",
+    "ur": "تولیہ Medium",
+    "aliases": "toliya, medium",
+    "brand": "Towel",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Towel Large",
+    "ur": "تولیہ Large",
+    "aliases": "toliya, large",
+    "brand": "Towel",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Towel XL",
+    "ur": "تولیہ XL",
+    "aliases": "toliya, xl",
+    "brand": "Towel",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Towel Single",
+    "ur": "تولیہ Single",
+    "aliases": "toliya, single",
+    "brand": "Towel",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Towel Double",
+    "ur": "تولیہ Double",
+    "aliases": "toliya, double",
+    "brand": "Towel",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Curtain Small",
+    "ur": "پردہ Small",
+    "aliases": "parda, small",
+    "brand": "Curtain",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Curtain Medium",
+    "ur": "پردہ Medium",
+    "aliases": "parda, medium",
+    "brand": "Curtain",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Curtain Large",
+    "ur": "پردہ Large",
+    "aliases": "parda, large",
+    "brand": "Curtain",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Curtain XL",
+    "ur": "پردہ XL",
+    "aliases": "parda, xl",
+    "brand": "Curtain",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Curtain Single",
+    "ur": "پردہ Single",
+    "aliases": "parda, single",
+    "brand": "Curtain",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Curtain Double",
+    "ur": "پردہ Double",
+    "aliases": "parda, double",
+    "brand": "Curtain",
+    "variant": "Double",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Food Container Small",
+    "ur": "فوڈ کنٹینر Small",
+    "aliases": "dabba, small",
+    "brand": "Food Container",
+    "variant": "Small",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Food Container Medium",
+    "ur": "فوڈ کنٹینر Medium",
+    "aliases": "dabba, medium",
+    "brand": "Food Container",
+    "variant": "Medium",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Food Container Large",
+    "ur": "فوڈ کنٹینر Large",
+    "aliases": "dabba, large",
+    "brand": "Food Container",
+    "variant": "Large",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Food Container XL",
+    "ur": "فوڈ کنٹینر XL",
+    "aliases": "dabba, xl",
+    "brand": "Food Container",
+    "variant": "XL",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Food Container Single",
+    "ur": "فوڈ کنٹینر Single",
+    "aliases": "dabba, single",
+    "brand": "Food Container",
+    "variant": "Single",
+    "unit": "piece"
+  },
+  {
+    "category": "Home & Household",
+    "subcategory": "Household Goods",
+    "en": "Food Container Double",
+    "ur": "فوڈ کنٹینر Double",
+    "aliases": "dabba, double",
+    "brand": "Food Container",
+    "variant": "Double",
+    "unit": "piece"
+  }
+]
