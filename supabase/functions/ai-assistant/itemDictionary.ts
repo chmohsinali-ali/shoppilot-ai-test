@@ -75,6 +75,7 @@ import generatorMotorRows from "./generatorMotorItemDictionary.json" with { type
 import pumpMachineryRows from "./pumpMachineryItemDictionary.json" with { type: "json" };
 import upsBatteryRows from "./upsBatteryItemDictionary.json" with { type: "json" };
 import timberRows from "./timberItemDictionary.json" with { type: "json" };
+import paintRows from "./paintItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -145,6 +146,7 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "pump-machinery", rows: pumpMachineryRows as ItemRow[] },
   { source: "ups-battery", rows: upsBatteryRows as ItemRow[] },
   { source: "timber", rows: timberRows as ItemRow[] },
+  { source: "paint", rows: paintRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES
