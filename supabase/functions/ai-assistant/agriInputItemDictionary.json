@@ -4,10 +4,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 10g",
     "ur": "گندم بیج 10g",
-    "aliases": [
-      "gandum beej",
-      "10g"
-    ],
+    "aliases": "gandum beej, 10g",
     "brand": "Wheat Seed",
     "variant": "10g",
     "unit": "pack"
@@ -17,10 +14,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 25g",
     "ur": "گندم بیج 25g",
-    "aliases": [
-      "gandum beej",
-      "25g"
-    ],
+    "aliases": "gandum beej, 25g",
     "brand": "Wheat Seed",
     "variant": "25g",
     "unit": "pack"
@@ -30,10 +24,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 50g",
     "ur": "گندم بیج 50g",
-    "aliases": [
-      "gandum beej",
-      "50g"
-    ],
+    "aliases": "gandum beej, 50g",
     "brand": "Wheat Seed",
     "variant": "50g",
     "unit": "pack"
@@ -43,10 +34,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 100g",
     "ur": "گندم بیج 100g",
-    "aliases": [
-      "gandum beej",
-      "100g"
-    ],
+    "aliases": "gandum beej, 100g",
     "brand": "Wheat Seed",
     "variant": "100g",
     "unit": "pack"
@@ -56,10 +44,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 250g",
     "ur": "گندم بیج 250g",
-    "aliases": [
-      "gandum beej",
-      "250g"
-    ],
+    "aliases": "gandum beej, 250g",
     "brand": "Wheat Seed",
     "variant": "250g",
     "unit": "pack"
@@ -69,10 +54,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 500g",
     "ur": "گندم بیج 500g",
-    "aliases": [
-      "gandum beej",
-      "500g"
-    ],
+    "aliases": "gandum beej, 500g",
     "brand": "Wheat Seed",
     "variant": "500g",
     "unit": "pack"
@@ -82,10 +64,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 1kg",
     "ur": "گندم بیج 1kg",
-    "aliases": [
-      "gandum beej",
-      "1kg"
-    ],
+    "aliases": "gandum beej, 1kg",
     "brand": "Wheat Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -95,10 +74,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 5kg",
     "ur": "گندم بیج 5kg",
-    "aliases": [
-      "gandum beej",
-      "5kg"
-    ],
+    "aliases": "gandum beej, 5kg",
     "brand": "Wheat Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -108,10 +84,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 10kg",
     "ur": "گندم بیج 10kg",
-    "aliases": [
-      "gandum beej",
-      "10kg"
-    ],
+    "aliases": "gandum beej, 10kg",
     "brand": "Wheat Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -121,10 +94,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Wheat Seed 25kg",
     "ur": "گندم بیج 25kg",
-    "aliases": [
-      "gandum beej",
-      "25kg"
-    ],
+    "aliases": "gandum beej, 25kg",
     "brand": "Wheat Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -134,10 +104,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 10g",
     "ur": "چاول بیج 10g",
-    "aliases": [
-      "chawal beej",
-      "10g"
-    ],
+    "aliases": "chawal beej, 10g",
     "brand": "Rice Seed",
     "variant": "10g",
     "unit": "pack"
@@ -147,10 +114,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 25g",
     "ur": "چاول بیج 25g",
-    "aliases": [
-      "chawal beej",
-      "25g"
-    ],
+    "aliases": "chawal beej, 25g",
     "brand": "Rice Seed",
     "variant": "25g",
     "unit": "pack"
@@ -160,10 +124,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 50g",
     "ur": "چاول بیج 50g",
-    "aliases": [
-      "chawal beej",
-      "50g"
-    ],
+    "aliases": "chawal beej, 50g",
     "brand": "Rice Seed",
     "variant": "50g",
     "unit": "pack"
@@ -173,10 +134,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 100g",
     "ur": "چاول بیج 100g",
-    "aliases": [
-      "chawal beej",
-      "100g"
-    ],
+    "aliases": "chawal beej, 100g",
     "brand": "Rice Seed",
     "variant": "100g",
     "unit": "pack"
@@ -186,10 +144,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 250g",
     "ur": "چاول بیج 250g",
-    "aliases": [
-      "chawal beej",
-      "250g"
-    ],
+    "aliases": "chawal beej, 250g",
     "brand": "Rice Seed",
     "variant": "250g",
     "unit": "pack"
@@ -199,10 +154,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 500g",
     "ur": "چاول بیج 500g",
-    "aliases": [
-      "chawal beej",
-      "500g"
-    ],
+    "aliases": "chawal beej, 500g",
     "brand": "Rice Seed",
     "variant": "500g",
     "unit": "pack"
@@ -212,10 +164,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 1kg",
     "ur": "چاول بیج 1kg",
-    "aliases": [
-      "chawal beej",
-      "1kg"
-    ],
+    "aliases": "chawal beej, 1kg",
     "brand": "Rice Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -225,10 +174,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 5kg",
     "ur": "چاول بیج 5kg",
-    "aliases": [
-      "chawal beej",
-      "5kg"
-    ],
+    "aliases": "chawal beej, 5kg",
     "brand": "Rice Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -238,10 +184,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 10kg",
     "ur": "چاول بیج 10kg",
-    "aliases": [
-      "chawal beej",
-      "10kg"
-    ],
+    "aliases": "chawal beej, 10kg",
     "brand": "Rice Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -251,10 +194,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Rice Seed 25kg",
     "ur": "چاول بیج 25kg",
-    "aliases": [
-      "chawal beej",
-      "25kg"
-    ],
+    "aliases": "chawal beej, 25kg",
     "brand": "Rice Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -264,10 +204,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 10g",
     "ur": "مکئی بیج 10g",
-    "aliases": [
-      "makai beej",
-      "10g"
-    ],
+    "aliases": "makai beej, 10g",
     "brand": "Maize Seed",
     "variant": "10g",
     "unit": "pack"
@@ -277,10 +214,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 25g",
     "ur": "مکئی بیج 25g",
-    "aliases": [
-      "makai beej",
-      "25g"
-    ],
+    "aliases": "makai beej, 25g",
     "brand": "Maize Seed",
     "variant": "25g",
     "unit": "pack"
@@ -290,10 +224,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 50g",
     "ur": "مکئی بیج 50g",
-    "aliases": [
-      "makai beej",
-      "50g"
-    ],
+    "aliases": "makai beej, 50g",
     "brand": "Maize Seed",
     "variant": "50g",
     "unit": "pack"
@@ -303,10 +234,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 100g",
     "ur": "مکئی بیج 100g",
-    "aliases": [
-      "makai beej",
-      "100g"
-    ],
+    "aliases": "makai beej, 100g",
     "brand": "Maize Seed",
     "variant": "100g",
     "unit": "pack"
@@ -316,10 +244,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 250g",
     "ur": "مکئی بیج 250g",
-    "aliases": [
-      "makai beej",
-      "250g"
-    ],
+    "aliases": "makai beej, 250g",
     "brand": "Maize Seed",
     "variant": "250g",
     "unit": "pack"
@@ -329,10 +254,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 500g",
     "ur": "مکئی بیج 500g",
-    "aliases": [
-      "makai beej",
-      "500g"
-    ],
+    "aliases": "makai beej, 500g",
     "brand": "Maize Seed",
     "variant": "500g",
     "unit": "pack"
@@ -342,10 +264,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 1kg",
     "ur": "مکئی بیج 1kg",
-    "aliases": [
-      "makai beej",
-      "1kg"
-    ],
+    "aliases": "makai beej, 1kg",
     "brand": "Maize Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -355,10 +274,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 5kg",
     "ur": "مکئی بیج 5kg",
-    "aliases": [
-      "makai beej",
-      "5kg"
-    ],
+    "aliases": "makai beej, 5kg",
     "brand": "Maize Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -368,10 +284,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 10kg",
     "ur": "مکئی بیج 10kg",
-    "aliases": [
-      "makai beej",
-      "10kg"
-    ],
+    "aliases": "makai beej, 10kg",
     "brand": "Maize Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -381,10 +294,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Maize Seed 25kg",
     "ur": "مکئی بیج 25kg",
-    "aliases": [
-      "makai beej",
-      "25kg"
-    ],
+    "aliases": "makai beej, 25kg",
     "brand": "Maize Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -394,10 +304,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 10g",
     "ur": "کپاس بیج 10g",
-    "aliases": [
-      "kapas beej",
-      "10g"
-    ],
+    "aliases": "kapas beej, 10g",
     "brand": "Cotton Seed",
     "variant": "10g",
     "unit": "pack"
@@ -407,10 +314,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 25g",
     "ur": "کپاس بیج 25g",
-    "aliases": [
-      "kapas beej",
-      "25g"
-    ],
+    "aliases": "kapas beej, 25g",
     "brand": "Cotton Seed",
     "variant": "25g",
     "unit": "pack"
@@ -420,10 +324,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 50g",
     "ur": "کپاس بیج 50g",
-    "aliases": [
-      "kapas beej",
-      "50g"
-    ],
+    "aliases": "kapas beej, 50g",
     "brand": "Cotton Seed",
     "variant": "50g",
     "unit": "pack"
@@ -433,10 +334,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 100g",
     "ur": "کپاس بیج 100g",
-    "aliases": [
-      "kapas beej",
-      "100g"
-    ],
+    "aliases": "kapas beej, 100g",
     "brand": "Cotton Seed",
     "variant": "100g",
     "unit": "pack"
@@ -446,10 +344,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 250g",
     "ur": "کپاس بیج 250g",
-    "aliases": [
-      "kapas beej",
-      "250g"
-    ],
+    "aliases": "kapas beej, 250g",
     "brand": "Cotton Seed",
     "variant": "250g",
     "unit": "pack"
@@ -459,10 +354,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 500g",
     "ur": "کپاس بیج 500g",
-    "aliases": [
-      "kapas beej",
-      "500g"
-    ],
+    "aliases": "kapas beej, 500g",
     "brand": "Cotton Seed",
     "variant": "500g",
     "unit": "pack"
@@ -472,10 +364,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 1kg",
     "ur": "کپاس بیج 1kg",
-    "aliases": [
-      "kapas beej",
-      "1kg"
-    ],
+    "aliases": "kapas beej, 1kg",
     "brand": "Cotton Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -485,10 +374,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 5kg",
     "ur": "کپاس بیج 5kg",
-    "aliases": [
-      "kapas beej",
-      "5kg"
-    ],
+    "aliases": "kapas beej, 5kg",
     "brand": "Cotton Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -498,10 +384,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 10kg",
     "ur": "کپاس بیج 10kg",
-    "aliases": [
-      "kapas beej",
-      "10kg"
-    ],
+    "aliases": "kapas beej, 10kg",
     "brand": "Cotton Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -511,10 +394,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cotton Seed 25kg",
     "ur": "کپاس بیج 25kg",
-    "aliases": [
-      "kapas beej",
-      "25kg"
-    ],
+    "aliases": "kapas beej, 25kg",
     "brand": "Cotton Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -524,10 +404,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 10g",
     "ur": "گنا بیج 10g",
-    "aliases": [
-      "ganna beej",
-      "10g"
-    ],
+    "aliases": "ganna beej, 10g",
     "brand": "Sugarcane Seed",
     "variant": "10g",
     "unit": "pack"
@@ -537,10 +414,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 25g",
     "ur": "گنا بیج 25g",
-    "aliases": [
-      "ganna beej",
-      "25g"
-    ],
+    "aliases": "ganna beej, 25g",
     "brand": "Sugarcane Seed",
     "variant": "25g",
     "unit": "pack"
@@ -550,10 +424,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 50g",
     "ur": "گنا بیج 50g",
-    "aliases": [
-      "ganna beej",
-      "50g"
-    ],
+    "aliases": "ganna beej, 50g",
     "brand": "Sugarcane Seed",
     "variant": "50g",
     "unit": "pack"
@@ -563,10 +434,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 100g",
     "ur": "گنا بیج 100g",
-    "aliases": [
-      "ganna beej",
-      "100g"
-    ],
+    "aliases": "ganna beej, 100g",
     "brand": "Sugarcane Seed",
     "variant": "100g",
     "unit": "pack"
@@ -576,10 +444,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 250g",
     "ur": "گنا بیج 250g",
-    "aliases": [
-      "ganna beej",
-      "250g"
-    ],
+    "aliases": "ganna beej, 250g",
     "brand": "Sugarcane Seed",
     "variant": "250g",
     "unit": "pack"
@@ -589,10 +454,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 500g",
     "ur": "گنا بیج 500g",
-    "aliases": [
-      "ganna beej",
-      "500g"
-    ],
+    "aliases": "ganna beej, 500g",
     "brand": "Sugarcane Seed",
     "variant": "500g",
     "unit": "pack"
@@ -602,10 +464,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 1kg",
     "ur": "گنا بیج 1kg",
-    "aliases": [
-      "ganna beej",
-      "1kg"
-    ],
+    "aliases": "ganna beej, 1kg",
     "brand": "Sugarcane Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -615,10 +474,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 5kg",
     "ur": "گنا بیج 5kg",
-    "aliases": [
-      "ganna beej",
-      "5kg"
-    ],
+    "aliases": "ganna beej, 5kg",
     "brand": "Sugarcane Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -628,10 +484,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 10kg",
     "ur": "گنا بیج 10kg",
-    "aliases": [
-      "ganna beej",
-      "10kg"
-    ],
+    "aliases": "ganna beej, 10kg",
     "brand": "Sugarcane Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -641,10 +494,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sugarcane Seed 25kg",
     "ur": "گنا بیج 25kg",
-    "aliases": [
-      "ganna beej",
-      "25kg"
-    ],
+    "aliases": "ganna beej, 25kg",
     "brand": "Sugarcane Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -654,10 +504,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 10g",
     "ur": "سورج مکھی بیج 10g",
-    "aliases": [
-      "suraj mukhi",
-      "10g"
-    ],
+    "aliases": "suraj mukhi, 10g",
     "brand": "Sunflower Seed",
     "variant": "10g",
     "unit": "pack"
@@ -667,10 +514,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 25g",
     "ur": "سورج مکھی بیج 25g",
-    "aliases": [
-      "suraj mukhi",
-      "25g"
-    ],
+    "aliases": "suraj mukhi, 25g",
     "brand": "Sunflower Seed",
     "variant": "25g",
     "unit": "pack"
@@ -680,10 +524,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 50g",
     "ur": "سورج مکھی بیج 50g",
-    "aliases": [
-      "suraj mukhi",
-      "50g"
-    ],
+    "aliases": "suraj mukhi, 50g",
     "brand": "Sunflower Seed",
     "variant": "50g",
     "unit": "pack"
@@ -693,10 +534,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 100g",
     "ur": "سورج مکھی بیج 100g",
-    "aliases": [
-      "suraj mukhi",
-      "100g"
-    ],
+    "aliases": "suraj mukhi, 100g",
     "brand": "Sunflower Seed",
     "variant": "100g",
     "unit": "pack"
@@ -706,10 +544,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 250g",
     "ur": "سورج مکھی بیج 250g",
-    "aliases": [
-      "suraj mukhi",
-      "250g"
-    ],
+    "aliases": "suraj mukhi, 250g",
     "brand": "Sunflower Seed",
     "variant": "250g",
     "unit": "pack"
@@ -719,10 +554,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 500g",
     "ur": "سورج مکھی بیج 500g",
-    "aliases": [
-      "suraj mukhi",
-      "500g"
-    ],
+    "aliases": "suraj mukhi, 500g",
     "brand": "Sunflower Seed",
     "variant": "500g",
     "unit": "pack"
@@ -732,10 +564,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 1kg",
     "ur": "سورج مکھی بیج 1kg",
-    "aliases": [
-      "suraj mukhi",
-      "1kg"
-    ],
+    "aliases": "suraj mukhi, 1kg",
     "brand": "Sunflower Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -745,10 +574,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 5kg",
     "ur": "سورج مکھی بیج 5kg",
-    "aliases": [
-      "suraj mukhi",
-      "5kg"
-    ],
+    "aliases": "suraj mukhi, 5kg",
     "brand": "Sunflower Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -758,10 +584,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 10kg",
     "ur": "سورج مکھی بیج 10kg",
-    "aliases": [
-      "suraj mukhi",
-      "10kg"
-    ],
+    "aliases": "suraj mukhi, 10kg",
     "brand": "Sunflower Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -771,10 +594,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sunflower Seed 25kg",
     "ur": "سورج مکھی بیج 25kg",
-    "aliases": [
-      "suraj mukhi",
-      "25kg"
-    ],
+    "aliases": "suraj mukhi, 25kg",
     "brand": "Sunflower Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -784,10 +604,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 10g",
     "ur": "کینولا بیج 10g",
-    "aliases": [
-      "canola",
-      "10g"
-    ],
+    "aliases": "canola, 10g",
     "brand": "Canola Seed",
     "variant": "10g",
     "unit": "pack"
@@ -797,10 +614,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 25g",
     "ur": "کینولا بیج 25g",
-    "aliases": [
-      "canola",
-      "25g"
-    ],
+    "aliases": "canola, 25g",
     "brand": "Canola Seed",
     "variant": "25g",
     "unit": "pack"
@@ -810,10 +624,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 50g",
     "ur": "کینولا بیج 50g",
-    "aliases": [
-      "canola",
-      "50g"
-    ],
+    "aliases": "canola, 50g",
     "brand": "Canola Seed",
     "variant": "50g",
     "unit": "pack"
@@ -823,10 +634,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 100g",
     "ur": "کینولا بیج 100g",
-    "aliases": [
-      "canola",
-      "100g"
-    ],
+    "aliases": "canola, 100g",
     "brand": "Canola Seed",
     "variant": "100g",
     "unit": "pack"
@@ -836,10 +644,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 250g",
     "ur": "کینولا بیج 250g",
-    "aliases": [
-      "canola",
-      "250g"
-    ],
+    "aliases": "canola, 250g",
     "brand": "Canola Seed",
     "variant": "250g",
     "unit": "pack"
@@ -849,10 +654,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 500g",
     "ur": "کینولا بیج 500g",
-    "aliases": [
-      "canola",
-      "500g"
-    ],
+    "aliases": "canola, 500g",
     "brand": "Canola Seed",
     "variant": "500g",
     "unit": "pack"
@@ -862,10 +664,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 1kg",
     "ur": "کینولا بیج 1kg",
-    "aliases": [
-      "canola",
-      "1kg"
-    ],
+    "aliases": "canola, 1kg",
     "brand": "Canola Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -875,10 +674,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 5kg",
     "ur": "کینولا بیج 5kg",
-    "aliases": [
-      "canola",
-      "5kg"
-    ],
+    "aliases": "canola, 5kg",
     "brand": "Canola Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -888,10 +684,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 10kg",
     "ur": "کینولا بیج 10kg",
-    "aliases": [
-      "canola",
-      "10kg"
-    ],
+    "aliases": "canola, 10kg",
     "brand": "Canola Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -901,10 +694,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Canola Seed 25kg",
     "ur": "کینولا بیج 25kg",
-    "aliases": [
-      "canola",
-      "25kg"
-    ],
+    "aliases": "canola, 25kg",
     "brand": "Canola Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -914,10 +704,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 10g",
     "ur": "سرسوں بیج 10g",
-    "aliases": [
-      "sarson",
-      "10g"
-    ],
+    "aliases": "sarson, 10g",
     "brand": "Mustard Seed",
     "variant": "10g",
     "unit": "pack"
@@ -927,10 +714,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 25g",
     "ur": "سرسوں بیج 25g",
-    "aliases": [
-      "sarson",
-      "25g"
-    ],
+    "aliases": "sarson, 25g",
     "brand": "Mustard Seed",
     "variant": "25g",
     "unit": "pack"
@@ -940,10 +724,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 50g",
     "ur": "سرسوں بیج 50g",
-    "aliases": [
-      "sarson",
-      "50g"
-    ],
+    "aliases": "sarson, 50g",
     "brand": "Mustard Seed",
     "variant": "50g",
     "unit": "pack"
@@ -953,10 +734,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 100g",
     "ur": "سرسوں بیج 100g",
-    "aliases": [
-      "sarson",
-      "100g"
-    ],
+    "aliases": "sarson, 100g",
     "brand": "Mustard Seed",
     "variant": "100g",
     "unit": "pack"
@@ -966,10 +744,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 250g",
     "ur": "سرسوں بیج 250g",
-    "aliases": [
-      "sarson",
-      "250g"
-    ],
+    "aliases": "sarson, 250g",
     "brand": "Mustard Seed",
     "variant": "250g",
     "unit": "pack"
@@ -979,10 +754,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 500g",
     "ur": "سرسوں بیج 500g",
-    "aliases": [
-      "sarson",
-      "500g"
-    ],
+    "aliases": "sarson, 500g",
     "brand": "Mustard Seed",
     "variant": "500g",
     "unit": "pack"
@@ -992,10 +764,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 1kg",
     "ur": "سرسوں بیج 1kg",
-    "aliases": [
-      "sarson",
-      "1kg"
-    ],
+    "aliases": "sarson, 1kg",
     "brand": "Mustard Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1005,10 +774,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 5kg",
     "ur": "سرسوں بیج 5kg",
-    "aliases": [
-      "sarson",
-      "5kg"
-    ],
+    "aliases": "sarson, 5kg",
     "brand": "Mustard Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1018,10 +784,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 10kg",
     "ur": "سرسوں بیج 10kg",
-    "aliases": [
-      "sarson",
-      "10kg"
-    ],
+    "aliases": "sarson, 10kg",
     "brand": "Mustard Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1031,10 +794,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mustard Seed 25kg",
     "ur": "سرسوں بیج 25kg",
-    "aliases": [
-      "sarson",
-      "25kg"
-    ],
+    "aliases": "sarson, 25kg",
     "brand": "Mustard Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1044,10 +804,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 10g",
     "ur": "برسیم بیج 10g",
-    "aliases": [
-      "berseem",
-      "10g"
-    ],
+    "aliases": "berseem, 10g",
     "brand": "Berseem Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1057,10 +814,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 25g",
     "ur": "برسیم بیج 25g",
-    "aliases": [
-      "berseem",
-      "25g"
-    ],
+    "aliases": "berseem, 25g",
     "brand": "Berseem Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1070,10 +824,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 50g",
     "ur": "برسیم بیج 50g",
-    "aliases": [
-      "berseem",
-      "50g"
-    ],
+    "aliases": "berseem, 50g",
     "brand": "Berseem Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1083,10 +834,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 100g",
     "ur": "برسیم بیج 100g",
-    "aliases": [
-      "berseem",
-      "100g"
-    ],
+    "aliases": "berseem, 100g",
     "brand": "Berseem Seed",
     "variant": "100g",
     "unit": "pack"
@@ -1096,10 +844,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 250g",
     "ur": "برسیم بیج 250g",
-    "aliases": [
-      "berseem",
-      "250g"
-    ],
+    "aliases": "berseem, 250g",
     "brand": "Berseem Seed",
     "variant": "250g",
     "unit": "pack"
@@ -1109,10 +854,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 500g",
     "ur": "برسیم بیج 500g",
-    "aliases": [
-      "berseem",
-      "500g"
-    ],
+    "aliases": "berseem, 500g",
     "brand": "Berseem Seed",
     "variant": "500g",
     "unit": "pack"
@@ -1122,10 +864,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 1kg",
     "ur": "برسیم بیج 1kg",
-    "aliases": [
-      "berseem",
-      "1kg"
-    ],
+    "aliases": "berseem, 1kg",
     "brand": "Berseem Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1135,10 +874,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 5kg",
     "ur": "برسیم بیج 5kg",
-    "aliases": [
-      "berseem",
-      "5kg"
-    ],
+    "aliases": "berseem, 5kg",
     "brand": "Berseem Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1148,10 +884,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 10kg",
     "ur": "برسیم بیج 10kg",
-    "aliases": [
-      "berseem",
-      "10kg"
-    ],
+    "aliases": "berseem, 10kg",
     "brand": "Berseem Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1161,10 +894,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Berseem Seed 25kg",
     "ur": "برسیم بیج 25kg",
-    "aliases": [
-      "berseem",
-      "25kg"
-    ],
+    "aliases": "berseem, 25kg",
     "brand": "Berseem Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1174,10 +904,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 10g",
     "ur": "لوسرن بیج 10g",
-    "aliases": [
-      "lucerne",
-      "10g"
-    ],
+    "aliases": "lucerne, 10g",
     "brand": "Lucerne Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1187,10 +914,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 25g",
     "ur": "لوسرن بیج 25g",
-    "aliases": [
-      "lucerne",
-      "25g"
-    ],
+    "aliases": "lucerne, 25g",
     "brand": "Lucerne Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1200,10 +924,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 50g",
     "ur": "لوسرن بیج 50g",
-    "aliases": [
-      "lucerne",
-      "50g"
-    ],
+    "aliases": "lucerne, 50g",
     "brand": "Lucerne Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1213,10 +934,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 100g",
     "ur": "لوسرن بیج 100g",
-    "aliases": [
-      "lucerne",
-      "100g"
-    ],
+    "aliases": "lucerne, 100g",
     "brand": "Lucerne Seed",
     "variant": "100g",
     "unit": "pack"
@@ -1226,10 +944,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 250g",
     "ur": "لوسرن بیج 250g",
-    "aliases": [
-      "lucerne",
-      "250g"
-    ],
+    "aliases": "lucerne, 250g",
     "brand": "Lucerne Seed",
     "variant": "250g",
     "unit": "pack"
@@ -1239,10 +954,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 500g",
     "ur": "لوسرن بیج 500g",
-    "aliases": [
-      "lucerne",
-      "500g"
-    ],
+    "aliases": "lucerne, 500g",
     "brand": "Lucerne Seed",
     "variant": "500g",
     "unit": "pack"
@@ -1252,10 +964,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 1kg",
     "ur": "لوسرن بیج 1kg",
-    "aliases": [
-      "lucerne",
-      "1kg"
-    ],
+    "aliases": "lucerne, 1kg",
     "brand": "Lucerne Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1265,10 +974,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 5kg",
     "ur": "لوسرن بیج 5kg",
-    "aliases": [
-      "lucerne",
-      "5kg"
-    ],
+    "aliases": "lucerne, 5kg",
     "brand": "Lucerne Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1278,10 +984,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 10kg",
     "ur": "لوسرن بیج 10kg",
-    "aliases": [
-      "lucerne",
-      "10kg"
-    ],
+    "aliases": "lucerne, 10kg",
     "brand": "Lucerne Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1291,10 +994,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lucerne Seed 25kg",
     "ur": "لوسرن بیج 25kg",
-    "aliases": [
-      "lucerne",
-      "25kg"
-    ],
+    "aliases": "lucerne, 25kg",
     "brand": "Lucerne Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1304,10 +1004,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 10g",
     "ur": "جوار بیج 10g",
-    "aliases": [
-      "jowar",
-      "10g"
-    ],
+    "aliases": "jowar, 10g",
     "brand": "Sorghum Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1317,10 +1014,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 25g",
     "ur": "جوار بیج 25g",
-    "aliases": [
-      "jowar",
-      "25g"
-    ],
+    "aliases": "jowar, 25g",
     "brand": "Sorghum Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1330,10 +1024,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 50g",
     "ur": "جوار بیج 50g",
-    "aliases": [
-      "jowar",
-      "50g"
-    ],
+    "aliases": "jowar, 50g",
     "brand": "Sorghum Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1343,10 +1034,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 100g",
     "ur": "جوار بیج 100g",
-    "aliases": [
-      "jowar",
-      "100g"
-    ],
+    "aliases": "jowar, 100g",
     "brand": "Sorghum Seed",
     "variant": "100g",
     "unit": "pack"
@@ -1356,10 +1044,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 250g",
     "ur": "جوار بیج 250g",
-    "aliases": [
-      "jowar",
-      "250g"
-    ],
+    "aliases": "jowar, 250g",
     "brand": "Sorghum Seed",
     "variant": "250g",
     "unit": "pack"
@@ -1369,10 +1054,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 500g",
     "ur": "جوار بیج 500g",
-    "aliases": [
-      "jowar",
-      "500g"
-    ],
+    "aliases": "jowar, 500g",
     "brand": "Sorghum Seed",
     "variant": "500g",
     "unit": "pack"
@@ -1382,10 +1064,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 1kg",
     "ur": "جوار بیج 1kg",
-    "aliases": [
-      "jowar",
-      "1kg"
-    ],
+    "aliases": "jowar, 1kg",
     "brand": "Sorghum Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1395,10 +1074,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 5kg",
     "ur": "جوار بیج 5kg",
-    "aliases": [
-      "jowar",
-      "5kg"
-    ],
+    "aliases": "jowar, 5kg",
     "brand": "Sorghum Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1408,10 +1084,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 10kg",
     "ur": "جوار بیج 10kg",
-    "aliases": [
-      "jowar",
-      "10kg"
-    ],
+    "aliases": "jowar, 10kg",
     "brand": "Sorghum Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1421,10 +1094,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Sorghum Seed 25kg",
     "ur": "جوار بیج 25kg",
-    "aliases": [
-      "jowar",
-      "25kg"
-    ],
+    "aliases": "jowar, 25kg",
     "brand": "Sorghum Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1434,10 +1104,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 10g",
     "ur": "باجرہ بیج 10g",
-    "aliases": [
-      "bajra",
-      "10g"
-    ],
+    "aliases": "bajra, 10g",
     "brand": "Millet Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1447,10 +1114,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 25g",
     "ur": "باجرہ بیج 25g",
-    "aliases": [
-      "bajra",
-      "25g"
-    ],
+    "aliases": "bajra, 25g",
     "brand": "Millet Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1460,10 +1124,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 50g",
     "ur": "باجرہ بیج 50g",
-    "aliases": [
-      "bajra",
-      "50g"
-    ],
+    "aliases": "bajra, 50g",
     "brand": "Millet Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1473,10 +1134,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 100g",
     "ur": "باجرہ بیج 100g",
-    "aliases": [
-      "bajra",
-      "100g"
-    ],
+    "aliases": "bajra, 100g",
     "brand": "Millet Seed",
     "variant": "100g",
     "unit": "pack"
@@ -1486,10 +1144,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 250g",
     "ur": "باجرہ بیج 250g",
-    "aliases": [
-      "bajra",
-      "250g"
-    ],
+    "aliases": "bajra, 250g",
     "brand": "Millet Seed",
     "variant": "250g",
     "unit": "pack"
@@ -1499,10 +1154,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 500g",
     "ur": "باجرہ بیج 500g",
-    "aliases": [
-      "bajra",
-      "500g"
-    ],
+    "aliases": "bajra, 500g",
     "brand": "Millet Seed",
     "variant": "500g",
     "unit": "pack"
@@ -1512,10 +1164,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 1kg",
     "ur": "باجرہ بیج 1kg",
-    "aliases": [
-      "bajra",
-      "1kg"
-    ],
+    "aliases": "bajra, 1kg",
     "brand": "Millet Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1525,10 +1174,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 5kg",
     "ur": "باجرہ بیج 5kg",
-    "aliases": [
-      "bajra",
-      "5kg"
-    ],
+    "aliases": "bajra, 5kg",
     "brand": "Millet Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1538,10 +1184,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 10kg",
     "ur": "باجرہ بیج 10kg",
-    "aliases": [
-      "bajra",
-      "10kg"
-    ],
+    "aliases": "bajra, 10kg",
     "brand": "Millet Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1551,10 +1194,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Millet Seed 25kg",
     "ur": "باجرہ بیج 25kg",
-    "aliases": [
-      "bajra",
-      "25kg"
-    ],
+    "aliases": "bajra, 25kg",
     "brand": "Millet Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1564,10 +1204,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 10g",
     "ur": "چنا بیج 10g",
-    "aliases": [
-      "chana beej",
-      "10g"
-    ],
+    "aliases": "chana beej, 10g",
     "brand": "Chickpea Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1577,10 +1214,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 25g",
     "ur": "چنا بیج 25g",
-    "aliases": [
-      "chana beej",
-      "25g"
-    ],
+    "aliases": "chana beej, 25g",
     "brand": "Chickpea Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1590,10 +1224,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 50g",
     "ur": "چنا بیج 50g",
-    "aliases": [
-      "chana beej",
-      "50g"
-    ],
+    "aliases": "chana beej, 50g",
     "brand": "Chickpea Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1603,10 +1234,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 100g",
     "ur": "چنا بیج 100g",
-    "aliases": [
-      "chana beej",
-      "100g"
-    ],
+    "aliases": "chana beej, 100g",
     "brand": "Chickpea Seed",
     "variant": "100g",
     "unit": "pack"
@@ -1616,10 +1244,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 250g",
     "ur": "چنا بیج 250g",
-    "aliases": [
-      "chana beej",
-      "250g"
-    ],
+    "aliases": "chana beej, 250g",
     "brand": "Chickpea Seed",
     "variant": "250g",
     "unit": "pack"
@@ -1629,10 +1254,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 500g",
     "ur": "چنا بیج 500g",
-    "aliases": [
-      "chana beej",
-      "500g"
-    ],
+    "aliases": "chana beej, 500g",
     "brand": "Chickpea Seed",
     "variant": "500g",
     "unit": "pack"
@@ -1642,10 +1264,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 1kg",
     "ur": "چنا بیج 1kg",
-    "aliases": [
-      "chana beej",
-      "1kg"
-    ],
+    "aliases": "chana beej, 1kg",
     "brand": "Chickpea Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1655,10 +1274,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 5kg",
     "ur": "چنا بیج 5kg",
-    "aliases": [
-      "chana beej",
-      "5kg"
-    ],
+    "aliases": "chana beej, 5kg",
     "brand": "Chickpea Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1668,10 +1284,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 10kg",
     "ur": "چنا بیج 10kg",
-    "aliases": [
-      "chana beej",
-      "10kg"
-    ],
+    "aliases": "chana beej, 10kg",
     "brand": "Chickpea Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1681,10 +1294,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chickpea Seed 25kg",
     "ur": "چنا بیج 25kg",
-    "aliases": [
-      "chana beej",
-      "25kg"
-    ],
+    "aliases": "chana beej, 25kg",
     "brand": "Chickpea Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1694,10 +1304,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 10g",
     "ur": "مسور بیج 10g",
-    "aliases": [
-      "masoor beej",
-      "10g"
-    ],
+    "aliases": "masoor beej, 10g",
     "brand": "Lentil Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1707,10 +1314,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 25g",
     "ur": "مسور بیج 25g",
-    "aliases": [
-      "masoor beej",
-      "25g"
-    ],
+    "aliases": "masoor beej, 25g",
     "brand": "Lentil Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1720,10 +1324,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 50g",
     "ur": "مسور بیج 50g",
-    "aliases": [
-      "masoor beej",
-      "50g"
-    ],
+    "aliases": "masoor beej, 50g",
     "brand": "Lentil Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1733,10 +1334,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 100g",
     "ur": "مسور بیج 100g",
-    "aliases": [
-      "masoor beej",
-      "100g"
-    ],
+    "aliases": "masoor beej, 100g",
     "brand": "Lentil Seed",
     "variant": "100g",
     "unit": "pack"
@@ -1746,10 +1344,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 250g",
     "ur": "مسور بیج 250g",
-    "aliases": [
-      "masoor beej",
-      "250g"
-    ],
+    "aliases": "masoor beej, 250g",
     "brand": "Lentil Seed",
     "variant": "250g",
     "unit": "pack"
@@ -1759,10 +1354,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 500g",
     "ur": "مسور بیج 500g",
-    "aliases": [
-      "masoor beej",
-      "500g"
-    ],
+    "aliases": "masoor beej, 500g",
     "brand": "Lentil Seed",
     "variant": "500g",
     "unit": "pack"
@@ -1772,10 +1364,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 1kg",
     "ur": "مسور بیج 1kg",
-    "aliases": [
-      "masoor beej",
-      "1kg"
-    ],
+    "aliases": "masoor beej, 1kg",
     "brand": "Lentil Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1785,10 +1374,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 5kg",
     "ur": "مسور بیج 5kg",
-    "aliases": [
-      "masoor beej",
-      "5kg"
-    ],
+    "aliases": "masoor beej, 5kg",
     "brand": "Lentil Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1798,10 +1384,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 10kg",
     "ur": "مسور بیج 10kg",
-    "aliases": [
-      "masoor beej",
-      "10kg"
-    ],
+    "aliases": "masoor beej, 10kg",
     "brand": "Lentil Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1811,10 +1394,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Lentil Seed 25kg",
     "ur": "مسور بیج 25kg",
-    "aliases": [
-      "masoor beej",
-      "25kg"
-    ],
+    "aliases": "masoor beej, 25kg",
     "brand": "Lentil Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1824,10 +1404,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 10g",
     "ur": "مونگ بیج 10g",
-    "aliases": [
-      "moong beej",
-      "10g"
-    ],
+    "aliases": "moong beej, 10g",
     "brand": "Mung Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1837,10 +1414,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 25g",
     "ur": "مونگ بیج 25g",
-    "aliases": [
-      "moong beej",
-      "25g"
-    ],
+    "aliases": "moong beej, 25g",
     "brand": "Mung Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1850,10 +1424,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 50g",
     "ur": "مونگ بیج 50g",
-    "aliases": [
-      "moong beej",
-      "50g"
-    ],
+    "aliases": "moong beej, 50g",
     "brand": "Mung Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1863,10 +1434,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 100g",
     "ur": "مونگ بیج 100g",
-    "aliases": [
-      "moong beej",
-      "100g"
-    ],
+    "aliases": "moong beej, 100g",
     "brand": "Mung Seed",
     "variant": "100g",
     "unit": "pack"
@@ -1876,10 +1444,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 250g",
     "ur": "مونگ بیج 250g",
-    "aliases": [
-      "moong beej",
-      "250g"
-    ],
+    "aliases": "moong beej, 250g",
     "brand": "Mung Seed",
     "variant": "250g",
     "unit": "pack"
@@ -1889,10 +1454,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 500g",
     "ur": "مونگ بیج 500g",
-    "aliases": [
-      "moong beej",
-      "500g"
-    ],
+    "aliases": "moong beej, 500g",
     "brand": "Mung Seed",
     "variant": "500g",
     "unit": "pack"
@@ -1902,10 +1464,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 1kg",
     "ur": "مونگ بیج 1kg",
-    "aliases": [
-      "moong beej",
-      "1kg"
-    ],
+    "aliases": "moong beej, 1kg",
     "brand": "Mung Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -1915,10 +1474,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 5kg",
     "ur": "مونگ بیج 5kg",
-    "aliases": [
-      "moong beej",
-      "5kg"
-    ],
+    "aliases": "moong beej, 5kg",
     "brand": "Mung Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -1928,10 +1484,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 10kg",
     "ur": "مونگ بیج 10kg",
-    "aliases": [
-      "moong beej",
-      "10kg"
-    ],
+    "aliases": "moong beej, 10kg",
     "brand": "Mung Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -1941,10 +1494,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mung Seed 25kg",
     "ur": "مونگ بیج 25kg",
-    "aliases": [
-      "moong beej",
-      "25kg"
-    ],
+    "aliases": "moong beej, 25kg",
     "brand": "Mung Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -1954,10 +1504,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 10g",
     "ur": "ماش بیج 10g",
-    "aliases": [
-      "mash beej",
-      "10g"
-    ],
+    "aliases": "mash beej, 10g",
     "brand": "Mash Seed",
     "variant": "10g",
     "unit": "pack"
@@ -1967,10 +1514,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 25g",
     "ur": "ماش بیج 25g",
-    "aliases": [
-      "mash beej",
-      "25g"
-    ],
+    "aliases": "mash beej, 25g",
     "brand": "Mash Seed",
     "variant": "25g",
     "unit": "pack"
@@ -1980,10 +1524,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 50g",
     "ur": "ماش بیج 50g",
-    "aliases": [
-      "mash beej",
-      "50g"
-    ],
+    "aliases": "mash beej, 50g",
     "brand": "Mash Seed",
     "variant": "50g",
     "unit": "pack"
@@ -1993,10 +1534,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 100g",
     "ur": "ماش بیج 100g",
-    "aliases": [
-      "mash beej",
-      "100g"
-    ],
+    "aliases": "mash beej, 100g",
     "brand": "Mash Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2006,10 +1544,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 250g",
     "ur": "ماش بیج 250g",
-    "aliases": [
-      "mash beej",
-      "250g"
-    ],
+    "aliases": "mash beej, 250g",
     "brand": "Mash Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2019,10 +1554,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 500g",
     "ur": "ماش بیج 500g",
-    "aliases": [
-      "mash beej",
-      "500g"
-    ],
+    "aliases": "mash beej, 500g",
     "brand": "Mash Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2032,10 +1564,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 1kg",
     "ur": "ماش بیج 1kg",
-    "aliases": [
-      "mash beej",
-      "1kg"
-    ],
+    "aliases": "mash beej, 1kg",
     "brand": "Mash Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2045,10 +1574,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 5kg",
     "ur": "ماش بیج 5kg",
-    "aliases": [
-      "mash beej",
-      "5kg"
-    ],
+    "aliases": "mash beej, 5kg",
     "brand": "Mash Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2058,10 +1584,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 10kg",
     "ur": "ماش بیج 10kg",
-    "aliases": [
-      "mash beej",
-      "10kg"
-    ],
+    "aliases": "mash beej, 10kg",
     "brand": "Mash Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2071,10 +1594,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Mash Seed 25kg",
     "ur": "ماش بیج 25kg",
-    "aliases": [
-      "mash beej",
-      "25kg"
-    ],
+    "aliases": "mash beej, 25kg",
     "brand": "Mash Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2084,10 +1604,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 10g",
     "ur": "آلو بیج 10g",
-    "aliases": [
-      "aloo beej",
-      "10g"
-    ],
+    "aliases": "aloo beej, 10g",
     "brand": "Potato Seed",
     "variant": "10g",
     "unit": "pack"
@@ -2097,10 +1614,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 25g",
     "ur": "آلو بیج 25g",
-    "aliases": [
-      "aloo beej",
-      "25g"
-    ],
+    "aliases": "aloo beej, 25g",
     "brand": "Potato Seed",
     "variant": "25g",
     "unit": "pack"
@@ -2110,10 +1624,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 50g",
     "ur": "آلو بیج 50g",
-    "aliases": [
-      "aloo beej",
-      "50g"
-    ],
+    "aliases": "aloo beej, 50g",
     "brand": "Potato Seed",
     "variant": "50g",
     "unit": "pack"
@@ -2123,10 +1634,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 100g",
     "ur": "آلو بیج 100g",
-    "aliases": [
-      "aloo beej",
-      "100g"
-    ],
+    "aliases": "aloo beej, 100g",
     "brand": "Potato Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2136,10 +1644,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 250g",
     "ur": "آلو بیج 250g",
-    "aliases": [
-      "aloo beej",
-      "250g"
-    ],
+    "aliases": "aloo beej, 250g",
     "brand": "Potato Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2149,10 +1654,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 500g",
     "ur": "آلو بیج 500g",
-    "aliases": [
-      "aloo beej",
-      "500g"
-    ],
+    "aliases": "aloo beej, 500g",
     "brand": "Potato Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2162,10 +1664,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 1kg",
     "ur": "آلو بیج 1kg",
-    "aliases": [
-      "aloo beej",
-      "1kg"
-    ],
+    "aliases": "aloo beej, 1kg",
     "brand": "Potato Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2175,10 +1674,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 5kg",
     "ur": "آلو بیج 5kg",
-    "aliases": [
-      "aloo beej",
-      "5kg"
-    ],
+    "aliases": "aloo beej, 5kg",
     "brand": "Potato Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2188,10 +1684,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 10kg",
     "ur": "آلو بیج 10kg",
-    "aliases": [
-      "aloo beej",
-      "10kg"
-    ],
+    "aliases": "aloo beej, 10kg",
     "brand": "Potato Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2201,10 +1694,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Potato Seed 25kg",
     "ur": "آلو بیج 25kg",
-    "aliases": [
-      "aloo beej",
-      "25kg"
-    ],
+    "aliases": "aloo beej, 25kg",
     "brand": "Potato Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2214,10 +1704,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 10g",
     "ur": "پیاز بیج 10g",
-    "aliases": [
-      "piyaz beej",
-      "10g"
-    ],
+    "aliases": "piyaz beej, 10g",
     "brand": "Onion Seed",
     "variant": "10g",
     "unit": "pack"
@@ -2227,10 +1714,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 25g",
     "ur": "پیاز بیج 25g",
-    "aliases": [
-      "piyaz beej",
-      "25g"
-    ],
+    "aliases": "piyaz beej, 25g",
     "brand": "Onion Seed",
     "variant": "25g",
     "unit": "pack"
@@ -2240,10 +1724,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 50g",
     "ur": "پیاز بیج 50g",
-    "aliases": [
-      "piyaz beej",
-      "50g"
-    ],
+    "aliases": "piyaz beej, 50g",
     "brand": "Onion Seed",
     "variant": "50g",
     "unit": "pack"
@@ -2253,10 +1734,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 100g",
     "ur": "پیاز بیج 100g",
-    "aliases": [
-      "piyaz beej",
-      "100g"
-    ],
+    "aliases": "piyaz beej, 100g",
     "brand": "Onion Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2266,10 +1744,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 250g",
     "ur": "پیاز بیج 250g",
-    "aliases": [
-      "piyaz beej",
-      "250g"
-    ],
+    "aliases": "piyaz beej, 250g",
     "brand": "Onion Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2279,10 +1754,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 500g",
     "ur": "پیاز بیج 500g",
-    "aliases": [
-      "piyaz beej",
-      "500g"
-    ],
+    "aliases": "piyaz beej, 500g",
     "brand": "Onion Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2292,10 +1764,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 1kg",
     "ur": "پیاز بیج 1kg",
-    "aliases": [
-      "piyaz beej",
-      "1kg"
-    ],
+    "aliases": "piyaz beej, 1kg",
     "brand": "Onion Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2305,10 +1774,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 5kg",
     "ur": "پیاز بیج 5kg",
-    "aliases": [
-      "piyaz beej",
-      "5kg"
-    ],
+    "aliases": "piyaz beej, 5kg",
     "brand": "Onion Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2318,10 +1784,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 10kg",
     "ur": "پیاز بیج 10kg",
-    "aliases": [
-      "piyaz beej",
-      "10kg"
-    ],
+    "aliases": "piyaz beej, 10kg",
     "brand": "Onion Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2331,10 +1794,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Onion Seed 25kg",
     "ur": "پیاز بیج 25kg",
-    "aliases": [
-      "piyaz beej",
-      "25kg"
-    ],
+    "aliases": "piyaz beej, 25kg",
     "brand": "Onion Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2344,10 +1804,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 10g",
     "ur": "ٹماٹر بیج 10g",
-    "aliases": [
-      "tamatar beej",
-      "10g"
-    ],
+    "aliases": "tamatar beej, 10g",
     "brand": "Tomato Seed",
     "variant": "10g",
     "unit": "pack"
@@ -2357,10 +1814,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 25g",
     "ur": "ٹماٹر بیج 25g",
-    "aliases": [
-      "tamatar beej",
-      "25g"
-    ],
+    "aliases": "tamatar beej, 25g",
     "brand": "Tomato Seed",
     "variant": "25g",
     "unit": "pack"
@@ -2370,10 +1824,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 50g",
     "ur": "ٹماٹر بیج 50g",
-    "aliases": [
-      "tamatar beej",
-      "50g"
-    ],
+    "aliases": "tamatar beej, 50g",
     "brand": "Tomato Seed",
     "variant": "50g",
     "unit": "pack"
@@ -2383,10 +1834,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 100g",
     "ur": "ٹماٹر بیج 100g",
-    "aliases": [
-      "tamatar beej",
-      "100g"
-    ],
+    "aliases": "tamatar beej, 100g",
     "brand": "Tomato Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2396,10 +1844,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 250g",
     "ur": "ٹماٹر بیج 250g",
-    "aliases": [
-      "tamatar beej",
-      "250g"
-    ],
+    "aliases": "tamatar beej, 250g",
     "brand": "Tomato Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2409,10 +1854,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 500g",
     "ur": "ٹماٹر بیج 500g",
-    "aliases": [
-      "tamatar beej",
-      "500g"
-    ],
+    "aliases": "tamatar beej, 500g",
     "brand": "Tomato Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2422,10 +1864,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 1kg",
     "ur": "ٹماٹر بیج 1kg",
-    "aliases": [
-      "tamatar beej",
-      "1kg"
-    ],
+    "aliases": "tamatar beej, 1kg",
     "brand": "Tomato Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2435,10 +1874,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 5kg",
     "ur": "ٹماٹر بیج 5kg",
-    "aliases": [
-      "tamatar beej",
-      "5kg"
-    ],
+    "aliases": "tamatar beej, 5kg",
     "brand": "Tomato Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2448,10 +1884,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 10kg",
     "ur": "ٹماٹر بیج 10kg",
-    "aliases": [
-      "tamatar beej",
-      "10kg"
-    ],
+    "aliases": "tamatar beej, 10kg",
     "brand": "Tomato Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2461,10 +1894,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Tomato Seed 25kg",
     "ur": "ٹماٹر بیج 25kg",
-    "aliases": [
-      "tamatar beej",
-      "25kg"
-    ],
+    "aliases": "tamatar beej, 25kg",
     "brand": "Tomato Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2474,10 +1904,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 10g",
     "ur": "مرچ بیج 10g",
-    "aliases": [
-      "mirch beej",
-      "10g"
-    ],
+    "aliases": "mirch beej, 10g",
     "brand": "Chilli Seed",
     "variant": "10g",
     "unit": "pack"
@@ -2487,10 +1914,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 25g",
     "ur": "مرچ بیج 25g",
-    "aliases": [
-      "mirch beej",
-      "25g"
-    ],
+    "aliases": "mirch beej, 25g",
     "brand": "Chilli Seed",
     "variant": "25g",
     "unit": "pack"
@@ -2500,10 +1924,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 50g",
     "ur": "مرچ بیج 50g",
-    "aliases": [
-      "mirch beej",
-      "50g"
-    ],
+    "aliases": "mirch beej, 50g",
     "brand": "Chilli Seed",
     "variant": "50g",
     "unit": "pack"
@@ -2513,10 +1934,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 100g",
     "ur": "مرچ بیج 100g",
-    "aliases": [
-      "mirch beej",
-      "100g"
-    ],
+    "aliases": "mirch beej, 100g",
     "brand": "Chilli Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2526,10 +1944,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 250g",
     "ur": "مرچ بیج 250g",
-    "aliases": [
-      "mirch beej",
-      "250g"
-    ],
+    "aliases": "mirch beej, 250g",
     "brand": "Chilli Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2539,10 +1954,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 500g",
     "ur": "مرچ بیج 500g",
-    "aliases": [
-      "mirch beej",
-      "500g"
-    ],
+    "aliases": "mirch beej, 500g",
     "brand": "Chilli Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2552,10 +1964,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 1kg",
     "ur": "مرچ بیج 1kg",
-    "aliases": [
-      "mirch beej",
-      "1kg"
-    ],
+    "aliases": "mirch beej, 1kg",
     "brand": "Chilli Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2565,10 +1974,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 5kg",
     "ur": "مرچ بیج 5kg",
-    "aliases": [
-      "mirch beej",
-      "5kg"
-    ],
+    "aliases": "mirch beej, 5kg",
     "brand": "Chilli Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2578,10 +1984,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 10kg",
     "ur": "مرچ بیج 10kg",
-    "aliases": [
-      "mirch beej",
-      "10kg"
-    ],
+    "aliases": "mirch beej, 10kg",
     "brand": "Chilli Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2591,10 +1994,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Chilli Seed 25kg",
     "ur": "مرچ بیج 25kg",
-    "aliases": [
-      "mirch beej",
-      "25kg"
-    ],
+    "aliases": "mirch beej, 25kg",
     "brand": "Chilli Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2604,10 +2004,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 10g",
     "ur": "بھنڈی بیج 10g",
-    "aliases": [
-      "bhindi beej",
-      "10g"
-    ],
+    "aliases": "bhindi beej, 10g",
     "brand": "Okra Seed",
     "variant": "10g",
     "unit": "pack"
@@ -2617,10 +2014,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 25g",
     "ur": "بھنڈی بیج 25g",
-    "aliases": [
-      "bhindi beej",
-      "25g"
-    ],
+    "aliases": "bhindi beej, 25g",
     "brand": "Okra Seed",
     "variant": "25g",
     "unit": "pack"
@@ -2630,10 +2024,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 50g",
     "ur": "بھنڈی بیج 50g",
-    "aliases": [
-      "bhindi beej",
-      "50g"
-    ],
+    "aliases": "bhindi beej, 50g",
     "brand": "Okra Seed",
     "variant": "50g",
     "unit": "pack"
@@ -2643,10 +2034,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 100g",
     "ur": "بھنڈی بیج 100g",
-    "aliases": [
-      "bhindi beej",
-      "100g"
-    ],
+    "aliases": "bhindi beej, 100g",
     "brand": "Okra Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2656,10 +2044,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 250g",
     "ur": "بھنڈی بیج 250g",
-    "aliases": [
-      "bhindi beej",
-      "250g"
-    ],
+    "aliases": "bhindi beej, 250g",
     "brand": "Okra Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2669,10 +2054,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 500g",
     "ur": "بھنڈی بیج 500g",
-    "aliases": [
-      "bhindi beej",
-      "500g"
-    ],
+    "aliases": "bhindi beej, 500g",
     "brand": "Okra Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2682,10 +2064,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 1kg",
     "ur": "بھنڈی بیج 1kg",
-    "aliases": [
-      "bhindi beej",
-      "1kg"
-    ],
+    "aliases": "bhindi beej, 1kg",
     "brand": "Okra Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2695,10 +2074,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 5kg",
     "ur": "بھنڈی بیج 5kg",
-    "aliases": [
-      "bhindi beej",
-      "5kg"
-    ],
+    "aliases": "bhindi beej, 5kg",
     "brand": "Okra Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2708,10 +2084,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 10kg",
     "ur": "بھنڈی بیج 10kg",
-    "aliases": [
-      "bhindi beej",
-      "10kg"
-    ],
+    "aliases": "bhindi beej, 10kg",
     "brand": "Okra Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2721,10 +2094,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Okra Seed 25kg",
     "ur": "بھنڈی بیج 25kg",
-    "aliases": [
-      "bhindi beej",
-      "25kg"
-    ],
+    "aliases": "bhindi beej, 25kg",
     "brand": "Okra Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2734,10 +2104,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 10g",
     "ur": "کھیرا بیج 10g",
-    "aliases": [
-      "kheera beej",
-      "10g"
-    ],
+    "aliases": "kheera beej, 10g",
     "brand": "Cucumber Seed",
     "variant": "10g",
     "unit": "pack"
@@ -2747,10 +2114,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 25g",
     "ur": "کھیرا بیج 25g",
-    "aliases": [
-      "kheera beej",
-      "25g"
-    ],
+    "aliases": "kheera beej, 25g",
     "brand": "Cucumber Seed",
     "variant": "25g",
     "unit": "pack"
@@ -2760,10 +2124,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 50g",
     "ur": "کھیرا بیج 50g",
-    "aliases": [
-      "kheera beej",
-      "50g"
-    ],
+    "aliases": "kheera beej, 50g",
     "brand": "Cucumber Seed",
     "variant": "50g",
     "unit": "pack"
@@ -2773,10 +2134,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 100g",
     "ur": "کھیرا بیج 100g",
-    "aliases": [
-      "kheera beej",
-      "100g"
-    ],
+    "aliases": "kheera beej, 100g",
     "brand": "Cucumber Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2786,10 +2144,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 250g",
     "ur": "کھیرا بیج 250g",
-    "aliases": [
-      "kheera beej",
-      "250g"
-    ],
+    "aliases": "kheera beej, 250g",
     "brand": "Cucumber Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2799,10 +2154,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 500g",
     "ur": "کھیرا بیج 500g",
-    "aliases": [
-      "kheera beej",
-      "500g"
-    ],
+    "aliases": "kheera beej, 500g",
     "brand": "Cucumber Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2812,10 +2164,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 1kg",
     "ur": "کھیرا بیج 1kg",
-    "aliases": [
-      "kheera beej",
-      "1kg"
-    ],
+    "aliases": "kheera beej, 1kg",
     "brand": "Cucumber Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2825,10 +2174,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 5kg",
     "ur": "کھیرا بیج 5kg",
-    "aliases": [
-      "kheera beej",
-      "5kg"
-    ],
+    "aliases": "kheera beej, 5kg",
     "brand": "Cucumber Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2838,10 +2184,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 10kg",
     "ur": "کھیرا بیج 10kg",
-    "aliases": [
-      "kheera beej",
-      "10kg"
-    ],
+    "aliases": "kheera beej, 10kg",
     "brand": "Cucumber Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2851,10 +2194,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Cucumber Seed 25kg",
     "ur": "کھیرا بیج 25kg",
-    "aliases": [
-      "kheera beej",
-      "25kg"
-    ],
+    "aliases": "kheera beej, 25kg",
     "brand": "Cucumber Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2864,10 +2204,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 10g",
     "ur": "لوکی بیج 10g",
-    "aliases": [
-      "loki beej",
-      "10g"
-    ],
+    "aliases": "loki beej, 10g",
     "brand": "Bottle Gourd Seed",
     "variant": "10g",
     "unit": "pack"
@@ -2877,10 +2214,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 25g",
     "ur": "لوکی بیج 25g",
-    "aliases": [
-      "loki beej",
-      "25g"
-    ],
+    "aliases": "loki beej, 25g",
     "brand": "Bottle Gourd Seed",
     "variant": "25g",
     "unit": "pack"
@@ -2890,10 +2224,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 50g",
     "ur": "لوکی بیج 50g",
-    "aliases": [
-      "loki beej",
-      "50g"
-    ],
+    "aliases": "loki beej, 50g",
     "brand": "Bottle Gourd Seed",
     "variant": "50g",
     "unit": "pack"
@@ -2903,10 +2234,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 100g",
     "ur": "لوکی بیج 100g",
-    "aliases": [
-      "loki beej",
-      "100g"
-    ],
+    "aliases": "loki beej, 100g",
     "brand": "Bottle Gourd Seed",
     "variant": "100g",
     "unit": "pack"
@@ -2916,10 +2244,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 250g",
     "ur": "لوکی بیج 250g",
-    "aliases": [
-      "loki beej",
-      "250g"
-    ],
+    "aliases": "loki beej, 250g",
     "brand": "Bottle Gourd Seed",
     "variant": "250g",
     "unit": "pack"
@@ -2929,10 +2254,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 500g",
     "ur": "لوکی بیج 500g",
-    "aliases": [
-      "loki beej",
-      "500g"
-    ],
+    "aliases": "loki beej, 500g",
     "brand": "Bottle Gourd Seed",
     "variant": "500g",
     "unit": "pack"
@@ -2942,10 +2264,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 1kg",
     "ur": "لوکی بیج 1kg",
-    "aliases": [
-      "loki beej",
-      "1kg"
-    ],
+    "aliases": "loki beej, 1kg",
     "brand": "Bottle Gourd Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -2955,10 +2274,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 5kg",
     "ur": "لوکی بیج 5kg",
-    "aliases": [
-      "loki beej",
-      "5kg"
-    ],
+    "aliases": "loki beej, 5kg",
     "brand": "Bottle Gourd Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -2968,10 +2284,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 10kg",
     "ur": "لوکی بیج 10kg",
-    "aliases": [
-      "loki beej",
-      "10kg"
-    ],
+    "aliases": "loki beej, 10kg",
     "brand": "Bottle Gourd Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -2981,10 +2294,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Bottle Gourd Seed 25kg",
     "ur": "لوکی بیج 25kg",
-    "aliases": [
-      "loki beej",
-      "25kg"
-    ],
+    "aliases": "loki beej, 25kg",
     "brand": "Bottle Gourd Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -2994,10 +2304,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 10g",
     "ur": "تربوز بیج 10g",
-    "aliases": [
-      "tarbooz beej",
-      "10g"
-    ],
+    "aliases": "tarbooz beej, 10g",
     "brand": "Watermelon Seed",
     "variant": "10g",
     "unit": "pack"
@@ -3007,10 +2314,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 25g",
     "ur": "تربوز بیج 25g",
-    "aliases": [
-      "tarbooz beej",
-      "25g"
-    ],
+    "aliases": "tarbooz beej, 25g",
     "brand": "Watermelon Seed",
     "variant": "25g",
     "unit": "pack"
@@ -3020,10 +2324,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 50g",
     "ur": "تربوز بیج 50g",
-    "aliases": [
-      "tarbooz beej",
-      "50g"
-    ],
+    "aliases": "tarbooz beej, 50g",
     "brand": "Watermelon Seed",
     "variant": "50g",
     "unit": "pack"
@@ -3033,10 +2334,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 100g",
     "ur": "تربوز بیج 100g",
-    "aliases": [
-      "tarbooz beej",
-      "100g"
-    ],
+    "aliases": "tarbooz beej, 100g",
     "brand": "Watermelon Seed",
     "variant": "100g",
     "unit": "pack"
@@ -3046,10 +2344,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 250g",
     "ur": "تربوز بیج 250g",
-    "aliases": [
-      "tarbooz beej",
-      "250g"
-    ],
+    "aliases": "tarbooz beej, 250g",
     "brand": "Watermelon Seed",
     "variant": "250g",
     "unit": "pack"
@@ -3059,10 +2354,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 500g",
     "ur": "تربوز بیج 500g",
-    "aliases": [
-      "tarbooz beej",
-      "500g"
-    ],
+    "aliases": "tarbooz beej, 500g",
     "brand": "Watermelon Seed",
     "variant": "500g",
     "unit": "pack"
@@ -3072,10 +2364,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 1kg",
     "ur": "تربوز بیج 1kg",
-    "aliases": [
-      "tarbooz beej",
-      "1kg"
-    ],
+    "aliases": "tarbooz beej, 1kg",
     "brand": "Watermelon Seed",
     "variant": "1kg",
     "unit": "pack"
@@ -3085,10 +2374,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 5kg",
     "ur": "تربوز بیج 5kg",
-    "aliases": [
-      "tarbooz beej",
-      "5kg"
-    ],
+    "aliases": "tarbooz beej, 5kg",
     "brand": "Watermelon Seed",
     "variant": "5kg",
     "unit": "pack"
@@ -3098,10 +2384,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 10kg",
     "ur": "تربوز بیج 10kg",
-    "aliases": [
-      "tarbooz beej",
-      "10kg"
-    ],
+    "aliases": "tarbooz beej, 10kg",
     "brand": "Watermelon Seed",
     "variant": "10kg",
     "unit": "pack"
@@ -3111,10 +2394,7 @@
     "subcategory": "Crop / Vegetable Seed",
     "en": "Watermelon Seed 25kg",
     "ur": "تربوز بیج 25kg",
-    "aliases": [
-      "tarbooz beej",
-      "25kg"
-    ],
+    "aliases": "tarbooz beej, 25kg",
     "brand": "Watermelon Seed",
     "variant": "25kg",
     "unit": "pack"
@@ -3124,10 +2404,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Urea Fertilizer 1kg",
     "ur": "یوریا کھاد 1kg",
-    "aliases": [
-      "urea khaad",
-      "1kg"
-    ],
+    "aliases": "urea khaad, 1kg",
     "brand": "Urea Fertilizer",
     "variant": "1kg",
     "unit": "bag"
@@ -3137,10 +2414,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Urea Fertilizer 5kg",
     "ur": "یوریا کھاد 5kg",
-    "aliases": [
-      "urea khaad",
-      "5kg"
-    ],
+    "aliases": "urea khaad, 5kg",
     "brand": "Urea Fertilizer",
     "variant": "5kg",
     "unit": "bag"
@@ -3150,10 +2424,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Urea Fertilizer 10kg",
     "ur": "یوریا کھاد 10kg",
-    "aliases": [
-      "urea khaad",
-      "10kg"
-    ],
+    "aliases": "urea khaad, 10kg",
     "brand": "Urea Fertilizer",
     "variant": "10kg",
     "unit": "bag"
@@ -3163,10 +2434,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Urea Fertilizer 25kg",
     "ur": "یوریا کھاد 25kg",
-    "aliases": [
-      "urea khaad",
-      "25kg"
-    ],
+    "aliases": "urea khaad, 25kg",
     "brand": "Urea Fertilizer",
     "variant": "25kg",
     "unit": "bag"
@@ -3176,10 +2444,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Urea Fertilizer 50kg",
     "ur": "یوریا کھاد 50kg",
-    "aliases": [
-      "urea khaad",
-      "50kg"
-    ],
+    "aliases": "urea khaad, 50kg",
     "brand": "Urea Fertilizer",
     "variant": "50kg",
     "unit": "bag"
@@ -3189,10 +2454,7 @@
     "subcategory": "Plant Nutrition",
     "en": "DAP Fertilizer 1kg",
     "ur": "ڈی اے پی کھاد 1kg",
-    "aliases": [
-      "dap khaad",
-      "1kg"
-    ],
+    "aliases": "dap khaad, 1kg",
     "brand": "DAP Fertilizer",
     "variant": "1kg",
     "unit": "bag"
@@ -3202,10 +2464,7 @@
     "subcategory": "Plant Nutrition",
     "en": "DAP Fertilizer 5kg",
     "ur": "ڈی اے پی کھاد 5kg",
-    "aliases": [
-      "dap khaad",
-      "5kg"
-    ],
+    "aliases": "dap khaad, 5kg",
     "brand": "DAP Fertilizer",
     "variant": "5kg",
     "unit": "bag"
@@ -3215,10 +2474,7 @@
     "subcategory": "Plant Nutrition",
     "en": "DAP Fertilizer 10kg",
     "ur": "ڈی اے پی کھاد 10kg",
-    "aliases": [
-      "dap khaad",
-      "10kg"
-    ],
+    "aliases": "dap khaad, 10kg",
     "brand": "DAP Fertilizer",
     "variant": "10kg",
     "unit": "bag"
@@ -3228,10 +2484,7 @@
     "subcategory": "Plant Nutrition",
     "en": "DAP Fertilizer 25kg",
     "ur": "ڈی اے پی کھاد 25kg",
-    "aliases": [
-      "dap khaad",
-      "25kg"
-    ],
+    "aliases": "dap khaad, 25kg",
     "brand": "DAP Fertilizer",
     "variant": "25kg",
     "unit": "bag"
@@ -3241,10 +2494,7 @@
     "subcategory": "Plant Nutrition",
     "en": "DAP Fertilizer 50kg",
     "ur": "ڈی اے پی کھاد 50kg",
-    "aliases": [
-      "dap khaad",
-      "50kg"
-    ],
+    "aliases": "dap khaad, 50kg",
     "brand": "DAP Fertilizer",
     "variant": "50kg",
     "unit": "bag"
@@ -3254,10 +2504,7 @@
     "subcategory": "Plant Nutrition",
     "en": "SOP Fertilizer 1kg",
     "ur": "ایس او پی کھاد 1kg",
-    "aliases": [
-      "sop",
-      "1kg"
-    ],
+    "aliases": "sop, 1kg",
     "brand": "SOP Fertilizer",
     "variant": "1kg",
     "unit": "bag"
@@ -3267,10 +2514,7 @@
     "subcategory": "Plant Nutrition",
     "en": "SOP Fertilizer 5kg",
     "ur": "ایس او پی کھاد 5kg",
-    "aliases": [
-      "sop",
-      "5kg"
-    ],
+    "aliases": "sop, 5kg",
     "brand": "SOP Fertilizer",
     "variant": "5kg",
     "unit": "bag"
@@ -3280,10 +2524,7 @@
     "subcategory": "Plant Nutrition",
     "en": "SOP Fertilizer 10kg",
     "ur": "ایس او پی کھاد 10kg",
-    "aliases": [
-      "sop",
-      "10kg"
-    ],
+    "aliases": "sop, 10kg",
     "brand": "SOP Fertilizer",
     "variant": "10kg",
     "unit": "bag"
@@ -3293,10 +2534,7 @@
     "subcategory": "Plant Nutrition",
     "en": "SOP Fertilizer 25kg",
     "ur": "ایس او پی کھاد 25kg",
-    "aliases": [
-      "sop",
-      "25kg"
-    ],
+    "aliases": "sop, 25kg",
     "brand": "SOP Fertilizer",
     "variant": "25kg",
     "unit": "bag"
@@ -3306,10 +2544,7 @@
     "subcategory": "Plant Nutrition",
     "en": "SOP Fertilizer 50kg",
     "ur": "ایس او پی کھاد 50kg",
-    "aliases": [
-      "sop",
-      "50kg"
-    ],
+    "aliases": "sop, 50kg",
     "brand": "SOP Fertilizer",
     "variant": "50kg",
     "unit": "bag"
@@ -3319,10 +2554,7 @@
     "subcategory": "Plant Nutrition",
     "en": "MOP Fertilizer 1kg",
     "ur": "ایم او پی کھاد 1kg",
-    "aliases": [
-      "mop",
-      "1kg"
-    ],
+    "aliases": "mop, 1kg",
     "brand": "MOP Fertilizer",
     "variant": "1kg",
     "unit": "bag"
@@ -3332,10 +2564,7 @@
     "subcategory": "Plant Nutrition",
     "en": "MOP Fertilizer 5kg",
     "ur": "ایم او پی کھاد 5kg",
-    "aliases": [
-      "mop",
-      "5kg"
-    ],
+    "aliases": "mop, 5kg",
     "brand": "MOP Fertilizer",
     "variant": "5kg",
     "unit": "bag"
@@ -3345,10 +2574,7 @@
     "subcategory": "Plant Nutrition",
     "en": "MOP Fertilizer 10kg",
     "ur": "ایم او پی کھاد 10kg",
-    "aliases": [
-      "mop",
-      "10kg"
-    ],
+    "aliases": "mop, 10kg",
     "brand": "MOP Fertilizer",
     "variant": "10kg",
     "unit": "bag"
@@ -3358,10 +2584,7 @@
     "subcategory": "Plant Nutrition",
     "en": "MOP Fertilizer 25kg",
     "ur": "ایم او پی کھاد 25kg",
-    "aliases": [
-      "mop",
-      "25kg"
-    ],
+    "aliases": "mop, 25kg",
     "brand": "MOP Fertilizer",
     "variant": "25kg",
     "unit": "bag"
@@ -3371,10 +2594,7 @@
     "subcategory": "Plant Nutrition",
     "en": "MOP Fertilizer 50kg",
     "ur": "ایم او پی کھاد 50kg",
-    "aliases": [
-      "mop",
-      "50kg"
-    ],
+    "aliases": "mop, 50kg",
     "brand": "MOP Fertilizer",
     "variant": "50kg",
     "unit": "bag"
@@ -3384,10 +2604,7 @@
     "subcategory": "Plant Nutrition",
     "en": "NPK Fertilizer 1kg",
     "ur": "این پی کے کھاد 1kg",
-    "aliases": [
-      "npk",
-      "1kg"
-    ],
+    "aliases": "npk, 1kg",
     "brand": "NPK Fertilizer",
     "variant": "1kg",
     "unit": "bag"
@@ -3397,10 +2614,7 @@
     "subcategory": "Plant Nutrition",
     "en": "NPK Fertilizer 5kg",
     "ur": "این پی کے کھاد 5kg",
-    "aliases": [
-      "npk",
-      "5kg"
-    ],
+    "aliases": "npk, 5kg",
     "brand": "NPK Fertilizer",
     "variant": "5kg",
     "unit": "bag"
@@ -3410,10 +2624,7 @@
     "subcategory": "Plant Nutrition",
     "en": "NPK Fertilizer 10kg",
     "ur": "این پی کے کھاد 10kg",
-    "aliases": [
-      "npk",
-      "10kg"
-    ],
+    "aliases": "npk, 10kg",
     "brand": "NPK Fertilizer",
     "variant": "10kg",
     "unit": "bag"
@@ -3423,10 +2634,7 @@
     "subcategory": "Plant Nutrition",
     "en": "NPK Fertilizer 25kg",
     "ur": "این پی کے کھاد 25kg",
-    "aliases": [
-      "npk",
-      "25kg"
-    ],
+    "aliases": "npk, 25kg",
     "brand": "NPK Fertilizer",
     "variant": "25kg",
     "unit": "bag"
@@ -3436,10 +2644,7 @@
     "subcategory": "Plant Nutrition",
     "en": "NPK Fertilizer 50kg",
     "ur": "این پی کے کھاد 50kg",
-    "aliases": [
-      "npk",
-      "50kg"
-    ],
+    "aliases": "npk, 50kg",
     "brand": "NPK Fertilizer",
     "variant": "50kg",
     "unit": "bag"
@@ -3449,10 +2654,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Zinc Sulphate 1kg",
     "ur": "زنک سلفیٹ 1kg",
-    "aliases": [
-      "zinc",
-      "1kg"
-    ],
+    "aliases": "zinc, 1kg",
     "brand": "Zinc Sulphate",
     "variant": "1kg",
     "unit": "bag"
@@ -3462,10 +2664,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Zinc Sulphate 5kg",
     "ur": "زنک سلفیٹ 5kg",
-    "aliases": [
-      "zinc",
-      "5kg"
-    ],
+    "aliases": "zinc, 5kg",
     "brand": "Zinc Sulphate",
     "variant": "5kg",
     "unit": "bag"
@@ -3475,10 +2674,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Zinc Sulphate 10kg",
     "ur": "زنک سلفیٹ 10kg",
-    "aliases": [
-      "zinc",
-      "10kg"
-    ],
+    "aliases": "zinc, 10kg",
     "brand": "Zinc Sulphate",
     "variant": "10kg",
     "unit": "bag"
@@ -3488,10 +2684,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Zinc Sulphate 25kg",
     "ur": "زنک سلفیٹ 25kg",
-    "aliases": [
-      "zinc",
-      "25kg"
-    ],
+    "aliases": "zinc, 25kg",
     "brand": "Zinc Sulphate",
     "variant": "25kg",
     "unit": "bag"
@@ -3501,10 +2694,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Zinc Sulphate 50kg",
     "ur": "زنک سلفیٹ 50kg",
-    "aliases": [
-      "zinc",
-      "50kg"
-    ],
+    "aliases": "zinc, 50kg",
     "brand": "Zinc Sulphate",
     "variant": "50kg",
     "unit": "bag"
@@ -3514,10 +2704,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Boron Fertilizer 1kg",
     "ur": "بوران کھاد 1kg",
-    "aliases": [
-      "boron",
-      "1kg"
-    ],
+    "aliases": "boron, 1kg",
     "brand": "Boron Fertilizer",
     "variant": "1kg",
     "unit": "bag"
@@ -3527,10 +2714,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Boron Fertilizer 5kg",
     "ur": "بوران کھاد 5kg",
-    "aliases": [
-      "boron",
-      "5kg"
-    ],
+    "aliases": "boron, 5kg",
     "brand": "Boron Fertilizer",
     "variant": "5kg",
     "unit": "bag"
@@ -3540,10 +2724,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Boron Fertilizer 10kg",
     "ur": "بوران کھاد 10kg",
-    "aliases": [
-      "boron",
-      "10kg"
-    ],
+    "aliases": "boron, 10kg",
     "brand": "Boron Fertilizer",
     "variant": "10kg",
     "unit": "bag"
@@ -3553,10 +2734,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Boron Fertilizer 25kg",
     "ur": "بوران کھاد 25kg",
-    "aliases": [
-      "boron",
-      "25kg"
-    ],
+    "aliases": "boron, 25kg",
     "brand": "Boron Fertilizer",
     "variant": "25kg",
     "unit": "bag"
@@ -3566,10 +2744,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Boron Fertilizer 50kg",
     "ur": "بوران کھاد 50kg",
-    "aliases": [
-      "boron",
-      "50kg"
-    ],
+    "aliases": "boron, 50kg",
     "brand": "Boron Fertilizer",
     "variant": "50kg",
     "unit": "bag"
@@ -3579,10 +2754,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Gypsum Agriculture 1kg",
     "ur": "زرعی جپسم 1kg",
-    "aliases": [
-      "gypsum",
-      "1kg"
-    ],
+    "aliases": "gypsum, 1kg",
     "brand": "Gypsum Agriculture",
     "variant": "1kg",
     "unit": "bag"
@@ -3592,10 +2764,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Gypsum Agriculture 5kg",
     "ur": "زرعی جپسم 5kg",
-    "aliases": [
-      "gypsum",
-      "5kg"
-    ],
+    "aliases": "gypsum, 5kg",
     "brand": "Gypsum Agriculture",
     "variant": "5kg",
     "unit": "bag"
@@ -3605,10 +2774,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Gypsum Agriculture 10kg",
     "ur": "زرعی جپسم 10kg",
-    "aliases": [
-      "gypsum",
-      "10kg"
-    ],
+    "aliases": "gypsum, 10kg",
     "brand": "Gypsum Agriculture",
     "variant": "10kg",
     "unit": "bag"
@@ -3618,10 +2784,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Gypsum Agriculture 25kg",
     "ur": "زرعی جپسم 25kg",
-    "aliases": [
-      "gypsum",
-      "25kg"
-    ],
+    "aliases": "gypsum, 25kg",
     "brand": "Gypsum Agriculture",
     "variant": "25kg",
     "unit": "bag"
@@ -3631,10 +2794,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Gypsum Agriculture 50kg",
     "ur": "زرعی جپسم 50kg",
-    "aliases": [
-      "gypsum",
-      "50kg"
-    ],
+    "aliases": "gypsum, 50kg",
     "brand": "Gypsum Agriculture",
     "variant": "50kg",
     "unit": "bag"
@@ -3644,10 +2804,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Humic Acid 1kg",
     "ur": "ہیومک ایسڈ 1kg",
-    "aliases": [
-      "humic",
-      "1kg"
-    ],
+    "aliases": "humic, 1kg",
     "brand": "Humic Acid",
     "variant": "1kg",
     "unit": "bag"
@@ -3657,10 +2814,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Humic Acid 5kg",
     "ur": "ہیومک ایسڈ 5kg",
-    "aliases": [
-      "humic",
-      "5kg"
-    ],
+    "aliases": "humic, 5kg",
     "brand": "Humic Acid",
     "variant": "5kg",
     "unit": "bag"
@@ -3670,10 +2824,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Humic Acid 10kg",
     "ur": "ہیومک ایسڈ 10kg",
-    "aliases": [
-      "humic",
-      "10kg"
-    ],
+    "aliases": "humic, 10kg",
     "brand": "Humic Acid",
     "variant": "10kg",
     "unit": "bag"
@@ -3683,10 +2834,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Humic Acid 25kg",
     "ur": "ہیومک ایسڈ 25kg",
-    "aliases": [
-      "humic",
-      "25kg"
-    ],
+    "aliases": "humic, 25kg",
     "brand": "Humic Acid",
     "variant": "25kg",
     "unit": "bag"
@@ -3696,10 +2844,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Humic Acid 50kg",
     "ur": "ہیومک ایسڈ 50kg",
-    "aliases": [
-      "humic",
-      "50kg"
-    ],
+    "aliases": "humic, 50kg",
     "brand": "Humic Acid",
     "variant": "50kg",
     "unit": "bag"
@@ -3709,10 +2854,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Micronutrient Mix 1kg",
     "ur": "مائیکرو نیوٹرینٹ مکس 1kg",
-    "aliases": [
-      "micro nutrient",
-      "1kg"
-    ],
+    "aliases": "micro nutrient, 1kg",
     "brand": "Micronutrient Mix",
     "variant": "1kg",
     "unit": "bag"
@@ -3722,10 +2864,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Micronutrient Mix 5kg",
     "ur": "مائیکرو نیوٹرینٹ مکس 5kg",
-    "aliases": [
-      "micro nutrient",
-      "5kg"
-    ],
+    "aliases": "micro nutrient, 5kg",
     "brand": "Micronutrient Mix",
     "variant": "5kg",
     "unit": "bag"
@@ -3735,10 +2874,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Micronutrient Mix 10kg",
     "ur": "مائیکرو نیوٹرینٹ مکس 10kg",
-    "aliases": [
-      "micro nutrient",
-      "10kg"
-    ],
+    "aliases": "micro nutrient, 10kg",
     "brand": "Micronutrient Mix",
     "variant": "10kg",
     "unit": "bag"
@@ -3748,10 +2884,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Micronutrient Mix 25kg",
     "ur": "مائیکرو نیوٹرینٹ مکس 25kg",
-    "aliases": [
-      "micro nutrient",
-      "25kg"
-    ],
+    "aliases": "micro nutrient, 25kg",
     "brand": "Micronutrient Mix",
     "variant": "25kg",
     "unit": "bag"
@@ -3761,10 +2894,7 @@
     "subcategory": "Plant Nutrition",
     "en": "Micronutrient Mix 50kg",
     "ur": "مائیکرو نیوٹرینٹ مکس 50kg",
-    "aliases": [
-      "micro nutrient",
-      "50kg"
-    ],
+    "aliases": "micro nutrient, 50kg",
     "brand": "Micronutrient Mix",
     "variant": "50kg",
     "unit": "bag"
@@ -3774,9 +2904,7 @@
     "subcategory": "Farm Equipment",
     "en": "Knapsack Sprayer",
     "ur": "کمر اسپرے پمپ",
-    "aliases": [
-      "spray pump"
-    ],
+    "aliases": "spray pump",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3786,9 +2914,7 @@
     "subcategory": "Farm Equipment",
     "en": "Battery Sprayer",
     "ur": "بیٹری اسپرے پمپ",
-    "aliases": [
-      "battery spray"
-    ],
+    "aliases": "battery spray",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3798,9 +2924,7 @@
     "subcategory": "Farm Equipment",
     "en": "Power Sprayer",
     "ur": "پاور اسپرے پمپ",
-    "aliases": [
-      "power spray"
-    ],
+    "aliases": "power spray",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3810,9 +2934,7 @@
     "subcategory": "Farm Equipment",
     "en": "Spray Nozzle",
     "ur": "اسپرے نوزل",
-    "aliases": [
-      "nozzle"
-    ],
+    "aliases": "nozzle",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3822,9 +2944,7 @@
     "subcategory": "Farm Equipment",
     "en": "Spray Lance",
     "ur": "اسپرے لانس",
-    "aliases": [
-      "lance"
-    ],
+    "aliases": "lance",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3834,9 +2954,7 @@
     "subcategory": "Farm Equipment",
     "en": "Drip Pipe",
     "ur": "ڈرپ پائپ",
-    "aliases": [
-      "drip pipe"
-    ],
+    "aliases": "drip pipe",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3846,9 +2964,7 @@
     "subcategory": "Farm Equipment",
     "en": "Drip Emitter",
     "ur": "ڈرپ ایمیٹر",
-    "aliases": [
-      "dripper"
-    ],
+    "aliases": "dripper",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3858,9 +2974,7 @@
     "subcategory": "Farm Equipment",
     "en": "Irrigation Sprinkler",
     "ur": "اسپرنکلر",
-    "aliases": [
-      "sprinkler"
-    ],
+    "aliases": "sprinkler",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3870,9 +2984,7 @@
     "subcategory": "Farm Equipment",
     "en": "Layflat Hose",
     "ur": "لے فلیٹ ہوز",
-    "aliases": [
-      "lay flat pipe"
-    ],
+    "aliases": "lay flat pipe",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3882,9 +2994,7 @@
     "subcategory": "Farm Equipment",
     "en": "Sickle",
     "ur": "درانتی",
-    "aliases": [
-      "daranti"
-    ],
+    "aliases": "daranti",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3894,9 +3004,7 @@
     "subcategory": "Farm Equipment",
     "en": "Hoe",
     "ur": "کدال",
-    "aliases": [
-      "kudal"
-    ],
+    "aliases": "kudal",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3906,9 +3014,7 @@
     "subcategory": "Farm Equipment",
     "en": "Spade",
     "ur": "بیلچہ",
-    "aliases": [
-      "belcha"
-    ],
+    "aliases": "belcha",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3918,9 +3024,7 @@
     "subcategory": "Farm Equipment",
     "en": "Shovel",
     "ur": "پھاوڑا",
-    "aliases": [
-      "phawra"
-    ],
+    "aliases": "phawra",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3930,9 +3034,7 @@
     "subcategory": "Farm Equipment",
     "en": "Pruning Shears",
     "ur": "باغبانی قینچی",
-    "aliases": [
-      "pruning qainchi"
-    ],
+    "aliases": "pruning qainchi",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3942,9 +3044,7 @@
     "subcategory": "Farm Equipment",
     "en": "Wheelbarrow",
     "ur": "ہاتھ گاڑی",
-    "aliases": [
-      "wheel barrow"
-    ],
+    "aliases": "wheel barrow",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3954,9 +3054,7 @@
     "subcategory": "Farm Equipment",
     "en": "Seed Drill Part",
     "ur": "سیڈ ڈرل پارٹ",
-    "aliases": [
-      "seed drill part"
-    ],
+    "aliases": "seed drill part",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3966,9 +3064,7 @@
     "subcategory": "Farm Equipment",
     "en": "Cultivator Blade",
     "ur": "کلٹیویٹر بلیڈ",
-    "aliases": [
-      "cultivator blade"
-    ],
+    "aliases": "cultivator blade",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -3978,9 +3074,7 @@
     "subcategory": "Farm Equipment",
     "en": "Rotavator Blade",
     "ur": "روٹاویٹر بلیڈ",
-    "aliases": [
-      "rotavator blade"
-    ],
+    "aliases": "rotavator blade",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"

@@ -78,6 +78,7 @@ import timberRows from "./timberItemDictionary.json" with { type: "json" };
 import paintRows from "./paintItemDictionary.json" with { type: "json" };
 import agriInputRows from "./agriInputItemDictionary.json" with { type: "json" };
 import bearingsRows from "./bearingsItemDictionary.json" with { type: "json" };
+import kitchenwareCrockeryRows from "./kitchenwareCrockeryItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -151,6 +152,7 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "paint", rows: paintRows as ItemRow[] },
   { source: "agri-input", rows: agriInputRows as ItemRow[] },
   { source: "bearings", rows: bearingsRows as ItemRow[] },
+  { source: "kitchenware-crockery", rows: kitchenwareCrockeryRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES

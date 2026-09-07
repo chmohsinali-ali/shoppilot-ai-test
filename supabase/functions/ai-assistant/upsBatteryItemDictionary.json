@@ -4,10 +4,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 7Ah",
     "ur": "لیڈ ایسڈ بیٹری 7Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 7Ah"
-    ],
+    "aliases": "lead acid battery, battery 7Ah",
     "brand": "Lead Acid Battery",
     "variant": "7Ah",
     "unit": "piece"
@@ -17,10 +14,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 9Ah",
     "ur": "لیڈ ایسڈ بیٹری 9Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 9Ah"
-    ],
+    "aliases": "lead acid battery, battery 9Ah",
     "brand": "Lead Acid Battery",
     "variant": "9Ah",
     "unit": "piece"
@@ -30,10 +24,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 12Ah",
     "ur": "لیڈ ایسڈ بیٹری 12Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 12Ah"
-    ],
+    "aliases": "lead acid battery, battery 12Ah",
     "brand": "Lead Acid Battery",
     "variant": "12Ah",
     "unit": "piece"
@@ -43,10 +34,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 20Ah",
     "ur": "لیڈ ایسڈ بیٹری 20Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 20Ah"
-    ],
+    "aliases": "lead acid battery, battery 20Ah",
     "brand": "Lead Acid Battery",
     "variant": "20Ah",
     "unit": "piece"
@@ -56,10 +44,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 35Ah",
     "ur": "لیڈ ایسڈ بیٹری 35Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 35Ah"
-    ],
+    "aliases": "lead acid battery, battery 35Ah",
     "brand": "Lead Acid Battery",
     "variant": "35Ah",
     "unit": "piece"
@@ -69,10 +54,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 45Ah",
     "ur": "لیڈ ایسڈ بیٹری 45Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 45Ah"
-    ],
+    "aliases": "lead acid battery, battery 45Ah",
     "brand": "Lead Acid Battery",
     "variant": "45Ah",
     "unit": "piece"
@@ -82,10 +64,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 50Ah",
     "ur": "لیڈ ایسڈ بیٹری 50Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 50Ah"
-    ],
+    "aliases": "lead acid battery, battery 50Ah",
     "brand": "Lead Acid Battery",
     "variant": "50Ah",
     "unit": "piece"
@@ -95,10 +74,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 60Ah",
     "ur": "لیڈ ایسڈ بیٹری 60Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 60Ah"
-    ],
+    "aliases": "lead acid battery, battery 60Ah",
     "brand": "Lead Acid Battery",
     "variant": "60Ah",
     "unit": "piece"
@@ -108,10 +84,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 65Ah",
     "ur": "لیڈ ایسڈ بیٹری 65Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 65Ah"
-    ],
+    "aliases": "lead acid battery, battery 65Ah",
     "brand": "Lead Acid Battery",
     "variant": "65Ah",
     "unit": "piece"
@@ -121,10 +94,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 70Ah",
     "ur": "لیڈ ایسڈ بیٹری 70Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 70Ah"
-    ],
+    "aliases": "lead acid battery, battery 70Ah",
     "brand": "Lead Acid Battery",
     "variant": "70Ah",
     "unit": "piece"
@@ -134,10 +104,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 80Ah",
     "ur": "لیڈ ایسڈ بیٹری 80Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 80Ah"
-    ],
+    "aliases": "lead acid battery, battery 80Ah",
     "brand": "Lead Acid Battery",
     "variant": "80Ah",
     "unit": "piece"
@@ -147,10 +114,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 100Ah",
     "ur": "لیڈ ایسڈ بیٹری 100Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 100Ah"
-    ],
+    "aliases": "lead acid battery, battery 100Ah",
     "brand": "Lead Acid Battery",
     "variant": "100Ah",
     "unit": "piece"
@@ -160,10 +124,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 120Ah",
     "ur": "لیڈ ایسڈ بیٹری 120Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 120Ah"
-    ],
+    "aliases": "lead acid battery, battery 120Ah",
     "brand": "Lead Acid Battery",
     "variant": "120Ah",
     "unit": "piece"
@@ -173,10 +134,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 150Ah",
     "ur": "لیڈ ایسڈ بیٹری 150Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 150Ah"
-    ],
+    "aliases": "lead acid battery, battery 150Ah",
     "brand": "Lead Acid Battery",
     "variant": "150Ah",
     "unit": "piece"
@@ -186,10 +144,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 175Ah",
     "ur": "لیڈ ایسڈ بیٹری 175Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 175Ah"
-    ],
+    "aliases": "lead acid battery, battery 175Ah",
     "brand": "Lead Acid Battery",
     "variant": "175Ah",
     "unit": "piece"
@@ -199,10 +154,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 180Ah",
     "ur": "لیڈ ایسڈ بیٹری 180Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 180Ah"
-    ],
+    "aliases": "lead acid battery, battery 180Ah",
     "brand": "Lead Acid Battery",
     "variant": "180Ah",
     "unit": "piece"
@@ -212,10 +164,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 200Ah",
     "ur": "لیڈ ایسڈ بیٹری 200Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 200Ah"
-    ],
+    "aliases": "lead acid battery, battery 200Ah",
     "brand": "Lead Acid Battery",
     "variant": "200Ah",
     "unit": "piece"
@@ -225,10 +174,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 220Ah",
     "ur": "لیڈ ایسڈ بیٹری 220Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 220Ah"
-    ],
+    "aliases": "lead acid battery, battery 220Ah",
     "brand": "Lead Acid Battery",
     "variant": "220Ah",
     "unit": "piece"
@@ -238,10 +184,7 @@
     "subcategory": "Battery",
     "en": "Lead Acid Battery 250Ah",
     "ur": "لیڈ ایسڈ بیٹری 250Ah",
-    "aliases": [
-      "lead acid battery",
-      "battery 250Ah"
-    ],
+    "aliases": "lead acid battery, battery 250Ah",
     "brand": "Lead Acid Battery",
     "variant": "250Ah",
     "unit": "piece"
@@ -251,10 +194,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 7Ah",
     "ur": "ٹیوبولر بیٹری 7Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 7Ah"
-    ],
+    "aliases": "tubular battery, battery 7Ah",
     "brand": "Tubular Battery",
     "variant": "7Ah",
     "unit": "piece"
@@ -264,10 +204,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 9Ah",
     "ur": "ٹیوبولر بیٹری 9Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 9Ah"
-    ],
+    "aliases": "tubular battery, battery 9Ah",
     "brand": "Tubular Battery",
     "variant": "9Ah",
     "unit": "piece"
@@ -277,10 +214,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 12Ah",
     "ur": "ٹیوبولر بیٹری 12Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 12Ah"
-    ],
+    "aliases": "tubular battery, battery 12Ah",
     "brand": "Tubular Battery",
     "variant": "12Ah",
     "unit": "piece"
@@ -290,10 +224,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 20Ah",
     "ur": "ٹیوبولر بیٹری 20Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 20Ah"
-    ],
+    "aliases": "tubular battery, battery 20Ah",
     "brand": "Tubular Battery",
     "variant": "20Ah",
     "unit": "piece"
@@ -303,10 +234,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 35Ah",
     "ur": "ٹیوبولر بیٹری 35Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 35Ah"
-    ],
+    "aliases": "tubular battery, battery 35Ah",
     "brand": "Tubular Battery",
     "variant": "35Ah",
     "unit": "piece"
@@ -316,10 +244,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 45Ah",
     "ur": "ٹیوبولر بیٹری 45Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 45Ah"
-    ],
+    "aliases": "tubular battery, battery 45Ah",
     "brand": "Tubular Battery",
     "variant": "45Ah",
     "unit": "piece"
@@ -329,10 +254,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 50Ah",
     "ur": "ٹیوبولر بیٹری 50Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 50Ah"
-    ],
+    "aliases": "tubular battery, battery 50Ah",
     "brand": "Tubular Battery",
     "variant": "50Ah",
     "unit": "piece"
@@ -342,10 +264,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 60Ah",
     "ur": "ٹیوبولر بیٹری 60Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 60Ah"
-    ],
+    "aliases": "tubular battery, battery 60Ah",
     "brand": "Tubular Battery",
     "variant": "60Ah",
     "unit": "piece"
@@ -355,10 +274,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 65Ah",
     "ur": "ٹیوبولر بیٹری 65Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 65Ah"
-    ],
+    "aliases": "tubular battery, battery 65Ah",
     "brand": "Tubular Battery",
     "variant": "65Ah",
     "unit": "piece"
@@ -368,10 +284,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 70Ah",
     "ur": "ٹیوبولر بیٹری 70Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 70Ah"
-    ],
+    "aliases": "tubular battery, battery 70Ah",
     "brand": "Tubular Battery",
     "variant": "70Ah",
     "unit": "piece"
@@ -381,10 +294,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 80Ah",
     "ur": "ٹیوبولر بیٹری 80Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 80Ah"
-    ],
+    "aliases": "tubular battery, battery 80Ah",
     "brand": "Tubular Battery",
     "variant": "80Ah",
     "unit": "piece"
@@ -394,10 +304,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 100Ah",
     "ur": "ٹیوبولر بیٹری 100Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 100Ah"
-    ],
+    "aliases": "tubular battery, battery 100Ah",
     "brand": "Tubular Battery",
     "variant": "100Ah",
     "unit": "piece"
@@ -407,10 +314,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 120Ah",
     "ur": "ٹیوبولر بیٹری 120Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 120Ah"
-    ],
+    "aliases": "tubular battery, battery 120Ah",
     "brand": "Tubular Battery",
     "variant": "120Ah",
     "unit": "piece"
@@ -420,10 +324,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 150Ah",
     "ur": "ٹیوبولر بیٹری 150Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 150Ah"
-    ],
+    "aliases": "tubular battery, battery 150Ah",
     "brand": "Tubular Battery",
     "variant": "150Ah",
     "unit": "piece"
@@ -433,10 +334,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 175Ah",
     "ur": "ٹیوبولر بیٹری 175Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 175Ah"
-    ],
+    "aliases": "tubular battery, battery 175Ah",
     "brand": "Tubular Battery",
     "variant": "175Ah",
     "unit": "piece"
@@ -446,10 +344,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 180Ah",
     "ur": "ٹیوبولر بیٹری 180Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 180Ah"
-    ],
+    "aliases": "tubular battery, battery 180Ah",
     "brand": "Tubular Battery",
     "variant": "180Ah",
     "unit": "piece"
@@ -459,10 +354,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 200Ah",
     "ur": "ٹیوبولر بیٹری 200Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 200Ah"
-    ],
+    "aliases": "tubular battery, battery 200Ah",
     "brand": "Tubular Battery",
     "variant": "200Ah",
     "unit": "piece"
@@ -472,10 +364,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 220Ah",
     "ur": "ٹیوبولر بیٹری 220Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 220Ah"
-    ],
+    "aliases": "tubular battery, battery 220Ah",
     "brand": "Tubular Battery",
     "variant": "220Ah",
     "unit": "piece"
@@ -485,10 +374,7 @@
     "subcategory": "Battery",
     "en": "Tubular Battery 250Ah",
     "ur": "ٹیوبولر بیٹری 250Ah",
-    "aliases": [
-      "tubular battery",
-      "battery 250Ah"
-    ],
+    "aliases": "tubular battery, battery 250Ah",
     "brand": "Tubular Battery",
     "variant": "250Ah",
     "unit": "piece"
@@ -498,10 +384,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 7Ah",
     "ur": "ڈرائی بیٹری 7Ah",
-    "aliases": [
-      "dry battery",
-      "battery 7Ah"
-    ],
+    "aliases": "dry battery, battery 7Ah",
     "brand": "Dry Battery",
     "variant": "7Ah",
     "unit": "piece"
@@ -511,10 +394,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 9Ah",
     "ur": "ڈرائی بیٹری 9Ah",
-    "aliases": [
-      "dry battery",
-      "battery 9Ah"
-    ],
+    "aliases": "dry battery, battery 9Ah",
     "brand": "Dry Battery",
     "variant": "9Ah",
     "unit": "piece"
@@ -524,10 +404,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 12Ah",
     "ur": "ڈرائی بیٹری 12Ah",
-    "aliases": [
-      "dry battery",
-      "battery 12Ah"
-    ],
+    "aliases": "dry battery, battery 12Ah",
     "brand": "Dry Battery",
     "variant": "12Ah",
     "unit": "piece"
@@ -537,10 +414,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 20Ah",
     "ur": "ڈرائی بیٹری 20Ah",
-    "aliases": [
-      "dry battery",
-      "battery 20Ah"
-    ],
+    "aliases": "dry battery, battery 20Ah",
     "brand": "Dry Battery",
     "variant": "20Ah",
     "unit": "piece"
@@ -550,10 +424,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 35Ah",
     "ur": "ڈرائی بیٹری 35Ah",
-    "aliases": [
-      "dry battery",
-      "battery 35Ah"
-    ],
+    "aliases": "dry battery, battery 35Ah",
     "brand": "Dry Battery",
     "variant": "35Ah",
     "unit": "piece"
@@ -563,10 +434,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 45Ah",
     "ur": "ڈرائی بیٹری 45Ah",
-    "aliases": [
-      "dry battery",
-      "battery 45Ah"
-    ],
+    "aliases": "dry battery, battery 45Ah",
     "brand": "Dry Battery",
     "variant": "45Ah",
     "unit": "piece"
@@ -576,10 +444,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 50Ah",
     "ur": "ڈرائی بیٹری 50Ah",
-    "aliases": [
-      "dry battery",
-      "battery 50Ah"
-    ],
+    "aliases": "dry battery, battery 50Ah",
     "brand": "Dry Battery",
     "variant": "50Ah",
     "unit": "piece"
@@ -589,10 +454,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 60Ah",
     "ur": "ڈرائی بیٹری 60Ah",
-    "aliases": [
-      "dry battery",
-      "battery 60Ah"
-    ],
+    "aliases": "dry battery, battery 60Ah",
     "brand": "Dry Battery",
     "variant": "60Ah",
     "unit": "piece"
@@ -602,10 +464,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 65Ah",
     "ur": "ڈرائی بیٹری 65Ah",
-    "aliases": [
-      "dry battery",
-      "battery 65Ah"
-    ],
+    "aliases": "dry battery, battery 65Ah",
     "brand": "Dry Battery",
     "variant": "65Ah",
     "unit": "piece"
@@ -615,10 +474,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 70Ah",
     "ur": "ڈرائی بیٹری 70Ah",
-    "aliases": [
-      "dry battery",
-      "battery 70Ah"
-    ],
+    "aliases": "dry battery, battery 70Ah",
     "brand": "Dry Battery",
     "variant": "70Ah",
     "unit": "piece"
@@ -628,10 +484,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 80Ah",
     "ur": "ڈرائی بیٹری 80Ah",
-    "aliases": [
-      "dry battery",
-      "battery 80Ah"
-    ],
+    "aliases": "dry battery, battery 80Ah",
     "brand": "Dry Battery",
     "variant": "80Ah",
     "unit": "piece"
@@ -641,10 +494,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 100Ah",
     "ur": "ڈرائی بیٹری 100Ah",
-    "aliases": [
-      "dry battery",
-      "battery 100Ah"
-    ],
+    "aliases": "dry battery, battery 100Ah",
     "brand": "Dry Battery",
     "variant": "100Ah",
     "unit": "piece"
@@ -654,10 +504,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 120Ah",
     "ur": "ڈرائی بیٹری 120Ah",
-    "aliases": [
-      "dry battery",
-      "battery 120Ah"
-    ],
+    "aliases": "dry battery, battery 120Ah",
     "brand": "Dry Battery",
     "variant": "120Ah",
     "unit": "piece"
@@ -667,10 +514,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 150Ah",
     "ur": "ڈرائی بیٹری 150Ah",
-    "aliases": [
-      "dry battery",
-      "battery 150Ah"
-    ],
+    "aliases": "dry battery, battery 150Ah",
     "brand": "Dry Battery",
     "variant": "150Ah",
     "unit": "piece"
@@ -680,10 +524,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 175Ah",
     "ur": "ڈرائی بیٹری 175Ah",
-    "aliases": [
-      "dry battery",
-      "battery 175Ah"
-    ],
+    "aliases": "dry battery, battery 175Ah",
     "brand": "Dry Battery",
     "variant": "175Ah",
     "unit": "piece"
@@ -693,10 +534,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 180Ah",
     "ur": "ڈرائی بیٹری 180Ah",
-    "aliases": [
-      "dry battery",
-      "battery 180Ah"
-    ],
+    "aliases": "dry battery, battery 180Ah",
     "brand": "Dry Battery",
     "variant": "180Ah",
     "unit": "piece"
@@ -706,10 +544,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 200Ah",
     "ur": "ڈرائی بیٹری 200Ah",
-    "aliases": [
-      "dry battery",
-      "battery 200Ah"
-    ],
+    "aliases": "dry battery, battery 200Ah",
     "brand": "Dry Battery",
     "variant": "200Ah",
     "unit": "piece"
@@ -719,10 +554,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 220Ah",
     "ur": "ڈرائی بیٹری 220Ah",
-    "aliases": [
-      "dry battery",
-      "battery 220Ah"
-    ],
+    "aliases": "dry battery, battery 220Ah",
     "brand": "Dry Battery",
     "variant": "220Ah",
     "unit": "piece"
@@ -732,10 +564,7 @@
     "subcategory": "Battery",
     "en": "Dry Battery 250Ah",
     "ur": "ڈرائی بیٹری 250Ah",
-    "aliases": [
-      "dry battery",
-      "battery 250Ah"
-    ],
+    "aliases": "dry battery, battery 250Ah",
     "brand": "Dry Battery",
     "variant": "250Ah",
     "unit": "piece"
@@ -745,10 +574,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 7Ah",
     "ur": "اے جی ایم بیٹری 7Ah",
-    "aliases": [
-      "agm battery",
-      "battery 7Ah"
-    ],
+    "aliases": "agm battery, battery 7Ah",
     "brand": "AGM Battery",
     "variant": "7Ah",
     "unit": "piece"
@@ -758,10 +584,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 9Ah",
     "ur": "اے جی ایم بیٹری 9Ah",
-    "aliases": [
-      "agm battery",
-      "battery 9Ah"
-    ],
+    "aliases": "agm battery, battery 9Ah",
     "brand": "AGM Battery",
     "variant": "9Ah",
     "unit": "piece"
@@ -771,10 +594,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 12Ah",
     "ur": "اے جی ایم بیٹری 12Ah",
-    "aliases": [
-      "agm battery",
-      "battery 12Ah"
-    ],
+    "aliases": "agm battery, battery 12Ah",
     "brand": "AGM Battery",
     "variant": "12Ah",
     "unit": "piece"
@@ -784,10 +604,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 20Ah",
     "ur": "اے جی ایم بیٹری 20Ah",
-    "aliases": [
-      "agm battery",
-      "battery 20Ah"
-    ],
+    "aliases": "agm battery, battery 20Ah",
     "brand": "AGM Battery",
     "variant": "20Ah",
     "unit": "piece"
@@ -797,10 +614,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 35Ah",
     "ur": "اے جی ایم بیٹری 35Ah",
-    "aliases": [
-      "agm battery",
-      "battery 35Ah"
-    ],
+    "aliases": "agm battery, battery 35Ah",
     "brand": "AGM Battery",
     "variant": "35Ah",
     "unit": "piece"
@@ -810,10 +624,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 45Ah",
     "ur": "اے جی ایم بیٹری 45Ah",
-    "aliases": [
-      "agm battery",
-      "battery 45Ah"
-    ],
+    "aliases": "agm battery, battery 45Ah",
     "brand": "AGM Battery",
     "variant": "45Ah",
     "unit": "piece"
@@ -823,10 +634,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 50Ah",
     "ur": "اے جی ایم بیٹری 50Ah",
-    "aliases": [
-      "agm battery",
-      "battery 50Ah"
-    ],
+    "aliases": "agm battery, battery 50Ah",
     "brand": "AGM Battery",
     "variant": "50Ah",
     "unit": "piece"
@@ -836,10 +644,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 60Ah",
     "ur": "اے جی ایم بیٹری 60Ah",
-    "aliases": [
-      "agm battery",
-      "battery 60Ah"
-    ],
+    "aliases": "agm battery, battery 60Ah",
     "brand": "AGM Battery",
     "variant": "60Ah",
     "unit": "piece"
@@ -849,10 +654,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 65Ah",
     "ur": "اے جی ایم بیٹری 65Ah",
-    "aliases": [
-      "agm battery",
-      "battery 65Ah"
-    ],
+    "aliases": "agm battery, battery 65Ah",
     "brand": "AGM Battery",
     "variant": "65Ah",
     "unit": "piece"
@@ -862,10 +664,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 70Ah",
     "ur": "اے جی ایم بیٹری 70Ah",
-    "aliases": [
-      "agm battery",
-      "battery 70Ah"
-    ],
+    "aliases": "agm battery, battery 70Ah",
     "brand": "AGM Battery",
     "variant": "70Ah",
     "unit": "piece"
@@ -875,10 +674,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 80Ah",
     "ur": "اے جی ایم بیٹری 80Ah",
-    "aliases": [
-      "agm battery",
-      "battery 80Ah"
-    ],
+    "aliases": "agm battery, battery 80Ah",
     "brand": "AGM Battery",
     "variant": "80Ah",
     "unit": "piece"
@@ -888,10 +684,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 100Ah",
     "ur": "اے جی ایم بیٹری 100Ah",
-    "aliases": [
-      "agm battery",
-      "battery 100Ah"
-    ],
+    "aliases": "agm battery, battery 100Ah",
     "brand": "AGM Battery",
     "variant": "100Ah",
     "unit": "piece"
@@ -901,10 +694,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 120Ah",
     "ur": "اے جی ایم بیٹری 120Ah",
-    "aliases": [
-      "agm battery",
-      "battery 120Ah"
-    ],
+    "aliases": "agm battery, battery 120Ah",
     "brand": "AGM Battery",
     "variant": "120Ah",
     "unit": "piece"
@@ -914,10 +704,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 150Ah",
     "ur": "اے جی ایم بیٹری 150Ah",
-    "aliases": [
-      "agm battery",
-      "battery 150Ah"
-    ],
+    "aliases": "agm battery, battery 150Ah",
     "brand": "AGM Battery",
     "variant": "150Ah",
     "unit": "piece"
@@ -927,10 +714,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 175Ah",
     "ur": "اے جی ایم بیٹری 175Ah",
-    "aliases": [
-      "agm battery",
-      "battery 175Ah"
-    ],
+    "aliases": "agm battery, battery 175Ah",
     "brand": "AGM Battery",
     "variant": "175Ah",
     "unit": "piece"
@@ -940,10 +724,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 180Ah",
     "ur": "اے جی ایم بیٹری 180Ah",
-    "aliases": [
-      "agm battery",
-      "battery 180Ah"
-    ],
+    "aliases": "agm battery, battery 180Ah",
     "brand": "AGM Battery",
     "variant": "180Ah",
     "unit": "piece"
@@ -953,10 +734,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 200Ah",
     "ur": "اے جی ایم بیٹری 200Ah",
-    "aliases": [
-      "agm battery",
-      "battery 200Ah"
-    ],
+    "aliases": "agm battery, battery 200Ah",
     "brand": "AGM Battery",
     "variant": "200Ah",
     "unit": "piece"
@@ -966,10 +744,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 220Ah",
     "ur": "اے جی ایم بیٹری 220Ah",
-    "aliases": [
-      "agm battery",
-      "battery 220Ah"
-    ],
+    "aliases": "agm battery, battery 220Ah",
     "brand": "AGM Battery",
     "variant": "220Ah",
     "unit": "piece"
@@ -979,10 +754,7 @@
     "subcategory": "Battery",
     "en": "AGM Battery 250Ah",
     "ur": "اے جی ایم بیٹری 250Ah",
-    "aliases": [
-      "agm battery",
-      "battery 250Ah"
-    ],
+    "aliases": "agm battery, battery 250Ah",
     "brand": "AGM Battery",
     "variant": "250Ah",
     "unit": "piece"
@@ -992,10 +764,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 7Ah",
     "ur": "جیل بیٹری 7Ah",
-    "aliases": [
-      "gel battery",
-      "battery 7Ah"
-    ],
+    "aliases": "gel battery, battery 7Ah",
     "brand": "Gel Battery",
     "variant": "7Ah",
     "unit": "piece"
@@ -1005,10 +774,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 9Ah",
     "ur": "جیل بیٹری 9Ah",
-    "aliases": [
-      "gel battery",
-      "battery 9Ah"
-    ],
+    "aliases": "gel battery, battery 9Ah",
     "brand": "Gel Battery",
     "variant": "9Ah",
     "unit": "piece"
@@ -1018,10 +784,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 12Ah",
     "ur": "جیل بیٹری 12Ah",
-    "aliases": [
-      "gel battery",
-      "battery 12Ah"
-    ],
+    "aliases": "gel battery, battery 12Ah",
     "brand": "Gel Battery",
     "variant": "12Ah",
     "unit": "piece"
@@ -1031,10 +794,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 20Ah",
     "ur": "جیل بیٹری 20Ah",
-    "aliases": [
-      "gel battery",
-      "battery 20Ah"
-    ],
+    "aliases": "gel battery, battery 20Ah",
     "brand": "Gel Battery",
     "variant": "20Ah",
     "unit": "piece"
@@ -1044,10 +804,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 35Ah",
     "ur": "جیل بیٹری 35Ah",
-    "aliases": [
-      "gel battery",
-      "battery 35Ah"
-    ],
+    "aliases": "gel battery, battery 35Ah",
     "brand": "Gel Battery",
     "variant": "35Ah",
     "unit": "piece"
@@ -1057,10 +814,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 45Ah",
     "ur": "جیل بیٹری 45Ah",
-    "aliases": [
-      "gel battery",
-      "battery 45Ah"
-    ],
+    "aliases": "gel battery, battery 45Ah",
     "brand": "Gel Battery",
     "variant": "45Ah",
     "unit": "piece"
@@ -1070,10 +824,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 50Ah",
     "ur": "جیل بیٹری 50Ah",
-    "aliases": [
-      "gel battery",
-      "battery 50Ah"
-    ],
+    "aliases": "gel battery, battery 50Ah",
     "brand": "Gel Battery",
     "variant": "50Ah",
     "unit": "piece"
@@ -1083,10 +834,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 60Ah",
     "ur": "جیل بیٹری 60Ah",
-    "aliases": [
-      "gel battery",
-      "battery 60Ah"
-    ],
+    "aliases": "gel battery, battery 60Ah",
     "brand": "Gel Battery",
     "variant": "60Ah",
     "unit": "piece"
@@ -1096,10 +844,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 65Ah",
     "ur": "جیل بیٹری 65Ah",
-    "aliases": [
-      "gel battery",
-      "battery 65Ah"
-    ],
+    "aliases": "gel battery, battery 65Ah",
     "brand": "Gel Battery",
     "variant": "65Ah",
     "unit": "piece"
@@ -1109,10 +854,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 70Ah",
     "ur": "جیل بیٹری 70Ah",
-    "aliases": [
-      "gel battery",
-      "battery 70Ah"
-    ],
+    "aliases": "gel battery, battery 70Ah",
     "brand": "Gel Battery",
     "variant": "70Ah",
     "unit": "piece"
@@ -1122,10 +864,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 80Ah",
     "ur": "جیل بیٹری 80Ah",
-    "aliases": [
-      "gel battery",
-      "battery 80Ah"
-    ],
+    "aliases": "gel battery, battery 80Ah",
     "brand": "Gel Battery",
     "variant": "80Ah",
     "unit": "piece"
@@ -1135,10 +874,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 100Ah",
     "ur": "جیل بیٹری 100Ah",
-    "aliases": [
-      "gel battery",
-      "battery 100Ah"
-    ],
+    "aliases": "gel battery, battery 100Ah",
     "brand": "Gel Battery",
     "variant": "100Ah",
     "unit": "piece"
@@ -1148,10 +884,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 120Ah",
     "ur": "جیل بیٹری 120Ah",
-    "aliases": [
-      "gel battery",
-      "battery 120Ah"
-    ],
+    "aliases": "gel battery, battery 120Ah",
     "brand": "Gel Battery",
     "variant": "120Ah",
     "unit": "piece"
@@ -1161,10 +894,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 150Ah",
     "ur": "جیل بیٹری 150Ah",
-    "aliases": [
-      "gel battery",
-      "battery 150Ah"
-    ],
+    "aliases": "gel battery, battery 150Ah",
     "brand": "Gel Battery",
     "variant": "150Ah",
     "unit": "piece"
@@ -1174,10 +904,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 175Ah",
     "ur": "جیل بیٹری 175Ah",
-    "aliases": [
-      "gel battery",
-      "battery 175Ah"
-    ],
+    "aliases": "gel battery, battery 175Ah",
     "brand": "Gel Battery",
     "variant": "175Ah",
     "unit": "piece"
@@ -1187,10 +914,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 180Ah",
     "ur": "جیل بیٹری 180Ah",
-    "aliases": [
-      "gel battery",
-      "battery 180Ah"
-    ],
+    "aliases": "gel battery, battery 180Ah",
     "brand": "Gel Battery",
     "variant": "180Ah",
     "unit": "piece"
@@ -1200,10 +924,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 200Ah",
     "ur": "جیل بیٹری 200Ah",
-    "aliases": [
-      "gel battery",
-      "battery 200Ah"
-    ],
+    "aliases": "gel battery, battery 200Ah",
     "brand": "Gel Battery",
     "variant": "200Ah",
     "unit": "piece"
@@ -1213,10 +934,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 220Ah",
     "ur": "جیل بیٹری 220Ah",
-    "aliases": [
-      "gel battery",
-      "battery 220Ah"
-    ],
+    "aliases": "gel battery, battery 220Ah",
     "brand": "Gel Battery",
     "variant": "220Ah",
     "unit": "piece"
@@ -1226,10 +944,7 @@
     "subcategory": "Battery",
     "en": "Gel Battery 250Ah",
     "ur": "جیل بیٹری 250Ah",
-    "aliases": [
-      "gel battery",
-      "battery 250Ah"
-    ],
+    "aliases": "gel battery, battery 250Ah",
     "brand": "Gel Battery",
     "variant": "250Ah",
     "unit": "piece"
@@ -1239,10 +954,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 7Ah",
     "ur": "لیتھیم بیٹری 7Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 7Ah"
-    ],
+    "aliases": "lithium battery, battery 7Ah",
     "brand": "Lithium Battery",
     "variant": "7Ah",
     "unit": "piece"
@@ -1252,10 +964,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 9Ah",
     "ur": "لیتھیم بیٹری 9Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 9Ah"
-    ],
+    "aliases": "lithium battery, battery 9Ah",
     "brand": "Lithium Battery",
     "variant": "9Ah",
     "unit": "piece"
@@ -1265,10 +974,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 12Ah",
     "ur": "لیتھیم بیٹری 12Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 12Ah"
-    ],
+    "aliases": "lithium battery, battery 12Ah",
     "brand": "Lithium Battery",
     "variant": "12Ah",
     "unit": "piece"
@@ -1278,10 +984,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 20Ah",
     "ur": "لیتھیم بیٹری 20Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 20Ah"
-    ],
+    "aliases": "lithium battery, battery 20Ah",
     "brand": "Lithium Battery",
     "variant": "20Ah",
     "unit": "piece"
@@ -1291,10 +994,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 35Ah",
     "ur": "لیتھیم بیٹری 35Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 35Ah"
-    ],
+    "aliases": "lithium battery, battery 35Ah",
     "brand": "Lithium Battery",
     "variant": "35Ah",
     "unit": "piece"
@@ -1304,10 +1004,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 45Ah",
     "ur": "لیتھیم بیٹری 45Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 45Ah"
-    ],
+    "aliases": "lithium battery, battery 45Ah",
     "brand": "Lithium Battery",
     "variant": "45Ah",
     "unit": "piece"
@@ -1317,10 +1014,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 50Ah",
     "ur": "لیتھیم بیٹری 50Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 50Ah"
-    ],
+    "aliases": "lithium battery, battery 50Ah",
     "brand": "Lithium Battery",
     "variant": "50Ah",
     "unit": "piece"
@@ -1330,10 +1024,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 60Ah",
     "ur": "لیتھیم بیٹری 60Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 60Ah"
-    ],
+    "aliases": "lithium battery, battery 60Ah",
     "brand": "Lithium Battery",
     "variant": "60Ah",
     "unit": "piece"
@@ -1343,10 +1034,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 65Ah",
     "ur": "لیتھیم بیٹری 65Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 65Ah"
-    ],
+    "aliases": "lithium battery, battery 65Ah",
     "brand": "Lithium Battery",
     "variant": "65Ah",
     "unit": "piece"
@@ -1356,10 +1044,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 70Ah",
     "ur": "لیتھیم بیٹری 70Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 70Ah"
-    ],
+    "aliases": "lithium battery, battery 70Ah",
     "brand": "Lithium Battery",
     "variant": "70Ah",
     "unit": "piece"
@@ -1369,10 +1054,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 80Ah",
     "ur": "لیتھیم بیٹری 80Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 80Ah"
-    ],
+    "aliases": "lithium battery, battery 80Ah",
     "brand": "Lithium Battery",
     "variant": "80Ah",
     "unit": "piece"
@@ -1382,10 +1064,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 100Ah",
     "ur": "لیتھیم بیٹری 100Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 100Ah"
-    ],
+    "aliases": "lithium battery, battery 100Ah",
     "brand": "Lithium Battery",
     "variant": "100Ah",
     "unit": "piece"
@@ -1395,10 +1074,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 120Ah",
     "ur": "لیتھیم بیٹری 120Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 120Ah"
-    ],
+    "aliases": "lithium battery, battery 120Ah",
     "brand": "Lithium Battery",
     "variant": "120Ah",
     "unit": "piece"
@@ -1408,10 +1084,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 150Ah",
     "ur": "لیتھیم بیٹری 150Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 150Ah"
-    ],
+    "aliases": "lithium battery, battery 150Ah",
     "brand": "Lithium Battery",
     "variant": "150Ah",
     "unit": "piece"
@@ -1421,10 +1094,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 175Ah",
     "ur": "لیتھیم بیٹری 175Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 175Ah"
-    ],
+    "aliases": "lithium battery, battery 175Ah",
     "brand": "Lithium Battery",
     "variant": "175Ah",
     "unit": "piece"
@@ -1434,10 +1104,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 180Ah",
     "ur": "لیتھیم بیٹری 180Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 180Ah"
-    ],
+    "aliases": "lithium battery, battery 180Ah",
     "brand": "Lithium Battery",
     "variant": "180Ah",
     "unit": "piece"
@@ -1447,10 +1114,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 200Ah",
     "ur": "لیتھیم بیٹری 200Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 200Ah"
-    ],
+    "aliases": "lithium battery, battery 200Ah",
     "brand": "Lithium Battery",
     "variant": "200Ah",
     "unit": "piece"
@@ -1460,10 +1124,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 220Ah",
     "ur": "لیتھیم بیٹری 220Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 220Ah"
-    ],
+    "aliases": "lithium battery, battery 220Ah",
     "brand": "Lithium Battery",
     "variant": "220Ah",
     "unit": "piece"
@@ -1473,10 +1134,7 @@
     "subcategory": "Battery",
     "en": "Lithium Battery 250Ah",
     "ur": "لیتھیم بیٹری 250Ah",
-    "aliases": [
-      "lithium battery",
-      "battery 250Ah"
-    ],
+    "aliases": "lithium battery, battery 250Ah",
     "brand": "Lithium Battery",
     "variant": "250Ah",
     "unit": "piece"
@@ -1486,10 +1144,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 7Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 7Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 7Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 7Ah",
     "brand": "LiFePO4 Battery",
     "variant": "7Ah",
     "unit": "piece"
@@ -1499,10 +1154,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 9Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 9Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 9Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 9Ah",
     "brand": "LiFePO4 Battery",
     "variant": "9Ah",
     "unit": "piece"
@@ -1512,10 +1164,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 12Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 12Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 12Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 12Ah",
     "brand": "LiFePO4 Battery",
     "variant": "12Ah",
     "unit": "piece"
@@ -1525,10 +1174,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 20Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 20Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 20Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 20Ah",
     "brand": "LiFePO4 Battery",
     "variant": "20Ah",
     "unit": "piece"
@@ -1538,10 +1184,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 35Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 35Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 35Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 35Ah",
     "brand": "LiFePO4 Battery",
     "variant": "35Ah",
     "unit": "piece"
@@ -1551,10 +1194,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 45Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 45Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 45Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 45Ah",
     "brand": "LiFePO4 Battery",
     "variant": "45Ah",
     "unit": "piece"
@@ -1564,10 +1204,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 50Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 50Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 50Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 50Ah",
     "brand": "LiFePO4 Battery",
     "variant": "50Ah",
     "unit": "piece"
@@ -1577,10 +1214,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 60Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 60Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 60Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 60Ah",
     "brand": "LiFePO4 Battery",
     "variant": "60Ah",
     "unit": "piece"
@@ -1590,10 +1224,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 65Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 65Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 65Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 65Ah",
     "brand": "LiFePO4 Battery",
     "variant": "65Ah",
     "unit": "piece"
@@ -1603,10 +1234,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 70Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 70Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 70Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 70Ah",
     "brand": "LiFePO4 Battery",
     "variant": "70Ah",
     "unit": "piece"
@@ -1616,10 +1244,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 80Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 80Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 80Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 80Ah",
     "brand": "LiFePO4 Battery",
     "variant": "80Ah",
     "unit": "piece"
@@ -1629,10 +1254,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 100Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 100Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 100Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 100Ah",
     "brand": "LiFePO4 Battery",
     "variant": "100Ah",
     "unit": "piece"
@@ -1642,10 +1264,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 120Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 120Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 120Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 120Ah",
     "brand": "LiFePO4 Battery",
     "variant": "120Ah",
     "unit": "piece"
@@ -1655,10 +1274,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 150Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 150Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 150Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 150Ah",
     "brand": "LiFePO4 Battery",
     "variant": "150Ah",
     "unit": "piece"
@@ -1668,10 +1284,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 175Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 175Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 175Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 175Ah",
     "brand": "LiFePO4 Battery",
     "variant": "175Ah",
     "unit": "piece"
@@ -1681,10 +1294,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 180Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 180Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 180Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 180Ah",
     "brand": "LiFePO4 Battery",
     "variant": "180Ah",
     "unit": "piece"
@@ -1694,10 +1304,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 200Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 200Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 200Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 200Ah",
     "brand": "LiFePO4 Battery",
     "variant": "200Ah",
     "unit": "piece"
@@ -1707,10 +1314,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 220Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 220Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 220Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 220Ah",
     "brand": "LiFePO4 Battery",
     "variant": "220Ah",
     "unit": "piece"
@@ -1720,10 +1324,7 @@
     "subcategory": "Battery",
     "en": "LiFePO4 Battery 250Ah",
     "ur": "لیتھیم آئرن فاسفیٹ بیٹری 250Ah",
-    "aliases": [
-      "lifepo4 battery",
-      "battery 250Ah"
-    ],
+    "aliases": "lifepo4 battery, battery 250Ah",
     "brand": "LiFePO4 Battery",
     "variant": "250Ah",
     "unit": "piece"
@@ -1733,10 +1334,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 600VA",
     "ur": "یو پی ایس 600VA",
-    "aliases": [
-      "ups",
-      "600VA"
-    ],
+    "aliases": "ups, 600VA",
     "brand": "UPS",
     "variant": "600VA",
     "unit": "piece"
@@ -1746,10 +1344,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 800VA",
     "ur": "یو پی ایس 800VA",
-    "aliases": [
-      "ups",
-      "800VA"
-    ],
+    "aliases": "ups, 800VA",
     "brand": "UPS",
     "variant": "800VA",
     "unit": "piece"
@@ -1759,10 +1354,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 1kVA",
     "ur": "یو پی ایس 1kVA",
-    "aliases": [
-      "ups",
-      "1kVA"
-    ],
+    "aliases": "ups, 1kVA",
     "brand": "UPS",
     "variant": "1kVA",
     "unit": "piece"
@@ -1772,10 +1364,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 1.2kVA",
     "ur": "یو پی ایس 1.2kVA",
-    "aliases": [
-      "ups",
-      "1.2kVA"
-    ],
+    "aliases": "ups, 1.2kVA",
     "brand": "UPS",
     "variant": "1.2kVA",
     "unit": "piece"
@@ -1785,10 +1374,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 1.5kVA",
     "ur": "یو پی ایس 1.5kVA",
-    "aliases": [
-      "ups",
-      "1.5kVA"
-    ],
+    "aliases": "ups, 1.5kVA",
     "brand": "UPS",
     "variant": "1.5kVA",
     "unit": "piece"
@@ -1798,10 +1384,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 2kVA",
     "ur": "یو پی ایس 2kVA",
-    "aliases": [
-      "ups",
-      "2kVA"
-    ],
+    "aliases": "ups, 2kVA",
     "brand": "UPS",
     "variant": "2kVA",
     "unit": "piece"
@@ -1811,10 +1394,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 3kVA",
     "ur": "یو پی ایس 3kVA",
-    "aliases": [
-      "ups",
-      "3kVA"
-    ],
+    "aliases": "ups, 3kVA",
     "brand": "UPS",
     "variant": "3kVA",
     "unit": "piece"
@@ -1824,10 +1404,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 5kVA",
     "ur": "یو پی ایس 5kVA",
-    "aliases": [
-      "ups",
-      "5kVA"
-    ],
+    "aliases": "ups, 5kVA",
     "brand": "UPS",
     "variant": "5kVA",
     "unit": "piece"
@@ -1837,10 +1414,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 6kVA",
     "ur": "یو پی ایس 6kVA",
-    "aliases": [
-      "ups",
-      "6kVA"
-    ],
+    "aliases": "ups, 6kVA",
     "brand": "UPS",
     "variant": "6kVA",
     "unit": "piece"
@@ -1850,10 +1424,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 8kVA",
     "ur": "یو پی ایس 8kVA",
-    "aliases": [
-      "ups",
-      "8kVA"
-    ],
+    "aliases": "ups, 8kVA",
     "brand": "UPS",
     "variant": "8kVA",
     "unit": "piece"
@@ -1863,10 +1434,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 10kVA",
     "ur": "یو پی ایس 10kVA",
-    "aliases": [
-      "ups",
-      "10kVA"
-    ],
+    "aliases": "ups, 10kVA",
     "brand": "UPS",
     "variant": "10kVA",
     "unit": "piece"
@@ -1876,10 +1444,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 12kVA",
     "ur": "یو پی ایس 12kVA",
-    "aliases": [
-      "ups",
-      "12kVA"
-    ],
+    "aliases": "ups, 12kVA",
     "brand": "UPS",
     "variant": "12kVA",
     "unit": "piece"
@@ -1889,10 +1454,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 15kVA",
     "ur": "یو پی ایس 15kVA",
-    "aliases": [
-      "ups",
-      "15kVA"
-    ],
+    "aliases": "ups, 15kVA",
     "brand": "UPS",
     "variant": "15kVA",
     "unit": "piece"
@@ -1902,10 +1464,7 @@
     "subcategory": "Power Conversion",
     "en": "UPS 20kVA",
     "ur": "یو پی ایس 20kVA",
-    "aliases": [
-      "ups",
-      "20kVA"
-    ],
+    "aliases": "ups, 20kVA",
     "brand": "UPS",
     "variant": "20kVA",
     "unit": "piece"
@@ -1915,10 +1474,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 600VA",
     "ur": "انورٹر 600VA",
-    "aliases": [
-      "inverter",
-      "600VA"
-    ],
+    "aliases": "inverter, 600VA",
     "brand": "Inverter",
     "variant": "600VA",
     "unit": "piece"
@@ -1928,10 +1484,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 800VA",
     "ur": "انورٹر 800VA",
-    "aliases": [
-      "inverter",
-      "800VA"
-    ],
+    "aliases": "inverter, 800VA",
     "brand": "Inverter",
     "variant": "800VA",
     "unit": "piece"
@@ -1941,10 +1494,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 1kVA",
     "ur": "انورٹر 1kVA",
-    "aliases": [
-      "inverter",
-      "1kVA"
-    ],
+    "aliases": "inverter, 1kVA",
     "brand": "Inverter",
     "variant": "1kVA",
     "unit": "piece"
@@ -1954,10 +1504,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 1.2kVA",
     "ur": "انورٹر 1.2kVA",
-    "aliases": [
-      "inverter",
-      "1.2kVA"
-    ],
+    "aliases": "inverter, 1.2kVA",
     "brand": "Inverter",
     "variant": "1.2kVA",
     "unit": "piece"
@@ -1967,10 +1514,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 1.5kVA",
     "ur": "انورٹر 1.5kVA",
-    "aliases": [
-      "inverter",
-      "1.5kVA"
-    ],
+    "aliases": "inverter, 1.5kVA",
     "brand": "Inverter",
     "variant": "1.5kVA",
     "unit": "piece"
@@ -1980,10 +1524,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 2kVA",
     "ur": "انورٹر 2kVA",
-    "aliases": [
-      "inverter",
-      "2kVA"
-    ],
+    "aliases": "inverter, 2kVA",
     "brand": "Inverter",
     "variant": "2kVA",
     "unit": "piece"
@@ -1993,10 +1534,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 3kVA",
     "ur": "انورٹر 3kVA",
-    "aliases": [
-      "inverter",
-      "3kVA"
-    ],
+    "aliases": "inverter, 3kVA",
     "brand": "Inverter",
     "variant": "3kVA",
     "unit": "piece"
@@ -2006,10 +1544,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 5kVA",
     "ur": "انورٹر 5kVA",
-    "aliases": [
-      "inverter",
-      "5kVA"
-    ],
+    "aliases": "inverter, 5kVA",
     "brand": "Inverter",
     "variant": "5kVA",
     "unit": "piece"
@@ -2019,10 +1554,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 6kVA",
     "ur": "انورٹر 6kVA",
-    "aliases": [
-      "inverter",
-      "6kVA"
-    ],
+    "aliases": "inverter, 6kVA",
     "brand": "Inverter",
     "variant": "6kVA",
     "unit": "piece"
@@ -2032,10 +1564,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 8kVA",
     "ur": "انورٹر 8kVA",
-    "aliases": [
-      "inverter",
-      "8kVA"
-    ],
+    "aliases": "inverter, 8kVA",
     "brand": "Inverter",
     "variant": "8kVA",
     "unit": "piece"
@@ -2045,10 +1574,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 10kVA",
     "ur": "انورٹر 10kVA",
-    "aliases": [
-      "inverter",
-      "10kVA"
-    ],
+    "aliases": "inverter, 10kVA",
     "brand": "Inverter",
     "variant": "10kVA",
     "unit": "piece"
@@ -2058,10 +1584,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 12kVA",
     "ur": "انورٹر 12kVA",
-    "aliases": [
-      "inverter",
-      "12kVA"
-    ],
+    "aliases": "inverter, 12kVA",
     "brand": "Inverter",
     "variant": "12kVA",
     "unit": "piece"
@@ -2071,10 +1594,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 15kVA",
     "ur": "انورٹر 15kVA",
-    "aliases": [
-      "inverter",
-      "15kVA"
-    ],
+    "aliases": "inverter, 15kVA",
     "brand": "Inverter",
     "variant": "15kVA",
     "unit": "piece"
@@ -2084,10 +1604,7 @@
     "subcategory": "Power Conversion",
     "en": "Inverter 20kVA",
     "ur": "انورٹر 20kVA",
-    "aliases": [
-      "inverter",
-      "20kVA"
-    ],
+    "aliases": "inverter, 20kVA",
     "brand": "Inverter",
     "variant": "20kVA",
     "unit": "piece"
@@ -2097,10 +1614,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 600VA",
     "ur": "سولر انورٹر 600VA",
-    "aliases": [
-      "solar inverter",
-      "600VA"
-    ],
+    "aliases": "solar inverter, 600VA",
     "brand": "Solar Inverter",
     "variant": "600VA",
     "unit": "piece"
@@ -2110,10 +1624,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 800VA",
     "ur": "سولر انورٹر 800VA",
-    "aliases": [
-      "solar inverter",
-      "800VA"
-    ],
+    "aliases": "solar inverter, 800VA",
     "brand": "Solar Inverter",
     "variant": "800VA",
     "unit": "piece"
@@ -2123,10 +1634,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 1kVA",
     "ur": "سولر انورٹر 1kVA",
-    "aliases": [
-      "solar inverter",
-      "1kVA"
-    ],
+    "aliases": "solar inverter, 1kVA",
     "brand": "Solar Inverter",
     "variant": "1kVA",
     "unit": "piece"
@@ -2136,10 +1644,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 1.2kVA",
     "ur": "سولر انورٹر 1.2kVA",
-    "aliases": [
-      "solar inverter",
-      "1.2kVA"
-    ],
+    "aliases": "solar inverter, 1.2kVA",
     "brand": "Solar Inverter",
     "variant": "1.2kVA",
     "unit": "piece"
@@ -2149,10 +1654,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 1.5kVA",
     "ur": "سولر انورٹر 1.5kVA",
-    "aliases": [
-      "solar inverter",
-      "1.5kVA"
-    ],
+    "aliases": "solar inverter, 1.5kVA",
     "brand": "Solar Inverter",
     "variant": "1.5kVA",
     "unit": "piece"
@@ -2162,10 +1664,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 2kVA",
     "ur": "سولر انورٹر 2kVA",
-    "aliases": [
-      "solar inverter",
-      "2kVA"
-    ],
+    "aliases": "solar inverter, 2kVA",
     "brand": "Solar Inverter",
     "variant": "2kVA",
     "unit": "piece"
@@ -2175,10 +1674,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 3kVA",
     "ur": "سولر انورٹر 3kVA",
-    "aliases": [
-      "solar inverter",
-      "3kVA"
-    ],
+    "aliases": "solar inverter, 3kVA",
     "brand": "Solar Inverter",
     "variant": "3kVA",
     "unit": "piece"
@@ -2188,10 +1684,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 5kVA",
     "ur": "سولر انورٹر 5kVA",
-    "aliases": [
-      "solar inverter",
-      "5kVA"
-    ],
+    "aliases": "solar inverter, 5kVA",
     "brand": "Solar Inverter",
     "variant": "5kVA",
     "unit": "piece"
@@ -2201,10 +1694,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 6kVA",
     "ur": "سولر انورٹر 6kVA",
-    "aliases": [
-      "solar inverter",
-      "6kVA"
-    ],
+    "aliases": "solar inverter, 6kVA",
     "brand": "Solar Inverter",
     "variant": "6kVA",
     "unit": "piece"
@@ -2214,10 +1704,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 8kVA",
     "ur": "سولر انورٹر 8kVA",
-    "aliases": [
-      "solar inverter",
-      "8kVA"
-    ],
+    "aliases": "solar inverter, 8kVA",
     "brand": "Solar Inverter",
     "variant": "8kVA",
     "unit": "piece"
@@ -2227,10 +1714,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 10kVA",
     "ur": "سولر انورٹر 10kVA",
-    "aliases": [
-      "solar inverter",
-      "10kVA"
-    ],
+    "aliases": "solar inverter, 10kVA",
     "brand": "Solar Inverter",
     "variant": "10kVA",
     "unit": "piece"
@@ -2240,10 +1724,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 12kVA",
     "ur": "سولر انورٹر 12kVA",
-    "aliases": [
-      "solar inverter",
-      "12kVA"
-    ],
+    "aliases": "solar inverter, 12kVA",
     "brand": "Solar Inverter",
     "variant": "12kVA",
     "unit": "piece"
@@ -2253,10 +1734,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 15kVA",
     "ur": "سولر انورٹر 15kVA",
-    "aliases": [
-      "solar inverter",
-      "15kVA"
-    ],
+    "aliases": "solar inverter, 15kVA",
     "brand": "Solar Inverter",
     "variant": "15kVA",
     "unit": "piece"
@@ -2266,10 +1744,7 @@
     "subcategory": "Power Conversion",
     "en": "Solar Inverter 20kVA",
     "ur": "سولر انورٹر 20kVA",
-    "aliases": [
-      "solar inverter",
-      "20kVA"
-    ],
+    "aliases": "solar inverter, 20kVA",
     "brand": "Solar Inverter",
     "variant": "20kVA",
     "unit": "piece"
@@ -2279,10 +1754,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 600VA",
     "ur": "ہائبرڈ انورٹر 600VA",
-    "aliases": [
-      "hybrid inverter",
-      "600VA"
-    ],
+    "aliases": "hybrid inverter, 600VA",
     "brand": "Hybrid Inverter",
     "variant": "600VA",
     "unit": "piece"
@@ -2292,10 +1764,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 800VA",
     "ur": "ہائبرڈ انورٹر 800VA",
-    "aliases": [
-      "hybrid inverter",
-      "800VA"
-    ],
+    "aliases": "hybrid inverter, 800VA",
     "brand": "Hybrid Inverter",
     "variant": "800VA",
     "unit": "piece"
@@ -2305,10 +1774,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 1kVA",
     "ur": "ہائبرڈ انورٹر 1kVA",
-    "aliases": [
-      "hybrid inverter",
-      "1kVA"
-    ],
+    "aliases": "hybrid inverter, 1kVA",
     "brand": "Hybrid Inverter",
     "variant": "1kVA",
     "unit": "piece"
@@ -2318,10 +1784,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 1.2kVA",
     "ur": "ہائبرڈ انورٹر 1.2kVA",
-    "aliases": [
-      "hybrid inverter",
-      "1.2kVA"
-    ],
+    "aliases": "hybrid inverter, 1.2kVA",
     "brand": "Hybrid Inverter",
     "variant": "1.2kVA",
     "unit": "piece"
@@ -2331,10 +1794,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 1.5kVA",
     "ur": "ہائبرڈ انورٹر 1.5kVA",
-    "aliases": [
-      "hybrid inverter",
-      "1.5kVA"
-    ],
+    "aliases": "hybrid inverter, 1.5kVA",
     "brand": "Hybrid Inverter",
     "variant": "1.5kVA",
     "unit": "piece"
@@ -2344,10 +1804,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 2kVA",
     "ur": "ہائبرڈ انورٹر 2kVA",
-    "aliases": [
-      "hybrid inverter",
-      "2kVA"
-    ],
+    "aliases": "hybrid inverter, 2kVA",
     "brand": "Hybrid Inverter",
     "variant": "2kVA",
     "unit": "piece"
@@ -2357,10 +1814,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 3kVA",
     "ur": "ہائبرڈ انورٹر 3kVA",
-    "aliases": [
-      "hybrid inverter",
-      "3kVA"
-    ],
+    "aliases": "hybrid inverter, 3kVA",
     "brand": "Hybrid Inverter",
     "variant": "3kVA",
     "unit": "piece"
@@ -2370,10 +1824,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 5kVA",
     "ur": "ہائبرڈ انورٹر 5kVA",
-    "aliases": [
-      "hybrid inverter",
-      "5kVA"
-    ],
+    "aliases": "hybrid inverter, 5kVA",
     "brand": "Hybrid Inverter",
     "variant": "5kVA",
     "unit": "piece"
@@ -2383,10 +1834,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 6kVA",
     "ur": "ہائبرڈ انورٹر 6kVA",
-    "aliases": [
-      "hybrid inverter",
-      "6kVA"
-    ],
+    "aliases": "hybrid inverter, 6kVA",
     "brand": "Hybrid Inverter",
     "variant": "6kVA",
     "unit": "piece"
@@ -2396,10 +1844,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 8kVA",
     "ur": "ہائبرڈ انورٹر 8kVA",
-    "aliases": [
-      "hybrid inverter",
-      "8kVA"
-    ],
+    "aliases": "hybrid inverter, 8kVA",
     "brand": "Hybrid Inverter",
     "variant": "8kVA",
     "unit": "piece"
@@ -2409,10 +1854,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 10kVA",
     "ur": "ہائبرڈ انورٹر 10kVA",
-    "aliases": [
-      "hybrid inverter",
-      "10kVA"
-    ],
+    "aliases": "hybrid inverter, 10kVA",
     "brand": "Hybrid Inverter",
     "variant": "10kVA",
     "unit": "piece"
@@ -2422,10 +1864,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 12kVA",
     "ur": "ہائبرڈ انورٹر 12kVA",
-    "aliases": [
-      "hybrid inverter",
-      "12kVA"
-    ],
+    "aliases": "hybrid inverter, 12kVA",
     "brand": "Hybrid Inverter",
     "variant": "12kVA",
     "unit": "piece"
@@ -2435,10 +1874,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 15kVA",
     "ur": "ہائبرڈ انورٹر 15kVA",
-    "aliases": [
-      "hybrid inverter",
-      "15kVA"
-    ],
+    "aliases": "hybrid inverter, 15kVA",
     "brand": "Hybrid Inverter",
     "variant": "15kVA",
     "unit": "piece"
@@ -2448,10 +1884,7 @@
     "subcategory": "Power Conversion",
     "en": "Hybrid Inverter 20kVA",
     "ur": "ہائبرڈ انورٹر 20kVA",
-    "aliases": [
-      "hybrid inverter",
-      "20kVA"
-    ],
+    "aliases": "hybrid inverter, 20kVA",
     "brand": "Hybrid Inverter",
     "variant": "20kVA",
     "unit": "piece"
@@ -2461,9 +1894,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Terminal Positive",
     "ur": "بیٹری پازیٹو ٹرمینل",
-    "aliases": [
-      "battery terminal positive"
-    ],
+    "aliases": "battery terminal positive",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2473,9 +1904,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Terminal Negative",
     "ur": "بیٹری نیگیٹو ٹرمینل",
-    "aliases": [
-      "battery terminal negative"
-    ],
+    "aliases": "battery terminal negative",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2485,9 +1914,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Cable",
     "ur": "بیٹری کیبل",
-    "aliases": [
-      "battery wire"
-    ],
+    "aliases": "battery wire",
     "brand": "Generic",
     "variant": "",
     "unit": "meter"
@@ -2497,9 +1924,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Lug",
     "ur": "بیٹری لگ",
-    "aliases": [
-      "battery lug"
-    ],
+    "aliases": "battery lug",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2509,9 +1934,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Distilled Battery Water",
     "ur": "بیٹری کا پانی",
-    "aliases": [
-      "battery water"
-    ],
+    "aliases": "battery water",
     "brand": "Generic",
     "variant": "",
     "unit": "bottle"
@@ -2521,9 +1944,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Hydrometer",
     "ur": "بیٹری ہائیڈرو میٹر",
-    "aliases": [
-      "hydrometer"
-    ],
+    "aliases": "hydrometer",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2533,9 +1954,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Charger",
     "ur": "بیٹری چارجر",
-    "aliases": [
-      "battery charger"
-    ],
+    "aliases": "battery charger",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2545,9 +1964,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Automatic Battery Charger",
     "ur": "آٹومیٹک بیٹری چارجر",
-    "aliases": [
-      "auto charger"
-    ],
+    "aliases": "auto charger",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2557,9 +1974,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Rack",
     "ur": "بیٹری ریک",
-    "aliases": [
-      "battery stand"
-    ],
+    "aliases": "battery stand",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2569,9 +1984,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Connector",
     "ur": "بیٹری کنیکٹر",
-    "aliases": [
-      "connector"
-    ],
+    "aliases": "connector",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2581,9 +1994,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "DC Fuse",
     "ur": "ڈی سی فیوز",
-    "aliases": [
-      "dc fuse"
-    ],
+    "aliases": "dc fuse",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2593,9 +2004,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "DC Breaker",
     "ur": "ڈی سی بریکر",
-    "aliases": [
-      "dc breaker"
-    ],
+    "aliases": "dc breaker",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2605,9 +2014,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Changeover Switch",
     "ur": "چینج اوور سوئچ",
-    "aliases": [
-      "changeover"
-    ],
+    "aliases": "changeover",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2617,9 +2024,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Voltage Stabilizer",
     "ur": "وولٹیج اسٹیبلائزر",
-    "aliases": [
-      "stabilizer"
-    ],
+    "aliases": "stabilizer",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2629,9 +2034,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Surge Protector",
     "ur": "سرج پروٹیکٹر",
-    "aliases": [
-      "surge protector"
-    ],
+    "aliases": "surge protector",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"
@@ -2641,9 +2044,7 @@
     "subcategory": "Battery / UPS Accessories",
     "en": "Battery Equalizer",
     "ur": "بیٹری ایکولائزر",
-    "aliases": [
-      "equalizer"
-    ],
+    "aliases": "equalizer",
     "brand": "Generic",
     "variant": "",
     "unit": "piece"

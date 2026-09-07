@@ -1,0 +1,1782 @@
+[
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Dinner Plate",
+    "ur": "سٹین لیس اسٹیل ڈنر پلیٹ",
+    "aliases": "plate, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Dinner Plate",
+    "ur": "ایلومینیم ڈنر پلیٹ",
+    "aliases": "plate, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Dinner Plate",
+    "ur": "پلاسٹک ڈنر پلیٹ",
+    "aliases": "plate, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Dinner Plate",
+    "ur": "شیشہ ڈنر پلیٹ",
+    "aliases": "plate, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Dinner Plate",
+    "ur": "میلامائن ڈنر پلیٹ",
+    "aliases": "plate, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Dinner Plate",
+    "ur": "سیرامک ڈنر پلیٹ",
+    "aliases": "plate, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Dinner Plate",
+    "ur": "نان اسٹک ڈنر پلیٹ",
+    "aliases": "plate, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Side Plate",
+    "ur": "سائیڈ پلیٹ",
+    "aliases": "small plate, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Soup Plate",
+    "ur": "سوپ پلیٹ",
+    "aliases": "soup plate, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Bowl",
+    "ur": "سٹین لیس اسٹیل پیالہ",
+    "aliases": "bowl, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Bowl",
+    "ur": "ایلومینیم پیالہ",
+    "aliases": "bowl, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Bowl",
+    "ur": "پلاسٹک پیالہ",
+    "aliases": "bowl, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Bowl",
+    "ur": "شیشہ پیالہ",
+    "aliases": "bowl, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Bowl",
+    "ur": "میلامائن پیالہ",
+    "aliases": "bowl, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Bowl",
+    "ur": "سیرامک پیالہ",
+    "aliases": "bowl, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Bowl",
+    "ur": "نان اسٹک پیالہ",
+    "aliases": "bowl, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Serving Bowl",
+    "ur": "سرونگ باؤل",
+    "aliases": "serving bowl, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Cup",
+    "ur": "سٹین لیس اسٹیل کپ",
+    "aliases": "cup, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Cup",
+    "ur": "ایلومینیم کپ",
+    "aliases": "cup, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Cup",
+    "ur": "پلاسٹک کپ",
+    "aliases": "cup, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Cup",
+    "ur": "شیشہ کپ",
+    "aliases": "cup, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Cup",
+    "ur": "میلامائن کپ",
+    "aliases": "cup, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Cup",
+    "ur": "سیرامک کپ",
+    "aliases": "cup, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Cup",
+    "ur": "نان اسٹک کپ",
+    "aliases": "cup, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Mug",
+    "ur": "سٹین لیس اسٹیل مگ",
+    "aliases": "mug, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Mug",
+    "ur": "ایلومینیم مگ",
+    "aliases": "mug, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Mug",
+    "ur": "پلاسٹک مگ",
+    "aliases": "mug, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Mug",
+    "ur": "شیشہ مگ",
+    "aliases": "mug, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Mug",
+    "ur": "میلامائن مگ",
+    "aliases": "mug, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Mug",
+    "ur": "سیرامک مگ",
+    "aliases": "mug, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Mug",
+    "ur": "نان اسٹک مگ",
+    "aliases": "mug, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Tea Cup",
+    "ur": "چائے کپ",
+    "aliases": "chai cup, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Saucer",
+    "ur": "طشتری",
+    "aliases": "tashtari, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Drinking Glass",
+    "ur": "پانی گلاس",
+    "aliases": "glass, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Jug",
+    "ur": "سٹین لیس اسٹیل جگ",
+    "aliases": "jug, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Jug",
+    "ur": "ایلومینیم جگ",
+    "aliases": "jug, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Jug",
+    "ur": "پلاسٹک جگ",
+    "aliases": "jug, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Jug",
+    "ur": "شیشہ جگ",
+    "aliases": "jug, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Jug",
+    "ur": "میلامائن جگ",
+    "aliases": "jug, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Jug",
+    "ur": "سیرامک جگ",
+    "aliases": "jug, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Jug",
+    "ur": "نان اسٹک جگ",
+    "aliases": "jug, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Water Set",
+    "ur": "واٹر سیٹ",
+    "aliases": "water set, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Spoon",
+    "ur": "چمچ",
+    "aliases": "chamach, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Tea Spoon",
+    "ur": "چائے چمچ",
+    "aliases": "tea spoon, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Table Spoon",
+    "ur": "بڑا چمچ",
+    "aliases": "bara chamach, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Fork",
+    "ur": "کانٹا",
+    "aliases": "fork, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Table Knife",
+    "ur": "ٹیبل چاقو",
+    "aliases": "knife, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Kitchen Knife",
+    "ur": "کچن چاقو",
+    "aliases": "chaku, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Peeler",
+    "ur": "چھلکا اتارنے والا",
+    "aliases": "peeler, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Grater",
+    "ur": "کدوکش",
+    "aliases": "kadukash, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Chopping Board",
+    "ur": "کٹنگ بورڈ",
+    "aliases": "cutting board, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Frying Pan",
+    "ur": "سٹین لیس اسٹیل فرائنگ پین",
+    "aliases": "pan, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Frying Pan",
+    "ur": "ایلومینیم فرائنگ پین",
+    "aliases": "pan, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Frying Pan",
+    "ur": "پلاسٹک فرائنگ پین",
+    "aliases": "pan, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Frying Pan",
+    "ur": "شیشہ فرائنگ پین",
+    "aliases": "pan, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Frying Pan",
+    "ur": "میلامائن فرائنگ پین",
+    "aliases": "pan, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Frying Pan",
+    "ur": "سیرامک فرائنگ پین",
+    "aliases": "pan, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Frying Pan",
+    "ur": "نان اسٹک فرائنگ پین",
+    "aliases": "pan, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Tawa",
+    "ur": "توا",
+    "aliases": "tawa, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Sauce Pan",
+    "ur": "ساس پین",
+    "aliases": "sauce pan, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Cooking Pot",
+    "ur": "سٹین لیس اسٹیل دیگچی",
+    "aliases": "degchi, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Cooking Pot",
+    "ur": "ایلومینیم دیگچی",
+    "aliases": "degchi, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Cooking Pot",
+    "ur": "پلاسٹک دیگچی",
+    "aliases": "degchi, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Cooking Pot",
+    "ur": "شیشہ دیگچی",
+    "aliases": "degchi, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Cooking Pot",
+    "ur": "میلامائن دیگچی",
+    "aliases": "degchi, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Cooking Pot",
+    "ur": "سیرامک دیگچی",
+    "aliases": "degchi, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Cooking Pot",
+    "ur": "نان اسٹک دیگچی",
+    "aliases": "degchi, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Karahi",
+    "ur": "سٹین لیس اسٹیل کڑاہی",
+    "aliases": "karahi, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Karahi",
+    "ur": "ایلومینیم کڑاہی",
+    "aliases": "karahi, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Karahi",
+    "ur": "پلاسٹک کڑاہی",
+    "aliases": "karahi, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Karahi",
+    "ur": "شیشہ کڑاہی",
+    "aliases": "karahi, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Karahi",
+    "ur": "میلامائن کڑاہی",
+    "aliases": "karahi, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Karahi",
+    "ur": "سیرامک کڑاہی",
+    "aliases": "karahi, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Karahi",
+    "ur": "نان اسٹک کڑاہی",
+    "aliases": "karahi, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Pressure Cooker",
+    "ur": "پریشر ککر",
+    "aliases": "cooker, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Steamer",
+    "ur": "اسٹیمر",
+    "aliases": "steamer, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Kettle",
+    "ur": "کیتلی",
+    "aliases": "kettle, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Tea Pot",
+    "ur": "چائے دانی",
+    "aliases": "chai dani, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Milk Pot",
+    "ur": "دودھ پتیلا",
+    "aliases": "milk pot, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Colander",
+    "ur": "چھلنی",
+    "aliases": "chalni, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Strainer",
+    "ur": "چھاننی",
+    "aliases": "strainer, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ladle",
+    "ur": "کفگیر",
+    "aliases": "kafgir, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Spatula",
+    "ur": "پلٹا",
+    "aliases": "palta, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Tongs",
+    "ur": "چمٹا",
+    "aliases": "chimta, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Rolling Pin",
+    "ur": "بیلن",
+    "aliases": "belan, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Rolling Board",
+    "ur": "چکلا",
+    "aliases": "chakla, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Mortar and Pestle",
+    "ur": "ہاون دستہ",
+    "aliases": "hawan dasta, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Storage Jar",
+    "ur": "مرتبان",
+    "aliases": "jar, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Food Container",
+    "ur": "سٹین لیس اسٹیل کھانے کا ڈبہ",
+    "aliases": "dabba, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Food Container",
+    "ur": "ایلومینیم کھانے کا ڈبہ",
+    "aliases": "dabba, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Food Container",
+    "ur": "پلاسٹک کھانے کا ڈبہ",
+    "aliases": "dabba, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Food Container",
+    "ur": "شیشہ کھانے کا ڈبہ",
+    "aliases": "dabba, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Food Container",
+    "ur": "میلامائن کھانے کا ڈبہ",
+    "aliases": "dabba, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Food Container",
+    "ur": "سیرامک کھانے کا ڈبہ",
+    "aliases": "dabba, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Food Container",
+    "ur": "نان اسٹک کھانے کا ڈبہ",
+    "aliases": "dabba, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Lunch Box",
+    "ur": "لنچ باکس",
+    "aliases": "lunch box, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Water Bottle",
+    "ur": "سٹین لیس اسٹیل پانی بوتل",
+    "aliases": "bottle, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Water Bottle",
+    "ur": "ایلومینیم پانی بوتل",
+    "aliases": "bottle, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Water Bottle",
+    "ur": "پلاسٹک پانی بوتل",
+    "aliases": "bottle, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Water Bottle",
+    "ur": "شیشہ پانی بوتل",
+    "aliases": "bottle, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Water Bottle",
+    "ur": "میلامائن پانی بوتل",
+    "aliases": "bottle, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Water Bottle",
+    "ur": "سیرامک پانی بوتل",
+    "aliases": "bottle, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Water Bottle",
+    "ur": "نان اسٹک پانی بوتل",
+    "aliases": "bottle, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Thermos Flask",
+    "ur": "تھرمس",
+    "aliases": "thermos, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ice Box",
+    "ur": "آئس باکس",
+    "aliases": "ice box, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Dish Rack",
+    "ur": "برتن ریک",
+    "aliases": "dish rack, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Cutlery Stand",
+    "ur": "کٹلری اسٹینڈ",
+    "aliases": "spoon stand, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Tray",
+    "ur": "سٹین لیس اسٹیل ٹرے",
+    "aliases": "tray, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Tray",
+    "ur": "ایلومینیم ٹرے",
+    "aliases": "tray, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Tray",
+    "ur": "پلاسٹک ٹرے",
+    "aliases": "tray, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Tray",
+    "ur": "شیشہ ٹرے",
+    "aliases": "tray, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Tray",
+    "ur": "میلامائن ٹرے",
+    "aliases": "tray, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Tray",
+    "ur": "سیرامک ٹرے",
+    "aliases": "tray, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Tray",
+    "ur": "نان اسٹک ٹرے",
+    "aliases": "tray, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Stainless Steel Serving Dish",
+    "ur": "سٹین لیس اسٹیل سرونگ ڈش",
+    "aliases": "serving dish, stainless steel",
+    "brand": "Stainless Steel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Aluminum Serving Dish",
+    "ur": "ایلومینیم سرونگ ڈش",
+    "aliases": "serving dish, aluminum",
+    "brand": "Aluminum",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Plastic Serving Dish",
+    "ur": "پلاسٹک سرونگ ڈش",
+    "aliases": "serving dish, plastic",
+    "brand": "Plastic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Glass Serving Dish",
+    "ur": "شیشہ سرونگ ڈش",
+    "aliases": "serving dish, glass",
+    "brand": "Glass",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Melamine Serving Dish",
+    "ur": "میلامائن سرونگ ڈش",
+    "aliases": "serving dish, melamine",
+    "brand": "Melamine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Ceramic Serving Dish",
+    "ur": "سیرامک سرونگ ڈش",
+    "aliases": "serving dish, ceramic",
+    "brand": "Ceramic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Non-stick Serving Dish",
+    "ur": "نان اسٹک سرونگ ڈش",
+    "aliases": "serving dish, non-stick",
+    "brand": "Non-stick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Utensils",
+    "en": "Casserole",
+    "ur": "کیسرول",
+    "aliases": "hot pot, standard",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 1L",
+    "ur": "پریشر ککر 1L",
+    "aliases": "cooker, 1L",
+    "brand": "Pressure Cooker",
+    "variant": "1L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 2L",
+    "ur": "پریشر ککر 2L",
+    "aliases": "cooker, 2L",
+    "brand": "Pressure Cooker",
+    "variant": "2L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 3L",
+    "ur": "پریشر ککر 3L",
+    "aliases": "cooker, 3L",
+    "brand": "Pressure Cooker",
+    "variant": "3L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 4L",
+    "ur": "پریشر ککر 4L",
+    "aliases": "cooker, 4L",
+    "brand": "Pressure Cooker",
+    "variant": "4L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 5L",
+    "ur": "پریشر ککر 5L",
+    "aliases": "cooker, 5L",
+    "brand": "Pressure Cooker",
+    "variant": "5L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 6L",
+    "ur": "پریشر ککر 6L",
+    "aliases": "cooker, 6L",
+    "brand": "Pressure Cooker",
+    "variant": "6L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 7L",
+    "ur": "پریشر ککر 7L",
+    "aliases": "cooker, 7L",
+    "brand": "Pressure Cooker",
+    "variant": "7L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 8L",
+    "ur": "پریشر ککر 8L",
+    "aliases": "cooker, 8L",
+    "brand": "Pressure Cooker",
+    "variant": "8L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 10L",
+    "ur": "پریشر ککر 10L",
+    "aliases": "cooker, 10L",
+    "brand": "Pressure Cooker",
+    "variant": "10L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 12L",
+    "ur": "پریشر ککر 12L",
+    "aliases": "cooker, 12L",
+    "brand": "Pressure Cooker",
+    "variant": "12L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 14L",
+    "ur": "پریشر ککر 14L",
+    "aliases": "cooker, 14L",
+    "brand": "Pressure Cooker",
+    "variant": "14L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 16L",
+    "ur": "پریشر ککر 16L",
+    "aliases": "cooker, 16L",
+    "brand": "Pressure Cooker",
+    "variant": "16L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 18L",
+    "ur": "پریشر ککر 18L",
+    "aliases": "cooker, 18L",
+    "brand": "Pressure Cooker",
+    "variant": "18L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Pressure Cooker 20L",
+    "ur": "پریشر ککر 20L",
+    "aliases": "cooker, 20L",
+    "brand": "Pressure Cooker",
+    "variant": "20L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 1L",
+    "ur": "دیگچی 1L",
+    "aliases": "degchi, 1L",
+    "brand": "Cooking Pot",
+    "variant": "1L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 2L",
+    "ur": "دیگچی 2L",
+    "aliases": "degchi, 2L",
+    "brand": "Cooking Pot",
+    "variant": "2L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 3L",
+    "ur": "دیگچی 3L",
+    "aliases": "degchi, 3L",
+    "brand": "Cooking Pot",
+    "variant": "3L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 4L",
+    "ur": "دیگچی 4L",
+    "aliases": "degchi, 4L",
+    "brand": "Cooking Pot",
+    "variant": "4L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 5L",
+    "ur": "دیگچی 5L",
+    "aliases": "degchi, 5L",
+    "brand": "Cooking Pot",
+    "variant": "5L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 6L",
+    "ur": "دیگچی 6L",
+    "aliases": "degchi, 6L",
+    "brand": "Cooking Pot",
+    "variant": "6L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 7L",
+    "ur": "دیگچی 7L",
+    "aliases": "degchi, 7L",
+    "brand": "Cooking Pot",
+    "variant": "7L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 8L",
+    "ur": "دیگچی 8L",
+    "aliases": "degchi, 8L",
+    "brand": "Cooking Pot",
+    "variant": "8L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 10L",
+    "ur": "دیگچی 10L",
+    "aliases": "degchi, 10L",
+    "brand": "Cooking Pot",
+    "variant": "10L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 12L",
+    "ur": "دیگچی 12L",
+    "aliases": "degchi, 12L",
+    "brand": "Cooking Pot",
+    "variant": "12L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 14L",
+    "ur": "دیگچی 14L",
+    "aliases": "degchi, 14L",
+    "brand": "Cooking Pot",
+    "variant": "14L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 16L",
+    "ur": "دیگچی 16L",
+    "aliases": "degchi, 16L",
+    "brand": "Cooking Pot",
+    "variant": "16L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 18L",
+    "ur": "دیگچی 18L",
+    "aliases": "degchi, 18L",
+    "brand": "Cooking Pot",
+    "variant": "18L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Cooking Pot 20L",
+    "ur": "دیگچی 20L",
+    "aliases": "degchi, 20L",
+    "brand": "Cooking Pot",
+    "variant": "20L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 1L",
+    "ur": "کڑاہی 1L",
+    "aliases": "karahi, 1L",
+    "brand": "Karahi",
+    "variant": "1L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 2L",
+    "ur": "کڑاہی 2L",
+    "aliases": "karahi, 2L",
+    "brand": "Karahi",
+    "variant": "2L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 3L",
+    "ur": "کڑاہی 3L",
+    "aliases": "karahi, 3L",
+    "brand": "Karahi",
+    "variant": "3L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 4L",
+    "ur": "کڑاہی 4L",
+    "aliases": "karahi, 4L",
+    "brand": "Karahi",
+    "variant": "4L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 5L",
+    "ur": "کڑاہی 5L",
+    "aliases": "karahi, 5L",
+    "brand": "Karahi",
+    "variant": "5L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 6L",
+    "ur": "کڑاہی 6L",
+    "aliases": "karahi, 6L",
+    "brand": "Karahi",
+    "variant": "6L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 7L",
+    "ur": "کڑاہی 7L",
+    "aliases": "karahi, 7L",
+    "brand": "Karahi",
+    "variant": "7L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 8L",
+    "ur": "کڑاہی 8L",
+    "aliases": "karahi, 8L",
+    "brand": "Karahi",
+    "variant": "8L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 10L",
+    "ur": "کڑاہی 10L",
+    "aliases": "karahi, 10L",
+    "brand": "Karahi",
+    "variant": "10L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 12L",
+    "ur": "کڑاہی 12L",
+    "aliases": "karahi, 12L",
+    "brand": "Karahi",
+    "variant": "12L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 14L",
+    "ur": "کڑاہی 14L",
+    "aliases": "karahi, 14L",
+    "brand": "Karahi",
+    "variant": "14L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 16L",
+    "ur": "کڑاہی 16L",
+    "aliases": "karahi, 16L",
+    "brand": "Karahi",
+    "variant": "16L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 18L",
+    "ur": "کڑاہی 18L",
+    "aliases": "karahi, 18L",
+    "brand": "Karahi",
+    "variant": "18L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Karahi 20L",
+    "ur": "کڑاہی 20L",
+    "aliases": "karahi, 20L",
+    "brand": "Karahi",
+    "variant": "20L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 1L",
+    "ur": "فرائنگ پین 1L",
+    "aliases": "pan, 1L",
+    "brand": "Frying Pan",
+    "variant": "1L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 2L",
+    "ur": "فرائنگ پین 2L",
+    "aliases": "pan, 2L",
+    "brand": "Frying Pan",
+    "variant": "2L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 3L",
+    "ur": "فرائنگ پین 3L",
+    "aliases": "pan, 3L",
+    "brand": "Frying Pan",
+    "variant": "3L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 4L",
+    "ur": "فرائنگ پین 4L",
+    "aliases": "pan, 4L",
+    "brand": "Frying Pan",
+    "variant": "4L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 5L",
+    "ur": "فرائنگ پین 5L",
+    "aliases": "pan, 5L",
+    "brand": "Frying Pan",
+    "variant": "5L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 6L",
+    "ur": "فرائنگ پین 6L",
+    "aliases": "pan, 6L",
+    "brand": "Frying Pan",
+    "variant": "6L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 7L",
+    "ur": "فرائنگ پین 7L",
+    "aliases": "pan, 7L",
+    "brand": "Frying Pan",
+    "variant": "7L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 8L",
+    "ur": "فرائنگ پین 8L",
+    "aliases": "pan, 8L",
+    "brand": "Frying Pan",
+    "variant": "8L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 10L",
+    "ur": "فرائنگ پین 10L",
+    "aliases": "pan, 10L",
+    "brand": "Frying Pan",
+    "variant": "10L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 12L",
+    "ur": "فرائنگ پین 12L",
+    "aliases": "pan, 12L",
+    "brand": "Frying Pan",
+    "variant": "12L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 14L",
+    "ur": "فرائنگ پین 14L",
+    "aliases": "pan, 14L",
+    "brand": "Frying Pan",
+    "variant": "14L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 16L",
+    "ur": "فرائنگ پین 16L",
+    "aliases": "pan, 16L",
+    "brand": "Frying Pan",
+    "variant": "16L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 18L",
+    "ur": "فرائنگ پین 18L",
+    "aliases": "pan, 18L",
+    "brand": "Frying Pan",
+    "variant": "18L",
+    "unit": "piece"
+  },
+  {
+    "category": "Kitchenware / Crockery",
+    "subcategory": "Size Variants",
+    "en": "Frying Pan 20L",
+    "ur": "فرائنگ پین 20L",
+    "aliases": "pan, 20L",
+    "brand": "Frying Pan",
+    "variant": "20L",
+    "unit": "piece"
+  }
+]
