@@ -173,19 +173,15 @@ export function SaleDetailPage() {
         {/* Invoice meta */}
         <div className="grid grid-cols-2 gap-4 border-b border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
           <div>
-            <p className="text-xs uppercase tracking-wide text-slate-400">Invoice</p>
             <p className="font-semibold text-slate-900 dark:text-slate-100">{formatSaleRef(sale.display_seq, sale.invoice_number)}</p>
           </div>
           <div className="text-right">
-            <p className="text-xs uppercase tracking-wide text-slate-400">Date</p>
             <p className="font-medium text-slate-700 dark:text-slate-300">{formatDateTime(sale.sale_date)}</p>
           </div>
           <div>
-            <p className="text-xs uppercase tracking-wide text-slate-400">Customer</p>
             <p className="font-medium text-slate-700 dark:text-slate-300">{sale.customer_name ?? 'Walk-in'}</p>
           </div>
           <div className="text-right">
-            <p className="text-xs uppercase tracking-wide text-slate-400">Status</p>
             {isCancelled ? (
               <span className="inline-block rounded-full bg-slate-200 px-2 py-0.5 text-xs font-medium text-slate-600 dark:bg-slate-700 dark:text-slate-300">
                 Cancelled

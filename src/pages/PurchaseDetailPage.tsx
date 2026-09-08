@@ -192,13 +192,11 @@ export function PurchaseDetailPage() {
 
         <div className="grid grid-cols-2 gap-4 border-b border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
           <div>
-            <p className="text-xs uppercase tracking-wide text-slate-400">Supplier</p>
             <p className="font-medium text-slate-700 dark:text-slate-300">{purchase.supplier_name ?? '—'}</p>
             {purchase.supplier_invoice_number && <p className="text-xs text-slate-500">Inv: {purchase.supplier_invoice_number}</p>}
             {purchase.shop_customer_number && <p className="text-xs text-slate-500">Customer No: {purchase.shop_customer_number}</p>}
           </div>
           <div className="text-right">
-            <p className="text-xs uppercase tracking-wide text-slate-400">Date</p>
             <p className="font-medium text-slate-700 dark:text-slate-300">{formatDateTime(purchase.purchase_date)}</p>
             <p className="mt-1 text-xs">
               {isCancelled ? (
