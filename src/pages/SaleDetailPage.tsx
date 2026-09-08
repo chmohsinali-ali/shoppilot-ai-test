@@ -269,25 +269,25 @@ export function SaleDetailPage() {
         {/* Totals */}
         {!editMode ? (
           <div className="space-y-1.5 border-t border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
-            <div className="flex justify-between"><span className="text-slate-500">Subtotal</span><span className="text-slate-700 dark:text-slate-300">{formatMoney(Number(sale.subtotal), cur)}</span></div>
-            {Number(sale.discount_total) > 0 && <div className="flex justify-between"><span className="text-slate-500">Discount</span><span className="text-amber-600">- {formatMoney(Number(sale.discount_total), cur)}</span></div>}
-            {Number(sale.tax_total) > 0 && <div className="flex justify-between"><span className="text-slate-500">Tax</span><span className="text-slate-700 dark:text-slate-300">+ {formatMoney(Number(sale.tax_total), cur)}</span></div>}
-            <div className="flex justify-between border-t border-slate-100 pt-2 dark:border-slate-800"><span className="font-semibold">Grand Total</span><span className="text-lg font-bold">{formatMoney(Number(sale.grand_total), cur)}</span></div>
-            <div className="flex justify-between"><span className="text-slate-500">Paid</span><span className="text-emerald-600">{formatMoney(Number(sale.amount_paid), cur)}</span></div>
-            {Number(sale.balance) > 0 && <div className="flex justify-between"><span className="text-slate-500">Balance</span><span className="font-semibold text-amber-600">{formatMoney(Number(sale.balance), cur)}</span></div>}
+            <div className="flex justify-between"><BiLabel en="Subtotal" ur="ذیلی ٹوٹل" /><span className="text-slate-700 dark:text-slate-300">{formatMoney(Number(sale.subtotal), cur)}</span></div>
+            {Number(sale.discount_total) > 0 && <div className="flex justify-between"><BiLabel en="Discount" ur="رعایت" /><span className="text-amber-600">- {formatMoney(Number(sale.discount_total), cur)}</span></div>}
+            {Number(sale.tax_total) > 0 && <div className="flex justify-between"><BiLabel en="Tax" ur="ٹیکس" /><span className="text-slate-700 dark:text-slate-300">+ {formatMoney(Number(sale.tax_total), cur)}</span></div>}
+            <div className="flex justify-between border-t border-slate-100 pt-2 dark:border-slate-800"><BiLabel en="Grand Total" ur="کل رقم" className="font-semibold" /><span className="text-lg font-bold">{formatMoney(Number(sale.grand_total), cur)}</span></div>
+            <div className="flex justify-between"><BiLabel en="Paid" ur="ادا شدہ" /><span className="text-emerald-600">{formatMoney(Number(sale.amount_paid), cur)}</span></div>
+            {Number(sale.balance) > 0 && <div className="flex justify-between"><BiLabel en="Balance" ur="بقایا" /><span className="font-semibold text-amber-600">{formatMoney(Number(sale.balance), cur)}</span></div>}
           </div>
         ) : (
           <div className="space-y-2 border-t border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
-            <div className="flex justify-between border-t border-slate-100 pt-2 dark:border-slate-800"><span className="font-semibold">New Grand Total</span><span className="text-lg font-bold">{formatMoney(editGrandTotal, cur)}</span></div>
+            <div className="flex justify-between border-t border-slate-100 pt-2 dark:border-slate-800"><BiLabel en="New Grand Total" ur="نیا کل رقم" className="font-semibold" /><span className="text-lg font-bold">{formatMoney(editGrandTotal, cur)}</span></div>
             <div className="flex items-center justify-between">
-              <span className="text-slate-500">Paid</span>
+              <BiLabel en="Paid" ur="ادا شدہ" />
               <input
                 className="w-32 rounded border border-slate-200 bg-white px-2 py-1.5 text-right text-sm dark:border-slate-700 dark:bg-slate-800"
                 type="number" min={0} step="any" value={editAmountPaid}
                 onChange={(e) => setEditAmountPaid(Number(e.target.value) || 0)}
               />
             </div>
-            <div className="flex justify-between text-amber-600"><span>New Balance</span><span className="font-semibold">{formatMoney(Math.max(0, editGrandTotal - editAmountPaid), cur)}</span></div>
+            <div className="flex justify-between text-amber-600"><BiLabel en="New Balance" ur="نیا بقایا" /><span className="font-semibold">{formatMoney(Math.max(0, editGrandTotal - editAmountPaid), cur)}</span></div>
             <div className="flex justify-end gap-2 pt-2">
               <Button type="button" variant="outline" onClick={() => setEditMode(false)}>Discard changes</Button>
               <Button type="button" onClick={saveEdit} loading={savingEdit}>
@@ -361,3 +361,13 @@ function CancelSaleModal({ sale, onClose, onDone }: { sale: Sale; onClose: () =>
   );
 }
 
+
+function BiLabel({ en, ur, className = '' }: { en: string; ur: string; className?: string }) {
+  return (
+    <span className={`flex flex-wrap items-baseline gap-x-1.5 text-slate-500 ${className}`}>
+      {en}
+      <span className="text-slate-300 dark:text-slate-600">/</span>
+      <span dir="rtl" lang="ur">{ur}</span>
+    </span>
+  );
+}
