@@ -138,6 +138,7 @@ export function CustomerDetailPage() {
           <div>
             <h3 className="flex flex-wrap items-baseline gap-x-2 font-semibold text-slate-900 dark:text-slate-100">
               Ledger History
+              <span className="font-normal text-slate-400">/</span>
               <span dir="rtl" lang="ur" className="text-sm font-normal text-slate-500 dark:text-slate-400">کھاتے کی تفصیل</span>
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400">All transactions — sales, payments, returns, and adjustments</p>
@@ -165,7 +166,12 @@ export function CustomerDetailPage() {
                     <span className="inline-flex min-w-0 flex-wrap items-center gap-x-1.5 gap-y-0.5">
                       <span aria-hidden="true">{info.icon}</span>
                       <span className="truncate">{info.label}</span>
-                      {info.labelUr && <span dir="rtl" lang="ur" className="text-xs font-normal text-slate-400 dark:text-slate-500">{info.labelUr}</span>}
+                      {info.labelUr && (
+                        <>
+                          <span className="text-slate-300 dark:text-slate-600">/</span>
+                          <span dir="rtl" lang="ur" className="text-xs font-normal text-slate-400 dark:text-slate-500">{info.labelUr}</span>
+                        </>
+                      )}
                       {e.reversed_at && (
                         <span className="flex-shrink-0 rounded-full bg-slate-200 px-1.5 py-0.5 text-[10px] font-medium uppercase text-slate-600 dark:bg-slate-700 dark:text-slate-300">
                           Reversed
