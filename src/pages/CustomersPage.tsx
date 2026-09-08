@@ -140,8 +140,15 @@ export function CustomersPage() {
                 <Button size="sm" variant="outline" onClick={() => setEditTarget(c)}>
                   <Pencil className="h-3.5 w-3.5" /> Edit
                 </Button>
-                <Button size="sm" variant="ghost" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={() => setDeactivateTarget(c)}>
-                  <Trash2 className="h-3.5 w-3.5" /> Deactivate
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="px-2 text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
+                  onClick={() => setDeactivateTarget(c)}
+                  aria-label="Deactivate customer"
+                  title="Deactivate"
+                >
+                  <Trash2 className="h-3.5 w-3.5" />
                 </Button>
               </div>
             </div>

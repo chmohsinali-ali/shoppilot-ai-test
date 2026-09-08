@@ -111,7 +111,16 @@ export function SuppliersPage() {
               </Link>
               <div className="mt-3 flex gap-2 border-t border-slate-100 pt-3 dark:border-slate-800">
                 <Button size="sm" variant="outline" onClick={() => setEditTarget(s)}><Pencil className="h-3.5 w-3.5" /> Edit</Button>
-                <Button size="sm" variant="ghost" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={() => setDeactivateTarget(s)}><Trash2 className="h-3.5 w-3.5" /> Deactivate</Button>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="px-2 text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
+                  onClick={() => setDeactivateTarget(s)}
+                  aria-label="Deactivate supplier"
+                  title="Deactivate"
+                >
+                  <Trash2 className="h-3.5 w-3.5" />
+                </Button>
               </div>
             </div>
           ))}

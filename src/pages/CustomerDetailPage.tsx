@@ -13,7 +13,7 @@ import { Input, Field, Select, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDateTime, formatSaleRef } from '@/lib/format';
+import { formatMoney, formatDateCompact, formatSaleRef } from '@/lib/format';
 import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 import type { Customer, LedgerEntry } from '@/types/db';
 
@@ -82,12 +82,12 @@ export function CustomerDetailPage() {
 
       <Card className="mb-6 p-5">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400">
+          <div className="flex min-w-0 items-center gap-4">
+            <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400">
               <User className="h-7 w-7" />
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">{customer.full_name}</h1>
+            <div className="min-w-0">
+              <h1 className="truncate text-xl font-bold text-slate-900 dark:text-slate-100">{customer.full_name}</h1>
               {customer.business_name && <p className="text-sm text-slate-500 dark:text-slate-400">{customer.business_name}</p>}
               <div className="mt-1.5 flex flex-wrap gap-3 text-xs text-slate-500 dark:text-slate-400">
                 {customer.primary_phone && <span className="flex items-center gap-1"><Phone className="h-3.5 w-3.5" />{customer.primary_phone}</span>}
@@ -118,9 +118,9 @@ export function CustomerDetailPage() {
             </Link>
           </div>
         </div>
-        <div className="mt-4 flex items-center justify-between rounded-lg bg-slate-50 px-4 py-3 dark:bg-slate-800/50">
-          <span className="text-sm text-slate-600 dark:text-slate-300">Current Balance</span>
-          <span className={`text-lg font-bold ${balance > 0 ? 'text-amber-600 dark:text-amber-400' : balance < 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}`}>
+        <div className="mt-4 flex min-w-0 items-center justify-between gap-3 rounded-lg bg-slate-50 px-4 py-3 dark:bg-slate-800/50">
+          <span className="flex-shrink-0 text-sm text-slate-600 dark:text-slate-300">Current Balance</span>
+          <span className={`flex-shrink-0 text-lg font-bold ${balance > 0 ? 'text-amber-600 dark:text-amber-400' : balance < 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}`}>
             {formatMoney(balance, cur)}
           </span>
         </div>
@@ -137,66 +137,44 @@ export function CustomerDetailPage() {
         {ledger.length === 0 ? (
           <EmptyState icon={<Receipt className="h-7 w-7" />} title="No ledger entries" description="Transactions will appear here." />
         ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead className="border-b border-slate-100 bg-slate-50/60 text-left text-xs uppercase tracking-wide text-slate-400 dark:border-slate-800 dark:bg-slate-800/40">
-                <tr>
-                  <th className="px-5 py-2.5 font-medium">Date</th>
-                  <th className="px-5 py-2.5 font-medium">Type</th>
-                  <th className="px-5 py-2.5 font-medium">Reference</th>
-                  <th className="px-5 py-2.5 text-right font-medium">Debit</th>
-                  <th className="px-5 py-2.5 text-right font-medium">Credit</th>
-                  <th className="px-5 py-2.5 text-right font-medium">Balance</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-                {ledger.map((e) => {
-                  const isDebit = Number(e.debit_amount) > 0;
-                  const refLink = ledgerRefLink(e);
-                  const isSaleRef = (e.reference_type === 'sale' || e.reference_type === 'sale_cancel') && e.reference_id;
-                  const refLabel = isSaleRef
-                    ? formatSaleRef(saleRefs[e.reference_id as string], e.reference_number ?? e.reference_type ?? '—')
-                    : (e.reference_number ?? e.reference_type ?? '—');
-                  return (
-                    <tr key={e.id} className="hover:bg-slate-50/60 dark:hover:bg-slate-800/40">
-                      <td className="whitespace-nowrap px-5 py-3 text-xs text-slate-500 dark:text-slate-400">
-                        {formatDateTime(e.transaction_date)}
-                      </td>
-                      <td className="px-5 py-3">
-                        <EntryBadge type={e.entry_type} />
-                      </td>
-                      <td className="px-5 py-3">
-                        {refLink ? (
-                          <Link to={refLink} className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline dark:text-blue-400">
-                            <LinkIcon className="h-3 w-3" />
-                            {refLabel}
-                          </Link>
-                        ) : (
-                          <span className="text-sm text-slate-600 dark:text-slate-300">{refLabel}</span>
-                        )}
-                      </td>
-                      <td className="px-5 py-3 text-right">
-                        {isDebit ? (
-                          <span className="font-medium text-amber-600 dark:text-amber-400">+{formatMoney(Number(e.debit_amount), cur)}</span>
-                        ) : (
-                          <span className="text-slate-300 dark:text-slate-600">—</span>
-                        )}
-                      </td>
-                      <td className="px-5 py-3 text-right">
-                        {!isDebit ? (
-                          <span className="font-medium text-emerald-600 dark:text-emerald-400">−{formatMoney(Number(e.credit_amount), cur)}</span>
-                        ) : (
-                          <span className="text-slate-300 dark:text-slate-600">—</span>
-                        )}
-                      </td>
-                      <td className="px-5 py-3 text-right text-xs font-medium text-slate-700 dark:text-slate-300">
-                        {formatMoney(Number(e.running_balance), cur)}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+          // Stacked rows, not a wide table — every phone width shows the full
+          // date, reference, entry type, amount, AND the resulting balance
+          // for that transaction without any horizontal scrolling needed.
+          <div className="divide-y divide-slate-100 dark:divide-slate-800">
+            {ledger.map((e) => {
+              const isDebit = Number(e.debit_amount) > 0;
+              const refLink = ledgerRefLink(e);
+              const isSaleRef = (e.reference_type === 'sale' || e.reference_type === 'sale_cancel') && e.reference_id;
+              const refLabel = isSaleRef
+                ? formatSaleRef(saleRefs[e.reference_id as string], e.reference_number ?? e.reference_type ?? '—')
+                : (e.reference_number ?? e.reference_type ?? '—');
+              return (
+                <div key={e.id} className="flex items-center justify-between gap-3 px-5 py-3 hover:bg-slate-50/60 dark:hover:bg-slate-800/40">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <EntryBadge type={e.entry_type} />
+                      {refLink ? (
+                        <Link to={refLink} className="inline-flex min-w-0 items-center gap-1 truncate text-sm font-medium text-blue-600 hover:underline dark:text-blue-400">
+                          <LinkIcon className="h-3 w-3 flex-shrink-0" />
+                          <span className="truncate">{refLabel}</span>
+                        </Link>
+                      ) : (
+                        <span className="truncate text-sm text-slate-600 dark:text-slate-300">{refLabel}</span>
+                      )}
+                    </div>
+                    <p className="mt-1 text-xs text-slate-400 dark:text-slate-500">{formatDateCompact(e.transaction_date)}</p>
+                  </div>
+                  <div className="flex-shrink-0 text-right">
+                    {isDebit ? (
+                      <p className="font-medium text-amber-600 dark:text-amber-400">+{formatMoney(Number(e.debit_amount), cur)}</p>
+                    ) : (
+                      <p className="font-medium text-emerald-600 dark:text-emerald-400">−{formatMoney(Number(e.credit_amount), cur)}</p>
+                    )}
+                    <p className="mt-0.5 text-xs text-slate-400 dark:text-slate-500">Bal: {formatMoney(Number(e.running_balance), cur)}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         )}
       </Card>

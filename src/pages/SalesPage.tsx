@@ -8,7 +8,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
-import { formatMoney, formatDateTime, formatSaleRef } from '@/lib/format';
+import { formatMoney, formatDateCompact, formatSaleRef } from '@/lib/format';
 import type { Sale } from '@/types/db';
 
 export function SalesPage() {
@@ -84,7 +84,7 @@ export function SalesPage() {
                       <Link to={`/sales/${s.id}`} className="font-medium text-blue-600 hover:underline dark:text-blue-400">{formatSaleRef(s.display_seq, s.invoice_number)}</Link>
                     </td>
                     <td className="px-4 py-3 text-slate-700 dark:text-slate-300">{s.customer_name ?? 'Walk-in'}</td>
-                    <td className="px-4 py-3 text-slate-500 dark:text-slate-400">{formatDateTime(s.sale_date)}</td>
+                    <td className="px-4 py-3 text-slate-500 dark:text-slate-400">{formatDateCompact(s.sale_date)}</td>
                     <td className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">{formatMoney(Number(s.grand_total), shop?.currency)}</td>
                     <td className="px-4 py-3">
                       <StatusBadge status={s.payment_status} />

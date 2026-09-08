@@ -13,7 +13,7 @@ import { Input, Field, Select, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDateTime, formatDate } from '@/lib/format';
+import { formatMoney, formatDateCompact, formatDate } from '@/lib/format';
 import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_SUPPLIER } from '@/lib/partyValidation';
 import type { Supplier, SupplierLedgerEntry, Purchase } from '@/types/db';
 
@@ -65,12 +65,12 @@ export function SupplierDetailPage() {
 
       <Card className="mb-6 p-5">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400">
+          <div className="flex min-w-0 items-center gap-4">
+            <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-amber-50 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400">
               <Building2 className="h-7 w-7" />
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">{supplier.supplier_name}</h1>
+            <div className="min-w-0">
+              <h1 className="truncate text-xl font-bold text-slate-900 dark:text-slate-100">{supplier.supplier_name}</h1>
               {supplier.company_name && <p className="text-sm text-slate-500 dark:text-slate-400">{supplier.company_name}</p>}
               <div className="mt-1.5 flex flex-wrap gap-3 text-xs text-slate-500 dark:text-slate-400">
                 {supplier.primary_phone && <span className="flex items-center gap-1"><Phone className="h-3.5 w-3.5" />{supplier.primary_phone}</span>}
@@ -97,9 +97,9 @@ export function SupplierDetailPage() {
             <Link to={`/purchases/new?supplier=${supplier.id}`}><Button><ShoppingBag className="h-4 w-4" /> New Purchase</Button></Link>
           </div>
         </div>
-        <div className="mt-4 flex items-center justify-between rounded-lg bg-slate-50 px-4 py-3 dark:bg-slate-800/50">
-          <span className="text-sm text-slate-600 dark:text-slate-300">Current Payable</span>
-          <span className={`text-lg font-bold ${balance > 0 ? 'text-amber-600 dark:text-amber-400' : 'text-slate-700 dark:text-slate-300'}`}>{formatMoney(balance, cur)}</span>
+        <div className="mt-4 flex min-w-0 items-center justify-between gap-3 rounded-lg bg-slate-50 px-4 py-3 dark:bg-slate-800/50">
+          <span className="flex-shrink-0 text-sm text-slate-600 dark:text-slate-300">Current Payable</span>
+          <span className={`flex-shrink-0 text-lg font-bold ${balance > 0 ? 'text-amber-600 dark:text-amber-400' : 'text-slate-700 dark:text-slate-300'}`}>{formatMoney(balance, cur)}</span>
         </div>
       </Card>
 
@@ -116,7 +116,7 @@ export function SupplierDetailPage() {
                     {e.credit_amount > 0 ? <ArrowUpRight className="h-4 w-4 text-amber-500" /> : <ArrowDownLeft className="h-4 w-4 text-emerald-500" />}
                     <div>
                       <p className="text-sm font-medium text-slate-900 dark:text-slate-100">{e.description}</p>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">{formatDateTime(e.transaction_date)}</p>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">{formatDateCompact(e.transaction_date)}</p>
                     </div>
                   </div>
                   <div className="text-right">
