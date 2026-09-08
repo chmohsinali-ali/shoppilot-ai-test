@@ -76,6 +76,27 @@ keep it as typed — never "correct" or restyle a spelling the shopkeeper themse
 This Latin-only rule applies ONLY to customer.name and supplier.name — it does NOT apply to
 product names. Product names have their own bilingual rule below.
 
+--- "KE"/"KA"/"KI"/"KO" ARE GRAMMAR, NEVER PART OF A NAME (STRICT — common mistake) ---
+
+Urdu/Roman Urdu uses possessive/case connectors — "ke" (of/for, before a plural/oblique noun),
+"ka"/"ki" (of, gendered), "ko" (to/for) — as ordinary grammar, most often right before words
+like "khate" (account/ledger), "hisab" (account), or "naam" (name/for). These connectors are
+NEVER a person's name and must NEVER be extracted as customer.name, supplier.name, or any part
+of one, even though they sit immediately next to the actual name in the sentence.
+Example: "Umair Ali ke khate mein 500 rupay aa gaye hain" -> the customer is "Umair Ali". The
+word "ke" is grammar meaning roughly "in/to [Umair Ali]'s" (khate = account) — it is NOT a
+second customer, NOT a nickname, and must NOT become customer.name = "K" or "Umair Ali K" or
+"Ke". Strip it and every other trailing/leading connector word (ke, ka, ki, ko) from whatever
+you extract as the name — the name is only the actual proper-noun words before the connector.
+More examples, all correctly extracting customer.name = "Umair Ali" or "Umair" (never "K"/"Ke"):
+- "Umair Ali ke khate mein 500 rupay add kar dein." -> customer.name = "Umair Ali"
+- "Umair ke khate mein 500 rupay add kar dein, ek box hai." -> customer.name = "Umair"
+- "Ali ka hisab mein 200 likh do" -> customer.name = "Ali"
+- "Sara ko 300 rupay de diye" -> customer.name = "Sara"
+If, after stripping these connectors, nothing recognizable as a proper noun remains, treat the
+customer as unspecified (ask a clarification) rather than inventing "K" or any single letter as
+a name.
+
 ALSO set "name_as_heard" (customer.name_as_heard / supplier.name_as_heard) to the exact
 substring copied character-for-character from the shopkeeper's own message that refers to this
 person — in whatever script/language they actually used it in (e.g. "حمزہ" if that's what the
@@ -424,6 +445,49 @@ function applyMasterNameDictionary(
   }
 }
 
+// Strips standalone Urdu/Roman-Urdu grammatical connectors ("ke", "ka",
+// "ki", "ko") from the start/end of an extracted name — a deterministic
+// safety net behind the prompt rule above, for the case where the model
+// still leaves one attached (e.g. "Umair ke" instead of "Umair" for
+// "Umair ke khate mein 500 rupay..."). Only strips a connector that is its
+// own separate word at an edge — never touches a connector that is merely
+// a substring inside a longer word, and never touches the middle of a
+// multi-word name. Applied to both "name" and "name_as_heard" so the two
+// stay consistent for preventNameOverExpansion() below (which would
+// otherwise treat a lingering connector in "heard" as the real thing and
+// re-attach it to "name").
+// Whole words that can never be part of a person's name — grammatical
+// connectors (ke/ka/ki/ko) and the account/ledger nouns that almost always
+// follow them (khate/khata/hisab), plus the postposition "mein" (in/into)
+// that usually follows those. Verified live to sometimes leak into the
+// extracted name as a whole trailing chunk (e.g. "Umair ke khate mein"
+// instead of just "Umair"), not only as a single trailing word — so this
+// truncates at the FIRST marker word found anywhere in the string, keeping
+// only what came before it, rather than only trimming the edges.
+const NAME_STOP_WORDS = new Set(['k', 'ke', 'ka', 'ki', 'ko', 'khate', 'khata', 'hisab', 'mein', 'account', 'ledger']);
+function stripGrammaticalConnectors(text: string): string {
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  const stopIdx = words.findIndex((w) => NAME_STOP_WORDS.has(w.toLowerCase().replace(/[.,!?]+$/, '')));
+  const kept = stopIdx === -1 ? words : words.slice(0, stopIdx);
+  return kept.join(' ').trim();
+}
+
+function stripNameConnectors(parsed: ParsedCommand): void {
+  for (const party of [parsed?.entities?.customer, parsed?.entities?.supplier]) {
+    if (!party) continue;
+    if (party.name) {
+      const cleaned = stripGrammaticalConnectors(party.name);
+      // Nothing recognizable as a name survived (e.g. the model extracted
+      // just "K"/"Ke") — clear it so the app treats the party as
+      // unspecified instead of saving a one-letter garbage name.
+      party.name = cleaned || undefined;
+    }
+    if (party.name_as_heard) {
+      party.name_as_heard = stripGrammaticalConnectors(party.name_as_heard) || undefined;
+    }
+  }
+}
+
 // Deterministic guard against the model "completing" a spoken name into a
 // longer known name it merely shares some words with — verified live to
 // happen despite explicit prompt instructions not to (e.g. a shopkeeper
@@ -569,6 +633,11 @@ async function callAI(text: string, knownCustomerNames: string[] = [], knownSupp
       }
       try {
         applyPriceBasis(parsed);
+      } catch {
+        // Best-effort — never block a valid parse over this.
+      }
+      try {
+        stripNameConnectors(parsed);
       } catch {
         // Best-effort — never block a valid parse over this.
       }

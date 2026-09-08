@@ -9,7 +9,7 @@ import { Input, Field, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { PageLoader, EmptyState } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDateTime } from '@/lib/format';
+import { formatMoney, formatDateTime, formatSaleRef } from '@/lib/format';
 import type { Sale, SaleItem } from '@/types/db';
 
 export function SaleDetailPage() {
@@ -115,7 +115,7 @@ export function SaleDetailPage() {
         <button onClick={() => navigate('/sales')} className="flex items-center gap-2 text-sm text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200">
           <ArrowLeft className="h-4 w-4" /> Back
         </button>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {!isCancelled && !editMode && (
             <>
               <Button variant="outline" size="sm" onClick={startEdit}>
@@ -174,7 +174,7 @@ export function SaleDetailPage() {
         <div className="grid grid-cols-2 gap-4 border-b border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
           <div>
             <p className="text-xs uppercase tracking-wide text-slate-400">Invoice</p>
-            <p className="font-semibold text-slate-900 dark:text-slate-100">{sale.invoice_number}</p>
+            <p className="font-semibold text-slate-900 dark:text-slate-100">{formatSaleRef(sale.display_seq, sale.invoice_number)}</p>
           </div>
           <div className="text-right">
             <p className="text-xs uppercase tracking-wide text-slate-400">Date</p>

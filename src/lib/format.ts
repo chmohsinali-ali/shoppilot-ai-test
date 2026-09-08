@@ -13,6 +13,14 @@ export function formatMoney(amount: number, currency = 'PKR'): string {
   return currency && currency !== 'PKR' ? `${currency} ${formatted}` : formatted;
 }
 
+// Short, human-facing sale reference for the UI (S1, S2, S3, ...) — backed
+// by sales.display_seq, a per-shop sequential integer that never resets.
+// The long internal invoice_number (e.g. "SALE-2026-000001") stays untouched
+// in the database and keeps being used everywhere else (audit logs, RPCs).
+export function formatSaleRef(displaySeq: number | null | undefined, fallback: string): string {
+  return displaySeq != null ? `S${displaySeq}` : fallback;
+}
+
 export function formatNumber(n: number, digits = 2): string {
   if (!Number.isFinite(n)) return '0';
   return new Intl.NumberFormat('en-PK', {

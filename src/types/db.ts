@@ -97,6 +97,7 @@ export type Sale = {
   id: string;
   shop_id: string;
   invoice_number: string;
+  display_seq: number | null;
   customer_id: string | null;
   customer_name: string | null;
   sale_date: string;

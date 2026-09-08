@@ -132,7 +132,7 @@ export function PurchaseDetailPage() {
         <button onClick={() => navigate('/purchases')} className="flex items-center gap-2 text-sm text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200">
           <ArrowLeft className="h-4 w-4" /> Back
         </button>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {!isCancelled && !editMode && (
             <>
               <Button variant="outline" size="sm" onClick={startEdit}>

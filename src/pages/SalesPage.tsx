@@ -8,7 +8,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
-import { formatMoney, formatDateTime } from '@/lib/format';
+import { formatMoney, formatDateTime, formatSaleRef } from '@/lib/format';
 import type { Sale } from '@/types/db';
 
 export function SalesPage() {
@@ -34,7 +34,10 @@ export function SalesPage() {
   }, [shop]);
 
   const filtered = search.trim()
-    ? sales.filter((s) => s.invoice_number.toLowerCase().includes(search.toLowerCase()) || s.customer_name?.toLowerCase().includes(search.toLowerCase()))
+    ? sales.filter((s) =>
+        s.invoice_number.toLowerCase().includes(search.toLowerCase()) ||
+        formatSaleRef(s.display_seq, s.invoice_number).toLowerCase().includes(search.toLowerCase()) ||
+        s.customer_name?.toLowerCase().includes(search.toLowerCase()))
     : sales;
 
   return (
@@ -78,7 +81,7 @@ export function SalesPage() {
                 {filtered.map((s) => (
                   <tr key={s.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
                     <td className="px-4 py-3">
-                      <Link to={`/sales/${s.id}`} className="font-medium text-blue-600 hover:underline dark:text-blue-400">{s.invoice_number}</Link>
+                      <Link to={`/sales/${s.id}`} className="font-medium text-blue-600 hover:underline dark:text-blue-400">{formatSaleRef(s.display_seq, s.invoice_number)}</Link>
                     </td>
                     <td className="px-4 py-3 text-slate-700 dark:text-slate-300">{s.customer_name ?? 'Walk-in'}</td>
                     <td className="px-4 py-3 text-slate-500 dark:text-slate-400">{formatDateTime(s.sale_date)}</td>

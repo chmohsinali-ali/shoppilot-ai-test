@@ -2,7 +2,8 @@ import { useEffect, useState, FormEvent } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
   ArrowLeft, Building2, Phone, MapPin, Wallet, Plus, ShoppingBag,
-  ArrowDownLeft, ArrowUpRight, Receipt, Pencil, Trash2, Sparkles, AlertTriangle,
+  ArrowDownLeft, ArrowUpRight, Receipt, Trash2, Sparkles, AlertTriangle,
+  CheckCircle2, UserMinus,
 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
@@ -28,6 +29,7 @@ export function SupplierDetailPage() {
   const [loading, setLoading] = useState(true);
   const [showPay, setShowPay] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
+  const [showActionsMenu, setShowActionsMenu] = useState(false);
   const [showDeactivate, setShowDeactivate] = useState(false);
   const [showPermanentDelete, setShowPermanentDelete] = useState(false);
 
@@ -77,10 +79,17 @@ export function SupplierDetailPage() {
               </div>
             </div>
           </div>
-          <div className="flex gap-2">
-            <Button variant="outline" onClick={() => setShowEdit(true)}><Pencil className="h-4 w-4" /> Edit</Button>
-            <Button variant="outline" onClick={() => setShowDeactivate(true)} className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"><Trash2 className="h-4 w-4" /> Deactivate</Button>
-            <Button variant="outline" onClick={() => setShowPermanentDelete(true)} className="border-red-300 text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"><AlertTriangle className="h-4 w-4" /> Permanently Delete</Button>
+          <div className="flex flex-wrap gap-2">
+            <Button variant="outline" onClick={() => setShowEdit(true)}><CheckCircle2 className="h-4 w-4" /> Added</Button>
+            <Button
+              variant="outline"
+              onClick={() => setShowActionsMenu(true)}
+              className="px-2.5 text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
+              aria-label="Deactivate or permanently delete supplier"
+              title="Deactivate or permanently delete"
+            >
+              <Trash2 className="h-4 w-4" />
+            </Button>
             <Button variant="outline" onClick={() => setShowPay(true)}><Wallet className="h-4 w-4" /> Pay Supplier</Button>
             <Link to={`/assistant?supplierId=${supplier.id}&supplierName=${encodeURIComponent(supplier.supplier_name)}`}>
               <Button variant="outline"><Sparkles className="h-4 w-4" /> AI Chat</Button>
@@ -141,9 +150,50 @@ export function SupplierDetailPage() {
 
       <PaymentModal open={showPay} onClose={() => setShowPay(false)} supplier={supplier} onDone={load} />
       {showEdit && <EditSupplierModal supplier={supplier} onClose={() => setShowEdit(false)} onSaved={load} />}
+      {showActionsMenu && (
+        <SupplierActionsMenu
+          onClose={() => setShowActionsMenu(false)}
+          onDeactivate={() => { setShowActionsMenu(false); setShowDeactivate(true); }}
+          onPermanentDelete={() => { setShowActionsMenu(false); setShowPermanentDelete(true); }}
+        />
+      )}
       {showDeactivate && <DeactivateSupplierModal supplier={supplier} balance={balance} onClose={() => setShowDeactivate(false)} onDone={() => navigate('/suppliers')} />}
       {showPermanentDelete && <PermanentDeleteSupplierModal supplier={supplier} balance={balance} onClose={() => setShowPermanentDelete(false)} onDone={() => navigate('/suppliers')} />}
     </div>
+  );
+}
+
+function SupplierActionsMenu({ onClose, onDeactivate, onPermanentDelete }: { onClose: () => void; onDeactivate: () => void; onPermanentDelete: () => void }) {
+  return (
+    <Modal open={true} onClose={onClose} title="Manage Supplier" size="sm">
+      <div className="space-y-2">
+        <button
+          type="button"
+          onClick={onDeactivate}
+          className="flex w-full items-center gap-3 rounded-lg border border-slate-200 p-3 text-left text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800/50"
+        >
+          <UserMinus className="h-4 w-4 text-slate-500 dark:text-slate-400" />
+          <span>
+            Deactivate
+            <span className="block text-xs font-normal text-slate-400">Hide from active list — history stays intact and recoverable.</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={onPermanentDelete}
+          className="flex w-full items-center gap-3 rounded-lg border border-red-200 p-3 text-left text-sm font-medium text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"
+        >
+          <AlertTriangle className="h-4 w-4" />
+          <span>
+            Permanently Delete
+            <span className="block text-xs font-normal text-red-400">Erases this supplier and all their history forever. Cannot be undone.</span>
+          </span>
+        </button>
+        <div className="flex justify-end pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+        </div>
+      </div>
+    </Modal>
   );
 }
 

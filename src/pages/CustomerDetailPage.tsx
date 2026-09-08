@@ -2,7 +2,8 @@ import { useEffect, useState, FormEvent } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft, User, Phone, MessageCircle, MapPin, Wallet,
-  Plus, ShoppingBag, ArrowDownLeft, Receipt, Pencil, Trash2, Link as LinkIcon, Sparkles, AlertTriangle,
+  Plus, ShoppingBag, ArrowDownLeft, Receipt, Trash2, Link as LinkIcon, Sparkles, AlertTriangle,
+  CheckCircle2, UserMinus,
 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
@@ -12,7 +13,7 @@ import { Input, Field, Select, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDateTime } from '@/lib/format';
+import { formatMoney, formatDateTime, formatSaleRef } from '@/lib/format';
 import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 import type { Customer, LedgerEntry } from '@/types/db';
 
@@ -24,9 +25,11 @@ export function CustomerDetailPage() {
   const [customer, setCustomer] = useState<Customer | null>(null);
   const [balance, setBalance] = useState(0);
   const [ledger, setLedger] = useState<LedgerEntry[]>([]);
+  const [saleRefs, setSaleRefs] = useState<Record<string, number | null>>({});
   const [loading, setLoading] = useState(true);
   const [showPay, setShowPay] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
+  const [showActionsMenu, setShowActionsMenu] = useState(false);
   const [showDeactivate, setShowDeactivate] = useState(false);
   const [showPermanentDelete, setShowPermanentDelete] = useState(false);
 
@@ -40,9 +43,24 @@ export function CustomerDetailPage() {
       supabase.rpc('get_customer_balance', { p_customer_id: id }),
     ]);
     setCustomer(cust.data as Customer | null);
-    setLedger((ledg.data ?? []) as LedgerEntry[]);
+    const ledgerRows = (ledg.data ?? []) as LedgerEntry[];
+    setLedger(ledgerRows);
     setBalance(Number(bal.data ?? 0));
     setLoading(false);
+
+    // Look up the short S1/S2/... reference for any ledger row that points
+    // at a sale — the ledger itself only stores the long invoice_number.
+    const saleIds = [...new Set(
+      ledgerRows.filter((e) => e.reference_type === 'sale' || e.reference_type === 'sale_cancel').map((e) => e.reference_id).filter((v): v is string => !!v)
+    )];
+    if (saleIds.length > 0) {
+      const { data: salesData } = await supabase.from('sales').select('id, display_seq').in('id', saleIds);
+      const map: Record<string, number | null> = {};
+      for (const s of (salesData ?? []) as { id: string; display_seq: number | null }[]) map[s.id] = s.display_seq;
+      setSaleRefs(map);
+    } else {
+      setSaleRefs({});
+    }
   };
 
   useEffect(() => { load(); }, [shop, id]);
@@ -78,10 +96,17 @@ export function CustomerDetailPage() {
               </div>
             </div>
           </div>
-          <div className="flex gap-2">
-            <Button variant="outline" onClick={() => setShowEdit(true)}><Pencil className="h-4 w-4" /> Edit</Button>
-            <Button variant="outline" onClick={() => setShowDeactivate(true)} className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"><Trash2 className="h-4 w-4" /> Deactivate</Button>
-            <Button variant="outline" onClick={() => setShowPermanentDelete(true)} className="border-red-300 text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"><AlertTriangle className="h-4 w-4" /> Permanently Delete</Button>
+          <div className="flex flex-wrap gap-2">
+            <Button variant="outline" onClick={() => setShowEdit(true)}><CheckCircle2 className="h-4 w-4" /> Added</Button>
+            <Button
+              variant="outline"
+              onClick={() => setShowActionsMenu(true)}
+              className="px-2.5 text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
+              aria-label="Deactivate or permanently delete customer"
+              title="Deactivate or permanently delete"
+            >
+              <Trash2 className="h-4 w-4" />
+            </Button>
             <Button variant="outline" onClick={() => setShowPay(true)}>
               <Wallet className="h-4 w-4" /> Receive Payment
             </Button>
@@ -128,6 +153,10 @@ export function CustomerDetailPage() {
                 {ledger.map((e) => {
                   const isDebit = Number(e.debit_amount) > 0;
                   const refLink = ledgerRefLink(e);
+                  const isSaleRef = (e.reference_type === 'sale' || e.reference_type === 'sale_cancel') && e.reference_id;
+                  const refLabel = isSaleRef
+                    ? formatSaleRef(saleRefs[e.reference_id as string], e.reference_number ?? e.reference_type ?? '—')
+                    : (e.reference_number ?? e.reference_type ?? '—');
                   return (
                     <tr key={e.id} className="hover:bg-slate-50/60 dark:hover:bg-slate-800/40">
                       <td className="whitespace-nowrap px-5 py-3 text-xs text-slate-500 dark:text-slate-400">
@@ -140,10 +169,10 @@ export function CustomerDetailPage() {
                         {refLink ? (
                           <Link to={refLink} className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline dark:text-blue-400">
                             <LinkIcon className="h-3 w-3" />
-                            {e.reference_number ?? e.reference_type}
+                            {refLabel}
                           </Link>
                         ) : (
-                          <span className="text-sm text-slate-600 dark:text-slate-300">{e.reference_number ?? e.reference_type ?? '—'}</span>
+                          <span className="text-sm text-slate-600 dark:text-slate-300">{refLabel}</span>
                         )}
                       </td>
                       <td className="px-5 py-3 text-right">
@@ -174,9 +203,50 @@ export function CustomerDetailPage() {
 
       <PaymentModal open={showPay} onClose={() => setShowPay(false)} customer={customer} onDone={load} />
       {showEdit && <EditCustomerModal customer={customer} onClose={() => setShowEdit(false)} onSaved={load} />}
+      {showActionsMenu && (
+        <AccountActionsMenu
+          onClose={() => setShowActionsMenu(false)}
+          onDeactivate={() => { setShowActionsMenu(false); setShowDeactivate(true); }}
+          onPermanentDelete={() => { setShowActionsMenu(false); setShowPermanentDelete(true); }}
+        />
+      )}
       {showDeactivate && <DeactivateCustomerModal customer={customer} balance={balance} onClose={() => setShowDeactivate(false)} onDone={() => navigate('/customers')} />}
       {showPermanentDelete && <PermanentDeleteCustomerModal customer={customer} balance={balance} onClose={() => setShowPermanentDelete(false)} onDone={() => navigate('/customers')} />}
     </div>
+  );
+}
+
+function AccountActionsMenu({ onClose, onDeactivate, onPermanentDelete }: { onClose: () => void; onDeactivate: () => void; onPermanentDelete: () => void }) {
+  return (
+    <Modal open={true} onClose={onClose} title="Manage Customer" size="sm">
+      <div className="space-y-2">
+        <button
+          type="button"
+          onClick={onDeactivate}
+          className="flex w-full items-center gap-3 rounded-lg border border-slate-200 p-3 text-left text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800/50"
+        >
+          <UserMinus className="h-4 w-4 text-slate-500 dark:text-slate-400" />
+          <span>
+            Deactivate
+            <span className="block text-xs font-normal text-slate-400">Hide from active list — history stays intact and recoverable.</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={onPermanentDelete}
+          className="flex w-full items-center gap-3 rounded-lg border border-red-200 p-3 text-left text-sm font-medium text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"
+        >
+          <AlertTriangle className="h-4 w-4" />
+          <span>
+            Permanently Delete
+            <span className="block text-xs font-normal text-red-400">Erases this customer and all their history forever. Cannot be undone.</span>
+          </span>
+        </button>
+        <div className="flex justify-end pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+        </div>
+      </div>
+    </Modal>
   );
 }
 
