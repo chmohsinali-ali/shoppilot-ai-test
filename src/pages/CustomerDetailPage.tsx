@@ -2,8 +2,8 @@ import { useEffect, useState, FormEvent } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft, User, Phone, MessageCircle, MapPin, Wallet,
-  Plus, ShoppingBag, ArrowDownLeft, Receipt, Trash2, Link as LinkIcon, Sparkles, AlertTriangle,
-  CheckCircle2, UserMinus,
+  Plus, ShoppingBag, ArrowDownLeft, Receipt, Trash2, Sparkles, AlertTriangle,
+  CheckCircle2, UserMinus, Undo2,
 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
@@ -13,7 +13,7 @@ import { Input, Field, Select, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDateCompact, formatSaleRef } from '@/lib/format';
+import { formatMoney, formatDate, formatDateCompact } from '@/lib/format';
 import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 import type { Customer, LedgerEntry } from '@/types/db';
 
@@ -25,13 +25,15 @@ export function CustomerDetailPage() {
   const [customer, setCustomer] = useState<Customer | null>(null);
   const [balance, setBalance] = useState(0);
   const [ledger, setLedger] = useState<LedgerEntry[]>([]);
-  const [saleRefs, setSaleRefs] = useState<Record<string, number | null>>({});
+  const [saleItemCounts, setSaleItemCounts] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
   const [showPay, setShowPay] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
   const [showActionsMenu, setShowActionsMenu] = useState(false);
   const [showDeactivate, setShowDeactivate] = useState(false);
   const [showPermanentDelete, setShowPermanentDelete] = useState(false);
+  const [paymentDetails, setPaymentDetails] = useState<LedgerEntry | null>(null);
+  const [reverseTarget, setReverseTarget] = useState<LedgerEntry | null>(null);
 
   const load = async () => {
     if (!shop || !id) return;
@@ -48,18 +50,19 @@ export function CustomerDetailPage() {
     setBalance(Number(bal.data ?? 0));
     setLoading(false);
 
-    // Look up the short S1/S2/... reference for any ledger row that points
-    // at a sale — the ledger itself only stores the long invoice_number.
+    // Item count per sale, for the compact "Sale · N items" description —
+    // the main ledger never shows individual products or the internal
+    // invoice number; that detail lives on the dedicated Sale page.
     const saleIds = [...new Set(
       ledgerRows.filter((e) => e.reference_type === 'sale' || e.reference_type === 'sale_cancel').map((e) => e.reference_id).filter((v): v is string => !!v)
     )];
     if (saleIds.length > 0) {
-      const { data: salesData } = await supabase.from('sales').select('id, display_seq').in('id', saleIds);
-      const map: Record<string, number | null> = {};
-      for (const s of (salesData ?? []) as { id: string; display_seq: number | null }[]) map[s.id] = s.display_seq;
-      setSaleRefs(map);
+      const { data: itemsData } = await supabase.from('sale_items').select('sale_id').in('sale_id', saleIds);
+      const counts: Record<string, number> = {};
+      for (const row of (itemsData ?? []) as { sale_id: string }[]) counts[row.sale_id] = (counts[row.sale_id] ?? 0) + 1;
+      setSaleItemCounts(counts);
     } else {
-      setSaleRefs({});
+      setSaleItemCounts({});
     }
   };
 
@@ -126,8 +129,11 @@ export function CustomerDetailPage() {
         </div>
       </Card>
 
-      {/* Ledger History — single source of truth for all customer activity */}
-      <Card>
+      {/* Ledger History — single source of truth for all customer activity.
+          Accounting-style table: Date | Description | Amount | Balance.
+          The running balance lives ONLY in the Balance column — it is
+          never repeated underneath each transaction's amount. */}
+      <Card className="overflow-hidden">
         <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4 dark:border-slate-800">
           <div>
             <h3 className="font-semibold text-slate-900 dark:text-slate-100">Ledger History</h3>
@@ -137,44 +143,80 @@ export function CustomerDetailPage() {
         {ledger.length === 0 ? (
           <EmptyState icon={<Receipt className="h-7 w-7" />} title="No ledger entries" description="Transactions will appear here." />
         ) : (
-          // Stacked rows, not a wide table — every phone width shows the full
-          // date, reference, entry type, amount, AND the resulting balance
-          // for that transaction without any horizontal scrolling needed.
-          <div className="divide-y divide-slate-100 dark:divide-slate-800">
-            {ledger.map((e) => {
-              const isDebit = Number(e.debit_amount) > 0;
-              const refLink = ledgerRefLink(e);
-              const isSaleRef = (e.reference_type === 'sale' || e.reference_type === 'sale_cancel') && e.reference_id;
-              const refLabel = isSaleRef
-                ? formatSaleRef(saleRefs[e.reference_id as string], e.reference_number ?? e.reference_type ?? '—')
-                : (e.reference_number ?? e.reference_type ?? '—');
-              return (
-                <div key={e.id} className="flex items-center justify-between gap-3 px-5 py-3 hover:bg-slate-50/60 dark:hover:bg-slate-800/40">
-                  <div className="min-w-0 flex-1">
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                      <EntryBadge type={e.entry_type} />
-                      {refLink ? (
-                        <Link to={refLink} className="inline-flex min-w-0 items-center gap-1 truncate text-sm font-medium text-blue-600 hover:underline dark:text-blue-400">
-                          <LinkIcon className="h-3 w-3 flex-shrink-0" />
-                          <span className="truncate">{refLabel}</span>
-                        </Link>
-                      ) : (
-                        <span className="truncate text-sm text-slate-600 dark:text-slate-300">{refLabel}</span>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="border-b border-slate-100 bg-slate-50/60 text-left text-xs uppercase tracking-wide text-slate-400 dark:border-slate-800 dark:bg-slate-800/40">
+                <tr>
+                  <th className="px-3 py-2.5 font-medium sm:px-5">Date</th>
+                  <th className="px-3 py-2.5 font-medium sm:px-5">Description</th>
+                  <th className="px-3 py-2.5 text-right font-medium sm:px-5">Amount</th>
+                  <th className="px-3 py-2.5 text-right font-medium sm:px-5">Balance</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                {ledger.map((e) => {
+                  const info = ledgerRowInfo(e, saleItemCounts, setPaymentDetails);
+                  const isDebit = Number(e.debit_amount) > 0;
+                  const amount = isDebit ? Number(e.debit_amount) : Number(e.credit_amount);
+                  const rowMuted = info.muted;
+                  const descNode = (
+                    <span className="inline-flex min-w-0 items-center gap-1.5">
+                      <span aria-hidden="true">{info.icon}</span>
+                      <span className="truncate">{info.label}</span>
+                      {e.reversed_at && (
+                        <span className="flex-shrink-0 rounded-full bg-slate-200 px-1.5 py-0.5 text-[10px] font-medium uppercase text-slate-600 dark:bg-slate-700 dark:text-slate-300">
+                          Reversed
+                        </span>
                       )}
-                    </div>
-                    <p className="mt-1 text-xs text-slate-400 dark:text-slate-500">{formatDateCompact(e.transaction_date)}</p>
-                  </div>
-                  <div className="flex-shrink-0 text-right">
-                    {isDebit ? (
-                      <p className="font-medium text-amber-600 dark:text-amber-400">+{formatMoney(Number(e.debit_amount), cur)}</p>
-                    ) : (
-                      <p className="font-medium text-emerald-600 dark:text-emerald-400">−{formatMoney(Number(e.credit_amount), cur)}</p>
-                    )}
-                    <p className="mt-0.5 text-xs text-slate-400 dark:text-slate-500">Bal: {formatMoney(Number(e.running_balance), cur)}</p>
-                  </div>
-                </div>
-              );
-            })}
+                    </span>
+                  );
+                  return (
+                    <tr key={e.id} className={`hover:bg-slate-50/60 dark:hover:bg-slate-800/40 ${rowMuted ? 'opacity-60' : ''}`}>
+                      <td className="whitespace-nowrap px-3 py-3 text-xs text-slate-500 dark:text-slate-400 sm:px-5">
+                        {formatDateCompact(e.transaction_date)}
+                      </td>
+                      <td className="max-w-[9rem] px-3 py-3 sm:max-w-none sm:px-5">
+                        {info.link ? (
+                          <Link to={info.link} className={`text-sm font-medium hover:underline ${rowMuted ? 'text-slate-500 dark:text-slate-400' : 'text-slate-700 dark:text-slate-200'}`}>
+                            {descNode}
+                          </Link>
+                        ) : info.onClick ? (
+                          <button type="button" onClick={info.onClick} className={`text-sm font-medium hover:underline ${rowMuted ? 'text-slate-500 dark:text-slate-400' : 'text-slate-700 dark:text-slate-200'}`}>
+                            {descNode}
+                          </button>
+                        ) : (
+                          <span className={`text-sm ${rowMuted ? 'text-slate-500 dark:text-slate-400' : 'text-slate-700 dark:text-slate-200'}`}>{descNode}</span>
+                        )}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-3 text-right font-medium sm:px-5">
+                        {rowMuted ? (
+                          <span className="text-slate-400 dark:text-slate-500">{isDebit ? '+' : '−'}{formatMoney(amount, cur)}</span>
+                        ) : isDebit ? (
+                          <span className="text-amber-600 dark:text-amber-400">+{formatMoney(amount, cur)}</span>
+                        ) : (
+                          <span className="text-emerald-600 dark:text-emerald-400">−{formatMoney(amount, cur)}</span>
+                        )}
+                      </td>
+                      <td className="whitespace-nowrap bg-emerald-50/50 px-3 py-3 text-right font-semibold text-emerald-800 dark:bg-emerald-950/10 dark:text-emerald-400 sm:px-5">
+                        {formatMoney(Number(e.running_balance), cur)}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+              <tfoot>
+                <tr className="border-t border-slate-200 dark:border-slate-700">
+                  <td className="px-3 py-3 sm:px-5" />
+                  <td className="px-3 py-3 text-sm font-semibold text-slate-700 dark:text-slate-200 sm:px-5">Total</td>
+                  <td className="whitespace-nowrap px-3 py-3 text-right font-semibold text-slate-900 dark:text-slate-100 sm:px-5">
+                    {balance > 0 ? '+' : balance < 0 ? '−' : ''}{formatMoney(Math.abs(balance), cur)}
+                  </td>
+                  <td className="whitespace-nowrap bg-emerald-50 px-3 py-3 text-right font-bold text-emerald-800 dark:bg-emerald-950/20 dark:text-emerald-400 sm:px-5">
+                    {formatMoney(balance, cur)}
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
         )}
       </Card>
@@ -190,8 +232,71 @@ export function CustomerDetailPage() {
       )}
       {showDeactivate && <DeactivateCustomerModal customer={customer} balance={balance} onClose={() => setShowDeactivate(false)} onDone={() => navigate('/customers')} />}
       {showPermanentDelete && <PermanentDeleteCustomerModal customer={customer} balance={balance} onClose={() => setShowPermanentDelete(false)} onDone={() => navigate('/customers')} />}
+      {paymentDetails && (
+        <PaymentDetailsModal
+          entry={paymentDetails}
+          previousBalance={previousBalanceFor(ledger, paymentDetails)}
+          cur={cur}
+          onClose={() => setPaymentDetails(null)}
+          onReverse={() => { setReverseTarget(paymentDetails); setPaymentDetails(null); }}
+        />
+      )}
+      {reverseTarget && (
+        <ReversePaymentModal
+          entry={reverseTarget}
+          balance={balance}
+          cur={cur}
+          onClose={() => setReverseTarget(null)}
+          onDone={load}
+        />
+      )}
     </div>
   );
+}
+
+// Previous running balance for a payment — read directly from the ledger
+// entry immediately before it (0 if it's the very first entry), never
+// recomputed independently: this is still just the backend's own
+// running_balance values, only picking out the one from one row earlier.
+function previousBalanceFor(ledger: LedgerEntry[], entry: LedgerEntry): number {
+  const idx = ledger.findIndex((e) => e.id === entry.id);
+  if (idx <= 0) return 0;
+  return Number(ledger[idx - 1].running_balance);
+}
+
+type LedgerRowInfo = {
+  icon: string;
+  label: string;
+  link: string | null;
+  onClick: (() => void) | null;
+  muted: boolean;
+};
+
+function ledgerRowInfo(
+  e: LedgerEntry,
+  saleItemCounts: Record<string, number>,
+  onPaymentClick?: (entry: LedgerEntry) => void
+): LedgerRowInfo {
+  switch (e.entry_type) {
+    case 'CREDIT_SALE': {
+      const n = e.reference_id ? saleItemCounts[e.reference_id] : undefined;
+      return { icon: '🛒', label: n ? `Sale · ${n} item${n === 1 ? '' : 's'}` : 'Sale', link: e.reference_id ? `/sales/${e.reference_id}` : null, onClick: null, muted: false };
+    }
+    case 'SALE_CANCEL':
+      return { icon: '🛒', label: 'Sale Cancelled', link: e.reference_id ? `/sales/${e.reference_id}` : null, onClick: null, muted: true };
+    case 'SALE_RETURN':
+      return { icon: '↩️', label: 'Return', link: e.reference_id ? `/returns?type=sale&id=${e.reference_id}` : null, onClick: null, muted: false };
+    case 'CUSTOMER_PAYMENT':
+      return { icon: '💵', label: 'Payment', link: null, onClick: onPaymentClick ? () => onPaymentClick(e) : null, muted: !!e.reversed_at };
+    case 'CUSTOMER_PAYMENT_REVERSAL':
+      return { icon: '↩️', label: 'Payment Reversal', link: null, onClick: null, muted: true };
+    case 'OPENING_BALANCE':
+      return { icon: '📖', label: 'Opening Balance', link: null, onClick: null, muted: false };
+    case 'ADJUSTMENT':
+      return { icon: '✏️', label: 'Adjustment', link: null, onClick: null, muted: false };
+    default:
+      return { icon: '•', label: e.entry_type.replace(/_/g, ' ').toLowerCase(), link: null, onClick: null, muted: false };
+  }
 }
 
 function AccountActionsMenu({ onClose, onDeactivate, onPermanentDelete }: { onClose: () => void; onDeactivate: () => void; onPermanentDelete: () => void }) {
@@ -441,37 +546,89 @@ function PaymentModal({ open, onClose, customer, onDone }: { open: boolean; onCl
   );
 }
 
-function ledgerRefLink(e: LedgerEntry): string | null {
-  if (!e.reference_id) return null;
-  switch (e.reference_type) {
-    case 'sale':
-    case 'sale_cancel':
-      return `/sales/${e.reference_id}`;
-    case 'sale_return':
-      return `/returns?type=sale&id=${e.reference_id}`;
-    default:
-      return null;
-  }
+function PaymentDetailsModal({
+  entry, previousBalance, cur, onClose, onReverse,
+}: { entry: LedgerEntry; previousBalance: number; cur: string; onClose: () => void; onReverse: () => void }) {
+  return (
+    <Modal open={true} onClose={onClose} title="Payment Details" size="sm">
+      <div className="space-y-4">
+        <div className="text-center">
+          <p className="text-xs text-slate-400">{formatDate(entry.transaction_date)}</p>
+          <p className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-100">💵 Payment</p>
+          {entry.reversed_at && (
+            <span className="mt-1 inline-block rounded-full bg-slate-200 px-2 py-0.5 text-xs font-medium uppercase text-slate-600 dark:bg-slate-700 dark:text-slate-300">
+              Reversed
+            </span>
+          )}
+        </div>
+        <div className="space-y-2 rounded-lg bg-slate-50 p-4 dark:bg-slate-800/50">
+          <div className="flex justify-between text-sm">
+            <span className="text-slate-500 dark:text-slate-400">Payment Received</span>
+            <span className="font-semibold text-emerald-600 dark:text-emerald-400">{formatMoney(Number(entry.credit_amount), cur)}</span>
+          </div>
+          <div className="flex justify-between text-sm">
+            <span className="text-slate-500 dark:text-slate-400">Previous Balance</span>
+            <span className="font-medium text-slate-700 dark:text-slate-300">{formatMoney(previousBalance, cur)}</span>
+          </div>
+          <div className="flex justify-between border-t border-slate-200 pt-2 text-sm dark:border-slate-700">
+            <span className="text-slate-500 dark:text-slate-400">Remaining Balance</span>
+            <span className="font-semibold text-emerald-800 dark:text-emerald-400">{formatMoney(Number(entry.running_balance), cur)}</span>
+          </div>
+        </div>
+        {entry.description && <p className="text-xs text-slate-400">{entry.description}</p>}
+        <div className="flex justify-end gap-2 pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Close</Button>
+          {!entry.reversed_at && (
+            <Button type="button" variant="ghost" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={onReverse}>
+              <Undo2 className="h-4 w-4" /> Reverse Payment
+            </Button>
+          )}
+        </div>
+      </div>
+    </Modal>
+  );
 }
 
-function EntryBadge({ type }: { type: string }) {
-  const styles: Record<string, string> = {
-    CREDIT_SALE: 'bg-blue-100 text-blue-700 dark:bg-blue-950/50 dark:text-blue-400',
-    SALE_CANCEL: 'bg-slate-200 text-slate-600 dark:bg-slate-700 dark:text-slate-300',
-    SALE_RETURN: 'bg-rose-100 text-rose-700 dark:bg-rose-950/50 dark:text-rose-400',
-    CUSTOMER_PAYMENT: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400',
-    OPENING_BALANCE: 'bg-amber-100 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400',
-    ADJUSTMENT: 'bg-violet-100 text-violet-700 dark:bg-violet-950/50 dark:text-violet-400',
+function ReversePaymentModal({
+  entry, balance, cur, onClose, onDone,
+}: { entry: LedgerEntry; balance: number; cur: string; onClose: () => void; onDone: () => void }) {
+  const { user } = useAuth();
+  const toast = useToast();
+  const [saving, setSaving] = useState(false);
+  const afterReversal = balance + Number(entry.credit_amount);
+
+  const confirm = async () => {
+    if (!user) return;
+    setSaving(true);
+    const { error } = await supabase.rpc('reverse_customer_payment', {
+      p_ledger_entry_id: entry.id,
+      p_user_id: user.id,
+    });
+    setSaving(false);
+    if (error) { toast('error', error.message); return; }
+    toast('success', 'Payment reversed.');
+    onClose();
+    onDone();
   };
-  const labels: Record<string, string> = {
-    CREDIT_SALE: 'Sale',
-    SALE_CANCEL: 'Cancel',
-    SALE_RETURN: 'Return',
-    CUSTOMER_PAYMENT: 'Payment',
-    OPENING_BALANCE: 'Opening',
-    ADJUSTMENT: 'Adjustment',
-  };
-  const cls = styles[type] ?? 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300';
-  const label = labels[type] ?? type.replace(/_/g, ' ').toLowerCase();
-  return <span className={`inline-block rounded-full px-2 py-0.5 text-[11px] font-medium capitalize ${cls}`}>{label}</span>;
+
+  return (
+    <Modal open={true} onClose={onClose} title="Reverse Payment?" size="sm">
+      <div className="space-y-4">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          This will undo the payment below without deleting it — it stays on the ledger, marked as reversed.
+        </p>
+        <div className="space-y-2 rounded-lg bg-amber-50 p-4 text-sm dark:bg-amber-950/20">
+          <div className="flex justify-between"><span className="text-slate-500 dark:text-slate-400">Payment</span><span className="font-semibold text-slate-900 dark:text-slate-100">{formatMoney(Number(entry.credit_amount), cur)}</span></div>
+          <div className="flex justify-between"><span className="text-slate-500 dark:text-slate-400">Current Balance</span><span className="font-medium text-slate-700 dark:text-slate-300">{formatMoney(balance, cur)}</span></div>
+          <div className="flex justify-between border-t border-amber-200 pt-2 dark:border-amber-900"><span className="text-slate-500 dark:text-slate-400">After Reversal</span><span className="font-semibold text-amber-700 dark:text-amber-400">{formatMoney(afterReversal, cur)}</span></div>
+        </div>
+        <div className="flex justify-end gap-2 pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+          <Button type="button" variant="ghost" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={confirm} loading={saving}>
+            <Undo2 className="h-4 w-4" /> Reverse Payment
+          </Button>
+        </div>
+      </div>
+    </Modal>
+  );
 }

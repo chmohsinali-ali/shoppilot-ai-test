@@ -148,6 +148,8 @@ export type LedgerEntry = {
   debit_amount: number;
   credit_amount: number;
   running_balance: number;
+  reversed_at: string | null;
+  reversed_by: string | null;
   created_by: string | null;
   created_at: string;
 };
