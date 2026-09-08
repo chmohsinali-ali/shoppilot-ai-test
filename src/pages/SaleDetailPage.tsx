@@ -54,6 +54,13 @@ export function SaleDetailPage() {
 
   const cur = shop?.currency ?? 'PKR';
   const isCancelled = sale.status === 'cancelled';
+  // Editing an invoice cancels the original and creates a corrected
+  // replacement — that's an internal implementation detail, not something
+  // the shopkeeper actually cancelled, so it must never look identical to a
+  // genuine cancellation (which is a real, human-initiated action with its
+  // own reason). superseded_by_sale_id is only ever set by the edit flow.
+  const isEdited = isCancelled && !!sale.superseded_by_sale_id;
+  const isGenuinelyCancelled = isCancelled && !sale.superseded_by_sale_id;
 
   const startEdit = () => {
     setEditLines(items.map((it) => ({
@@ -152,8 +159,21 @@ export function SaleDetailPage() {
           {shop?.phone && <p className="text-xs text-slate-500 dark:text-slate-400">Tel: {shop.phone}</p>}
         </div>
 
-        {/* Cancelled banner */}
-        {isCancelled && (
+        {/* Edited/replaced banner — not a real cancellation */}
+        {isEdited && (
+          <div className="border-b border-blue-100 bg-blue-50 px-6 py-3 dark:border-blue-900 dark:bg-blue-950/30">
+            <div className="flex items-center gap-2">
+              <Pencil className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+              <p className="text-sm font-semibold text-blue-800 dark:text-blue-300">This invoice was edited — replaced by a corrected version</p>
+            </div>
+            <Link to={`/sales/${sale.superseded_by_sale_id}`} className="mt-2 flex items-center gap-1 text-xs font-medium text-blue-600 hover:underline dark:text-blue-400">
+              View corrected invoice <ArrowRight className="h-3 w-3" />
+            </Link>
+          </div>
+        )}
+
+        {/* Cancelled banner — a real, human-initiated cancellation only */}
+        {isGenuinelyCancelled && (
           <div className="border-b border-slate-200 bg-slate-100 px-6 py-3 dark:border-slate-700 dark:bg-slate-800/80">
             <div className="flex items-center gap-2">
               <XCircle className="h-5 w-5 text-slate-500 dark:text-slate-400" />
@@ -162,11 +182,6 @@ export function SaleDetailPage() {
                 {sale.cancellation_reason && <p className="text-xs text-slate-500 dark:text-slate-400">Reason: {sale.cancellation_reason}</p>}
               </div>
             </div>
-            {sale.superseded_by_sale_id && (
-              <Link to={`/sales/${sale.superseded_by_sale_id}`} className="mt-2 flex items-center gap-1 text-xs font-medium text-blue-600 hover:underline dark:text-blue-400">
-                Replaced by invoice <ArrowRight className="h-3 w-3" />
-              </Link>
-            )}
           </div>
         )}
 
@@ -182,7 +197,11 @@ export function SaleDetailPage() {
             <p className="font-medium text-slate-700 dark:text-slate-300">{sale.customer_name ?? 'Walk-in'}</p>
           </div>
           <div className="text-right">
-            {isCancelled ? (
+            {isEdited ? (
+              <span className="inline-block rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-950/50 dark:text-blue-400">
+                Edited
+              </span>
+            ) : isGenuinelyCancelled ? (
               <span className="inline-block rounded-full bg-slate-200 px-2 py-0.5 text-xs font-medium text-slate-600 dark:bg-slate-700 dark:text-slate-300">
                 Cancelled
               </span>

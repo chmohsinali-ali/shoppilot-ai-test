@@ -26,6 +26,7 @@ export function CustomerDetailPage() {
   const [balance, setBalance] = useState(0);
   const [ledger, setLedger] = useState<LedgerEntry[]>([]);
   const [saleItemCounts, setSaleItemCounts] = useState<Record<string, number>>({});
+  const [saleEdited, setSaleEdited] = useState<Record<string, boolean>>({});
   const [loading, setLoading] = useState(true);
   const [showPay, setShowPay] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
@@ -57,12 +58,19 @@ export function CustomerDetailPage() {
       ledgerRows.filter((e) => e.reference_type === 'sale' || e.reference_type === 'sale_cancel').map((e) => e.reference_id).filter((v): v is string => !!v)
     )];
     if (saleIds.length > 0) {
-      const { data: itemsData } = await supabase.from('sale_items').select('sale_id').in('sale_id', saleIds);
+      const [{ data: itemsData }, { data: salesData }] = await Promise.all([
+        supabase.from('sale_items').select('sale_id').in('sale_id', saleIds),
+        supabase.from('sales').select('id, superseded_by_sale_id').in('id', saleIds),
+      ]);
       const counts: Record<string, number> = {};
       for (const row of (itemsData ?? []) as { sale_id: string }[]) counts[row.sale_id] = (counts[row.sale_id] ?? 0) + 1;
       setSaleItemCounts(counts);
+      const edited: Record<string, boolean> = {};
+      for (const s of (salesData ?? []) as { id: string; superseded_by_sale_id: string | null }[]) edited[s.id] = !!s.superseded_by_sale_id;
+      setSaleEdited(edited);
     } else {
       setSaleItemCounts({});
+      setSaleEdited({});
     }
   };
 
@@ -158,7 +166,7 @@ export function CustomerDetailPage() {
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                 {ledger.map((e) => {
-                  const info = ledgerRowInfo(e, saleItemCounts, setPaymentDetails);
+                  const info = ledgerRowInfo(e, saleItemCounts, setPaymentDetails, saleEdited);
                   const isDebit = Number(e.debit_amount) > 0;
                   const amount = isDebit ? Number(e.debit_amount) : Number(e.credit_amount);
                   const rowMuted = info.muted;
@@ -278,15 +286,23 @@ type LedgerRowInfo = {
 function ledgerRowInfo(
   e: LedgerEntry,
   saleItemCounts: Record<string, number>,
-  onPaymentClick?: (entry: LedgerEntry) => void
+  onPaymentClick?: (entry: LedgerEntry) => void,
+  saleEdited?: Record<string, boolean>
 ): LedgerRowInfo {
   switch (e.entry_type) {
     case 'CREDIT_SALE': {
       const n = e.reference_id ? saleItemCounts[e.reference_id] : undefined;
       return { icon: '🛒', label: n ? `Sale · ${n} item${n === 1 ? '' : 's'}` : 'Sale', link: e.reference_id ? `/sales/${e.reference_id}` : null, onClick: null, muted: false };
     }
-    case 'SALE_CANCEL':
-      return { icon: '🛒', label: 'Sale Cancelled', link: e.reference_id ? `/sales/${e.reference_id}` : null, onClick: null, muted: true };
+    case 'SALE_CANCEL': {
+      // An "Edit" on a sale cancels the original internally and creates a
+      // corrected replacement — that's not a real cancellation the
+      // shopkeeper asked for, so it must read differently here too.
+      const wasEdited = e.reference_id ? saleEdited?.[e.reference_id] : false;
+      return wasEdited
+        ? { icon: '🛒', label: 'Sale Edited', link: e.reference_id ? `/sales/${e.reference_id}` : null, onClick: null, muted: true }
+        : { icon: '🛒', label: 'Sale Cancelled', link: e.reference_id ? `/sales/${e.reference_id}` : null, onClick: null, muted: true };
+    }
     case 'SALE_RETURN':
       return { icon: '↩️', label: 'Return', link: e.reference_id ? `/returns?type=sale&id=${e.reference_id}` : null, onClick: null, muted: false };
     case 'CUSTOMER_PAYMENT':

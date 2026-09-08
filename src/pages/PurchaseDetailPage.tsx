@@ -55,6 +55,8 @@ export function PurchaseDetailPage() {
 
   const cur = shop?.currency ?? 'PKR';
   const isCancelled = purchase.status === 'cancelled';
+  const isEdited = isCancelled && !!purchase.superseded_by_purchase_id;
+  const isGenuinelyCancelled = isCancelled && !purchase.superseded_by_purchase_id;
   const totalFreeUnits = items.reduce((s, i) => s + Number(i.free_units), 0);
   const totalReceived = items.reduce((s, i) => s + Number(i.total_received_quantity), 0);
   const totalFurtherTax = items.reduce((s, i) => s + Number(i.further_tax), 0);
@@ -173,7 +175,19 @@ export function PurchaseDetailPage() {
           <p className="text-xs text-slate-500 dark:text-slate-400">{purchase.purchase_number}</p>
         </div>
 
-        {isCancelled && (
+        {isEdited && (
+          <div className="border-b border-blue-100 bg-blue-50 px-6 py-3 dark:border-blue-900 dark:bg-blue-950/30">
+            <div className="flex items-center gap-2">
+              <Pencil className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+              <p className="text-sm font-semibold text-blue-800 dark:text-blue-300">This invoice was edited — replaced by a corrected version</p>
+            </div>
+            <Link to={`/purchases/${purchase.superseded_by_purchase_id}`} className="mt-2 flex items-center gap-1 text-xs font-medium text-blue-600 hover:underline dark:text-blue-400">
+              View corrected invoice <ArrowRight className="h-3 w-3" />
+            </Link>
+          </div>
+        )}
+
+        {isGenuinelyCancelled && (
           <div className="border-b border-slate-200 bg-slate-100 px-6 py-3 dark:border-slate-700 dark:bg-slate-800/80">
             <div className="flex items-center gap-2">
               <XCircle className="h-5 w-5 text-slate-500 dark:text-slate-400" />
@@ -182,11 +196,6 @@ export function PurchaseDetailPage() {
                 {purchase.cancellation_reason && <p className="text-xs text-slate-500 dark:text-slate-400">Reason: {purchase.cancellation_reason}</p>}
               </div>
             </div>
-            {purchase.superseded_by_purchase_id && (
-              <Link to={`/purchases/${purchase.superseded_by_purchase_id}`} className="mt-2 flex items-center gap-1 text-xs font-medium text-blue-600 hover:underline dark:text-blue-400">
-                Replaced by invoice <ArrowRight className="h-3 w-3" />
-              </Link>
-            )}
           </div>
         )}
 
@@ -199,7 +208,9 @@ export function PurchaseDetailPage() {
           <div className="text-right">
             <p className="font-medium text-slate-700 dark:text-slate-300">{formatDateCompact(purchase.purchase_date)}</p>
             <p className="mt-1 text-xs">
-              {isCancelled ? (
+              {isEdited ? (
+                <span className="inline-block rounded-full bg-blue-100 px-2 py-0.5 font-medium text-blue-700 dark:bg-blue-950/50 dark:text-blue-400">Edited</span>
+              ) : isGenuinelyCancelled ? (
                 <span className="inline-block rounded-full bg-slate-200 px-2 py-0.5 font-medium text-slate-600 dark:bg-slate-700 dark:text-slate-300">Cancelled</span>
               ) : (
                 <span className={`inline-block rounded-full px-2 py-0.5 font-medium capitalize ${purchase.supplier_invoice_status === 'open' ? 'bg-blue-100 text-blue-700 dark:bg-blue-950/50 dark:text-blue-400' : 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400'}`}>
