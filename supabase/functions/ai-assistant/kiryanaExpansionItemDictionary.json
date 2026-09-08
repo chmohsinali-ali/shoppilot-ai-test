@@ -4,433 +4,433 @@
     "subcategory": "Rice",
     "en": "Rice",
     "ur": "چاول",
-    "aliases": "chawal, rice, basmati, sella, steam, super kernel, broken"
+    "aliases": "chawal, rice, basmati, sella, steam, super kernel, broken, rice 500g, چاول, rice 1kg, rice 2kg, rice 5kg, rice 10kg, rice 20kg, rice 25kg, rice 40kg, rice 50kg"
   },
   {
     "category": "Staples",
     "subcategory": "Pulses & Beans",
     "en": "Masoor Dal",
     "ur": "مسور دال",
-    "aliases": "masoor dal, masur dal, whole, split"
+    "aliases": "masoor dal, masur dal, whole, split, masoor dal 250g, مسور دال, masoor dal 500g, masoor dal 1kg, masoor dal 2kg, masoor dal 5kg, masoor dal 10kg, masoor dal 25kg"
   },
   {
     "category": "Staples",
     "subcategory": "Pulses & Beans",
     "en": "Moong Dal",
     "ur": "مونگ دال",
-    "aliases": "moong dal, mung dal, whole, split"
+    "aliases": "moong dal, mung dal, whole, split, moong dal 250g, مونگ دال, moong dal 500g, moong dal 1kg, moong dal 2kg, moong dal 5kg, moong dal 10kg, moong dal 25kg"
   },
   {
     "category": "Staples",
     "subcategory": "Pulses & Beans",
     "en": "Mash Dal",
     "ur": "ماش دال",
-    "aliases": "mash dal, whole, split"
+    "aliases": "mash dal, whole, split, mash dal 250g, ماش دال, mash dal 500g, mash dal 1kg, mash dal 2kg, mash dal 5kg, mash dal 10kg, mash dal 25kg"
   },
   {
     "category": "Staples",
     "subcategory": "Pulses & Beans",
     "en": "White Beans",
     "ur": "سفید لوبیا",
-    "aliases": "safed lobia, whole, split"
+    "aliases": "safed lobia, whole, split, white beans, white beans 250g, white beans 500g, white beans 1kg, white beans 2kg, white beans 5kg, white beans 10kg, white beans 25kg"
   },
   {
     "category": "Cooking",
     "subcategory": "Spices",
     "en": "Black Pepper",
     "ur": "کالی مرچ",
-    "aliases": "kali mirch, shan, whole, national"
+    "aliases": "kali mirch, shan, whole, national, black pepper, black pepper 25g, shan black pepper, shan black pepper whole, کالی مرچ, black pepper 50g, black pepper 100g, black pepper 200g, black pepper 250g, black pepper 500g, black pepper 1kg, shan black pepper powder, national black pepper, national black pepper whole, national black pepper powder"
   },
   {
     "category": "Cooking",
     "subcategory": "Spices",
     "en": "Anardana",
     "ur": "اناردانہ",
-    "aliases": "anardana, shan, whole, national"
+    "aliases": "anardana, shan, whole, national, anardana 25g, shan anardana, shan anardana whole, اناردانہ, anardana 50g, anardana 100g, anardana 200g, anardana 250g, anardana 500g, anardana 1kg, shan anardana powder, national anardana, national anardana whole, national anardana powder"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Biryani Masala",
     "ur": "Biryani مصالحہ",
-    "aliases": "biryani masala, shan, regular, spicy, national, laziza"
+    "aliases": "biryani masala, shan, regular, spicy, national, laziza, biryani مصالحہ, biryani masala 25g, shan biryani masala regular, biryani masala 40g, biryani masala 50g, biryani masala 60g, biryani masala 80g, biryani masala 100g, biryani masala 200g, shan biryani masala spicy, national biryani masala regular, national biryani masala spicy, laziza biryani masala, laziza biryani masala regular, laziza biryani masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Chicken Biryani Masala",
     "ur": "Chicken Biryani مصالحہ",
-    "aliases": "chicken biryani masala, shan, regular, spicy, national, laziza"
+    "aliases": "chicken biryani masala, shan, regular, spicy, national, laziza, chicken biryani مصالحہ, chicken biryani masala 25g, shan chicken biryani masala regular, chicken biryani masala 40g, chicken biryani masala 50g, chicken biryani masala 60g, chicken biryani masala 80g, chicken biryani masala 100g, chicken biryani masala 200g, shan chicken biryani masala spicy, national chicken biryani masala regular, national chicken biryani masala spicy, laziza chicken biryani masala, laziza chicken biryani masala regular, laziza chicken biryani masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Sindhi Biryani Masala",
     "ur": "Sindhi Biryani مصالحہ",
-    "aliases": "sindhi biryani masala, shan, regular, spicy, national, laziza"
+    "aliases": "sindhi biryani masala, shan, regular, spicy, national, laziza, sindhi biryani مصالحہ, shan sindhi biryani masala, shan sindhi biryani masala regular, sindhi biryani masala 25g, sindhi biryani masala 40g, sindhi biryani masala 50g, sindhi biryani masala 60g, sindhi biryani masala 80g, sindhi biryani masala 100g, sindhi biryani masala 200g, shan sindhi biryani masala spicy, national sindhi biryani masala, national sindhi biryani masala regular, national sindhi biryani masala spicy, laziza sindhi biryani masala, laziza sindhi biryani masala regular, laziza sindhi biryani masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Bombay Biryani Masala",
     "ur": "Bombay Biryani مصالحہ",
-    "aliases": "bombay biryani masala, shan, regular, spicy, national, laziza"
+    "aliases": "bombay biryani masala, shan, regular, spicy, national, laziza, bombay biryani مصالحہ, bombay biryani masala 25g, shan bombay biryani masala, shan bombay biryani masala regular, bombay biryani masala 40g, bombay biryani masala 50g, bombay biryani masala 60g, bombay biryani masala 80g, bombay biryani masala 100g, bombay biryani masala 200g, shan bombay biryani masala spicy, national bombay biryani masala, national bombay biryani masala regular, national bombay biryani masala spicy, laziza bombay biryani masala, laziza bombay biryani masala regular, laziza bombay biryani masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Pulao Masala",
     "ur": "Pulao مصالحہ",
-    "aliases": "pulao masala, shan, regular, spicy, national, laziza"
+    "aliases": "pulao masala, shan, regular, spicy, national, laziza, pulao مصالحہ, pulao masala 25g, shan pulao masala, shan pulao masala regular, pulao masala 40g, pulao masala 50g, pulao masala 60g, pulao masala 80g, pulao masala 100g, pulao masala 200g, shan pulao masala spicy, national pulao masala, national pulao masala regular, national pulao masala spicy, laziza pulao masala, laziza pulao masala regular, laziza pulao masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Qorma Masala",
     "ur": "Qorma مصالحہ",
-    "aliases": "qorma masala, shan, regular, spicy, national, laziza"
+    "aliases": "qorma masala, shan, regular, spicy, national, laziza, qorma مصالحہ, qorma masala 25g, shan qorma masala regular, qorma masala 40g, qorma masala 50g, qorma masala 60g, qorma masala 80g, qorma masala 100g, qorma masala 200g, shan qorma masala spicy, national qorma masala regular, national qorma masala spicy, laziza qorma masala, laziza qorma masala regular, laziza qorma masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Karahi Masala",
     "ur": "Karahi مصالحہ",
-    "aliases": "karahi masala, shan, regular, spicy, national, laziza"
+    "aliases": "karahi masala, shan, regular, spicy, national, laziza, karahi مصالحہ, karahi masala 25g, shan karahi masala regular, karahi masala 40g, karahi masala 50g, karahi masala 60g, karahi masala 80g, karahi masala 100g, karahi masala 200g, shan karahi masala spicy, national karahi masala regular, national karahi masala spicy, laziza karahi masala, laziza karahi masala regular, laziza karahi masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Chicken Masala",
     "ur": "Chicken مصالحہ",
-    "aliases": "chicken masala, shan, regular, spicy, national, laziza"
+    "aliases": "chicken masala, shan, regular, spicy, national, laziza, chicken مصالحہ, chicken masala 25g, shan chicken masala regular, chicken masala 40g, chicken masala 50g, chicken masala 60g, chicken masala 80g, chicken masala 100g, chicken masala 200g, shan chicken masala spicy, national chicken masala regular, national chicken masala spicy, laziza chicken masala, laziza chicken masala regular, laziza chicken masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Tikka Masala",
     "ur": "Tikka مصالحہ",
-    "aliases": "tikka masala, shan, regular, spicy, national, laziza"
+    "aliases": "tikka masala, shan, regular, spicy, national, laziza, tikka مصالحہ, shan tikka masala regular, tikka masala 25g, tikka masala 40g, tikka masala 50g, tikka masala 60g, tikka masala 80g, tikka masala 100g, tikka masala 200g, shan tikka masala spicy, national tikka masala regular, national tikka masala spicy, laziza tikka masala, laziza tikka masala regular, laziza tikka masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Seekh Kabab Masala",
     "ur": "Seekh Kabab مصالحہ",
-    "aliases": "seekh kabab masala, shan, regular, spicy, national, laziza"
+    "aliases": "seekh kabab masala, shan, regular, spicy, national, laziza, seekh kabab مصالحہ, seekh kabab masala 25g, shan seekh kabab masala regular, seekh kabab masala 40g, seekh kabab masala 50g, seekh kabab masala 60g, seekh kabab masala 80g, seekh kabab masala 100g, seekh kabab masala 200g, shan seekh kabab masala spicy, national seekh kabab masala regular, national seekh kabab masala spicy, laziza seekh kabab masala, laziza seekh kabab masala regular, laziza seekh kabab masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Chapli Kabab Masala",
     "ur": "Chapli Kabab مصالحہ",
-    "aliases": "chapli kabab masala, shan, regular, spicy, national, laziza"
+    "aliases": "chapli kabab masala, shan, regular, spicy, national, laziza, chapli kabab مصالحہ, chapli kabab masala 25g, shan chapli kabab masala regular, chapli kabab masala 40g, chapli kabab masala 50g, chapli kabab masala 60g, chapli kabab masala 80g, chapli kabab masala 100g, chapli kabab masala 200g, shan chapli kabab masala spicy, national chapli kabab masala regular, national chapli kabab masala spicy, laziza chapli kabab masala, laziza chapli kabab masala regular, laziza chapli kabab masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Nihari Masala",
     "ur": "Nihari مصالحہ",
-    "aliases": "nihari masala, shan, regular, spicy, national, laziza"
+    "aliases": "nihari masala, shan, regular, spicy, national, laziza, nihari مصالحہ, nihari masala 25g, shan nihari masala regular, nihari masala 40g, nihari masala 50g, nihari masala 60g, nihari masala 80g, nihari masala 100g, nihari masala 200g, shan nihari masala spicy, national nihari masala regular, national nihari masala spicy, laziza nihari masala, laziza nihari masala regular, laziza nihari masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Haleem Masala",
     "ur": "Haleem مصالحہ",
-    "aliases": "haleem masala, shan, regular, spicy, national, laziza"
+    "aliases": "haleem masala, shan, regular, spicy, national, laziza, haleem مصالحہ, haleem masala 25g, shan haleem masala regular, haleem masala 40g, haleem masala 50g, haleem masala 60g, haleem masala 80g, haleem masala 100g, haleem masala 200g, shan haleem masala spicy, national haleem masala regular, national haleem masala spicy, laziza haleem masala, laziza haleem masala regular, laziza haleem masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Achar Gosht Masala",
     "ur": "Achar Gosht مصالحہ",
-    "aliases": "achar gosht masala, shan, regular, spicy, national, laziza"
+    "aliases": "achar gosht masala, shan, regular, spicy, national, laziza, achar gosht مصالحہ, achar gosht masala 25g, shan achar gosht masala regular, achar gosht masala 40g, achar gosht masala 50g, achar gosht masala 60g, achar gosht masala 80g, achar gosht masala 100g, achar gosht masala 200g, shan achar gosht masala spicy, national achar gosht masala regular, national achar gosht masala spicy, laziza achar gosht masala, laziza achar gosht masala regular, laziza achar gosht masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Kofta Masala",
     "ur": "Kofta مصالحہ",
-    "aliases": "kofta masala, shan, regular, spicy, national, laziza"
+    "aliases": "kofta masala, shan, regular, spicy, national, laziza, kofta مصالحہ, kofta masala 25g, shan kofta masala regular, kofta masala 40g, kofta masala 50g, kofta masala 60g, kofta masala 80g, kofta masala 100g, kofta masala 200g, shan kofta masala spicy, national kofta masala regular, national kofta masala spicy, laziza kofta masala, laziza kofta masala regular, laziza kofta masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Fish Masala",
     "ur": "Fish مصالحہ",
-    "aliases": "fish masala, shan, regular, spicy, national, laziza"
+    "aliases": "fish masala, shan, regular, spicy, national, laziza, fish مصالحہ, fish masala 25g, shan fish masala regular, fish masala 40g, fish masala 50g, fish masala 60g, fish masala 80g, fish masala 100g, fish masala 200g, shan fish masala spicy, national fish masala regular, national fish masala spicy, laziza fish masala, laziza fish masala regular, laziza fish masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Chana Masala",
     "ur": "Chana مصالحہ",
-    "aliases": "chana masala, shan, regular, spicy, national, laziza"
+    "aliases": "chana masala, shan, regular, spicy, national, laziza, chana مصالحہ, chana masala 25g, shan chana masala regular, chana masala 40g, chana masala 50g, chana masala 60g, chana masala 80g, chana masala 100g, chana masala 200g, shan chana masala spicy, national chana masala regular, national chana masala spicy, laziza chana masala, laziza chana masala regular, laziza chana masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Daal Masala",
     "ur": "Daal مصالحہ",
-    "aliases": "daal masala, shan, regular, spicy, national, laziza"
+    "aliases": "daal masala, shan, regular, spicy, national, laziza, daal مصالحہ, daal masala 25g, shan daal masala regular, daal masala 40g, daal masala 50g, daal masala 60g, daal masala 80g, daal masala 100g, daal masala 200g, shan daal masala spicy, national daal masala regular, national daal masala spicy, laziza daal masala, laziza daal masala regular, laziza daal masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Keema Masala",
     "ur": "Keema مصالحہ",
-    "aliases": "keema masala, shan, regular, spicy, national, laziza"
+    "aliases": "keema masala, shan, regular, spicy, national, laziza, keema مصالحہ, keema masala 25g, shan keema masala, shan keema masala regular, keema masala 40g, keema masala 50g, keema masala 60g, keema masala 80g, keema masala 100g, keema masala 200g, shan keema masala spicy, national keema masala, national keema masala regular, national keema masala spicy, laziza keema masala, laziza keema masala regular, laziza keema masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Handi Masala",
     "ur": "Handi مصالحہ",
-    "aliases": "handi masala, shan, regular, spicy, national, laziza"
+    "aliases": "handi masala, shan, regular, spicy, national, laziza, handi مصالحہ, handi masala 25g, shan handi masala, shan handi masala regular, handi masala 40g, handi masala 50g, handi masala 60g, handi masala 80g, handi masala 100g, handi masala 200g, shan handi masala spicy, national handi masala, national handi masala regular, national handi masala spicy, laziza handi masala, laziza handi masala regular, laziza handi masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Butter Chicken Masala",
     "ur": "Butter Chicken مصالحہ",
-    "aliases": "butter chicken masala, shan, regular, spicy, national, laziza"
+    "aliases": "butter chicken masala, shan, regular, spicy, national, laziza, butter chicken مصالحہ, butter chicken masala 25g, shan butter chicken masala regular, butter chicken masala 40g, butter chicken masala 50g, butter chicken masala 60g, butter chicken masala 80g, butter chicken masala 100g, butter chicken masala 200g, shan butter chicken masala spicy, national butter chicken masala regular, national butter chicken masala spicy, laziza butter chicken masala, laziza butter chicken masala regular, laziza butter chicken masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "White Karahi Masala",
     "ur": "White Karahi مصالحہ",
-    "aliases": "white karahi masala, shan, regular, spicy, national, laziza"
+    "aliases": "white karahi masala, shan, regular, spicy, national, laziza, white karahi مصالحہ, shan white karahi masala, shan white karahi masala regular, white karahi masala 25g, white karahi masala 40g, white karahi masala 50g, white karahi masala 60g, white karahi masala 80g, white karahi masala 100g, white karahi masala 200g, shan white karahi masala spicy, national white karahi masala, national white karahi masala regular, national white karahi masala spicy, laziza white karahi masala, laziza white karahi masala regular, laziza white karahi masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Mutton Biryani Masala",
     "ur": "Mutton Biryani مصالحہ",
-    "aliases": "mutton biryani masala, shan, regular, spicy, national, laziza"
+    "aliases": "mutton biryani masala, shan, regular, spicy, national, laziza, mutton biryani مصالحہ, mutton biryani masala 25g, shan mutton biryani masala, shan mutton biryani masala regular, mutton biryani masala 40g, mutton biryani masala 50g, mutton biryani masala 60g, mutton biryani masala 80g, mutton biryani masala 100g, mutton biryani masala 200g, shan mutton biryani masala spicy, national mutton biryani masala, national mutton biryani masala regular, national mutton biryani masala spicy, laziza mutton biryani masala, laziza mutton biryani masala regular, laziza mutton biryani masala spicy"
   },
   {
     "category": "Cooking",
     "subcategory": "Recipe Mix",
     "en": "Fried Fish Masala",
     "ur": "Fried Fish مصالحہ",
-    "aliases": "fried fish masala, shan, regular, spicy, national, laziza"
+    "aliases": "fried fish masala, shan, regular, spicy, national, laziza, fried fish مصالحہ, fried fish masala 25g, shan fried fish masala regular, fried fish masala 40g, fried fish masala 50g, fried fish masala 60g, fried fish masala 80g, fried fish masala 100g, fried fish masala 200g, shan fried fish masala spicy, national fried fish masala regular, national fried fish masala spicy, laziza fried fish masala, laziza fried fish masala regular, laziza fried fish masala spicy"
   },
   {
     "category": "Snacks",
     "subcategory": "Biscuits / Wafers / Cakes",
     "en": "Cake Up",
     "ur": "کیک اپ",
-    "aliases": "cake up, caramel, pack of 6, pack of 12, pack of 24"
+    "aliases": "cake up, caramel, pack of 6, pack of 12, pack of 24, cake up 19g, peek freans cake up, peek freans cake up strawberry, کیک اپ, cake up 25g, cake up 36g, cake up 40g, cake up 50g, cake up 60g, cake up 75g, cake up 100g, cake up 120g, cake up 140g, cake up 175g, cake up 200g, cake up 250g, cake up 300g, cake up 6 pack, cake up 8 pack, cake up 12 pack, cake up 16 pack, peek freans cake up chocolate, peek freans cake up caramel, cake up 19g | single, cake up 19g | pack of 6, cake up 19g | pack of 12, cake up 19g | pack of 24, cake up 25g | single, cake up 25g | pack of 6, cake up 25g | pack of 12, cake up 25g | pack of 24, cake up 36g | single, cake up 36g | pack of 6, cake up 36g | pack of 12, cake up 36g | pack of 24, cake up 40g | single, cake up 40g | pack of 6, cake up 40g | pack of 12, cake up 40g | pack of 24, cake up 50g | single, cake up 50g | pack of 6, cake up 50g | pack of 12, cake up 50g | pack of 24, cake up 60g | single, cake up 60g | pack of 6, cake up 60g | pack of 12, cake up 60g | pack of 24, cake up 75g | single, cake up 75g | pack of 6, cake up 75g | pack of 12, cake up 75g | pack of 24, cake up 100g | single, cake up 100g | pack of 6, cake up 100g | pack of 12, cake up 100g | pack of 24, cake up 120g | single, cake up 120g | pack of 6, cake up 120g | pack of 12, cake up 120g | pack of 24, cake up 140g | single, cake up 140g | pack of 6, cake up 140g | pack of 12, cake up 140g | pack of 24, cake up 175g | single, cake up 175g | pack of 6, cake up 175g | pack of 12, cake up 175g | pack of 24, cake up 200g | single, cake up 200g | pack of 6, cake up 200g | pack of 12, cake up 200g | pack of 24, cake up 250g | single, cake up 250g | pack of 6, cake up 250g | pack of 12, cake up 250g | pack of 24, cake up 300g | single, cake up 300g | pack of 6, cake up 300g | pack of 12, cake up 300g | pack of 24, cake up 6 pack | single, cake up 6 pack | pack of 6, cake up 6 pack | pack of 12, cake up 6 pack | pack of 24, cake up 8 pack | single, cake up 8 pack | pack of 6, cake up 8 pack | pack of 12, cake up 8 pack | pack of 24, cake up 12 pack | single, cake up 12 pack | pack of 6, cake up 12 pack | pack of 12, cake up 12 pack | pack of 24, cake up 16 pack | single, cake up 16 pack | pack of 6, cake up 16 pack | pack of 12, cake up 16 pack | pack of 24"
   },
   {
     "category": "Snacks",
     "subcategory": "Biscuits / Wafers / Cakes",
     "en": "Digestive",
     "ur": "ڈائجیسٹو",
-    "aliases": "digestive, wheat, pack of 6, pack of 12, pack of 24"
+    "aliases": "digestive, wheat, pack of 6, pack of 12, pack of 24, bisconni digestive, bisconni digestive original, digestive 19g, ڈائجیسٹو, digestive 25g, digestive 36g, digestive 40g, digestive 50g, digestive 60g, digestive 75g, digestive 100g, digestive 120g, digestive 140g, digestive 175g, digestive 200g, digestive 250g, digestive 300g, digestive 6 pack, digestive 8 pack, digestive 12 pack, digestive 16 pack, bisconni digestive wheat, digestive 19g | single, digestive 19g | pack of 6, digestive 19g | pack of 12, digestive 19g | pack of 24, digestive 25g | single, digestive 25g | pack of 6, digestive 25g | pack of 12, digestive 25g | pack of 24, digestive 36g | single, digestive 36g | pack of 6, digestive 36g | pack of 12, digestive 36g | pack of 24, digestive 40g | single, digestive 40g | pack of 6, digestive 40g | pack of 12, digestive 40g | pack of 24, digestive 50g | single, digestive 50g | pack of 6, digestive 50g | pack of 12, digestive 50g | pack of 24, digestive 60g | single, digestive 60g | pack of 6, digestive 60g | pack of 12, digestive 60g | pack of 24, digestive 75g | single, digestive 75g | pack of 6, digestive 75g | pack of 12, digestive 75g | pack of 24, digestive 100g | single, digestive 100g | pack of 6, digestive 100g | pack of 12, digestive 100g | pack of 24, digestive 120g | single, digestive 120g | pack of 6, digestive 120g | pack of 12, digestive 120g | pack of 24, digestive 140g | single, digestive 140g | pack of 6, digestive 140g | pack of 12, digestive 140g | pack of 24, digestive 175g | single, digestive 175g | pack of 6, digestive 175g | pack of 12, digestive 175g | pack of 24, digestive 200g | single, digestive 200g | pack of 6, digestive 200g | pack of 12, digestive 200g | pack of 24, digestive 250g | single, digestive 250g | pack of 6, digestive 250g | pack of 12, digestive 250g | pack of 24, digestive 300g | single, digestive 300g | pack of 6, digestive 300g | pack of 12, digestive 300g | pack of 24"
   },
   {
     "category": "Snacks",
     "subcategory": "Chips / Nimco / Papad",
     "en": "Potato Chips",
     "ur": "چپس",
-    "aliases": "lays, lays chips, chips, lay's, masala, salted, french cheese, yogurt herb, super crisp"
+    "aliases": "lays, lays chips, chips, lay's, masala, salted, french cheese, yogurt herb, super crisp, lay's potato chips, lay's potato chips masala, potato chips, potato chips 10g, چپس, potato chips 15g, potato chips 20g, potato chips 25g, potato chips 30g, potato chips 40g, potato chips 50g, potato chips 70g, potato chips 100g, potato chips 150g, potato chips 200g, potato chips 250g, potato chips 500g, potato chips 1kg, lay's potato chips salted, lay's potato chips french cheese, lay's potato chips ketchup, lay's potato chips yogurt herb, super crisp potato chips, super crisp potato chips masala, سپر کرسپ چپس, super crisp potato chips salted, super crisp potato chips ketchup"
   },
   {
     "category": "Snacks",
     "subcategory": "Chips / Nimco / Papad",
     "en": "Kurkure",
     "ur": "کرکرے",
-    "aliases": "kurkure, masala munch, chutney chaska"
+    "aliases": "kurkure, masala munch, chutney chaska, kurkure 10g, kurkure kurkure, kurkure kurkure masala munch, کرکرے, kurkure 15g, kurkure 20g, kurkure 25g, kurkure 30g, kurkure 40g, kurkure 50g, kurkure 70g, kurkure 100g, kurkure 150g, kurkure 200g, kurkure 250g, kurkure 500g, kurkure 1kg, kurkure kurkure chutney chaska, kurkure kurkure red chilli"
   },
   {
     "category": "Snacks",
     "subcategory": "Chips / Nimco / Papad",
     "en": "Cheetos",
     "ur": "چیٹوز",
-    "aliases": "cheetos, cheese, flamin hot"
+    "aliases": "cheetos, cheese, flamin hot, cheetos 10g, cheetos cheetos, cheetos cheetos cheese, چیٹوز, cheetos 15g, cheetos 20g, cheetos 25g, cheetos 30g, cheetos 40g, cheetos 50g, cheetos 70g, cheetos 100g, cheetos 150g, cheetos 200g, cheetos 250g, cheetos 500g, cheetos 1kg, cheetos cheetos flamin hot"
   },
   {
     "category": "Snacks",
     "subcategory": "Chips / Nimco / Papad",
     "en": "Slanty",
     "ur": "سلانٹی",
-    "aliases": "slanty, kolson, vegetable, jalapeno, salted"
+    "aliases": "slanty, kolson, vegetable, jalapeno, salted, kolson slanty, kolson slanty vegetable, slanty 10g, سلانٹی, slanty 15g, slanty 20g, slanty 25g, slanty 30g, slanty 40g, slanty 50g, slanty 70g, slanty 100g, slanty 150g, slanty 200g, slanty 250g, slanty 500g, slanty 1kg, kolson slanty jalapeno, kolson slanty salted"
   },
   {
     "category": "Snacks",
     "subcategory": "Chips / Nimco / Papad",
     "en": "Pringles",
     "ur": "پرنگلز",
-    "aliases": "pringles, sour cream, bbq, hot spicy"
+    "aliases": "pringles, sour cream, bbq, hot spicy, pringles 10g, pringles pringles, pringles pringles original, پرنگلز, pringles 15g, pringles 20g, pringles 25g, pringles 30g, pringles 40g, pringles 50g, pringles 70g, pringles 100g, pringles 150g, pringles 200g, pringles 250g, pringles 500g, pringles 1kg, pringles pringles sour cream, pringles pringles bbq, pringles pringles hot spicy"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Dairy Milk",
     "ur": "ڈیری ملک",
-    "aliases": "dairy milk, dery milk, cadbury, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, fruit & nut, crackle"
+    "aliases": "dairy milk, dery milk, cadbury, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, fruit & nut, crackle, cadbury dairy milk milk chocolate, dairy milk 1 piece, ڈیری ملک, dairy milk 10g, dairy milk 20g, dairy milk 25g, dairy milk 30g, dairy milk 40g, dairy milk 50g, dairy milk 80g, dairy milk 100g, dairy milk 12 pcs box, dairy milk 24 pcs box, dairy milk 48 pcs box, dairy milk 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Perk",
     "ur": "پرک",
-    "aliases": "perk, cadbury, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+    "aliases": "perk, cadbury, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, cadbury perk chocolate, perk 1 piece, پرک, perk 10g, perk 20g, perk 25g, perk 30g, perk 40g, perk 50g, perk 80g, perk 100g, perk 12 pcs box, perk 24 pcs box, perk 48 pcs box, perk 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "5 Star",
     "ur": "فائیو اسٹار",
-    "aliases": "five star, cadbury, caramel, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+    "aliases": "five star, cadbury, caramel, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, 5 star, 5 star 1 piece, cadbury 5 star caramel, فائیو اسٹار, 5 star 10g, 5 star 20g, 5 star 25g, 5 star 30g, 5 star 40g, 5 star 50g, 5 star 80g, 5 star 100g, 5 star 12 pcs box, 5 star 24 pcs box, 5 star 48 pcs box, 5 star 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "KitKat",
     "ur": "کٹ کیٹ",
-    "aliases": "kitkat, kit kat, nestle, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, dark"
+    "aliases": "kitkat, kit kat, nestle, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, dark, kitkat 1 piece, nestle kitkat chocolate, کٹ کیٹ, kitkat 10g, kitkat 20g, kitkat 25g, kitkat 30g, kitkat 40g, kitkat 50g, kitkat 80g, kitkat 100g, kitkat 12 pcs box, kitkat 24 pcs box, kitkat 48 pcs box, kitkat 100 pcs jar, nestle kitkat dark"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Snickers",
     "ur": "سنیکرز",
-    "aliases": "snickers, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+    "aliases": "snickers, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, mars snickers original, snickers 1 piece, سنیکرز, snickers 10g, snickers 20g, snickers 25g, snickers 30g, snickers 40g, snickers 50g, snickers 80g, snickers 100g, snickers 12 pcs box, snickers 24 pcs box, snickers 48 pcs box, snickers 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Bounty",
     "ur": "باؤنٹی",
-    "aliases": "bounty, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+    "aliases": "bounty, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, bounty 1 piece, mars bounty coconut, باؤنٹی, bounty 10g, bounty 20g, bounty 25g, bounty 30g, bounty 40g, bounty 50g, bounty 80g, bounty 100g, bounty 12 pcs box, bounty 24 pcs box, bounty 48 pcs box, bounty 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Kinder Joy",
     "ur": "کنڈر جوائے",
-    "aliases": "kinder joy, kinder, classic, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+    "aliases": "kinder joy, kinder, classic, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, kinder joy 1 piece, kinder kinder joy, kinder kinder joy classic, کنڈر جوائے, kinder joy 10g, kinder joy 20g, kinder joy 25g, kinder joy 30g, kinder joy 40g, kinder joy 50g, kinder joy 80g, kinder joy 100g, kinder joy 12 pcs box, kinder joy 24 pcs box, kinder joy 48 pcs box, kinder joy 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Fresh Up",
     "ur": "فریش اپ",
-    "aliases": "fresh up, freshup, hilal, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, fruit"
+    "aliases": "fresh up, freshup, hilal, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, fruit, fresh up 1 piece, hilal fresh up mint, فریش اپ, fresh up 10g, fresh up 20g, fresh up 25g, fresh up 30g, fresh up 40g, fresh up 50g, fresh up 80g, fresh up 100g, fresh up 12 pcs box, fresh up 24 pcs box, fresh up 48 pcs box, fresh up 100 pcs jar, hilal fresh up fruit"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Khopra Candy",
     "ur": "کھوپرا کینڈی",
-    "aliases": "khopra candy, hilal, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+    "aliases": "khopra candy, hilal, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, hilal khopra candy coconut, khopra candy 1 piece, کھوپرا کینڈی, khopra candy 10g, khopra candy 20g, khopra candy 25g, khopra candy 30g, khopra candy 40g, khopra candy 50g, khopra candy 80g, khopra candy 100g, khopra candy 12 pcs box, khopra candy 24 pcs box, khopra candy 48 pcs box, khopra candy 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Chilli Mili",
     "ur": "چلی ملی",
-    "aliases": "chilli mili, candyland, jelly, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+    "aliases": "chilli mili, candyland, jelly, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, candyland chilli mili jelly, chilli mili 1 piece, چلی ملی, chilli mili 10g, chilli mili 20g, chilli mili 25g, chilli mili 30g, chilli mili 40g, chilli mili 50g, chilli mili 80g, chilli mili 100g, chilli mili 12 pcs box, chilli mili 24 pcs box, chilli mili 48 pcs box, chilli mili 100 pcs jar"
   },
   {
     "category": "Cooking",
     "subcategory": "Sauces / Pickles / Spreads",
     "en": "Chilli Garlic Sauce",
     "ur": "چلی گارلک ساس",
-    "aliases": "chilli garlic, national, spicy, mixed, shangrila, mitchell's, shezan"
+    "aliases": "chilli garlic, national, spicy, mixed, shangrila, mitchell's, shezan, chilli garlic sauce, chilli garlic sauce 100g, national chilli garlic sauce, national chilli garlic sauce original, چلی گارلک ساس, chilli garlic sauce 200g, chilli garlic sauce 250g, chilli garlic sauce 400g, chilli garlic sauce 500g, chilli garlic sauce 800g, chilli garlic sauce 1kg, chilli garlic sauce 200ml, chilli garlic sauce 500ml, chilli garlic sauce 1l, national chilli garlic sauce spicy, national chilli garlic sauce garlic, national chilli garlic sauce mixed, shangrila chilli garlic sauce, shangrila chilli garlic sauce original, shangrila chilli garlic sauce spicy, shangrila chilli garlic sauce garlic, shangrila chilli garlic sauce mixed, mitchell's chilli garlic sauce, mitchell's chilli garlic sauce original, mitchell's chilli garlic sauce spicy, mitchell's chilli garlic sauce garlic, mitchell's chilli garlic sauce mixed, shezan chilli garlic sauce, shezan chilli garlic sauce original, shezan chilli garlic sauce spicy, shezan chilli garlic sauce garlic, shezan chilli garlic sauce mixed"
   },
   {
     "category": "Cooking",
     "subcategory": "Sauces / Pickles / Spreads",
     "en": "Jam",
     "ur": "جام",
-    "aliases": "jam, national, spicy, mixed, shangrila, mitchell's, shezan"
+    "aliases": "jam, national, spicy, mixed, shangrila, mitchell's, shezan, jam 100g, national jam, national jam original, جام, jam 200g, jam 250g, jam 400g, jam 500g, jam 800g, jam 1kg, jam 200ml, jam 500ml, jam 1l, national jam spicy, national jam garlic, national jam mixed, shangrila jam, shangrila jam original, shangrila jam spicy, shangrila jam garlic, shangrila jam mixed, mitchell's jam, mitchell's jam original, mitchell's jam spicy, mitchell's jam garlic, mitchell's jam mixed, shezan jam, shezan jam original, shezan jam spicy, shezan jam garlic, shezan jam mixed"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Coca-Cola",
     "ur": "کوکا کولا",
-    "aliases": "coke, coca cola, coca-cola, 345ml can, zero, diet"
+    "aliases": "coke, coca cola, coca-cola, 345ml can, zero, diet, coca-cola 250ml, coca-cola coca-cola, coca-cola coca-cola original, کوکا کولا, coca-cola 300ml, coca-cola 345ml can, coca-cola 500ml, coca-cola 1l, coca-cola 1.5l, coca-cola 2.25l, coca-cola 6 pack, coca-cola 12 pack, coca-cola 24 pack, coca-cola coca-cola zero, coca-cola coca-cola diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Sprite",
     "ur": "اسپرائٹ",
-    "aliases": "sprite, coca-cola, 345ml can, zero, diet"
+    "aliases": "sprite, coca-cola, 345ml can, zero, diet, coca-cola sprite, coca-cola sprite original, sprite 250ml, اسپرائٹ, sprite 300ml, sprite 345ml can, sprite 500ml, sprite 1l, sprite 1.5l, sprite 2.25l, sprite 6 pack, sprite 12 pack, sprite 24 pack, coca-cola sprite zero, coca-cola sprite diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Fanta",
     "ur": "فانٹا",
-    "aliases": "fanta, coca-cola, 345ml can, zero, diet"
+    "aliases": "fanta, coca-cola, 345ml can, zero, diet, coca-cola fanta, coca-cola fanta original, fanta 250ml, فانٹا, fanta 300ml, fanta 345ml can, fanta 500ml, fanta 1l, fanta 1.5l, fanta 2.25l, fanta 6 pack, fanta 12 pack, fanta 24 pack, coca-cola fanta zero, coca-cola fanta diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Pepsi",
     "ur": "پیپسی",
-    "aliases": "pepsi, pepsico, 345ml can, zero, diet"
+    "aliases": "pepsi, pepsico, 345ml can, zero, diet, pepsi 250ml, pepsico pepsi, pepsico pepsi original, پیپسی, pepsi 300ml, pepsi 345ml can, pepsi 500ml, pepsi 1l, pepsi 1.5l, pepsi 2.25l, pepsi 6 pack, pepsi 12 pack, pepsi 24 pack, pepsico pepsi zero, pepsico pepsi diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "7UP",
     "ur": "سیون اپ",
-    "aliases": "seven up, 7up, pepsico, 345ml can, zero, diet"
+    "aliases": "seven up, 7up, pepsico, 345ml can, zero, diet, 7up 250ml, pepsico 7up, pepsico 7up original, سیون اپ, 7up 300ml, 7up 345ml can, 7up 500ml, 7up 1l, 7up 1.5l, 7up 2.25l, 7up 6 pack, 7up 12 pack, 7up 24 pack, pepsico 7up zero, pepsico 7up diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Mirinda",
     "ur": "مرنڈا",
-    "aliases": "mirinda, pepsico, 345ml can, zero, diet"
+    "aliases": "mirinda, pepsico, 345ml can, zero, diet, mirinda 250ml, pepsico mirinda, pepsico mirinda original, مرنڈا, mirinda 300ml, mirinda 345ml can, mirinda 500ml, mirinda 1l, mirinda 1.5l, mirinda 2.25l, mirinda 6 pack, mirinda 12 pack, mirinda 24 pack, pepsico mirinda zero, pepsico mirinda diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Mountain Dew",
     "ur": "ماؤنٹین ڈیو",
-    "aliases": "dew, pepsico, 345ml can, zero, diet"
+    "aliases": "dew, pepsico, 345ml can, zero, diet, mountain dew, mountain dew 250ml, pepsico mountain dew, pepsico mountain dew original, ماؤنٹین ڈیو, mountain dew 300ml, mountain dew 345ml can, mountain dew 500ml, mountain dew 1l, mountain dew 1.5l, mountain dew 2.25l, mountain dew 6 pack, mountain dew 12 pack, mountain dew 24 pack, pepsico mountain dew zero, pepsico mountain dew diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Sting",
     "ur": "اسٹنگ",
-    "aliases": "sting, pepsico, 345ml can, zero, diet"
+    "aliases": "sting, pepsico, 345ml can, zero, diet, pepsico sting, pepsico sting original, sting 250ml, اسٹنگ, sting 300ml, sting 345ml can, sting 500ml, sting 1l, sting 1.5l, sting 2.25l, sting 6 pack, sting 12 pack, sting 24 pack, pepsico sting zero, pepsico sting diet"
   },
   {
     "category": "General Store",
     "subcategory": "Miscellaneous",
     "en": "AA Battery",
     "ur": "اے اے بیٹری",
-    "aliases": "aa battery"
+    "aliases": "aa battery, aa battery small, اے اے بیٹری, aa battery medium, aa battery large, aa battery 10 pcs, aa battery 25 pcs, aa battery 50 pcs, aa battery 100 pcs"
   },
   {
     "category": "General Store",
     "subcategory": "Miscellaneous",
     "en": "AAA Battery",
     "ur": "اے اے اے بیٹری",
-    "aliases": "aaa battery"
+    "aliases": "aaa battery, aaa battery small, اے اے اے بیٹری, aaa battery medium, aaa battery large, aaa battery 10 pcs, aaa battery 25 pcs, aaa battery 50 pcs, aaa battery 100 pcs"
   },
   {
     "category": "General Store",
     "subcategory": "Miscellaneous",
     "en": "Plastic Spoon",
     "ur": "پلاسٹک چمچ",
-    "aliases": "plastic spoon"
+    "aliases": "plastic spoon, plastic spoon small, پلاسٹک چمچ, plastic spoon medium, plastic spoon large, plastic spoon 10 pcs, plastic spoon 25 pcs, plastic spoon 50 pcs, plastic spoon 100 pcs"
   },
   {
     "category": "General Store",
     "subcategory": "Miscellaneous",
     "en": "Shopping Bag",
     "ur": "شاپنگ بیگ",
-    "aliases": "shopping bag"
+    "aliases": "shopping bag, shopping bag small, شاپنگ بیگ, shopping bag medium, shopping bag large, shopping bag 10 pcs, shopping bag 25 pcs, shopping bag 50 pcs, shopping bag 100 pcs"
   }
 ]
