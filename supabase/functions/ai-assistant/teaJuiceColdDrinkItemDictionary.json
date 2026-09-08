@@ -1,0 +1,1732 @@
+[
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Doodh Patti Tea Small",
+    "ur": "دودھ پتی چائے Small",
+    "aliases": "doodh patti, small",
+    "brand": "Doodh Patti Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Doodh Patti Tea Regular",
+    "ur": "دودھ پتی چائے Regular",
+    "aliases": "doodh patti, regular",
+    "brand": "Doodh Patti Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Doodh Patti Tea Large",
+    "ur": "دودھ پتی چائے Large",
+    "aliases": "doodh patti, large",
+    "brand": "Doodh Patti Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Doodh Patti Tea Cup",
+    "ur": "دودھ پتی چائے Cup",
+    "aliases": "doodh patti",
+    "brand": "Doodh Patti Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Doodh Patti Tea Kettle",
+    "ur": "دودھ پتی چائے Kettle",
+    "aliases": "doodh patti",
+    "brand": "Doodh Patti Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Karak Tea Small",
+    "ur": "کڑک چائے Small",
+    "aliases": "karak chai, small",
+    "brand": "Karak Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Karak Tea Regular",
+    "ur": "کڑک چائے Regular",
+    "aliases": "karak chai, regular",
+    "brand": "Karak Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Karak Tea Large",
+    "ur": "کڑک چائے Large",
+    "aliases": "karak chai, large",
+    "brand": "Karak Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Karak Tea Cup",
+    "ur": "کڑک چائے Cup",
+    "aliases": "karak chai",
+    "brand": "Karak Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Karak Tea Kettle",
+    "ur": "کڑک چائے Kettle",
+    "aliases": "karak chai",
+    "brand": "Karak Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Black Tea Small",
+    "ur": "کالی چائے Small",
+    "aliases": "black tea, small",
+    "brand": "Black Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Black Tea Regular",
+    "ur": "کالی چائے Regular",
+    "aliases": "black tea, regular",
+    "brand": "Black Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Black Tea Large",
+    "ur": "کالی چائے Large",
+    "aliases": "black tea, large",
+    "brand": "Black Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Black Tea Cup",
+    "ur": "کالی چائے Cup",
+    "aliases": "black tea",
+    "brand": "Black Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Black Tea Kettle",
+    "ur": "کالی چائے Kettle",
+    "aliases": "black tea",
+    "brand": "Black Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Green Tea Small",
+    "ur": "سبز چائے Small",
+    "aliases": "small",
+    "brand": "Green Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Green Tea Regular",
+    "ur": "سبز چائے Regular",
+    "aliases": "regular",
+    "brand": "Green Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Green Tea Large",
+    "ur": "سبز چائے Large",
+    "aliases": "large",
+    "brand": "Green Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Green Tea Cup",
+    "ur": "سبز چائے Cup",
+    "aliases": "",
+    "brand": "Green Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Green Tea Kettle",
+    "ur": "سبز چائے Kettle",
+    "aliases": "",
+    "brand": "Green Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Lemon Tea Small",
+    "ur": "لیموں چائے Small",
+    "aliases": "lemon tea, small",
+    "brand": "Lemon Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Lemon Tea Regular",
+    "ur": "لیموں چائے Regular",
+    "aliases": "lemon tea, regular",
+    "brand": "Lemon Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Lemon Tea Large",
+    "ur": "لیموں چائے Large",
+    "aliases": "lemon tea, large",
+    "brand": "Lemon Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Lemon Tea Cup",
+    "ur": "لیموں چائے Cup",
+    "aliases": "lemon tea",
+    "brand": "Lemon Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Lemon Tea Kettle",
+    "ur": "لیموں چائے Kettle",
+    "aliases": "lemon tea",
+    "brand": "Lemon Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Elaichi Tea Small",
+    "ur": "الائچی چائے Small",
+    "aliases": "elaichi chai, small",
+    "brand": "Elaichi Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Elaichi Tea Regular",
+    "ur": "الائچی چائے Regular",
+    "aliases": "elaichi chai, regular",
+    "brand": "Elaichi Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Elaichi Tea Large",
+    "ur": "الائچی چائے Large",
+    "aliases": "elaichi chai, large",
+    "brand": "Elaichi Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Elaichi Tea Cup",
+    "ur": "الائچی چائے Cup",
+    "aliases": "elaichi chai",
+    "brand": "Elaichi Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Elaichi Tea Kettle",
+    "ur": "الائچی چائے Kettle",
+    "aliases": "elaichi chai",
+    "brand": "Elaichi Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Ginger Tea Small",
+    "ur": "ادرک چائے Small",
+    "aliases": "adrak chai, small",
+    "brand": "Ginger Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Ginger Tea Regular",
+    "ur": "ادرک چائے Regular",
+    "aliases": "adrak chai, regular",
+    "brand": "Ginger Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Ginger Tea Large",
+    "ur": "ادرک چائے Large",
+    "aliases": "adrak chai, large",
+    "brand": "Ginger Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Ginger Tea Cup",
+    "ur": "ادرک چائے Cup",
+    "aliases": "adrak chai",
+    "brand": "Ginger Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Ginger Tea Kettle",
+    "ur": "ادرک چائے Kettle",
+    "aliases": "adrak chai",
+    "brand": "Ginger Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Kashmiri Tea Small",
+    "ur": "کشمیری چائے Small",
+    "aliases": "kashmiri chai, small",
+    "brand": "Kashmiri Tea",
+    "variant": "Small",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Kashmiri Tea Regular",
+    "ur": "کشمیری چائے Regular",
+    "aliases": "kashmiri chai, regular",
+    "brand": "Kashmiri Tea",
+    "variant": "Regular",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Kashmiri Tea Large",
+    "ur": "کشمیری چائے Large",
+    "aliases": "kashmiri chai, large",
+    "brand": "Kashmiri Tea",
+    "variant": "Large",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Kashmiri Tea Cup",
+    "ur": "کشمیری چائے Cup",
+    "aliases": "kashmiri chai",
+    "brand": "Kashmiri Tea",
+    "variant": "Cup",
+    "unit": "serving"
+  },
+  {
+    "category": "Tea Shop",
+    "subcategory": "Tea",
+    "en": "Kashmiri Tea Kettle",
+    "ur": "کشمیری چائے Kettle",
+    "aliases": "kashmiri chai",
+    "brand": "Kashmiri Tea",
+    "variant": "Kettle",
+    "unit": "serving"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Orange Juice 250ml",
+    "ur": "مالٹا جوس 250ml",
+    "aliases": "250ml",
+    "brand": "Orange Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Orange Juice 300ml",
+    "ur": "مالٹا جوس 300ml",
+    "aliases": "300ml",
+    "brand": "Orange Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Orange Juice 500ml",
+    "ur": "مالٹا جوس 500ml",
+    "aliases": "500ml",
+    "brand": "Orange Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Orange Juice 1L",
+    "ur": "مالٹا جوس 1L",
+    "aliases": "1L",
+    "brand": "Orange Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Orange Juice Small",
+    "ur": "مالٹا جوس Small",
+    "aliases": "Small",
+    "brand": "Orange Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Orange Juice Regular",
+    "ur": "مالٹا جوس Regular",
+    "aliases": "Regular",
+    "brand": "Orange Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Orange Juice Large",
+    "ur": "مالٹا جوس Large",
+    "aliases": "Large",
+    "brand": "Orange Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Apple Juice 250ml",
+    "ur": "سیب جوس 250ml",
+    "aliases": "250ml",
+    "brand": "Apple Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Apple Juice 300ml",
+    "ur": "سیب جوس 300ml",
+    "aliases": "300ml",
+    "brand": "Apple Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Apple Juice 500ml",
+    "ur": "سیب جوس 500ml",
+    "aliases": "500ml",
+    "brand": "Apple Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Apple Juice 1L",
+    "ur": "سیب جوس 1L",
+    "aliases": "1L",
+    "brand": "Apple Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Apple Juice Small",
+    "ur": "سیب جوس Small",
+    "aliases": "Small",
+    "brand": "Apple Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Apple Juice Regular",
+    "ur": "سیب جوس Regular",
+    "aliases": "Regular",
+    "brand": "Apple Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Apple Juice Large",
+    "ur": "سیب جوس Large",
+    "aliases": "Large",
+    "brand": "Apple Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mango Juice 250ml",
+    "ur": "آم جوس 250ml",
+    "aliases": "250ml",
+    "brand": "Mango Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mango Juice 300ml",
+    "ur": "آم جوس 300ml",
+    "aliases": "300ml",
+    "brand": "Mango Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mango Juice 500ml",
+    "ur": "آم جوس 500ml",
+    "aliases": "500ml",
+    "brand": "Mango Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mango Juice 1L",
+    "ur": "آم جوس 1L",
+    "aliases": "1L",
+    "brand": "Mango Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mango Juice Small",
+    "ur": "آم جوس Small",
+    "aliases": "Small",
+    "brand": "Mango Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mango Juice Regular",
+    "ur": "آم جوس Regular",
+    "aliases": "Regular",
+    "brand": "Mango Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mango Juice Large",
+    "ur": "آم جوس Large",
+    "aliases": "Large",
+    "brand": "Mango Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pomegranate Juice 250ml",
+    "ur": "انار جوس 250ml",
+    "aliases": "anar juice, 250ml",
+    "brand": "Pomegranate Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pomegranate Juice 300ml",
+    "ur": "انار جوس 300ml",
+    "aliases": "anar juice, 300ml",
+    "brand": "Pomegranate Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pomegranate Juice 500ml",
+    "ur": "انار جوس 500ml",
+    "aliases": "anar juice, 500ml",
+    "brand": "Pomegranate Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pomegranate Juice 1L",
+    "ur": "انار جوس 1L",
+    "aliases": "anar juice, 1L",
+    "brand": "Pomegranate Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pomegranate Juice Small",
+    "ur": "انار جوس Small",
+    "aliases": "anar juice, Small",
+    "brand": "Pomegranate Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pomegranate Juice Regular",
+    "ur": "انار جوس Regular",
+    "aliases": "anar juice, Regular",
+    "brand": "Pomegranate Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pomegranate Juice Large",
+    "ur": "انار جوس Large",
+    "aliases": "anar juice, Large",
+    "brand": "Pomegranate Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Guava Juice 250ml",
+    "ur": "امرود جوس 250ml",
+    "aliases": "amrood juice, 250ml",
+    "brand": "Guava Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Guava Juice 300ml",
+    "ur": "امرود جوس 300ml",
+    "aliases": "amrood juice, 300ml",
+    "brand": "Guava Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Guava Juice 500ml",
+    "ur": "امرود جوس 500ml",
+    "aliases": "amrood juice, 500ml",
+    "brand": "Guava Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Guava Juice 1L",
+    "ur": "امرود جوس 1L",
+    "aliases": "amrood juice, 1L",
+    "brand": "Guava Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Guava Juice Small",
+    "ur": "امرود جوس Small",
+    "aliases": "amrood juice, Small",
+    "brand": "Guava Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Guava Juice Regular",
+    "ur": "امرود جوس Regular",
+    "aliases": "amrood juice, Regular",
+    "brand": "Guava Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Guava Juice Large",
+    "ur": "امرود جوس Large",
+    "aliases": "amrood juice, Large",
+    "brand": "Guava Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pineapple Juice 250ml",
+    "ur": "انناس جوس 250ml",
+    "aliases": "pineapple juice, 250ml",
+    "brand": "Pineapple Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pineapple Juice 300ml",
+    "ur": "انناس جوس 300ml",
+    "aliases": "pineapple juice, 300ml",
+    "brand": "Pineapple Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pineapple Juice 500ml",
+    "ur": "انناس جوس 500ml",
+    "aliases": "pineapple juice, 500ml",
+    "brand": "Pineapple Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pineapple Juice 1L",
+    "ur": "انناس جوس 1L",
+    "aliases": "pineapple juice, 1L",
+    "brand": "Pineapple Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pineapple Juice Small",
+    "ur": "انناس جوس Small",
+    "aliases": "pineapple juice, Small",
+    "brand": "Pineapple Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pineapple Juice Regular",
+    "ur": "انناس جوس Regular",
+    "aliases": "pineapple juice, Regular",
+    "brand": "Pineapple Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Pineapple Juice Large",
+    "ur": "انناس جوس Large",
+    "aliases": "pineapple juice, Large",
+    "brand": "Pineapple Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Watermelon Juice 250ml",
+    "ur": "تربوز جوس 250ml",
+    "aliases": "tarbooz juice, 250ml",
+    "brand": "Watermelon Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Watermelon Juice 300ml",
+    "ur": "تربوز جوس 300ml",
+    "aliases": "tarbooz juice, 300ml",
+    "brand": "Watermelon Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Watermelon Juice 500ml",
+    "ur": "تربوز جوس 500ml",
+    "aliases": "tarbooz juice, 500ml",
+    "brand": "Watermelon Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Watermelon Juice 1L",
+    "ur": "تربوز جوس 1L",
+    "aliases": "tarbooz juice, 1L",
+    "brand": "Watermelon Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Watermelon Juice Small",
+    "ur": "تربوز جوس Small",
+    "aliases": "tarbooz juice, Small",
+    "brand": "Watermelon Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Watermelon Juice Regular",
+    "ur": "تربوز جوس Regular",
+    "aliases": "tarbooz juice, Regular",
+    "brand": "Watermelon Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Watermelon Juice Large",
+    "ur": "تربوز جوس Large",
+    "aliases": "tarbooz juice, Large",
+    "brand": "Watermelon Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Sugarcane Juice 250ml",
+    "ur": "گنے کا رس 250ml",
+    "aliases": "gannay ka ras, 250ml",
+    "brand": "Sugarcane Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Sugarcane Juice 300ml",
+    "ur": "گنے کا رس 300ml",
+    "aliases": "gannay ka ras, 300ml",
+    "brand": "Sugarcane Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Sugarcane Juice 500ml",
+    "ur": "گنے کا رس 500ml",
+    "aliases": "gannay ka ras, 500ml",
+    "brand": "Sugarcane Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Sugarcane Juice 1L",
+    "ur": "گنے کا رس 1L",
+    "aliases": "gannay ka ras, 1L",
+    "brand": "Sugarcane Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Sugarcane Juice Small",
+    "ur": "گنے کا رس Small",
+    "aliases": "gannay ka ras, Small",
+    "brand": "Sugarcane Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Sugarcane Juice Regular",
+    "ur": "گنے کا رس Regular",
+    "aliases": "gannay ka ras, Regular",
+    "brand": "Sugarcane Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Sugarcane Juice Large",
+    "ur": "گنے کا رس Large",
+    "aliases": "gannay ka ras, Large",
+    "brand": "Sugarcane Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Lemon Juice 250ml",
+    "ur": "لیموں جوس 250ml",
+    "aliases": "lemon juice, 250ml",
+    "brand": "Lemon Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Lemon Juice 300ml",
+    "ur": "لیموں جوس 300ml",
+    "aliases": "lemon juice, 300ml",
+    "brand": "Lemon Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Lemon Juice 500ml",
+    "ur": "لیموں جوس 500ml",
+    "aliases": "lemon juice, 500ml",
+    "brand": "Lemon Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Lemon Juice 1L",
+    "ur": "لیموں جوس 1L",
+    "aliases": "lemon juice, 1L",
+    "brand": "Lemon Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Lemon Juice Small",
+    "ur": "لیموں جوس Small",
+    "aliases": "lemon juice, Small",
+    "brand": "Lemon Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Lemon Juice Regular",
+    "ur": "لیموں جوس Regular",
+    "aliases": "lemon juice, Regular",
+    "brand": "Lemon Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Lemon Juice Large",
+    "ur": "لیموں جوس Large",
+    "aliases": "lemon juice, Large",
+    "brand": "Lemon Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Carrot Juice 250ml",
+    "ur": "گاجر جوس 250ml",
+    "aliases": "gajar juice, 250ml",
+    "brand": "Carrot Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Carrot Juice 300ml",
+    "ur": "گاجر جوس 300ml",
+    "aliases": "gajar juice, 300ml",
+    "brand": "Carrot Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Carrot Juice 500ml",
+    "ur": "گاجر جوس 500ml",
+    "aliases": "gajar juice, 500ml",
+    "brand": "Carrot Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Carrot Juice 1L",
+    "ur": "گاجر جوس 1L",
+    "aliases": "gajar juice, 1L",
+    "brand": "Carrot Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Carrot Juice Small",
+    "ur": "گاجر جوس Small",
+    "aliases": "gajar juice, Small",
+    "brand": "Carrot Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Carrot Juice Regular",
+    "ur": "گاجر جوس Regular",
+    "aliases": "gajar juice, Regular",
+    "brand": "Carrot Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Carrot Juice Large",
+    "ur": "گاجر جوس Large",
+    "aliases": "gajar juice, Large",
+    "brand": "Carrot Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mixed Fruit Juice 250ml",
+    "ur": "مکس فروٹ جوس 250ml",
+    "aliases": "mix juice, 250ml",
+    "brand": "Mixed Fruit Juice",
+    "variant": "250ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mixed Fruit Juice 300ml",
+    "ur": "مکس فروٹ جوس 300ml",
+    "aliases": "mix juice, 300ml",
+    "brand": "Mixed Fruit Juice",
+    "variant": "300ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mixed Fruit Juice 500ml",
+    "ur": "مکس فروٹ جوس 500ml",
+    "aliases": "mix juice, 500ml",
+    "brand": "Mixed Fruit Juice",
+    "variant": "500ml",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mixed Fruit Juice 1L",
+    "ur": "مکس فروٹ جوس 1L",
+    "aliases": "mix juice, 1L",
+    "brand": "Mixed Fruit Juice",
+    "variant": "1L",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mixed Fruit Juice Small",
+    "ur": "مکس فروٹ جوس Small",
+    "aliases": "mix juice, Small",
+    "brand": "Mixed Fruit Juice",
+    "variant": "Small",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mixed Fruit Juice Regular",
+    "ur": "مکس فروٹ جوس Regular",
+    "aliases": "mix juice, Regular",
+    "brand": "Mixed Fruit Juice",
+    "variant": "Regular",
+    "unit": "glass"
+  },
+  {
+    "category": "Juice Shop",
+    "subcategory": "Fresh Juice",
+    "en": "Mixed Fruit Juice Large",
+    "ur": "مکس فروٹ جوس Large",
+    "aliases": "mix juice, Large",
+    "brand": "Mixed Fruit Juice",
+    "variant": "Large",
+    "unit": "glass"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola 250ml",
+    "ur": "کوکا کولا 250ml",
+    "aliases": "coke, 250ml",
+    "brand": "Coca-Cola",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola 300ml",
+    "ur": "کوکا کولا 300ml",
+    "aliases": "coke, 300ml",
+    "brand": "Coca-Cola",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola 345ml can",
+    "ur": "کوکا کولا 345ml can",
+    "aliases": "coke, 345ml can",
+    "brand": "Coca-Cola",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola 500ml",
+    "ur": "کوکا کولا 500ml",
+    "aliases": "coke, 500ml",
+    "brand": "Coca-Cola",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola 1L",
+    "ur": "کوکا کولا 1L",
+    "aliases": "coke, 1L",
+    "brand": "Coca-Cola",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola 1.5L",
+    "ur": "کوکا کولا 1.5L",
+    "aliases": "coke, 1.5L",
+    "brand": "Coca-Cola",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola 2.25L",
+    "ur": "کوکا کولا 2.25L",
+    "aliases": "coke, 2.25L",
+    "brand": "Coca-Cola",
+    "variant": "2.25L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite 250ml",
+    "ur": "اسپرائٹ 250ml",
+    "aliases": "250ml",
+    "brand": "Sprite",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite 300ml",
+    "ur": "اسپرائٹ 300ml",
+    "aliases": "300ml",
+    "brand": "Sprite",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite 345ml can",
+    "ur": "اسپرائٹ 345ml can",
+    "aliases": "345ml can",
+    "brand": "Sprite",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite 500ml",
+    "ur": "اسپرائٹ 500ml",
+    "aliases": "500ml",
+    "brand": "Sprite",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite 1L",
+    "ur": "اسپرائٹ 1L",
+    "aliases": "1L",
+    "brand": "Sprite",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite 1.5L",
+    "ur": "اسپرائٹ 1.5L",
+    "aliases": "1.5L",
+    "brand": "Sprite",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite 2.25L",
+    "ur": "اسپرائٹ 2.25L",
+    "aliases": "2.25L",
+    "brand": "Sprite",
+    "variant": "2.25L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta 250ml",
+    "ur": "فانٹا 250ml",
+    "aliases": "250ml",
+    "brand": "Fanta",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta 300ml",
+    "ur": "فانٹا 300ml",
+    "aliases": "300ml",
+    "brand": "Fanta",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta 345ml can",
+    "ur": "فانٹا 345ml can",
+    "aliases": "345ml can",
+    "brand": "Fanta",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta 500ml",
+    "ur": "فانٹا 500ml",
+    "aliases": "500ml",
+    "brand": "Fanta",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta 1L",
+    "ur": "فانٹا 1L",
+    "aliases": "1L",
+    "brand": "Fanta",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta 1.5L",
+    "ur": "فانٹا 1.5L",
+    "aliases": "1.5L",
+    "brand": "Fanta",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta 2.25L",
+    "ur": "فانٹا 2.25L",
+    "aliases": "2.25L",
+    "brand": "Fanta",
+    "variant": "2.25L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi 250ml",
+    "ur": "پیپسی 250ml",
+    "aliases": "250ml",
+    "brand": "Pepsi",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi 300ml",
+    "ur": "پیپسی 300ml",
+    "aliases": "300ml",
+    "brand": "Pepsi",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi 345ml can",
+    "ur": "پیپسی 345ml can",
+    "aliases": "345ml can",
+    "brand": "Pepsi",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi 500ml",
+    "ur": "پیپسی 500ml",
+    "aliases": "500ml",
+    "brand": "Pepsi",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi 1L",
+    "ur": "پیپسی 1L",
+    "aliases": "1L",
+    "brand": "Pepsi",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi 1.5L",
+    "ur": "پیپسی 1.5L",
+    "aliases": "1.5L",
+    "brand": "Pepsi",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi 2.25L",
+    "ur": "پیپسی 2.25L",
+    "aliases": "2.25L",
+    "brand": "Pepsi",
+    "variant": "2.25L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "7UP 250ml",
+    "ur": "سیون اپ 250ml",
+    "aliases": "seven up, 250ml",
+    "brand": "7UP",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "7UP 300ml",
+    "ur": "سیون اپ 300ml",
+    "aliases": "seven up, 300ml",
+    "brand": "7UP",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "7UP 345ml can",
+    "ur": "سیون اپ 345ml can",
+    "aliases": "seven up, 345ml can",
+    "brand": "7UP",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "7UP 500ml",
+    "ur": "سیون اپ 500ml",
+    "aliases": "seven up, 500ml",
+    "brand": "7UP",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "7UP 1L",
+    "ur": "سیون اپ 1L",
+    "aliases": "seven up, 1L",
+    "brand": "7UP",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "7UP 1.5L",
+    "ur": "سیون اپ 1.5L",
+    "aliases": "seven up, 1.5L",
+    "brand": "7UP",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "7UP 2.25L",
+    "ur": "سیون اپ 2.25L",
+    "aliases": "seven up, 2.25L",
+    "brand": "7UP",
+    "variant": "2.25L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda 250ml",
+    "ur": "مرنڈا 250ml",
+    "aliases": "250ml",
+    "brand": "Mirinda",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda 300ml",
+    "ur": "مرنڈا 300ml",
+    "aliases": "300ml",
+    "brand": "Mirinda",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda 345ml can",
+    "ur": "مرنڈا 345ml can",
+    "aliases": "345ml can",
+    "brand": "Mirinda",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda 500ml",
+    "ur": "مرنڈا 500ml",
+    "aliases": "500ml",
+    "brand": "Mirinda",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda 1L",
+    "ur": "مرنڈا 1L",
+    "aliases": "1L",
+    "brand": "Mirinda",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda 1.5L",
+    "ur": "مرنڈا 1.5L",
+    "aliases": "1.5L",
+    "brand": "Mirinda",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda 2.25L",
+    "ur": "مرنڈا 2.25L",
+    "aliases": "2.25L",
+    "brand": "Mirinda",
+    "variant": "2.25L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew 250ml",
+    "ur": "ماؤنٹین ڈیو 250ml",
+    "aliases": "dew, 250ml",
+    "brand": "Mountain Dew",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew 300ml",
+    "ur": "ماؤنٹین ڈیو 300ml",
+    "aliases": "dew, 300ml",
+    "brand": "Mountain Dew",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew 345ml can",
+    "ur": "ماؤنٹین ڈیو 345ml can",
+    "aliases": "dew, 345ml can",
+    "brand": "Mountain Dew",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew 500ml",
+    "ur": "ماؤنٹین ڈیو 500ml",
+    "aliases": "dew, 500ml",
+    "brand": "Mountain Dew",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew 1L",
+    "ur": "ماؤنٹین ڈیو 1L",
+    "aliases": "dew, 1L",
+    "brand": "Mountain Dew",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew 1.5L",
+    "ur": "ماؤنٹین ڈیو 1.5L",
+    "aliases": "dew, 1.5L",
+    "brand": "Mountain Dew",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew 2.25L",
+    "ur": "ماؤنٹین ڈیو 2.25L",
+    "aliases": "dew, 2.25L",
+    "brand": "Mountain Dew",
+    "variant": "2.25L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sting 250ml",
+    "ur": "اسٹنگ 250ml",
+    "aliases": "250ml",
+    "brand": "Sting",
+    "variant": "250ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sting 300ml",
+    "ur": "اسٹنگ 300ml",
+    "aliases": "300ml",
+    "brand": "Sting",
+    "variant": "300ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sting 345ml can",
+    "ur": "اسٹنگ 345ml can",
+    "aliases": "345ml can",
+    "brand": "Sting",
+    "variant": "345ml can",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sting 500ml",
+    "ur": "اسٹنگ 500ml",
+    "aliases": "500ml",
+    "brand": "Sting",
+    "variant": "500ml",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sting 1L",
+    "ur": "اسٹنگ 1L",
+    "aliases": "1L",
+    "brand": "Sting",
+    "variant": "1L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sting 1.5L",
+    "ur": "اسٹنگ 1.5L",
+    "aliases": "1.5L",
+    "brand": "Sting",
+    "variant": "1.5L",
+    "unit": "bottle"
+  },
+  {
+    "category": "Cold Drink",
+    "subcategory": "Soft Drinks",
+    "en": "Sting 2.25L",
+    "ur": "اسٹنگ 2.25L",
+    "aliases": "2.25L",
+    "brand": "Sting",
+    "variant": "2.25L",
+    "unit": "bottle"
+  }
+]

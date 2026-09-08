@@ -1,0 +1,1302 @@
+[
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/12 HP",
+    "ur": "روٹری کمپریسر 1/12 HP",
+    "aliases": "rotary compressor, 1/12 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/12 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/10 HP",
+    "ur": "روٹری کمپریسر 1/10 HP",
+    "aliases": "rotary compressor, 1/10 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/10 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/8 HP",
+    "ur": "روٹری کمپریسر 1/8 HP",
+    "aliases": "rotary compressor, 1/8 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/8 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/6 HP",
+    "ur": "روٹری کمپریسر 1/6 HP",
+    "aliases": "rotary compressor, 1/6 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/6 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/5 HP",
+    "ur": "روٹری کمپریسر 1/5 HP",
+    "aliases": "rotary compressor, 1/5 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/4 HP",
+    "ur": "روٹری کمپریسر 1/4 HP",
+    "aliases": "rotary compressor, 1/4 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/3 HP",
+    "ur": "روٹری کمپریسر 1/3 HP",
+    "aliases": "rotary compressor, 1/3 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1/2 HP",
+    "ur": "روٹری کمپریسر 1/2 HP",
+    "aliases": "rotary compressor, 1/2 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1/2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 3/4 HP",
+    "ur": "روٹری کمپریسر 3/4 HP",
+    "aliases": "rotary compressor, 3/4 HP",
+    "brand": "Rotary Compressor",
+    "variant": "3/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1 HP",
+    "ur": "روٹری کمپریسر 1 HP",
+    "aliases": "rotary compressor, 1 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 1.5 HP",
+    "ur": "روٹری کمپریسر 1.5 HP",
+    "aliases": "rotary compressor, 1.5 HP",
+    "brand": "Rotary Compressor",
+    "variant": "1.5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 2 HP",
+    "ur": "روٹری کمپریسر 2 HP",
+    "aliases": "rotary compressor, 2 HP",
+    "brand": "Rotary Compressor",
+    "variant": "2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 3 HP",
+    "ur": "روٹری کمپریسر 3 HP",
+    "aliases": "rotary compressor, 3 HP",
+    "brand": "Rotary Compressor",
+    "variant": "3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Rotary Compressor 5 HP",
+    "ur": "روٹری کمپریسر 5 HP",
+    "aliases": "rotary compressor, 5 HP",
+    "brand": "Rotary Compressor",
+    "variant": "5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/12 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/12 HP",
+    "aliases": "piston compressor, 1/12 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/12 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/10 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/10 HP",
+    "aliases": "piston compressor, 1/10 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/10 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/8 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/8 HP",
+    "aliases": "piston compressor, 1/8 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/8 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/6 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/6 HP",
+    "aliases": "piston compressor, 1/6 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/6 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/5 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/5 HP",
+    "aliases": "piston compressor, 1/5 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/4 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/4 HP",
+    "aliases": "piston compressor, 1/4 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/3 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/3 HP",
+    "aliases": "piston compressor, 1/3 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1/2 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1/2 HP",
+    "aliases": "piston compressor, 1/2 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1/2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 3/4 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 3/4 HP",
+    "aliases": "piston compressor, 3/4 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "3/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1 HP",
+    "aliases": "piston compressor, 1 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 1.5 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 1.5 HP",
+    "aliases": "piston compressor, 1.5 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "1.5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 2 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 2 HP",
+    "aliases": "piston compressor, 2 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 3 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 3 HP",
+    "aliases": "piston compressor, 3 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Reciprocating Compressor 5 HP",
+    "ur": "ریسیپروکیٹنگ کمپریسر 5 HP",
+    "aliases": "piston compressor, 5 HP",
+    "brand": "Reciprocating Compressor",
+    "variant": "5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/12 HP",
+    "ur": "اسکرول کمپریسر 1/12 HP",
+    "aliases": "scroll compressor, 1/12 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/12 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/10 HP",
+    "ur": "اسکرول کمپریسر 1/10 HP",
+    "aliases": "scroll compressor, 1/10 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/10 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/8 HP",
+    "ur": "اسکرول کمپریسر 1/8 HP",
+    "aliases": "scroll compressor, 1/8 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/8 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/6 HP",
+    "ur": "اسکرول کمپریسر 1/6 HP",
+    "aliases": "scroll compressor, 1/6 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/6 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/5 HP",
+    "ur": "اسکرول کمپریسر 1/5 HP",
+    "aliases": "scroll compressor, 1/5 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/4 HP",
+    "ur": "اسکرول کمپریسر 1/4 HP",
+    "aliases": "scroll compressor, 1/4 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/3 HP",
+    "ur": "اسکرول کمپریسر 1/3 HP",
+    "aliases": "scroll compressor, 1/3 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1/2 HP",
+    "ur": "اسکرول کمپریسر 1/2 HP",
+    "aliases": "scroll compressor, 1/2 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1/2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 3/4 HP",
+    "ur": "اسکرول کمپریسر 3/4 HP",
+    "aliases": "scroll compressor, 3/4 HP",
+    "brand": "Scroll Compressor",
+    "variant": "3/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1 HP",
+    "ur": "اسکرول کمپریسر 1 HP",
+    "aliases": "scroll compressor, 1 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 1.5 HP",
+    "ur": "اسکرول کمپریسر 1.5 HP",
+    "aliases": "scroll compressor, 1.5 HP",
+    "brand": "Scroll Compressor",
+    "variant": "1.5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 2 HP",
+    "ur": "اسکرول کمپریسر 2 HP",
+    "aliases": "scroll compressor, 2 HP",
+    "brand": "Scroll Compressor",
+    "variant": "2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 3 HP",
+    "ur": "اسکرول کمپریسر 3 HP",
+    "aliases": "scroll compressor, 3 HP",
+    "brand": "Scroll Compressor",
+    "variant": "3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Scroll Compressor 5 HP",
+    "ur": "اسکرول کمپریسر 5 HP",
+    "aliases": "scroll compressor, 5 HP",
+    "brand": "Scroll Compressor",
+    "variant": "5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/12 HP",
+    "ur": "فریج کمپریسر 1/12 HP",
+    "aliases": "fridge compressor, 1/12 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/12 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/10 HP",
+    "ur": "فریج کمپریسر 1/10 HP",
+    "aliases": "fridge compressor, 1/10 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/10 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/8 HP",
+    "ur": "فریج کمپریسر 1/8 HP",
+    "aliases": "fridge compressor, 1/8 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/8 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/6 HP",
+    "ur": "فریج کمپریسر 1/6 HP",
+    "aliases": "fridge compressor, 1/6 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/6 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/5 HP",
+    "ur": "فریج کمپریسر 1/5 HP",
+    "aliases": "fridge compressor, 1/5 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/4 HP",
+    "ur": "فریج کمپریسر 1/4 HP",
+    "aliases": "fridge compressor, 1/4 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/3 HP",
+    "ur": "فریج کمپریسر 1/3 HP",
+    "aliases": "fridge compressor, 1/3 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1/2 HP",
+    "ur": "فریج کمپریسر 1/2 HP",
+    "aliases": "fridge compressor, 1/2 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1/2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 3/4 HP",
+    "ur": "فریج کمپریسر 3/4 HP",
+    "aliases": "fridge compressor, 3/4 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "3/4 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1 HP",
+    "ur": "فریج کمپریسر 1 HP",
+    "aliases": "fridge compressor, 1 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 1.5 HP",
+    "ur": "فریج کمپریسر 1.5 HP",
+    "aliases": "fridge compressor, 1.5 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "1.5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 2 HP",
+    "ur": "فریج کمپریسر 2 HP",
+    "aliases": "fridge compressor, 2 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "2 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 3 HP",
+    "ur": "فریج کمپریسر 3 HP",
+    "aliases": "fridge compressor, 3 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "3 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Compressor",
+    "subcategory": "Compressors",
+    "en": "Refrigerator Compressor 5 HP",
+    "ur": "فریج کمپریسر 5 HP",
+    "aliases": "fridge compressor, 5 HP",
+    "brand": "Refrigerator Compressor",
+    "variant": "5 HP",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 1/4 inch",
+    "ur": "کاپر پائپ 1/4 inch",
+    "aliases": "1/4 inch",
+    "brand": "Copper Pipe",
+    "variant": "1/4 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 1/4 inch",
+    "ur": "کاپر کوائل 1/4 inch",
+    "aliases": "copper coil, 1/4 inch",
+    "brand": "Copper Coil",
+    "variant": "1/4 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 1/4 inch",
+    "ur": "کاپر ایلبو 1/4 inch",
+    "aliases": "copper elbow, 1/4 inch",
+    "brand": "Copper Elbow",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 1/4 inch",
+    "ur": "کاپر کپلنگ 1/4 inch",
+    "aliases": "copper coupling, 1/4 inch",
+    "brand": "Copper Coupling",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 5/16 inch",
+    "ur": "کاپر پائپ 5/16 inch",
+    "aliases": "5/16 inch",
+    "brand": "Copper Pipe",
+    "variant": "5/16 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 5/16 inch",
+    "ur": "کاپر کوائل 5/16 inch",
+    "aliases": "copper coil, 5/16 inch",
+    "brand": "Copper Coil",
+    "variant": "5/16 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 5/16 inch",
+    "ur": "کاپر ایلبو 5/16 inch",
+    "aliases": "copper elbow, 5/16 inch",
+    "brand": "Copper Elbow",
+    "variant": "5/16 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 5/16 inch",
+    "ur": "کاپر کپلنگ 5/16 inch",
+    "aliases": "copper coupling, 5/16 inch",
+    "brand": "Copper Coupling",
+    "variant": "5/16 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 3/8 inch",
+    "ur": "کاپر پائپ 3/8 inch",
+    "aliases": "3/8 inch",
+    "brand": "Copper Pipe",
+    "variant": "3/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 3/8 inch",
+    "ur": "کاپر کوائل 3/8 inch",
+    "aliases": "copper coil, 3/8 inch",
+    "brand": "Copper Coil",
+    "variant": "3/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 3/8 inch",
+    "ur": "کاپر ایلبو 3/8 inch",
+    "aliases": "copper elbow, 3/8 inch",
+    "brand": "Copper Elbow",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 3/8 inch",
+    "ur": "کاپر کپلنگ 3/8 inch",
+    "aliases": "copper coupling, 3/8 inch",
+    "brand": "Copper Coupling",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 1/2 inch",
+    "ur": "کاپر پائپ 1/2 inch",
+    "aliases": "1/2 inch",
+    "brand": "Copper Pipe",
+    "variant": "1/2 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 1/2 inch",
+    "ur": "کاپر کوائل 1/2 inch",
+    "aliases": "copper coil, 1/2 inch",
+    "brand": "Copper Coil",
+    "variant": "1/2 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 1/2 inch",
+    "ur": "کاپر ایلبو 1/2 inch",
+    "aliases": "copper elbow, 1/2 inch",
+    "brand": "Copper Elbow",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 1/2 inch",
+    "ur": "کاپر کپلنگ 1/2 inch",
+    "aliases": "copper coupling, 1/2 inch",
+    "brand": "Copper Coupling",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 5/8 inch",
+    "ur": "کاپر پائپ 5/8 inch",
+    "aliases": "5/8 inch",
+    "brand": "Copper Pipe",
+    "variant": "5/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 5/8 inch",
+    "ur": "کاپر کوائل 5/8 inch",
+    "aliases": "copper coil, 5/8 inch",
+    "brand": "Copper Coil",
+    "variant": "5/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 5/8 inch",
+    "ur": "کاپر ایلبو 5/8 inch",
+    "aliases": "copper elbow, 5/8 inch",
+    "brand": "Copper Elbow",
+    "variant": "5/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 5/8 inch",
+    "ur": "کاپر کپلنگ 5/8 inch",
+    "aliases": "copper coupling, 5/8 inch",
+    "brand": "Copper Coupling",
+    "variant": "5/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 3/4 inch",
+    "ur": "کاپر پائپ 3/4 inch",
+    "aliases": "3/4 inch",
+    "brand": "Copper Pipe",
+    "variant": "3/4 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 3/4 inch",
+    "ur": "کاپر کوائل 3/4 inch",
+    "aliases": "copper coil, 3/4 inch",
+    "brand": "Copper Coil",
+    "variant": "3/4 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 3/4 inch",
+    "ur": "کاپر ایلبو 3/4 inch",
+    "aliases": "copper elbow, 3/4 inch",
+    "brand": "Copper Elbow",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 3/4 inch",
+    "ur": "کاپر کپلنگ 3/4 inch",
+    "aliases": "copper coupling, 3/4 inch",
+    "brand": "Copper Coupling",
+    "variant": "3/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 7/8 inch",
+    "ur": "کاپر پائپ 7/8 inch",
+    "aliases": "7/8 inch",
+    "brand": "Copper Pipe",
+    "variant": "7/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 7/8 inch",
+    "ur": "کاپر کوائل 7/8 inch",
+    "aliases": "copper coil, 7/8 inch",
+    "brand": "Copper Coil",
+    "variant": "7/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 7/8 inch",
+    "ur": "کاپر ایلبو 7/8 inch",
+    "aliases": "copper elbow, 7/8 inch",
+    "brand": "Copper Elbow",
+    "variant": "7/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 7/8 inch",
+    "ur": "کاپر کپلنگ 7/8 inch",
+    "aliases": "copper coupling, 7/8 inch",
+    "brand": "Copper Coupling",
+    "variant": "7/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Pipe 1-1/8 inch",
+    "ur": "کاپر پائپ 1-1/8 inch",
+    "aliases": "1-1/8 inch",
+    "brand": "Copper Pipe",
+    "variant": "1-1/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coil 1-1/8 inch",
+    "ur": "کاپر کوائل 1-1/8 inch",
+    "aliases": "copper coil, 1-1/8 inch",
+    "brand": "Copper Coil",
+    "variant": "1-1/8 inch",
+    "unit": "meter"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Elbow 1-1/8 inch",
+    "ur": "کاپر ایلبو 1-1/8 inch",
+    "aliases": "copper elbow, 1-1/8 inch",
+    "brand": "Copper Elbow",
+    "variant": "1-1/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Copper",
+    "subcategory": "Copper Tubing & Fittings",
+    "en": "Copper Coupling 1-1/8 inch",
+    "ur": "کاپر کپلنگ 1-1/8 inch",
+    "aliases": "copper coupling, 1-1/8 inch",
+    "brand": "Copper Coupling",
+    "variant": "1-1/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 1.5µF",
+    "ur": "اے سی کیپیسٹر 1.5µF",
+    "aliases": "capacitor, 1.5µF",
+    "brand": "Capacitor",
+    "variant": "1.5µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 2µF",
+    "ur": "اے سی کیپیسٹر 2µF",
+    "aliases": "capacitor, 2µF",
+    "brand": "Capacitor",
+    "variant": "2µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 2.5µF",
+    "ur": "اے سی کیپیسٹر 2.5µF",
+    "aliases": "capacitor, 2.5µF",
+    "brand": "Capacitor",
+    "variant": "2.5µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 3µF",
+    "ur": "اے سی کیپیسٹر 3µF",
+    "aliases": "capacitor, 3µF",
+    "brand": "Capacitor",
+    "variant": "3µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 4µF",
+    "ur": "اے سی کیپیسٹر 4µF",
+    "aliases": "capacitor, 4µF",
+    "brand": "Capacitor",
+    "variant": "4µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 5µF",
+    "ur": "اے سی کیپیسٹر 5µF",
+    "aliases": "capacitor, 5µF",
+    "brand": "Capacitor",
+    "variant": "5µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 6µF",
+    "ur": "اے سی کیپیسٹر 6µF",
+    "aliases": "capacitor, 6µF",
+    "brand": "Capacitor",
+    "variant": "6µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 8µF",
+    "ur": "اے سی کیپیسٹر 8µF",
+    "aliases": "capacitor, 8µF",
+    "brand": "Capacitor",
+    "variant": "8µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 10µF",
+    "ur": "اے سی کیپیسٹر 10µF",
+    "aliases": "capacitor, 10µF",
+    "brand": "Capacitor",
+    "variant": "10µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 12µF",
+    "ur": "اے سی کیپیسٹر 12µF",
+    "aliases": "capacitor, 12µF",
+    "brand": "Capacitor",
+    "variant": "12µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 15µF",
+    "ur": "اے سی کیپیسٹر 15µF",
+    "aliases": "capacitor, 15µF",
+    "brand": "Capacitor",
+    "variant": "15µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 20µF",
+    "ur": "اے سی کیپیسٹر 20µF",
+    "aliases": "capacitor, 20µF",
+    "brand": "Capacitor",
+    "variant": "20µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 25µF",
+    "ur": "اے سی کیپیسٹر 25µF",
+    "aliases": "capacitor, 25µF",
+    "brand": "Capacitor",
+    "variant": "25µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 30µF",
+    "ur": "اے سی کیپیسٹر 30µF",
+    "aliases": "capacitor, 30µF",
+    "brand": "Capacitor",
+    "variant": "30µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 35µF",
+    "ur": "اے سی کیپیسٹر 35µF",
+    "aliases": "capacitor, 35µF",
+    "brand": "Capacitor",
+    "variant": "35µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 40µF",
+    "ur": "اے سی کیپیسٹر 40µF",
+    "aliases": "capacitor, 40µF",
+    "brand": "Capacitor",
+    "variant": "40µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 45µF",
+    "ur": "اے سی کیپیسٹر 45µF",
+    "aliases": "capacitor, 45µF",
+    "brand": "Capacitor",
+    "variant": "45µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 50µF",
+    "ur": "اے سی کیپیسٹر 50µF",
+    "aliases": "capacitor, 50µF",
+    "brand": "Capacitor",
+    "variant": "50µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 60µF",
+    "ur": "اے سی کیپیسٹر 60µF",
+    "aliases": "capacitor, 60µF",
+    "brand": "Capacitor",
+    "variant": "60µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 70µF",
+    "ur": "اے سی کیپیسٹر 70µF",
+    "aliases": "capacitor, 70µF",
+    "brand": "Capacitor",
+    "variant": "70µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Electrical",
+    "subcategory": "Capacitors",
+    "en": "AC Capacitor 80µF",
+    "ur": "اے سی کیپیسٹر 80µF",
+    "aliases": "capacitor, 80µF",
+    "brand": "Capacitor",
+    "variant": "80µF",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Compressor Relay",
+    "ur": "کمپریسر ریلے",
+    "aliases": "compressor relay",
+    "brand": "Compressor Relay",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Overload Protector",
+    "ur": "اوورلوڈ پروٹیکٹر",
+    "aliases": "overload",
+    "brand": "Overload Protector",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "PTC Relay",
+    "ur": "پی ٹی سی ریلے",
+    "aliases": "ptc relay",
+    "brand": "PTC Relay",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Defrost Timer",
+    "ur": "ڈی فراسٹ ٹائمر",
+    "aliases": "defrost timer",
+    "brand": "Defrost Timer",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Defrost Heater",
+    "ur": "ڈی فراسٹ ہیٹر",
+    "aliases": "defrost heater",
+    "brand": "Defrost Heater",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Temperature Sensor",
+    "ur": "ٹمپریچر سینسر",
+    "aliases": "temperature sensor",
+    "brand": "Temperature Sensor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Room Sensor",
+    "ur": "روم سینسر",
+    "aliases": "room sensor",
+    "brand": "Room Sensor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Coil Sensor",
+    "ur": "کوائل سینسر",
+    "aliases": "coil sensor",
+    "brand": "Coil Sensor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "PCB Control Board",
+    "ur": "پی سی بی کنٹرول بورڈ",
+    "aliases": "ac board",
+    "brand": "PCB Control Board",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Indoor Fan Motor",
+    "ur": "انڈور فین موٹر",
+    "aliases": "indoor fan motor",
+    "brand": "Indoor Fan Motor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Outdoor Fan Motor",
+    "ur": "آؤٹ ڈور فین موٹر",
+    "aliases": "outdoor fan motor",
+    "brand": "Outdoor Fan Motor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Blower Motor",
+    "ur": "بلوور موٹر",
+    "aliases": "blower motor",
+    "brand": "Blower Motor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Condenser Fan Motor",
+    "ur": "کنڈینسر فین موٹر",
+    "aliases": "condenser fan",
+    "brand": "Condenser Fan Motor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Evaporator Fan Motor",
+    "ur": "ایواپوریٹر فین موٹر",
+    "aliases": "evaporator fan",
+    "brand": "Evaporator Fan Motor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Blower Wheel",
+    "ur": "بلوور وہیل",
+    "aliases": "blower wheel",
+    "brand": "Blower Wheel",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Filter Drier",
+    "ur": "فلٹر ڈرائر",
+    "aliases": "filter drier",
+    "brand": "Filter Drier",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Capillary Tube",
+    "ur": "کیپلری ٹیوب",
+    "aliases": "capillary tube",
+    "brand": "Capillary Tube",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Service Valve",
+    "ur": "سروس والو",
+    "aliases": "service valve",
+    "brand": "Service Valve",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Schrader Valve",
+    "ur": "شریڈر والو",
+    "aliases": "schrader valve",
+    "brand": "Schrader Valve",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "AC Remote",
+    "ur": "اے سی ریموٹ",
+    "aliases": "ac remote",
+    "brand": "AC Remote",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Spare Parts",
+    "subcategory": "AC / Refrigeration Parts",
+    "en": "Refrigerator Door Gasket",
+    "ur": "فریج ڈور گاسکٹ",
+    "aliases": "fridge rubber",
+    "brand": "Refrigerator Door Gasket",
+    "variant": "",
+    "unit": "piece"
+  }
+]

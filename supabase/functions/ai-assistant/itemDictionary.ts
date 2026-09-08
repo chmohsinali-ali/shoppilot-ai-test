@@ -81,6 +81,15 @@ import bearingsRows from "./bearingsItemDictionary.json" with { type: "json" };
 import kitchenwareCrockeryRows from "./kitchenwareCrockeryItemDictionary.json" with { type: "json" };
 import homeHouseholdRows from "./homeHouseholdItemDictionary.json" with { type: "json" };
 import kiryanaExpansionRows from "./kiryanaExpansionItemDictionary.json" with { type: "json" };
+import pansariExpansionRows from "./pansariExpansionItemDictionary.json" with { type: "json" };
+import booksStationeryRows from "./booksStationeryItemDictionary.json" with { type: "json" };
+import confectioneryWholesaleRows from "./confectioneryWholesaleItemDictionary.json" with { type: "json" };
+import teaJuiceColdDrinkRows from "./teaJuiceColdDrinkItemDictionary.json" with { type: "json" };
+import mobileRepairRows from "./mobileRepairItemDictionary.json" with { type: "json" };
+import acRefrigerationExpansionRows from "./acRefrigerationExpansionItemDictionary.json" with { type: "json" };
+import locksmithExpansionRows from "./locksmithExpansionItemDictionary.json" with { type: "json" };
+import roWaterExpansionRows from "./roWaterExpansionItemDictionary.json" with { type: "json" };
+import fireSafetyPpeExpansionRows from "./fireSafetyPpeExpansionItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -157,6 +166,15 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "kitchenware-crockery", rows: kitchenwareCrockeryRows as ItemRow[] },
   { source: "home-household", rows: homeHouseholdRows as ItemRow[] },
   { source: "kiryana-expansion", rows: kiryanaExpansionRows as ItemRow[] },
+  { source: "pansari-expansion", rows: pansariExpansionRows as ItemRow[] },
+  { source: "books-stationery", rows: booksStationeryRows as ItemRow[] },
+  { source: "confectionery-wholesale", rows: confectioneryWholesaleRows as ItemRow[] },
+  { source: "tea-juice-cold-drink", rows: teaJuiceColdDrinkRows as ItemRow[] },
+  { source: "mobile-repair", rows: mobileRepairRows as ItemRow[] },
+  { source: "ac-refrigeration-expansion", rows: acRefrigerationExpansionRows as ItemRow[] },
+  { source: "locksmith-expansion", rows: locksmithExpansionRows as ItemRow[] },
+  { source: "ro-water-expansion", rows: roWaterExpansionRows as ItemRow[] },
+  { source: "fire-safety-ppe-expansion", rows: fireSafetyPpeExpansionRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES

@@ -1,0 +1,1232 @@
+[
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Soldering Station",
+    "ur": "سولڈرنگ اسٹیشن",
+    "aliases": "soldering station",
+    "brand": "Soldering Station",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Soldering Iron",
+    "ur": "سولڈرنگ آئرن",
+    "aliases": "soldering iron",
+    "brand": "Soldering Iron",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Hot Air Rework Station",
+    "ur": "ہاٹ ایئر ری ورک اسٹیشن",
+    "aliases": "hot air station",
+    "brand": "Hot Air Rework Station",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Hot Air Gun",
+    "ur": "ہاٹ ایئر گن",
+    "aliases": "hot air gun",
+    "brand": "Hot Air Gun",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "DC Power Supply",
+    "ur": "ڈی سی پاور سپلائی",
+    "aliases": "dc supply",
+    "brand": "DC Power Supply",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Digital Multimeter",
+    "ur": "ڈیجیٹل ملٹی میٹر",
+    "aliases": "multimeter",
+    "brand": "Digital Multimeter",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Oscilloscope",
+    "ur": "آسیلوسکوپ",
+    "aliases": "oscilloscope",
+    "brand": "Oscilloscope",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Microscope",
+    "ur": "مائیکروسکوپ",
+    "aliases": "microscope",
+    "brand": "Microscope",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Trinocular Microscope",
+    "ur": "ٹرائی نوکولر مائیکروسکوپ",
+    "aliases": "trinocular microscope",
+    "brand": "Trinocular Microscope",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "PCB Holder",
+    "ur": "پی سی بی ہولڈر",
+    "aliases": "pcb holder",
+    "brand": "PCB Holder",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Phone Repair Fixture",
+    "ur": "فون ریپیئر فکسچر",
+    "aliases": "repair fixture",
+    "brand": "Phone Repair Fixture",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Suction Cup",
+    "ur": "سکشن کپ",
+    "aliases": "suction cup",
+    "brand": "Suction Cup",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Opening Pick",
+    "ur": "اوپننگ پک",
+    "aliases": "opening pick",
+    "brand": "Opening Pick",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Plastic Spudger",
+    "ur": "پلاسٹک اسپجر",
+    "aliases": "spudger",
+    "brand": "Plastic Spudger",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Metal Spudger",
+    "ur": "میٹل اسپجر",
+    "aliases": "metal spudger",
+    "brand": "Metal Spudger",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Precision Screwdriver Set",
+    "ur": "پریسیژن سکریو ڈرائیور سیٹ",
+    "aliases": "precision screwdriver",
+    "brand": "Precision Screwdriver Set",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Tweezers Straight",
+    "ur": "سیدھی ٹویزر",
+    "aliases": "straight tweezer",
+    "brand": "Tweezers Straight",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Tweezers Curved",
+    "ur": "ٹیڑھی ٹویزر",
+    "aliases": "curved tweezer",
+    "brand": "Tweezers Curved",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "ESD Tweezers",
+    "ur": "ای ایس ڈی ٹویزر",
+    "aliases": "esd tweezer",
+    "brand": "ESD Tweezers",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "IC Puller",
+    "ur": "آئی سی پلر",
+    "aliases": "ic puller",
+    "brand": "IC Puller",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Screen Separator Machine",
+    "ur": "اسکرین سیپریٹر مشین",
+    "aliases": "screen separator",
+    "brand": "Screen Separator Machine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "LCD Separator Wire",
+    "ur": "ایل سی ڈی سیپریٹر وائر",
+    "aliases": "separator wire",
+    "brand": "LCD Separator Wire",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "OCA Laminating Machine",
+    "ur": "او سی اے لیمینیٹنگ مشین",
+    "aliases": "oca laminator",
+    "brand": "OCA Laminating Machine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Bubble Remover Machine",
+    "ur": "بلبلہ ریموور مشین",
+    "aliases": "bubble remover",
+    "brand": "Bubble Remover Machine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "UV Lamp",
+    "ur": "یو وی لیمپ",
+    "aliases": "uv lamp",
+    "brand": "UV Lamp",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Glue Dispensing Bottle",
+    "ur": "گلو بوتل",
+    "aliases": "glue bottle",
+    "brand": "Glue Dispensing Bottle",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "ESD Mat",
+    "ur": "ای ایس ڈی میٹ",
+    "aliases": "esd mat",
+    "brand": "ESD Mat",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "ESD Wrist Strap",
+    "ur": "ای ایس ڈی رسٹ اسٹریپ",
+    "aliases": "esd strap",
+    "brand": "ESD Wrist Strap",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Fume Extractor",
+    "ur": "فیوم ایکسٹریکٹر",
+    "aliases": "fume extractor",
+    "brand": "Fume Extractor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Air Blower",
+    "ur": "ایئر بلوور",
+    "aliases": "blower",
+    "brand": "Air Blower",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Tools",
+    "subcategory": "Repair Tools",
+    "en": "Magnifying Lamp",
+    "ur": "میگنیفائنگ لیمپ",
+    "aliases": "magnifier lamp",
+    "brand": "Magnifying Lamp",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Solder",
+    "en": "Solder Wire 0.3mm",
+    "ur": "سولڈر وائر 0.3mm",
+    "aliases": "solder wire, 0.3mm",
+    "brand": "Solder Wire",
+    "variant": "0.3mm",
+    "unit": "roll"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Solder",
+    "en": "Solder Wire 0.5mm",
+    "ur": "سولڈر وائر 0.5mm",
+    "aliases": "solder wire, 0.5mm",
+    "brand": "Solder Wire",
+    "variant": "0.5mm",
+    "unit": "roll"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Solder",
+    "en": "Solder Wire 0.6mm",
+    "ur": "سولڈر وائر 0.6mm",
+    "aliases": "solder wire, 0.6mm",
+    "brand": "Solder Wire",
+    "variant": "0.6mm",
+    "unit": "roll"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Solder",
+    "en": "Solder Wire 0.8mm",
+    "ur": "سولڈر وائر 0.8mm",
+    "aliases": "solder wire, 0.8mm",
+    "brand": "Solder Wire",
+    "variant": "0.8mm",
+    "unit": "roll"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Solder",
+    "en": "Solder Wire 1.0mm",
+    "ur": "سولڈر وائر 1.0mm",
+    "aliases": "solder wire, 1.0mm",
+    "brand": "Solder Wire",
+    "variant": "1.0mm",
+    "unit": "roll"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Solder Paste 10g",
+    "ur": "سولڈر پیسٹ 10g",
+    "aliases": "solder paste, 10g",
+    "brand": "Solder Paste",
+    "variant": "10g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Solder Paste 20g",
+    "ur": "سولڈر پیسٹ 20g",
+    "aliases": "solder paste, 20g",
+    "brand": "Solder Paste",
+    "variant": "20g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Solder Paste 50g",
+    "ur": "سولڈر پیسٹ 50g",
+    "aliases": "solder paste, 50g",
+    "brand": "Solder Paste",
+    "variant": "50g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Solder Paste 100g",
+    "ur": "سولڈر پیسٹ 100g",
+    "aliases": "solder paste, 100g",
+    "brand": "Solder Paste",
+    "variant": "100g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Flux Paste 10g",
+    "ur": "فلکس پیسٹ 10g",
+    "aliases": "flux paste, 10g",
+    "brand": "Flux Paste",
+    "variant": "10g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Flux Paste 20g",
+    "ur": "فلکس پیسٹ 20g",
+    "aliases": "flux paste, 20g",
+    "brand": "Flux Paste",
+    "variant": "20g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Flux Paste 50g",
+    "ur": "فلکس پیسٹ 50g",
+    "aliases": "flux paste, 50g",
+    "brand": "Flux Paste",
+    "variant": "50g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Flux Paste 100g",
+    "ur": "فلکس پیسٹ 100g",
+    "aliases": "flux paste, 100g",
+    "brand": "Flux Paste",
+    "variant": "100g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Liquid Flux 10g",
+    "ur": "لیکویڈ فلکس 10g",
+    "aliases": "liquid flux, 10g",
+    "brand": "Liquid Flux",
+    "variant": "10g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Liquid Flux 20g",
+    "ur": "لیکویڈ فلکس 20g",
+    "aliases": "liquid flux, 20g",
+    "brand": "Liquid Flux",
+    "variant": "20g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Liquid Flux 50g",
+    "ur": "لیکویڈ فلکس 50g",
+    "aliases": "liquid flux, 50g",
+    "brand": "Liquid Flux",
+    "variant": "50g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Liquid Flux 100g",
+    "ur": "لیکویڈ فلکس 100g",
+    "aliases": "liquid flux, 100g",
+    "brand": "Liquid Flux",
+    "variant": "100g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Desoldering Wick 10g",
+    "ur": "ڈی سولڈرنگ وِک 10g",
+    "aliases": "desolder wick, 10g",
+    "brand": "Desoldering Wick",
+    "variant": "10g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Desoldering Wick 20g",
+    "ur": "ڈی سولڈرنگ وِک 20g",
+    "aliases": "desolder wick, 20g",
+    "brand": "Desoldering Wick",
+    "variant": "20g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Desoldering Wick 50g",
+    "ur": "ڈی سولڈرنگ وِک 50g",
+    "aliases": "desolder wick, 50g",
+    "brand": "Desoldering Wick",
+    "variant": "50g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Desoldering Wick 100g",
+    "ur": "ڈی سولڈرنگ وِک 100g",
+    "aliases": "desolder wick, 100g",
+    "brand": "Desoldering Wick",
+    "variant": "100g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Low Melt Solder 10g",
+    "ur": "لو میلٹ سولڈر 10g",
+    "aliases": "low melt solder, 10g",
+    "brand": "Low Melt Solder",
+    "variant": "10g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Low Melt Solder 20g",
+    "ur": "لو میلٹ سولڈر 20g",
+    "aliases": "low melt solder, 20g",
+    "brand": "Low Melt Solder",
+    "variant": "20g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Low Melt Solder 50g",
+    "ur": "لو میلٹ سولڈر 50g",
+    "aliases": "low melt solder, 50g",
+    "brand": "Low Melt Solder",
+    "variant": "50g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Soldering Consumables",
+    "en": "Low Melt Solder 100g",
+    "ur": "لو میلٹ سولڈر 100g",
+    "aliases": "low melt solder, 100g",
+    "brand": "Low Melt Solder",
+    "variant": "100g",
+    "unit": "pack"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "B7000 Adhesive 5ml",
+    "ur": "بی 7000 گلو 5ml",
+    "aliases": "b7000, 5ml",
+    "brand": "B7000 Adhesive",
+    "variant": "5ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "B7000 Adhesive 15ml",
+    "ur": "بی 7000 گلو 15ml",
+    "aliases": "b7000, 15ml",
+    "brand": "B7000 Adhesive",
+    "variant": "15ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "B7000 Adhesive 50ml",
+    "ur": "بی 7000 گلو 50ml",
+    "aliases": "b7000, 50ml",
+    "brand": "B7000 Adhesive",
+    "variant": "50ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "B7000 Adhesive 1mm",
+    "ur": "بی 7000 گلو 1mm",
+    "aliases": "b7000, 1mm",
+    "brand": "B7000 Adhesive",
+    "variant": "1mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "B7000 Adhesive 2mm",
+    "ur": "بی 7000 گلو 2mm",
+    "aliases": "b7000, 2mm",
+    "brand": "B7000 Adhesive",
+    "variant": "2mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "B7000 Adhesive 3mm",
+    "ur": "بی 7000 گلو 3mm",
+    "aliases": "b7000, 3mm",
+    "brand": "B7000 Adhesive",
+    "variant": "3mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "B7000 Adhesive 5mm",
+    "ur": "بی 7000 گلو 5mm",
+    "aliases": "b7000, 5mm",
+    "brand": "B7000 Adhesive",
+    "variant": "5mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "T7000 Adhesive 5ml",
+    "ur": "ٹی 7000 گلو 5ml",
+    "aliases": "t7000, 5ml",
+    "brand": "T7000 Adhesive",
+    "variant": "5ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "T7000 Adhesive 15ml",
+    "ur": "ٹی 7000 گلو 15ml",
+    "aliases": "t7000, 15ml",
+    "brand": "T7000 Adhesive",
+    "variant": "15ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "T7000 Adhesive 50ml",
+    "ur": "ٹی 7000 گلو 50ml",
+    "aliases": "t7000, 50ml",
+    "brand": "T7000 Adhesive",
+    "variant": "50ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "T7000 Adhesive 1mm",
+    "ur": "ٹی 7000 گلو 1mm",
+    "aliases": "t7000, 1mm",
+    "brand": "T7000 Adhesive",
+    "variant": "1mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "T7000 Adhesive 2mm",
+    "ur": "ٹی 7000 گلو 2mm",
+    "aliases": "t7000, 2mm",
+    "brand": "T7000 Adhesive",
+    "variant": "2mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "T7000 Adhesive 3mm",
+    "ur": "ٹی 7000 گلو 3mm",
+    "aliases": "t7000, 3mm",
+    "brand": "T7000 Adhesive",
+    "variant": "3mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "T7000 Adhesive 5mm",
+    "ur": "ٹی 7000 گلو 5mm",
+    "aliases": "t7000, 5mm",
+    "brand": "T7000 Adhesive",
+    "variant": "5mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "UV Glue 5ml",
+    "ur": "یو وی گلو 5ml",
+    "aliases": "uv glue, 5ml",
+    "brand": "UV Glue",
+    "variant": "5ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "UV Glue 15ml",
+    "ur": "یو وی گلو 15ml",
+    "aliases": "uv glue, 15ml",
+    "brand": "UV Glue",
+    "variant": "15ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "UV Glue 50ml",
+    "ur": "یو وی گلو 50ml",
+    "aliases": "uv glue, 50ml",
+    "brand": "UV Glue",
+    "variant": "50ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "UV Glue 1mm",
+    "ur": "یو وی گلو 1mm",
+    "aliases": "uv glue, 1mm",
+    "brand": "UV Glue",
+    "variant": "1mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "UV Glue 2mm",
+    "ur": "یو وی گلو 2mm",
+    "aliases": "uv glue, 2mm",
+    "brand": "UV Glue",
+    "variant": "2mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "UV Glue 3mm",
+    "ur": "یو وی گلو 3mm",
+    "aliases": "uv glue, 3mm",
+    "brand": "UV Glue",
+    "variant": "3mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "UV Glue 5mm",
+    "ur": "یو وی گلو 5mm",
+    "aliases": "uv glue, 5mm",
+    "brand": "UV Glue",
+    "variant": "5mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "OCA Adhesive Sheet 5ml",
+    "ur": "او سی اے شیٹ 5ml",
+    "aliases": "oca sheet, 5ml",
+    "brand": "OCA Adhesive Sheet",
+    "variant": "5ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "OCA Adhesive Sheet 15ml",
+    "ur": "او سی اے شیٹ 15ml",
+    "aliases": "oca sheet, 15ml",
+    "brand": "OCA Adhesive Sheet",
+    "variant": "15ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "OCA Adhesive Sheet 50ml",
+    "ur": "او سی اے شیٹ 50ml",
+    "aliases": "oca sheet, 50ml",
+    "brand": "OCA Adhesive Sheet",
+    "variant": "50ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "OCA Adhesive Sheet 1mm",
+    "ur": "او سی اے شیٹ 1mm",
+    "aliases": "oca sheet, 1mm",
+    "brand": "OCA Adhesive Sheet",
+    "variant": "1mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "OCA Adhesive Sheet 2mm",
+    "ur": "او سی اے شیٹ 2mm",
+    "aliases": "oca sheet, 2mm",
+    "brand": "OCA Adhesive Sheet",
+    "variant": "2mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "OCA Adhesive Sheet 3mm",
+    "ur": "او سی اے شیٹ 3mm",
+    "aliases": "oca sheet, 3mm",
+    "brand": "OCA Adhesive Sheet",
+    "variant": "3mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "OCA Adhesive Sheet 5mm",
+    "ur": "او سی اے شیٹ 5mm",
+    "aliases": "oca sheet, 5mm",
+    "brand": "OCA Adhesive Sheet",
+    "variant": "5mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Double Sided Tape 5ml",
+    "ur": "ڈبل سائیڈ ٹیپ 5ml",
+    "aliases": "double tape, 5ml",
+    "brand": "Double Sided Tape",
+    "variant": "5ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Double Sided Tape 15ml",
+    "ur": "ڈبل سائیڈ ٹیپ 15ml",
+    "aliases": "double tape, 15ml",
+    "brand": "Double Sided Tape",
+    "variant": "15ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Double Sided Tape 50ml",
+    "ur": "ڈبل سائیڈ ٹیپ 50ml",
+    "aliases": "double tape, 50ml",
+    "brand": "Double Sided Tape",
+    "variant": "50ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Double Sided Tape 1mm",
+    "ur": "ڈبل سائیڈ ٹیپ 1mm",
+    "aliases": "double tape, 1mm",
+    "brand": "Double Sided Tape",
+    "variant": "1mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Double Sided Tape 2mm",
+    "ur": "ڈبل سائیڈ ٹیپ 2mm",
+    "aliases": "double tape, 2mm",
+    "brand": "Double Sided Tape",
+    "variant": "2mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Double Sided Tape 3mm",
+    "ur": "ڈبل سائیڈ ٹیپ 3mm",
+    "aliases": "double tape, 3mm",
+    "brand": "Double Sided Tape",
+    "variant": "3mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Double Sided Tape 5mm",
+    "ur": "ڈبل سائیڈ ٹیپ 5mm",
+    "aliases": "double tape, 5mm",
+    "brand": "Double Sided Tape",
+    "variant": "5mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Kapton Tape 5ml",
+    "ur": "کیپٹن ٹیپ 5ml",
+    "aliases": "kapton tape, 5ml",
+    "brand": "Kapton Tape",
+    "variant": "5ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Kapton Tape 15ml",
+    "ur": "کیپٹن ٹیپ 15ml",
+    "aliases": "kapton tape, 15ml",
+    "brand": "Kapton Tape",
+    "variant": "15ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Kapton Tape 50ml",
+    "ur": "کیپٹن ٹیپ 50ml",
+    "aliases": "kapton tape, 50ml",
+    "brand": "Kapton Tape",
+    "variant": "50ml",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Kapton Tape 1mm",
+    "ur": "کیپٹن ٹیپ 1mm",
+    "aliases": "kapton tape, 1mm",
+    "brand": "Kapton Tape",
+    "variant": "1mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Kapton Tape 2mm",
+    "ur": "کیپٹن ٹیپ 2mm",
+    "aliases": "kapton tape, 2mm",
+    "brand": "Kapton Tape",
+    "variant": "2mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Kapton Tape 3mm",
+    "ur": "کیپٹن ٹیپ 3mm",
+    "aliases": "kapton tape, 3mm",
+    "brand": "Kapton Tape",
+    "variant": "3mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Consumables",
+    "subcategory": "Adhesives",
+    "en": "Kapton Tape 5mm",
+    "ur": "کیپٹن ٹیپ 5mm",
+    "aliases": "kapton tape, 5mm",
+    "brand": "Kapton Tape",
+    "variant": "5mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Soldering Parts",
+    "subcategory": "Iron Tips",
+    "en": "Soldering Iron Tip 900M-T-I",
+    "ur": "سولڈرنگ آئرن ٹِپ 900M-T-I",
+    "aliases": "iron tip, 900M-T-I",
+    "brand": "Soldering Tip",
+    "variant": "900M-T-I",
+    "unit": "piece"
+  },
+  {
+    "category": "Soldering Parts",
+    "subcategory": "Iron Tips",
+    "en": "Soldering Iron Tip 900M-T-K",
+    "ur": "سولڈرنگ آئرن ٹِپ 900M-T-K",
+    "aliases": "iron tip, 900M-T-K",
+    "brand": "Soldering Tip",
+    "variant": "900M-T-K",
+    "unit": "piece"
+  },
+  {
+    "category": "Soldering Parts",
+    "subcategory": "Iron Tips",
+    "en": "Soldering Iron Tip 900M-T-B",
+    "ur": "سولڈرنگ آئرن ٹِپ 900M-T-B",
+    "aliases": "iron tip, 900M-T-B",
+    "brand": "Soldering Tip",
+    "variant": "900M-T-B",
+    "unit": "piece"
+  },
+  {
+    "category": "Soldering Parts",
+    "subcategory": "Iron Tips",
+    "en": "Soldering Iron Tip T12-K",
+    "ur": "سولڈرنگ آئرن ٹِپ T12-K",
+    "aliases": "iron tip, T12-K",
+    "brand": "Soldering Tip",
+    "variant": "T12-K",
+    "unit": "piece"
+  },
+  {
+    "category": "Soldering Parts",
+    "subcategory": "Iron Tips",
+    "en": "Soldering Iron Tip T12-I",
+    "ur": "سولڈرنگ آئرن ٹِپ T12-I",
+    "aliases": "iron tip, T12-I",
+    "brand": "Soldering Tip",
+    "variant": "T12-I",
+    "unit": "piece"
+  },
+  {
+    "category": "Soldering Parts",
+    "subcategory": "Iron Tips",
+    "en": "Soldering Iron Tip T12-BC2",
+    "ur": "سولڈرنگ آئرن ٹِپ T12-BC2",
+    "aliases": "iron tip, T12-BC2",
+    "brand": "Soldering Tip",
+    "variant": "T12-BC2",
+    "unit": "piece"
+  },
+  {
+    "category": "Hot Air Parts",
+    "subcategory": "Nozzles",
+    "en": "Hot Air Nozzle 3mm",
+    "ur": "ہاٹ ایئر نوزل 3mm",
+    "aliases": "hot air nozzle, 3mm",
+    "brand": "Hot Air Nozzle",
+    "variant": "3mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hot Air Parts",
+    "subcategory": "Nozzles",
+    "en": "Hot Air Nozzle 4mm",
+    "ur": "ہاٹ ایئر نوزل 4mm",
+    "aliases": "hot air nozzle, 4mm",
+    "brand": "Hot Air Nozzle",
+    "variant": "4mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hot Air Parts",
+    "subcategory": "Nozzles",
+    "en": "Hot Air Nozzle 5mm",
+    "ur": "ہاٹ ایئر نوزل 5mm",
+    "aliases": "hot air nozzle, 5mm",
+    "brand": "Hot Air Nozzle",
+    "variant": "5mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hot Air Parts",
+    "subcategory": "Nozzles",
+    "en": "Hot Air Nozzle 6mm",
+    "ur": "ہاٹ ایئر نوزل 6mm",
+    "aliases": "hot air nozzle, 6mm",
+    "brand": "Hot Air Nozzle",
+    "variant": "6mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hot Air Parts",
+    "subcategory": "Nozzles",
+    "en": "Hot Air Nozzle 8mm",
+    "ur": "ہاٹ ایئر نوزل 8mm",
+    "aliases": "hot air nozzle, 8mm",
+    "brand": "Hot Air Nozzle",
+    "variant": "8mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hot Air Parts",
+    "subcategory": "Nozzles",
+    "en": "Hot Air Nozzle 10mm",
+    "ur": "ہاٹ ایئر نوزل 10mm",
+    "aliases": "hot air nozzle, 10mm",
+    "brand": "Hot Air Nozzle",
+    "variant": "10mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Hot Air Parts",
+    "subcategory": "Nozzles",
+    "en": "Hot Air Nozzle 12mm",
+    "ur": "ہاٹ ایئر نوزل 12mm",
+    "aliases": "hot air nozzle, 12mm",
+    "brand": "Hot Air Nozzle",
+    "variant": "12mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Charging IC",
+    "ur": "چارجنگ آئی سی",
+    "aliases": "charging ic",
+    "brand": "Charging IC",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Power IC",
+    "ur": "پاور آئی سی",
+    "aliases": "power ic",
+    "brand": "Power IC",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Audio IC",
+    "ur": "آڈیو آئی سی",
+    "aliases": "audio ic",
+    "brand": "Audio IC",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Network IC",
+    "ur": "نیٹ ورک آئی سی",
+    "aliases": "network ic",
+    "brand": "Network IC",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Backlight IC",
+    "ur": "بیک لائٹ آئی سی",
+    "aliases": "backlight ic",
+    "brand": "Backlight IC",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "USB-C Port",
+    "ur": "یو ایس بی سی پورٹ",
+    "aliases": "type c port",
+    "brand": "USB-C Port",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Micro USB Port",
+    "ur": "مائیکرو یو ایس بی پورٹ",
+    "aliases": "micro usb port",
+    "brand": "Micro USB Port",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Lightning Port",
+    "ur": "لائٹننگ پورٹ",
+    "aliases": "iphone charging port",
+    "brand": "Lightning Port",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Earpiece",
+    "ur": "ایئر پیس",
+    "aliases": "earpiece",
+    "brand": "Earpiece",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Vibrator Motor",
+    "ur": "وائبریٹر موٹر",
+    "aliases": "vibrator",
+    "brand": "Vibrator Motor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "SIM Tray",
+    "ur": "سم ٹرے",
+    "aliases": "sim tray",
+    "brand": "SIM Tray",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Repair Parts",
+    "subcategory": "Common Mobile Parts",
+    "en": "Display Connector",
+    "ur": "ڈسپلے کنیکٹر",
+    "aliases": "lcd connector",
+    "brand": "Display Connector",
+    "variant": "",
+    "unit": "piece"
+  }
+]

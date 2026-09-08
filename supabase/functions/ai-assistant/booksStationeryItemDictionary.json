@@ -1,0 +1,2372 @@
+[
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Nursery",
+    "ur": "اردو کتاب Nursery",
+    "aliases": "urdu book, nursery",
+    "brand": "Urdu",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Prep",
+    "ur": "اردو کتاب Prep",
+    "aliases": "urdu book, prep",
+    "brand": "Urdu",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 1",
+    "ur": "اردو کتاب Class 1",
+    "aliases": "urdu book, class 1",
+    "brand": "Urdu",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 2",
+    "ur": "اردو کتاب Class 2",
+    "aliases": "urdu book, class 2",
+    "brand": "Urdu",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 3",
+    "ur": "اردو کتاب Class 3",
+    "aliases": "urdu book, class 3",
+    "brand": "Urdu",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 4",
+    "ur": "اردو کتاب Class 4",
+    "aliases": "urdu book, class 4",
+    "brand": "Urdu",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 5",
+    "ur": "اردو کتاب Class 5",
+    "aliases": "urdu book, class 5",
+    "brand": "Urdu",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 6",
+    "ur": "اردو کتاب Class 6",
+    "aliases": "urdu book, class 6",
+    "brand": "Urdu",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 7",
+    "ur": "اردو کتاب Class 7",
+    "aliases": "urdu book, class 7",
+    "brand": "Urdu",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 8",
+    "ur": "اردو کتاب Class 8",
+    "aliases": "urdu book, class 8",
+    "brand": "Urdu",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 9",
+    "ur": "اردو کتاب Class 9",
+    "aliases": "urdu book, class 9",
+    "brand": "Urdu",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 10",
+    "ur": "اردو کتاب Class 10",
+    "aliases": "urdu book, class 10",
+    "brand": "Urdu",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 11",
+    "ur": "اردو کتاب Class 11",
+    "aliases": "urdu book, class 11",
+    "brand": "Urdu",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Urdu Textbook Class 12",
+    "ur": "اردو کتاب Class 12",
+    "aliases": "urdu book, class 12",
+    "brand": "Urdu",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Nursery",
+    "ur": "انگلش کتاب Nursery",
+    "aliases": "english book, nursery",
+    "brand": "English",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Prep",
+    "ur": "انگلش کتاب Prep",
+    "aliases": "english book, prep",
+    "brand": "English",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 1",
+    "ur": "انگلش کتاب Class 1",
+    "aliases": "english book, class 1",
+    "brand": "English",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 2",
+    "ur": "انگلش کتاب Class 2",
+    "aliases": "english book, class 2",
+    "brand": "English",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 3",
+    "ur": "انگلش کتاب Class 3",
+    "aliases": "english book, class 3",
+    "brand": "English",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 4",
+    "ur": "انگلش کتاب Class 4",
+    "aliases": "english book, class 4",
+    "brand": "English",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 5",
+    "ur": "انگلش کتاب Class 5",
+    "aliases": "english book, class 5",
+    "brand": "English",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 6",
+    "ur": "انگلش کتاب Class 6",
+    "aliases": "english book, class 6",
+    "brand": "English",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 7",
+    "ur": "انگلش کتاب Class 7",
+    "aliases": "english book, class 7",
+    "brand": "English",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 8",
+    "ur": "انگلش کتاب Class 8",
+    "aliases": "english book, class 8",
+    "brand": "English",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 9",
+    "ur": "انگلش کتاب Class 9",
+    "aliases": "english book, class 9",
+    "brand": "English",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 10",
+    "ur": "انگلش کتاب Class 10",
+    "aliases": "english book, class 10",
+    "brand": "English",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 11",
+    "ur": "انگلش کتاب Class 11",
+    "aliases": "english book, class 11",
+    "brand": "English",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "English Textbook Class 12",
+    "ur": "انگلش کتاب Class 12",
+    "aliases": "english book, class 12",
+    "brand": "English",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Nursery",
+    "ur": "ریاضی کتاب Nursery",
+    "aliases": "math book, nursery",
+    "brand": "Mathematics",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Prep",
+    "ur": "ریاضی کتاب Prep",
+    "aliases": "math book, prep",
+    "brand": "Mathematics",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 1",
+    "ur": "ریاضی کتاب Class 1",
+    "aliases": "math book, class 1",
+    "brand": "Mathematics",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 2",
+    "ur": "ریاضی کتاب Class 2",
+    "aliases": "math book, class 2",
+    "brand": "Mathematics",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 3",
+    "ur": "ریاضی کتاب Class 3",
+    "aliases": "math book, class 3",
+    "brand": "Mathematics",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 4",
+    "ur": "ریاضی کتاب Class 4",
+    "aliases": "math book, class 4",
+    "brand": "Mathematics",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 5",
+    "ur": "ریاضی کتاب Class 5",
+    "aliases": "math book, class 5",
+    "brand": "Mathematics",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 6",
+    "ur": "ریاضی کتاب Class 6",
+    "aliases": "math book, class 6",
+    "brand": "Mathematics",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 7",
+    "ur": "ریاضی کتاب Class 7",
+    "aliases": "math book, class 7",
+    "brand": "Mathematics",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 8",
+    "ur": "ریاضی کتاب Class 8",
+    "aliases": "math book, class 8",
+    "brand": "Mathematics",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 9",
+    "ur": "ریاضی کتاب Class 9",
+    "aliases": "math book, class 9",
+    "brand": "Mathematics",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 10",
+    "ur": "ریاضی کتاب Class 10",
+    "aliases": "math book, class 10",
+    "brand": "Mathematics",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 11",
+    "ur": "ریاضی کتاب Class 11",
+    "aliases": "math book, class 11",
+    "brand": "Mathematics",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Mathematics Textbook Class 12",
+    "ur": "ریاضی کتاب Class 12",
+    "aliases": "math book, class 12",
+    "brand": "Mathematics",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Nursery",
+    "ur": "جنرل سائنس کتاب Nursery",
+    "aliases": "science book, nursery",
+    "brand": "General Science",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Prep",
+    "ur": "جنرل سائنس کتاب Prep",
+    "aliases": "science book, prep",
+    "brand": "General Science",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 1",
+    "ur": "جنرل سائنس کتاب Class 1",
+    "aliases": "science book, class 1",
+    "brand": "General Science",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 2",
+    "ur": "جنرل سائنس کتاب Class 2",
+    "aliases": "science book, class 2",
+    "brand": "General Science",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 3",
+    "ur": "جنرل سائنس کتاب Class 3",
+    "aliases": "science book, class 3",
+    "brand": "General Science",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 4",
+    "ur": "جنرل سائنس کتاب Class 4",
+    "aliases": "science book, class 4",
+    "brand": "General Science",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 5",
+    "ur": "جنرل سائنس کتاب Class 5",
+    "aliases": "science book, class 5",
+    "brand": "General Science",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 6",
+    "ur": "جنرل سائنس کتاب Class 6",
+    "aliases": "science book, class 6",
+    "brand": "General Science",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 7",
+    "ur": "جنرل سائنس کتاب Class 7",
+    "aliases": "science book, class 7",
+    "brand": "General Science",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 8",
+    "ur": "جنرل سائنس کتاب Class 8",
+    "aliases": "science book, class 8",
+    "brand": "General Science",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 9",
+    "ur": "جنرل سائنس کتاب Class 9",
+    "aliases": "science book, class 9",
+    "brand": "General Science",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 10",
+    "ur": "جنرل سائنس کتاب Class 10",
+    "aliases": "science book, class 10",
+    "brand": "General Science",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 11",
+    "ur": "جنرل سائنس کتاب Class 11",
+    "aliases": "science book, class 11",
+    "brand": "General Science",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Science Textbook Class 12",
+    "ur": "جنرل سائنس کتاب Class 12",
+    "aliases": "science book, class 12",
+    "brand": "General Science",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Nursery",
+    "ur": "فزکس کتاب Nursery",
+    "aliases": "physics book, nursery",
+    "brand": "Physics",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Prep",
+    "ur": "فزکس کتاب Prep",
+    "aliases": "physics book, prep",
+    "brand": "Physics",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 1",
+    "ur": "فزکس کتاب Class 1",
+    "aliases": "physics book, class 1",
+    "brand": "Physics",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 2",
+    "ur": "فزکس کتاب Class 2",
+    "aliases": "physics book, class 2",
+    "brand": "Physics",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 3",
+    "ur": "فزکس کتاب Class 3",
+    "aliases": "physics book, class 3",
+    "brand": "Physics",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 4",
+    "ur": "فزکس کتاب Class 4",
+    "aliases": "physics book, class 4",
+    "brand": "Physics",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 5",
+    "ur": "فزکس کتاب Class 5",
+    "aliases": "physics book, class 5",
+    "brand": "Physics",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 6",
+    "ur": "فزکس کتاب Class 6",
+    "aliases": "physics book, class 6",
+    "brand": "Physics",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 7",
+    "ur": "فزکس کتاب Class 7",
+    "aliases": "physics book, class 7",
+    "brand": "Physics",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 8",
+    "ur": "فزکس کتاب Class 8",
+    "aliases": "physics book, class 8",
+    "brand": "Physics",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 9",
+    "ur": "فزکس کتاب Class 9",
+    "aliases": "physics book, class 9",
+    "brand": "Physics",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 10",
+    "ur": "فزکس کتاب Class 10",
+    "aliases": "physics book, class 10",
+    "brand": "Physics",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 11",
+    "ur": "فزکس کتاب Class 11",
+    "aliases": "physics book, class 11",
+    "brand": "Physics",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Physics Textbook Class 12",
+    "ur": "فزکس کتاب Class 12",
+    "aliases": "physics book, class 12",
+    "brand": "Physics",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Nursery",
+    "ur": "کیمسٹری کتاب Nursery",
+    "aliases": "chemistry book, nursery",
+    "brand": "Chemistry",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Prep",
+    "ur": "کیمسٹری کتاب Prep",
+    "aliases": "chemistry book, prep",
+    "brand": "Chemistry",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 1",
+    "ur": "کیمسٹری کتاب Class 1",
+    "aliases": "chemistry book, class 1",
+    "brand": "Chemistry",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 2",
+    "ur": "کیمسٹری کتاب Class 2",
+    "aliases": "chemistry book, class 2",
+    "brand": "Chemistry",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 3",
+    "ur": "کیمسٹری کتاب Class 3",
+    "aliases": "chemistry book, class 3",
+    "brand": "Chemistry",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 4",
+    "ur": "کیمسٹری کتاب Class 4",
+    "aliases": "chemistry book, class 4",
+    "brand": "Chemistry",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 5",
+    "ur": "کیمسٹری کتاب Class 5",
+    "aliases": "chemistry book, class 5",
+    "brand": "Chemistry",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 6",
+    "ur": "کیمسٹری کتاب Class 6",
+    "aliases": "chemistry book, class 6",
+    "brand": "Chemistry",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 7",
+    "ur": "کیمسٹری کتاب Class 7",
+    "aliases": "chemistry book, class 7",
+    "brand": "Chemistry",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 8",
+    "ur": "کیمسٹری کتاب Class 8",
+    "aliases": "chemistry book, class 8",
+    "brand": "Chemistry",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 9",
+    "ur": "کیمسٹری کتاب Class 9",
+    "aliases": "chemistry book, class 9",
+    "brand": "Chemistry",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 10",
+    "ur": "کیمسٹری کتاب Class 10",
+    "aliases": "chemistry book, class 10",
+    "brand": "Chemistry",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 11",
+    "ur": "کیمسٹری کتاب Class 11",
+    "aliases": "chemistry book, class 11",
+    "brand": "Chemistry",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Chemistry Textbook Class 12",
+    "ur": "کیمسٹری کتاب Class 12",
+    "aliases": "chemistry book, class 12",
+    "brand": "Chemistry",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Nursery",
+    "ur": "بائیولوجی کتاب Nursery",
+    "aliases": "biology book, nursery",
+    "brand": "Biology",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Prep",
+    "ur": "بائیولوجی کتاب Prep",
+    "aliases": "biology book, prep",
+    "brand": "Biology",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 1",
+    "ur": "بائیولوجی کتاب Class 1",
+    "aliases": "biology book, class 1",
+    "brand": "Biology",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 2",
+    "ur": "بائیولوجی کتاب Class 2",
+    "aliases": "biology book, class 2",
+    "brand": "Biology",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 3",
+    "ur": "بائیولوجی کتاب Class 3",
+    "aliases": "biology book, class 3",
+    "brand": "Biology",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 4",
+    "ur": "بائیولوجی کتاب Class 4",
+    "aliases": "biology book, class 4",
+    "brand": "Biology",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 5",
+    "ur": "بائیولوجی کتاب Class 5",
+    "aliases": "biology book, class 5",
+    "brand": "Biology",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 6",
+    "ur": "بائیولوجی کتاب Class 6",
+    "aliases": "biology book, class 6",
+    "brand": "Biology",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 7",
+    "ur": "بائیولوجی کتاب Class 7",
+    "aliases": "biology book, class 7",
+    "brand": "Biology",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 8",
+    "ur": "بائیولوجی کتاب Class 8",
+    "aliases": "biology book, class 8",
+    "brand": "Biology",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 9",
+    "ur": "بائیولوجی کتاب Class 9",
+    "aliases": "biology book, class 9",
+    "brand": "Biology",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 10",
+    "ur": "بائیولوجی کتاب Class 10",
+    "aliases": "biology book, class 10",
+    "brand": "Biology",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 11",
+    "ur": "بائیولوجی کتاب Class 11",
+    "aliases": "biology book, class 11",
+    "brand": "Biology",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Biology Textbook Class 12",
+    "ur": "بائیولوجی کتاب Class 12",
+    "aliases": "biology book, class 12",
+    "brand": "Biology",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Nursery",
+    "ur": "کمپیوٹر سائنس کتاب Nursery",
+    "aliases": "computer book, nursery",
+    "brand": "Computer Science",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Prep",
+    "ur": "کمپیوٹر سائنس کتاب Prep",
+    "aliases": "computer book, prep",
+    "brand": "Computer Science",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 1",
+    "ur": "کمپیوٹر سائنس کتاب Class 1",
+    "aliases": "computer book, class 1",
+    "brand": "Computer Science",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 2",
+    "ur": "کمپیوٹر سائنس کتاب Class 2",
+    "aliases": "computer book, class 2",
+    "brand": "Computer Science",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 3",
+    "ur": "کمپیوٹر سائنس کتاب Class 3",
+    "aliases": "computer book, class 3",
+    "brand": "Computer Science",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 4",
+    "ur": "کمپیوٹر سائنس کتاب Class 4",
+    "aliases": "computer book, class 4",
+    "brand": "Computer Science",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 5",
+    "ur": "کمپیوٹر سائنس کتاب Class 5",
+    "aliases": "computer book, class 5",
+    "brand": "Computer Science",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 6",
+    "ur": "کمپیوٹر سائنس کتاب Class 6",
+    "aliases": "computer book, class 6",
+    "brand": "Computer Science",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 7",
+    "ur": "کمپیوٹر سائنس کتاب Class 7",
+    "aliases": "computer book, class 7",
+    "brand": "Computer Science",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 8",
+    "ur": "کمپیوٹر سائنس کتاب Class 8",
+    "aliases": "computer book, class 8",
+    "brand": "Computer Science",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 9",
+    "ur": "کمپیوٹر سائنس کتاب Class 9",
+    "aliases": "computer book, class 9",
+    "brand": "Computer Science",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 10",
+    "ur": "کمپیوٹر سائنس کتاب Class 10",
+    "aliases": "computer book, class 10",
+    "brand": "Computer Science",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 11",
+    "ur": "کمپیوٹر سائنس کتاب Class 11",
+    "aliases": "computer book, class 11",
+    "brand": "Computer Science",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Computer Science Textbook Class 12",
+    "ur": "کمپیوٹر سائنس کتاب Class 12",
+    "aliases": "computer book, class 12",
+    "brand": "Computer Science",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Nursery",
+    "ur": "پاکستان اسٹڈیز کتاب Nursery",
+    "aliases": "pak studies book, nursery",
+    "brand": "Pakistan Studies",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Prep",
+    "ur": "پاکستان اسٹڈیز کتاب Prep",
+    "aliases": "pak studies book, prep",
+    "brand": "Pakistan Studies",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 1",
+    "ur": "پاکستان اسٹڈیز کتاب Class 1",
+    "aliases": "pak studies book, class 1",
+    "brand": "Pakistan Studies",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 2",
+    "ur": "پاکستان اسٹڈیز کتاب Class 2",
+    "aliases": "pak studies book, class 2",
+    "brand": "Pakistan Studies",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 3",
+    "ur": "پاکستان اسٹڈیز کتاب Class 3",
+    "aliases": "pak studies book, class 3",
+    "brand": "Pakistan Studies",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 4",
+    "ur": "پاکستان اسٹڈیز کتاب Class 4",
+    "aliases": "pak studies book, class 4",
+    "brand": "Pakistan Studies",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 5",
+    "ur": "پاکستان اسٹڈیز کتاب Class 5",
+    "aliases": "pak studies book, class 5",
+    "brand": "Pakistan Studies",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 6",
+    "ur": "پاکستان اسٹڈیز کتاب Class 6",
+    "aliases": "pak studies book, class 6",
+    "brand": "Pakistan Studies",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 7",
+    "ur": "پاکستان اسٹڈیز کتاب Class 7",
+    "aliases": "pak studies book, class 7",
+    "brand": "Pakistan Studies",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 8",
+    "ur": "پاکستان اسٹڈیز کتاب Class 8",
+    "aliases": "pak studies book, class 8",
+    "brand": "Pakistan Studies",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 9",
+    "ur": "پاکستان اسٹڈیز کتاب Class 9",
+    "aliases": "pak studies book, class 9",
+    "brand": "Pakistan Studies",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 10",
+    "ur": "پاکستان اسٹڈیز کتاب Class 10",
+    "aliases": "pak studies book, class 10",
+    "brand": "Pakistan Studies",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 11",
+    "ur": "پاکستان اسٹڈیز کتاب Class 11",
+    "aliases": "pak studies book, class 11",
+    "brand": "Pakistan Studies",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Pakistan Studies Textbook Class 12",
+    "ur": "پاکستان اسٹڈیز کتاب Class 12",
+    "aliases": "pak studies book, class 12",
+    "brand": "Pakistan Studies",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Nursery",
+    "ur": "اسلامیات کتاب Nursery",
+    "aliases": "islamiat book, nursery",
+    "brand": "Islamiyat",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Prep",
+    "ur": "اسلامیات کتاب Prep",
+    "aliases": "islamiat book, prep",
+    "brand": "Islamiyat",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 1",
+    "ur": "اسلامیات کتاب Class 1",
+    "aliases": "islamiat book, class 1",
+    "brand": "Islamiyat",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 2",
+    "ur": "اسلامیات کتاب Class 2",
+    "aliases": "islamiat book, class 2",
+    "brand": "Islamiyat",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 3",
+    "ur": "اسلامیات کتاب Class 3",
+    "aliases": "islamiat book, class 3",
+    "brand": "Islamiyat",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 4",
+    "ur": "اسلامیات کتاب Class 4",
+    "aliases": "islamiat book, class 4",
+    "brand": "Islamiyat",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 5",
+    "ur": "اسلامیات کتاب Class 5",
+    "aliases": "islamiat book, class 5",
+    "brand": "Islamiyat",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 6",
+    "ur": "اسلامیات کتاب Class 6",
+    "aliases": "islamiat book, class 6",
+    "brand": "Islamiyat",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 7",
+    "ur": "اسلامیات کتاب Class 7",
+    "aliases": "islamiat book, class 7",
+    "brand": "Islamiyat",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 8",
+    "ur": "اسلامیات کتاب Class 8",
+    "aliases": "islamiat book, class 8",
+    "brand": "Islamiyat",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 9",
+    "ur": "اسلامیات کتاب Class 9",
+    "aliases": "islamiat book, class 9",
+    "brand": "Islamiyat",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 10",
+    "ur": "اسلامیات کتاب Class 10",
+    "aliases": "islamiat book, class 10",
+    "brand": "Islamiyat",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 11",
+    "ur": "اسلامیات کتاب Class 11",
+    "aliases": "islamiat book, class 11",
+    "brand": "Islamiyat",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Islamiyat Textbook Class 12",
+    "ur": "اسلامیات کتاب Class 12",
+    "aliases": "islamiat book, class 12",
+    "brand": "Islamiyat",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Nursery",
+    "ur": "جنرل نالج کتاب Nursery",
+    "aliases": "gk book, nursery",
+    "brand": "General Knowledge",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Prep",
+    "ur": "جنرل نالج کتاب Prep",
+    "aliases": "gk book, prep",
+    "brand": "General Knowledge",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 1",
+    "ur": "جنرل نالج کتاب Class 1",
+    "aliases": "gk book, class 1",
+    "brand": "General Knowledge",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 2",
+    "ur": "جنرل نالج کتاب Class 2",
+    "aliases": "gk book, class 2",
+    "brand": "General Knowledge",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 3",
+    "ur": "جنرل نالج کتاب Class 3",
+    "aliases": "gk book, class 3",
+    "brand": "General Knowledge",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 4",
+    "ur": "جنرل نالج کتاب Class 4",
+    "aliases": "gk book, class 4",
+    "brand": "General Knowledge",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 5",
+    "ur": "جنرل نالج کتاب Class 5",
+    "aliases": "gk book, class 5",
+    "brand": "General Knowledge",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 6",
+    "ur": "جنرل نالج کتاب Class 6",
+    "aliases": "gk book, class 6",
+    "brand": "General Knowledge",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 7",
+    "ur": "جنرل نالج کتاب Class 7",
+    "aliases": "gk book, class 7",
+    "brand": "General Knowledge",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 8",
+    "ur": "جنرل نالج کتاب Class 8",
+    "aliases": "gk book, class 8",
+    "brand": "General Knowledge",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 9",
+    "ur": "جنرل نالج کتاب Class 9",
+    "aliases": "gk book, class 9",
+    "brand": "General Knowledge",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 10",
+    "ur": "جنرل نالج کتاب Class 10",
+    "aliases": "gk book, class 10",
+    "brand": "General Knowledge",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 11",
+    "ur": "جنرل نالج کتاب Class 11",
+    "aliases": "gk book, class 11",
+    "brand": "General Knowledge",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "General Knowledge Textbook Class 12",
+    "ur": "جنرل نالج کتاب Class 12",
+    "aliases": "gk book, class 12",
+    "brand": "General Knowledge",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Nursery",
+    "ur": "گرائمر کتاب Nursery",
+    "aliases": "grammar book, nursery",
+    "brand": "Grammar",
+    "variant": "Nursery",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Prep",
+    "ur": "گرائمر کتاب Prep",
+    "aliases": "grammar book, prep",
+    "brand": "Grammar",
+    "variant": "Prep",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 1",
+    "ur": "گرائمر کتاب Class 1",
+    "aliases": "grammar book, class 1",
+    "brand": "Grammar",
+    "variant": "Class 1",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 2",
+    "ur": "گرائمر کتاب Class 2",
+    "aliases": "grammar book, class 2",
+    "brand": "Grammar",
+    "variant": "Class 2",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 3",
+    "ur": "گرائمر کتاب Class 3",
+    "aliases": "grammar book, class 3",
+    "brand": "Grammar",
+    "variant": "Class 3",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 4",
+    "ur": "گرائمر کتاب Class 4",
+    "aliases": "grammar book, class 4",
+    "brand": "Grammar",
+    "variant": "Class 4",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 5",
+    "ur": "گرائمر کتاب Class 5",
+    "aliases": "grammar book, class 5",
+    "brand": "Grammar",
+    "variant": "Class 5",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 6",
+    "ur": "گرائمر کتاب Class 6",
+    "aliases": "grammar book, class 6",
+    "brand": "Grammar",
+    "variant": "Class 6",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 7",
+    "ur": "گرائمر کتاب Class 7",
+    "aliases": "grammar book, class 7",
+    "brand": "Grammar",
+    "variant": "Class 7",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 8",
+    "ur": "گرائمر کتاب Class 8",
+    "aliases": "grammar book, class 8",
+    "brand": "Grammar",
+    "variant": "Class 8",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 9",
+    "ur": "گرائمر کتاب Class 9",
+    "aliases": "grammar book, class 9",
+    "brand": "Grammar",
+    "variant": "Class 9",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 10",
+    "ur": "گرائمر کتاب Class 10",
+    "aliases": "grammar book, class 10",
+    "brand": "Grammar",
+    "variant": "Class 10",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 11",
+    "ur": "گرائمر کتاب Class 11",
+    "aliases": "grammar book, class 11",
+    "brand": "Grammar",
+    "variant": "Class 11",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "School Textbooks",
+    "en": "Grammar Textbook Class 12",
+    "ur": "گرائمر کتاب Class 12",
+    "aliases": "grammar book, class 12",
+    "brand": "Grammar",
+    "variant": "Class 12",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 40 Pages",
+    "ur": "نوٹ بک 40 صفحات",
+    "aliases": "copy, 40 pages",
+    "brand": "Notebook",
+    "variant": "40 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 60 Pages",
+    "ur": "نوٹ بک 60 صفحات",
+    "aliases": "copy, 60 pages",
+    "brand": "Notebook",
+    "variant": "60 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 80 Pages",
+    "ur": "نوٹ بک 80 صفحات",
+    "aliases": "copy, 80 pages",
+    "brand": "Notebook",
+    "variant": "80 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 100 Pages",
+    "ur": "نوٹ بک 100 صفحات",
+    "aliases": "copy, 100 pages",
+    "brand": "Notebook",
+    "variant": "100 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 120 Pages",
+    "ur": "نوٹ بک 120 صفحات",
+    "aliases": "copy, 120 pages",
+    "brand": "Notebook",
+    "variant": "120 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 160 Pages",
+    "ur": "نوٹ بک 160 صفحات",
+    "aliases": "copy, 160 pages",
+    "brand": "Notebook",
+    "variant": "160 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 192 Pages",
+    "ur": "نوٹ بک 192 صفحات",
+    "aliases": "copy, 192 pages",
+    "brand": "Notebook",
+    "variant": "192 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 200 Pages",
+    "ur": "نوٹ بک 200 صفحات",
+    "aliases": "copy, 200 pages",
+    "brand": "Notebook",
+    "variant": "200 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 240 Pages",
+    "ur": "نوٹ بک 240 صفحات",
+    "aliases": "copy, 240 pages",
+    "brand": "Notebook",
+    "variant": "240 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 300 Pages",
+    "ur": "نوٹ بک 300 صفحات",
+    "aliases": "copy, 300 pages",
+    "brand": "Notebook",
+    "variant": "300 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 400 Pages",
+    "ur": "نوٹ بک 400 صفحات",
+    "aliases": "copy, 400 pages",
+    "brand": "Notebook",
+    "variant": "400 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Notebook 500 Pages",
+    "ur": "نوٹ بک 500 صفحات",
+    "aliases": "copy, 500 pages",
+    "brand": "Notebook",
+    "variant": "500 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 40 Pages",
+    "ur": "رجسٹر 40 صفحات",
+    "aliases": "40 pages",
+    "brand": "Register",
+    "variant": "40 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 60 Pages",
+    "ur": "رجسٹر 60 صفحات",
+    "aliases": "60 pages",
+    "brand": "Register",
+    "variant": "60 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 80 Pages",
+    "ur": "رجسٹر 80 صفحات",
+    "aliases": "80 pages",
+    "brand": "Register",
+    "variant": "80 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 100 Pages",
+    "ur": "رجسٹر 100 صفحات",
+    "aliases": "100 pages",
+    "brand": "Register",
+    "variant": "100 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 120 Pages",
+    "ur": "رجسٹر 120 صفحات",
+    "aliases": "120 pages",
+    "brand": "Register",
+    "variant": "120 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 160 Pages",
+    "ur": "رجسٹر 160 صفحات",
+    "aliases": "160 pages",
+    "brand": "Register",
+    "variant": "160 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 192 Pages",
+    "ur": "رجسٹر 192 صفحات",
+    "aliases": "192 pages",
+    "brand": "Register",
+    "variant": "192 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 200 Pages",
+    "ur": "رجسٹر 200 صفحات",
+    "aliases": "200 pages",
+    "brand": "Register",
+    "variant": "200 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 240 Pages",
+    "ur": "رجسٹر 240 صفحات",
+    "aliases": "240 pages",
+    "brand": "Register",
+    "variant": "240 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 300 Pages",
+    "ur": "رجسٹر 300 صفحات",
+    "aliases": "300 pages",
+    "brand": "Register",
+    "variant": "300 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 400 Pages",
+    "ur": "رجسٹر 400 صفحات",
+    "aliases": "400 pages",
+    "brand": "Register",
+    "variant": "400 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Register 500 Pages",
+    "ur": "رجسٹر 500 صفحات",
+    "aliases": "500 pages",
+    "brand": "Register",
+    "variant": "500 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 40 Pages",
+    "ur": "پریکٹیکل کاپی 40 صفحات",
+    "aliases": "practical copy, 40 pages",
+    "brand": "Practical Notebook",
+    "variant": "40 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 60 Pages",
+    "ur": "پریکٹیکل کاپی 60 صفحات",
+    "aliases": "practical copy, 60 pages",
+    "brand": "Practical Notebook",
+    "variant": "60 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 80 Pages",
+    "ur": "پریکٹیکل کاپی 80 صفحات",
+    "aliases": "practical copy, 80 pages",
+    "brand": "Practical Notebook",
+    "variant": "80 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 100 Pages",
+    "ur": "پریکٹیکل کاپی 100 صفحات",
+    "aliases": "practical copy, 100 pages",
+    "brand": "Practical Notebook",
+    "variant": "100 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 120 Pages",
+    "ur": "پریکٹیکل کاپی 120 صفحات",
+    "aliases": "practical copy, 120 pages",
+    "brand": "Practical Notebook",
+    "variant": "120 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 160 Pages",
+    "ur": "پریکٹیکل کاپی 160 صفحات",
+    "aliases": "practical copy, 160 pages",
+    "brand": "Practical Notebook",
+    "variant": "160 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 192 Pages",
+    "ur": "پریکٹیکل کاپی 192 صفحات",
+    "aliases": "practical copy, 192 pages",
+    "brand": "Practical Notebook",
+    "variant": "192 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 200 Pages",
+    "ur": "پریکٹیکل کاپی 200 صفحات",
+    "aliases": "practical copy, 200 pages",
+    "brand": "Practical Notebook",
+    "variant": "200 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 240 Pages",
+    "ur": "پریکٹیکل کاپی 240 صفحات",
+    "aliases": "practical copy, 240 pages",
+    "brand": "Practical Notebook",
+    "variant": "240 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 300 Pages",
+    "ur": "پریکٹیکل کاپی 300 صفحات",
+    "aliases": "practical copy, 300 pages",
+    "brand": "Practical Notebook",
+    "variant": "300 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 400 Pages",
+    "ur": "پریکٹیکل کاپی 400 صفحات",
+    "aliases": "practical copy, 400 pages",
+    "brand": "Practical Notebook",
+    "variant": "400 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Practical Notebook 500 Pages",
+    "ur": "پریکٹیکل کاپی 500 صفحات",
+    "aliases": "practical copy, 500 pages",
+    "brand": "Practical Notebook",
+    "variant": "500 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 40 Pages",
+    "ur": "ڈرائنگ بک 40 صفحات",
+    "aliases": "drawing book, 40 pages",
+    "brand": "Drawing Book",
+    "variant": "40 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 60 Pages",
+    "ur": "ڈرائنگ بک 60 صفحات",
+    "aliases": "drawing book, 60 pages",
+    "brand": "Drawing Book",
+    "variant": "60 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 80 Pages",
+    "ur": "ڈرائنگ بک 80 صفحات",
+    "aliases": "drawing book, 80 pages",
+    "brand": "Drawing Book",
+    "variant": "80 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 100 Pages",
+    "ur": "ڈرائنگ بک 100 صفحات",
+    "aliases": "drawing book, 100 pages",
+    "brand": "Drawing Book",
+    "variant": "100 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 120 Pages",
+    "ur": "ڈرائنگ بک 120 صفحات",
+    "aliases": "drawing book, 120 pages",
+    "brand": "Drawing Book",
+    "variant": "120 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 160 Pages",
+    "ur": "ڈرائنگ بک 160 صفحات",
+    "aliases": "drawing book, 160 pages",
+    "brand": "Drawing Book",
+    "variant": "160 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 192 Pages",
+    "ur": "ڈرائنگ بک 192 صفحات",
+    "aliases": "drawing book, 192 pages",
+    "brand": "Drawing Book",
+    "variant": "192 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 200 Pages",
+    "ur": "ڈرائنگ بک 200 صفحات",
+    "aliases": "drawing book, 200 pages",
+    "brand": "Drawing Book",
+    "variant": "200 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 240 Pages",
+    "ur": "ڈرائنگ بک 240 صفحات",
+    "aliases": "drawing book, 240 pages",
+    "brand": "Drawing Book",
+    "variant": "240 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 300 Pages",
+    "ur": "ڈرائنگ بک 300 صفحات",
+    "aliases": "drawing book, 300 pages",
+    "brand": "Drawing Book",
+    "variant": "300 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 400 Pages",
+    "ur": "ڈرائنگ بک 400 صفحات",
+    "aliases": "drawing book, 400 pages",
+    "brand": "Drawing Book",
+    "variant": "400 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Drawing Book 500 Pages",
+    "ur": "ڈرائنگ بک 500 صفحات",
+    "aliases": "drawing book, 500 pages",
+    "brand": "Drawing Book",
+    "variant": "500 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 40 Pages",
+    "ur": "گراف بک 40 صفحات",
+    "aliases": "graph copy, 40 pages",
+    "brand": "Graph Book",
+    "variant": "40 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 60 Pages",
+    "ur": "گراف بک 60 صفحات",
+    "aliases": "graph copy, 60 pages",
+    "brand": "Graph Book",
+    "variant": "60 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 80 Pages",
+    "ur": "گراف بک 80 صفحات",
+    "aliases": "graph copy, 80 pages",
+    "brand": "Graph Book",
+    "variant": "80 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 100 Pages",
+    "ur": "گراف بک 100 صفحات",
+    "aliases": "graph copy, 100 pages",
+    "brand": "Graph Book",
+    "variant": "100 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 120 Pages",
+    "ur": "گراف بک 120 صفحات",
+    "aliases": "graph copy, 120 pages",
+    "brand": "Graph Book",
+    "variant": "120 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 160 Pages",
+    "ur": "گراف بک 160 صفحات",
+    "aliases": "graph copy, 160 pages",
+    "brand": "Graph Book",
+    "variant": "160 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 192 Pages",
+    "ur": "گراف بک 192 صفحات",
+    "aliases": "graph copy, 192 pages",
+    "brand": "Graph Book",
+    "variant": "192 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 200 Pages",
+    "ur": "گراف بک 200 صفحات",
+    "aliases": "graph copy, 200 pages",
+    "brand": "Graph Book",
+    "variant": "200 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 240 Pages",
+    "ur": "گراف بک 240 صفحات",
+    "aliases": "graph copy, 240 pages",
+    "brand": "Graph Book",
+    "variant": "240 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 300 Pages",
+    "ur": "گراف بک 300 صفحات",
+    "aliases": "graph copy, 300 pages",
+    "brand": "Graph Book",
+    "variant": "300 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 400 Pages",
+    "ur": "گراف بک 400 صفحات",
+    "aliases": "graph copy, 400 pages",
+    "brand": "Graph Book",
+    "variant": "400 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Stationery",
+    "subcategory": "Registers & Copies",
+    "en": "Graph Book 500 Pages",
+    "ur": "گراف بک 500 صفحات",
+    "aliases": "graph copy, 500 pages",
+    "brand": "Graph Book",
+    "variant": "500 pages",
+    "unit": "book"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Dictionary English Urdu",
+    "ur": "انگلش اردو ڈکشنری",
+    "aliases": "dictionary",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Urdu Dictionary",
+    "ur": "اردو لغت",
+    "aliases": "lughat",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Atlas",
+    "ur": "اٹلس",
+    "aliases": "atlas",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Story Book",
+    "ur": "کہانی کتاب",
+    "aliases": "story book",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Coloring Book",
+    "ur": "رنگ بھرنے کی کتاب",
+    "aliases": "coloring",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Diary",
+    "ur": "ڈائری",
+    "aliases": "diary",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Receipt Book",
+    "ur": "رسید بک",
+    "aliases": "receipt book",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Cash Memo Book",
+    "ur": "کیش میمو بک",
+    "aliases": "cash memo",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Books",
+    "subcategory": "General",
+    "en": "Ledger Book",
+    "ur": "کھاتہ رجسٹر",
+    "aliases": "khata register",
+    "brand": "Generic",
+    "variant": "",
+    "unit": "piece"
+  }
+]

@@ -1,0 +1,2302 @@
+[
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 20mm",
+    "ur": "پیڈ لاک 20mm",
+    "aliases": "tala, 20mm",
+    "brand": "Padlock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 25mm",
+    "ur": "پیڈ لاک 25mm",
+    "aliases": "tala, 25mm",
+    "brand": "Padlock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 30mm",
+    "ur": "پیڈ لاک 30mm",
+    "aliases": "tala, 30mm",
+    "brand": "Padlock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 40mm",
+    "ur": "پیڈ لاک 40mm",
+    "aliases": "tala, 40mm",
+    "brand": "Padlock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 50mm",
+    "ur": "پیڈ لاک 50mm",
+    "aliases": "tala, 50mm",
+    "brand": "Padlock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 60mm",
+    "ur": "پیڈ لاک 60mm",
+    "aliases": "tala, 60mm",
+    "brand": "Padlock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 70mm",
+    "ur": "پیڈ لاک 70mm",
+    "aliases": "tala, 70mm",
+    "brand": "Padlock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Padlock 80mm",
+    "ur": "پیڈ لاک 80mm",
+    "aliases": "tala, 80mm",
+    "brand": "Padlock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 20mm",
+    "ur": "مورٹِس لاک 20mm",
+    "aliases": "20mm",
+    "brand": "Mortise Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 25mm",
+    "ur": "مورٹِس لاک 25mm",
+    "aliases": "25mm",
+    "brand": "Mortise Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 30mm",
+    "ur": "مورٹِس لاک 30mm",
+    "aliases": "30mm",
+    "brand": "Mortise Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 40mm",
+    "ur": "مورٹِس لاک 40mm",
+    "aliases": "40mm",
+    "brand": "Mortise Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 50mm",
+    "ur": "مورٹِس لاک 50mm",
+    "aliases": "50mm",
+    "brand": "Mortise Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 60mm",
+    "ur": "مورٹِس لاک 60mm",
+    "aliases": "60mm",
+    "brand": "Mortise Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 70mm",
+    "ur": "مورٹِس لاک 70mm",
+    "aliases": "70mm",
+    "brand": "Mortise Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Mortise Lock 80mm",
+    "ur": "مورٹِس لاک 80mm",
+    "aliases": "80mm",
+    "brand": "Mortise Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 20mm",
+    "ur": "رم لاک 20mm",
+    "aliases": "rim lock, 20mm",
+    "brand": "Rim Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 25mm",
+    "ur": "رم لاک 25mm",
+    "aliases": "rim lock, 25mm",
+    "brand": "Rim Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 30mm",
+    "ur": "رم لاک 30mm",
+    "aliases": "rim lock, 30mm",
+    "brand": "Rim Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 40mm",
+    "ur": "رم لاک 40mm",
+    "aliases": "rim lock, 40mm",
+    "brand": "Rim Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 50mm",
+    "ur": "رم لاک 50mm",
+    "aliases": "rim lock, 50mm",
+    "brand": "Rim Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 60mm",
+    "ur": "رم لاک 60mm",
+    "aliases": "rim lock, 60mm",
+    "brand": "Rim Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 70mm",
+    "ur": "رم لاک 70mm",
+    "aliases": "rim lock, 70mm",
+    "brand": "Rim Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Rim Lock 80mm",
+    "ur": "رم لاک 80mm",
+    "aliases": "rim lock, 80mm",
+    "brand": "Rim Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 20mm",
+    "ur": "ڈیڈ بولٹ لاک 20mm",
+    "aliases": "dead bolt, 20mm",
+    "brand": "Deadbolt Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 25mm",
+    "ur": "ڈیڈ بولٹ لاک 25mm",
+    "aliases": "dead bolt, 25mm",
+    "brand": "Deadbolt Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 30mm",
+    "ur": "ڈیڈ بولٹ لاک 30mm",
+    "aliases": "dead bolt, 30mm",
+    "brand": "Deadbolt Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 40mm",
+    "ur": "ڈیڈ بولٹ لاک 40mm",
+    "aliases": "dead bolt, 40mm",
+    "brand": "Deadbolt Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 50mm",
+    "ur": "ڈیڈ بولٹ لاک 50mm",
+    "aliases": "dead bolt, 50mm",
+    "brand": "Deadbolt Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 60mm",
+    "ur": "ڈیڈ بولٹ لاک 60mm",
+    "aliases": "dead bolt, 60mm",
+    "brand": "Deadbolt Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 70mm",
+    "ur": "ڈیڈ بولٹ لاک 70mm",
+    "aliases": "dead bolt, 70mm",
+    "brand": "Deadbolt Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Deadbolt Lock 80mm",
+    "ur": "ڈیڈ بولٹ لاک 80mm",
+    "aliases": "dead bolt, 80mm",
+    "brand": "Deadbolt Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 20mm",
+    "ur": "سلنڈر لاک 20mm",
+    "aliases": "cylinder lock, 20mm",
+    "brand": "Cylinder Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 25mm",
+    "ur": "سلنڈر لاک 25mm",
+    "aliases": "cylinder lock, 25mm",
+    "brand": "Cylinder Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 30mm",
+    "ur": "سلنڈر لاک 30mm",
+    "aliases": "cylinder lock, 30mm",
+    "brand": "Cylinder Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 40mm",
+    "ur": "سلنڈر لاک 40mm",
+    "aliases": "cylinder lock, 40mm",
+    "brand": "Cylinder Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 50mm",
+    "ur": "سلنڈر لاک 50mm",
+    "aliases": "cylinder lock, 50mm",
+    "brand": "Cylinder Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 60mm",
+    "ur": "سلنڈر لاک 60mm",
+    "aliases": "cylinder lock, 60mm",
+    "brand": "Cylinder Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 70mm",
+    "ur": "سلنڈر لاک 70mm",
+    "aliases": "cylinder lock, 70mm",
+    "brand": "Cylinder Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cylinder Lock 80mm",
+    "ur": "سلنڈر لاک 80mm",
+    "aliases": "cylinder lock, 80mm",
+    "brand": "Cylinder Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 20mm",
+    "ur": "یورو پروفائل سلنڈر 20mm",
+    "aliases": "euro cylinder, 20mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 25mm",
+    "ur": "یورو پروفائل سلنڈر 25mm",
+    "aliases": "euro cylinder, 25mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 30mm",
+    "ur": "یورو پروفائل سلنڈر 30mm",
+    "aliases": "euro cylinder, 30mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 40mm",
+    "ur": "یورو پروفائل سلنڈر 40mm",
+    "aliases": "euro cylinder, 40mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 50mm",
+    "ur": "یورو پروفائل سلنڈر 50mm",
+    "aliases": "euro cylinder, 50mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 60mm",
+    "ur": "یورو پروفائل سلنڈر 60mm",
+    "aliases": "euro cylinder, 60mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 70mm",
+    "ur": "یورو پروفائل سلنڈر 70mm",
+    "aliases": "euro cylinder, 70mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Euro Profile Cylinder 80mm",
+    "ur": "یورو پروفائل سلنڈر 80mm",
+    "aliases": "euro cylinder, 80mm",
+    "brand": "Euro Profile Cylinder",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 20mm",
+    "ur": "ناب لاک 20mm",
+    "aliases": "knob lock, 20mm",
+    "brand": "Knob Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 25mm",
+    "ur": "ناب لاک 25mm",
+    "aliases": "knob lock, 25mm",
+    "brand": "Knob Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 30mm",
+    "ur": "ناب لاک 30mm",
+    "aliases": "knob lock, 30mm",
+    "brand": "Knob Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 40mm",
+    "ur": "ناب لاک 40mm",
+    "aliases": "knob lock, 40mm",
+    "brand": "Knob Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 50mm",
+    "ur": "ناب لاک 50mm",
+    "aliases": "knob lock, 50mm",
+    "brand": "Knob Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 60mm",
+    "ur": "ناب لاک 60mm",
+    "aliases": "knob lock, 60mm",
+    "brand": "Knob Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 70mm",
+    "ur": "ناب لاک 70mm",
+    "aliases": "knob lock, 70mm",
+    "brand": "Knob Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Knob Lock 80mm",
+    "ur": "ناب لاک 80mm",
+    "aliases": "knob lock, 80mm",
+    "brand": "Knob Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 20mm",
+    "ur": "لیور ہینڈل لاک 20mm",
+    "aliases": "lever lock, 20mm",
+    "brand": "Lever Handle Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 25mm",
+    "ur": "لیور ہینڈل لاک 25mm",
+    "aliases": "lever lock, 25mm",
+    "brand": "Lever Handle Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 30mm",
+    "ur": "لیور ہینڈل لاک 30mm",
+    "aliases": "lever lock, 30mm",
+    "brand": "Lever Handle Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 40mm",
+    "ur": "لیور ہینڈل لاک 40mm",
+    "aliases": "lever lock, 40mm",
+    "brand": "Lever Handle Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 50mm",
+    "ur": "لیور ہینڈل لاک 50mm",
+    "aliases": "lever lock, 50mm",
+    "brand": "Lever Handle Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 60mm",
+    "ur": "لیور ہینڈل لاک 60mm",
+    "aliases": "lever lock, 60mm",
+    "brand": "Lever Handle Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 70mm",
+    "ur": "لیور ہینڈل لاک 70mm",
+    "aliases": "lever lock, 70mm",
+    "brand": "Lever Handle Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Lever Handle Lock 80mm",
+    "ur": "لیور ہینڈل لاک 80mm",
+    "aliases": "lever lock, 80mm",
+    "brand": "Lever Handle Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 20mm",
+    "ur": "دراز لاک 20mm",
+    "aliases": "20mm",
+    "brand": "Drawer Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 25mm",
+    "ur": "دراز لاک 25mm",
+    "aliases": "25mm",
+    "brand": "Drawer Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 30mm",
+    "ur": "دراز لاک 30mm",
+    "aliases": "30mm",
+    "brand": "Drawer Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 40mm",
+    "ur": "دراز لاک 40mm",
+    "aliases": "40mm",
+    "brand": "Drawer Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 50mm",
+    "ur": "دراز لاک 50mm",
+    "aliases": "50mm",
+    "brand": "Drawer Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 60mm",
+    "ur": "دراز لاک 60mm",
+    "aliases": "60mm",
+    "brand": "Drawer Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 70mm",
+    "ur": "دراز لاک 70mm",
+    "aliases": "70mm",
+    "brand": "Drawer Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Drawer Lock 80mm",
+    "ur": "دراز لاک 80mm",
+    "aliases": "80mm",
+    "brand": "Drawer Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 20mm",
+    "ur": "الماری لاک 20mm",
+    "aliases": "almari lock, 20mm",
+    "brand": "Cupboard Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 25mm",
+    "ur": "الماری لاک 25mm",
+    "aliases": "almari lock, 25mm",
+    "brand": "Cupboard Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 30mm",
+    "ur": "الماری لاک 30mm",
+    "aliases": "almari lock, 30mm",
+    "brand": "Cupboard Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 40mm",
+    "ur": "الماری لاک 40mm",
+    "aliases": "almari lock, 40mm",
+    "brand": "Cupboard Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 50mm",
+    "ur": "الماری لاک 50mm",
+    "aliases": "almari lock, 50mm",
+    "brand": "Cupboard Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 60mm",
+    "ur": "الماری لاک 60mm",
+    "aliases": "almari lock, 60mm",
+    "brand": "Cupboard Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 70mm",
+    "ur": "الماری لاک 70mm",
+    "aliases": "almari lock, 70mm",
+    "brand": "Cupboard Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Cupboard Lock 80mm",
+    "ur": "الماری لاک 80mm",
+    "aliases": "almari lock, 80mm",
+    "brand": "Cupboard Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 20mm",
+    "ur": "گلاس ڈور لاک 20mm",
+    "aliases": "glass lock, 20mm",
+    "brand": "Glass Door Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 25mm",
+    "ur": "گلاس ڈور لاک 25mm",
+    "aliases": "glass lock, 25mm",
+    "brand": "Glass Door Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 30mm",
+    "ur": "گلاس ڈور لاک 30mm",
+    "aliases": "glass lock, 30mm",
+    "brand": "Glass Door Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 40mm",
+    "ur": "گلاس ڈور لاک 40mm",
+    "aliases": "glass lock, 40mm",
+    "brand": "Glass Door Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 50mm",
+    "ur": "گلاس ڈور لاک 50mm",
+    "aliases": "glass lock, 50mm",
+    "brand": "Glass Door Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 60mm",
+    "ur": "گلاس ڈور لاک 60mm",
+    "aliases": "glass lock, 60mm",
+    "brand": "Glass Door Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 70mm",
+    "ur": "گلاس ڈور لاک 70mm",
+    "aliases": "glass lock, 70mm",
+    "brand": "Glass Door Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Glass Door Lock 80mm",
+    "ur": "گلاس ڈور لاک 80mm",
+    "aliases": "glass lock, 80mm",
+    "brand": "Glass Door Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 20mm",
+    "ur": "شٹر لاک 20mm",
+    "aliases": "shutter lock, 20mm",
+    "brand": "Shutter Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 25mm",
+    "ur": "شٹر لاک 25mm",
+    "aliases": "shutter lock, 25mm",
+    "brand": "Shutter Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 30mm",
+    "ur": "شٹر لاک 30mm",
+    "aliases": "shutter lock, 30mm",
+    "brand": "Shutter Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 40mm",
+    "ur": "شٹر لاک 40mm",
+    "aliases": "shutter lock, 40mm",
+    "brand": "Shutter Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 50mm",
+    "ur": "شٹر لاک 50mm",
+    "aliases": "shutter lock, 50mm",
+    "brand": "Shutter Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 60mm",
+    "ur": "شٹر لاک 60mm",
+    "aliases": "shutter lock, 60mm",
+    "brand": "Shutter Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 70mm",
+    "ur": "شٹر لاک 70mm",
+    "aliases": "shutter lock, 70mm",
+    "brand": "Shutter Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Shutter Lock 80mm",
+    "ur": "شٹر لاک 80mm",
+    "aliases": "shutter lock, 80mm",
+    "brand": "Shutter Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 20mm",
+    "ur": "بائیک کیبل لاک 20mm",
+    "aliases": "cable lock, 20mm",
+    "brand": "Bike Cable Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 25mm",
+    "ur": "بائیک کیبل لاک 25mm",
+    "aliases": "cable lock, 25mm",
+    "brand": "Bike Cable Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 30mm",
+    "ur": "بائیک کیبل لاک 30mm",
+    "aliases": "cable lock, 30mm",
+    "brand": "Bike Cable Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 40mm",
+    "ur": "بائیک کیبل لاک 40mm",
+    "aliases": "cable lock, 40mm",
+    "brand": "Bike Cable Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 50mm",
+    "ur": "بائیک کیبل لاک 50mm",
+    "aliases": "cable lock, 50mm",
+    "brand": "Bike Cable Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 60mm",
+    "ur": "بائیک کیبل لاک 60mm",
+    "aliases": "cable lock, 60mm",
+    "brand": "Bike Cable Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 70mm",
+    "ur": "بائیک کیبل لاک 70mm",
+    "aliases": "cable lock, 70mm",
+    "brand": "Bike Cable Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Bike Cable Lock 80mm",
+    "ur": "بائیک کیبل لاک 80mm",
+    "aliases": "cable lock, 80mm",
+    "brand": "Bike Cable Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 20mm",
+    "ur": "کمبینیشن لاک 20mm",
+    "aliases": "number lock, 20mm",
+    "brand": "Combination Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 25mm",
+    "ur": "کمبینیشن لاک 25mm",
+    "aliases": "number lock, 25mm",
+    "brand": "Combination Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 30mm",
+    "ur": "کمبینیشن لاک 30mm",
+    "aliases": "number lock, 30mm",
+    "brand": "Combination Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 40mm",
+    "ur": "کمبینیشن لاک 40mm",
+    "aliases": "number lock, 40mm",
+    "brand": "Combination Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 50mm",
+    "ur": "کمبینیشن لاک 50mm",
+    "aliases": "number lock, 50mm",
+    "brand": "Combination Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 60mm",
+    "ur": "کمبینیشن لاک 60mm",
+    "aliases": "number lock, 60mm",
+    "brand": "Combination Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 70mm",
+    "ur": "کمبینیشن لاک 70mm",
+    "aliases": "number lock, 70mm",
+    "brand": "Combination Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Combination Lock 80mm",
+    "ur": "کمبینیشن لاک 80mm",
+    "aliases": "number lock, 80mm",
+    "brand": "Combination Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 20mm",
+    "ur": "ڈسک لاک 20mm",
+    "aliases": "disc lock, 20mm",
+    "brand": "Disc Lock",
+    "variant": "20mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 25mm",
+    "ur": "ڈسک لاک 25mm",
+    "aliases": "disc lock, 25mm",
+    "brand": "Disc Lock",
+    "variant": "25mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 30mm",
+    "ur": "ڈسک لاک 30mm",
+    "aliases": "disc lock, 30mm",
+    "brand": "Disc Lock",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 40mm",
+    "ur": "ڈسک لاک 40mm",
+    "aliases": "disc lock, 40mm",
+    "brand": "Disc Lock",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 50mm",
+    "ur": "ڈسک لاک 50mm",
+    "aliases": "disc lock, 50mm",
+    "brand": "Disc Lock",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 60mm",
+    "ur": "ڈسک لاک 60mm",
+    "aliases": "disc lock, 60mm",
+    "brand": "Disc Lock",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 70mm",
+    "ur": "ڈسک لاک 70mm",
+    "aliases": "disc lock, 70mm",
+    "brand": "Disc Lock",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Locks",
+    "subcategory": "Lock Types",
+    "en": "Disc Lock 80mm",
+    "ur": "ڈسک لاک 80mm",
+    "aliases": "disc lock, 80mm",
+    "brand": "Disc Lock",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 30mm",
+    "ur": "ڈور لاک سلنڈر 30mm",
+    "aliases": "30mm",
+    "brand": "Cylinder",
+    "variant": "30mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 35mm",
+    "ur": "ڈور لاک سلنڈر 35mm",
+    "aliases": "35mm",
+    "brand": "Cylinder",
+    "variant": "35mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 40mm",
+    "ur": "ڈور لاک سلنڈر 40mm",
+    "aliases": "40mm",
+    "brand": "Cylinder",
+    "variant": "40mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 45mm",
+    "ur": "ڈور لاک سلنڈر 45mm",
+    "aliases": "45mm",
+    "brand": "Cylinder",
+    "variant": "45mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 50mm",
+    "ur": "ڈور لاک سلنڈر 50mm",
+    "aliases": "50mm",
+    "brand": "Cylinder",
+    "variant": "50mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 60mm",
+    "ur": "ڈور لاک سلنڈر 60mm",
+    "aliases": "60mm",
+    "brand": "Cylinder",
+    "variant": "60mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 70mm",
+    "ur": "ڈور لاک سلنڈر 70mm",
+    "aliases": "70mm",
+    "brand": "Cylinder",
+    "variant": "70mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 80mm",
+    "ur": "ڈور لاک سلنڈر 80mm",
+    "aliases": "80mm",
+    "brand": "Cylinder",
+    "variant": "80mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 90mm",
+    "ur": "ڈور لاک سلنڈر 90mm",
+    "aliases": "90mm",
+    "brand": "Cylinder",
+    "variant": "90mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Cylinders",
+    "subcategory": "Lock Cylinders",
+    "en": "Door Lock Cylinder 100mm",
+    "ur": "ڈور لاک سلنڈر 100mm",
+    "aliases": "100mm",
+    "brand": "Cylinder",
+    "variant": "100mm",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank A1",
+    "ur": "گھر کی چابی بلینک A1",
+    "aliases": "A1",
+    "brand": "House Key Blank",
+    "variant": "A1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank A2",
+    "ur": "گھر کی چابی بلینک A2",
+    "aliases": "A2",
+    "brand": "House Key Blank",
+    "variant": "A2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank A3",
+    "ur": "گھر کی چابی بلینک A3",
+    "aliases": "A3",
+    "brand": "House Key Blank",
+    "variant": "A3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank B1",
+    "ur": "گھر کی چابی بلینک B1",
+    "aliases": "B1",
+    "brand": "House Key Blank",
+    "variant": "B1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank B2",
+    "ur": "گھر کی چابی بلینک B2",
+    "aliases": "B2",
+    "brand": "House Key Blank",
+    "variant": "B2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank B3",
+    "ur": "گھر کی چابی بلینک B3",
+    "aliases": "B3",
+    "brand": "House Key Blank",
+    "variant": "B3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank C1",
+    "ur": "گھر کی چابی بلینک C1",
+    "aliases": "C1",
+    "brand": "House Key Blank",
+    "variant": "C1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank C2",
+    "ur": "گھر کی چابی بلینک C2",
+    "aliases": "C2",
+    "brand": "House Key Blank",
+    "variant": "C2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank C3",
+    "ur": "گھر کی چابی بلینک C3",
+    "aliases": "C3",
+    "brand": "House Key Blank",
+    "variant": "C3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank D1",
+    "ur": "گھر کی چابی بلینک D1",
+    "aliases": "D1",
+    "brand": "House Key Blank",
+    "variant": "D1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank D2",
+    "ur": "گھر کی چابی بلینک D2",
+    "aliases": "D2",
+    "brand": "House Key Blank",
+    "variant": "D2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "House Key Blank D3",
+    "ur": "گھر کی چابی بلینک D3",
+    "aliases": "D3",
+    "brand": "House Key Blank",
+    "variant": "D3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank A1",
+    "ur": "تالا چابی بلینک A1",
+    "aliases": "tala key blank, A1",
+    "brand": "Padlock Key Blank",
+    "variant": "A1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank A2",
+    "ur": "تالا چابی بلینک A2",
+    "aliases": "tala key blank, A2",
+    "brand": "Padlock Key Blank",
+    "variant": "A2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank A3",
+    "ur": "تالا چابی بلینک A3",
+    "aliases": "tala key blank, A3",
+    "brand": "Padlock Key Blank",
+    "variant": "A3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank B1",
+    "ur": "تالا چابی بلینک B1",
+    "aliases": "tala key blank, B1",
+    "brand": "Padlock Key Blank",
+    "variant": "B1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank B2",
+    "ur": "تالا چابی بلینک B2",
+    "aliases": "tala key blank, B2",
+    "brand": "Padlock Key Blank",
+    "variant": "B2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank B3",
+    "ur": "تالا چابی بلینک B3",
+    "aliases": "tala key blank, B3",
+    "brand": "Padlock Key Blank",
+    "variant": "B3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank C1",
+    "ur": "تالا چابی بلینک C1",
+    "aliases": "tala key blank, C1",
+    "brand": "Padlock Key Blank",
+    "variant": "C1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank C2",
+    "ur": "تالا چابی بلینک C2",
+    "aliases": "tala key blank, C2",
+    "brand": "Padlock Key Blank",
+    "variant": "C2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank C3",
+    "ur": "تالا چابی بلینک C3",
+    "aliases": "tala key blank, C3",
+    "brand": "Padlock Key Blank",
+    "variant": "C3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank D1",
+    "ur": "تالا چابی بلینک D1",
+    "aliases": "tala key blank, D1",
+    "brand": "Padlock Key Blank",
+    "variant": "D1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank D2",
+    "ur": "تالا چابی بلینک D2",
+    "aliases": "tala key blank, D2",
+    "brand": "Padlock Key Blank",
+    "variant": "D2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Padlock Key Blank D3",
+    "ur": "تالا چابی بلینک D3",
+    "aliases": "tala key blank, D3",
+    "brand": "Padlock Key Blank",
+    "variant": "D3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank A1",
+    "ur": "کار چابی بلینک A1",
+    "aliases": "car key blank, A1",
+    "brand": "Car Key Blank",
+    "variant": "A1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank A2",
+    "ur": "کار چابی بلینک A2",
+    "aliases": "car key blank, A2",
+    "brand": "Car Key Blank",
+    "variant": "A2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank A3",
+    "ur": "کار چابی بلینک A3",
+    "aliases": "car key blank, A3",
+    "brand": "Car Key Blank",
+    "variant": "A3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank B1",
+    "ur": "کار چابی بلینک B1",
+    "aliases": "car key blank, B1",
+    "brand": "Car Key Blank",
+    "variant": "B1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank B2",
+    "ur": "کار چابی بلینک B2",
+    "aliases": "car key blank, B2",
+    "brand": "Car Key Blank",
+    "variant": "B2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank B3",
+    "ur": "کار چابی بلینک B3",
+    "aliases": "car key blank, B3",
+    "brand": "Car Key Blank",
+    "variant": "B3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank C1",
+    "ur": "کار چابی بلینک C1",
+    "aliases": "car key blank, C1",
+    "brand": "Car Key Blank",
+    "variant": "C1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank C2",
+    "ur": "کار چابی بلینک C2",
+    "aliases": "car key blank, C2",
+    "brand": "Car Key Blank",
+    "variant": "C2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank C3",
+    "ur": "کار چابی بلینک C3",
+    "aliases": "car key blank, C3",
+    "brand": "Car Key Blank",
+    "variant": "C3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank D1",
+    "ur": "کار چابی بلینک D1",
+    "aliases": "car key blank, D1",
+    "brand": "Car Key Blank",
+    "variant": "D1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank D2",
+    "ur": "کار چابی بلینک D2",
+    "aliases": "car key blank, D2",
+    "brand": "Car Key Blank",
+    "variant": "D2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Car Key Blank D3",
+    "ur": "کار چابی بلینک D3",
+    "aliases": "car key blank, D3",
+    "brand": "Car Key Blank",
+    "variant": "D3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank A1",
+    "ur": "موٹر سائیکل چابی بلینک A1",
+    "aliases": "bike key blank, A1",
+    "brand": "Motorcycle Key Blank",
+    "variant": "A1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank A2",
+    "ur": "موٹر سائیکل چابی بلینک A2",
+    "aliases": "bike key blank, A2",
+    "brand": "Motorcycle Key Blank",
+    "variant": "A2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank A3",
+    "ur": "موٹر سائیکل چابی بلینک A3",
+    "aliases": "bike key blank, A3",
+    "brand": "Motorcycle Key Blank",
+    "variant": "A3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank B1",
+    "ur": "موٹر سائیکل چابی بلینک B1",
+    "aliases": "bike key blank, B1",
+    "brand": "Motorcycle Key Blank",
+    "variant": "B1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank B2",
+    "ur": "موٹر سائیکل چابی بلینک B2",
+    "aliases": "bike key blank, B2",
+    "brand": "Motorcycle Key Blank",
+    "variant": "B2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank B3",
+    "ur": "موٹر سائیکل چابی بلینک B3",
+    "aliases": "bike key blank, B3",
+    "brand": "Motorcycle Key Blank",
+    "variant": "B3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank C1",
+    "ur": "موٹر سائیکل چابی بلینک C1",
+    "aliases": "bike key blank, C1",
+    "brand": "Motorcycle Key Blank",
+    "variant": "C1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank C2",
+    "ur": "موٹر سائیکل چابی بلینک C2",
+    "aliases": "bike key blank, C2",
+    "brand": "Motorcycle Key Blank",
+    "variant": "C2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank C3",
+    "ur": "موٹر سائیکل چابی بلینک C3",
+    "aliases": "bike key blank, C3",
+    "brand": "Motorcycle Key Blank",
+    "variant": "C3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank D1",
+    "ur": "موٹر سائیکل چابی بلینک D1",
+    "aliases": "bike key blank, D1",
+    "brand": "Motorcycle Key Blank",
+    "variant": "D1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank D2",
+    "ur": "موٹر سائیکل چابی بلینک D2",
+    "aliases": "bike key blank, D2",
+    "brand": "Motorcycle Key Blank",
+    "variant": "D2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Motorcycle Key Blank D3",
+    "ur": "موٹر سائیکل چابی بلینک D3",
+    "aliases": "bike key blank, D3",
+    "brand": "Motorcycle Key Blank",
+    "variant": "D3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank A1",
+    "ur": "ڈمپل چابی بلینک A1",
+    "aliases": "dimple key, A1",
+    "brand": "Dimple Key Blank",
+    "variant": "A1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank A2",
+    "ur": "ڈمپل چابی بلینک A2",
+    "aliases": "dimple key, A2",
+    "brand": "Dimple Key Blank",
+    "variant": "A2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank A3",
+    "ur": "ڈمپل چابی بلینک A3",
+    "aliases": "dimple key, A3",
+    "brand": "Dimple Key Blank",
+    "variant": "A3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank B1",
+    "ur": "ڈمپل چابی بلینک B1",
+    "aliases": "dimple key, B1",
+    "brand": "Dimple Key Blank",
+    "variant": "B1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank B2",
+    "ur": "ڈمپل چابی بلینک B2",
+    "aliases": "dimple key, B2",
+    "brand": "Dimple Key Blank",
+    "variant": "B2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank B3",
+    "ur": "ڈمپل چابی بلینک B3",
+    "aliases": "dimple key, B3",
+    "brand": "Dimple Key Blank",
+    "variant": "B3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank C1",
+    "ur": "ڈمپل چابی بلینک C1",
+    "aliases": "dimple key, C1",
+    "brand": "Dimple Key Blank",
+    "variant": "C1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank C2",
+    "ur": "ڈمپل چابی بلینک C2",
+    "aliases": "dimple key, C2",
+    "brand": "Dimple Key Blank",
+    "variant": "C2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank C3",
+    "ur": "ڈمپل چابی بلینک C3",
+    "aliases": "dimple key, C3",
+    "brand": "Dimple Key Blank",
+    "variant": "C3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank D1",
+    "ur": "ڈمپل چابی بلینک D1",
+    "aliases": "dimple key, D1",
+    "brand": "Dimple Key Blank",
+    "variant": "D1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank D2",
+    "ur": "ڈمپل چابی بلینک D2",
+    "aliases": "dimple key, D2",
+    "brand": "Dimple Key Blank",
+    "variant": "D2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Dimple Key Blank D3",
+    "ur": "ڈمپل چابی بلینک D3",
+    "aliases": "dimple key, D3",
+    "brand": "Dimple Key Blank",
+    "variant": "D3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank A1",
+    "ur": "کراس چابی بلینک A1",
+    "aliases": "cross key, A1",
+    "brand": "Cross Key Blank",
+    "variant": "A1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank A2",
+    "ur": "کراس چابی بلینک A2",
+    "aliases": "cross key, A2",
+    "brand": "Cross Key Blank",
+    "variant": "A2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank A3",
+    "ur": "کراس چابی بلینک A3",
+    "aliases": "cross key, A3",
+    "brand": "Cross Key Blank",
+    "variant": "A3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank B1",
+    "ur": "کراس چابی بلینک B1",
+    "aliases": "cross key, B1",
+    "brand": "Cross Key Blank",
+    "variant": "B1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank B2",
+    "ur": "کراس چابی بلینک B2",
+    "aliases": "cross key, B2",
+    "brand": "Cross Key Blank",
+    "variant": "B2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank B3",
+    "ur": "کراس چابی بلینک B3",
+    "aliases": "cross key, B3",
+    "brand": "Cross Key Blank",
+    "variant": "B3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank C1",
+    "ur": "کراس چابی بلینک C1",
+    "aliases": "cross key, C1",
+    "brand": "Cross Key Blank",
+    "variant": "C1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank C2",
+    "ur": "کراس چابی بلینک C2",
+    "aliases": "cross key, C2",
+    "brand": "Cross Key Blank",
+    "variant": "C2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank C3",
+    "ur": "کراس چابی بلینک C3",
+    "aliases": "cross key, C3",
+    "brand": "Cross Key Blank",
+    "variant": "C3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank D1",
+    "ur": "کراس چابی بلینک D1",
+    "aliases": "cross key, D1",
+    "brand": "Cross Key Blank",
+    "variant": "D1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank D2",
+    "ur": "کراس چابی بلینک D2",
+    "aliases": "cross key, D2",
+    "brand": "Cross Key Blank",
+    "variant": "D2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Cross Key Blank D3",
+    "ur": "کراس چابی بلینک D3",
+    "aliases": "cross key, D3",
+    "brand": "Cross Key Blank",
+    "variant": "D3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank A1",
+    "ur": "ٹیوبولر چابی بلینک A1",
+    "aliases": "tubular key, A1",
+    "brand": "Tubular Key Blank",
+    "variant": "A1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank A2",
+    "ur": "ٹیوبولر چابی بلینک A2",
+    "aliases": "tubular key, A2",
+    "brand": "Tubular Key Blank",
+    "variant": "A2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank A3",
+    "ur": "ٹیوبولر چابی بلینک A3",
+    "aliases": "tubular key, A3",
+    "brand": "Tubular Key Blank",
+    "variant": "A3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank B1",
+    "ur": "ٹیوبولر چابی بلینک B1",
+    "aliases": "tubular key, B1",
+    "brand": "Tubular Key Blank",
+    "variant": "B1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank B2",
+    "ur": "ٹیوبولر چابی بلینک B2",
+    "aliases": "tubular key, B2",
+    "brand": "Tubular Key Blank",
+    "variant": "B2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank B3",
+    "ur": "ٹیوبولر چابی بلینک B3",
+    "aliases": "tubular key, B3",
+    "brand": "Tubular Key Blank",
+    "variant": "B3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank C1",
+    "ur": "ٹیوبولر چابی بلینک C1",
+    "aliases": "tubular key, C1",
+    "brand": "Tubular Key Blank",
+    "variant": "C1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank C2",
+    "ur": "ٹیوبولر چابی بلینک C2",
+    "aliases": "tubular key, C2",
+    "brand": "Tubular Key Blank",
+    "variant": "C2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank C3",
+    "ur": "ٹیوبولر چابی بلینک C3",
+    "aliases": "tubular key, C3",
+    "brand": "Tubular Key Blank",
+    "variant": "C3",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank D1",
+    "ur": "ٹیوبولر چابی بلینک D1",
+    "aliases": "tubular key, D1",
+    "brand": "Tubular Key Blank",
+    "variant": "D1",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank D2",
+    "ur": "ٹیوبولر چابی بلینک D2",
+    "aliases": "tubular key, D2",
+    "brand": "Tubular Key Blank",
+    "variant": "D2",
+    "unit": "piece"
+  },
+  {
+    "category": "Keys",
+    "subcategory": "Key Blanks",
+    "en": "Tubular Key Blank D3",
+    "ur": "ٹیوبولر چابی بلینک D3",
+    "aliases": "tubular key, D3",
+    "brand": "Tubular Key Blank",
+    "variant": "D3",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Key Cutting Machine",
+    "ur": "کی کٹنگ مشین",
+    "aliases": "key machine",
+    "brand": "Key Cutting Machine",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Manual Key Cutter",
+    "ur": "مینول کی کٹر",
+    "aliases": "manual key cutter",
+    "brand": "Manual Key Cutter",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Key Duplicator",
+    "ur": "کی ڈپلیکیٹر",
+    "aliases": "key duplicator",
+    "brand": "Key Duplicator",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Key File",
+    "ur": "چابی فائل",
+    "aliases": "key file",
+    "brand": "Key File",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Key Gauge",
+    "ur": "کی گیج",
+    "aliases": "key gauge",
+    "brand": "Key Gauge",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Lock Pick Set",
+    "ur": "لاک پک سیٹ",
+    "aliases": "lock pick set",
+    "brand": "Lock Pick Set",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Tension Wrench",
+    "ur": "ٹینشن رنچ",
+    "aliases": "tension wrench",
+    "brand": "Tension Wrench",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Broken Key Extractor",
+    "ur": "ٹوٹی چابی نکالنے والا",
+    "aliases": "key extractor",
+    "brand": "Broken Key Extractor",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Graphite Lock Lubricant",
+    "ur": "گریفائٹ لاک لبریکینٹ",
+    "aliases": "lock graphite",
+    "brand": "Graphite Lock Lubricant",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Key Ring",
+    "ur": "چابی رنگ",
+    "aliases": "key ring",
+    "brand": "Key Ring",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Key Tag",
+    "ur": "چابی ٹیگ",
+    "aliases": "key tag",
+    "brand": "Key Tag",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Door Latch",
+    "ur": "دروازہ لیچ",
+    "aliases": "door latch",
+    "brand": "Door Latch",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Door Chain",
+    "ur": "دروازہ چین",
+    "aliases": "door chain",
+    "brand": "Door Chain",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Strike Plate",
+    "ur": "اسٹرائیک پلیٹ",
+    "aliases": "strike plate",
+    "brand": "Strike Plate",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Lock Body",
+    "ur": "لاک باڈی",
+    "aliases": "lock body",
+    "brand": "Lock Body",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "Locksmith Accessories",
+    "en": "Cylinder Cam",
+    "ur": "سلنڈر کیم",
+    "aliases": "cylinder cam",
+    "brand": "Cylinder Cam",
+    "variant": "",
+    "unit": "piece"
+  }
+]

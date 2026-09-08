@@ -39,7 +39,7 @@
     "subcategory": "Spices",
     "en": "Black Pepper",
     "ur": "کالی مرچ",
-    "aliases": "kali mirch, shan, whole, national, black pepper, black pepper 25g, shan black pepper, shan black pepper whole, کالی مرچ, black pepper 50g, black pepper 100g, black pepper 200g, black pepper 250g, black pepper 500g, black pepper 1kg, shan black pepper powder, national black pepper, national black pepper whole, national black pepper powder"
+    "aliases": "kali mirch, shan, whole, national, black pepper, shan black pepper, shan black pepper whole, کالی مرچ, black pepper 200g, shan black pepper powder, national black pepper, national black pepper whole, national black pepper powder"
   },
   {
     "category": "Cooking",
@@ -291,28 +291,28 @@
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "KitKat",
     "ur": "کٹ کیٹ",
-    "aliases": "kitkat, kit kat, nestle, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, dark, kitkat 1 piece, nestle kitkat chocolate, کٹ کیٹ, kitkat 10g, kitkat 20g, kitkat 25g, kitkat 30g, kitkat 40g, kitkat 50g, kitkat 80g, kitkat 100g, kitkat 12 pcs box, kitkat 24 pcs box, kitkat 48 pcs box, kitkat 100 pcs jar, nestle kitkat dark"
+    "aliases": "kitkat, kit kat, nestle, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, dark, kitkat 1 piece, nestle kitkat chocolate, کٹ کیٹ, kitkat 10g, kitkat 20g, kitkat 25g, kitkat 30g, kitkat 40g, kitkat 50g, kitkat 80g, kitkat 100g, kitkat 100 pcs jar, nestle kitkat dark"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Snickers",
     "ur": "سنیکرز",
-    "aliases": "snickers, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, mars snickers original, snickers 1 piece, سنیکرز, snickers 10g, snickers 20g, snickers 25g, snickers 30g, snickers 40g, snickers 50g, snickers 80g, snickers 100g, snickers 12 pcs box, snickers 24 pcs box, snickers 48 pcs box, snickers 100 pcs jar"
+    "aliases": "snickers, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, mars snickers original, snickers 1 piece, سنیکرز, snickers 10g, snickers 20g, snickers 25g, snickers 30g, snickers 40g, snickers 50g, snickers 80g, snickers 100g, snickers 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Bounty",
     "ur": "باؤنٹی",
-    "aliases": "bounty, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, bounty 1 piece, mars bounty coconut, باؤنٹی, bounty 10g, bounty 20g, bounty 25g, bounty 30g, bounty 40g, bounty 50g, bounty 80g, bounty 100g, bounty 12 pcs box, bounty 24 pcs box, bounty 48 pcs box, bounty 100 pcs jar"
+    "aliases": "bounty, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, bounty 1 piece, mars bounty coconut, باؤنٹی, bounty 10g, bounty 20g, bounty 25g, bounty 30g, bounty 40g, bounty 50g, bounty 80g, bounty 100g, bounty 100 pcs jar"
   },
   {
     "category": "Confectionery",
     "subcategory": "Chocolate / Candy / Toffee",
     "en": "Kinder Joy",
     "ur": "کنڈر جوائے",
-    "aliases": "kinder joy, kinder, classic, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, kinder joy 1 piece, kinder kinder joy, kinder kinder joy classic, کنڈر جوائے, kinder joy 10g, kinder joy 20g, kinder joy 25g, kinder joy 30g, kinder joy 40g, kinder joy 50g, kinder joy 80g, kinder joy 100g, kinder joy 12 pcs box, kinder joy 24 pcs box, kinder joy 48 pcs box, kinder joy 100 pcs jar"
+    "aliases": "kinder joy, kinder, classic, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, kinder joy 1 piece, kinder kinder joy, kinder kinder joy classic, کنڈر جوائے, kinder joy 10g, kinder joy 20g, kinder joy 25g, kinder joy 30g, kinder joy 40g, kinder joy 50g, kinder joy 80g, kinder joy 100g, kinder joy 100 pcs jar"
   },
   {
     "category": "Confectionery",
@@ -354,56 +354,56 @@
     "subcategory": "Soft Drinks",
     "en": "Coca-Cola",
     "ur": "کوکا کولا",
-    "aliases": "coke, coca cola, coca-cola, 345ml can, zero, diet, coca-cola 250ml, coca-cola coca-cola, coca-cola coca-cola original, کوکا کولا, coca-cola 300ml, coca-cola 345ml can, coca-cola 500ml, coca-cola 1l, coca-cola 1.5l, coca-cola 2.25l, coca-cola 6 pack, coca-cola 12 pack, coca-cola 24 pack, coca-cola coca-cola zero, coca-cola coca-cola diet"
+    "aliases": "coke, coca cola, coca-cola, 345ml can, zero, diet, coca-cola coca-cola, coca-cola coca-cola original, کوکا کولا, coca-cola 6 pack, coca-cola 12 pack, coca-cola 24 pack, coca-cola coca-cola zero, coca-cola coca-cola diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Sprite",
     "ur": "اسپرائٹ",
-    "aliases": "sprite, coca-cola, 345ml can, zero, diet, coca-cola sprite, coca-cola sprite original, sprite 250ml, اسپرائٹ, sprite 300ml, sprite 345ml can, sprite 500ml, sprite 1l, sprite 1.5l, sprite 2.25l, sprite 6 pack, sprite 12 pack, sprite 24 pack, coca-cola sprite zero, coca-cola sprite diet"
+    "aliases": "sprite, coca-cola, 345ml can, zero, diet, coca-cola sprite, coca-cola sprite original, اسپرائٹ, sprite 6 pack, sprite 12 pack, sprite 24 pack, coca-cola sprite zero, coca-cola sprite diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Fanta",
     "ur": "فانٹا",
-    "aliases": "fanta, coca-cola, 345ml can, zero, diet, coca-cola fanta, coca-cola fanta original, fanta 250ml, فانٹا, fanta 300ml, fanta 345ml can, fanta 500ml, fanta 1l, fanta 1.5l, fanta 2.25l, fanta 6 pack, fanta 12 pack, fanta 24 pack, coca-cola fanta zero, coca-cola fanta diet"
+    "aliases": "fanta, coca-cola, 345ml can, zero, diet, coca-cola fanta, coca-cola fanta original, فانٹا, fanta 6 pack, fanta 12 pack, fanta 24 pack, coca-cola fanta zero, coca-cola fanta diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Pepsi",
     "ur": "پیپسی",
-    "aliases": "pepsi, pepsico, 345ml can, zero, diet, pepsi 250ml, pepsico pepsi, pepsico pepsi original, پیپسی, pepsi 300ml, pepsi 345ml can, pepsi 500ml, pepsi 1l, pepsi 1.5l, pepsi 2.25l, pepsi 6 pack, pepsi 12 pack, pepsi 24 pack, pepsico pepsi zero, pepsico pepsi diet"
+    "aliases": "pepsi, pepsico, 345ml can, zero, diet, pepsico pepsi, pepsico pepsi original, پیپسی, pepsi 6 pack, pepsi 12 pack, pepsi 24 pack, pepsico pepsi zero, pepsico pepsi diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "7UP",
     "ur": "سیون اپ",
-    "aliases": "seven up, 7up, pepsico, 345ml can, zero, diet, 7up 250ml, pepsico 7up, pepsico 7up original, سیون اپ, 7up 300ml, 7up 345ml can, 7up 500ml, 7up 1l, 7up 1.5l, 7up 2.25l, 7up 6 pack, 7up 12 pack, 7up 24 pack, pepsico 7up zero, pepsico 7up diet"
+    "aliases": "seven up, 7up, pepsico, 345ml can, zero, diet, pepsico 7up, pepsico 7up original, سیون اپ, 7up 6 pack, 7up 12 pack, 7up 24 pack, pepsico 7up zero, pepsico 7up diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Mirinda",
     "ur": "مرنڈا",
-    "aliases": "mirinda, pepsico, 345ml can, zero, diet, mirinda 250ml, pepsico mirinda, pepsico mirinda original, مرنڈا, mirinda 300ml, mirinda 345ml can, mirinda 500ml, mirinda 1l, mirinda 1.5l, mirinda 2.25l, mirinda 6 pack, mirinda 12 pack, mirinda 24 pack, pepsico mirinda zero, pepsico mirinda diet"
+    "aliases": "mirinda, pepsico, 345ml can, zero, diet, pepsico mirinda, pepsico mirinda original, مرنڈا, mirinda 6 pack, mirinda 12 pack, mirinda 24 pack, pepsico mirinda zero, pepsico mirinda diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Mountain Dew",
     "ur": "ماؤنٹین ڈیو",
-    "aliases": "dew, pepsico, 345ml can, zero, diet, mountain dew, mountain dew 250ml, pepsico mountain dew, pepsico mountain dew original, ماؤنٹین ڈیو, mountain dew 300ml, mountain dew 345ml can, mountain dew 500ml, mountain dew 1l, mountain dew 1.5l, mountain dew 2.25l, mountain dew 6 pack, mountain dew 12 pack, mountain dew 24 pack, pepsico mountain dew zero, pepsico mountain dew diet"
+    "aliases": "dew, pepsico, 345ml can, zero, diet, mountain dew, pepsico mountain dew, pepsico mountain dew original, ماؤنٹین ڈیو, mountain dew 6 pack, mountain dew 12 pack, mountain dew 24 pack, pepsico mountain dew zero, pepsico mountain dew diet"
   },
   {
     "category": "Beverages",
     "subcategory": "Soft Drinks",
     "en": "Sting",
     "ur": "اسٹنگ",
-    "aliases": "sting, pepsico, 345ml can, zero, diet, pepsico sting, pepsico sting original, sting 250ml, اسٹنگ, sting 300ml, sting 345ml can, sting 500ml, sting 1l, sting 1.5l, sting 2.25l, sting 6 pack, sting 12 pack, sting 24 pack, pepsico sting zero, pepsico sting diet"
+    "aliases": "sting, pepsico, 345ml can, zero, diet, pepsico sting, pepsico sting original, اسٹنگ, sting 6 pack, sting 12 pack, sting 24 pack, pepsico sting zero, pepsico sting diet"
   },
   {
     "category": "General Store",

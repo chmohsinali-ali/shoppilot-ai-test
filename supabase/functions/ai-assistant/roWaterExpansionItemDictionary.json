@@ -1,0 +1,752 @@
+[
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "1 Stage RO System",
+    "ur": "1 اسٹیج آر او سسٹم",
+    "aliases": "1 stage ro",
+    "brand": "RO System",
+    "variant": "1 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "2 Stage RO System",
+    "ur": "2 اسٹیج آر او سسٹم",
+    "aliases": "2 stage ro",
+    "brand": "RO System",
+    "variant": "2 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "3 Stage RO System",
+    "ur": "3 اسٹیج آر او سسٹم",
+    "aliases": "3 stage ro",
+    "brand": "RO System",
+    "variant": "3 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "4 Stage RO System",
+    "ur": "4 اسٹیج آر او سسٹم",
+    "aliases": "4 stage ro",
+    "brand": "RO System",
+    "variant": "4 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "5 Stage RO System",
+    "ur": "5 اسٹیج آر او سسٹم",
+    "aliases": "5 stage ro",
+    "brand": "RO System",
+    "variant": "5 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "6 Stage RO System",
+    "ur": "6 اسٹیج آر او سسٹم",
+    "aliases": "6 stage ro",
+    "brand": "RO System",
+    "variant": "6 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "7 Stage RO System",
+    "ur": "7 اسٹیج آر او سسٹم",
+    "aliases": "7 stage ro",
+    "brand": "RO System",
+    "variant": "7 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "RO System",
+    "subcategory": "Stages",
+    "en": "8 Stage RO System",
+    "ur": "8 اسٹیج آر او سسٹم",
+    "aliases": "8 stage ro",
+    "brand": "RO System",
+    "variant": "8 Stage",
+    "unit": "set"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "PP Sediment Filter 10 inch",
+    "ur": "پی پی سیڈیمنٹ فلٹر 10 inch",
+    "aliases": "pp filter, 10 inch",
+    "brand": "PP Sediment Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "PP Sediment Filter 20 inch",
+    "ur": "پی پی سیڈیمنٹ فلٹر 20 inch",
+    "aliases": "pp filter, 20 inch",
+    "brand": "PP Sediment Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "GAC Carbon Filter 10 inch",
+    "ur": "جی اے سی کاربن فلٹر 10 inch",
+    "aliases": "gac filter, 10 inch",
+    "brand": "GAC Carbon Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "GAC Carbon Filter 20 inch",
+    "ur": "جی اے سی کاربن فلٹر 20 inch",
+    "aliases": "gac filter, 20 inch",
+    "brand": "GAC Carbon Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "CTO Carbon Block Filter 10 inch",
+    "ur": "سی ٹی او کاربن فلٹر 10 inch",
+    "aliases": "cto filter, 10 inch",
+    "brand": "CTO Carbon Block Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "CTO Carbon Block Filter 20 inch",
+    "ur": "سی ٹی او کاربن فلٹر 20 inch",
+    "aliases": "cto filter, 20 inch",
+    "brand": "CTO Carbon Block Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Post Carbon Filter 10 inch",
+    "ur": "پوسٹ کاربن فلٹر 10 inch",
+    "aliases": "post carbon, 10 inch",
+    "brand": "Post Carbon Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Post Carbon Filter 20 inch",
+    "ur": "پوسٹ کاربن فلٹر 20 inch",
+    "aliases": "post carbon, 20 inch",
+    "brand": "Post Carbon Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Mineral Filter 10 inch",
+    "ur": "منرل فلٹر 10 inch",
+    "aliases": "mineral filter, 10 inch",
+    "brand": "Mineral Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Mineral Filter 20 inch",
+    "ur": "منرل فلٹر 20 inch",
+    "aliases": "mineral filter, 20 inch",
+    "brand": "Mineral Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Alkaline Filter 10 inch",
+    "ur": "الکلائن فلٹر 10 inch",
+    "aliases": "alkaline filter, 10 inch",
+    "brand": "Alkaline Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Alkaline Filter 20 inch",
+    "ur": "الکلائن فلٹر 20 inch",
+    "aliases": "alkaline filter, 20 inch",
+    "brand": "Alkaline Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "UF Membrane",
+    "ur": "یو ایف ممبرین",
+    "aliases": "uf membrane, standard",
+    "brand": "UF Membrane",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "RO Membrane 50 GPD",
+    "ur": "آر او ممبرین 50 GPD",
+    "aliases": "50 gpd",
+    "brand": "RO Membrane",
+    "variant": "50 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "RO Membrane 75 GPD",
+    "ur": "آر او ممبرین 75 GPD",
+    "aliases": "75 gpd",
+    "brand": "RO Membrane",
+    "variant": "75 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "RO Membrane 100 GPD",
+    "ur": "آر او ممبرین 100 GPD",
+    "aliases": "100 gpd",
+    "brand": "RO Membrane",
+    "variant": "100 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "RO Membrane 150 GPD",
+    "ur": "آر او ممبرین 150 GPD",
+    "aliases": "150 gpd",
+    "brand": "RO Membrane",
+    "variant": "150 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "RO Membrane 200 GPD",
+    "ur": "آر او ممبرین 200 GPD",
+    "aliases": "200 gpd",
+    "brand": "RO Membrane",
+    "variant": "200 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "RO Membrane 300 GPD",
+    "ur": "آر او ممبرین 300 GPD",
+    "aliases": "300 gpd",
+    "brand": "RO Membrane",
+    "variant": "300 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "RO Membrane 400 GPD",
+    "ur": "آر او ممبرین 400 GPD",
+    "aliases": "400 gpd",
+    "brand": "RO Membrane",
+    "variant": "400 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Ceramic Filter 10 inch",
+    "ur": "سیرامک فلٹر 10 inch",
+    "aliases": "ceramic filter, 10 inch",
+    "brand": "Ceramic Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "Ceramic Filter 20 inch",
+    "ur": "سیرامک فلٹر 20 inch",
+    "aliases": "ceramic filter, 20 inch",
+    "brand": "Ceramic Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "T33 Filter 10 inch",
+    "ur": "ٹی 33 فلٹر 10 inch",
+    "aliases": "t33 filter, 10 inch",
+    "brand": "T33 Filter",
+    "variant": "10 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Filters",
+    "subcategory": "Filter Cartridges",
+    "en": "T33 Filter 20 inch",
+    "ur": "ٹی 33 فلٹر 20 inch",
+    "aliases": "t33 filter, 20 inch",
+    "brand": "T33 Filter",
+    "variant": "20 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Pumps",
+    "subcategory": "Booster Pumps",
+    "en": "RO Booster Pump 50 GPD",
+    "ur": "آر او بوسٹر پمپ 50 GPD",
+    "aliases": "50 GPD",
+    "brand": "Booster Pump",
+    "variant": "50 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Pumps",
+    "subcategory": "Booster Pumps",
+    "en": "RO Booster Pump 75 GPD",
+    "ur": "آر او بوسٹر پمپ 75 GPD",
+    "aliases": "75 GPD",
+    "brand": "Booster Pump",
+    "variant": "75 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Pumps",
+    "subcategory": "Booster Pumps",
+    "en": "RO Booster Pump 100 GPD",
+    "ur": "آر او بوسٹر پمپ 100 GPD",
+    "aliases": "100 GPD",
+    "brand": "Booster Pump",
+    "variant": "100 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Pumps",
+    "subcategory": "Booster Pumps",
+    "en": "RO Booster Pump 150 GPD",
+    "ur": "آر او بوسٹر پمپ 150 GPD",
+    "aliases": "150 GPD",
+    "brand": "Booster Pump",
+    "variant": "150 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Pumps",
+    "subcategory": "Booster Pumps",
+    "en": "RO Booster Pump 200 GPD",
+    "ur": "آر او بوسٹر پمپ 200 GPD",
+    "aliases": "200 GPD",
+    "brand": "Booster Pump",
+    "variant": "200 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Pumps",
+    "subcategory": "Booster Pumps",
+    "en": "RO Booster Pump 300 GPD",
+    "ur": "آر او بوسٹر پمپ 300 GPD",
+    "aliases": "300 GPD",
+    "brand": "Booster Pump",
+    "variant": "300 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Pumps",
+    "subcategory": "Booster Pumps",
+    "en": "RO Booster Pump 400 GPD",
+    "ur": "آر او بوسٹر پمپ 400 GPD",
+    "aliases": "400 GPD",
+    "brand": "Booster Pump",
+    "variant": "400 GPD",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "RO Pipe 1/4 inch",
+    "ur": "آر او پائپ 1/4 inch",
+    "aliases": "1/4 inch",
+    "brand": "RO Pipe",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Elbow Connector 1/4 inch",
+    "ur": "ایلبو کنیکٹر 1/4 inch",
+    "aliases": "ro elbow, 1/4 inch",
+    "brand": "Elbow Connector",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Tee Connector 1/4 inch",
+    "ur": "ٹی کنیکٹر 1/4 inch",
+    "aliases": "ro tee, 1/4 inch",
+    "brand": "Tee Connector",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Straight Connector 1/4 inch",
+    "ur": "سیدھا کنیکٹر 1/4 inch",
+    "aliases": "straight connector, 1/4 inch",
+    "brand": "Straight Connector",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Ball Valve 1/4 inch",
+    "ur": "بال والو 1/4 inch",
+    "aliases": "ro valve, 1/4 inch",
+    "brand": "Ball Valve",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Check Valve 1/4 inch",
+    "ur": "چیک والو 1/4 inch",
+    "aliases": "check valve, 1/4 inch",
+    "brand": "Check Valve",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Flow Restrictor 1/4 inch",
+    "ur": "فلو رسٹرکٹر 1/4 inch",
+    "aliases": "flow restrictor, 1/4 inch",
+    "brand": "Flow Restrictor",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Bulkhead Fitting 1/4 inch",
+    "ur": "بلک ہیڈ فٹنگ 1/4 inch",
+    "aliases": "bulkhead, 1/4 inch",
+    "brand": "Bulkhead Fitting",
+    "variant": "1/4 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "RO Pipe 3/8 inch",
+    "ur": "آر او پائپ 3/8 inch",
+    "aliases": "3/8 inch",
+    "brand": "RO Pipe",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Elbow Connector 3/8 inch",
+    "ur": "ایلبو کنیکٹر 3/8 inch",
+    "aliases": "ro elbow, 3/8 inch",
+    "brand": "Elbow Connector",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Tee Connector 3/8 inch",
+    "ur": "ٹی کنیکٹر 3/8 inch",
+    "aliases": "ro tee, 3/8 inch",
+    "brand": "Tee Connector",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Straight Connector 3/8 inch",
+    "ur": "سیدھا کنیکٹر 3/8 inch",
+    "aliases": "straight connector, 3/8 inch",
+    "brand": "Straight Connector",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Ball Valve 3/8 inch",
+    "ur": "بال والو 3/8 inch",
+    "aliases": "ro valve, 3/8 inch",
+    "brand": "Ball Valve",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Check Valve 3/8 inch",
+    "ur": "چیک والو 3/8 inch",
+    "aliases": "check valve, 3/8 inch",
+    "brand": "Check Valve",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Flow Restrictor 3/8 inch",
+    "ur": "فلو رسٹرکٹر 3/8 inch",
+    "aliases": "flow restrictor, 3/8 inch",
+    "brand": "Flow Restrictor",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Bulkhead Fitting 3/8 inch",
+    "ur": "بلک ہیڈ فٹنگ 3/8 inch",
+    "aliases": "bulkhead, 3/8 inch",
+    "brand": "Bulkhead Fitting",
+    "variant": "3/8 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "RO Pipe 1/2 inch",
+    "ur": "آر او پائپ 1/2 inch",
+    "aliases": "1/2 inch",
+    "brand": "RO Pipe",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Elbow Connector 1/2 inch",
+    "ur": "ایلبو کنیکٹر 1/2 inch",
+    "aliases": "ro elbow, 1/2 inch",
+    "brand": "Elbow Connector",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Tee Connector 1/2 inch",
+    "ur": "ٹی کنیکٹر 1/2 inch",
+    "aliases": "ro tee, 1/2 inch",
+    "brand": "Tee Connector",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Straight Connector 1/2 inch",
+    "ur": "سیدھا کنیکٹر 1/2 inch",
+    "aliases": "straight connector, 1/2 inch",
+    "brand": "Straight Connector",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Ball Valve 1/2 inch",
+    "ur": "بال والو 1/2 inch",
+    "aliases": "ro valve, 1/2 inch",
+    "brand": "Ball Valve",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Check Valve 1/2 inch",
+    "ur": "چیک والو 1/2 inch",
+    "aliases": "check valve, 1/2 inch",
+    "brand": "Check Valve",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Flow Restrictor 1/2 inch",
+    "ur": "فلو رسٹرکٹر 1/2 inch",
+    "aliases": "flow restrictor, 1/2 inch",
+    "brand": "Flow Restrictor",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Fittings",
+    "subcategory": "RO Fittings",
+    "en": "Bulkhead Fitting 1/2 inch",
+    "ur": "بلک ہیڈ فٹنگ 1/2 inch",
+    "aliases": "bulkhead, 1/2 inch",
+    "brand": "Bulkhead Fitting",
+    "variant": "1/2 inch",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Filter Housing",
+    "ur": "فلٹر ہاؤسنگ",
+    "aliases": "filter housing",
+    "brand": "Filter Housing",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Housing Wrench",
+    "ur": "ہاؤسنگ رنچ",
+    "aliases": "housing key",
+    "brand": "Housing Wrench",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Pressure Tank",
+    "ur": "پریشر ٹینک",
+    "aliases": "",
+    "brand": "Pressure Tank",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Tank Ball Valve",
+    "ur": "ٹینک بال والو",
+    "aliases": "tank valve",
+    "brand": "Tank Ball Valve",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "High Pressure Switch",
+    "ur": "ہائی پریشر سوئچ",
+    "aliases": "high pressure switch",
+    "brand": "High Pressure Switch",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Low Pressure Switch",
+    "ur": "لو پریشر سوئچ",
+    "aliases": "low pressure switch",
+    "brand": "Low Pressure Switch",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Solenoid Valve",
+    "ur": "سولینائڈ والو",
+    "aliases": "solenoid valve",
+    "brand": "Solenoid Valve",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Auto Shut Off Valve",
+    "ur": "آٹو شٹ آف والو",
+    "aliases": "asv valve",
+    "brand": "Auto Shut Off Valve",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Filter Clip",
+    "ur": "فلٹر کلپ",
+    "aliases": "filter clip",
+    "brand": "Filter Clip",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Membrane Housing",
+    "ur": "ممبرین ہاؤسنگ",
+    "aliases": "membrane housing",
+    "brand": "Membrane Housing",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "RO Transformer",
+    "ur": "آر او ٹرانسفارمر",
+    "aliases": "ro adapter",
+    "brand": "RO Transformer",
+    "variant": "",
+    "unit": "piece"
+  },
+  {
+    "category": "Accessories",
+    "subcategory": "RO Accessories",
+    "en": "Leak Detector",
+    "ur": "لیک ڈیٹیکٹر",
+    "aliases": "leak detector",
+    "brand": "Leak Detector",
+    "variant": "",
+    "unit": "piece"
+  }
+]
