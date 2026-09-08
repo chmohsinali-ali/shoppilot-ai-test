@@ -268,13 +268,11 @@ export function SaleDetailPage() {
 
         {/* Totals */}
         {!editMode ? (
-          <div className="space-y-1.5 border-t border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
-            <div className="flex justify-between"><BiLabel en="Subtotal" ur="ذیلی ٹوٹل" /><span className="text-slate-700 dark:text-slate-300">{formatMoney(Number(sale.subtotal), cur)}</span></div>
-            {Number(sale.discount_total) > 0 && <div className="flex justify-between"><BiLabel en="Discount" ur="رعایت" /><span className="text-amber-600">- {formatMoney(Number(sale.discount_total), cur)}</span></div>}
-            {Number(sale.tax_total) > 0 && <div className="flex justify-between"><BiLabel en="Tax" ur="ٹیکس" /><span className="text-slate-700 dark:text-slate-300">+ {formatMoney(Number(sale.tax_total), cur)}</span></div>}
-            <div className="flex justify-between border-t border-slate-100 pt-2 dark:border-slate-800"><BiLabel en="Grand Total" ur="کل رقم" className="font-semibold" /><span className="text-lg font-bold">{formatMoney(Number(sale.grand_total), cur)}</span></div>
-            <div className="flex justify-between"><BiLabel en="Paid" ur="ادا شدہ" /><span className="text-emerald-600">{formatMoney(Number(sale.amount_paid), cur)}</span></div>
-            {Number(sale.balance) > 0 && <div className="flex justify-between"><BiLabel en="Balance" ur="بقایا" /><span className="font-semibold text-amber-600">{formatMoney(Number(sale.balance), cur)}</span></div>}
+          <div className="border-t border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
+            <div className="flex justify-between">
+              <BiLabel en="Balance" ur="بقایا" className="font-semibold" />
+              <span className={`text-lg font-bold ${Number(sale.balance) > 0 ? 'text-amber-600' : 'text-emerald-600'}`}>{formatMoney(Number(sale.balance), cur)}</span>
+            </div>
           </div>
         ) : (
           <div className="space-y-2 border-t border-slate-100 px-6 py-4 text-sm dark:border-slate-800">
