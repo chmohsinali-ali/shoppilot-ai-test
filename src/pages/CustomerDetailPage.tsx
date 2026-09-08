@@ -551,7 +551,7 @@ function PaymentModal({ open, onClose, customer, onDone }: { open: boolean; onCl
 
 function BilingualLabel({ en, ur }: { en: string; ur: string }) {
   return (
-    <span className="flex flex-wrap items-baseline gap-x-1.5 text-slate-500 dark:text-slate-400">
+    <span className="inline-flex flex-shrink-0 items-baseline gap-x-1.5 whitespace-nowrap text-slate-500 dark:text-slate-400">
       {en}
       <span className="text-slate-300 dark:text-slate-600">/</span>
       <span dir="rtl" lang="ur">{ur}</span>
