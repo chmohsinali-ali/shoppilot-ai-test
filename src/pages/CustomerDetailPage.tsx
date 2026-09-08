@@ -549,6 +549,16 @@ function PaymentModal({ open, onClose, customer, onDone }: { open: boolean; onCl
   );
 }
 
+function BilingualLabel({ en, ur }: { en: string; ur: string }) {
+  return (
+    <span className="flex flex-wrap items-baseline gap-x-1.5 text-slate-500 dark:text-slate-400">
+      {en}
+      <span className="text-slate-300 dark:text-slate-600">/</span>
+      <span dir="rtl" lang="ur">{ur}</span>
+    </span>
+  );
+}
+
 function PaymentDetailsModal({
   entry, previousBalance, cur, onClose, onReverse,
 }: { entry: LedgerEntry; previousBalance: number; cur: string; onClose: () => void; onReverse: () => void }) {
@@ -566,15 +576,15 @@ function PaymentDetailsModal({
         </div>
         <div className="space-y-2 rounded-lg bg-slate-50 p-4 dark:bg-slate-800/50">
           <div className="flex justify-between text-sm">
-            <span className="text-slate-500 dark:text-slate-400">Payment Received</span>
+            <BilingualLabel en="Payment Received" ur="رقم آ گئی" />
             <span className="font-semibold text-emerald-600 dark:text-emerald-400">{formatMoney(Number(entry.credit_amount), cur)}</span>
           </div>
           <div className="flex justify-between text-sm">
-            <span className="text-slate-500 dark:text-slate-400">Previous Balance</span>
+            <BilingualLabel en="Previous Balance" ur="پچھلا بیلنس" />
             <span className="font-medium text-slate-700 dark:text-slate-300">{formatMoney(previousBalance, cur)}</span>
           </div>
           <div className="flex justify-between border-t border-slate-200 pt-2 text-sm dark:border-slate-700">
-            <span className="text-slate-500 dark:text-slate-400">Remaining Balance</span>
+            <BilingualLabel en="Remaining Balance" ur="باقی بیلنس" />
             <span className="font-semibold text-emerald-800 dark:text-emerald-400">{formatMoney(Number(entry.running_balance), cur)}</span>
           </div>
         </div>
