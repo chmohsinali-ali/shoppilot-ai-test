@@ -24,7 +24,7 @@ export function SaleDetailPage() {
 
   // Inline edit mode — stays on this same page instead of navigating away.
   const [editMode, setEditMode] = useState(false);
-  const [editLines, setEditLines] = useState<Array<{ key: string; product_id: string | null; product_name: string; unit: string; quantity: number; price: number }>>([]);
+  const [editLines, setEditLines] = useState<Array<{ key: string; product_id: string | null; product_name: string; product_name_ur: string; unit: string; quantity: number; price: number }>>([]);
   const [editAmountPaid, setEditAmountPaid] = useState(0);
   const [savingEdit, setSavingEdit] = useState(false);
 
@@ -57,7 +57,7 @@ export function SaleDetailPage() {
 
   const startEdit = () => {
     setEditLines(items.map((it) => ({
-      key: it.id, product_id: it.product_id ?? null, product_name: it.product_name,
+      key: it.id, product_id: it.product_id ?? null, product_name: it.product_name, product_name_ur: it.product_name_ur ?? '',
       unit: it.unit, quantity: Number(it.quantity), price: Number(it.price),
     })));
     setEditAmountPaid(Number(sale.amount_paid));
@@ -70,7 +70,7 @@ export function SaleDetailPage() {
 
   const removeEditLine = (key: string) => setEditLines((lines) => lines.filter((l) => l.key !== key));
 
-  const addEditLine = () => setEditLines((lines) => [...lines, { key: Math.random().toString(36).slice(2), product_id: null, product_name: '', unit: 'piece', quantity: 1, price: 0 }]);
+  const addEditLine = () => setEditLines((lines) => [...lines, { key: Math.random().toString(36).slice(2), product_id: null, product_name: '', product_name_ur: '', unit: 'piece', quantity: 1, price: 0 }]);
 
   const editGrandTotal = editLines.reduce((s, l) => s + l.quantity * l.price, 0) - Number(sale.discount_total);
 
@@ -89,7 +89,7 @@ export function SaleDetailPage() {
     if (cancelErr) { setSavingEdit(false); toast('error', cancelErr.message); return; }
 
     const itemsJson = editLines.map((l) => ({
-      product_id: l.product_id ?? '', product_name: l.product_name, unit: l.unit,
+      product_id: l.product_id ?? '', product_name: l.product_name, product_name_ur: l.product_name_ur, unit: l.unit,
       quantity: l.quantity, price: l.price, discount: 0, tax_rate: 0,
     }));
     const { data: newId, error: createErr } = await supabase.rpc('create_sale', {

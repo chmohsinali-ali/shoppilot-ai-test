@@ -25,7 +25,7 @@ export function PurchaseDetailPage() {
 
   // Inline edit mode — stays on this same page instead of navigating away.
   const [editMode, setEditMode] = useState(false);
-  const [editLines, setEditLines] = useState<Array<{ key: string; product_id: string | null; product_name: string; unit: string; ordered_quantity: number; free_units: number; price_per_unit: number }>>([]);
+  const [editLines, setEditLines] = useState<Array<{ key: string; product_id: string | null; product_name: string; product_name_ur: string; unit: string; ordered_quantity: number; free_units: number; price_per_unit: number }>>([]);
   const [editAmountPaid, setEditAmountPaid] = useState(0);
   const [savingEdit, setSavingEdit] = useState(false);
 
@@ -77,7 +77,7 @@ export function PurchaseDetailPage() {
 
   const startEdit = () => {
     setEditLines(items.map((it) => ({
-      key: it.id, product_id: it.product_id ?? null, product_name: it.product_name, unit: it.unit,
+      key: it.id, product_id: it.product_id ?? null, product_name: it.product_name, product_name_ur: it.product_name_ur ?? '', unit: it.unit,
       ordered_quantity: Number(it.ordered_quantity), free_units: Number(it.free_units), price_per_unit: Number(it.price_per_unit),
     })));
     setEditAmountPaid(Number(purchase.amount_paid));
@@ -89,7 +89,7 @@ export function PurchaseDetailPage() {
   };
 
   const removeEditLine = (key: string) => setEditLines((lines) => lines.filter((l) => l.key !== key));
-  const addEditLine = () => setEditLines((lines) => [...lines, { key: Math.random().toString(36).slice(2), product_id: null, product_name: '', unit: 'piece', ordered_quantity: 1, free_units: 0, price_per_unit: 0 }]);
+  const addEditLine = () => setEditLines((lines) => [...lines, { key: Math.random().toString(36).slice(2), product_id: null, product_name: '', product_name_ur: '', unit: 'piece', ordered_quantity: 1, free_units: 0, price_per_unit: 0 }]);
 
   const editGrandTotal = editLines.reduce((s, l) => s + l.ordered_quantity * l.price_per_unit, 0) - Number(purchase.discount_total) + Number(purchase.tax_total);
 
@@ -106,7 +106,7 @@ export function PurchaseDetailPage() {
     if (cancelErr) { setSavingEdit(false); toast('error', cancelErr.message); return; }
 
     const itemsJson = editLines.map((l) => ({
-      product_id: l.product_id ?? '', product_name: l.product_name, unit: l.unit,
+      product_id: l.product_id ?? '', product_name: l.product_name, product_name_ur: l.product_name_ur, unit: l.unit,
       ordered_quantity: l.ordered_quantity, free_units: l.free_units, price_per_unit: l.price_per_unit,
     }));
     const { data: newId, error: createErr } = await supabase.rpc('create_purchase', {
