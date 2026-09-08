@@ -41,13 +41,13 @@ export function formatDate(iso: string): string {
   }
 }
 
-// Compact numeric date for tight spaces (ledger rows, list tables) where a
-// full "02 Sept 2026, 14:57" wastes horizontal room that's needed for the
-// amount/reference columns next to it — e.g. "18-5-26".
+// Compact numeric date (d/m/y) for tight spaces (ledger rows, list tables,
+// receipt headers) where a full "02 Sept 2026, 14:57" wastes horizontal
+// room — e.g. "12/8/26".
 export function formatDateCompact(iso: string): string {
   try {
     const d = new Date(iso);
-    return `${d.getDate()}-${d.getMonth() + 1}-${String(d.getFullYear()).slice(-2)}`;
+    return `${d.getDate()}/${d.getMonth() + 1}/${String(d.getFullYear()).slice(-2)}`;
   } catch {
     return iso;
   }

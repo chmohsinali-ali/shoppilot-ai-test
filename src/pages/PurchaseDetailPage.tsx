@@ -9,7 +9,7 @@ import { Input, Field, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { PageLoader, EmptyState } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDateTime, formatNumber } from '@/lib/format';
+import { formatMoney, formatDateCompact, formatNumber } from '@/lib/format';
 import type { Purchase, PurchaseItem } from '@/types/db';
 
 export function PurchaseDetailPage() {
@@ -197,7 +197,7 @@ export function PurchaseDetailPage() {
             {purchase.shop_customer_number && <p className="text-xs text-slate-500">Customer No: {purchase.shop_customer_number}</p>}
           </div>
           <div className="text-right">
-            <p className="font-medium text-slate-700 dark:text-slate-300">{formatDateTime(purchase.purchase_date)}</p>
+            <p className="font-medium text-slate-700 dark:text-slate-300">{formatDateCompact(purchase.purchase_date)}</p>
             <p className="mt-1 text-xs">
               {isCancelled ? (
                 <span className="inline-block rounded-full bg-slate-200 px-2 py-0.5 font-medium text-slate-600 dark:bg-slate-700 dark:text-slate-300">Cancelled</span>

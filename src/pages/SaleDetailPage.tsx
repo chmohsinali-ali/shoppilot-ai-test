@@ -9,7 +9,7 @@ import { Input, Field, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { PageLoader, EmptyState } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDateTime, formatSaleRef } from '@/lib/format';
+import { formatMoney, formatDateCompact, formatSaleRef } from '@/lib/format';
 import type { Sale, SaleItem } from '@/types/db';
 
 export function SaleDetailPage() {
@@ -176,7 +176,7 @@ export function SaleDetailPage() {
             <p className="font-semibold text-slate-900 dark:text-slate-100">{formatSaleRef(sale.display_seq, sale.invoice_number)}</p>
           </div>
           <div className="text-right">
-            <p className="font-medium text-slate-700 dark:text-slate-300">{formatDateTime(sale.sale_date)}</p>
+            <p className="font-medium text-slate-700 dark:text-slate-300">{formatDateCompact(sale.sale_date)}</p>
           </div>
           <div>
             <p className="font-medium text-slate-700 dark:text-slate-300">{sale.customer_name ?? 'Walk-in'}</p>
