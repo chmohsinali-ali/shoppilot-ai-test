@@ -150,7 +150,6 @@ export function CustomerDetailPage() {
                   <th className="px-3 py-2.5 font-medium sm:px-5">Date</th>
                   <th className="px-3 py-2.5 font-medium sm:px-5">Description</th>
                   <th className="px-3 py-2.5 text-right font-medium sm:px-5">Amount</th>
-                  <th className="px-3 py-2.5 text-right font-medium sm:px-5">Balance</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -197,20 +196,13 @@ export function CustomerDetailPage() {
                           <span className="text-emerald-600 dark:text-emerald-400">−{formatMoney(amount, cur)}</span>
                         )}
                       </td>
-                      <td className="whitespace-nowrap bg-emerald-50/50 px-3 py-3 text-right font-semibold text-emerald-800 dark:bg-emerald-950/10 dark:text-emerald-400 sm:px-5">
-                        {formatMoney(Number(e.running_balance), cur)}
-                      </td>
                     </tr>
                   );
                 })}
               </tbody>
               <tfoot>
                 <tr className="border-t border-slate-200 dark:border-slate-700">
-                  <td className="px-3 py-3 sm:px-5" />
-                  <td className="px-3 py-3 text-sm font-semibold text-slate-700 dark:text-slate-200 sm:px-5">Total</td>
-                  <td className="whitespace-nowrap px-3 py-3 text-right font-semibold text-slate-900 dark:text-slate-100 sm:px-5">
-                    {balance > 0 ? '+' : balance < 0 ? '−' : ''}{formatMoney(Math.abs(balance), cur)}
-                  </td>
+                  <td colSpan={2} className="px-3 py-3 text-sm font-semibold text-slate-700 dark:text-slate-200 sm:px-5">Total Balance</td>
                   <td className="whitespace-nowrap bg-emerald-50 px-3 py-3 text-right font-bold text-emerald-800 dark:bg-emerald-950/20 dark:text-emerald-400 sm:px-5">
                     {formatMoney(balance, cur)}
                   </td>
