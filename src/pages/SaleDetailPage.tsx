@@ -216,7 +216,12 @@ export function SaleDetailPage() {
                     <td className="py-2.5">
                       <div className="flex items-baseline gap-2">
                         <p className="font-medium text-slate-900 dark:text-slate-100">{it.product_name}</p>
-                        {it.product_name_ur && <p dir="rtl" className="text-sm text-slate-500 dark:text-slate-400">{it.product_name_ur}</p>}
+                        {it.product_name_ur && (
+                          <>
+                            <span className="text-slate-300 dark:text-slate-600">/</span>
+                            <p dir="rtl" className="text-sm text-slate-500 dark:text-slate-400">{it.product_name_ur}</p>
+                          </>
+                        )}
                       </div>
                     </td>
                     <td className="py-2.5 text-right text-slate-700 dark:text-slate-300">{it.quantity}</td>
