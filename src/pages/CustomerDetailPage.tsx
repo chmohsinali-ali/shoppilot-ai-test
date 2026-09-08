@@ -136,7 +136,10 @@ export function CustomerDetailPage() {
       <Card className="overflow-hidden">
         <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4 dark:border-slate-800">
           <div>
-            <h3 className="font-semibold text-slate-900 dark:text-slate-100">Ledger History</h3>
+            <h3 className="flex flex-wrap items-baseline gap-x-2 font-semibold text-slate-900 dark:text-slate-100">
+              Ledger History
+              <span dir="rtl" lang="ur" className="text-sm font-normal text-slate-500 dark:text-slate-400">کھاتے کی تفصیل</span>
+            </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400">All transactions — sales, payments, returns, and adjustments</p>
           </div>
         </div>
