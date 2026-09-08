@@ -1,0 +1,436 @@
+[
+  {
+    "category": "Staples",
+    "subcategory": "Rice",
+    "en": "Rice",
+    "ur": "چاول",
+    "aliases": "chawal, rice, basmati, sella, steam, super kernel, broken"
+  },
+  {
+    "category": "Staples",
+    "subcategory": "Pulses & Beans",
+    "en": "Masoor Dal",
+    "ur": "مسور دال",
+    "aliases": "masoor dal, masur dal, whole, split"
+  },
+  {
+    "category": "Staples",
+    "subcategory": "Pulses & Beans",
+    "en": "Moong Dal",
+    "ur": "مونگ دال",
+    "aliases": "moong dal, mung dal, whole, split"
+  },
+  {
+    "category": "Staples",
+    "subcategory": "Pulses & Beans",
+    "en": "Mash Dal",
+    "ur": "ماش دال",
+    "aliases": "mash dal, whole, split"
+  },
+  {
+    "category": "Staples",
+    "subcategory": "Pulses & Beans",
+    "en": "White Beans",
+    "ur": "سفید لوبیا",
+    "aliases": "safed lobia, whole, split"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Spices",
+    "en": "Black Pepper",
+    "ur": "کالی مرچ",
+    "aliases": "kali mirch, shan, whole, national"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Spices",
+    "en": "Anardana",
+    "ur": "اناردانہ",
+    "aliases": "anardana, shan, whole, national"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Biryani Masala",
+    "ur": "Biryani مصالحہ",
+    "aliases": "biryani masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Chicken Biryani Masala",
+    "ur": "Chicken Biryani مصالحہ",
+    "aliases": "chicken biryani masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Sindhi Biryani Masala",
+    "ur": "Sindhi Biryani مصالحہ",
+    "aliases": "sindhi biryani masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Bombay Biryani Masala",
+    "ur": "Bombay Biryani مصالحہ",
+    "aliases": "bombay biryani masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Pulao Masala",
+    "ur": "Pulao مصالحہ",
+    "aliases": "pulao masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Qorma Masala",
+    "ur": "Qorma مصالحہ",
+    "aliases": "qorma masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Karahi Masala",
+    "ur": "Karahi مصالحہ",
+    "aliases": "karahi masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Chicken Masala",
+    "ur": "Chicken مصالحہ",
+    "aliases": "chicken masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Tikka Masala",
+    "ur": "Tikka مصالحہ",
+    "aliases": "tikka masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Seekh Kabab Masala",
+    "ur": "Seekh Kabab مصالحہ",
+    "aliases": "seekh kabab masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Chapli Kabab Masala",
+    "ur": "Chapli Kabab مصالحہ",
+    "aliases": "chapli kabab masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Nihari Masala",
+    "ur": "Nihari مصالحہ",
+    "aliases": "nihari masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Haleem Masala",
+    "ur": "Haleem مصالحہ",
+    "aliases": "haleem masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Achar Gosht Masala",
+    "ur": "Achar Gosht مصالحہ",
+    "aliases": "achar gosht masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Kofta Masala",
+    "ur": "Kofta مصالحہ",
+    "aliases": "kofta masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Fish Masala",
+    "ur": "Fish مصالحہ",
+    "aliases": "fish masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Chana Masala",
+    "ur": "Chana مصالحہ",
+    "aliases": "chana masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Daal Masala",
+    "ur": "Daal مصالحہ",
+    "aliases": "daal masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Keema Masala",
+    "ur": "Keema مصالحہ",
+    "aliases": "keema masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Handi Masala",
+    "ur": "Handi مصالحہ",
+    "aliases": "handi masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Butter Chicken Masala",
+    "ur": "Butter Chicken مصالحہ",
+    "aliases": "butter chicken masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "White Karahi Masala",
+    "ur": "White Karahi مصالحہ",
+    "aliases": "white karahi masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Mutton Biryani Masala",
+    "ur": "Mutton Biryani مصالحہ",
+    "aliases": "mutton biryani masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Recipe Mix",
+    "en": "Fried Fish Masala",
+    "ur": "Fried Fish مصالحہ",
+    "aliases": "fried fish masala, shan, regular, spicy, national, laziza"
+  },
+  {
+    "category": "Snacks",
+    "subcategory": "Biscuits / Wafers / Cakes",
+    "en": "Cake Up",
+    "ur": "کیک اپ",
+    "aliases": "cake up, caramel, pack of 6, pack of 12, pack of 24"
+  },
+  {
+    "category": "Snacks",
+    "subcategory": "Biscuits / Wafers / Cakes",
+    "en": "Digestive",
+    "ur": "ڈائجیسٹو",
+    "aliases": "digestive, wheat, pack of 6, pack of 12, pack of 24"
+  },
+  {
+    "category": "Snacks",
+    "subcategory": "Chips / Nimco / Papad",
+    "en": "Potato Chips",
+    "ur": "چپس",
+    "aliases": "lays, lays chips, chips, lay's, masala, salted, french cheese, yogurt herb, super crisp"
+  },
+  {
+    "category": "Snacks",
+    "subcategory": "Chips / Nimco / Papad",
+    "en": "Kurkure",
+    "ur": "کرکرے",
+    "aliases": "kurkure, masala munch, chutney chaska"
+  },
+  {
+    "category": "Snacks",
+    "subcategory": "Chips / Nimco / Papad",
+    "en": "Cheetos",
+    "ur": "چیٹوز",
+    "aliases": "cheetos, cheese, flamin hot"
+  },
+  {
+    "category": "Snacks",
+    "subcategory": "Chips / Nimco / Papad",
+    "en": "Slanty",
+    "ur": "سلانٹی",
+    "aliases": "slanty, kolson, vegetable, jalapeno, salted"
+  },
+  {
+    "category": "Snacks",
+    "subcategory": "Chips / Nimco / Papad",
+    "en": "Pringles",
+    "ur": "پرنگلز",
+    "aliases": "pringles, sour cream, bbq, hot spicy"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Dairy Milk",
+    "ur": "ڈیری ملک",
+    "aliases": "dairy milk, dery milk, cadbury, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, fruit & nut, crackle"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Perk",
+    "ur": "پرک",
+    "aliases": "perk, cadbury, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "5 Star",
+    "ur": "فائیو اسٹار",
+    "aliases": "five star, cadbury, caramel, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "KitKat",
+    "ur": "کٹ کیٹ",
+    "aliases": "kitkat, kit kat, nestle, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, dark"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Snickers",
+    "ur": "سنیکرز",
+    "aliases": "snickers, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Bounty",
+    "ur": "باؤنٹی",
+    "aliases": "bounty, mars, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Kinder Joy",
+    "ur": "کنڈر جوائے",
+    "aliases": "kinder joy, kinder, classic, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Fresh Up",
+    "ur": "فریش اپ",
+    "aliases": "fresh up, freshup, hilal, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar, fruit"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Khopra Candy",
+    "ur": "کھوپرا کینڈی",
+    "aliases": "khopra candy, hilal, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+  },
+  {
+    "category": "Confectionery",
+    "subcategory": "Chocolate / Candy / Toffee",
+    "en": "Chilli Mili",
+    "ur": "چلی ملی",
+    "aliases": "chilli mili, candyland, jelly, 12 pcs box, 24 pcs box, 48 pcs box, 100 pcs jar"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Sauces / Pickles / Spreads",
+    "en": "Chilli Garlic Sauce",
+    "ur": "چلی گارلک ساس",
+    "aliases": "chilli garlic, national, spicy, mixed, shangrila, mitchell's, shezan"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Sauces / Pickles / Spreads",
+    "en": "Jam",
+    "ur": "جام",
+    "aliases": "jam, national, spicy, mixed, shangrila, mitchell's, shezan"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "Coca-Cola",
+    "ur": "کوکا کولا",
+    "aliases": "coke, coca cola, coca-cola, 345ml can, zero, diet"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "Sprite",
+    "ur": "اسپرائٹ",
+    "aliases": "sprite, coca-cola, 345ml can, zero, diet"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "Fanta",
+    "ur": "فانٹا",
+    "aliases": "fanta, coca-cola, 345ml can, zero, diet"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "Pepsi",
+    "ur": "پیپسی",
+    "aliases": "pepsi, pepsico, 345ml can, zero, diet"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "7UP",
+    "ur": "سیون اپ",
+    "aliases": "seven up, 7up, pepsico, 345ml can, zero, diet"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "Mirinda",
+    "ur": "مرنڈا",
+    "aliases": "mirinda, pepsico, 345ml can, zero, diet"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "Mountain Dew",
+    "ur": "ماؤنٹین ڈیو",
+    "aliases": "dew, pepsico, 345ml can, zero, diet"
+  },
+  {
+    "category": "Beverages",
+    "subcategory": "Soft Drinks",
+    "en": "Sting",
+    "ur": "اسٹنگ",
+    "aliases": "sting, pepsico, 345ml can, zero, diet"
+  },
+  {
+    "category": "General Store",
+    "subcategory": "Miscellaneous",
+    "en": "AA Battery",
+    "ur": "اے اے بیٹری",
+    "aliases": "aa battery"
+  },
+  {
+    "category": "General Store",
+    "subcategory": "Miscellaneous",
+    "en": "AAA Battery",
+    "ur": "اے اے اے بیٹری",
+    "aliases": "aaa battery"
+  },
+  {
+    "category": "General Store",
+    "subcategory": "Miscellaneous",
+    "en": "Plastic Spoon",
+    "ur": "پلاسٹک چمچ",
+    "aliases": "plastic spoon"
+  },
+  {
+    "category": "General Store",
+    "subcategory": "Miscellaneous",
+    "en": "Shopping Bag",
+    "ur": "شاپنگ بیگ",
+    "aliases": "shopping bag"
+  }
+]

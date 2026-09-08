@@ -80,6 +80,7 @@ import agriInputRows from "./agriInputItemDictionary.json" with { type: "json" }
 import bearingsRows from "./bearingsItemDictionary.json" with { type: "json" };
 import kitchenwareCrockeryRows from "./kitchenwareCrockeryItemDictionary.json" with { type: "json" };
 import homeHouseholdRows from "./homeHouseholdItemDictionary.json" with { type: "json" };
+import kiryanaExpansionRows from "./kiryanaExpansionItemDictionary.json" with { type: "json" };
 
 type ItemRow = { category: string; en: string; ur: string; aliases: string };
 
@@ -155,6 +156,7 @@ const DICTIONARIES: { source: string; rows: ItemRow[] }[] = [
   { source: "bearings", rows: bearingsRows as ItemRow[] },
   { source: "kitchenware-crockery", rows: kitchenwareCrockeryRows as ItemRow[] },
   { source: "home-household", rows: homeHouseholdRows as ItemRow[] },
+  { source: "kiryana-expansion", rows: kiryanaExpansionRows as ItemRow[] },
 ];
 
 let cachedEntries: ItemEntry[][] | null = null; // parallel to DICTIONARIES
