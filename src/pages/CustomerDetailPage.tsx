@@ -162,9 +162,10 @@ export function CustomerDetailPage() {
                   const amount = isDebit ? Number(e.debit_amount) : Number(e.credit_amount);
                   const rowMuted = info.muted;
                   const descNode = (
-                    <span className="inline-flex min-w-0 items-center gap-1.5">
+                    <span className="inline-flex min-w-0 flex-wrap items-center gap-x-1.5 gap-y-0.5">
                       <span aria-hidden="true">{info.icon}</span>
                       <span className="truncate">{info.label}</span>
+                      {info.labelUr && <span dir="rtl" lang="ur" className="text-xs font-normal text-slate-400 dark:text-slate-500">{info.labelUr}</span>}
                       {e.reversed_at && (
                         <span className="flex-shrink-0 rounded-full bg-slate-200 px-1.5 py-0.5 text-[10px] font-medium uppercase text-slate-600 dark:bg-slate-700 dark:text-slate-300">
                           Reversed
@@ -262,6 +263,7 @@ function previousBalanceFor(ledger: LedgerEntry[], entry: LedgerEntry): number {
 type LedgerRowInfo = {
   icon: string;
   label: string;
+  labelUr?: string;
   link: string | null;
   onClick: (() => void) | null;
   muted: boolean;
@@ -282,7 +284,7 @@ function ledgerRowInfo(
     case 'SALE_RETURN':
       return { icon: '↩️', label: 'Return', link: e.reference_id ? `/returns?type=sale&id=${e.reference_id}` : null, onClick: null, muted: false };
     case 'CUSTOMER_PAYMENT':
-      return { icon: '💵', label: 'Payment', link: null, onClick: onPaymentClick ? () => onPaymentClick(e) : null, muted: !!e.reversed_at };
+      return { icon: '💵', label: 'Payment Received', labelUr: 'رقم آ گئی', link: null, onClick: onPaymentClick ? () => onPaymentClick(e) : null, muted: !!e.reversed_at };
     case 'CUSTOMER_PAYMENT_REVERSAL':
       return { icon: '↩️', label: 'Payment Reversal', link: null, onClick: null, muted: true };
     case 'OPENING_BALANCE':
