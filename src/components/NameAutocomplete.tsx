@@ -99,17 +99,32 @@ export function NameAutocomplete({
   const precedingWords = lastSpace === -1 ? '' : trimmed.slice(0, lastSpace);
   const currentWord = (lastSpace === -1 ? trimmed : trimmed.slice(lastSpace + 1)).toLowerCase();
 
-  type Suggestion = { en: string; ur: string; fullNameMatch: boolean };
+  type Suggestion = { fullEn: string; fullUr: string };
   let suggestions: Suggestion[] = [];
   if (data) {
+    const seen = new Set<string>();
+    const pushUnique = (list: Suggestion[]) => {
+      for (const s of list) {
+        const key = s.fullEn.toLowerCase();
+        if (seen.has(key)) continue;
+        seen.add(key);
+        suggestions.push(s);
+      }
+    };
     if (q.length >= 2) {
-      suggestions = data.directory.filter((r) => r.en.toLowerCase().startsWith(q))
-        .map((r) => ({ en: r.en, ur: r.ur, fullNameMatch: true }));
+      pushUnique(data.directory.filter((r) => r.en.toLowerCase().startsWith(q))
+        .map((r) => ({ fullEn: r.en, fullUr: r.ur })));
     }
     if (currentWord.length >= 2 && suggestions.length < MAX_SUGGESTIONS) {
-      const tokenMatches = data.tokens.filter((t) => t.en.toLowerCase().startsWith(currentWord))
-        .map((t) => ({ en: t.en, ur: t.ur, fullNameMatch: false }));
-      suggestions = [...suggestions, ...tokenMatches];
+      // Same underlying name can surface from both lists (e.g. "Mohsin
+      // Naqvi" as a full-name row AND "Naqvi" as a standalone last-name
+      // token) — pushUnique's fullEn-based de-dupe collapses those into
+      // one row instead of showing the same suggestion twice.
+      pushUnique(data.tokens.filter((t) => t.en.toLowerCase().startsWith(currentWord))
+        .map((t) => {
+          const fullEn = precedingWords ? `${precedingWords} ${t.en}` : t.en;
+          return { fullEn, fullUr: buildUrForFullName(fullEn, data.tokenByEn) };
+        }));
     }
     suggestions = suggestions.slice(0, MAX_SUGGESTIONS);
   }
@@ -121,9 +136,8 @@ export function NameAutocomplete({
   };
 
   const handleSelect = (s: Suggestion) => {
-    const newValue = s.fullNameMatch ? s.en : (precedingWords ? `${precedingWords} ${s.en}` : s.en);
-    onChange(newValue);
-    if (data) onUrChange(buildUrForFullName(newValue, data.tokenByEn));
+    onChange(s.fullEn);
+    onUrChange(s.fullUr);
     setOpen(false);
   };
 
@@ -139,21 +153,17 @@ export function NameAutocomplete({
       />
       {open && suggestions.length > 0 && (
         <div className="absolute z-20 mt-1 max-h-56 w-full overflow-y-auto rounded-lg border border-slate-200 bg-white shadow-lg dark:border-slate-700 dark:bg-slate-900">
-          {suggestions.map((s, i) => {
-            const fullEn = s.fullNameMatch ? s.en : (precedingWords ? `${precedingWords} ${s.en}` : s.en);
-            const fullUr = s.fullNameMatch ? s.ur : (data ? buildUrForFullName(fullEn, data.tokenByEn) : s.ur);
-            return (
-              <button
-                key={`${s.en}-${i}`}
-                type="button"
-                onClick={() => handleSelect(s)}
-                className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-slate-800"
-              >
-                <span className="min-w-0 truncate text-slate-900 dark:text-slate-100">{fullEn}</span>
-                <span dir="rtl" lang="ur" className="flex-shrink-0 text-slate-500 dark:text-slate-400">{fullUr}</span>
-              </button>
-            );
-          })}
+          {suggestions.map((s) => (
+            <button
+              key={s.fullEn.toLowerCase()}
+              type="button"
+              onClick={() => handleSelect(s)}
+              className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-slate-800"
+            >
+              <span className="min-w-0 truncate text-slate-900 dark:text-slate-100">{s.fullEn}</span>
+              <span dir="rtl" lang="ur" className="flex-shrink-0 text-slate-500 dark:text-slate-400">{s.fullUr}</span>
+            </button>
+          ))}
         </div>
       )}
     </div>
