@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo, useRef, FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Users, Search, Plus, Phone, User, Pencil, Trash2 } from 'lucide-react';
+import { Users, Search, Plus, User, Pencil, Trash2 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
 import { PageHeader } from '@/components/PageHeader';
@@ -196,9 +196,7 @@ function CustomerRow({
           <div className="min-w-0">
             <p className="truncate font-medium text-slate-900 dark:text-slate-100">{customer.full_name}</p>
             {customer.primary_phone && (
-              <p className="flex items-center gap-1 truncate text-xs text-slate-500 dark:text-slate-400">
-                <Phone className="h-3 w-3 flex-shrink-0" />{customer.primary_phone}
-              </p>
+              <p className="truncate text-xs text-slate-500 dark:text-slate-400">{customer.primary_phone}</p>
             )}
           </div>
         </div>
