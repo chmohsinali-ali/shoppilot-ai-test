@@ -9,6 +9,23 @@ const DIRECTORY = nameDirectory as NameRow[];
 const TOKENS = nameTokens as NameRow[];
 const MAX_SUGGESTIONS = 8;
 
+const TOKEN_BY_EN = new Map(TOKENS.map((t) => [t.en.toLowerCase(), t.ur]));
+
+// Best-effort Urdu for a full name string, word by word — used whenever a
+// token suggestion is picked, so a name isn't missing an earlier word's
+// Urdu just because that earlier word was typed freehand instead of also
+// being clicked from the list (e.g. "Ali" typed freely, then "Mustafa"
+// picked from suggestions — this still yields "علی مصطفیٰ", not just
+// "مصطفیٰ"). A word with no dictionary match is simply skipped.
+function buildUrForFullName(fullName: string): string {
+  return fullName
+    .trim()
+    .split(/\s+/)
+    .map((w) => TOKEN_BY_EN.get(w.toLowerCase()))
+    .filter((v): v is string => !!v)
+    .join(' ');
+}
+
 // Backend/private reference list only (same ~5,000-name sheet already used
 // for AI spelling correction — see supabase/functions/ai-assistant/
 // masterNameDictionary.json) — never an actual customer, never searched or
@@ -85,11 +102,12 @@ export function NameAutocomplete({
       lastSelectedEn.current = s.en;
     } else {
       // Token match — only replaces the word being typed, keeping any
-      // earlier word(s) as-is; Urdu builds up word by word alongside it.
+      // earlier word(s) as-is. Urdu is recomputed word-by-word across the
+      // whole new value rather than just appended, so an earlier word
+      // typed freehand (never itself clicked) still gets its own Urdu.
       const newValue = precedingWords ? `${precedingWords} ${s.en}` : s.en;
-      const newUr = precedingWords ? `${urValue} ${s.ur}`.trim() : s.ur;
       onChange(newValue);
-      onUrChange(newUr);
+      onUrChange(buildUrForFullName(newValue));
       lastSelectedEn.current = newValue;
     }
     setOpen(false);
