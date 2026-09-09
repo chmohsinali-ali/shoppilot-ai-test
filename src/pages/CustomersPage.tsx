@@ -340,16 +340,14 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
         </div>
       ) : (
         <form onSubmit={submit} className="space-y-4">
-          <Field label="Full Name *">
-            <NameAutocomplete
-              required
-              placeholder="Mohsin Ali"
-              value={form.full_name}
-              onChange={(v) => update('full_name', v)}
-              urValue={form.full_name_ur}
-              onUrChange={(v) => update('full_name_ur', v)}
-            />
-          </Field>
+          <NameAutocomplete
+            required
+            placeholder="Mohsin Ali"
+            value={form.full_name}
+            onChange={(v) => update('full_name', v)}
+            urValue={form.full_name_ur}
+            onUrChange={(v) => update('full_name_ur', v)}
+          />
           <Field label="Phone Number *">
             <Input required placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
           </Field>
@@ -438,15 +436,13 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   return (
     <Modal open={true} onClose={onClose} title="Edit Customer" size="md">
       <form onSubmit={submit} className="space-y-4">
-        <Field label="Full Name *">
-          <NameAutocomplete
-            required
-            value={form.full_name}
-            onChange={(v) => update('full_name', v)}
-            urValue={form.full_name_ur}
-            onUrChange={(v) => update('full_name_ur', v)}
-          />
-        </Field>
+        <NameAutocomplete
+          required
+          value={form.full_name}
+          onChange={(v) => update('full_name', v)}
+          urValue={form.full_name_ur}
+          onUrChange={(v) => update('full_name_ur', v)}
+        />
         <Field label="Phone Number *">
           <Input required value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
         </Field>
