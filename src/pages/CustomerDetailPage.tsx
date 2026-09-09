@@ -84,6 +84,15 @@ export function CustomerDetailPage() {
   );
 
   const cur = shop?.currency ?? 'PKR';
+  // A cancelled sale shows as ONE row, not two: the SALE_CANCEL entry that
+  // cancel_sale() adds is never rendered on its own — it only flips the
+  // matching CREDIT_SALE row into its "cancelled" look via this set. The
+  // two ledger rows still both exist in the database (that's what keeps
+  // the audit trail/balance math correct) — this is purely a display
+  // merge, not a data change.
+  const cancelledSaleIds = new Set(
+    ledger.filter((e) => e.entry_type === 'SALE_CANCEL' && e.reference_id).map((e) => e.reference_id as string)
+  );
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6 md:px-6 md:py-8">
@@ -165,8 +174,8 @@ export function CustomerDetailPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-                {ledger.map((e) => {
-                  const info = ledgerRowInfo(e, saleItemCounts, setPaymentDetails, saleEdited);
+                {ledger.filter((e) => e.entry_type !== 'SALE_CANCEL').map((e) => {
+                  const info = ledgerRowInfo(e, saleItemCounts, setPaymentDetails, saleEdited, cancelledSaleIds);
                   const isDebit = Number(e.debit_amount) > 0;
                   const amount = isDebit ? Number(e.debit_amount) : Number(e.credit_amount);
                   const rowMuted = info.muted;
@@ -287,12 +296,21 @@ function ledgerRowInfo(
   e: LedgerEntry,
   saleItemCounts: Record<string, number>,
   onPaymentClick?: (entry: LedgerEntry) => void,
-  saleEdited?: Record<string, boolean>
+  saleEdited?: Record<string, boolean>,
+  cancelledSaleIds?: Set<string>
 ): LedgerRowInfo {
   switch (e.entry_type) {
     case 'CREDIT_SALE': {
       const n = e.reference_id ? saleItemCounts[e.reference_id] : undefined;
-      return { icon: '🛒', label: n ? `Sale · ${n} item${n === 1 ? '' : 's'}` : 'Sale', link: e.reference_id ? `/sales/${e.reference_id}` : null, onClick: null, muted: false };
+      const baseLabel = n ? `Sale · ${n} item${n === 1 ? '' : 's'}` : 'Sale';
+      const link = e.reference_id ? `/sales/${e.reference_id}` : null;
+      // A cancelled sale merges its own CREDIT_SALE row and the separate
+      // SALE_CANCEL row (filtered out of the render list) into this one row.
+      if (e.reference_id && cancelledSaleIds?.has(e.reference_id)) {
+        const wasEdited = saleEdited?.[e.reference_id];
+        return { icon: '🛒', label: `${baseLabel} · ${wasEdited ? 'Edited' : 'Cancelled'}`, link, onClick: null, muted: true };
+      }
+      return { icon: '🛒', label: baseLabel, link, onClick: null, muted: false };
     }
     case 'SALE_CANCEL': {
       // An "Edit" on a sale cancels the original internally and creates a
