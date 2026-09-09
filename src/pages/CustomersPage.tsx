@@ -25,7 +25,7 @@ export function CustomersPage() {
   const [search, setSearch] = useState('');
   const [showAdd, setShowAdd] = useState(false);
   const [editTarget, setEditTarget] = useState<CustomerWithBalance | null>(null);
-  const [deactivateTarget, setDeactivateTarget] = useState<CustomerWithBalance | null>(null);
+  const [permanentDeleteTarget, setPermanentDeleteTarget] = useState<CustomerWithBalance | null>(null);
   const [actionsTarget, setActionsTarget] = useState<CustomerWithBalance | null>(null);
 
   const load = async () => {
@@ -129,7 +129,7 @@ export function CustomersPage() {
           customer={actionsTarget}
           onClose={() => setActionsTarget(null)}
           onEdit={() => { setEditTarget(actionsTarget); setActionsTarget(null); }}
-          onDeactivate={() => { setDeactivateTarget(actionsTarget); setActionsTarget(null); }}
+          onPermanentDelete={() => { setPermanentDeleteTarget(actionsTarget); setActionsTarget(null); }}
         />
       )}
 
@@ -141,10 +141,10 @@ export function CustomersPage() {
           onSaved={load}
         />
       )}
-      {deactivateTarget && (
-        <DeactivateCustomerModal
-          customer={deactivateTarget}
-          onClose={() => setDeactivateTarget(null)}
+      {permanentDeleteTarget && (
+        <PermanentDeleteCustomerModal
+          customer={permanentDeleteTarget}
+          onClose={() => setPermanentDeleteTarget(null)}
           onDone={load}
         />
       )}
@@ -211,8 +211,8 @@ function CustomerRow({
 }
 
 function CustomerRowActionsMenu({
-  customer, onClose, onEdit, onDeactivate,
-}: { customer: CustomerWithBalance; onClose: () => void; onEdit: () => void; onDeactivate: () => void }) {
+  customer, onClose, onEdit, onPermanentDelete,
+}: { customer: CustomerWithBalance; onClose: () => void; onEdit: () => void; onPermanentDelete: () => void }) {
   return (
     <Modal open={true} onClose={onClose} title={customer.full_name} size="sm">
       <div className="space-y-2">
@@ -225,10 +225,10 @@ function CustomerRowActionsMenu({
         </button>
         <button
           type="button"
-          onClick={onDeactivate}
+          onClick={onPermanentDelete}
           className="flex w-full items-center gap-3 rounded-lg border border-red-200 p-3 text-left text-sm font-medium text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"
         >
-          <Trash2 className="h-4 w-4" /> Deactivate
+          <Trash2 className="h-4 w-4" /> Permanent Delete
         </button>
         <div className="flex justify-end pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
@@ -495,51 +495,55 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   );
 }
 
-function DeactivateCustomerModal({ customer, onClose, onDone }: { customer: CustomerWithBalance; onClose: () => void; onDone: () => void }) {
-  const { shop, user } = useAuth();
+function PermanentDeleteCustomerModal({ customer, onClose, onDone }: { customer: CustomerWithBalance; onClose: () => void; onDone: () => void }) {
+  const { shop } = useAuth();
   const toast = useToast();
   const [saving, setSaving] = useState(false);
+  const [confirmText, setConfirmText] = useState('');
   const hasBalance = Math.abs(customer.balance) > 0.01;
+  const matches = confirmText.trim().toLowerCase() === customer.full_name.trim().toLowerCase();
 
   const confirm = async () => {
-    if (!shop || !user) return;
+    if (!matches) return;
     setSaving(true);
-    const { error } = await supabase.from('customers').update({
-      deleted_at: new Date().toISOString(),
-      status: 'inactive',
-      updated_at: new Date().toISOString(),
-    }).eq('id', customer.id);
+    const { error } = await supabase.rpc('permanently_delete_customer', { p_customer_id: customer.id });
     if (error) { setSaving(false); toast('error', error.message); return; }
-    await supabase.from('audit_logs').insert({
-      shop_id: shop.id, user_id: user.id, action: 'customer.deactivate',
-      entity_type: 'customer', entity_id: customer.id,
-      metadata: { name: customer.full_name, balance: customer.balance },
-    });
     setSaving(false);
-    toast('success', `${customer.full_name} has been deactivated. Historical invoices and ledger entries remain intact.`);
+    toast('success', `${customer.full_name} and all their history have been permanently deleted.`);
     onClose();
     onDone();
   };
 
   return (
-    <Modal open={true} onClose={onClose} title="Deactivate Customer" size="sm">
+    <Modal open={true} onClose={onClose} title="Permanently Delete Customer" size="sm">
       <div className="space-y-4">
-        <p className="text-sm text-slate-600 dark:text-slate-300">
-          Are you sure you want to deactivate <span className="font-semibold">{customer.full_name}</span>?
-        </p>
-        <p className="text-xs text-slate-500 dark:text-slate-400">
-          This is a soft delete — the customer will be hidden from your active list, but all historical invoices and ledger entries will remain fully visible and intact.
-        </p>
+        <div className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950/30 dark:text-red-300">
+          <p className="font-semibold">This cannot be undone.</p>
+          <p className="mt-1">
+            <span className="font-semibold">{customer.full_name}</span> and every sale, return, warranty, and
+            ledger entry linked to them will be deleted forever.
+          </p>
+        </div>
         {hasBalance && (
           <div className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
-            <p className="font-medium">Warning: Outstanding balance</p>
-            <p className="mt-1">This customer has an outstanding balance of <span className="font-bold">{formatMoney(customer.balance, shop?.currency)}</span>. Deactivating will not affect this balance — it will remain recoverable.</p>
+            <p className="font-medium">Outstanding balance: {formatMoney(customer.balance, shop?.currency)}</p>
+            <p className="mt-1">This balance will be deleted along with everything else, not settled.</p>
           </div>
         )}
+        <Field label={`Type "${customer.full_name}" to confirm`}>
+          <Input value={confirmText} onChange={(e) => setConfirmText(e.target.value)} placeholder={customer.full_name} />
+        </Field>
         <div className="flex justify-end gap-2 pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
-          <Button type="button" variant="ghost" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={confirm} loading={saving}>
-            <Trash2 className="h-4 w-4" /> Deactivate
+          <Button
+            type="button"
+            variant="ghost"
+            className="text-red-600 hover:bg-red-50 disabled:opacity-40 dark:hover:bg-red-950/30"
+            onClick={confirm}
+            loading={saving}
+            disabled={!matches}
+          >
+            <Trash2 className="h-4 w-4" /> Permanently Delete
           </Button>
         </div>
       </div>
