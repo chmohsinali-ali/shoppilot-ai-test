@@ -6,12 +6,13 @@ import { supabase } from '@/lib/supabase';
 import { PageHeader } from '@/components/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { Input, Field, Select, Textarea } from '@/components/ui/Input';
+import { Input, Field, Select } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney } from '@/lib/format';
 import { EmbeddedPartyPicker } from '@/components/EmbeddedPartyPicker';
+import { NameAutocomplete } from '@/components/NameAutocomplete';
 import { findExactNameMatches, phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 import type { Customer } from '@/types/db';
 
@@ -245,13 +246,10 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
   const [dupNames, setDupNames] = useState(false);
   const [form, setForm] = useState({
     full_name: '',
-    business_name: '',
+    full_name_ur: '',
     primary_phone: '',
-    whatsapp_number: '',
     customer_type: 'retail',
     address_line1: '',
-    city: '',
-    notes: '',
     opening_balance: 0,
     opening_balance_type: 'customer_owes',
   });
@@ -260,8 +258,8 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
 
   const reset = () => {
     setForm({
-      full_name: '', business_name: '', primary_phone: '', whatsapp_number: '',
-      customer_type: 'retail', address_line1: '', city: '', notes: '',
+      full_name: '', full_name_ur: '', primary_phone: '',
+      customer_type: 'retail', address_line1: '',
       opening_balance: 0, opening_balance_type: 'customer_owes',
     });
     setDupNames(false);
@@ -269,24 +267,21 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
 
   const doInsert = async () => {
     if (!shop) return;
-    if (form.primary_phone.trim()) {
-      const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone);
-      if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
-    }
+    if (!form.primary_phone.trim()) { toast('error', 'Customer ka phone number likhein.'); return; }
+    const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone);
+    if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+
     setSaving(true);
-    const { error } = await supabase.from('customers').insert({
+    const { data, error } = await supabase.from('customers').insert({
       shop_id: shop.id,
       full_name: form.full_name,
-      business_name: form.business_name || null,
-      primary_phone: form.primary_phone || null,
-      whatsapp_number: form.whatsapp_number || null,
+      full_name_ur: form.full_name_ur || null,
+      primary_phone: form.primary_phone,
       customer_type: form.customer_type,
       address_line1: form.address_line1 || null,
-      city: form.city || null,
-      notes: form.notes || null,
       opening_balance: form.opening_balance,
       opening_balance_type: form.opening_balance_type,
-    });
+    }).select('id').maybeSingle();
     setSaving(false);
     if (error) {
       if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
@@ -294,10 +289,10 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
       return;
     }
 
-    if (form.opening_balance > 0 && form.opening_balance_type === 'customer_owes') {
+    if (form.opening_balance > 0 && form.opening_balance_type === 'customer_owes' && data) {
       await supabase.from('customer_ledger').insert({
         shop_id: shop.id,
-        customer_id: (await supabase.from('customers').select('id').eq('shop_id', shop.id).eq('full_name', form.full_name).order('created_at', { ascending: false }).limit(1).maybeSingle()).data?.id,
+        customer_id: data.id,
         entry_type: 'OPENING_BALANCE',
         description: 'Opening balance',
         debit_amount: form.opening_balance,
@@ -314,6 +309,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop) return;
+    if (!form.primary_phone.trim()) { toast('error', 'Customer ka phone number likhein.'); return; }
     setChecking(true);
     const matches = await findExactNameMatches('customers', 'full_name', shop.id, form.full_name);
     setChecking(false);
@@ -344,22 +340,21 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
         </div>
       ) : (
         <form onSubmit={submit} className="space-y-4">
-          <Field label="Full name">
-            <Input required placeholder="Mohsin Khan" value={form.full_name} onChange={(e) => update('full_name', e.target.value)} />
+          <Field label="Full Name *">
+            <NameAutocomplete
+              required
+              placeholder="Mohsin Ali"
+              value={form.full_name}
+              onChange={(v) => update('full_name', v)}
+              urValue={form.full_name_ur}
+              onUrChange={(v) => update('full_name_ur', v)}
+            />
           </Field>
-          <Field label="Business name (optional)">
-            <Input placeholder="Khan Trading Co." value={form.business_name} onChange={(e) => update('business_name', e.target.value)} />
+          <Field label="Phone Number *">
+            <Input required placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
           </Field>
           <div className="grid grid-cols-2 gap-4">
-            <Field label="Phone">
-              <Input placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
-            </Field>
-            <Field label="WhatsApp">
-              <Input placeholder="0300 1234567" value={form.whatsapp_number} onChange={(e) => update('whatsapp_number', e.target.value)} />
-            </Field>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <Field label="Customer type">
+            <Field label="Customer Type">
               <Select value={form.customer_type} onChange={(e) => update('customer_type', e.target.value)}>
                 <option value="retail">Retail</option>
                 <option value="wholesale">Wholesale</option>
@@ -368,8 +363,8 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
                 <option value="vip">VIP</option>
               </Select>
             </Field>
-            <Field label="Opening balance">
-              <Input type="number" min={0} step="0.01" value={form.opening_balance} onChange={(e) => update('opening_balance', parseFloat(e.target.value) || 0)} />
+            <Field label="Opening Balance">
+              <Input type="number" min={0} step="0.01" value={form.opening_balance || ''} placeholder="0" onChange={(e) => update('opening_balance', parseFloat(e.target.value) || 0)} />
             </Field>
           </div>
           {form.opening_balance > 0 && (
@@ -380,11 +375,8 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
               </Select>
             </Field>
           )}
-          <Field label="Address (optional)">
-            <Input placeholder="House, street, area" value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} />
-          </Field>
-          <Field label="City (optional)">
-            <Input placeholder="Karachi" value={form.city} onChange={(e) => update('city', e.target.value)} />
+          <Field label="Address">
+            <Input placeholder="Model Town, Bahawalpur" value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} />
           </Field>
           <div className="flex justify-end gap-2 pt-2">
             <Button type="button" variant="outline" onClick={handleClose}>Cancel</Button>
@@ -402,13 +394,10 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({
     full_name: customer.full_name ?? '',
-    business_name: customer.business_name ?? '',
+    full_name_ur: customer.full_name_ur ?? '',
     primary_phone: customer.primary_phone ?? '',
-    whatsapp_number: customer.whatsapp_number ?? '',
     customer_type: customer.customer_type ?? 'retail',
     address_line1: customer.address_line1 ?? '',
-    city: customer.city ?? '',
-    notes: customer.notes ?? '',
   });
 
   const update = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
@@ -416,20 +405,17 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop || !user) return;
-    if (form.primary_phone.trim()) {
-      const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
-      if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
-    }
+    if (!form.primary_phone.trim()) { toast('error', 'Customer ka phone number likhein.'); return; }
+    const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
+    if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+
     setSaving(true);
     const { error } = await supabase.from('customers').update({
       full_name: form.full_name,
-      business_name: form.business_name || null,
-      primary_phone: form.primary_phone || null,
-      whatsapp_number: form.whatsapp_number || null,
+      full_name_ur: form.full_name_ur || null,
+      primary_phone: form.primary_phone,
       customer_type: form.customer_type,
       address_line1: form.address_line1 || null,
-      city: form.city || null,
-      notes: form.notes || null,
       updated_at: new Date().toISOString(),
     }).eq('id', customer.id);
     if (error) {
@@ -452,21 +438,19 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   return (
     <Modal open={true} onClose={onClose} title="Edit Customer" size="md">
       <form onSubmit={submit} className="space-y-4">
-        <Field label="Full name">
-          <Input required value={form.full_name} onChange={(e) => update('full_name', e.target.value)} />
+        <Field label="Full Name *">
+          <NameAutocomplete
+            required
+            value={form.full_name}
+            onChange={(v) => update('full_name', v)}
+            urValue={form.full_name_ur}
+            onUrChange={(v) => update('full_name_ur', v)}
+          />
         </Field>
-        <Field label="Business name (optional)">
-          <Input value={form.business_name} onChange={(e) => update('business_name', e.target.value)} />
+        <Field label="Phone Number *">
+          <Input required value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
         </Field>
-        <div className="grid grid-cols-2 gap-4">
-          <Field label="Phone">
-            <Input value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
-          </Field>
-          <Field label="WhatsApp">
-            <Input value={form.whatsapp_number} onChange={(e) => update('whatsapp_number', e.target.value)} />
-          </Field>
-        </div>
-        <Field label="Customer type">
+        <Field label="Customer Type">
           <Select value={form.customer_type} onChange={(e) => update('customer_type', e.target.value)}>
             <option value="retail">Retail</option>
             <option value="wholesale">Wholesale</option>
@@ -475,14 +459,8 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
             <option value="vip">VIP</option>
           </Select>
         </Field>
-        <Field label="Address (optional)">
+        <Field label="Address">
           <Input value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} />
-        </Field>
-        <Field label="City (optional)">
-          <Input value={form.city} onChange={(e) => update('city', e.target.value)} />
-        </Field>
-        <Field label="Notes (optional)">
-          <Textarea rows={2} value={form.notes} onChange={(e) => update('notes', e.target.value)} />
         </Field>
         <div className="flex justify-end gap-2 pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>

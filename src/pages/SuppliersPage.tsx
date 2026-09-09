@@ -147,7 +147,7 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
     email: supplier.email ?? '',
     channel: supplier.channel ?? '',
     route: supplier.route ?? '',
-    city: supplier.city ?? '',
+    address_line1: supplier.address_line1 ?? '',
     notes: supplier.notes ?? '',
   });
   const update = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
@@ -163,7 +163,7 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
       supplier_name: form.supplier_name, company_name: form.company_name || null,
       contact_person: form.contact_person || null, primary_phone: form.primary_phone || null,
       whatsapp_number: form.whatsapp_number || null, email: form.email || null,
-      channel: form.channel || null, route: form.route || null, city: form.city || null,
+      channel: form.channel || null, route: form.route || null, address_line1: form.address_line1 || null,
       notes: form.notes || null, updated_at: new Date().toISOString(),
     }).eq('id', supplier.id);
     if (error) {
@@ -192,7 +192,7 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
           <Field label="Route (optional)"><Input value={form.route} onChange={(e) => update('route', e.target.value)} /></Field>
         </div>
         <Field label="Email (optional)"><Input type="email" value={form.email} onChange={(e) => update('email', e.target.value)} /></Field>
-        <Field label="City (optional)"><Input value={form.city} onChange={(e) => update('city', e.target.value)} /></Field>
+        <Field label="Address"><Input value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} /></Field>
         <Field label="Notes (optional)"><Textarea rows={2} value={form.notes} onChange={(e) => update('notes', e.target.value)} /></Field>
         <div className="flex justify-end gap-2 pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
@@ -245,14 +245,14 @@ function AddSupplierModal({ open, onClose, onCreated }: { open: boolean; onClose
   const [dupNames, setDupNames] = useState(false);
   const [form, setForm] = useState({
     supplier_name: '', company_name: '', contact_person: '', primary_phone: '', whatsapp_number: '',
-    email: '', channel: '', route: '', city: '', notes: '',
+    email: '', channel: '', route: '', address_line1: '', notes: '',
     opening_balance: 0, opening_balance_type: 'shop_owes',
   });
 
   const update = (k: string, v: string | number) => setForm((f) => ({ ...f, [k]: v }));
 
   const resetForm = () => {
-    setForm({ supplier_name: '', company_name: '', contact_person: '', primary_phone: '', whatsapp_number: '', email: '', channel: '', route: '', city: '', notes: '', opening_balance: 0, opening_balance_type: 'shop_owes' });
+    setForm({ supplier_name: '', company_name: '', contact_person: '', primary_phone: '', whatsapp_number: '', email: '', channel: '', route: '', address_line1: '', notes: '', opening_balance: 0, opening_balance_type: 'shop_owes' });
     setDupNames(false);
   };
 
@@ -273,7 +273,7 @@ function AddSupplierModal({ open, onClose, onCreated }: { open: boolean; onClose
       email: form.email || null,
       channel: form.channel || null,
       route: form.route || null,
-      city: form.city || null,
+      address_line1: form.address_line1 || null,
       notes: form.notes || null,
       opening_balance: form.opening_balance,
       opening_balance_type: form.opening_balance_type,
@@ -357,7 +357,7 @@ function AddSupplierModal({ open, onClose, onCreated }: { open: boolean; onClose
               </select>
             </Field>
           </div>
-          <Field label="City (optional)"><Input placeholder="Karachi" value={form.city} onChange={(e) => update('city', e.target.value)} /></Field>
+          <Field label="Address"><Input placeholder="Shop 12, Main Bazaar, Karachi" value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} /></Field>
           <Field label="Notes (optional)"><Textarea rows={2} value={form.notes} onChange={(e) => update('notes', e.target.value)} /></Field>
           <div className="flex justify-end gap-2 pt-2">
             <Button type="button" variant="outline" onClick={handleClose}>Cancel</Button>

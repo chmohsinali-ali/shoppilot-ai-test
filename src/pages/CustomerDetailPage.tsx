@@ -15,6 +15,7 @@ import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, formatDate, formatDateCompact } from '@/lib/format';
 import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
+import { NameAutocomplete } from '@/components/NameAutocomplete';
 import type { Customer, LedgerEntry } from '@/types/db';
 
 export function CustomerDetailPage() {
@@ -376,28 +377,25 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({
     full_name: customer.full_name ?? '',
-    business_name: customer.business_name ?? '',
+    full_name_ur: customer.full_name_ur ?? '',
     primary_phone: customer.primary_phone ?? '',
-    whatsapp_number: customer.whatsapp_number ?? '',
     customer_type: customer.customer_type ?? 'retail',
     address_line1: customer.address_line1 ?? '',
-    city: customer.city ?? '',
-    notes: customer.notes ?? '',
   });
   const update = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop || !user) return;
-    if (form.primary_phone.trim()) {
-      const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
-      if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
-    }
+    if (!form.primary_phone.trim()) { toast('error', 'Customer ka phone number likhein.'); return; }
+    const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
+    if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+
     setSaving(true);
     const { error } = await supabase.from('customers').update({
-      full_name: form.full_name, business_name: form.business_name || null,
-      primary_phone: form.primary_phone || null, whatsapp_number: form.whatsapp_number || null,
+      full_name: form.full_name, full_name_ur: form.full_name_ur || null,
+      primary_phone: form.primary_phone,
       customer_type: form.customer_type, address_line1: form.address_line1 || null,
-      city: form.city || null, notes: form.notes || null, updated_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
     }).eq('id', customer.id);
     if (error) {
       setSaving(false);
@@ -411,20 +409,22 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   return (
     <Modal open={true} onClose={onClose} title="Edit Customer" size="md">
       <form onSubmit={submit} className="space-y-4">
-        <Field label="Full name"><Input required value={form.full_name} onChange={(e) => update('full_name', e.target.value)} /></Field>
-        <Field label="Business name (optional)"><Input value={form.business_name} onChange={(e) => update('business_name', e.target.value)} /></Field>
-        <div className="grid grid-cols-2 gap-4">
-          <Field label="Phone"><Input value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} /></Field>
-          <Field label="WhatsApp"><Input value={form.whatsapp_number} onChange={(e) => update('whatsapp_number', e.target.value)} /></Field>
-        </div>
-        <Field label="Customer type">
+        <Field label="Full Name *">
+          <NameAutocomplete
+            required
+            value={form.full_name}
+            onChange={(v) => update('full_name', v)}
+            urValue={form.full_name_ur}
+            onUrChange={(v) => update('full_name_ur', v)}
+          />
+        </Field>
+        <Field label="Phone Number *"><Input required value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} /></Field>
+        <Field label="Customer Type">
           <Select value={form.customer_type} onChange={(e) => update('customer_type', e.target.value)}>
             <option value="retail">Retail</option><option value="wholesale">Wholesale</option><option value="walk_in">Walk-in</option><option value="regular">Regular</option><option value="vip">VIP</option>
           </Select>
         </Field>
-        <Field label="Address (optional)"><Input value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} /></Field>
-        <Field label="City (optional)"><Input value={form.city} onChange={(e) => update('city', e.target.value)} /></Field>
-        <Field label="Notes (optional)"><Textarea rows={2} value={form.notes} onChange={(e) => update('notes', e.target.value)} /></Field>
+        <Field label="Address"><Input value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} /></Field>
         <div className="flex justify-end gap-2 pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
           <Button type="submit" loading={saving}>Save Changes</Button>

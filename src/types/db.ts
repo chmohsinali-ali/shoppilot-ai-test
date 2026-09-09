@@ -45,6 +45,7 @@ export type Customer = {
   shop_id: string;
   customer_code: string | null;
   full_name: string;
+  full_name_ur: string | null;
   father_name: string | null;
   business_name: string | null;
   primary_phone: string | null;

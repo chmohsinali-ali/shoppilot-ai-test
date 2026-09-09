@@ -210,7 +210,7 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
     email: supplier.email ?? '',
     channel: supplier.channel ?? '',
     route: supplier.route ?? '',
-    city: supplier.city ?? '',
+    address_line1: supplier.address_line1 ?? '',
     notes: supplier.notes ?? '',
   });
   const update = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
@@ -226,7 +226,7 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
       supplier_name: form.supplier_name, company_name: form.company_name || null,
       contact_person: form.contact_person || null, primary_phone: form.primary_phone || null,
       whatsapp_number: form.whatsapp_number || null, email: form.email || null,
-      channel: form.channel || null, route: form.route || null, city: form.city || null,
+      channel: form.channel || null, route: form.route || null, address_line1: form.address_line1 || null,
       notes: form.notes || null, updated_at: new Date().toISOString(),
     }).eq('id', supplier.id);
     if (error) {
@@ -255,7 +255,7 @@ function EditSupplierModal({ supplier, onClose, onSaved }: { supplier: Supplier;
           <Field label="Route (optional)"><Input value={form.route} onChange={(e) => update('route', e.target.value)} /></Field>
         </div>
         <Field label="Email (optional)"><Input type="email" value={form.email} onChange={(e) => update('email', e.target.value)} /></Field>
-        <Field label="City (optional)"><Input value={form.city} onChange={(e) => update('city', e.target.value)} /></Field>
+        <Field label="Address"><Input value={form.address_line1} onChange={(e) => update('address_line1', e.target.value)} /></Field>
         <Field label="Notes (optional)"><Textarea rows={2} value={form.notes} onChange={(e) => update('notes', e.target.value)} /></Field>
         <div className="flex justify-end gap-2 pt-2">
           <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
