@@ -1,6 +1,6 @@
 import { useEffect, useState, FormEvent } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { ArrowLeft, Printer, Store, CheckCircle2, XCircle, Pencil, AlertTriangle, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Printer, Store, CheckCircle2, XCircle, Pencil, AlertTriangle, ArrowRight, RotateCcw, Trash2 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
 import { Card } from '@/components/ui/Card';
@@ -21,6 +21,8 @@ export function SaleDetailPage() {
   const [items, setItems] = useState<SaleItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCancel, setShowCancel] = useState(false);
+  const [showRestore, setShowRestore] = useState(false);
+  const [showPermanentDelete, setShowPermanentDelete] = useState(false);
 
   // Inline edit mode — stays on this same page instead of navigating away.
   const [editMode, setEditMode] = useState(false);
@@ -89,11 +91,15 @@ export function SaleDetailPage() {
     }
     setSavingEdit(true);
     // Reverse the original invoice (stock + customer ledger), then save the
-    // corrected version — all without leaving this page.
-    const { error: cancelErr } = await supabase.rpc('cancel_sale', {
-      p_sale_id: sale.id, p_reason: 'Edited in place — replaced by corrected invoice', p_user_id: user.id,
-    });
-    if (cancelErr) { setSavingEdit(false); toast('error', cancelErr.message); return; }
+    // corrected version — all without leaving this page. A sale that's
+    // already cancelled has no live stock/ledger effect left to reverse, so
+    // editing it just creates the corrected replacement directly.
+    if (!isCancelled) {
+      const { error: cancelErr } = await supabase.rpc('cancel_sale', {
+        p_sale_id: sale.id, p_reason: 'Edited in place — replaced by corrected invoice', p_user_id: user.id,
+      });
+      if (cancelErr) { setSavingEdit(false); toast('error', cancelErr.message); return; }
+    }
 
     const itemsJson = editLines.map((l) => ({
       product_id: l.product_id ?? '', product_name: l.product_name, product_name_ur: l.product_name_ur, unit: l.unit,
@@ -133,6 +139,19 @@ export function SaleDetailPage() {
               </Button>
             </>
           )}
+          {isGenuinelyCancelled && !editMode && (
+            <>
+              <Button variant="outline" size="sm" onClick={startEdit}>
+                <Pencil className="h-4 w-4" /> Edit
+              </Button>
+              <Button variant="outline" size="sm" className="text-emerald-600 hover:bg-emerald-50 dark:hover:bg-emerald-950/30" onClick={() => setShowRestore(true)}>
+                <RotateCcw className="h-4 w-4" /> Restore
+              </Button>
+              <Button variant="outline" size="sm" className="text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30" onClick={() => setShowPermanentDelete(true)}>
+                <Trash2 className="h-4 w-4" /> Delete
+              </Button>
+            </>
+          )}
           {!editMode && (
             <Button variant="outline" size="sm" onClick={() => window.print()}>
               <Printer className="h-4 w-4" /> Print
@@ -144,7 +163,7 @@ export function SaleDetailPage() {
       {editMode && (
         <div className="mb-3 flex items-start gap-2 rounded-lg bg-blue-50 p-3 text-sm text-blue-800 dark:bg-blue-950/30 dark:text-blue-300">
           <Pencil className="mt-0.5 h-4 w-4 flex-shrink-0" />
-          <p>Editing this invoice right here. Change any quantity, price, or item below, then save — the original will be kept as cancelled history.</p>
+          <p>Editing this invoice right here. Change any quantity, price, or item below, then save — {isCancelled ? 'a new corrected invoice will be created from this cancelled one.' : 'the original will be kept as cancelled history.'}</p>
         </div>
       )}
 
@@ -179,6 +198,7 @@ export function SaleDetailPage() {
               <XCircle className="h-5 w-5 text-slate-500 dark:text-slate-400" />
               <div>
                 <p className="text-sm font-semibold text-slate-700 dark:text-slate-200">This sale has been cancelled</p>
+                <p dir="rtl" lang="ur" className="text-sm font-semibold text-slate-700 dark:text-slate-200">یہ سیل منسوخ کر دی گئی ہے</p>
                 {sale.cancellation_reason && <p className="text-xs text-slate-500 dark:text-slate-400">Reason: {sale.cancellation_reason}</p>}
               </div>
             </div>
@@ -220,7 +240,7 @@ export function SaleDetailPage() {
         {/* Items */}
         <div className="px-6 py-4">
           {!editMode ? (
-            <table className="w-full text-sm">
+            <table className={`w-full text-sm ${isCancelled ? 'opacity-50' : ''}`}>
               <thead>
                 <tr className="border-b border-slate-100 text-left text-xs uppercase tracking-wide text-slate-400 dark:border-slate-800">
                   <th className="pb-2 font-medium">Item</th>
@@ -332,6 +352,12 @@ export function SaleDetailPage() {
       {showCancel && (
         <CancelSaleModal sale={sale} onClose={() => setShowCancel(false)} onDone={load} />
       )}
+      {showRestore && (
+        <RestoreSaleModal sale={sale} onClose={() => setShowRestore(false)} onDone={load} />
+      )}
+      {showPermanentDelete && (
+        <PermanentlyDeleteSaleModal sale={sale} onClose={() => setShowPermanentDelete(false)} onDone={() => navigate('/sales')} />
+      )}
     </div>
   );
 }
@@ -378,6 +404,92 @@ function CancelSaleModal({ sale, onClose, onDone }: { sale: Sale; onClose: () =>
   );
 }
 
+
+function RestoreSaleModal({ sale, onClose, onDone }: { sale: Sale; onClose: () => void; onDone: () => void }) {
+  const { user } = useAuth();
+  const toast = useToast();
+  const [saving, setSaving] = useState(false);
+
+  const confirm = async () => {
+    if (!user) return;
+    setSaving(true);
+    const { error } = await supabase.rpc('restore_sale', { p_sale_id: sale.id, p_user_id: user.id });
+    setSaving(false);
+    if (error) { toast('error', error.message); return; }
+    toast('success', 'Sale restored. Stock and ledger have been re-applied.');
+    onClose();
+    onDone();
+  };
+
+  return (
+    <Modal open={true} onClose={onClose} title="Restore Sale?" size="sm">
+      <div className="space-y-4">
+        <div className="flex items-start gap-2 rounded-lg bg-emerald-50 p-3 text-sm text-emerald-800 dark:bg-emerald-950/30 dark:text-emerald-300">
+          <RotateCcw className="mt-0.5 h-4 w-4 flex-shrink-0" />
+          <p>This will make the sale active again — stock will be deducted and the customer ledger debit will be re-applied, exactly as if it were sold now.</p>
+        </div>
+        <div className="flex justify-end gap-2 pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+          <Button type="button" className="bg-emerald-600 hover:bg-emerald-700" onClick={confirm} loading={saving}>
+            <RotateCcw className="h-4 w-4" /> Restore Sale
+          </Button>
+        </div>
+      </div>
+    </Modal>
+  );
+}
+
+function PermanentlyDeleteSaleModal({ sale, onClose, onDone }: { sale: Sale; onClose: () => void; onDone: () => void }) {
+  const toast = useToast();
+  const [saving, setSaving] = useState(false);
+  const [confirmText, setConfirmText] = useState('');
+  const invoiceRef = formatSaleRef(sale.display_seq, sale.invoice_number);
+  const matches = confirmText.trim().toUpperCase() === invoiceRef.toUpperCase();
+
+  const confirm = async () => {
+    if (!matches) return;
+    setSaving(true);
+    const { error } = await supabase.rpc('permanently_delete_sale', { p_sale_id: sale.id });
+    setSaving(false);
+    if (error) { toast('error', error.message); return; }
+    toast('success', `${invoiceRef} has been permanently deleted.`);
+    onClose();
+    onDone();
+  };
+
+  return (
+    <Modal open={true} onClose={onClose} title="Permanently Delete Sale" size="sm">
+      <div className="space-y-4">
+        <div className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950/30 dark:text-red-300">
+          <p className="font-semibold">This cannot be undone.</p>
+          <p className="mt-1">
+            <span className="font-semibold">{invoiceRef}</span> and all its items will be deleted forever — nothing
+            will remain. This sale is already cancelled, so there is no live stock or balance effect to reverse.
+          </p>
+        </div>
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          If you just want to bring this sale back, use <span className="font-medium">Restore</span> instead.
+        </p>
+        <Field label={`Type "${invoiceRef}" to confirm`}>
+          <Input value={confirmText} onChange={(e) => setConfirmText(e.target.value)} placeholder={invoiceRef} />
+        </Field>
+        <div className="flex justify-end gap-2 pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+          <Button
+            type="button"
+            variant="ghost"
+            className="text-red-600 hover:bg-red-50 disabled:opacity-40 dark:hover:bg-red-950/30"
+            onClick={confirm}
+            loading={saving}
+            disabled={!matches}
+          >
+            <Trash2 className="h-4 w-4" /> Permanently Delete
+          </Button>
+        </div>
+      </div>
+    </Modal>
+  );
+}
 
 function BiLabel({ en, ur, className = '' }: { en: string; ur: string; className?: string }) {
   return (
