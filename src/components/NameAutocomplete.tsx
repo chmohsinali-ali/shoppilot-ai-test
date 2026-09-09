@@ -1,15 +1,37 @@
 import { useEffect, useRef, useState } from 'react';
 import { Input } from '@/components/ui/Input';
-import nameDirectory from '@/data/nameDirectory.json';
-import nameTokens from '@/data/nameTokens.json';
 
 type NameRow = { en: string; ur: string };
 
-const DIRECTORY = nameDirectory as NameRow[];
-const TOKENS = nameTokens as NameRow[];
-const MAX_SUGGESTIONS = 8;
+// The reference sheet is now ~30,000 full names (1.5MB+ as JSON) — far too
+// large to bundle into the app's main chunk, which every page load would
+// otherwise pay for even though this data is only ever needed on the
+// Add/Edit Customer form. Loaded once, lazily, on first mount, and cached
+// at module scope so reopening the form (e.g. closing and reopening the
+// modal) never re-fetches it.
+type NameData = { directory: NameRow[]; tokens: NameRow[]; tokenByEn: Map<string, string> };
 
-const TOKEN_BY_EN = new Map(TOKENS.map((t) => [t.en.toLowerCase(), t.ur]));
+let cachedData: NameData | null = null;
+let loadingPromise: Promise<NameData> | null = null;
+
+function loadNameData(): Promise<NameData> {
+  if (cachedData) return Promise.resolve(cachedData);
+  if (!loadingPromise) {
+    loadingPromise = Promise.all([
+      import('@/data/nameDirectory.json'),
+      import('@/data/nameTokens.json'),
+    ]).then(([dirMod, tokMod]) => {
+      const directory = dirMod.default as NameRow[];
+      const tokens = tokMod.default as NameRow[];
+      const loaded: NameData = { directory, tokens, tokenByEn: new Map(tokens.map((t) => [t.en.toLowerCase(), t.ur])) };
+      cachedData = loaded;
+      return loaded;
+    });
+  }
+  return loadingPromise;
+}
+
+const MAX_SUGGESTIONS = 8;
 
 // Best-effort Urdu for a full name string, word by word — used whenever a
 // token suggestion is picked, so a name isn't missing an earlier word's
@@ -17,16 +39,16 @@ const TOKEN_BY_EN = new Map(TOKENS.map((t) => [t.en.toLowerCase(), t.ur]));
 // being clicked from the list (e.g. "Ali" typed freely, then "Mustafa"
 // picked from suggestions — this still yields "علی مصطفیٰ", not just
 // "مصطفیٰ"). A word with no dictionary match is simply skipped.
-function buildUrForFullName(fullName: string): string {
+function buildUrForFullName(fullName: string, tokenByEn: Map<string, string>): string {
   return fullName
     .trim()
     .split(/\s+/)
-    .map((w) => TOKEN_BY_EN.get(w.toLowerCase()))
+    .map((w) => tokenByEn.get(w.toLowerCase()))
     .filter((v): v is string => !!v)
     .join(' ');
 }
 
-// Backend/private reference list only (same ~5,000-name sheet already used
+// Backend/private reference list only (same ~30,000-name sheet also used
 // for AI spelling correction — see supabase/functions/ai-assistant/
 // masterNameDictionary.json) — never an actual customer, never searched or
 // displayed as one. Purely spelling/autocomplete, English left + Urdu right.
@@ -55,8 +77,15 @@ export function NameAutocomplete({
   required?: boolean;
 }) {
   const [open, setOpen] = useState(false);
+  const [data, setData] = useState(cachedData);
   const lastSelectedEn = useRef('');
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadNameData().then((d) => { if (!cancelled) setData(d); });
+    return () => { cancelled = true; };
+  }, []);
 
   useEffect(() => {
     const onDocMouseDown = (e: MouseEvent) => {
@@ -74,17 +103,18 @@ export function NameAutocomplete({
 
   type Suggestion = { en: string; ur: string; fullNameMatch: boolean };
   let suggestions: Suggestion[] = [];
-  if (q.length >= 2) {
-    const fullMatches = DIRECTORY.filter((r) => r.en.toLowerCase().startsWith(q))
-      .map((r) => ({ en: r.en, ur: r.ur, fullNameMatch: true }));
-    suggestions = fullMatches;
+  if (data) {
+    if (q.length >= 2) {
+      suggestions = data.directory.filter((r) => r.en.toLowerCase().startsWith(q))
+        .map((r) => ({ en: r.en, ur: r.ur, fullNameMatch: true }));
+    }
+    if (currentWord.length >= 2 && suggestions.length < MAX_SUGGESTIONS) {
+      const tokenMatches = data.tokens.filter((t) => t.en.toLowerCase().startsWith(currentWord))
+        .map((t) => ({ en: t.en, ur: t.ur, fullNameMatch: false }));
+      suggestions = [...suggestions, ...tokenMatches];
+    }
+    suggestions = suggestions.slice(0, MAX_SUGGESTIONS);
   }
-  if (currentWord.length >= 2 && suggestions.length < MAX_SUGGESTIONS) {
-    const tokenMatches = TOKENS.filter((t) => t.en.toLowerCase().startsWith(currentWord))
-      .map((t) => ({ en: t.en, ur: t.ur, fullNameMatch: false }));
-    suggestions = [...suggestions, ...tokenMatches];
-  }
-  suggestions = suggestions.slice(0, MAX_SUGGESTIONS);
 
   const handleChange = (v: string) => {
     onChange(v);
@@ -100,14 +130,14 @@ export function NameAutocomplete({
       onChange(s.en);
       onUrChange(s.ur);
       lastSelectedEn.current = s.en;
-    } else {
+    } else if (data) {
       // Token match — only replaces the word being typed, keeping any
       // earlier word(s) as-is. Urdu is recomputed word-by-word across the
       // whole new value rather than just appended, so an earlier word
       // typed freehand (never itself clicked) still gets its own Urdu.
       const newValue = precedingWords ? `${precedingWords} ${s.en}` : s.en;
       onChange(newValue);
-      onUrChange(buildUrForFullName(newValue));
+      onUrChange(buildUrForFullName(newValue, data.tokenByEn));
       lastSelectedEn.current = newValue;
     }
     setOpen(false);

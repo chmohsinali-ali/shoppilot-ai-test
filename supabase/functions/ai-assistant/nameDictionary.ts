@@ -6,49 +6,24 @@
 // customers/suppliers tables. It also is not exhaustive — a name not found
 // here is left exactly as given, never rejected or flagged invalid.
 //
-// masterNameDictionary.json is the source sheet, stored verbatim/unmodified
-// (4994 rows of {en_full, en_first, en_last, ur_full, ur_first, ur_last} —
-// originally every First Name x Last Name combination from the source
-// data). A name token can appear in either the first-name or last-name
-// position across different real people (e.g. "Ali" is a first name in one
-// row and a last name in another), so matching here is done per TOKEN, not
-// per full name: the first-name and last-name columns are collapsed into
-// one deduplicated token list in memory before any lookup — the JSON file
-// on disk is only ever read, never rewritten.
+// nameTokens.json (~460 deduped {en, ur} entries) is a generated slice of
+// the full ~30,000-full-name reference sheet (source kept at
+// scripts/data/nameDictionarySource.json, NOT under supabase/functions/ —
+// that full sheet is ~4.5MB and pushed a function deploy over Supabase's
+// payload limit; the only thing this file's logic ever needed from it was
+// the deduped list of individual first/last name tokens, which is what
+// nameTokens.json already is). Matching here is done per TOKEN, not per
+// full name, since a token can appear in either the first-name or
+// last-name position across different real people (e.g. "Ali" is a first
+// name for one person and a last name for another). Regenerate this file
+// from the source sheet if more names are ever added there.
 
-import rawRows from "./masterNameDictionary.json" with { type: "json" };
-
-type NameRow = {
-  en_full: string;
-  en_first: string;
-  en_last: string;
-  ur_full: string;
-  ur_first: string;
-  ur_last: string;
-};
+import rawTokens from "./nameTokens.json" with { type: "json" };
 
 type NameToken = { en: string; ur: string };
 
-let tokensCache: NameToken[] | null = null;
-
 function loadTokens(): NameToken[] {
-  if (!tokensCache) {
-    const rows = rawRows as NameRow[];
-    const seen = new Set<string>();
-    const list: NameToken[] = [];
-    for (const r of rows) {
-      if (r.en_first && !seen.has(r.en_first.toLowerCase())) {
-        seen.add(r.en_first.toLowerCase());
-        list.push({ en: r.en_first, ur: r.ur_first });
-      }
-      if (r.en_last && !seen.has(r.en_last.toLowerCase())) {
-        seen.add(r.en_last.toLowerCase());
-        list.push({ en: r.en_last, ur: r.ur_last });
-      }
-    }
-    tokensCache = list;
-  }
-  return tokensCache;
+  return rawTokens as NameToken[];
 }
 
 // Same algorithm as src/lib/nameMatch.ts (kept as a local copy since edge
@@ -106,12 +81,12 @@ export function correctNameToken(rawToken: string): NameToken | null {
   let best: NameToken | null = null;
   let bestDist = Infinity;
   for (const t of list) {
-    // Never let a near-match SHRINK the spoken name. The source sheet is
-    // male names only, so a longer name that happens to end the same way
-    // a male token starts (e.g. "Nasira" vs "Nasir") is very likely a
-    // different, unlisted (often female) name, not a misspelling — cutting
-    // it down would silently change who the transaction is for. Growing or
-    // same-length corrections (Muhsin->Mohsin, Salim->Saleem) stay safe.
+    // Never let a near-match SHRINK the spoken name — a longer name that
+    // happens to end the same way a shorter token starts (e.g. "Nasira" vs
+    // "Nasir") is very likely a different, unlisted name, not a
+    // misspelling — cutting it down would silently change who the
+    // transaction is for. Growing or same-length corrections
+    // (Muhsin->Mohsin, Salim->Saleem) stay safe.
     if (t.en.length < cleaned.length) continue;
     if (isNearMatch(t.en, cleaned)) {
       const d = levenshteinDistance(t.en, cleaned);
