@@ -1,5 +1,5 @@
-import { useEffect, useState, useMemo, FormEvent } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useState, useMemo, useRef, FormEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Users, Search, Plus, Phone, User, Pencil, Trash2 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
@@ -26,6 +26,7 @@ export function CustomersPage() {
   const [showAdd, setShowAdd] = useState(false);
   const [editTarget, setEditTarget] = useState<CustomerWithBalance | null>(null);
   const [deactivateTarget, setDeactivateTarget] = useState<CustomerWithBalance | null>(null);
+  const [actionsTarget, setActionsTarget] = useState<CustomerWithBalance | null>(null);
 
   const load = async () => {
     if (!shop) return;
@@ -108,56 +109,28 @@ export function CustomersPage() {
               <thead className="border-b border-slate-100 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500 dark:border-slate-800 dark:bg-slate-800/50 dark:text-slate-400">
                 <tr>
                   <th className="px-4 py-3 font-medium">Name</th>
-                  <th className="px-4 py-3 font-medium">Phone</th>
                   <th className="px-4 py-3 text-right font-medium">Balance</th>
-                  <th className="px-4 py-3 text-right font-medium">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                 {filtered.map((c) => (
-                  <tr key={c.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-                    <td className="px-4 py-3">
-                      <Link to={`/customers/${c.id}`} className="group flex min-w-0 items-center gap-3">
-                        <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400">
-                          <User className="h-4 w-4" />
-                        </div>
-                        <div className="min-w-0">
-                          <p className="truncate font-medium text-slate-900 group-hover:text-blue-600 dark:text-slate-100 dark:group-hover:text-blue-400">{c.full_name}</p>
-                          {c.business_name && <p className="truncate text-xs text-slate-500 dark:text-slate-400">{c.business_name}</p>}
-                        </div>
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3 text-slate-700 dark:text-slate-300">
-                      {c.primary_phone ? (
-                        <span className="flex items-center gap-1.5"><Phone className="h-3.5 w-3.5 text-slate-400" />{c.primary_phone}</span>
-                      ) : '—'}
-                    </td>
-                    <td className={`px-4 py-3 text-right font-semibold ${c.balance > 0 ? 'text-amber-600 dark:text-amber-400' : c.balance < 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}`}>
-                      {formatMoney(c.balance, shop?.currency)}
-                    </td>
-                    <td className="px-4 py-3">
-                      <div className="flex justify-end gap-2">
-                        <Button size="sm" variant="outline" onClick={() => setEditTarget(c)}>
-                          <Pencil className="h-3.5 w-3.5" /> Edit
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          className="px-2 text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
-                          onClick={() => setDeactivateTarget(c)}
-                          aria-label="Deactivate customer"
-                          title="Deactivate"
-                        >
-                          <Trash2 className="h-3.5 w-3.5" />
-                        </Button>
-                      </div>
-                    </td>
-                  </tr>
+                  <CustomerRow key={c.id} customer={c} currency={shop?.currency} onOpenActions={() => setActionsTarget(c)} />
                 ))}
               </tbody>
             </table>
           </div>
+          <p className="border-t border-slate-100 px-4 py-2 text-center text-xs text-slate-400 dark:border-slate-800">
+            Tap a customer to open their ledger — press and hold for Edit/Delete.
+          </p>
         </Card>
+      )}
+      {actionsTarget && (
+        <CustomerRowActionsMenu
+          customer={actionsTarget}
+          onClose={() => setActionsTarget(null)}
+          onEdit={() => { setEditTarget(actionsTarget); setActionsTarget(null); }}
+          onDeactivate={() => { setDeactivateTarget(actionsTarget); setActionsTarget(null); }}
+        />
       )}
 
       <AddCustomerModal open={showAdd} onClose={() => setShowAdd(false)} onCreated={load} />
@@ -176,6 +149,92 @@ export function CustomersPage() {
         />
       )}
     </div>
+  );
+}
+
+// Tap the row -> open the customer's ledger. Press and hold (mouse or
+// touch, ~500ms) -> open Edit/Deactivate instead, without navigating.
+const LONG_PRESS_MS = 500;
+
+function CustomerRow({
+  customer, currency, onOpenActions,
+}: { customer: CustomerWithBalance; currency?: string; onOpenActions: () => void }) {
+  const navigate = useNavigate();
+  const pressTimer = useRef<number | null>(null);
+  const longPressed = useRef(false);
+
+  const startPress = () => {
+    longPressed.current = false;
+    pressTimer.current = window.setTimeout(() => {
+      longPressed.current = true;
+      onOpenActions();
+    }, LONG_PRESS_MS);
+  };
+  const clearPress = () => {
+    if (pressTimer.current) { clearTimeout(pressTimer.current); pressTimer.current = null; }
+  };
+  const handleClick = () => {
+    if (longPressed.current) { longPressed.current = false; return; }
+    navigate(`/customers/${customer.id}`);
+  };
+
+  return (
+    <tr
+      className="cursor-pointer select-none hover:bg-slate-50 dark:hover:bg-slate-800/50"
+      onPointerDown={startPress}
+      onPointerUp={clearPress}
+      onPointerLeave={clearPress}
+      onPointerCancel={clearPress}
+      onContextMenu={(e) => { e.preventDefault(); onOpenActions(); }}
+      onClick={handleClick}
+    >
+      <td className="px-4 py-3">
+        <div className="flex min-w-0 items-center gap-3">
+          <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400">
+            <User className="h-4 w-4" />
+          </div>
+          <div className="min-w-0">
+            <p className="truncate font-medium text-slate-900 dark:text-slate-100">{customer.full_name}</p>
+            {customer.primary_phone && (
+              <p className="flex items-center gap-1 truncate text-xs text-slate-500 dark:text-slate-400">
+                <Phone className="h-3 w-3 flex-shrink-0" />{customer.primary_phone}
+              </p>
+            )}
+          </div>
+        </div>
+      </td>
+      <td className={`px-4 py-3 text-right font-semibold ${customer.balance > 0 ? 'text-amber-600 dark:text-amber-400' : customer.balance < 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}`}>
+        {formatMoney(customer.balance, currency)}
+      </td>
+    </tr>
+  );
+}
+
+function CustomerRowActionsMenu({
+  customer, onClose, onEdit, onDeactivate,
+}: { customer: CustomerWithBalance; onClose: () => void; onEdit: () => void; onDeactivate: () => void }) {
+  return (
+    <Modal open={true} onClose={onClose} title={customer.full_name} size="sm">
+      <div className="space-y-2">
+        <button
+          type="button"
+          onClick={onEdit}
+          className="flex w-full items-center gap-3 rounded-lg border border-slate-200 p-3 text-left text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800/50"
+        >
+          <Pencil className="h-4 w-4 text-slate-500 dark:text-slate-400" /> Edit
+        </button>
+        <button
+          type="button"
+          onClick={onDeactivate}
+          className="flex w-full items-center gap-3 rounded-lg border border-red-200 p-3 text-left text-sm font-medium text-red-700 hover:bg-red-50 dark:border-red-900 dark:text-red-400 dark:hover:bg-red-950/30"
+        >
+          <Trash2 className="h-4 w-4" /> Deactivate
+        </button>
+        <div className="flex justify-end pt-2">
+          <Button type="button" variant="outline" onClick={onClose}>Cancel</Button>
+        </div>
+      </div>
+    </Modal>
   );
 }
 
