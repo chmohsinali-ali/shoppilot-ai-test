@@ -33,12 +33,14 @@ function loadNameData(): Promise<NameData> {
 
 const MAX_SUGGESTIONS = 8;
 
-// Best-effort Urdu for a full name string, word by word — used whenever a
-// token suggestion is picked, so a name isn't missing an earlier word's
-// Urdu just because that earlier word was typed freehand instead of also
-// being clicked from the list (e.g. "Ali" typed freely, then "Mustafa"
-// picked from suggestions — this still yields "علی مصطفیٰ", not just
-// "مصطفیٰ"). A word with no dictionary match is simply skipped.
+// Best-effort Urdu for a full name string, word by word: every finished
+// word that matches the dictionary (whole-word, case-insensitive)
+// contributes its Urdu; a word that isn't in the dictionary (a trailing
+// identifier like "197", a name simply not in the sheet, or a word still
+// mid-typing) is skipped rather than guessed. This runs on every
+// keystroke, not just on picking a suggestion — so "Ali Mustafa" gets
+// "علی مصطفیٰ" as soon as both words are typed out, whether or not either
+// one was ever clicked from the dropdown.
 function buildUrForFullName(fullName: string, tokenByEn: Map<string, string>): string {
   return fullName
     .trim()
@@ -49,25 +51,22 @@ function buildUrForFullName(fullName: string, tokenByEn: Map<string, string>): s
 }
 
 // Backend/private reference list only (same ~30,000-name sheet also used
-// for AI spelling correction — see supabase/functions/ai-assistant/
-// masterNameDictionary.json) — never an actual customer, never searched or
-// displayed as one. Purely spelling/autocomplete, English left + Urdu right.
+// for AI spelling correction — see scripts/data/nameDictionarySource.json /
+// supabase/functions/ai-assistant/nameTokens.json) — never an actual
+// customer, never searched or displayed as one. Purely spelling/
+// autocomplete, English left + Urdu right in the dropdown.
 //
-// Two sources are searched together: the full-name list (en_full/ur_full —
-// covers "Mo" -> "Mohsin Ali", "Mohsin Ahmad", ...) and a smaller
-// deduped token list (every distinct first/last name — covers a name like
-// "Mahmood" that the source sheet only ever pairs as a LAST name, so it
-// never starts any full_name and would otherwise show zero suggestions).
-// A token match only ever replaces the word currently being typed (the
-// text after the last space), never the words already finished.
-//
-// Urdu is only ever set by explicitly picking a suggestion — never derived
-// from raw typing — so a name + trailing identifier (e.g. "Mohsin Ali 197")
-// keeps the canonical Urdu tied to "Mohsin Ali" without translating "197".
-// If the text is edited enough that it no longer starts with the last
-// picked value, the stale Urdu is cleared rather than left incorrect.
+// Two sources are searched together for suggestions: the full-name list
+// (en_full/ur_full — covers "Mo" -> "Mohsin Ali", "Mohsin Ahmad", ...) and
+// a smaller deduped token list (every distinct first/last name — covers a
+// name like "Mahmood" that the source sheet only ever pairs as a LAST
+// name, so it never starts any full_name and would otherwise show zero
+// suggestions). Picking a suggestion still corrects spelling (e.g. a
+// typo'd "Mohsn" -> "Mohsin"); either way, the Urdu shown in the field is
+// always recomputed fresh from the current English text via
+// buildUrForFullName, not tracked/cached from whatever was last clicked.
 export function NameAutocomplete({
-  value, onChange, urValue, onUrChange, placeholder, required,
+  value, onChange, urValue: _urValue, onUrChange, placeholder, required,
 }: {
   value: string;
   onChange: (v: string) => void;
@@ -78,7 +77,6 @@ export function NameAutocomplete({
 }) {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState(cachedData);
-  const lastSelectedEn = useRef('');
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -118,28 +116,14 @@ export function NameAutocomplete({
 
   const handleChange = (v: string) => {
     onChange(v);
-    if (lastSelectedEn.current && !v.toLowerCase().startsWith(lastSelectedEn.current.toLowerCase())) {
-      onUrChange('');
-      lastSelectedEn.current = '';
-    }
+    if (data) onUrChange(buildUrForFullName(v, data.tokenByEn));
     setOpen(true);
   };
 
   const handleSelect = (s: Suggestion) => {
-    if (s.fullNameMatch) {
-      onChange(s.en);
-      onUrChange(s.ur);
-      lastSelectedEn.current = s.en;
-    } else if (data) {
-      // Token match — only replaces the word being typed, keeping any
-      // earlier word(s) as-is. Urdu is recomputed word-by-word across the
-      // whole new value rather than just appended, so an earlier word
-      // typed freehand (never itself clicked) still gets its own Urdu.
-      const newValue = precedingWords ? `${precedingWords} ${s.en}` : s.en;
-      onChange(newValue);
-      onUrChange(buildUrForFullName(newValue, data.tokenByEn));
-      lastSelectedEn.current = newValue;
-    }
+    const newValue = s.fullNameMatch ? s.en : (precedingWords ? `${precedingWords} ${s.en}` : s.en);
+    onChange(newValue);
+    if (data) onUrChange(buildUrForFullName(newValue, data.tokenByEn));
     setOpen(false);
   };
 
@@ -155,19 +139,21 @@ export function NameAutocomplete({
       />
       {open && suggestions.length > 0 && (
         <div className="absolute z-20 mt-1 max-h-56 w-full overflow-y-auto rounded-lg border border-slate-200 bg-white shadow-lg dark:border-slate-700 dark:bg-slate-900">
-          {suggestions.map((s, i) => (
-            <button
-              key={`${s.en}-${i}`}
-              type="button"
-              onClick={() => handleSelect(s)}
-              className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-slate-800"
-            >
-              <span className="min-w-0 truncate text-slate-900 dark:text-slate-100">
-                {s.fullNameMatch ? s.en : (precedingWords ? `${precedingWords} ${s.en}` : s.en)}
-              </span>
-              <span dir="rtl" lang="ur" className="flex-shrink-0 text-slate-500 dark:text-slate-400">{s.ur}</span>
-            </button>
-          ))}
+          {suggestions.map((s, i) => {
+            const fullEn = s.fullNameMatch ? s.en : (precedingWords ? `${precedingWords} ${s.en}` : s.en);
+            const fullUr = s.fullNameMatch ? s.ur : (data ? buildUrForFullName(fullEn, data.tokenByEn) : s.ur);
+            return (
+              <button
+                key={`${s.en}-${i}`}
+                type="button"
+                onClick={() => handleSelect(s)}
+                className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-slate-800"
+              >
+                <span className="min-w-0 truncate text-slate-900 dark:text-slate-100">{fullEn}</span>
+                <span dir="rtl" lang="ur" className="flex-shrink-0 text-slate-500 dark:text-slate-400">{fullUr}</span>
+              </button>
+            );
+          })}
         </div>
       )}
     </div>
