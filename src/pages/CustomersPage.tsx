@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo, FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Users, Search, Plus, Phone, Wallet, ArrowRight, User, Pencil, Trash2 } from 'lucide-react';
+import { Users, Search, Plus, Phone, User, Pencil, Trash2 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
 import { PageHeader } from '@/components/PageHeader';
@@ -102,58 +102,62 @@ export function CustomersPage() {
           />
         </Card>
       ) : (
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((c) => (
-            <div
-              key={c.id}
-              className="group rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-800"
-            >
-              <Link to={`/customers/${c.id}`} className="block">
-                <div className="flex items-start justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400">
-                      <User className="h-5 w-5" />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="truncate font-semibold text-slate-900 dark:text-slate-100">{c.full_name}</p>
-                      {c.business_name && <p className="truncate text-xs text-slate-500 dark:text-slate-400">{c.business_name}</p>}
-                    </div>
-                  </div>
-                  <ArrowRight className="h-4 w-4 text-slate-300 transition-colors group-hover:text-blue-500" />
-                </div>
-                <div className="mt-3 space-y-1.5">
-                  {c.primary_phone && (
-                    <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-                      <Phone className="h-3.5 w-3.5" /> {c.primary_phone}
-                    </div>
-                  )}
-                  <div className="flex items-center justify-between pt-1">
-                    <span className="text-xs text-slate-500 dark:text-slate-400">Balance</span>
-                    <span className={`text-sm font-semibold ${c.balance > 0 ? 'text-amber-600 dark:text-amber-400' : c.balance < 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}`}>
+        <Card className="overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="border-b border-slate-100 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500 dark:border-slate-800 dark:bg-slate-800/50 dark:text-slate-400">
+                <tr>
+                  <th className="px-4 py-3 font-medium">Name</th>
+                  <th className="px-4 py-3 font-medium">Phone</th>
+                  <th className="px-4 py-3 text-right font-medium">Balance</th>
+                  <th className="px-4 py-3 text-right font-medium">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                {filtered.map((c) => (
+                  <tr key={c.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                    <td className="px-4 py-3">
+                      <Link to={`/customers/${c.id}`} className="group flex min-w-0 items-center gap-3">
+                        <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400">
+                          <User className="h-4 w-4" />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="truncate font-medium text-slate-900 group-hover:text-blue-600 dark:text-slate-100 dark:group-hover:text-blue-400">{c.full_name}</p>
+                          {c.business_name && <p className="truncate text-xs text-slate-500 dark:text-slate-400">{c.business_name}</p>}
+                        </div>
+                      </Link>
+                    </td>
+                    <td className="px-4 py-3 text-slate-700 dark:text-slate-300">
+                      {c.primary_phone ? (
+                        <span className="flex items-center gap-1.5"><Phone className="h-3.5 w-3.5 text-slate-400" />{c.primary_phone}</span>
+                      ) : '—'}
+                    </td>
+                    <td className={`px-4 py-3 text-right font-semibold ${c.balance > 0 ? 'text-amber-600 dark:text-amber-400' : c.balance < 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}`}>
                       {formatMoney(c.balance, shop?.currency)}
-                    </span>
-                  </div>
-                </div>
-              </Link>
-              {/* Edit / Deactivate buttons */}
-              <div className="mt-3 flex gap-2 border-t border-slate-100 pt-3 dark:border-slate-800">
-                <Button size="sm" variant="outline" onClick={() => setEditTarget(c)}>
-                  <Pencil className="h-3.5 w-3.5" /> Edit
-                </Button>
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  className="px-2 text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
-                  onClick={() => setDeactivateTarget(c)}
-                  aria-label="Deactivate customer"
-                  title="Deactivate"
-                >
-                  <Trash2 className="h-3.5 w-3.5" />
-                </Button>
-              </div>
-            </div>
-          ))}
-        </div>
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex justify-end gap-2">
+                        <Button size="sm" variant="outline" onClick={() => setEditTarget(c)}>
+                          <Pencil className="h-3.5 w-3.5" /> Edit
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="px-2 text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
+                          onClick={() => setDeactivateTarget(c)}
+                          aria-label="Deactivate customer"
+                          title="Deactivate"
+                        >
+                          <Trash2 className="h-3.5 w-3.5" />
+                        </Button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </Card>
       )}
 
       <AddCustomerModal open={showAdd} onClose={() => setShowAdd(false)} onCreated={load} />
