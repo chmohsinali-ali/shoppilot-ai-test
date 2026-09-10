@@ -33,19 +33,69 @@ function loadNameData(): Promise<NameData> {
 
 const MAX_SUGGESTIONS = 8;
 
-// Best-effort Urdu for a full name string, word by word: every finished
-// word that matches the dictionary (whole-word, case-insensitive)
-// contributes its Urdu; a word that isn't in the dictionary (a trailing
-// identifier like "197", a name simply not in the sheet, or a word still
-// mid-typing) is skipped rather than guessed. No fixed reference list can
-// ever cover every real Pakistani name/surname, so this is only ever a
-// head start — the Urdu field below is a plain editable input specifically
-// so the shopkeeper can fill in or correct whatever the dictionary misses.
-function buildUrForFullName(fullName: string, tokenByEn: Map<string, string>): string {
+// Same tolerance as supabase/functions/ai-assistant/nameDictionary.ts (and
+// src/lib/nameMatch.ts) — kept as a local copy for the same reason those
+// two already are: this needs to work standalone in the browser bundle.
+function levenshteinDistance(a: string, b: string): number {
+  const s = a.trim().toLowerCase();
+  const t = b.trim().toLowerCase();
+  if (s === t) return 0;
+  if (s.length === 0) return t.length;
+  if (t.length === 0) return s.length;
+  const prev = new Array(t.length + 1);
+  const curr = new Array(t.length + 1);
+  for (let j = 0; j <= t.length; j++) prev[j] = j;
+  for (let i = 1; i <= s.length; i++) {
+    curr[0] = i;
+    for (let j = 1; j <= t.length; j++) {
+      const cost = s[i - 1] === t[j - 1] ? 0 : 1;
+      curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
+    }
+    for (let j = 0; j <= t.length; j++) prev[j] = curr[j];
+  }
+  return prev[t.length];
+}
+
+function isNearMatch(a: string, b: string): boolean {
+  const s = a.trim().toLowerCase();
+  const t = b.trim().toLowerCase();
+  if (!s || !t || s === t) return false;
+  const distance = levenshteinDistance(s, t);
+  if (distance === 0 || distance > 2) return false;
+  return distance / Math.max(s.length, t.length) <= 0.34;
+}
+
+// Urdu for one word: exact match first (e.g. "Mohsin" -> محسن), then a
+// close spelling variant (e.g. "Muhsin"/"Mohsn" -> still محسن) — the
+// shopkeeper's own English spelling is NEVER changed because of this, only
+// the Urdu is filled in for whichever known name it's closest to. A pure
+// number (a house-number-style identifier someone adds after a name, e.g.
+// "197") never matches anything, by design. No fixed reference list can
+// ever cover every real Pakistani name, so a word with no close match
+// (exact or fuzzy) is simply left without Urdu — never guessed, never an
+// error.
+function lookupUrdu(word: string, tokens: NameRow[], tokenByEn: Map<string, string>): string | undefined {
+  if (/^\d+$/.test(word)) return undefined;
+  const exact = tokenByEn.get(word.toLowerCase());
+  if (exact) return exact;
+  if (word.length < 3) return undefined;
+  let best: string | undefined;
+  let bestDist = Infinity;
+  for (const t of tokens) {
+    if (t.en.length < word.length) continue; // never shrink a longer typed word onto a shorter token
+    if (isNearMatch(t.en, word)) {
+      const d = levenshteinDistance(t.en, word);
+      if (d < bestDist) { bestDist = d; best = t.ur; }
+    }
+  }
+  return best;
+}
+
+function buildUrForFullName(fullName: string, tokens: NameRow[], tokenByEn: Map<string, string>): string {
   return fullName
     .trim()
     .split(/\s+/)
-    .map((w) => tokenByEn.get(w.toLowerCase()))
+    .map((w) => lookupUrdu(w, tokens, tokenByEn))
     .filter((v): v is string => !!v)
     .join(' ');
 }
@@ -53,16 +103,15 @@ function buildUrForFullName(fullName: string, tokenByEn: Map<string, string>): s
 // Backend/private reference list only (same ~30,000-name sheet also used
 // for AI spelling correction — see scripts/data/nameDictionarySource.json /
 // supabase/functions/ai-assistant/nameTokens.json) — never an actual
-// customer, never searched or displayed as one. Purely spelling/
-// autocomplete, English left + Urdu right in the dropdown.
+// customer, never searched or displayed as one.
 //
-// Renders two fields: Full Name (English, with the autocomplete dropdown)
-// and Urdu Name (plain editable RTL text input). Typing or picking a
-// suggestion in the English field auto-fills the Urdu field word-by-word —
-// but only until the shopkeeper edits the Urdu field directly, at which
-// point auto-fill stops overwriting it (their correction is respected for
-// the rest of this form) so a name missing from the dictionary is never a
-// dead end, just something they fill in themselves.
+// One box only: the shopkeeper types/edits English here, exactly as they
+// want it (never force-corrected) — a picked suggestion still corrects
+// spelling if they choose it, but nothing is forced. The Urdu translation
+// is a read-only preview pinned to the right edge of the same field
+// (nobody actually types on an Urdu keyboard, so there's no separate Urdu
+// input to fill in) — it updates live from the current English text via
+// buildUrForFullName, word by word, skipping anything with no close match.
 export function NameAutocomplete({
   value, onChange, urValue, onUrChange, placeholder, required,
 }: {
@@ -75,18 +124,17 @@ export function NameAutocomplete({
 }) {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState(cachedData);
-  // Starts "touched" if there's already a saved Urdu value (editing an
-  // existing customer) — a light edit to the English name shouldn't
-  // silently clobber Urdu that was already there, whether it came from
-  // auto-fill or a shopkeeper's own correction. A brand-new, empty field
-  // starts untouched, so auto-fill works immediately while adding someone.
-  const urTouched = useRef(urValue.trim().length > 0);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let cancelled = false;
-    loadNameData().then((d) => { if (!cancelled) setData(d); });
+    loadNameData().then((d) => {
+      if (cancelled) return;
+      setData(d);
+      onUrChange(buildUrForFullName(value, d.tokens, d.tokenByEn));
+    });
     return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -127,7 +175,7 @@ export function NameAutocomplete({
       pushUnique(data.tokens.filter((t) => t.en.toLowerCase().startsWith(currentWord))
         .map((t) => {
           const fullEn = precedingWords ? `${precedingWords} ${t.en}` : t.en;
-          return { fullEn, fullUr: buildUrForFullName(fullEn, data.tokenByEn) };
+          return { fullEn, fullUr: buildUrForFullName(fullEn, data.tokens, data.tokenByEn) };
         }));
     }
     suggestions = suggestions.slice(0, MAX_SUGGESTIONS);
@@ -135,64 +183,56 @@ export function NameAutocomplete({
 
   const handleChange = (v: string) => {
     onChange(v);
-    if (data && !urTouched.current) onUrChange(buildUrForFullName(v, data.tokenByEn));
+    if (data) onUrChange(buildUrForFullName(v, data.tokens, data.tokenByEn));
     setOpen(true);
   };
 
   const handleSelect = (s: Suggestion) => {
     onChange(s.fullEn);
-    if (!urTouched.current) onUrChange(s.fullUr);
+    onUrChange(s.fullUr);
     setOpen(false);
   };
 
-  const handleUrChange = (v: string) => {
-    urTouched.current = v.trim().length > 0;
-    onUrChange(v);
-  };
-
   return (
-    <div className="space-y-4">
-      <div ref={containerRef} className="relative">
-        <label className="mb-1.5 block text-sm font-medium text-slate-700 dark:text-slate-300">
-          Full Name {required && '*'}
-        </label>
+    <div ref={containerRef} className="relative">
+      <label className="mb-1.5 block text-sm font-medium text-slate-700 dark:text-slate-300">
+        Full Name {required && '*'}
+      </label>
+      <div className="relative">
         <Input
           required={required}
           placeholder={placeholder}
           value={value}
           autoComplete="off"
+          className={urValue ? 'pr-28' : ''}
           onChange={(e) => handleChange(e.target.value)}
           onFocus={() => setOpen(true)}
         />
-        {open && suggestions.length > 0 && (
-          <div className="absolute z-20 mt-1 max-h-56 w-full overflow-y-auto rounded-lg border border-slate-200 bg-white shadow-lg dark:border-slate-700 dark:bg-slate-900">
-            {suggestions.map((s) => (
-              <button
-                key={s.fullEn.toLowerCase()}
-                type="button"
-                onClick={() => handleSelect(s)}
-                className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-slate-800"
-              >
-                <span className="min-w-0 truncate text-slate-900 dark:text-slate-100">{s.fullEn}</span>
-                <span dir="rtl" lang="ur" className="flex-shrink-0 text-slate-500 dark:text-slate-400">{s.fullUr}</span>
-              </button>
-            ))}
-          </div>
+        {urValue && (
+          <span
+            dir="rtl"
+            lang="ur"
+            className="pointer-events-none absolute inset-y-0 right-3 flex max-w-[45%] items-center truncate text-sm text-slate-400 dark:text-slate-500"
+          >
+            {urValue}
+          </span>
         )}
       </div>
-      <div>
-        <label className="mb-1.5 flex items-baseline gap-1.5 text-sm font-medium text-slate-700 dark:text-slate-300">
-          Urdu Name <span className="text-slate-300 dark:text-slate-600">/</span>
-          <span dir="rtl" lang="ur" className="font-normal text-slate-500 dark:text-slate-400">اردو نام</span>
-        </label>
-        <Input
-          dir="rtl"
-          lang="ur"
-          placeholder="محسن علی"
-          value={urValue}
-          onChange={(e) => handleUrChange(e.target.value)}
-        />
-      </div>
+      {open && suggestions.length > 0 && (
+        <div className="absolute z-20 mt-1 max-h-56 w-full overflow-y-auto rounded-lg border border-slate-200 bg-white shadow-lg dark:border-slate-700 dark:bg-slate-900">
+          {suggestions.map((s) => (
+            <button
+              key={s.fullEn.toLowerCase()}
+              type="button"
+              onClick={() => handleSelect(s)}
+              className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-slate-800"
+            >
+              <span className="min-w-0 truncate text-slate-900 dark:text-slate-100">{s.fullEn}</span>
+              <span dir="rtl" lang="ur" className="flex-shrink-0 text-slate-500 dark:text-slate-400">{s.fullUr}</span>
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
