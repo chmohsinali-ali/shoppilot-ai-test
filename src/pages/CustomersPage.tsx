@@ -342,7 +342,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
       {dupNames ? (
         <div className="space-y-3">
           <p dir="rtl" className="rounded-lg bg-amber-50 px-3 py-2.5 text-right text-sm font-medium text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
-            "{form.full_name}" نام کے کسٹمر پہلے سے موجود ہیں۔ نیچے نام، نمبر اور بیلنس دیکھ کر تصدیق کریں کہ کون سا کسٹمر ہے۔
+            "{form.full_name}" نام کے کسٹمر پہلے سے موجود ہیں۔ نیچے نام، نمبر اور بیلنس دیکھ کر تصدیق کریں کہ کون سا کسٹمر ہے، یا نیچے "نیا کسٹمر شامل کریں" سے نیا کسٹمر بنائیں۔
           </p>
           <EmbeddedPartyPicker
             kind="customer"
