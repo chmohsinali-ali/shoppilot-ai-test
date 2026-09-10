@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Input } from '@/components/ui/Input';
+import { Input, FieldWarning } from '@/components/ui/Input';
 
 type NameRow = { en: string; ur: string };
 
@@ -113,7 +113,7 @@ function buildUrForFullName(fullName: string, tokens: NameRow[], tokenByEn: Map<
 // input to fill in) — it updates live from the current English text via
 // buildUrForFullName, word by word, skipping anything with no close match.
 export function NameAutocomplete({
-  value, onChange, urValue, onUrChange, placeholder, required,
+  value, onChange, urValue, onUrChange, placeholder, required, error,
 }: {
   value: string;
   onChange: (v: string) => void;
@@ -121,6 +121,7 @@ export function NameAutocomplete({
   onUrChange: (v: string) => void;
   placeholder?: string;
   required?: boolean;
+  error?: boolean;
 }) {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState(cachedData);
@@ -199,6 +200,7 @@ export function NameAutocomplete({
         Full Name {required && '*'}
       </label>
       <div className="relative">
+        <FieldWarning show={!!error} message="پورا نام لکھنا ضروری ہے" />
         <Input
           required={required}
           placeholder={placeholder}
@@ -212,7 +214,7 @@ export function NameAutocomplete({
           <span
             dir="rtl"
             lang="ur"
-            className="pointer-events-none absolute inset-y-0 right-3 flex max-w-[45%] items-center truncate text-sm text-slate-400 dark:text-slate-500"
+            className="pointer-events-none absolute inset-y-0 right-3 flex max-w-[45%] items-center truncate text-sm text-slate-700 dark:text-slate-200"
           >
             {urValue}
           </span>

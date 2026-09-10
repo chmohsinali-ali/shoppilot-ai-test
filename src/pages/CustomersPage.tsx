@@ -6,7 +6,7 @@ import { supabase } from '@/lib/supabase';
 import { PageHeader } from '@/components/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { Input, Field, Select } from '@/components/ui/Input';
+import { Input, Field, Select, FieldWarning } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
@@ -252,6 +252,8 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
   const [saving, setSaving] = useState(false);
   const [checking, setChecking] = useState(false);
   const [dupNames, setDupNames] = useState(false);
+  const [nameError, setNameError] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
   const [form, setForm] = useState({
     full_name: '',
     full_name_ur: '',
@@ -262,7 +264,11 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
     opening_balance_type: 'customer_owes',
   });
 
-  const update = (k: string, v: string | number) => setForm((f) => ({ ...f, [k]: v }));
+  const update = (k: string, v: string | number) => {
+    setForm((f) => ({ ...f, [k]: v }));
+    if (k === 'full_name' && typeof v === 'string' && v.trim()) setNameError(false);
+    if (k === 'primary_phone' && typeof v === 'string' && v.trim()) setPhoneError(false);
+  };
 
   const reset = () => {
     setForm({
@@ -317,7 +323,11 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop) return;
-    if (!form.primary_phone.trim()) { toast('error', 'Customer ka phone number likhein.'); return; }
+    const missingName = !form.full_name.trim();
+    const missingPhone = !form.primary_phone.trim();
+    setNameError(missingName);
+    setPhoneError(missingPhone);
+    if (missingName || missingPhone) return;
     setChecking(true);
     const matches = await findExactNameMatches('customers', 'full_name', shop.id, form.full_name);
     setChecking(false);
@@ -347,9 +357,10 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
           </div>
         </div>
       ) : (
-        <form onSubmit={submit} className="space-y-4">
+        <form onSubmit={submit} noValidate className="space-y-4">
           <NameAutocomplete
             required
+            error={nameError}
             placeholder="Mohsin Ali"
             value={form.full_name}
             onChange={(v) => update('full_name', v)}
@@ -357,7 +368,10 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
             onUrChange={(v) => update('full_name_ur', v)}
           />
           <Field label="Phone Number *">
-            <Input required placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
+            <div className="relative">
+              <FieldWarning show={phoneError} message="فون نمبر لکھنا ضروری ہے" />
+              <Input placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
+            </div>
           </Field>
           <div className="grid grid-cols-2 gap-4">
             <Field label="Customer Type">
@@ -398,6 +412,8 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const { shop, user } = useAuth();
   const toast = useToast();
   const [saving, setSaving] = useState(false);
+  const [nameError, setNameError] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
   const [form, setForm] = useState({
     full_name: customer.full_name ?? '',
     full_name_ur: customer.full_name_ur ?? '',
@@ -406,12 +422,20 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
     address_line1: customer.address_line1 ?? '',
   });
 
-  const update = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
+  const update = (k: string, v: string) => {
+    setForm((f) => ({ ...f, [k]: v }));
+    if (k === 'full_name' && v.trim()) setNameError(false);
+    if (k === 'primary_phone' && v.trim()) setPhoneError(false);
+  };
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     if (!shop || !user) return;
-    if (!form.primary_phone.trim()) { toast('error', 'Customer ka phone number likhein.'); return; }
+    const missingName = !form.full_name.trim();
+    const missingPhone = !form.primary_phone.trim();
+    setNameError(missingName);
+    setPhoneError(missingPhone);
+    if (missingName || missingPhone) return;
     const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
     if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
 
@@ -443,16 +467,20 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
 
   return (
     <Modal open={true} onClose={onClose} title="Edit Customer" size="md">
-      <form onSubmit={submit} className="space-y-4">
+      <form onSubmit={submit} noValidate className="space-y-4">
         <NameAutocomplete
           required
+          error={nameError}
           value={form.full_name}
           onChange={(v) => update('full_name', v)}
           urValue={form.full_name_ur}
           onUrChange={(v) => update('full_name_ur', v)}
         />
         <Field label="Phone Number *">
-          <Input required value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
+          <div className="relative">
+            <FieldWarning show={phoneError} message="فون نمبر لکھنا ضروری ہے" />
+            <Input value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
+          </div>
         </Field>
         <Field label="Customer Type">
           <Select value={form.customer_type} onChange={(e) => update('customer_type', e.target.value)}>

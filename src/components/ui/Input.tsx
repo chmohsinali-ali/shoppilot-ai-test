@@ -25,6 +25,24 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaHTMLAttributes<H
   }
 );
 
+// Replaces the browser's native (English-only) "Please fill out this
+// field" bubble, which also tends to render low enough to overlap the
+// next field. This renders in Urdu, pinned just above the field itself.
+// Pair with `noValidate` on the <form> and app-level required checks.
+export function FieldWarning({ show, message }: { show: boolean; message: string }) {
+  if (!show) return null;
+  return (
+    <div
+      dir="rtl"
+      lang="ur"
+      className="absolute bottom-full left-3 z-10 mb-1.5 whitespace-nowrap rounded-md bg-red-600 px-3 py-1.5 text-xs font-medium text-white shadow-lg"
+    >
+      {message}
+      <div className="absolute left-4 top-full h-2 w-2 -translate-y-1 rotate-45 bg-red-600" />
+    </div>
+  );
+}
+
 export function Field({
   label,
   children,
