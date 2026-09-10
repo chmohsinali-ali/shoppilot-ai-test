@@ -108,7 +108,12 @@ export function CustomerDetailPage() {
               <User className="h-7 w-7" />
             </div>
             <div className="min-w-0">
-              <h1 className="truncate text-xl font-bold text-slate-900 dark:text-slate-100">{customer.full_name}</h1>
+              <h1 className="flex min-w-0 flex-wrap items-baseline gap-x-2 text-xl font-bold text-slate-900 dark:text-slate-100">
+                <span className="truncate">{customer.full_name}</span>
+                {customer.full_name_ur && (
+                  <span dir="rtl" lang="ur" className="text-base font-normal text-slate-500 dark:text-slate-400">{customer.full_name_ur}</span>
+                )}
+              </h1>
               {customer.business_name && <p className="text-sm text-slate-500 dark:text-slate-400">{customer.business_name}</p>}
               <div className="mt-1.5 flex flex-wrap gap-3 text-xs text-slate-500 dark:text-slate-400">
                 {customer.primary_phone && <span className="flex items-center gap-1"><Phone className="h-3.5 w-3.5" />{customer.primary_phone}</span>}

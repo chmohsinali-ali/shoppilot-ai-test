@@ -195,7 +195,15 @@ function CustomerRow({
             <User className="h-4 w-4" />
           </div>
           <div className="min-w-0">
-            <p className="truncate font-medium text-slate-900 dark:text-slate-100">{customer.full_name}</p>
+            <p className="truncate font-medium text-slate-900 dark:text-slate-100">
+              {customer.full_name}
+              {customer.full_name_ur && (
+                <>
+                  <span className="mx-1 font-normal text-slate-300 dark:text-slate-600">/</span>
+                  <span dir="rtl" lang="ur" className="font-normal text-slate-500 dark:text-slate-400">{customer.full_name_ur}</span>
+                </>
+              )}
+            </p>
             {customer.primary_phone && (
               <p className="truncate text-xs text-slate-500 dark:text-slate-400">{customer.primary_phone}</p>
             )}
