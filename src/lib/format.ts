@@ -67,6 +67,14 @@ export function formatDateTime(iso: string): string {
   }
 }
 
+// English/Urdu name pairing rule used everywhere a customer's name is
+// displayed as read text (lists, modal titles, confirmations, toasts):
+// "English Name / Urdu Name" when a translation exists, English alone
+// when it doesn't — never a forced or guessed Urdu name.
+export function bilingualName(en: string, ur?: string | null): string {
+  return ur && ur.trim() ? `${en} / ${ur}` : en;
+}
+
 export function timeAgo(iso: string): string {
   const diff = Date.now() - new Date(iso).getTime();
   const mins = Math.floor(diff / 60000);

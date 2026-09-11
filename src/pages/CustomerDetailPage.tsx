@@ -13,7 +13,7 @@ import { Input, Field, Select, Textarea, FieldWarning } from '@/components/ui/In
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney, formatDate, formatDateCompact } from '@/lib/format';
+import { formatMoney, formatDate, formatDateCompact, bilingualName } from '@/lib/format';
 import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
 import { NameAutocomplete } from '@/components/NameAutocomplete';
 import type { Customer, LedgerEntry } from '@/types/db';
@@ -464,12 +464,12 @@ function DeactivateCustomerModal({ customer, balance, onClose, onDone }: { custo
     const { error } = await supabase.from('customers').update({ deleted_at: new Date().toISOString(), status: 'inactive', updated_at: new Date().toISOString() }).eq('id', customer.id);
     if (error) { setSaving(false); toast('error', error.message); return; }
     await supabase.from('audit_logs').insert({ shop_id: shop.id, user_id: user.id, action: 'customer.deactivate', entity_type: 'customer', entity_id: customer.id, metadata: { name: customer.full_name, balance } });
-    setSaving(false); toast('success', `${customer.full_name} has been deactivated.`); onClose(); onDone();
+    setSaving(false); toast('success', `${bilingualName(customer.full_name, customer.full_name_ur)} has been deactivated.`); onClose(); onDone();
   };
   return (
     <Modal open={true} onClose={onClose} title="Deactivate Customer" size="sm">
       <div className="space-y-4">
-        <p className="text-sm text-slate-600 dark:text-slate-300">Are you sure you want to deactivate <span className="font-semibold">{customer.full_name}</span>?</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Are you sure you want to deactivate <span className="font-semibold">{bilingualName(customer.full_name, customer.full_name_ur)}</span>?</p>
         <p className="text-xs text-slate-500 dark:text-slate-400">This is a soft delete — the customer will be hidden from your active list, but all historical invoices and ledger entries will remain fully visible and intact.</p>
         {hasBalance && (
           <div className="rounded-lg bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
@@ -499,7 +499,7 @@ function PermanentDeleteCustomerModal({ customer, balance, onClose, onDone }: { 
     setSaving(true);
     const { error } = await supabase.rpc('permanently_delete_customer', { p_customer_id: customer.id });
     if (error) { setSaving(false); toast('error', error.message); return; }
-    setSaving(false); toast('success', `${customer.full_name} and all their history have been permanently deleted.`); onClose(); onDone();
+    setSaving(false); toast('success', `${bilingualName(customer.full_name, customer.full_name_ur)} and all their history have been permanently deleted.`); onClose(); onDone();
   };
 
   return (
@@ -508,7 +508,7 @@ function PermanentDeleteCustomerModal({ customer, balance, onClose, onDone }: { 
         <div className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950/30 dark:text-red-300">
           <p className="font-semibold">This cannot be undone.</p>
           <p className="mt-1">
-            <span className="font-semibold">{customer.full_name}</span> and every sale, return, warranty, and
+            <span className="font-semibold">{bilingualName(customer.full_name, customer.full_name_ur)}</span> and every sale, return, warranty, and
             ledger entry linked to them will be deleted forever — nothing will remain, and the AI Assistant will
             never be able to bring up their data again, even if a new customer is added later.
           </p>
@@ -574,7 +574,7 @@ function PaymentModal({ open, onClose, customer, onDone }: { open: boolean; onCl
   };
 
   return (
-    <Modal open={open} onClose={onClose} title={`Receive payment from ${customer.full_name}`} size="sm">
+    <Modal open={open} onClose={onClose} title={`Receive payment from ${bilingualName(customer.full_name, customer.full_name_ur)}`} size="sm">
       <form onSubmit={submit} className="space-y-4">
         <Field label="Amount">
           <Input type="number" min={0.01} step="0.01" required value={amount || ''} onChange={(e) => setAmount(parseFloat(e.target.value) || 0)} />

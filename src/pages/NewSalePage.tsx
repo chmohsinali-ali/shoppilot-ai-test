@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 import { Input, Field, Select } from '@/components/ui/Input';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney } from '@/lib/format';
+import { formatMoney, bilingualName } from '@/lib/format';
 import type { Customer, Product, SaleItemInput } from '@/types/db';
 
 type Line = SaleItemInput & { key: string };
@@ -180,7 +180,7 @@ export function NewSalePage() {
             <Field label="Customer">
               <Select value={customerId} onChange={(e) => setCustomerId(e.target.value)}>
                 <option value="">Walk-in customer</option>
-                {customers.map((c) => <option key={c.id} value={c.id}>{c.full_name}{c.primary_phone ? ` · ${c.primary_phone}` : ''}</option>)}
+                {customers.map((c) => <option key={c.id} value={c.id}>{bilingualName(c.full_name, c.full_name_ur)}{c.primary_phone ? ` · ${c.primary_phone}` : ''}</option>)}
               </Select>
             </Field>
           </Card>

@@ -9,7 +9,7 @@ import { Input, Field, Select, Textarea } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatDate } from '@/lib/format';
+import { formatDate, bilingualName } from '@/lib/format';
 import { computeWarrantyExpiry } from '@/lib/calc';
 import type { Warranty, WarrantyClaim, Customer } from '@/types/db';
 
@@ -138,7 +138,7 @@ function AddWarrantyModal({ open, onClose, onCreated }: { open: boolean; onClose
 
   useEffect(() => {
     if (open && shop) {
-      supabase.from('customers').select('id, full_name').eq('shop_id', shop.id).is('deleted_at', null).order('full_name').then(({ data }) => setCustomers((data ?? []) as Customer[]));
+      supabase.from('customers').select('id, full_name, full_name_ur').eq('shop_id', shop.id).is('deleted_at', null).order('full_name').then(({ data }) => setCustomers((data ?? []) as Customer[]));
     }
   }, [open, shop]);
 
@@ -173,7 +173,7 @@ function AddWarrantyModal({ open, onClose, onCreated }: { open: boolean; onClose
         <Field label="Customer (optional)">
           <Select value={form.customer_id} onChange={(e) => update('customer_id', e.target.value)}>
             <option value="">Walk-in / select</option>
-            {customers.map((c) => <option key={c.id} value={c.id}>{c.full_name}</option>)}
+            {customers.map((c) => <option key={c.id} value={c.id}>{bilingualName(c.full_name, c.full_name_ur)}</option>)}
           </Select>
         </Field>
         <div className="grid grid-cols-2 gap-4">

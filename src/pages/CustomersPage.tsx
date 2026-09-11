@@ -10,7 +10,7 @@ import { Input, Field, Select, FieldWarning } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
-import { formatMoney } from '@/lib/format';
+import { formatMoney, bilingualName } from '@/lib/format';
 import { EmbeddedPartyPicker } from '@/components/EmbeddedPartyPicker';
 import { NameAutocomplete } from '@/components/NameAutocomplete';
 import { findExactNameMatches, phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
@@ -221,7 +221,7 @@ function CustomerRowActionsMenu({
   customer, onClose, onEdit, onPermanentDelete,
 }: { customer: CustomerWithBalance; onClose: () => void; onEdit: () => void; onPermanentDelete: () => void }) {
   return (
-    <Modal open={true} onClose={onClose} title={customer.full_name} size="sm">
+    <Modal open={true} onClose={onClose} title={bilingualName(customer.full_name, customer.full_name_ur)} size="sm">
       <div className="space-y-2">
         <button
           type="button"
@@ -342,7 +342,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
       {dupNames ? (
         <div className="space-y-3">
           <p dir="rtl" className="rounded-lg bg-amber-50 px-3 py-2.5 text-right text-sm font-medium text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
-            "{form.full_name}" نام کے کسٹمر پہلے سے موجود ہیں۔ نیچے نام، نمبر اور بیلنس دیکھ کر تصدیق کریں کہ کون سا کسٹمر ہے، یا نیچے "نیا کسٹمر شامل کریں" سے نیا کسٹمر بنائیں۔
+            "{bilingualName(form.full_name, form.full_name_ur)}" نام کے کسٹمر پہلے سے موجود ہیں۔ نیچے نام، نمبر اور بیلنس دیکھ کر تصدیق کریں کہ کون سا کسٹمر ہے، یا نیچے "نیا کسٹمر شامل کریں" سے نیا کسٹمر بنائیں۔
           </p>
           <EmbeddedPartyPicker
             kind="customer"
@@ -517,7 +517,7 @@ function PermanentDeleteCustomerModal({ customer, onClose, onDone }: { customer:
     const { error } = await supabase.rpc('permanently_delete_customer', { p_customer_id: customer.id });
     if (error) { setSaving(false); toast('error', error.message); return; }
     setSaving(false);
-    toast('success', `${customer.full_name} and all their history have been permanently deleted.`);
+    toast('success', `${bilingualName(customer.full_name, customer.full_name_ur)} and all their history have been permanently deleted.`);
     onClose();
     onDone();
   };
@@ -528,7 +528,7 @@ function PermanentDeleteCustomerModal({ customer, onClose, onDone }: { customer:
         <div className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950/30 dark:text-red-300">
           <p className="font-semibold">This cannot be undone.</p>
           <p className="mt-1">
-            <span className="font-semibold">{customer.full_name}</span> and every sale, return, warranty, and
+            <span className="font-semibold">{bilingualName(customer.full_name, customer.full_name_ur)}</span> and every sale, return, warranty, and
             ledger entry linked to them will be deleted forever.
           </p>
         </div>

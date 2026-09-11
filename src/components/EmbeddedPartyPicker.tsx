@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Search, Phone, ChevronLeft, ChevronRight, UserPlus } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { Spinner, EmptyState } from '@/components/ui/EmptyState';
-import { formatMoney } from '@/lib/format';
+import { formatMoney, bilingualName } from '@/lib/format';
 
 export type PickedParty = { id: string; name: string };
 
@@ -62,6 +62,10 @@ export function EmbeddedPartyPicker({
   };
 
   const nameOf = (r: any) => (kind === 'customer' ? r.full_name : r.supplier_name);
+  // Display only — chosen.name (nameOf) stays English-only since it also
+  // feeds spoken AI Assistant replies, where a slash-separated Urdu name
+  // read aloud would be nonsense.
+  const displayNameOf = (r: any) => (kind === 'customer' ? bilingualName(r.full_name, r.full_name_ur) : r.supplier_name);
   const amountOf = (r: any) => (kind === 'customer' ? r.current_balance : r.current_payable);
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
@@ -91,7 +95,7 @@ export function EmbeddedPartyPicker({
               className="flex w-full items-center justify-between rounded-lg border border-slate-100 px-3 py-2 text-left text-sm transition-colors hover:border-blue-400 hover:bg-blue-50 dark:border-slate-800 dark:hover:bg-blue-950/20"
             >
               <div className="min-w-0">
-                <p className="truncate font-medium text-slate-900 dark:text-slate-100">{nameOf(r)}</p>
+                <p className="truncate font-medium text-slate-900 dark:text-slate-100">{displayNameOf(r)}</p>
                 {r.primary_phone && (
                   <p className="flex items-center gap-1 text-xs text-slate-500"><Phone className="h-3 w-3" /> {r.primary_phone}</p>
                 )}
