@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Package, Plus } from 'lucide-react';
 import { Input } from '@/components/ui/Input';
-import { formatMoney, bilingualName } from '@/lib/format';
+import { formatMoney } from '@/lib/format';
 import type { Product } from '@/types/db';
 
 type RefEntry = { category: string; en: string; ur: string; aliases: string[] };
@@ -67,13 +67,17 @@ function productScore(p: Product, q: string): number {
 }
 
 export function ProductNameAutocomplete({
-  value, onChange, products, currency, onPickCatalog, placeholder,
+  value, onChange, products, currency, onPickCatalog, onPickReference, placeholder,
 }: {
   value: string;
   onChange: (v: string) => void;
   products: Product[];
   currency?: string;
   onPickCatalog: (p: Product) => void;
+  /** A reference-dictionary pick (not in the shop's own catalog) — sets
+   *  product_name/product_name_ur only, same as free typing, since
+   *  there's no product_id/price/stock to link. */
+  onPickReference: (en: string, ur: string) => void;
   placeholder?: string;
 }) {
   const [open, setOpen] = useState(false);
@@ -122,7 +126,7 @@ export function ProductNameAutocomplete({
     if (s.kind === 'catalog') {
       onPickCatalog(s.product);
     } else {
-      onChange(bilingualName(s.entry.en, s.entry.ur));
+      onPickReference(s.entry.en, s.entry.ur);
     }
     setOpen(false);
   };

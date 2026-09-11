@@ -88,7 +88,7 @@ export function NewSalePage() {
   }, [products, productSearch]);
 
   function emptyLine(): Line {
-    return { key: Math.random().toString(36).slice(2), product_name: '', unit: 'piece', quantity: 1, price: 0, discount: 0, product_id: null };
+    return { key: Math.random().toString(36).slice(2), product_name: '', product_name_ur: '', unit: 'piece', quantity: 1, price: 0, discount: 0, product_id: null };
   }
 
   const addProductToLine = (p: Product) => {
@@ -98,22 +98,34 @@ export function NewSalePage() {
         return ls.map((l) => (l.key === existing.key ? { ...l, quantity: l.quantity + 1 } : l));
       }
       const firstEmpty = ls.length === 1 && !ls[0].product_name;
-      const productName = bilingualName(p.name, p.urdu_name);
+      const line = { product_id: p.id, product_name: p.name, product_name_ur: p.urdu_name ?? '', unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 };
       if (firstEmpty) {
-        return [{ ...ls[0], product_id: p.id, product_name: productName, unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 }];
+        return [{ ...ls[0], ...line }];
       }
-      return [...ls, { key: Math.random().toString(36).slice(2), product_id: p.id, product_name: productName, unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 }];
+      return [...ls, { key: Math.random().toString(36).slice(2), ...line }];
     });
     setProductSearch('');
   };
 
   const updateLine = (key: string, field: keyof Line, value: string | number) => {
-    setLines((ls) => ls.map((l) => (l.key === key ? { ...l, [field]: value } : l)));
+    setLines((ls) => ls.map((l) => (l.key === key
+      // Free typing means the English text is no longer necessarily what
+      // product_name_ur (set by a previous pick) was translated from —
+      // clearing it here is the same "never guess" rule the customer name
+      // field follows: only an actual pick fills in an Urdu name.
+      ? { ...l, [field]: value, ...(field === 'product_name' ? { product_name_ur: '' } : {}) }
+      : l)));
   };
 
   const pickProductForLine = (key: string, p: Product) => {
     setLines((ls) => ls.map((l) => (l.key === key
-      ? { ...l, product_id: p.id, product_name: bilingualName(p.name, p.urdu_name), unit: p.unit, price: Number(p.sale_price) }
+      ? { ...l, product_id: p.id, product_name: p.name, product_name_ur: p.urdu_name ?? '', unit: p.unit, price: Number(p.sale_price) }
+      : l)));
+  };
+
+  const pickReferenceForLine = (key: string, en: string, ur: string) => {
+    setLines((ls) => ls.map((l) => (l.key === key
+      ? { ...l, product_id: null, product_name: en, product_name_ur: ur }
       : l)));
   };
 
@@ -133,6 +145,7 @@ export function NewSalePage() {
     const itemsJson = validLines.map((l) => ({
       product_id: l.product_id ?? '',
       product_name: l.product_name,
+      product_name_ur: l.product_name_ur ?? '',
       unit: l.unit,
       quantity: l.quantity,
       price: l.price,
@@ -229,6 +242,7 @@ export function NewSalePage() {
                         products={products}
                         currency={shop?.currency}
                         onPickCatalog={(p) => pickProductForLine(l.key, p)}
+                        onPickReference={(en, ur) => pickReferenceForLine(l.key, en, ur)}
                       />
                     </div>
                     <div className="col-span-4 sm:col-span-2">

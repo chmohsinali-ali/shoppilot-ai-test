@@ -10,7 +10,8 @@ import { Modal } from '@/components/ui/Modal';
 import { PageLoader, EmptyState } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, formatDateCompact, formatNumber } from '@/lib/format';
-import type { Purchase, PurchaseItem } from '@/types/db';
+import { ProductNameAutocomplete } from '@/components/ProductNameAutocomplete';
+import type { Purchase, PurchaseItem, Product } from '@/types/db';
 
 export function PurchaseDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -19,6 +20,7 @@ export function PurchaseDetailPage() {
   const toast = useToast();
   const [purchase, setPurchase] = useState<Purchase | null>(null);
   const [items, setItems] = useState<PurchaseItem[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [showCancel, setShowCancel] = useState(false);
@@ -32,12 +34,14 @@ export function PurchaseDetailPage() {
   const load = async () => {
     if (!shop || !id) return;
     setLoading(true);
-    const [p, it] = await Promise.all([
+    const [p, it, prod] = await Promise.all([
       supabase.from('purchases').select('*').eq('id', id).maybeSingle(),
       supabase.from('purchase_items').select('*').eq('purchase_id', id).order('created_at'),
+      supabase.from('products').select('*').eq('shop_id', shop.id).is('deleted_at', null).order('name'),
     ]);
     setPurchase(p.data as Purchase | null);
     setItems((it.data ?? []) as PurchaseItem[]);
+    setProducts((prod.data ?? []) as Product[]);
     setLoading(false);
   };
 
@@ -87,7 +91,27 @@ export function PurchaseDetailPage() {
   };
 
   const updateEditLine = (key: string, field: 'ordered_quantity' | 'free_units' | 'price_per_unit' | 'product_name' | 'unit', value: string) => {
-    setEditLines((lines) => lines.map((l) => (l.key === key ? { ...l, [field]: (field === 'product_name' || field === 'unit') ? value : (Number(value) || 0) } : l)));
+    setEditLines((lines) => lines.map((l) => (l.key === key
+      ? {
+          ...l,
+          [field]: (field === 'product_name' || field === 'unit') ? value : (Number(value) || 0),
+          // Free typing invalidates any Urdu name a previous pick set —
+          // same "never guess" rule the customer name field follows.
+          ...(field === 'product_name' ? { product_name_ur: '' } : {}),
+        }
+      : l)));
+  };
+
+  const pickCatalogForEditLine = (key: string, p: Product) => {
+    setEditLines((lines) => lines.map((l) => (l.key === key
+      ? { ...l, product_id: p.id, product_name: p.name, product_name_ur: p.urdu_name ?? '', unit: p.unit, price_per_unit: Number(p.purchase_price) }
+      : l)));
+  };
+
+  const pickReferenceForEditLine = (key: string, en: string, ur: string) => {
+    setEditLines((lines) => lines.map((l) => (l.key === key
+      ? { ...l, product_id: null, product_name: en, product_name_ur: ur }
+      : l)));
   };
 
   const removeEditLine = (key: string) => setEditLines((lines) => lines.filter((l) => l.key !== key));
@@ -297,11 +321,17 @@ export function PurchaseDetailPage() {
               <p className="text-xs text-slate-400">Advanced FMCG fields (HS code, tax, etc.) are kept as-is from the original; edit quantity, free units, and price below.</p>
               {editLines.map((l) => (
                 <div key={l.key} className="flex items-center gap-2 rounded-lg border border-slate-200 p-2 dark:border-slate-700">
-                  <input
-                    className="min-w-0 flex-1 rounded border border-slate-200 bg-white px-2 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-800"
-                    value={l.product_name} placeholder="Item name"
-                    onChange={(e) => updateEditLine(l.key, 'product_name', e.target.value)}
-                  />
+                  <div className="min-w-0 flex-1">
+                    <ProductNameAutocomplete
+                      value={l.product_name}
+                      onChange={(v) => updateEditLine(l.key, 'product_name', v)}
+                      products={products}
+                      currency={cur}
+                      onPickCatalog={(p) => pickCatalogForEditLine(l.key, p)}
+                      onPickReference={(en, ur) => pickReferenceForEditLine(l.key, en, ur)}
+                      placeholder="Item name"
+                    />
+                  </div>
                   <input
                     className="w-16 rounded border border-slate-200 bg-white px-2 py-1.5 text-right text-sm dark:border-slate-700 dark:bg-slate-800"
                     type="number" min={0} step="any" value={l.ordered_quantity} title="Ordered qty"
