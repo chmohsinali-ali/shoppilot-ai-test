@@ -319,7 +319,7 @@ function AddSupplierModal({ open, onClose, onCreated }: { open: boolean; onClose
       {dupNames ? (
         <div className="space-y-3">
           <p dir="rtl" className="rounded-lg bg-amber-50 px-3 py-2.5 text-right text-sm font-medium text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
-            "{form.supplier_name}" نام کے سپلائر پہلے سے موجود ہیں۔ نیچے نام، نمبر اور بیلنس دیکھ کر تصدیق کریں کہ کون سا سپلائر ہے، یا نیچے "نیا سپلائر شامل کریں" سے نیا سپلائر بنائیں۔
+            "{form.supplier_name}" نام کے سپلائر پہلے سے موجود ہیں۔ نیچے نام اور نمبر دیکھ کر تصدیق کریں کہ کون سا سپلائر ہے، یا نیچے "نیا سپلائر شامل کریں" سے نیا سپلائر بنائیں۔
           </p>
           <EmbeddedPartyPicker
             kind="supplier"

@@ -13,7 +13,7 @@ import { useToast } from '@/components/ui/Toast';
 import { formatMoney, bilingualName } from '@/lib/format';
 import { EmbeddedPartyPicker } from '@/components/EmbeddedPartyPicker';
 import { NameAutocomplete } from '@/components/NameAutocomplete';
-import { findExactNameMatches, phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
+import { findExactNameMatches, phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER, PHONE_REQUIRED_MESSAGE } from '@/lib/partyValidation';
 import type { Customer } from '@/types/db';
 
 type CustomerWithBalance = Customer & { balance: number };
@@ -253,7 +253,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
   const [checking, setChecking] = useState(false);
   const [dupNames, setDupNames] = useState(false);
   const [nameError, setNameError] = useState(false);
-  const [phoneError, setPhoneError] = useState(false);
+  const [phoneError, setPhoneError] = useState('');
   const [form, setForm] = useState({
     full_name: '',
     full_name_ur: '',
@@ -267,7 +267,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
   const update = (k: string, v: string | number) => {
     setForm((f) => ({ ...f, [k]: v }));
     if (k === 'full_name' && typeof v === 'string' && v.trim()) setNameError(false);
-    if (k === 'primary_phone' && typeof v === 'string' && v.trim()) setPhoneError(false);
+    if (k === 'primary_phone' && typeof v === 'string' && v.trim()) setPhoneError('');
   };
 
   const reset = () => {
@@ -281,9 +281,9 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
 
   const doInsert = async () => {
     if (!shop) return;
-    if (!form.primary_phone.trim()) { toast('error', 'Customer ka phone number likhein.'); return; }
+    if (!form.primary_phone.trim()) { setPhoneError(PHONE_REQUIRED_MESSAGE); return; }
     const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone);
-    if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+    if (used) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
 
     setSaving(true);
     const { data, error } = await supabase.from('customers').insert({
@@ -298,7 +298,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
     }).select('id').maybeSingle();
     setSaving(false);
     if (error) {
-      if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+      if (isDuplicatePhoneError(error)) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
       toast('error', error.message);
       return;
     }
@@ -326,7 +326,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
     const missingName = !form.full_name.trim();
     const missingPhone = !form.primary_phone.trim();
     setNameError(missingName);
-    setPhoneError(missingPhone);
+    setPhoneError(missingPhone ? PHONE_REQUIRED_MESSAGE : '');
     if (missingName || missingPhone) return;
     setChecking(true);
     const matches = await findExactNameMatches('customers', 'full_name', shop.id, form.full_name);
@@ -342,7 +342,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
       {dupNames ? (
         <div className="space-y-3">
           <p dir="rtl" className="rounded-lg bg-amber-50 px-3 py-2.5 text-right text-sm font-medium text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
-            "{bilingualName(form.full_name, form.full_name_ur)}" نام کے کسٹمر پہلے سے موجود ہیں۔ نیچے نام، نمبر اور بیلنس دیکھ کر تصدیق کریں کہ کون سا کسٹمر ہے، یا نیچے "نیا کسٹمر شامل کریں" سے نیا کسٹمر بنائیں۔
+            "{bilingualName(form.full_name, form.full_name_ur)}" نام کے کسٹمر پہلے سے موجود ہیں۔ نیچے نام اور نمبر دیکھ کر تصدیق کریں کہ کون سا کسٹمر ہے، یا نیچے "نیا کسٹمر شامل کریں" سے نیا کسٹمر بنائیں۔
           </p>
           <EmbeddedPartyPicker
             kind="customer"
@@ -369,7 +369,7 @@ function AddCustomerModal({ open, onClose, onCreated }: { open: boolean; onClose
           />
           <Field label="Phone Number *">
             <div className="relative">
-              <FieldWarning show={phoneError} message="فون نمبر لکھنا ضروری ہے" />
+              <FieldWarning show={!!phoneError} message={phoneError} />
               <Input placeholder="0300 1234567" value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
             </div>
           </Field>
@@ -413,7 +413,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const toast = useToast();
   const [saving, setSaving] = useState(false);
   const [nameError, setNameError] = useState(false);
-  const [phoneError, setPhoneError] = useState(false);
+  const [phoneError, setPhoneError] = useState('');
   const [form, setForm] = useState({
     full_name: customer.full_name ?? '',
     full_name_ur: customer.full_name_ur ?? '',
@@ -425,7 +425,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const update = (k: string, v: string) => {
     setForm((f) => ({ ...f, [k]: v }));
     if (k === 'full_name' && v.trim()) setNameError(false);
-    if (k === 'primary_phone' && v.trim()) setPhoneError(false);
+    if (k === 'primary_phone' && v.trim()) setPhoneError('');
   };
 
   const submit = async (e: FormEvent) => {
@@ -434,10 +434,10 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
     const missingName = !form.full_name.trim();
     const missingPhone = !form.primary_phone.trim();
     setNameError(missingName);
-    setPhoneError(missingPhone);
+    setPhoneError(missingPhone ? PHONE_REQUIRED_MESSAGE : '');
     if (missingName || missingPhone) return;
     const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
-    if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+    if (used) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
 
     setSaving(true);
     const { error } = await supabase.from('customers').update({
@@ -450,7 +450,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
     }).eq('id', customer.id);
     if (error) {
       setSaving(false);
-      if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+      if (isDuplicatePhoneError(error)) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
       toast('error', error.message);
       return;
     }
@@ -478,7 +478,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
         />
         <Field label="Phone Number *">
           <div className="relative">
-            <FieldWarning show={phoneError} message="فون نمبر لکھنا ضروری ہے" />
+            <FieldWarning show={!!phoneError} message={phoneError} />
             <Input value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
           </div>
         </Field>

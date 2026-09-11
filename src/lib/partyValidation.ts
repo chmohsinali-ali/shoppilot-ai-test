@@ -3,6 +3,8 @@
 // duplicate-prevention quality must be the same for both party types.
 import { supabase } from '@/lib/supabase';
 
+export const PHONE_REQUIRED_MESSAGE = 'فون نمبر لکھنا ضروری ہے';
+
 export const DUPLICATE_PHONE_MESSAGE_CUSTOMER =
   'یہ فون نمبر پہلے سے ایک کسٹمر کے ساتھ رجسٹرڈ ہے۔ براہ کرم نیا فون نمبر شامل کریں۔';
 export const DUPLICATE_PHONE_MESSAGE_SUPPLIER =

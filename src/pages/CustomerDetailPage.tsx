@@ -14,7 +14,7 @@ import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, formatDate, formatDateCompact, bilingualName } from '@/lib/format';
-import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER } from '@/lib/partyValidation';
+import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER, PHONE_REQUIRED_MESSAGE } from '@/lib/partyValidation';
 import { NameAutocomplete } from '@/components/NameAutocomplete';
 import type { Customer, LedgerEntry } from '@/types/db';
 
@@ -381,7 +381,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const toast = useToast();
   const [saving, setSaving] = useState(false);
   const [nameError, setNameError] = useState(false);
-  const [phoneError, setPhoneError] = useState(false);
+  const [phoneError, setPhoneError] = useState('');
   const [form, setForm] = useState({
     full_name: customer.full_name ?? '',
     full_name_ur: customer.full_name_ur ?? '',
@@ -392,7 +392,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const update = (k: string, v: string) => {
     setForm((f) => ({ ...f, [k]: v }));
     if (k === 'full_name' && v.trim()) setNameError(false);
-    if (k === 'primary_phone' && v.trim()) setPhoneError(false);
+    if (k === 'primary_phone' && v.trim()) setPhoneError('');
   };
   const submit = async (e: FormEvent) => {
     e.preventDefault();
@@ -400,10 +400,10 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
     const missingName = !form.full_name.trim();
     const missingPhone = !form.primary_phone.trim();
     setNameError(missingName);
-    setPhoneError(missingPhone);
+    setPhoneError(missingPhone ? PHONE_REQUIRED_MESSAGE : '');
     if (missingName || missingPhone) return;
     const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
-    if (used) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+    if (used) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
 
     setSaving(true);
     const { error } = await supabase.from('customers').update({
@@ -414,7 +414,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
     }).eq('id', customer.id);
     if (error) {
       setSaving(false);
-      if (isDuplicatePhoneError(error)) { toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+      if (isDuplicatePhoneError(error)) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
       toast('error', error.message);
       return;
     }
@@ -434,7 +434,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
         />
         <Field label="Phone Number *">
           <div className="relative">
-            <FieldWarning show={phoneError} message="فون نمبر لکھنا ضروری ہے" />
+            <FieldWarning show={!!phoneError} message={phoneError} />
             <Input value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
           </div>
         </Field>
