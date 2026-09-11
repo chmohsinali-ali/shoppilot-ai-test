@@ -7,6 +7,7 @@ import { PageHeader } from '@/components/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Input, Field, Select } from '@/components/ui/Input';
+import { ProductNameAutocomplete } from '@/components/ProductNameAutocomplete';
 import { EmptyState, Spinner } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, bilingualName } from '@/lib/format';
@@ -107,6 +108,12 @@ export function NewSalePage() {
 
   const updateLine = (key: string, field: keyof Line, value: string | number) => {
     setLines((ls) => ls.map((l) => (l.key === key ? { ...l, [field]: value } : l)));
+  };
+
+  const pickProductForLine = (key: string, p: Product) => {
+    setLines((ls) => ls.map((l) => (l.key === key
+      ? { ...l, product_id: p.id, product_name: p.name, unit: p.unit, price: Number(p.sale_price) }
+      : l)));
   };
 
   const removeLine = (key: string) => {
@@ -215,7 +222,13 @@ export function NewSalePage() {
                   </div>
                   <div className="grid grid-cols-12 gap-2">
                     <div className="col-span-12 sm:col-span-5">
-                      <Input placeholder="Product name" value={l.product_name} onChange={(e) => updateLine(l.key, 'product_name', e.target.value)} />
+                      <ProductNameAutocomplete
+                        value={l.product_name}
+                        onChange={(v) => updateLine(l.key, 'product_name', v)}
+                        products={products}
+                        currency={shop?.currency}
+                        onPickCatalog={(p) => pickProductForLine(l.key, p)}
+                      />
                     </div>
                     <div className="col-span-4 sm:col-span-2">
                       <Input type="number" min={0} step="0.001" placeholder="Qty" value={l.quantity || ''} onChange={(e) => updateLine(l.key, 'quantity', parseFloat(e.target.value) || 0)} />
