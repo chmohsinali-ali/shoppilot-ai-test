@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Package, Plus } from 'lucide-react';
 import { Input } from '@/components/ui/Input';
 import { formatMoney } from '@/lib/format';
+import { supabase } from '@/lib/supabase';
+import { registerProductAliases } from '@/lib/productDictionary';
 import type { Product } from '@/types/db';
 
 type RefEntry = { category: string; en: string; ur: string; aliases: string[] };
@@ -33,54 +35,72 @@ function loadRefData(): Promise<RefEntry[]> {
 }
 
 const MAX_SUGGESTIONS = 8;
+const URDU_SCRIPT = /[؀-ۿ]/;
 
-type CatalogSuggestion = { kind: 'catalog'; product: Product };
-type RefSuggestion = { kind: 'reference'; entry: RefEntry };
+type CatalogSuggestion = { kind: 'catalog'; product: Product; label: string };
+type RefSuggestion = { kind: 'reference'; entry: RefEntry; label: string };
 type Suggestion = CatalogSuggestion | RefSuggestion;
 
-// Lower is better. An exact alias hit ("cheeni" -> White Sugar, whose
-// alias list is literally "cheeni, chini, sugar") must outrank a mere
-// substring hit inside an unrelated longer word (e.g. "cheeni" also
-// substring-matches "Dar Cheeni" / Cinnamon) — plain .filter().slice()
-// left the right answer buried under noise since the 7,549-item
-// dictionary was built for voice-command matching, not ranked typing
-// suggestions.
-function refScore(entry: RefEntry, q: string): number {
+// Returns both a rank (lower = better — an exact alias hit like "cheeni"
+// on White Sugar's "cheeni, chini, sugar" alias list must outrank a mere
+// substring hit inside an unrelated word, e.g. "cheeni" also
+// substring-matches "Dar Cheeni"/Cinnamon) AND which specific spelling
+// matched — picking a suggestion preserves THAT spelling as the
+// product's name for this transaction (the "original input" the
+// shopkeeper actually searched by, e.g. "Chini" stays "Chini" instead of
+// being forced to the dictionary's canonical "White Sugar") rather than
+// always normalizing to the English canonical form. Falls back to the
+// canonical English form when the closest match was the Urdu-script name
+// itself or an Urdu-script alias — product_name always renders as plain
+// LTR text elsewhere in the app, so it must never end up holding Urdu
+// script (that already has its own dedicated, RTL-rendered field).
+function refMatch(entry: RefEntry, q: string): { score: number; label: string } | null {
   const en = entry.en.toLowerCase();
-  if (en === q) return 0;
-  if (entry.aliases.some((a) => a.toLowerCase() === q)) return 0;
-  if (en.startsWith(q)) return 1;
-  if (entry.aliases.some((a) => a.toLowerCase().startsWith(q))) return 1;
-  if (en.includes(q)) return 2;
-  if (entry.aliases.some((a) => a.toLowerCase().includes(q))) return 3;
-  if (entry.ur.includes(q)) return 3;
-  return 4;
+  const latinAliases = entry.aliases.filter((a) => !URDU_SCRIPT.test(a));
+  if (en === q) return { score: 0, label: entry.en };
+  const exactAlias = latinAliases.find((a) => a.toLowerCase() === q);
+  if (exactAlias) return { score: 0, label: exactAlias };
+  if (en.startsWith(q)) return { score: 1, label: entry.en };
+  const startAlias = latinAliases.find((a) => a.toLowerCase().startsWith(q));
+  if (startAlias) return { score: 1, label: startAlias };
+  if (en.includes(q)) return { score: 2, label: entry.en };
+  const containsAlias = latinAliases.find((a) => a.toLowerCase().includes(q));
+  if (containsAlias) return { score: 3, label: containsAlias };
+  if (entry.ur.includes(q) || entry.aliases.some((a) => a.includes(q))) return { score: 3, label: entry.en };
+  return null;
 }
 
-function productScore(p: Product, q: string): number {
+function productMatch(p: Product, q: string): { score: number; label: string } | null {
   const name = p.name.toLowerCase();
-  if (name === q) return 0;
-  if (name.startsWith(q)) return 1;
-  if (name.includes(q)) return 2;
-  if ((p.urdu_name ?? '').includes(q)) return 3;
-  return 4;
+  if (name === q) return { score: 0, label: p.name };
+  if (name.startsWith(q)) return { score: 1, label: p.name };
+  if (name.includes(q)) return { score: 2, label: p.name };
+  if ((p.urdu_name ?? '').includes(q)) return { score: 3, label: p.name };
+  return null;
 }
 
 export function ProductNameAutocomplete({
-  value, onChange, products, currency, onPickCatalog, onPickReference, placeholder,
+  value, onChange, products, shopId, currency, onPickCatalog, placeholder,
 }: {
   value: string;
   onChange: (v: string) => void;
   products: Product[];
+  shopId: string;
   currency?: string;
-  onPickCatalog: (p: Product) => void;
-  /** A reference-dictionary pick (not in the shop's own catalog) — sets
-   *  product_name/product_name_ur only, same as free typing, since
-   *  there's no product_id/price/stock to link. */
-  onPickReference: (en: string, ur: string) => void;
+  /** Fires for both an existing catalog product AND a reference-dictionary
+   *  pick — a reference pick is created as a real product (with its own
+   *  product_id) the moment it's selected, since an explicit click on one
+   *  specific suggestion already IS the shopkeeper's confirmation of
+   *  which product they mean (the same bar the AI Assistant's own
+   *  resolveProductLines() uses to auto-create silently). `label` is the
+   *  specific spelling that matched what was typed — use it as
+   *  product_name so the transaction keeps the shopkeeper's own wording
+   *  instead of a normalized/forced name. */
+  onPickCatalog: (p: Product, label: string) => void;
   placeholder?: string;
 }) {
   const [open, setOpen] = useState(false);
+  const [creating, setCreating] = useState(false);
   const [refData, setRefData] = useState<RefEntry[] | null>(cachedRef);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -102,40 +122,56 @@ export function ProductNameAutocomplete({
   let suggestions: Suggestion[] = [];
   if (q.length >= 2) {
     const catalogMatches = products
-      .map((p) => ({ p, score: productScore(p, q) }))
-      .filter((x) => x.score < 4)
-      .sort((a, b) => a.score - b.score || a.p.name.length - b.p.name.length)
-      .slice(0, 5)
-      .map((x) => x.p);
-    suggestions = catalogMatches.map((product): Suggestion => ({ kind: 'catalog', product }));
+      .map((p) => ({ p, m: productMatch(p, q) }))
+      .filter((x): x is { p: Product; m: { score: number; label: string } } => x.m !== null)
+      .sort((a, b) => a.m.score - b.m.score || a.p.name.length - b.p.name.length)
+      .slice(0, 5);
+    suggestions = catalogMatches.map((x): Suggestion => ({ kind: 'catalog', product: x.p, label: x.m.label }));
 
-    const catalogNames = new Set(catalogMatches.map((p) => p.name.toLowerCase()));
+    const catalogNames = new Set(catalogMatches.map((x) => x.p.name.toLowerCase()));
     if (refData && suggestions.length < MAX_SUGGESTIONS) {
       const matches = refData
         .filter((r) => !catalogNames.has(r.en.toLowerCase()))
-        .map((entry) => ({ entry, score: refScore(entry, q) }))
-        .filter((x) => x.score < 4)
-        .sort((a, b) => a.score - b.score || a.entry.en.length - b.entry.en.length)
-        .slice(0, MAX_SUGGESTIONS - suggestions.length)
-        .map((x) => x.entry);
-      suggestions = suggestions.concat(matches.map((entry): Suggestion => ({ kind: 'reference', entry })));
+        .map((entry) => ({ entry, m: refMatch(entry, q) }))
+        .filter((x): x is { entry: RefEntry; m: { score: number; label: string } } => x.m !== null)
+        .sort((a, b) => a.m.score - b.m.score || a.entry.en.length - b.entry.en.length)
+        .slice(0, MAX_SUGGESTIONS - suggestions.length);
+      suggestions = suggestions.concat(matches.map((x): Suggestion => ({ kind: 'reference', entry: x.entry, label: x.m.label })));
     }
   }
 
-  const handleSelect = (s: Suggestion) => {
+  const handleSelect = async (s: Suggestion) => {
     if (s.kind === 'catalog') {
-      onPickCatalog(s.product);
-    } else {
-      onPickReference(s.entry.en, s.entry.ur);
+      onPickCatalog(s.product, s.label);
+      setOpen(false);
+      return;
     }
+    setCreating(true);
+    const { data, error } = await supabase
+      .from('products')
+      .insert({ shop_id: shopId, name: s.entry.en, urdu_name: s.entry.ur || null, unit: 'piece', status: 'active' })
+      .select('*')
+      .maybeSingle();
+    setCreating(false);
     setOpen(false);
+    if (error || !data) {
+      // Creation failing (rare — network/RLS) must never block the
+      // shopkeeper from finishing this line; fall back to a plain
+      // unlinked line item, same as free typing has always allowed.
+      onChange(s.label);
+      return;
+    }
+    const product = data as Product;
+    void registerProductAliases(shopId, product.id, [s.entry.en, s.entry.ur, ...s.entry.aliases]);
+    onPickCatalog(product, s.label);
   };
 
   return (
     <div ref={containerRef} className="relative">
       <Input
-        placeholder={placeholder ?? 'Product name'}
+        placeholder={creating ? 'Adding product…' : (placeholder ?? 'Product name')}
         value={value}
+        disabled={creating}
         autoComplete="off"
         onChange={(e) => { onChange(e.target.value); setOpen(true); }}
         onFocus={() => setOpen(true)}

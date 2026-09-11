@@ -104,11 +104,10 @@ export function ProductsPage() {
                               <p className="truncate font-medium text-slate-900 dark:text-slate-100">{p.name}</p>
                               {p.urdu_name && <p dir="rtl" className="flex-shrink-0 truncate text-sm text-slate-500 dark:text-slate-400">{p.urdu_name}</p>}
                             </div>
-                            {(p.sku || p.barcode) && (
-                              <p className="truncate text-xs text-slate-500 dark:text-slate-400">
-                                {p.sku && <span className="flex items-center gap-1"><Barcode className="h-3 w-3" />{p.sku}</span>}
-                              </p>
-                            )}
+                            <p className="truncate text-xs text-slate-500 dark:text-slate-400">
+                              {p.product_code && <span className="font-mono">{p.product_code}</span>}
+                              {p.sku && <span className="ml-2 inline-flex items-center gap-1"><Barcode className="h-3 w-3" />{p.sku}</span>}
+                            </p>
                           </div>
                         </div>
                       </td>
@@ -153,6 +152,7 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
   const { shop } = useAuth();
   const toast = useToast();
   const [saving, setSaving] = useState(false);
+  const [aliases, setAliases] = useState<string[]>([]);
   const [form, setForm] = useState({
     name: '', urdu_name: '', sku: '', barcode: '', category: '', brand: '', unit: 'piece',
     purchase_price: 0, sale_price: 0, stock: 0, min_stock_level: 0, description: '',
@@ -167,8 +167,15 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
         stock: Number(product.stock), min_stock_level: Number(product.min_stock_level),
         description: product.description ?? '',
       });
+      // Every other spelling/language this product has ever been found
+      // by (manual entry pick, AI voice/text command) — shown so a
+      // shopkeeper can see "Sugar", "چینی", "Chini" etc. are all this
+      // one product, not separate ones.
+      supabase.from('product_aliases').select('alias').eq('product_id', product.id).order('alias')
+        .then(({ data }) => setAliases((data ?? []).map((r) => r.alias)));
     } else {
       setForm({ name: '', urdu_name: '', sku: '', barcode: '', category: '', brand: '', unit: 'piece', purchase_price: 0, sale_price: 0, stock: 0, min_stock_level: 0, description: '' });
+      setAliases([]);
     }
   }, [product, open]);
 
@@ -220,6 +227,12 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
   return (
     <Modal open={open} onClose={onClose} title={product ? 'Edit Product' : 'Add Product'} size="md">
       <form onSubmit={submit} className="space-y-4">
+        {product?.product_code && (
+          <div className="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-500 dark:bg-slate-800/50 dark:text-slate-400">
+            Product ID: <span className="font-mono font-medium text-slate-700 dark:text-slate-300">{product.product_code}</span>
+            <span className="ml-1">— this never changes, no matter what name is shown below.</span>
+          </div>
+        )}
         <div className="grid grid-cols-2 gap-4">
           <Field label="Product name (English)">
             <Input required placeholder="Sugar" value={form.name} onChange={(e) => update('name', e.target.value)} />
@@ -228,6 +241,17 @@ function ProductModal({ open, onClose, onSaved, product }: { open: boolean; onCl
             <Input dir="rtl" placeholder="چینی" value={form.urdu_name} onChange={(e) => update('urdu_name', e.target.value)} />
           </Field>
         </div>
+        {aliases.length > 0 && (
+          <Field label="Also recognized as (Roman Urdu, past spellings, etc.)">
+            <div className="flex flex-wrap gap-1.5">
+              {aliases.map((a) => (
+                <span key={a} dir={/[؀-ۿ]/.test(a) ? 'rtl' : 'ltr'} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                  {a}
+                </span>
+              ))}
+            </div>
+          </Field>
+        )}
         <div className="grid grid-cols-2 gap-4">
           <Field label="SKU (optional)"><Input placeholder="SUG-001" value={form.sku} onChange={(e) => update('sku', e.target.value)} /></Field>
           <Field label="Barcode (optional)"><Input placeholder="8964000..." value={form.barcode} onChange={(e) => update('barcode', e.target.value)} /></Field>

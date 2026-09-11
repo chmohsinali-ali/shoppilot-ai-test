@@ -102,15 +102,10 @@ export function PurchaseDetailPage() {
       : l)));
   };
 
-  const pickCatalogForEditLine = (key: string, p: Product) => {
+  const pickCatalogForEditLine = (key: string, p: Product, label: string) => {
+    setProducts((ps) => (ps.some((x) => x.id === p.id) ? ps : [...ps, p]));
     setEditLines((lines) => lines.map((l) => (l.key === key
-      ? { ...l, product_id: p.id, product_name: p.name, product_name_ur: p.urdu_name ?? '', unit: p.unit, price_per_unit: Number(p.purchase_price) }
-      : l)));
-  };
-
-  const pickReferenceForEditLine = (key: string, en: string, ur: string) => {
-    setEditLines((lines) => lines.map((l) => (l.key === key
-      ? { ...l, product_id: null, product_name: en, product_name_ur: ur }
+      ? { ...l, product_id: p.id, product_name: label, product_name_ur: p.urdu_name ?? '', unit: p.unit, price_per_unit: Number(p.purchase_price) }
       : l)));
   };
 
@@ -326,9 +321,9 @@ export function PurchaseDetailPage() {
                       value={l.product_name}
                       onChange={(v) => updateEditLine(l.key, 'product_name', v)}
                       products={products}
+                      shopId={shop?.id ?? ''}
                       currency={cur}
-                      onPickCatalog={(p) => pickCatalogForEditLine(l.key, p)}
-                      onPickReference={(en, ur) => pickReferenceForEditLine(l.key, en, ur)}
+                      onPickCatalog={(p, label) => pickCatalogForEditLine(l.key, p, label)}
                       placeholder="Item name"
                     />
                   </div>

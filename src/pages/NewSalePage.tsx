@@ -117,15 +117,14 @@ export function NewSalePage() {
       : l)));
   };
 
-  const pickProductForLine = (key: string, p: Product) => {
+  const pickProductForLine = (key: string, p: Product, label: string) => {
+    // A reference pick that just created a brand-new product (id not yet
+    // in `products`) needs to be added to local state too, so the next
+    // keystroke's own catalog matching (and the top search grid) sees it
+    // immediately instead of only after a full reload.
+    setProducts((ps) => (ps.some((x) => x.id === p.id) ? ps : [...ps, p]));
     setLines((ls) => ls.map((l) => (l.key === key
-      ? { ...l, product_id: p.id, product_name: p.name, product_name_ur: p.urdu_name ?? '', unit: p.unit, price: Number(p.sale_price) }
-      : l)));
-  };
-
-  const pickReferenceForLine = (key: string, en: string, ur: string) => {
-    setLines((ls) => ls.map((l) => (l.key === key
-      ? { ...l, product_id: null, product_name: en, product_name_ur: ur }
+      ? { ...l, product_id: p.id, product_name: label, product_name_ur: p.urdu_name ?? '', unit: p.unit, price: Number(p.sale_price) }
       : l)));
   };
 
@@ -240,9 +239,9 @@ export function NewSalePage() {
                         value={l.product_name}
                         onChange={(v) => updateLine(l.key, 'product_name', v)}
                         products={products}
+                        shopId={shop?.id ?? ''}
                         currency={shop?.currency}
-                        onPickCatalog={(p) => pickProductForLine(l.key, p)}
-                        onPickReference={(en, ur) => pickReferenceForLine(l.key, en, ur)}
+                        onPickCatalog={(p, label) => pickProductForLine(l.key, p, label)}
                       />
                     </div>
                     <div className="col-span-4 sm:col-span-2">
