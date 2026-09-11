@@ -98,10 +98,11 @@ export function NewSalePage() {
         return ls.map((l) => (l.key === existing.key ? { ...l, quantity: l.quantity + 1 } : l));
       }
       const firstEmpty = ls.length === 1 && !ls[0].product_name;
+      const productName = bilingualName(p.name, p.urdu_name);
       if (firstEmpty) {
-        return [{ ...ls[0], product_id: p.id, product_name: p.name, unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 }];
+        return [{ ...ls[0], product_id: p.id, product_name: productName, unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 }];
       }
-      return [...ls, { key: Math.random().toString(36).slice(2), product_id: p.id, product_name: p.name, unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 }];
+      return [...ls, { key: Math.random().toString(36).slice(2), product_id: p.id, product_name: productName, unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 }];
     });
     setProductSearch('');
   };
@@ -112,7 +113,7 @@ export function NewSalePage() {
 
   const pickProductForLine = (key: string, p: Product) => {
     setLines((ls) => ls.map((l) => (l.key === key
-      ? { ...l, product_id: p.id, product_name: p.name, unit: p.unit, price: Number(p.sale_price) }
+      ? { ...l, product_id: p.id, product_name: bilingualName(p.name, p.urdu_name), unit: p.unit, price: Number(p.sale_price) }
       : l)));
   };
 

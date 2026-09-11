@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Package, Plus } from 'lucide-react';
 import { Input } from '@/components/ui/Input';
-import { formatMoney } from '@/lib/format';
+import { formatMoney, bilingualName } from '@/lib/format';
 import type { Product } from '@/types/db';
 
 type RefEntry = { category: string; en: string; ur: string; aliases: string[] };
@@ -122,7 +122,7 @@ export function ProductNameAutocomplete({
     if (s.kind === 'catalog') {
       onPickCatalog(s.product);
     } else {
-      onChange(s.entry.en);
+      onChange(bilingualName(s.entry.en, s.entry.ur));
     }
     setOpen(false);
   };
