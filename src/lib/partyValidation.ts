@@ -44,6 +44,43 @@ export async function phoneAlreadyUsed(
   return (count ?? 0) > 0;
 }
 
+export type CustomerPhoneMatch = {
+  id: string;
+  full_name: string;
+  full_name_ur: string | null;
+  primary_phone: string;
+  balance: number;
+};
+
+// Same duplicate-phone check as phoneAlreadyUsed, but for the Customer
+// forms specifically — returns the matching customer's own name/phone/
+// balance (via customer_directory, which already has current_balance and
+// full_name_ur) so the warning can show *who* already holds this number,
+// not just that someone does.
+export async function findCustomerPhoneMatch(
+  shopId: string,
+  phone: string,
+  excludeId?: string
+): Promise<CustomerPhoneMatch | null> {
+  const trimmed = phone.trim();
+  if (!trimmed) return null;
+  let query = supabase
+    .from('customer_directory')
+    .select('id, full_name, full_name_ur, primary_phone, current_balance')
+    .eq('shop_id', shopId)
+    .eq('primary_phone', trimmed);
+  if (excludeId) query = query.neq('id', excludeId);
+  const { data } = await query.maybeSingle();
+  if (!data) return null;
+  return {
+    id: data.id,
+    full_name: data.full_name,
+    full_name_ur: data.full_name_ur,
+    primary_phone: data.primary_phone,
+    balance: Number(data.current_balance) || 0,
+  };
+}
+
 export type NameMatchCandidate = { id: string; name: string; phone?: string; balance?: number };
 
 // Exact-name duplicate check used by the manual Add Customer / Add

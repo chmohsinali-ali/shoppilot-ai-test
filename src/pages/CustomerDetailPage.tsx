@@ -14,8 +14,9 @@ import { Modal } from '@/components/ui/Modal';
 import { EmptyState, Spinner, PageLoader } from '@/components/ui/EmptyState';
 import { useToast } from '@/components/ui/Toast';
 import { formatMoney, formatDate, formatDateCompact, bilingualName } from '@/lib/format';
-import { phoneAlreadyUsed, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER, PHONE_REQUIRED_MESSAGE } from '@/lib/partyValidation';
+import { findCustomerPhoneMatch, isDuplicatePhoneError, DUPLICATE_PHONE_MESSAGE_CUSTOMER, PHONE_REQUIRED_MESSAGE, type CustomerPhoneMatch } from '@/lib/partyValidation';
 import { NameAutocomplete } from '@/components/NameAutocomplete';
+import { PhoneDuplicateWarning } from '@/components/PhoneDuplicateWarning';
 import type { Customer, LedgerEntry } from '@/types/db';
 
 export function CustomerDetailPage() {
@@ -378,10 +379,12 @@ function AccountActionsMenu({ onClose, onDeactivate, onPermanentDelete }: { onCl
 
 function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer; onClose: () => void; onSaved: () => void }) {
   const { shop, user } = useAuth();
+  const navigate = useNavigate();
   const toast = useToast();
   const [saving, setSaving] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [phoneError, setPhoneError] = useState('');
+  const [phoneMatch, setPhoneMatch] = useState<CustomerPhoneMatch | null>(null);
   const [form, setForm] = useState({
     full_name: customer.full_name ?? '',
     full_name_ur: customer.full_name_ur ?? '',
@@ -392,7 +395,7 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
   const update = (k: string, v: string) => {
     setForm((f) => ({ ...f, [k]: v }));
     if (k === 'full_name' && v.trim()) setNameError(false);
-    if (k === 'primary_phone' && v.trim()) setPhoneError('');
+    if (k === 'primary_phone' && v.trim()) { setPhoneError(''); setPhoneMatch(null); }
   };
   const submit = async (e: FormEvent) => {
     e.preventDefault();
@@ -402,8 +405,8 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
     setNameError(missingName);
     setPhoneError(missingPhone ? PHONE_REQUIRED_MESSAGE : '');
     if (missingName || missingPhone) return;
-    const used = await phoneAlreadyUsed('customers', shop.id, form.primary_phone, customer.id);
-    if (used) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+    const match = await findCustomerPhoneMatch(shop.id, form.primary_phone, customer.id);
+    if (match) { setPhoneMatch(match); return; }
 
     setSaving(true);
     const { error } = await supabase.from('customers').update({
@@ -414,7 +417,11 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
     }).eq('id', customer.id);
     if (error) {
       setSaving(false);
-      if (isDuplicatePhoneError(error)) { setPhoneError(DUPLICATE_PHONE_MESSAGE_CUSTOMER); return; }
+      if (isDuplicatePhoneError(error)) {
+        const raceMatch = await findCustomerPhoneMatch(shop.id, form.primary_phone, customer.id);
+        if (raceMatch) setPhoneMatch(raceMatch); else toast('error', DUPLICATE_PHONE_MESSAGE_CUSTOMER);
+        return;
+      }
       toast('error', error.message);
       return;
     }
@@ -435,6 +442,12 @@ function EditCustomerModal({ customer, onClose, onSaved }: { customer: Customer;
         <Field label="Phone Number *">
           <div className="relative">
             <FieldWarning show={!!phoneError} message={phoneError} />
+            <PhoneDuplicateWarning
+              match={phoneMatch}
+              message={DUPLICATE_PHONE_MESSAGE_CUSTOMER}
+              currency={shop?.currency}
+              onNavigate={() => { if (phoneMatch) { onClose(); navigate(`/customers/${phoneMatch.id}`); } }}
+            />
             <Input value={form.primary_phone} onChange={(e) => update('primary_phone', e.target.value)} />
           </div>
         </Field>
