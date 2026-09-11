@@ -189,7 +189,10 @@ export function ProductNameAutocomplete({
                 <>
                   <Package className="h-4 w-4 flex-shrink-0 text-slate-400" />
                   <div className="min-w-0 flex-1">
-                    <p className="truncate font-medium text-slate-900 dark:text-slate-100">{s.product.name}</p>
+                    <div className="flex items-baseline gap-1.5">
+                      <p className="truncate font-medium text-slate-900 dark:text-slate-100">{s.product.name}</p>
+                      {s.product.urdu_name && <p dir="rtl" lang="ur" className="flex-shrink-0 truncate text-xs text-slate-500 dark:text-slate-400">{s.product.urdu_name}</p>}
+                    </div>
                     <p className="truncate text-xs text-slate-500 dark:text-slate-400">
                       {formatMoney(Number(s.product.sale_price), currency)} · {s.product.stock} {s.product.unit}
                     </p>
