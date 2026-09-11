@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useSearchParams, useLocation, Link } from 'react-router-dom';
-import { Plus, Trash2, Search, ShoppingCart, Check, ArrowLeft, Package } from 'lucide-react';
+import { Plus, Trash2, ShoppingCart, Check, ArrowLeft } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
 import { PageHeader } from '@/components/PageHeader';
@@ -48,7 +48,6 @@ export function NewSalePage() {
   const [paymentMethod, setPaymentMethod] = useState(prefill?.paymentMethod ?? 'cash');
   const [notes, setNotes] = useState(prefill?.notes ?? '');
   const [saving, setSaving] = useState(false);
-  const [productSearch, setProductSearch] = useState('');
 
   useEffect(() => {
     if (!shop) return;
@@ -81,31 +80,9 @@ export function NewSalePage() {
   const grandTotal = Math.max(0, subtotal - discountTotal);
   const balance = grandTotal - amountPaid;
 
-  const filteredProducts = useMemo(() => {
-    const q = productSearch.trim().toLowerCase();
-    if (!q) return products.slice(0, 8);
-    return products.filter((p) => p.name.toLowerCase().includes(q) || p.sku?.toLowerCase().includes(q) || p.barcode?.toLowerCase().includes(q)).slice(0, 8);
-  }, [products, productSearch]);
-
   function emptyLine(): Line {
     return { key: Math.random().toString(36).slice(2), product_name: '', product_name_ur: '', unit: 'piece', quantity: 1, price: 0, discount: 0, product_id: null };
   }
-
-  const addProductToLine = (p: Product) => {
-    setLines((ls) => {
-      const existing = ls.find((l) => l.product_id === p.id);
-      if (existing) {
-        return ls.map((l) => (l.key === existing.key ? { ...l, quantity: l.quantity + 1 } : l));
-      }
-      const firstEmpty = ls.length === 1 && !ls[0].product_name;
-      const line = { product_id: p.id, product_name: p.name, product_name_ur: p.urdu_name ?? '', unit: p.unit, price: Number(p.sale_price), quantity: 1, discount: 0 };
-      if (firstEmpty) {
-        return [{ ...ls[0], ...line }];
-      }
-      return [...ls, { key: Math.random().toString(36).slice(2), ...line }];
-    });
-    setProductSearch('');
-  };
 
   const updateLine = (key: string, field: keyof Line, value: string | number) => {
     setLines((ls) => ls.map((l) => (l.key === key
@@ -205,26 +182,10 @@ export function NewSalePage() {
             </Field>
           </Card>
 
-          {/* Product search */}
+          {/* Products — each line's own Product Name field already has full
+              autocomplete (own catalog + common items), so there's no need
+              for a second, separate "search to add" box above it. */}
           <Card className="p-5">
-            <div className="relative mb-4">
-              <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-              <Input placeholder="Search products to add..." className="pl-9" value={productSearch} onChange={(e) => setProductSearch(e.target.value)} />
-            </div>
-            {productSearch && filteredProducts.length > 0 && (
-              <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
-                {filteredProducts.map((p) => (
-                  <button key={p.id} type="button" onClick={() => addProductToLine(p)} className="flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-left text-sm hover:border-blue-300 hover:bg-blue-50 dark:border-slate-700 dark:hover:bg-blue-950/30">
-                    <Package className="h-4 w-4 text-slate-400" />
-                    <div className="min-w-0">
-                      <p className="truncate font-medium text-slate-900 dark:text-slate-100">{p.name}</p>
-                      <p className="text-xs text-slate-500">{formatMoney(Number(p.sale_price), shop?.currency)} · {p.stock} {p.unit}</p>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            )}
-
             {/* Line items */}
             <div className="space-y-3">
               {lines.map((l, idx) => (
